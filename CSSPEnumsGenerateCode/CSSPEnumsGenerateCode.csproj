@@ -80,5 +80,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSSPEnumsGenerateCodeHelper\CSSPEnumsGenerateCodeHelper.csproj">
+      <Project>{0e5f440e-4eda-408f-847d-5984bbde7e9e}</Project>
+      <Name>CSSPEnumsGenerateCodeHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

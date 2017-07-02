@@ -126,7 +126,7 @@
             this.textBoxCSSPEnumsDLL.Name = "textBoxCSSPEnumsDLL";
             this.textBoxCSSPEnumsDLL.Size = new System.Drawing.Size(517, 20);
             this.textBoxCSSPEnumsDLL.TabIndex = 28;
-            this.textBoxCSSPEnumsDLL.Text = "C:\\CSSP Latest Code\\CSSPEnums\\CSSPEnums\\bin\\Debug\\CSSPEnums.dll";
+            this.textBoxCSSPEnumsDLL.Text = "C:\\CSSP Code\\CSSPEnums\\CSSPEnums\\bin\\Debug\\CSSPEnums.dll";
             // 
             // lblDoc
             // 
@@ -152,7 +152,7 @@
             this.textBoxFile3.Name = "textBoxFile3";
             this.textBoxFile3.Size = new System.Drawing.Size(554, 20);
             this.textBoxFile3.TabIndex = 19;
-            this.textBoxFile3.Text = "CSSPEnums\\CSSPEnums.Tests\\GeneratedEnumsTest.cs";
+            this.textBoxFile3.Text = "CSSPEnums\\CSSPEnums.Tests\\EnumsTestGenerated.cs";
             // 
             // label3
             // 
@@ -169,7 +169,7 @@
             this.textBoxFile2.Name = "textBoxFile2";
             this.textBoxFile2.Size = new System.Drawing.Size(554, 20);
             this.textBoxFile2.TabIndex = 17;
-            this.textBoxFile2.Text = "CSSPEnums\\CSSPEnums\\GeneratedEnums.cs";
+            this.textBoxFile2.Text = "CSSPEnums\\CSSPEnums\\EnumsGenerated.cs";
             // 
             // label2
             // 
@@ -186,7 +186,7 @@
             this.textBoxFile1.Name = "textBoxFile1";
             this.textBoxFile1.Size = new System.Drawing.Size(554, 20);
             this.textBoxFile1.TabIndex = 15;
-            this.textBoxFile1.Text = "CSSPEnums\\CSSPEnums\\GeneratedEnumsTextOrder.cs";
+            this.textBoxFile1.Text = "CSSPEnums\\CSSPEnums\\EnumsTextOrderGenerated.cs";
             // 
             // lblFile1
             // 
@@ -203,7 +203,7 @@
             this.textBoxBaseDir.Name = "textBoxBaseDir";
             this.textBoxBaseDir.Size = new System.Drawing.Size(554, 20);
             this.textBoxBaseDir.TabIndex = 13;
-            this.textBoxBaseDir.Text = "C:\\CSSP Latest Code\\";
+            this.textBoxBaseDir.Text = "C:\\CSSP Code\\";
             // 
             // lblBaseDir
             // 

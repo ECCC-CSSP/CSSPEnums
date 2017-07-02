@@ -42,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
-    <Compile Include="GeneratedEnums.cs" />
-    <Compile Include="GeneratedEnumsPolSourceInfo.cs" />
-    <Compile Include="GeneratedEnumsTextOrder.cs" />
-    <Compile Include="GeneratedPolSourceObsInfoEnum.cs" />
+    <Compile Include="EnumsGenerated.cs" />
+    <Compile Include="EnumsPolSourceInfoGenerated.cs" />
+    <Compile Include="EnumsTextOrderGenerated.cs" />
+    <Compile Include="PolSourceObsInfoEnumGenerated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CSSPEnumsRes.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -57,15 +57,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CSSPEnumsRes.fr.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\GeneratedPolSourceInfoEnumRes.Designer.cs">
+    <Compile Include="Resources\PolSourceInfoEnumGeneratedRes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GeneratedPolSourceInfoEnumRes.resx</DependentUpon>
+      <DependentUpon>PolSourceInfoEnumGeneratedRes.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\GeneratedPolSourceInfoEnumRes.fr.Designer.cs">
+    <Compile Include="Resources\PolSourceInfoEnumGeneratedRes.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GeneratedPolSourceInfoEnumRes.fr.resx</DependentUpon>
+      <DependentUpon>PolSourceInfoEnumGeneratedRes.fr.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -77,13 +77,13 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CSSPEnumsRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\GeneratedPolSourceInfoEnumRes.fr.resx">
+    <EmbeddedResource Include="Resources\PolSourceInfoEnumGeneratedRes.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>GeneratedPolSourceInfoEnumRes.fr.Designer.cs</LastGenOutput>
+      <LastGenOutput>PolSourceInfoEnumGeneratedRes.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\GeneratedPolSourceInfoEnumRes.resx">
+    <EmbeddedResource Include="Resources\PolSourceInfoEnumGeneratedRes.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>GeneratedPolSourceInfoEnumRes.Designer.cs</LastGenOutput>
+      <LastGenOutput>PolSourceInfoEnumGeneratedRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
