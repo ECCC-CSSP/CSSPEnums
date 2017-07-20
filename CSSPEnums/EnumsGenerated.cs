@@ -387,14 +387,14 @@ namespace CSSPEnums
             {
                 case DatabaseTypeEnum.Error:
                     return CSSPEnumsRes.Empty;
-                case DatabaseTypeEnum.MemoryNoDBShape:
-                    return CSSPEnumsRes.DatabaseTypeEnumMemoryNoDBShape;
-                case DatabaseTypeEnum.MemoryWithDBShape:
-                    return CSSPEnumsRes.DatabaseTypeEnumMemoryWithDBShape;
-                case DatabaseTypeEnum.SQLite:
-                    return CSSPEnumsRes.DatabaseTypeEnumSQLite;
-                case DatabaseTypeEnum.SqlServer:
-                    return CSSPEnumsRes.DatabaseTypeEnumSqlServer;
+                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB;
+                case DatabaseTypeEnum.MemoryTestDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB;
+                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB;
+                case DatabaseTypeEnum.SqlServerTestDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -3425,10 +3425,10 @@ namespace CSSPEnums
             switch ((DatabaseTypeEnum)databaseType)
             {
                 case DatabaseTypeEnum.Error:
-                case DatabaseTypeEnum.MemoryNoDBShape:
-                case DatabaseTypeEnum.MemoryWithDBShape:
-                case DatabaseTypeEnum.SQLite:
-                case DatabaseTypeEnum.SqlServer:
+                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                case DatabaseTypeEnum.MemoryTestDB:
+                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                case DatabaseTypeEnum.SqlServerTestDB:
                     return "";
                 default:
                     return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.DatabaseType);

@@ -2412,12 +2412,6 @@
   <data name="DatabaseType" xml:space="preserve">
     <value>TestType</value>
   </data>
-  <data name="DatabaseTypeEnumSQLite" xml:space="preserve">
-    <value>SQLite</value>
-  </data>
-  <data name="DatabaseTypeEnumSqlServer" xml:space="preserve">
-    <value>SqlServer</value>
-  </data>
   <data name="ActionDBType" xml:space="preserve">
     <value>ActionDBType</value>
   </data>
@@ -2433,10 +2427,16 @@
   <data name="ActionDBTypeEnumUpdate" xml:space="preserve">
     <value>Update</value>
   </data>
-  <data name="DatabaseTypeEnumMemoryNoDBShape" xml:space="preserve">
-    <value>MemoryNoDBShape</value>
+  <data name="DatabaseTypeEnumMemoryCSSPWebToolsDB" xml:space="preserve">
+    <value>MemoryCSSPWebToolsDB</value>
   </data>
-  <data name="DatabaseTypeEnumMemoryWithDBShape" xml:space="preserve">
-    <value>MemoryWithDBShape</value>
+  <data name="DatabaseTypeEnumMemoryTestDB" xml:space="preserve">
+    <value>MemoryTestDB</value>
+  </data>
+  <data name="DatabaseTypeEnumSqlServerCSSPWebToolsDB" xml:space="preserve">
+    <value>SqlServerCSSPWebToolsDB</value>
+  </data>
+  <data name="DatabaseTypeEnumSqlServerTestDB" xml:space="preserve">
+    <value>SqlServerTestDB</value>
   </data>
 </root>

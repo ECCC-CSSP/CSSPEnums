@@ -190,10 +190,10 @@ namespace CSSPEnums
     public enum DatabaseTypeEnum
     {
         Error = 0,
-        MemoryNoDBShape = 1,
-        MemoryWithDBShape = 2,
-        SQLite = 3,
-        SqlServer = 4,
+        MemoryCSSPWebToolsDB = 1,
+        MemoryTestDB = 2,
+        SqlServerCSSPWebToolsDB = 3,
+        SqlServerTestDB = 4,
     }
     public enum DisinfectionTypeEnum
     {

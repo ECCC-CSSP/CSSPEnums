@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace CSSPEnumsGenerateCodeHelper
 {
-    public partial class GenerateCodeHelper
+    public partial class EnumsGenerateCodeHelper
     {
         public void EnumsGenerated()
         {
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(DLLFileName);
-            FileInfo fi = new FileInfo(BaseDir + @"CSSPEnums\CSSPEnums\EnumsGenerated.cs");
+            FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
+            FileInfo fi = new FileInfo(enumsFiles.BaseDir + enumsFiles.EnumsGenerated);
 
             sb.AppendLine(@"using CSSPEnums;");
             sb.AppendLine(@"using CSSPEnums.Resources;");
@@ -163,9 +163,7 @@ namespace CSSPEnumsGenerateCodeHelper
             {
                 sw.Write(sb.ToString());
             }
-            RichTextBoxStatus.AppendText("Created [" + fi.FullName + "] ...\r\n");
-
+            StatusEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
         }
-
     }
 }

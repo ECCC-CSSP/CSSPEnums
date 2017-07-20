@@ -15,17 +15,41 @@ namespace CSSPEnumsGenerateCode
 {
     public partial class CSSPEnumsGenerateCode : Form
     {
+        #region Variables
+        #endregion Variables
+
+        #region Properties
+        EnumsGenerateCodeHelper enumGenerateCodeHelper { get; set; }
+        #endregion Properties
+
+        #region Constructors
         public CSSPEnumsGenerateCode()
         {
             InitializeComponent();
+            StartUp();
         }
+        #endregion Constructors
 
+        #region Events
         private void butGenerateAllCodeFiles_Click(object sender, EventArgs e)
         {
             richTextBoxStatus.Text = "";
             GenerateCode();
         }
+        private void EnumGenerateCodeHelper_ErrorHandler(object sender, CSSPEnumsGenerateCodeHelper.ErrorEventArgs e)
+        {
+            richTextBoxStatus.AppendText("Error [" + e.Error + "]\r\n");
+        }
+        private void EnumGenerateCodeHelper_StatusHandler(object sender, StatusEventArgs e)
+        {
+            richTextBoxStatus.AppendText(e.Status + "\r\n");
+        }
+        #endregion Events
 
+        #region Functions public
+        #endregion Functions public
+
+        #region Functions private
         private void GenerateCode()
         {
             richTextBoxStatus.AppendText("Stating...\r\n");
@@ -36,8 +60,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            GenerateCodeHelper generateCodeHelper = new GenerateCodeHelper(textBoxCSSPEnumsDLL.Text, textBoxBaseDir.Text, richTextBoxStatus, lblStatus);
-            generateCodeHelper.EnumsTextOrderGenerated();
+            enumGenerateCodeHelper.EnumsTextOrderGenerated();
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -45,8 +68,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            generateCodeHelper = new GenerateCodeHelper(textBoxCSSPEnumsDLL.Text, textBoxBaseDir.Text, richTextBoxStatus, lblStatus);
-            generateCodeHelper.EnumsGenerated();
+            enumGenerateCodeHelper.EnumsGenerated();
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -54,11 +76,24 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            generateCodeHelper = new GenerateCodeHelper(textBoxCSSPEnumsDLL.Text, textBoxBaseDir.Text, richTextBoxStatus, lblStatus);
-            generateCodeHelper.EnumsTestGenerated();
+            enumGenerateCodeHelper.EnumsTestGenerated();
 
             richTextBoxStatus.AppendText("Done...\r\n");
         }
+        private void StartUp()
+        {
+            EnumsFiles enumsFiles = new EnumsFiles();
+            enumsFiles.CSSPEnumsDLL = textBoxCSSPEnumsDLL.Text;
+            enumsFiles.BaseDir = textBoxBaseDir.Text;
+            enumsFiles.EnumsTextOrderGenearated = textBoxFile1.Text;
+            enumsFiles.EnumsGenerated = textBoxFile2.Text;
+            enumsFiles.EnumsTestGenerated = textBoxFile3.Text;
 
+            enumGenerateCodeHelper = new EnumsGenerateCodeHelper(enumsFiles);
+
+            enumGenerateCodeHelper.ErrorHandler += EnumGenerateCodeHelper_ErrorHandler;
+            enumGenerateCodeHelper.StatusHandler += EnumGenerateCodeHelper_StatusHandler;
+        }
+        #endregion Functions private
     }
 }

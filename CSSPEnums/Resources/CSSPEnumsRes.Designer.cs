@@ -1061,38 +1061,38 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MemoryNoDBShape.
+        ///   Looks up a localized string similar to MemoryCSSPWebToolsDB.
         /// </summary>
-        public static string DatabaseTypeEnumMemoryNoDBShape {
+        public static string DatabaseTypeEnumMemoryCSSPWebToolsDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumMemoryNoDBShape", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumMemoryCSSPWebToolsDB", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MemoryWithDBShape.
+        ///   Looks up a localized string similar to MemoryTestDB.
         /// </summary>
-        public static string DatabaseTypeEnumMemoryWithDBShape {
+        public static string DatabaseTypeEnumMemoryTestDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumMemoryWithDBShape", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumMemoryTestDB", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SQLite.
+        ///   Looks up a localized string similar to SqlServerCSSPWebToolsDB.
         /// </summary>
-        public static string DatabaseTypeEnumSQLite {
+        public static string DatabaseTypeEnumSqlServerCSSPWebToolsDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumSQLite", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumSqlServerCSSPWebToolsDB", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SqlServer.
+        ///   Looks up a localized string similar to SqlServerTestDB.
         /// </summary>
-        public static string DatabaseTypeEnumSqlServer {
+        public static string DatabaseTypeEnumSqlServerTestDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumSqlServer", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumSqlServerTestDB", resourceCulture);
             }
         }
         

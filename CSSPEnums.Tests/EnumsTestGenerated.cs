@@ -670,17 +670,17 @@ namespace CSSPEnums.Tests
                         case DatabaseTypeEnum.Error:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
-                        case DatabaseTypeEnum.MemoryNoDBShape:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryNoDBShape, retStr);
+                        case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB, retStr);
                             break;
-                        case DatabaseTypeEnum.MemoryWithDBShape:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryWithDBShape, retStr);
+                        case DatabaseTypeEnum.MemoryTestDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB, retStr);
                             break;
-                        case DatabaseTypeEnum.SQLite:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSQLite, retStr);
+                        case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB, retStr);
                             break;
-                        case DatabaseTypeEnum.SqlServer:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServer, retStr);
+                        case DatabaseTypeEnum.SqlServerTestDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -4133,10 +4133,10 @@ namespace CSSPEnums.Tests
                     switch ((DatabaseTypeEnum)i)
                     {
                         case DatabaseTypeEnum.Error:
-                        case DatabaseTypeEnum.MemoryNoDBShape:
-                        case DatabaseTypeEnum.MemoryWithDBShape:
-                        case DatabaseTypeEnum.SQLite:
-                        case DatabaseTypeEnum.SqlServer:
+                        case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                        case DatabaseTypeEnum.MemoryTestDB:
+                        case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                        case DatabaseTypeEnum.SqlServerTestDB:
                             Assert.AreEqual("", retStr);
                             break;
                         default:

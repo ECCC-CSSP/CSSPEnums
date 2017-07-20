@@ -3706,4 +3706,16 @@
   <data name="DatabaseTypeEnumMemoryWithDBShape" xml:space="preserve">
     <value>MemoryWithDBShape</value>
   </data>
+  <data name="DatabaseTypeEnumMemoryCSSPWebToolsDB" xml:space="preserve">
+    <value>MemoryCSSPWebToolsDB</value>
+  </data>
+  <data name="DatabaseTypeEnumMemoryTestDB" xml:space="preserve">
+    <value>MemoryTestDB</value>
+  </data>
+  <data name="DatabaseTypeEnumSqlServerCSSPWebToolsDB" xml:space="preserve">
+    <value>SqlServerCSSPWebToolsDB</value>
+  </data>
+  <data name="DatabaseTypeEnumSqlServerTestDB" xml:space="preserve">
+    <value>SqlServerTestDB</value>
+  </data>
 </root>
