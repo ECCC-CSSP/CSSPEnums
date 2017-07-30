@@ -42,9 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumGenerateCodeHelper.cs" />
-    <Compile Include="EnumsGenerated.cs" />
-    <Compile Include="EnumsTestGenerated.cs" />
-    <Compile Include="EnumsTextOrderGenerated.cs" />
+    <Compile Include="EnumsGenerate.cs" />
+    <Compile Include="EnumsTestGenerate.cs" />
+    <Compile Include="EnumsTextOrderGenerate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

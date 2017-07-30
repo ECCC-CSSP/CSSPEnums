@@ -15,6 +15,8 @@ namespace CSSPEnums
         #region Enum CheckOK
         public string PolSourceObsInfoListOK(List<PolSourceObsInfoEnum> polSourceInfoList)
         {
+            string retStr = "";
+
             foreach (PolSourceObsInfoEnum polSourceInfo in polSourceInfoList)
             {
                 switch (polSourceInfo)
@@ -348,15 +350,23 @@ namespace CSSPEnums
                     case PolSourceObsInfoEnum.RiskModerate:
                     case PolSourceObsInfoEnum.RiskHighP:
                     case PolSourceObsInfoEnum.RiskHigh:
-                        return "";
+                        {;
+                            retStr = "";
+                        };
+                        break;
                     default:
-                        return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PolSourceInfo);
+                        {;
+                            retStr = string.Format(CSSPEnumsRes.CouldNotFind_Within_, polSourceInfo.ToString(), "PolSourceObsInfoEnum");
+                            break;
+                        };
                 }
             }
-            return "";
+            return retStr;
         }
         public string PolSourceObsInfoOK(PolSourceObsInfoEnum? polSourceInfo)
         {
+            string retStr = "";
+
             switch (polSourceInfo)
             {
                 case PolSourceObsInfoEnum.Error:
@@ -688,10 +698,17 @@ namespace CSSPEnums
                 case PolSourceObsInfoEnum.RiskModerate:
                 case PolSourceObsInfoEnum.RiskHighP:
                 case PolSourceObsInfoEnum.RiskHigh:
-                    return "";
+                    {;
+                        retStr = "";
+                    };
+                    break;
                 default:
-                    return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PolSourceInfo);
+                    {;
+                        retStr = string.Format(CSSPEnumsRes.CouldNotFind_Within_, polSourceInfo.ToString(), "PolSourceObsInfoEnum");
+                        break;
+                    };
             }
+            return retStr;
         }
         #endregion Enum CheckOK
 

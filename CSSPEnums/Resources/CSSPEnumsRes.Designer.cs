@@ -962,6 +962,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Could not find {0} within {1}.
+        /// </summary>
+        public static string CouldNotFind_Within_ {
+            get {
+                return ResourceManager.GetString("CouldNotFind_Within_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CSSPWQInputSheetType.
         /// </summary>
         public static string CSSPWQInputSheetType {

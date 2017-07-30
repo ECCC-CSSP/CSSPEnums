@@ -3140,6 +3140,21 @@ namespace CSSPEnums
 
             return WebTideDataSetEnumTextOrderedList;
         }
+        public List<PolSourceObsInfoEnumTextOrdered> GetPolSourceObsInfoEnumTextOrderedList()
+        {
+            List<PolSourceObsInfoEnumTextOrdered> PolSourceObsInfoEnumTextOrderedList = new List<PolSourceObsInfoEnumTextOrdered>();
+
+            for (int i = 1, count = Enum.GetNames(typeof(PolSourceObsInfoEnum)).Count(); i < count; i++)
+            {
+                PolSourceObsInfoEnumTextOrderedList.Add(new PolSourceObsInfoEnumTextOrdered() { PolSourceObsInfo = (PolSourceObsInfoEnum)i, PolSourceObsInfoText = GetEnumText_PolSourceObsInfoEnum((PolSourceObsInfoEnum)i) });
+            }
+
+            PolSourceObsInfoEnumTextOrderedList = (from c in PolSourceObsInfoEnumTextOrderedList
+                                              orderby c.PolSourceObsInfoText
+                                              select c).ToList();
+
+            return PolSourceObsInfoEnumTextOrderedList;
+        }
 
         #endregion Function Get Enum Text Ordered
 

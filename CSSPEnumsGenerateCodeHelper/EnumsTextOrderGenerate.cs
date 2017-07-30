@@ -11,7 +11,7 @@ namespace CSSPEnumsGenerateCodeHelper
 {
     public partial class EnumsGenerateCodeHelper
     {
-        public void EnumsTextOrderGenerated()
+        public void EnumsTextOrderGenerate()
         {
             StringBuilder sb = new StringBuilder();
             FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);

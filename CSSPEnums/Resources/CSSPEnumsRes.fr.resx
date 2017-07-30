@@ -3718,4 +3718,7 @@
   <data name="DatabaseTypeEnumSqlServerTestDB" xml:space="preserve">
     <value>SqlServerTestDB</value>
   </data>
+  <data name="CouldNotFind_Within_" xml:space="preserve">
+    <value>Dans l'impossibilité de trouver {0} dans {1}</value>
+  </data>
 </root>

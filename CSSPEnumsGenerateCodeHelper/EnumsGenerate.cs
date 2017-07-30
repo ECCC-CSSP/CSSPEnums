@@ -11,7 +11,7 @@ namespace CSSPEnumsGenerateCodeHelper
 {
     public partial class EnumsGenerateCodeHelper
     {
-        public void EnumsGenerated()
+        public void EnumsGenerate()
         {
             StringBuilder sb = new StringBuilder();
             FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
@@ -87,8 +87,8 @@ namespace CSSPEnumsGenerateCodeHelper
                 if (type.GetTypeInfo().BaseType == typeof(System.Enum))
                 {
                     string enumName = type.Name;
-                    if (enumName == "PolSourceObsInfoEnum")
-                        continue;
+                    //if (enumName == "PolSourceObsInfoEnum")
+                    //    continue;
 
                     sb.AppendLine(@"        public List<" + enumName + "TextOrdered> Get" + enumName + "TextOrderedList()");
                     sb.AppendLine(@"        {");

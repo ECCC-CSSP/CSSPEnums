@@ -11,7 +11,7 @@ namespace CSSPEnumsGenerateCodeHelper
 {
     public partial class EnumsGenerateCodeHelper
     {
-        public void EnumsTestGenerated()
+        public void EnumsTestGenerate()
         {
             StringBuilder sb = new StringBuilder();
             FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
@@ -26,6 +26,7 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"using System.Threading;");
             sb.AppendLine(@"using CSSPEnums;");
             sb.AppendLine(@"using CSSPEnums.Resources;");
+            sb.AppendLine(@"using System.Linq;");
             sb.AppendLine(@"");
             sb.AppendLine(@"namespace CSSPEnums.Tests");
             sb.AppendLine(@"{");
@@ -55,7 +56,18 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"                string retStr = enums.GetEnumText_" + enumName + "(null);");
                     sb.AppendLine(@"                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);");
                     sb.AppendLine(@"        ");
-                    sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length; i < count; i++)");
+                    if (enumName == "BeaufortScaleEnum")
+                    {
+                        sb.AppendLine(@"                for (int i = -1, count = Enum.GetNames(typeof(" + enumName + ")).Length + 1; i < count; i++)");
+                    }
+                    else if (enumName == "SampleTypeEnum")
+                    {
+                        sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 101; i < count; i++)");
+                    }
+                    else
+                    {
+                        sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 1; i < count; i++)");
+                    }
                     sb.AppendLine(@"                {");
                     sb.AppendLine(@"                    retStr = enums.GetEnumText_" + enumName + "((" + enumName + ")i);");
                     sb.AppendLine(@"        ");
@@ -83,6 +95,13 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);");
                     sb.AppendLine(@"                            break;");
                     sb.AppendLine(@"                    }");
+                    if (enumName == "SampleTypeEnum")
+                    {
+                        sb.AppendLine(@"                    if (i == 0)");
+                        sb.AppendLine(@"                    {");
+                        sb.AppendLine(@"                        i = 100;");
+                        sb.AppendLine(@"                    }");
+                    }
                     sb.AppendLine(@"                }");
                     sb.AppendLine(@"            }");
                     sb.AppendLine(@"        }");
@@ -116,7 +135,7 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"                string retStr = enums." + enumName.Substring(0, enumName.Length - 4) + "OK(null);");
                     sb.AppendLine(@"                Assert.AreEqual("""", retStr);");
                     sb.AppendLine(@"");
-                    sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length; i < count; i++)");
+                    sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 1; i < count; i++)");
                     sb.AppendLine(@"                {");
                     sb.AppendLine(@"                    retStr = enums." + enumName.Substring(0, enumName.Length - 4) + "OK((" + enumName + ")i);");
                     sb.AppendLine(@"");
@@ -144,6 +163,59 @@ namespace CSSPEnumsGenerateCodeHelper
             }
             sb.AppendLine(@"");
             sb.AppendLine(@"        #endregion Testing Methods Check OK public");
+
+
+            // Doing Testing Methods TextOrdered public
+            sb.AppendLine(@"        #region Testing Methods TextOrdered public");
+            importAssembly = Assembly.LoadFile(fiDLL.FullName);
+            types = importAssembly.GetTypes();
+            foreach (Type type in types)
+            {
+                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
+                {
+                    string enumName = type.Name;
+                    //if (enumName == "PolSourceObsInfoEnum")
+                    //    continue;
+
+                    sb.AppendLine(@"        [TestMethod]");
+                    sb.AppendLine(@"        public void Enums_" + enumName + "TextOrdered_Test()");
+                    sb.AppendLine(@"        {");
+                    sb.AppendLine(@"            foreach (CultureInfo culture in cultureListGood)");
+                    sb.AppendLine(@"            {");
+                    sb.AppendLine(@"                SetupTest(culture);");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"                List<" + enumName + "TextOrdered> " + enumName + "List = new List<" + enumName + "TextOrdered>();");
+                    if (enumName == "SampleTypeEnum")
+                    {
+                        sb.AppendLine(@"                for (int i = 101, count = Enum.GetNames(typeof(" + enumName + ")).Length + 100; i < count; i++)");
+                    }
+                    else
+                    {
+                        sb.AppendLine(@"                for (int i = 1, count = Enum.GetNames(typeof(" + enumName + ")).Length; i < count; i++)");
+                    }
+                    sb.AppendLine(@"                {");
+                    sb.AppendLine(@"                    " + enumName + "List.Add(new " + enumName + "TextOrdered() { " + enumName.Substring(0, enumName.Length - 4) + " = (" + enumName + ")i, " + enumName.Substring(0, enumName.Length - 4) + "Text = enums.GetEnumText_" + enumName + "((" + enumName + ")i) });");
+                    sb.AppendLine(@"                }");
+                    sb.AppendLine(@"                " + enumName + "List = " + enumName + "List.OrderBy(c => c." + enumName.Substring(0, enumName.Length - 4) + "Text).ToList();");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"                List<" + enumName + "TextOrdered> " + enumName + "TextOrderedList = enums.Get" + enumName + "TextOrderedList();");
+                    sb.AppendLine(@"                Assert.AreEqual(" + enumName + "List.Count, " + enumName + "TextOrderedList.Count);");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"                " + enumName + "TextOrdered " + enumName + "TextOrdered = new " + enumName + "TextOrdered();");
+                    sb.AppendLine(@"                Assert.IsNotNull(" + enumName + "TextOrdered);");
+                    sb.AppendLine(@"");
+                    sb.AppendLine(@"                for (int i = 0, count = " + enumName + "List.Count; i < count; i++)");
+                    sb.AppendLine(@"                {");
+                    sb.AppendLine(@"                    Assert.AreEqual(" + enumName + "List[i]." + enumName.Substring(0, enumName.Length - 4) + "Text, " + enumName + "TextOrderedList[i]." + enumName.Substring(0, enumName.Length - 4) + "Text);");
+                    sb.AppendLine(@"                    Assert.AreEqual(" + enumName + "List[i]." + enumName.Substring(0, enumName.Length - 4) + ", " + enumName + "TextOrderedList[i]." + enumName.Substring(0, enumName.Length - 4) + ");");
+                    sb.AppendLine(@"                }");
+                    sb.AppendLine(@"            }");
+                    sb.AppendLine(@"        }");
+                }
+            }
+            sb.AppendLine(@"");
+            sb.AppendLine(@"        #endregion Testing Methods TextOrdered public");
+
             sb.AppendLine(@"    }");
             sb.AppendLine(@"}");
 

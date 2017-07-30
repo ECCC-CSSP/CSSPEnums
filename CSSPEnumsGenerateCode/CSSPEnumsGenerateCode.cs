@@ -60,7 +60,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            enumGenerateCodeHelper.EnumsTextOrderGenerated();
+            enumGenerateCodeHelper.EnumsTextOrderGenerate();
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -68,7 +68,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            enumGenerateCodeHelper.EnumsGenerated();
+            enumGenerateCodeHelper.EnumsGenerate();
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -76,7 +76,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            enumGenerateCodeHelper.EnumsTestGenerated();
+            enumGenerateCodeHelper.EnumsTestGenerate();
 
             richTextBoxStatus.AppendText("Done...\r\n");
         }
