@@ -39,11 +39,26 @@ namespace CSSPEnums
 
     }
 
+    /// <summary>
+    /// Address type enumerations
+    /// </summary>
     public enum AddressTypeEnum
     {
+        /// <summary>
+        /// This is the Error
+        /// </summary>
         Error = 0,
+        /// <summary>
+        /// This is teh Mailing
+        /// </summary>
         Mailing = 1,
+        /// <summary>
+        /// This is the Shipping
+        /// </summary>
         Shipping = 2,
+        /// <summary>
+        /// This is the Civic
+        /// </summary>
         Civic = 3,
     }
     public enum ActionDBTypeEnum
