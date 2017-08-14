@@ -8,16 +8,41 @@ using System.Threading;
 
 namespace CSSPEnums
 {
+    /// <summary>
+    /// > Class holding all Enum used in CSSP applications and methods used to get text associated with the Enum in both languages [en, fr]
+    /// 
+    /// > Used by 
+    /// > * <c>[CSSPModels] (../../../../CSSPModels/CSSPModels/_site/api/CSSPModels.html)</c>
+    /// > * <c>[CSSPServices] (../../../../CSSPServices/CSSPServices/_site/api/CSSPServices.html)</c>
+    /// </summary>
     public partial class Enums
     {
         #region Variables
         #endregion Variables
 
         #region Properties
+        /// <summary>
+        /// > Allowable values are [en, fr]
+        /// </summary>
         public LanguageEnum LanguageRequest { get; set; }
         #endregion Properties
 
         #region Constructors
+        /// <summary>
+        /// > using [en]
+        /// >
+        /// > <c>CurrentCulture = new CultureInfo("en-CA");</c>
+        /// >   
+        /// > <c>CurrentUICulture = new CultureInfo("en-CA");</c>
+        /// >
+        /// > using [fr]
+        /// >
+        /// > <c>CurrentCulture = new CultureInfo("fr-CA");</c>
+        /// > 
+        /// > <c>CurrentUICulture = new CultureInfo("fr-CA");</c>
+        /// >
+        /// </summary>
+        /// <param name="LanguageRequest"></param>
         public Enums(LanguageEnum LanguageRequest)
         {
             this.LanguageRequest = LanguageRequest;
@@ -40,49 +65,145 @@ namespace CSSPEnums
     }
 
     /// <summary>
-    /// Address type enumerations
+    /// > Used by: <c>[CSSPServices] (../../../../CSSPServices/CSSPServices/_site/api/CSSPServices.html)</c>
     /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum ActionDBTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Create = 1,
+    ///         Read = 2,
+    ///         Update = 3,
+    ///         Delete = 4,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum ActionDBTypeEnum
+    {
+        /// <summary>
+        /// 0 -- no action
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- action create on DB
+        /// </summary>
+        Create = 1,
+        /// <summary>
+        /// 2 -- action read on DB
+        /// </summary>
+        Read = 2,
+        /// <summary>
+        /// 3 -- action update on DB
+        /// </summary>
+        Update = 3,
+        /// <summary>
+        /// 4 -- action delete on DB
+        /// </summary>
+        Delete = 4,
+    }
+    /// <summary>
+    /// > Used by: <c>[CSSPModels.Address.AddressTypeEnum] (../../../../CSSPModels/CSSPModels/_site/api/CSSPModels.Address.html#CSSPModels_Address_AddressType)</c>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AddressTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Mailing = 1,
+    ///         Shipping = 2,
+    ///         Civic = 3,
+    ///     }
+    /// </code>
+    /// </remarks>
     public enum AddressTypeEnum
     {
         /// <summary>
-        /// This is the Error
+        /// 0 -- used to remove selection
         /// </summary>
         Error = 0,
         /// <summary>
-        /// This is teh Mailing
+        /// 1 -- mailing type address
         /// </summary>
         Mailing = 1,
         /// <summary>
-        /// This is the Shipping
+        /// 2 -- shipping type address
         /// </summary>
         Shipping = 2,
         /// <summary>
-        /// This is the Civic
+        /// 3 -- civic type address
         /// </summary>
         Civic = 3,
     }
-    public enum ActionDBTypeEnum
-    {
-        // CRUD --> Create, Read, Update and Delete
-        Error = 0,
-        Create = 1,
-        Read = 2,
-        Update = 3,
-        Delete = 4,
-    }
+    /// <summary>
+    /// > Used by: <c>[CSSPModels.Infrastructure.AerationTypeEnum] (../../../../CSSPModels/CSSPModels/_site/api/CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType)</c>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AerationTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Diffuser = 1,
+    ///         Surface = 2,
+    ///     }
+    /// </code>
+    /// </remarks>
     public enum AerationTypeEnum
     {
+        /// <summary>
+        /// 0 -- used to remove selection
+        /// </summary>
         Error = 0,
+        /// <summary>
+        /// 1 -- diffuser aeration type for infrastructure
+        /// </summary>
         Diffuser = 1,
+        /// <summary>
+        /// 2 -- surface aeration type for infrastructure
+        /// </summary>
         Surface = 2,
     }
+    /// <summary>
+    /// > Used by: <c>[CSSPModels.Infrastructure.AlarmSystemTypeEnum] (../../../../CSSPModels/CSSPModels/_site/api/CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType)</c>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AlarmSystemTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         SCADA = 1,
+    ///         None = 2,
+    ///         OnlyVisualLight = 3,
+    ///         SCADAAndLight = 4,
+    ///         PagerAndLight = 5,
+    ///     }
+    /// </code>
+    /// </remarks>
     public enum AlarmSystemTypeEnum
     {
+        /// <summary>
+        /// 0 -- used to remove selection
+        /// </summary>
         Error = 0,
+        /// <summary>
+        /// 1 -- SCADA alarm system type for infrastructure
+        /// </summary>
         SCADA = 1,
+        /// <summary>
+        /// 2 -- none alarm system type for infrastructure
+        /// </summary>
         None = 2,
+        /// <summary>
+        /// 3 -- only visual light alarm system type for infrastructure
+        /// </summary>
         OnlyVisualLight = 3,
+        /// <summary>
+        /// 4 -- SCADA and light alarm system type for infrastructure
+        /// </summary>
         SCADAAndLight = 4,
+        /// <summary>
+        /// 5 -- pager and light alarm system type for infrastructure
+        /// </summary>
         PagerAndLight = 5,
     }
     public enum AnalyzeMethodEnum

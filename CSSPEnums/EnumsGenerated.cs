@@ -14,25 +14,6 @@ namespace CSSPEnums
     {
 
         #region Functions Get Enum Text
-        public string GetEnumText_AddressTypeEnum(AddressTypeEnum? addressType)
-        {
-            if (addressType == null)
-                return CSSPEnumsRes.Empty;
-
-            switch (addressType)
-            {
-                case AddressTypeEnum.Error:
-                    return CSSPEnumsRes.Empty;
-                case AddressTypeEnum.Mailing:
-                    return CSSPEnumsRes.AddressTypeEnumMailing;
-                case AddressTypeEnum.Shipping:
-                    return CSSPEnumsRes.AddressTypeEnumShipping;
-                case AddressTypeEnum.Civic:
-                    return CSSPEnumsRes.AddressTypeEnumCivic;
-                default:
-                    return CSSPEnumsRes.Empty;
-            }
-        }
         public string GetEnumText_ActionDBTypeEnum(ActionDBTypeEnum? actionDBType)
         {
             if (actionDBType == null)
@@ -50,6 +31,25 @@ namespace CSSPEnums
                     return CSSPEnumsRes.ActionDBTypeEnumUpdate;
                 case ActionDBTypeEnum.Delete:
                     return CSSPEnumsRes.ActionDBTypeEnumDelete;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        public string GetEnumText_AddressTypeEnum(AddressTypeEnum? addressType)
+        {
+            if (addressType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (addressType)
+            {
+                case AddressTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case AddressTypeEnum.Mailing:
+                    return CSSPEnumsRes.AddressTypeEnumMailing;
+                case AddressTypeEnum.Shipping:
+                    return CSSPEnumsRes.AddressTypeEnumShipping;
+                case AddressTypeEnum.Civic:
+                    return CSSPEnumsRes.AddressTypeEnumCivic;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -2165,21 +2165,6 @@ namespace CSSPEnums
         #endregion Functions Get Enum Text
 
         #region Function Get Enum Text Ordered
-        public List<AddressTypeEnumTextOrdered> GetAddressTypeEnumTextOrderedList()
-        {
-            List<AddressTypeEnumTextOrdered> AddressTypeEnumTextOrderedList = new List<AddressTypeEnumTextOrdered>();
-
-            for (int i = 1, count = Enum.GetNames(typeof(AddressTypeEnum)).Count(); i < count; i++)
-            {
-                AddressTypeEnumTextOrderedList.Add(new AddressTypeEnumTextOrdered() { AddressType = (AddressTypeEnum)i, AddressTypeText = GetEnumText_AddressTypeEnum((AddressTypeEnum)i) });
-            }
-
-            AddressTypeEnumTextOrderedList = (from c in AddressTypeEnumTextOrderedList
-                                              orderby c.AddressTypeText
-                                              select c).ToList();
-
-            return AddressTypeEnumTextOrderedList;
-        }
         public List<ActionDBTypeEnumTextOrdered> GetActionDBTypeEnumTextOrderedList()
         {
             List<ActionDBTypeEnumTextOrdered> ActionDBTypeEnumTextOrderedList = new List<ActionDBTypeEnumTextOrdered>();
@@ -2194,6 +2179,21 @@ namespace CSSPEnums
                                               select c).ToList();
 
             return ActionDBTypeEnumTextOrderedList;
+        }
+        public List<AddressTypeEnumTextOrdered> GetAddressTypeEnumTextOrderedList()
+        {
+            List<AddressTypeEnumTextOrdered> AddressTypeEnumTextOrderedList = new List<AddressTypeEnumTextOrdered>();
+
+            for (int i = 1, count = Enum.GetNames(typeof(AddressTypeEnum)).Count(); i < count; i++)
+            {
+                AddressTypeEnumTextOrderedList.Add(new AddressTypeEnumTextOrdered() { AddressType = (AddressTypeEnum)i, AddressTypeText = GetEnumText_AddressTypeEnum((AddressTypeEnum)i) });
+            }
+
+            AddressTypeEnumTextOrderedList = (from c in AddressTypeEnumTextOrderedList
+                                              orderby c.AddressTypeText
+                                              select c).ToList();
+
+            return AddressTypeEnumTextOrderedList;
         }
         public List<AerationTypeEnumTextOrdered> GetAerationTypeEnumTextOrderedList()
         {
@@ -3159,22 +3159,6 @@ namespace CSSPEnums
         #endregion Function Get Enum Text Ordered
 
         #region Enum CheckOK
-        public string AddressTypeOK(AddressTypeEnum? addressType)
-        {
-            if (addressType == null)
-                return "";
-
-            switch ((AddressTypeEnum)addressType)
-            {
-                case AddressTypeEnum.Error:
-                case AddressTypeEnum.Mailing:
-                case AddressTypeEnum.Shipping:
-                case AddressTypeEnum.Civic:
-                    return "";
-                default:
-                    return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AddressType);
-            }
-        }
         public string ActionDBTypeOK(ActionDBTypeEnum? actionDBType)
         {
             if (actionDBType == null)
@@ -3190,6 +3174,22 @@ namespace CSSPEnums
                     return "";
                 default:
                     return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ActionDBType);
+            }
+        }
+        public string AddressTypeOK(AddressTypeEnum? addressType)
+        {
+            if (addressType == null)
+                return "";
+
+            switch ((AddressTypeEnum)addressType)
+            {
+                case AddressTypeEnum.Error:
+                case AddressTypeEnum.Mailing:
+                case AddressTypeEnum.Shipping:
+                case AddressTypeEnum.Civic:
+                    return "";
+                default:
+                    return string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AddressType);
             }
         }
         public string AerationTypeOK(AerationTypeEnum? aerationType)

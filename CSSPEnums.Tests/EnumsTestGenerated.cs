@@ -16,41 +16,6 @@ namespace CSSPEnums.Tests
 
         #region Testing Methods GetEnumText public
         [TestMethod]
-        public void Enums_GetEnumText_AddressTypeEnum_Test()
-        {
-            foreach (CultureInfo culture in cultureListGood)
-            {
-                SetupTest(culture);
-        
-                string retStr = enums.GetEnumText_AddressTypeEnum(null);
-                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
-                {
-                    retStr = enums.GetEnumText_AddressTypeEnum((AddressTypeEnum)i);
-        
-                    switch ((AddressTypeEnum)i)
-                    {
-                        case AddressTypeEnum.Error:
-                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-                            break;
-                        case AddressTypeEnum.Mailing:
-                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumMailing, retStr);
-                            break;
-                        case AddressTypeEnum.Shipping:
-                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumShipping, retStr);
-                            break;
-                        case AddressTypeEnum.Civic:
-                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumCivic, retStr);
-                            break;
-                        default:
-                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-                            break;
-                    }
-                }
-            }
-        }
-        [TestMethod]
         public void Enums_GetEnumText_ActionDBTypeEnum_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -80,6 +45,41 @@ namespace CSSPEnums.Tests
                             break;
                         case ActionDBTypeEnum.Delete:
                             Assert.AreEqual(CSSPEnumsRes.ActionDBTypeEnumDelete, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_GetEnumText_AddressTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+        
+                string retStr = enums.GetEnumText_AddressTypeEnum(null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+        
+                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
+                {
+                    retStr = enums.GetEnumText_AddressTypeEnum((AddressTypeEnum)i);
+        
+                    switch ((AddressTypeEnum)i)
+                    {
+                        case AddressTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case AddressTypeEnum.Mailing:
+                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumMailing, retStr);
+                            break;
+                        case AddressTypeEnum.Shipping:
+                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumShipping, retStr);
+                            break;
+                        case AddressTypeEnum.Civic:
+                            Assert.AreEqual(CSSPEnumsRes.AddressTypeEnumCivic, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -3667,35 +3667,6 @@ namespace CSSPEnums.Tests
 
         #region Testing Methods Check OK public
         [TestMethod]
-        public void Enums_AddressTypeOK_Test()
-        {
-            foreach (CultureInfo culture in cultureListGood)
-            {
-                SetupTest(culture);
-
-                string retStr = enums.AddressTypeOK(null);
-                Assert.AreEqual("", retStr);
-
-                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
-                {
-                    retStr = enums.AddressTypeOK((AddressTypeEnum)i);
-
-                    switch ((AddressTypeEnum)i)
-                    {
-                        case AddressTypeEnum.Error:
-                        case AddressTypeEnum.Mailing:
-                        case AddressTypeEnum.Shipping:
-                        case AddressTypeEnum.Civic:
-                            Assert.AreEqual("", retStr);
-                            break;
-                        default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AddressType), retStr);
-                            break;
-                    }
-                }
-            }
-        }
-        [TestMethod]
         public void Enums_ActionDBTypeOK_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -3720,6 +3691,35 @@ namespace CSSPEnums.Tests
                             break;
                         default:
                             Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ActionDBType), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_AddressTypeOK_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                string retStr = enums.AddressTypeOK(null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
+                {
+                    retStr = enums.AddressTypeOK((AddressTypeEnum)i);
+
+                    switch ((AddressTypeEnum)i)
+                    {
+                        case AddressTypeEnum.Error:
+                        case AddressTypeEnum.Mailing:
+                        case AddressTypeEnum.Shipping:
+                        case AddressTypeEnum.Civic:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AddressType), retStr);
                             break;
                     }
                 }
@@ -6011,33 +6011,6 @@ namespace CSSPEnums.Tests
         #endregion Testing Methods Check OK public
         #region Testing Methods TextOrdered public
         [TestMethod]
-        public void Enums_AddressTypeEnumTextOrdered_Test()
-        {
-            foreach (CultureInfo culture in cultureListGood)
-            {
-                SetupTest(culture);
-
-                List<AddressTypeEnumTextOrdered> AddressTypeEnumList = new List<AddressTypeEnumTextOrdered>();
-                for (int i = 1, count = Enum.GetNames(typeof(AddressTypeEnum)).Length; i < count; i++)
-                {
-                    AddressTypeEnumList.Add(new AddressTypeEnumTextOrdered() { AddressType = (AddressTypeEnum)i, AddressTypeText = enums.GetEnumText_AddressTypeEnum((AddressTypeEnum)i) });
-                }
-                AddressTypeEnumList = AddressTypeEnumList.OrderBy(c => c.AddressTypeText).ToList();
-
-                List<AddressTypeEnumTextOrdered> AddressTypeEnumTextOrderedList = enums.GetAddressTypeEnumTextOrderedList();
-                Assert.AreEqual(AddressTypeEnumList.Count, AddressTypeEnumTextOrderedList.Count);
-
-                AddressTypeEnumTextOrdered AddressTypeEnumTextOrdered = new AddressTypeEnumTextOrdered();
-                Assert.IsNotNull(AddressTypeEnumTextOrdered);
-
-                for (int i = 0, count = AddressTypeEnumList.Count; i < count; i++)
-                {
-                    Assert.AreEqual(AddressTypeEnumList[i].AddressTypeText, AddressTypeEnumTextOrderedList[i].AddressTypeText);
-                    Assert.AreEqual(AddressTypeEnumList[i].AddressType, AddressTypeEnumTextOrderedList[i].AddressType);
-                }
-            }
-        }
-        [TestMethod]
         public void Enums_ActionDBTypeEnumTextOrdered_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -6061,6 +6034,33 @@ namespace CSSPEnums.Tests
                 {
                     Assert.AreEqual(ActionDBTypeEnumList[i].ActionDBTypeText, ActionDBTypeEnumTextOrderedList[i].ActionDBTypeText);
                     Assert.AreEqual(ActionDBTypeEnumList[i].ActionDBType, ActionDBTypeEnumTextOrderedList[i].ActionDBType);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_AddressTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                List<AddressTypeEnumTextOrdered> AddressTypeEnumList = new List<AddressTypeEnumTextOrdered>();
+                for (int i = 1, count = Enum.GetNames(typeof(AddressTypeEnum)).Length; i < count; i++)
+                {
+                    AddressTypeEnumList.Add(new AddressTypeEnumTextOrdered() { AddressType = (AddressTypeEnum)i, AddressTypeText = enums.GetEnumText_AddressTypeEnum((AddressTypeEnum)i) });
+                }
+                AddressTypeEnumList = AddressTypeEnumList.OrderBy(c => c.AddressTypeText).ToList();
+
+                List<AddressTypeEnumTextOrdered> AddressTypeEnumTextOrderedList = enums.GetAddressTypeEnumTextOrderedList();
+                Assert.AreEqual(AddressTypeEnumList.Count, AddressTypeEnumTextOrderedList.Count);
+
+                AddressTypeEnumTextOrdered AddressTypeEnumTextOrdered = new AddressTypeEnumTextOrdered();
+                Assert.IsNotNull(AddressTypeEnumTextOrdered);
+
+                for (int i = 0, count = AddressTypeEnumList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(AddressTypeEnumList[i].AddressTypeText, AddressTypeEnumTextOrderedList[i].AddressTypeText);
+                    Assert.AreEqual(AddressTypeEnumList[i].AddressType, AddressTypeEnumTextOrderedList[i].AddressType);
                 }
             }
         }
