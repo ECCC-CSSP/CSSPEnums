@@ -14,7 +14,7 @@ namespace CSSPEnums
     {
 
         #region Functions Get Enum Text
-        public string GetEnumText_ActionDBTypeEnum(ActionDBTypeEnum? actionDBType)
+        private string GetEnumText_ActionDBTypeEnum(ActionDBTypeEnum? actionDBType)
         {
             if (actionDBType == null)
                 return CSSPEnumsRes.Empty;

@@ -1,12 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.Threading;
-using System.Net;
-using System.Reflection;
 
 namespace CSSPEnums
 {
@@ -61,148 +59,8 @@ namespace CSSPEnums
         }
         #endregion Construtors
 
-        #region Functions public
-        public string GetResValueForTypeAndField(Type type, FieldInfo fieldInfo)
-        {
-            string enumName = type.Name;
-
-            switch (enumName)
-            {
-                case "ActionDBTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ActionDBTypeEnum(((ActionDBTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AddressTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AddressTypeEnum(((AddressTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AerationTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AerationTypeEnum(((AerationTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AlarmSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AlarmSystemTypeEnum(((AlarmSystemTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AnalyzeMethodEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AnalyzeMethodEnum(((AnalyzeMethodEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AppTaskCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskCommandEnum(((AppTaskCommandEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "AppTaskStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskStatusEnum(((AppTaskStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "BeaufortScaleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BeaufortScaleEnum(((BeaufortScaleEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "BoxModelResultTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BoxModelResultTypeEnum(((BoxModelResultTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "CollectionSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CollectionSystemTypeEnum(((CollectionSystemTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ContactTitleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ContactTitleEnum(((ContactTitleEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "CSSPWQInputSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputSheetTypeEnum(((CSSPWQInputSheetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "CSSPWQInputTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputTypeEnum(((CSSPWQInputTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "DailyOrHourlyDataEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DailyOrHourlyDataEnum(((DailyOrHourlyDataEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "DatabaseTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DatabaseTypeEnum(((DatabaseTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "DisinfectionTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DisinfectionTypeEnum(((DisinfectionTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "EmailTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_EmailTypeEnum(((EmailTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "FacilityTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FacilityTypeEnum(((FacilityTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "FilePurposeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FilePurposeEnum(((FilePurposeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "FileStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileStatusEnum(((FileStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "FileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileTypeEnum(((FileTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "InfrastructureTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_InfrastructureTypeEnum(((InfrastructureTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "KMZActionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_KMZActionEnum(((KMZActionEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "LaboratoryEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LaboratoryEnum(((LaboratoryEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "LabSheetStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetStatusEnum(((LabSheetStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "LabSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetTypeEnum(((LabSheetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "LanguageEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LanguageEnum(((LanguageEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "LogCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LogCommandEnum(((LogCommandEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "MapInfoDrawTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MapInfoDrawTypeEnum(((MapInfoDrawTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "MikeBoundaryConditionLevelOrVelocityEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeBoundaryConditionLevelOrVelocityEnum(((MikeBoundaryConditionLevelOrVelocityEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "MikeScenarioSpecialResultKMLTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeScenarioSpecialResultKMLTypeEnum(((MikeScenarioSpecialResultKMLTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "MWQMSiteLatestClassificationEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MWQMSiteLatestClassificationEnum(((MWQMSiteLatestClassificationEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "PolSourceInactiveReasonEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceInactiveReasonEnum(((PolSourceInactiveReasonEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "PolSourceIssueRiskEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceIssueRiskEnum(((PolSourceIssueRiskEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "PreliminaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PreliminaryTreatmentTypeEnum(((PreliminaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "PrimaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PrimaryTreatmentTypeEnum(((PrimaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportConditionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportConditionEnum(((ReportConditionEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportFieldTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFieldTypeEnum(((ReportFieldTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportFileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFileTypeEnum(((ReportFileTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportFormatingDateEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingDateEnum(((ReportFormatingDateEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportFormatingNumberEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingNumberEnum(((ReportFormatingNumberEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportSortingEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportSortingEnum(((ReportSortingEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportTreeNodeSubTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeSubTypeEnum(((ReportTreeNodeSubTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ReportTreeNodeTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeTypeEnum(((ReportTreeNodeTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SameDayNextDayEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SameDayNextDayEnum(((SameDayNextDayEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SampleMatrixEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleMatrixEnum(((SampleMatrixEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SampleStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleStatusEnum(((SampleStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SampleTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleTypeEnum(((SampleTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SamplingPlanTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SamplingPlanTypeEnum(((SamplingPlanTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "ScenarioStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ScenarioStatusEnum(((ScenarioStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SearchTagEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SearchTagEnum(((SearchTagEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SecondaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SecondaryTreatmentTypeEnum(((SecondaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SiteTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SiteTypeEnum(((SiteTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "SpecialTableTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SpecialTableTypeEnum(((SpecialTableTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "StorageDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StorageDataTypeEnum(((StorageDataTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "StreetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StreetTypeEnum(((StreetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TelTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TelTypeEnum(((TelTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TertiaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TertiaryTreatmentTypeEnum(((TertiaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TideDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideDataTypeEnum(((TideDataTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TideTextEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideTextEnum(((TideTextEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TranslationStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TranslationStatusEnum(((TranslationStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TreatmentTypeEnum(((TreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TVAuthEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVAuthEnum(((TVAuthEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "TVTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVTypeEnum(((TVTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                case "WebTideDataSetEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_WebTideDataSetEnum(((WebTideDataSetEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-                default:
-                    return "";
-            }
-        }
-        #endregion Functions public
+        #region Functions
+        #endregion Functions
 
     }
     /// <summary>

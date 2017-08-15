@@ -22,12 +22,12 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
         
-                string retStr = enums.GetEnumText_ActionDBTypeEnum(null);
+                string retStr = enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), null);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
         
                 for (int i = 0, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length + 1; i < count; i++)
                 {
-                    retStr = enums.GetEnumText_ActionDBTypeEnum((ActionDBTypeEnum)i);
+                    retStr = enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), (ActionDBTypeEnum)i);
         
                     switch ((ActionDBTypeEnum)i)
                     {

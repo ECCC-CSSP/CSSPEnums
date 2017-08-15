@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSSPEnumsGenerateCodeHelper</RootNamespace>
     <AssemblyName>CSSPEnumsGenerateCodeHelper</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSSPModels">
+      <HintPath>..\..\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSPServices">
+      <HintPath>..\..\CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -42,10 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumGenerateCodeHelper.cs" />
+    <Compile Include="EnumsWithHelp.cs" />
     <Compile Include="EnumsGenerate.cs" />
     <Compile Include="EnumsTestGenerate.cs" />
     <Compile Include="EnumsTextOrderGenerate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSSPEnums\CSSPEnums.csproj">
+      <Project>{23b61dd9-3fb7-40ca-b044-3465f4ef77fc}</Project>
+      <Name>CSSPEnums</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

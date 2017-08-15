@@ -46,6 +46,7 @@
             this.lblBaseDir = new System.Windows.Forms.Label();
             this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
+            this.butGenerateEnumWithHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -75,6 +76,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.lblFile1);
             this.splitContainer1.Panel1.Controls.Add(this.textBoxBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.lblBaseDir);
+            this.splitContainer1.Panel1.Controls.Add(this.butGenerateEnumWithHelp);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateAllCodeFiles);
             // 
             // splitContainer1.Panel2
@@ -233,6 +235,16 @@
             this.richTextBoxStatus.TabIndex = 0;
             this.richTextBoxStatus.Text = "";
             // 
+            // butGenerateEnumWithHelp
+            // 
+            this.butGenerateEnumWithHelp.Location = new System.Drawing.Point(414, 239);
+            this.butGenerateEnumWithHelp.Name = "butGenerateEnumWithHelp";
+            this.butGenerateEnumWithHelp.Size = new System.Drawing.Size(199, 23);
+            this.butGenerateEnumWithHelp.TabIndex = 11;
+            this.butGenerateEnumWithHelp.Text = "Generate EnumsWithHelp.cs";
+            this.butGenerateEnumWithHelp.UseVisualStyleBackColor = true;
+            this.butGenerateEnumWithHelp.Click += new System.EventHandler(this.butGenerateEnumsWithHelp_Click);
+            // 
             // CSSPEnumsGenerateCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +284,7 @@
         private System.Windows.Forms.Label lblBaseDir;
         private System.Windows.Forms.Button butGenerateAllCodeFiles;
         private System.Windows.Forms.RichTextBox richTextBoxStatus;
+        private System.Windows.Forms.Button butGenerateEnumWithHelp;
     }
 }
 

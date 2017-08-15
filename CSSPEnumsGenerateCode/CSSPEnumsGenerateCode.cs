@@ -44,6 +44,11 @@ namespace CSSPEnumsGenerateCode
         {
             richTextBoxStatus.AppendText(e.Status + "\r\n");
         }
+        private void butGenerateEnumsWithHelp_Click(object sender, EventArgs e)
+        {
+            richTextBoxStatus.Text = "";
+            GenerateEnumsWithHelpCode();
+        }
         #endregion Events
 
         #region Functions public
@@ -79,6 +84,22 @@ namespace CSSPEnumsGenerateCode
             enumGenerateCodeHelper.EnumsTestGenerate();
 
             richTextBoxStatus.AppendText("Done...\r\n");
+        }
+        private void GenerateEnumsWithHelpCode()
+        {
+            richTextBoxStatus.AppendText("Stating...\r\n");
+
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+            // Will generate CSSPEnums/EnumsWithHelp.cs file
+            // -----------------------------------------------------------------
+            // -----------------------------------------------------------------
+
+            enumGenerateCodeHelper.EnumsWithHelp();
+
+            richTextBoxStatus.AppendText("Done...\r\n\r\n");
+
+            richTextBoxStatus.AppendText("You can now replace the Enums.cs content with the content of EnumsWithHelp.cs file ...\r\n");
         }
         private void StartUp()
         {
