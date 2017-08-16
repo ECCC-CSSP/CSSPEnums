@@ -24,6 +24,14 @@ namespace CSSPEnumsGenerateCodeHelper
             FileInfo fiModels = new FileInfo(enumsFiles.BaseDir + @"CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
             FileInfo fiServices = new FileInfo(enumsFiles.BaseDir + @"CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
+            if (!fiDLL.Exists)
+            {
+                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiDLL.FullName + "]"));
+                return;
+            }
+            var importAssembly = Assembly.LoadFile(fiDLL.FullName);
+            Type[] types = importAssembly.GetTypes();
+
             if (!fiModels.Exists)
             {
                 ErrorEvent(new ErrorEventArgs("File does not exist [" + fiModels.FullName + "]"));
@@ -48,6 +56,7 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"using System.Threading.Tasks;");
             sb.AppendLine(@"using System.Globalization;");
             sb.AppendLine(@"using System.Threading;");
+            sb.AppendLine(@"using System.Net;");
             sb.AppendLine(@"");
             sb.AppendLine(@"namespace CSSPEnums");
             sb.AppendLine(@"{");
@@ -103,14 +112,39 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"        #endregion Construtors");
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Functions public");
-            sb.AppendLine(@"        public string GetResValueForTypeAndField(Type type, FieldInfo fieldInfo)");
+            sb.AppendLine(@"        public string GetResValueForTypeAndField(Type type, int IntVal)");
             sb.AppendLine(@"        {");
+            sb.AppendLine(@"            if (LanguageRequest.ToString() != Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName)");
+            sb.AppendLine(@"            {");
+            sb.AppendLine(@"                if (LanguageRequest == LanguageEnum.fr)");
+            sb.AppendLine(@"                {");
+            sb.AppendLine(@"                    Thread.CurrentThread.CurrentCulture = new CultureInfo(""fr-CA"");");
+            sb.AppendLine(@"                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(""fr-CA"");");
+            sb.AppendLine(@"                }");
+            sb.AppendLine(@"                else");
+            sb.AppendLine(@"                {");
+            sb.AppendLine(@"                    Thread.CurrentThread.CurrentCulture = new CultureInfo(""en-CA"");");
+            sb.AppendLine(@"                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(""en-CA"");");
+            sb.AppendLine(@"                }");
+            sb.AppendLine(@"            }");
+            sb.AppendLine(@"");
             sb.AppendLine(@"            string enumName = type.Name;");
             sb.AppendLine(@"");
             sb.AppendLine(@"            switch (enumName)");
             sb.AppendLine(@"            {");
-            sb.AppendLine(@"                case ""ActionDBTypeEnum"":");
-            sb.AppendLine(@"                    return WebUtility.HtmlEncode(GetEnumText_ActionDBTypeEnum(((ActionDBTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));");
+            foreach (Type type in types)
+            {
+                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
+                {
+                    string enumName = type.Name;
+                    if (enumName == "PolSourceObsInfoEnum")
+                        continue;
+
+                    sb.AppendLine(@"                case """ + enumName + @""":");
+                    sb.AppendLine(@"                    return WebUtility.HtmlEncode(GetEnumText_" + enumName + @"((" + enumName + @")IntVal));");
+                }
+            }
+
             sb.AppendLine(@"                default:");
             sb.AppendLine(@"                    return """";");
             sb.AppendLine(@"            }");
@@ -120,8 +154,6 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"    }");
             #endregion Top part
 
-            var importAssembly = Assembly.LoadFile(fiDLL.FullName);
-            Type[] types = importAssembly.GetTypes();
             foreach (Type type in types)
             {
                 if (type.GetTypeInfo().BaseType == typeof(System.Enum))
@@ -156,7 +188,7 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"    /// </summary>");
                     sb.AppendLine(@"    /// <remarks>");
                     sb.AppendLine(@"    /// <code>");
-                    sb.AppendLine(@"    ///     public enum ActionDBTypeEnum");
+                    sb.AppendLine(@"    ///     public enum " + enumName + "");
                     sb.AppendLine(@"    ///     {");
                     foreach (FieldInfo fieldInfo in type.GetFields())
                     {
@@ -176,10 +208,12 @@ namespace CSSPEnumsGenerateCodeHelper
                         if (fieldInfo.FieldType.GetTypeInfo().BaseType == typeof(System.Enum))
                         {
                             string fName = fieldInfo.Name;
+                            int IntVal = (int)fieldInfo.GetValue(fieldInfo.Name);
+
                             sb.AppendLine(@"        /// <summary>");
-                            sb.AppendLine(@"        /// " + ((int)fieldInfo.GetValue(fName)).ToString() + " -- en [" + enumsEn.GetResValueForTypeAndField(type, fieldInfo) + "] ---- fr [" + enumsFr.GetResValueForTypeAndField(type, fieldInfo) + "]");
+                            sb.AppendLine(@"        /// " + IntVal.ToString() + " -- en [" + enumsEn.GetResValueForTypeAndField(type, IntVal) + "] ---- fr [" + enumsFr.GetResValueForTypeAndField(type, IntVal) + "]");
                             sb.AppendLine(@"        /// </summary>");
-                            sb.AppendLine(@"        " + fName + " = " + ((int)fieldInfo.GetValue(fName)).ToString() + ",");
+                            sb.AppendLine(@"        " + fName + " = " + IntVal.ToString() + ",");
                         }
                     }
                     sb.AppendLine(@"    }");

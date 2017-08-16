@@ -7,15 +7,25 @@ using System.Threading.Tasks;
 namespace CSSPEnums
 {
     #region Class Enum Ordered
-    public class ActionDBTypeEnumTextOrdered
+    public class EnumTextOrdered
     {
-        public ActionDBTypeEnumTextOrdered()
+        public EnumTextOrdered()
         {
+
         }
 
-        public ActionDBTypeEnum ActionDBType { get; set; }
-        public string ActionDBTypeText { get; set; }
+        public int EnumInt { get; set; }
+        public string EnumText { get; set; }
     }
+    //public class ActionDBTypeEnumTextOrdered
+    //{
+    //    public ActionDBTypeEnumTextOrdered()
+    //    {
+    //    }
+
+    //    public ActionDBTypeEnum ActionDBType { get; set; }
+    //    public string ActionDBTypeText { get; set; }
+    //}
     public class AddressTypeEnumTextOrdered
     {
         public AddressTypeEnumTextOrdered()

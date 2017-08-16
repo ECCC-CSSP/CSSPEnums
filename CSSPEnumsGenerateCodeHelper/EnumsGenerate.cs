@@ -45,7 +45,7 @@ namespace CSSPEnumsGenerateCodeHelper
                     if (enumName == "PolSourceObsInfoEnum")
                         continue;
 
-                    sb.AppendLine(@"        public string GetEnumText_" + enumName + "(" + enumName + "? " + enumName.Substring(0, 1).ToLower() + enumName.Substring(1, enumName.Length - 5) + ")");
+                    sb.AppendLine(@"        private string GetEnumText_" + enumName + "(" + enumName + "? " + enumName.Substring(0, 1).ToLower() + enumName.Substring(1, enumName.Length - 5) + ")");
                     sb.AppendLine(@"        {");
                     sb.AppendLine(@"            if (" + enumName.Substring(0, 1).ToLower() + enumName.Substring(1, enumName.Length - 5) + " == null)");
                     sb.AppendLine(@"                return CSSPEnumsRes.Empty;");

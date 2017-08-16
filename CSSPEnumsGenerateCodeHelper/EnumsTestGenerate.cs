@@ -27,6 +27,7 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"using CSSPEnums;");
             sb.AppendLine(@"using CSSPEnums.Resources;");
             sb.AppendLine(@"using System.Linq;");
+            sb.AppendLine(@"using System.Net;");
             sb.AppendLine(@"");
             sb.AppendLine(@"namespace CSSPEnums.Tests");
             sb.AppendLine(@"{");
@@ -53,7 +54,7 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"            {");
                     sb.AppendLine(@"                SetupTest(culture);");
                     sb.AppendLine(@"        ");
-                    sb.AppendLine(@"                string retStr = enums.GetEnumText_" + enumName + "(null);");
+                    sb.AppendLine(@"                string retStr = enums.GetResValueForTypeAndField(typeof(" + enumName + @"), -1);");
                     sb.AppendLine(@"                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);");
                     sb.AppendLine(@"        ");
                     if (enumName == "BeaufortScaleEnum")
@@ -69,7 +70,7 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 1; i < count; i++)");
                     }
                     sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    retStr = enums.GetEnumText_" + enumName + "((" + enumName + ")i);");
+                    sb.AppendLine(@"                    retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(" + enumName + "), i));");
                     sb.AppendLine(@"        ");
                     sb.AppendLine(@"                    switch ((" + enumName + ")i)");
                     sb.AppendLine(@"                    {");
@@ -194,7 +195,7 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"                for (int i = 1, count = Enum.GetNames(typeof(" + enumName + ")).Length; i < count; i++)");
                     }
                     sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    " + enumName + "List.Add(new " + enumName + "TextOrdered() { " + enumName.Substring(0, enumName.Length - 4) + " = (" + enumName + ")i, " + enumName.Substring(0, enumName.Length - 4) + "Text = enums.GetEnumText_" + enumName + "((" + enumName + ")i) });");
+                    sb.AppendLine(@"                    " + enumName + "List.Add(new " + enumName + "TextOrdered() { " + enumName.Substring(0, enumName.Length - 4) + " = (" + enumName + ")i, " + enumName.Substring(0, enumName.Length - 4) + "Text = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(" + enumName + "), i)) });");
                     sb.AppendLine(@"                }");
                     sb.AppendLine(@"                " + enumName + "List = " + enumName + "List.OrderBy(c => c." + enumName.Substring(0, enumName.Length - 4) + "Text).ToList();");
                     sb.AppendLine(@"");
