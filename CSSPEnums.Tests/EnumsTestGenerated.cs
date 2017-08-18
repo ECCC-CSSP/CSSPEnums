@@ -22,11 +22,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), i));
         
@@ -60,11 +63,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AddressTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AddressTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AddressTypeEnum), i));
         
@@ -95,11 +101,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AerationTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AerationTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AerationTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AerationTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AerationTypeEnum), i));
         
@@ -127,11 +136,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AlarmSystemTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AlarmSystemTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AlarmSystemTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AlarmSystemTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AlarmSystemTypeEnum), i));
         
@@ -168,11 +180,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AnalyzeMethodEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AnalyzeMethodEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AnalyzeMethodEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AnalyzeMethodEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AnalyzeMethodEnum), i));
         
@@ -230,11 +245,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AppTaskCommandEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AppTaskCommandEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AppTaskCommandEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AppTaskCommandEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskCommandEnum), i));
         
@@ -304,11 +322,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(AppTaskStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(AppTaskStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(AppTaskStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AppTaskStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskStatusEnum), i));
         
@@ -342,11 +363,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(BeaufortScaleEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = -1, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(BeaufortScaleEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = -1, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length + 4; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BeaufortScaleEnum), i));
         
@@ -407,11 +431,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(BoxModelResultTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(BoxModelResultTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(BoxModelResultTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(BoxModelResultTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BoxModelResultTypeEnum), i));
         
@@ -448,11 +475,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(CollectionSystemTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(CollectionSystemTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(CollectionSystemTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(CollectionSystemTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CollectionSystemTypeEnum), i));
         
@@ -507,11 +537,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ContactTitleEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ContactTitleEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ContactTitleEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ContactTitleEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ContactTitleEnum), i));
         
@@ -560,11 +593,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(CSSPWQInputSheetTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputSheetTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(CSSPWQInputSheetTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputSheetTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputSheetTypeEnum), i));
         
@@ -595,11 +631,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(CSSPWQInputTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(CSSPWQInputTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputTypeEnum), i));
         
@@ -627,11 +666,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(DailyOrHourlyDataEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(DailyOrHourlyDataEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(DailyOrHourlyDataEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(DailyOrHourlyDataEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DailyOrHourlyDataEnum), i));
         
@@ -659,11 +701,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(DatabaseTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(DatabaseTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(DatabaseTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(DatabaseTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DatabaseTypeEnum), i));
         
@@ -697,11 +742,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(DisinfectionTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(DisinfectionTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(DisinfectionTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(DisinfectionTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DisinfectionTypeEnum), i));
         
@@ -744,11 +792,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(EmailTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(EmailTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(EmailTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(EmailTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(EmailTypeEnum), i));
         
@@ -782,11 +833,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(FacilityTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(FacilityTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(FacilityTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(FacilityTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FacilityTypeEnum), i));
         
@@ -814,11 +868,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(FilePurposeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(FilePurposeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(FilePurposeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(FilePurposeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FilePurposeEnum), i));
         
@@ -876,11 +933,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(FileStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(FileStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(FileStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(FileStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileStatusEnum), i));
         
@@ -917,11 +977,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(FileTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(FileTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(FileTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(FileTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileTypeEnum), i));
         
@@ -1006,11 +1069,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(InfrastructureTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(InfrastructureTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(InfrastructureTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(InfrastructureTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(InfrastructureTypeEnum), i));
         
@@ -1047,11 +1113,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(KMZActionEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(KMZActionEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(KMZActionEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(KMZActionEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(KMZActionEnum), i));
         
@@ -1097,11 +1166,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(LaboratoryEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(LaboratoryEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(LaboratoryEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(LaboratoryEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LaboratoryEnum), i));
         
@@ -1210,11 +1282,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(LabSheetStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(LabSheetStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(LabSheetStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(LabSheetStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetStatusEnum), i));
         
@@ -1248,11 +1323,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(LabSheetTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(LabSheetTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(LabSheetTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(LabSheetTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetTypeEnum), i));
         
@@ -1283,11 +1361,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(LanguageEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(LanguageEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(LanguageEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(LanguageEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LanguageEnum), i));
         
@@ -1321,11 +1402,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(LogCommandEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(LogCommandEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(LogCommandEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(LogCommandEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LogCommandEnum), i));
         
@@ -1356,11 +1440,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(MapInfoDrawTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(MapInfoDrawTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(MapInfoDrawTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(MapInfoDrawTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MapInfoDrawTypeEnum), i));
         
@@ -1391,11 +1478,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(MikeBoundaryConditionLevelOrVelocityEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(MikeBoundaryConditionLevelOrVelocityEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(MikeBoundaryConditionLevelOrVelocityEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(MikeBoundaryConditionLevelOrVelocityEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeBoundaryConditionLevelOrVelocityEnum), i));
         
@@ -1423,11 +1513,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(MikeScenarioSpecialResultKMLTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(MikeScenarioSpecialResultKMLTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(MikeScenarioSpecialResultKMLTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(MikeScenarioSpecialResultKMLTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeScenarioSpecialResultKMLTypeEnum), i));
         
@@ -1464,11 +1557,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(MWQMSiteLatestClassificationEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(MWQMSiteLatestClassificationEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(MWQMSiteLatestClassificationEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(MWQMSiteLatestClassificationEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MWQMSiteLatestClassificationEnum), i));
         
@@ -1508,11 +1604,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(PolSourceInactiveReasonEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(PolSourceInactiveReasonEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(PolSourceInactiveReasonEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PolSourceInactiveReasonEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceInactiveReasonEnum), i));
         
@@ -1543,11 +1642,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(PolSourceIssueRiskEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(PolSourceIssueRiskEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(PolSourceIssueRiskEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PolSourceIssueRiskEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceIssueRiskEnum), i));
         
@@ -1578,11 +1680,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(PreliminaryTreatmentTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(PreliminaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(PreliminaryTreatmentTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PreliminaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PreliminaryTreatmentTypeEnum), i));
         
@@ -1613,11 +1718,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(PrimaryTreatmentTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(PrimaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(PrimaryTreatmentTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PrimaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PrimaryTreatmentTypeEnum), i));
         
@@ -1651,11 +1759,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportConditionEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportConditionEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportConditionEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportConditionEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportConditionEnum), i));
         
@@ -1701,11 +1812,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportFieldTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFieldTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportFieldTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFieldTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFieldTypeEnum), i));
         
@@ -1865,11 +1979,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportFileTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFileTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportFileTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFileTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFileTypeEnum), i));
         
@@ -1903,11 +2020,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportFormatingDateEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingDateEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportFormatingDateEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingDateEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingDateEnum), i));
         
@@ -1968,11 +2088,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportFormatingNumberEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingNumberEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportFormatingNumberEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingNumberEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingNumberEnum), i));
         
@@ -2036,11 +2159,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportSortingEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportSortingEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportSortingEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportSortingEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportSortingEnum), i));
         
@@ -2068,11 +2194,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportTreeNodeSubTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeSubTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportTreeNodeSubTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeSubTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeSubTypeEnum), i));
         
@@ -2106,11 +2235,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ReportTreeNodeTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ReportTreeNodeTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeTypeEnum), i));
         
@@ -2369,11 +2501,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SameDayNextDayEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SameDayNextDayEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SameDayNextDayEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SameDayNextDayEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SameDayNextDayEnum), i));
         
@@ -2401,11 +2536,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SampleMatrixEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SampleMatrixEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SampleMatrixEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SampleMatrixEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleMatrixEnum), i));
         
@@ -2448,11 +2586,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SampleStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SampleStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SampleStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SampleStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleStatusEnum), i));
         
@@ -2489,11 +2630,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SampleTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 101; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SampleTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 101, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 105; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleTypeEnum), i));
         
@@ -2552,11 +2696,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SamplingPlanTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SamplingPlanTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SamplingPlanTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SamplingPlanTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SamplingPlanTypeEnum), i));
         
@@ -2584,11 +2731,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(ScenarioStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(ScenarioStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(ScenarioStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(ScenarioStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ScenarioStatusEnum), i));
         
@@ -2637,11 +2787,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SearchTagEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SearchTagEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SearchTagEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SearchTagEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SearchTagEnum), i));
         
@@ -2771,11 +2924,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SecondaryTreatmentTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SecondaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SecondaryTreatmentTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SecondaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SecondaryTreatmentTypeEnum), i));
         
@@ -2812,11 +2968,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SiteTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SiteTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SiteTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SiteTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SiteTypeEnum), i));
         
@@ -2847,11 +3006,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(SpecialTableTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(SpecialTableTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(SpecialTableTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(SpecialTableTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SpecialTableTypeEnum), i));
         
@@ -2897,11 +3059,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(StorageDataTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(StorageDataTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(StorageDataTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(StorageDataTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StorageDataTypeEnum), i));
         
@@ -2932,11 +3097,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(StreetTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(StreetTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(StreetTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(StreetTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StreetTypeEnum), i));
         
@@ -2985,11 +3153,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TelTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TelTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TelTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TelTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TelTypeEnum), i));
         
@@ -3029,11 +3200,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TertiaryTreatmentTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TertiaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TertiaryTreatmentTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TertiaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TertiaryTreatmentTypeEnum), i));
         
@@ -3076,11 +3250,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TideDataTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TideDataTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TideDataTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TideDataTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideDataTypeEnum), i));
         
@@ -3108,11 +3285,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TideTextEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TideTextEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TideTextEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TideTextEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideTextEnum), i));
         
@@ -3161,11 +3341,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TranslationStatusEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TranslationStatusEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TranslationStatusEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TranslationStatusEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TranslationStatusEnum), i));
         
@@ -3196,11 +3379,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TreatmentTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TreatmentTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TreatmentTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TreatmentTypeEnum), i));
         
@@ -3321,11 +3507,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TVAuthEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TVAuthEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TVAuthEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TVAuthEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVAuthEnum), i));
         
@@ -3365,11 +3554,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(TVTypeEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(TVTypeEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(TVTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(TVTypeEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVTypeEnum), i));
         
@@ -3610,11 +3802,14 @@ namespace CSSPEnums.Tests
             foreach (CultureInfo culture in cultureListGood)
             {
                 SetupTest(culture);
-        
+
                 string retStr = enums.GetResValueForTypeAndField(typeof(WebTideDataSetEnum), -1);
                 Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
-        
-                for (int i = 0, count = Enum.GetNames(typeof(WebTideDataSetEnum)).Length + 1; i < count; i++)
+
+                retStr = enums.GetResValueForTypeAndField(typeof(WebTideDataSetEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(WebTideDataSetEnum)).Length + 5; i < count; i++)
                 {
                     retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(WebTideDataSetEnum), i));
         
@@ -3674,12 +3869,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ActionDBTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ActionDBTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ActionDBTypeOK((ActionDBTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ActionDBTypeEnum), i);
 
                     switch ((ActionDBTypeEnum)i)
                     {
@@ -3691,7 +3890,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ActionDBType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ActionDBTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -3704,12 +3903,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AddressTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AddressTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AddressTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AddressTypeOK((AddressTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AddressTypeEnum), i);
 
                     switch ((AddressTypeEnum)i)
                     {
@@ -3720,7 +3923,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AddressType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AddressTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -3733,12 +3936,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AerationTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AerationTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AerationTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AerationTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AerationTypeOK((AerationTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AerationTypeEnum), i);
 
                     switch ((AerationTypeEnum)i)
                     {
@@ -3748,7 +3955,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AerationType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AerationTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -3761,12 +3968,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AlarmSystemTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AlarmSystemTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AlarmSystemTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AlarmSystemTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AlarmSystemTypeOK((AlarmSystemTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AlarmSystemTypeEnum), i);
 
                     switch ((AlarmSystemTypeEnum)i)
                     {
@@ -3779,7 +3990,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AlarmSystemType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AlarmSystemTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -3792,12 +4003,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AnalyzeMethodOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AnalyzeMethodEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AnalyzeMethodEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AnalyzeMethodEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AnalyzeMethodOK((AnalyzeMethodEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AnalyzeMethodEnum), i);
 
                     switch ((AnalyzeMethodEnum)i)
                     {
@@ -3817,7 +4032,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AnalyzeMethod), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AnalyzeMethodEnum"), retStr);
                             break;
                     }
                 }
@@ -3830,12 +4045,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AppTaskCommandOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AppTaskCommandEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AppTaskCommandEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AppTaskCommandEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AppTaskCommandOK((AppTaskCommandEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AppTaskCommandEnum), i);
 
                     switch ((AppTaskCommandEnum)i)
                     {
@@ -3859,7 +4078,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AppTaskCommand), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AppTaskCommandEnum"), retStr);
                             break;
                     }
                 }
@@ -3872,12 +4091,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.AppTaskStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(AppTaskStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(AppTaskStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(AppTaskStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.AppTaskStatusOK((AppTaskStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(AppTaskStatusEnum), i);
 
                     switch ((AppTaskStatusEnum)i)
                     {
@@ -3889,7 +4112,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.AppTaskStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AppTaskStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -3902,12 +4125,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.BeaufortScaleOK(null);
+                string retStr = enums.EnumTypeOK(typeof(BeaufortScaleEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length + 1; i < count; i++)
+                for (int i = -1, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.BeaufortScaleOK((BeaufortScaleEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(BeaufortScaleEnum), i);
 
                     switch ((BeaufortScaleEnum)i)
                     {
@@ -3928,7 +4155,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.BeaufortScale), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "BeaufortScaleEnum"), retStr);
                             break;
                     }
                 }
@@ -3941,12 +4168,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.BoxModelResultTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(BoxModelResultTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(BoxModelResultTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(BoxModelResultTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.BoxModelResultTypeOK((BoxModelResultTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(BoxModelResultTypeEnum), i);
 
                     switch ((BoxModelResultTypeEnum)i)
                     {
@@ -3959,7 +4190,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.BoxModelResultType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "BoxModelResultTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -3972,12 +4203,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.CollectionSystemTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(CollectionSystemTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(CollectionSystemTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(CollectionSystemTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.CollectionSystemTypeOK((CollectionSystemTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(CollectionSystemTypeEnum), i);
 
                     switch ((CollectionSystemTypeEnum)i)
                     {
@@ -3996,7 +4231,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.CollectionSystemType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "CollectionSystemTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4009,12 +4244,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ContactTitleOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ContactTitleEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ContactTitleEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ContactTitleEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ContactTitleOK((ContactTitleEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ContactTitleEnum), i);
 
                     switch ((ContactTitleEnum)i)
                     {
@@ -4031,7 +4270,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ContactTitle), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ContactTitleEnum"), retStr);
                             break;
                     }
                 }
@@ -4044,12 +4283,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.CSSPWQInputSheetTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(CSSPWQInputSheetTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputSheetTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputSheetTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.CSSPWQInputSheetTypeOK((CSSPWQInputSheetTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(CSSPWQInputSheetTypeEnum), i);
 
                     switch ((CSSPWQInputSheetTypeEnum)i)
                     {
@@ -4060,7 +4303,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.CSSPWQInputSheetType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "CSSPWQInputSheetTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4073,12 +4316,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.CSSPWQInputTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(CSSPWQInputTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(CSSPWQInputTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.CSSPWQInputTypeOK((CSSPWQInputTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(CSSPWQInputTypeEnum), i);
 
                     switch ((CSSPWQInputTypeEnum)i)
                     {
@@ -4088,7 +4335,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.CSSPWQInputType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "CSSPWQInputTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4101,12 +4348,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.DailyOrHourlyDataOK(null);
+                string retStr = enums.EnumTypeOK(typeof(DailyOrHourlyDataEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(DailyOrHourlyDataEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(DailyOrHourlyDataEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.DailyOrHourlyDataOK((DailyOrHourlyDataEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(DailyOrHourlyDataEnum), i);
 
                     switch ((DailyOrHourlyDataEnum)i)
                     {
@@ -4116,7 +4367,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.DailyOrHourlyData), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DailyOrHourlyDataEnum"), retStr);
                             break;
                     }
                 }
@@ -4129,12 +4380,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.DatabaseTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(DatabaseTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(DatabaseTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(DatabaseTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.DatabaseTypeOK((DatabaseTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(DatabaseTypeEnum), i);
 
                     switch ((DatabaseTypeEnum)i)
                     {
@@ -4146,7 +4401,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.DatabaseType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DatabaseTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4159,12 +4414,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.DisinfectionTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(DisinfectionTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(DisinfectionTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(DisinfectionTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.DisinfectionTypeOK((DisinfectionTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(DisinfectionTypeEnum), i);
 
                     switch ((DisinfectionTypeEnum)i)
                     {
@@ -4179,7 +4438,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.DisinfectionType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DisinfectionTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4192,12 +4451,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.EmailTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(EmailTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(EmailTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(EmailTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.EmailTypeOK((EmailTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(EmailTypeEnum), i);
 
                     switch ((EmailTypeEnum)i)
                     {
@@ -4209,7 +4472,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.EmailType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "EmailTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4222,12 +4485,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.FacilityTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(FacilityTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(FacilityTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(FacilityTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.FacilityTypeOK((FacilityTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(FacilityTypeEnum), i);
 
                     switch ((FacilityTypeEnum)i)
                     {
@@ -4237,7 +4504,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.FacilityType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "FacilityTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4250,12 +4517,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.FilePurposeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(FilePurposeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(FilePurposeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(FilePurposeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.FilePurposeOK((FilePurposeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(FilePurposeEnum), i);
 
                     switch ((FilePurposeEnum)i)
                     {
@@ -4275,7 +4546,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.FilePurpose), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "FilePurposeEnum"), retStr);
                             break;
                     }
                 }
@@ -4288,12 +4559,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.FileStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(FileStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(FileStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(FileStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.FileStatusOK((FileStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(FileStatusEnum), i);
 
                     switch ((FileStatusEnum)i)
                     {
@@ -4306,7 +4581,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.FileStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "FileStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -4319,12 +4594,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.FileTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(FileTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(FileTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(FileTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.FileTypeOK((FileTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(FileTypeEnum), i);
 
                     switch ((FileTypeEnum)i)
                     {
@@ -4353,7 +4632,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.FileType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "FileTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4366,12 +4645,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.InfrastructureTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(InfrastructureTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(InfrastructureTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(InfrastructureTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.InfrastructureTypeOK((InfrastructureTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(InfrastructureTypeEnum), i);
 
                     switch ((InfrastructureTypeEnum)i)
                     {
@@ -4384,7 +4667,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.InfrastructureType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "InfrastructureTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4397,12 +4680,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.KMZActionOK(null);
+                string retStr = enums.EnumTypeOK(typeof(KMZActionEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(KMZActionEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(KMZActionEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.KMZActionOK((KMZActionEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(KMZActionEnum), i);
 
                     switch ((KMZActionEnum)i)
                     {
@@ -4418,7 +4705,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.KMZAction), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "KMZActionEnum"), retStr);
                             break;
                     }
                 }
@@ -4431,12 +4718,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.LaboratoryOK(null);
+                string retStr = enums.EnumTypeOK(typeof(LaboratoryEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(LaboratoryEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(LaboratoryEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.LaboratoryOK((LaboratoryEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(LaboratoryEnum), i);
 
                     switch ((LaboratoryEnum)i)
                     {
@@ -4473,7 +4764,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.Laboratory), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "LaboratoryEnum"), retStr);
                             break;
                     }
                 }
@@ -4486,12 +4777,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.LabSheetStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(LabSheetStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(LabSheetStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(LabSheetStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.LabSheetStatusOK((LabSheetStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(LabSheetStatusEnum), i);
 
                     switch ((LabSheetStatusEnum)i)
                     {
@@ -4503,7 +4798,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.LabSheetStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "LabSheetStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -4516,12 +4811,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.LabSheetTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(LabSheetTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(LabSheetTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(LabSheetTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.LabSheetTypeOK((LabSheetTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(LabSheetTypeEnum), i);
 
                     switch ((LabSheetTypeEnum)i)
                     {
@@ -4532,7 +4831,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.LabSheetType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "LabSheetTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4545,12 +4844,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.LanguageOK(null);
+                string retStr = enums.EnumTypeOK(typeof(LanguageEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(LanguageEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(LanguageEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.LanguageOK((LanguageEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(LanguageEnum), i);
 
                     switch ((LanguageEnum)i)
                     {
@@ -4562,7 +4865,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.Language), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "LanguageEnum"), retStr);
                             break;
                     }
                 }
@@ -4575,12 +4878,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.LogCommandOK(null);
+                string retStr = enums.EnumTypeOK(typeof(LogCommandEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(LogCommandEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(LogCommandEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.LogCommandOK((LogCommandEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(LogCommandEnum), i);
 
                     switch ((LogCommandEnum)i)
                     {
@@ -4591,7 +4898,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.LogCommand), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "LogCommandEnum"), retStr);
                             break;
                     }
                 }
@@ -4604,12 +4911,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.MapInfoDrawTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(MapInfoDrawTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(MapInfoDrawTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(MapInfoDrawTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.MapInfoDrawTypeOK((MapInfoDrawTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(MapInfoDrawTypeEnum), i);
 
                     switch ((MapInfoDrawTypeEnum)i)
                     {
@@ -4620,7 +4931,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.MapInfoDrawType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "MapInfoDrawTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4633,12 +4944,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.MikeBoundaryConditionLevelOrVelocityOK(null);
+                string retStr = enums.EnumTypeOK(typeof(MikeBoundaryConditionLevelOrVelocityEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(MikeBoundaryConditionLevelOrVelocityEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(MikeBoundaryConditionLevelOrVelocityEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.MikeBoundaryConditionLevelOrVelocityOK((MikeBoundaryConditionLevelOrVelocityEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(MikeBoundaryConditionLevelOrVelocityEnum), i);
 
                     switch ((MikeBoundaryConditionLevelOrVelocityEnum)i)
                     {
@@ -4648,7 +4963,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.MikeBoundaryConditionLevelOrVelocity), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "MikeBoundaryConditionLevelOrVelocityEnum"), retStr);
                             break;
                     }
                 }
@@ -4661,12 +4976,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.MikeScenarioSpecialResultKMLTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(MikeScenarioSpecialResultKMLTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(MikeScenarioSpecialResultKMLTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(MikeScenarioSpecialResultKMLTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.MikeScenarioSpecialResultKMLTypeOK((MikeScenarioSpecialResultKMLTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(MikeScenarioSpecialResultKMLTypeEnum), i);
 
                     switch ((MikeScenarioSpecialResultKMLTypeEnum)i)
                     {
@@ -4679,7 +4998,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.MikeScenarioSpecialResultKMLType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "MikeScenarioSpecialResultKMLTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4692,12 +5011,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.MWQMSiteLatestClassificationOK(null);
+                string retStr = enums.EnumTypeOK(typeof(MWQMSiteLatestClassificationEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(MWQMSiteLatestClassificationEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(MWQMSiteLatestClassificationEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.MWQMSiteLatestClassificationOK((MWQMSiteLatestClassificationEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(MWQMSiteLatestClassificationEnum), i);
 
                     switch ((MWQMSiteLatestClassificationEnum)i)
                     {
@@ -4711,7 +5034,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.MWQMSiteLatestClassification), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "MWQMSiteLatestClassificationEnum"), retStr);
                             break;
                     }
                 }
@@ -4724,12 +5047,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.PolSourceInactiveReasonOK(null);
+                string retStr = enums.EnumTypeOK(typeof(PolSourceInactiveReasonEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(PolSourceInactiveReasonEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(PolSourceInactiveReasonEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.PolSourceInactiveReasonOK((PolSourceInactiveReasonEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(PolSourceInactiveReasonEnum), i);
 
                     switch ((PolSourceInactiveReasonEnum)i)
                     {
@@ -4740,7 +5067,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PolSourceInactiveReason), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "PolSourceInactiveReasonEnum"), retStr);
                             break;
                     }
                 }
@@ -4753,12 +5080,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.PolSourceIssueRiskOK(null);
+                string retStr = enums.EnumTypeOK(typeof(PolSourceIssueRiskEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(PolSourceIssueRiskEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(PolSourceIssueRiskEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.PolSourceIssueRiskOK((PolSourceIssueRiskEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(PolSourceIssueRiskEnum), i);
 
                     switch ((PolSourceIssueRiskEnum)i)
                     {
@@ -4769,7 +5100,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PolSourceIssueRisk), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "PolSourceIssueRiskEnum"), retStr);
                             break;
                     }
                 }
@@ -4782,12 +5113,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.PreliminaryTreatmentTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(PreliminaryTreatmentTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(PreliminaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(PreliminaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.PreliminaryTreatmentTypeOK((PreliminaryTreatmentTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(PreliminaryTreatmentTypeEnum), i);
 
                     switch ((PreliminaryTreatmentTypeEnum)i)
                     {
@@ -4798,7 +5133,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PreliminaryTreatmentType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "PreliminaryTreatmentTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4811,12 +5146,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.PrimaryTreatmentTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(PrimaryTreatmentTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(PrimaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(PrimaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.PrimaryTreatmentTypeOK((PrimaryTreatmentTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(PrimaryTreatmentTypeEnum), i);
 
                     switch ((PrimaryTreatmentTypeEnum)i)
                     {
@@ -4828,7 +5167,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.PrimaryTreatmentType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "PrimaryTreatmentTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4841,12 +5180,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportConditionOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportConditionEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportConditionEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportConditionEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportConditionOK((ReportConditionEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportConditionEnum), i);
 
                     switch ((ReportConditionEnum)i)
                     {
@@ -4862,7 +5205,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportCondition), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportConditionEnum"), retStr);
                             break;
                     }
                 }
@@ -4875,12 +5218,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportFieldTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportFieldTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFieldTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFieldTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportFieldTypeOK((ReportFieldTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportFieldTypeEnum), i);
 
                     switch ((ReportFieldTypeEnum)i)
                     {
@@ -4934,7 +5281,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportFieldType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportFieldTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4947,12 +5294,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportFileTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportFileTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFileTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFileTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportFileTypeOK((ReportFileTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportFileTypeEnum), i);
 
                     switch ((ReportFileTypeEnum)i)
                     {
@@ -4964,7 +5315,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportFileType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportFileTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -4977,12 +5328,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportFormatingDateOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportFormatingDateEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingDateEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingDateEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportFormatingDateOK((ReportFormatingDateEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportFormatingDateEnum), i);
 
                     switch ((ReportFormatingDateEnum)i)
                     {
@@ -5003,7 +5358,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportFormatingDate), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportFormatingDateEnum"), retStr);
                             break;
                     }
                 }
@@ -5016,12 +5371,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportFormatingNumberOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportFormatingNumberEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingNumberEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportFormatingNumberEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportFormatingNumberOK((ReportFormatingNumberEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportFormatingNumberEnum), i);
 
                     switch ((ReportFormatingNumberEnum)i)
                     {
@@ -5043,7 +5402,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportFormatingNumber), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportFormatingNumberEnum"), retStr);
                             break;
                     }
                 }
@@ -5056,12 +5415,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportSortingOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportSortingEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportSortingEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportSortingEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportSortingOK((ReportSortingEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportSortingEnum), i);
 
                     switch ((ReportSortingEnum)i)
                     {
@@ -5071,7 +5434,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportSorting), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportSortingEnum"), retStr);
                             break;
                     }
                 }
@@ -5084,12 +5447,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportTreeNodeSubTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportTreeNodeSubTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeSubTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeSubTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportTreeNodeSubTypeOK((ReportTreeNodeSubTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportTreeNodeSubTypeEnum), i);
 
                     switch ((ReportTreeNodeSubTypeEnum)i)
                     {
@@ -5101,7 +5468,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportTreeNodeSubType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportTreeNodeSubTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5114,12 +5481,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ReportTreeNodeTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ReportTreeNodeTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ReportTreeNodeTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ReportTreeNodeTypeOK((ReportTreeNodeTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ReportTreeNodeTypeEnum), i);
 
                     switch ((ReportTreeNodeTypeEnum)i)
                     {
@@ -5206,7 +5577,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ReportTreeNodeType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ReportTreeNodeTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5219,12 +5590,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SameDayNextDayOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SameDayNextDayEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SameDayNextDayEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SameDayNextDayEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SameDayNextDayOK((SameDayNextDayEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SameDayNextDayEnum), i);
 
                     switch ((SameDayNextDayEnum)i)
                     {
@@ -5234,7 +5609,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SameDayNextDay), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SameDayNextDayEnum"), retStr);
                             break;
                     }
                 }
@@ -5247,12 +5622,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SampleMatrixOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SampleMatrixEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SampleMatrixEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SampleMatrixEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SampleMatrixOK((SampleMatrixEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SampleMatrixEnum), i);
 
                     switch ((SampleMatrixEnum)i)
                     {
@@ -5267,7 +5646,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SampleMatrix), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SampleMatrixEnum"), retStr);
                             break;
                     }
                 }
@@ -5280,12 +5659,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SampleStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SampleStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SampleStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SampleStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SampleStatusOK((SampleStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SampleStatusEnum), i);
 
                     switch ((SampleStatusEnum)i)
                     {
@@ -5298,7 +5681,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SampleStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SampleStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -5311,12 +5694,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SampleTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SampleTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 101, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 105; i < count; i++)
                 {
-                    retStr = enums.SampleTypeOK((SampleTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SampleTypeEnum), i);
 
                     switch ((SampleTypeEnum)i)
                     {
@@ -5335,7 +5722,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SampleType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SampleTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5348,12 +5735,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SamplingPlanTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SamplingPlanTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SamplingPlanTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SamplingPlanTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SamplingPlanTypeOK((SamplingPlanTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SamplingPlanTypeEnum), i);
 
                     switch ((SamplingPlanTypeEnum)i)
                     {
@@ -5363,7 +5754,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SamplingPlanType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SamplingPlanTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5376,12 +5767,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.ScenarioStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(ScenarioStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(ScenarioStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(ScenarioStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.ScenarioStatusOK((ScenarioStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(ScenarioStatusEnum), i);
 
                     switch ((ScenarioStatusEnum)i)
                     {
@@ -5398,7 +5793,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.ScenarioStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "ScenarioStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -5411,12 +5806,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SearchTagOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SearchTagEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SearchTagEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SearchTagEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SearchTagOK((SearchTagEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SearchTagEnum), i);
 
                     switch ((SearchTagEnum)i)
                     {
@@ -5460,7 +5859,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SearchTag), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SearchTagEnum"), retStr);
                             break;
                     }
                 }
@@ -5473,12 +5872,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SecondaryTreatmentTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SecondaryTreatmentTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SecondaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SecondaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SecondaryTreatmentTypeOK((SecondaryTreatmentTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SecondaryTreatmentTypeEnum), i);
 
                     switch ((SecondaryTreatmentTypeEnum)i)
                     {
@@ -5491,7 +5894,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SecondaryTreatmentType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SecondaryTreatmentTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5504,12 +5907,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SiteTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SiteTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SiteTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SiteTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SiteTypeOK((SiteTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SiteTypeEnum), i);
 
                     switch ((SiteTypeEnum)i)
                     {
@@ -5520,7 +5927,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SiteType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SiteTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5533,12 +5940,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.SpecialTableTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(SpecialTableTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(SpecialTableTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(SpecialTableTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.SpecialTableTypeOK((SpecialTableTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(SpecialTableTypeEnum), i);
 
                     switch ((SpecialTableTypeEnum)i)
                     {
@@ -5554,7 +5965,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.SpecialTableType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "SpecialTableTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5567,12 +5978,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.StorageDataTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(StorageDataTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(StorageDataTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(StorageDataTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.StorageDataTypeOK((StorageDataTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(StorageDataTypeEnum), i);
 
                     switch ((StorageDataTypeEnum)i)
                     {
@@ -5583,7 +5998,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.StorageDataType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "StorageDataTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5596,12 +6011,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.StreetTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(StreetTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(StreetTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(StreetTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.StreetTypeOK((StreetTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(StreetTypeEnum), i);
 
                     switch ((StreetTypeEnum)i)
                     {
@@ -5618,7 +6037,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.StreetType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "StreetTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5631,12 +6050,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TelTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TelTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TelTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TelTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TelTypeOK((TelTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TelTypeEnum), i);
 
                     switch ((TelTypeEnum)i)
                     {
@@ -5650,7 +6073,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TelType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TelTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5663,12 +6086,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TertiaryTreatmentTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TertiaryTreatmentTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TertiaryTreatmentTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TertiaryTreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TertiaryTreatmentTypeOK((TertiaryTreatmentTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TertiaryTreatmentTypeEnum), i);
 
                     switch ((TertiaryTreatmentTypeEnum)i)
                     {
@@ -5683,7 +6110,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TertiaryTreatmentType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TertiaryTreatmentTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5696,12 +6123,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TideDataTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TideDataTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TideDataTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TideDataTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TideDataTypeOK((TideDataTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TideDataTypeEnum), i);
 
                     switch ((TideDataTypeEnum)i)
                     {
@@ -5711,7 +6142,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TideDataType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TideDataTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5724,12 +6155,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TideTextOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TideTextEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TideTextEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TideTextEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TideTextOK((TideTextEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TideTextEnum), i);
 
                     switch ((TideTextEnum)i)
                     {
@@ -5746,7 +6181,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TideText), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TideTextEnum"), retStr);
                             break;
                     }
                 }
@@ -5759,12 +6194,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TranslationStatusOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TranslationStatusEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TranslationStatusEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TranslationStatusEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TranslationStatusOK((TranslationStatusEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TranslationStatusEnum), i);
 
                     switch ((TranslationStatusEnum)i)
                     {
@@ -5775,7 +6214,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TranslationStatus), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TranslationStatusEnum"), retStr);
                             break;
                     }
                 }
@@ -5788,12 +6227,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TreatmentTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TreatmentTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TreatmentTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TreatmentTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TreatmentTypeOK((TreatmentTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TreatmentTypeEnum), i);
 
                     switch ((TreatmentTypeEnum)i)
                     {
@@ -5834,7 +6277,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TreatmentType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TreatmentTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5847,12 +6290,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TVAuthOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TVAuthEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TVAuthEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TVAuthEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TVAuthOK((TVAuthEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TVAuthEnum), i);
 
                     switch ((TVAuthEnum)i)
                     {
@@ -5866,7 +6313,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TVAuth), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TVAuthEnum"), retStr);
                             break;
                     }
                 }
@@ -5879,12 +6326,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.TVTypeOK(null);
+                string retStr = enums.EnumTypeOK(typeof(TVTypeEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(TVTypeEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(TVTypeEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.TVTypeOK((TVTypeEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(TVTypeEnum), i);
 
                     switch ((TVTypeEnum)i)
                     {
@@ -5965,7 +6416,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.TVType), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "TVTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -5978,12 +6429,16 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                string retStr = enums.WebTideDataSetOK(null);
+                string retStr = enums.EnumTypeOK(typeof(WebTideDataSetEnum), null);
                 Assert.AreEqual("", retStr);
 
-                for (int i = 0, count = Enum.GetNames(typeof(WebTideDataSetEnum)).Length + 1; i < count; i++)
+                for (int i = 0, count = Enum.GetNames(typeof(WebTideDataSetEnum)).Length + 5; i < count; i++)
                 {
-                    retStr = enums.WebTideDataSetOK((WebTideDataSetEnum)i);
+                    if (i == 32)
+                    {
+                        continue;
+                    }
+                    retStr = enums.EnumTypeOK(typeof(WebTideDataSetEnum), i);
 
                     switch ((WebTideDataSetEnum)i)
                     {
@@ -6002,7 +6457,7 @@ namespace CSSPEnums.Tests
                             Assert.AreEqual("", retStr);
                             break;
                         default:
-                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, CSSPEnumsRes.WebTideDataSet), retStr);
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "WebTideDataSetEnum"), retStr);
                             break;
                     }
                 }
@@ -6018,23 +6473,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<EnumTextOrdered> enumTextOrderedList = new List<EnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ActionDBTypeEnum)).Length; i < count; i++)
                 {
-                    enumTextOrderedList.Add(new EnumTextOrdered() { EnumInt = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ActionDBTypeEnum), i)) });
                 }
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<EnumTextOrdered> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ActionDBTypeEnum));
-                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ActionDBTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                EnumTextOrdered enumTextOrdered = new EnumTextOrdered();
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
                 Assert.IsNotNull(enumTextOrdered);
 
                 for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
                     Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
-                    Assert.AreEqual(enumTextOrderedList[i].EnumInt, enumTextOrderedList2[i].EnumInt);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6045,23 +6500,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AddressTypeEnumTextOrdered> AddressTypeEnumList = new List<AddressTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AddressTypeEnum)).Length; i < count; i++)
                 {
-                    AddressTypeEnumList.Add(new AddressTypeEnumTextOrdered() { AddressType = (AddressTypeEnum)i, AddressTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AddressTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AddressTypeEnum), i)) });
                 }
-                AddressTypeEnumList = AddressTypeEnumList.OrderBy(c => c.AddressTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AddressTypeEnumTextOrdered> AddressTypeEnumTextOrderedList = enums.GetAddressTypeEnumTextOrderedList();
-                Assert.AreEqual(AddressTypeEnumList.Count, AddressTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AddressTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AddressTypeEnumTextOrdered AddressTypeEnumTextOrdered = new AddressTypeEnumTextOrdered();
-                Assert.IsNotNull(AddressTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AddressTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AddressTypeEnumList[i].AddressTypeText, AddressTypeEnumTextOrderedList[i].AddressTypeText);
-                    Assert.AreEqual(AddressTypeEnumList[i].AddressType, AddressTypeEnumTextOrderedList[i].AddressType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6072,23 +6527,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AerationTypeEnumTextOrdered> AerationTypeEnumList = new List<AerationTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AerationTypeEnum)).Length; i < count; i++)
                 {
-                    AerationTypeEnumList.Add(new AerationTypeEnumTextOrdered() { AerationType = (AerationTypeEnum)i, AerationTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AerationTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AerationTypeEnum), i)) });
                 }
-                AerationTypeEnumList = AerationTypeEnumList.OrderBy(c => c.AerationTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AerationTypeEnumTextOrdered> AerationTypeEnumTextOrderedList = enums.GetAerationTypeEnumTextOrderedList();
-                Assert.AreEqual(AerationTypeEnumList.Count, AerationTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AerationTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AerationTypeEnumTextOrdered AerationTypeEnumTextOrdered = new AerationTypeEnumTextOrdered();
-                Assert.IsNotNull(AerationTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AerationTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AerationTypeEnumList[i].AerationTypeText, AerationTypeEnumTextOrderedList[i].AerationTypeText);
-                    Assert.AreEqual(AerationTypeEnumList[i].AerationType, AerationTypeEnumTextOrderedList[i].AerationType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6099,23 +6554,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AlarmSystemTypeEnumTextOrdered> AlarmSystemTypeEnumList = new List<AlarmSystemTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AlarmSystemTypeEnum)).Length; i < count; i++)
                 {
-                    AlarmSystemTypeEnumList.Add(new AlarmSystemTypeEnumTextOrdered() { AlarmSystemType = (AlarmSystemTypeEnum)i, AlarmSystemTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AlarmSystemTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AlarmSystemTypeEnum), i)) });
                 }
-                AlarmSystemTypeEnumList = AlarmSystemTypeEnumList.OrderBy(c => c.AlarmSystemTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AlarmSystemTypeEnumTextOrdered> AlarmSystemTypeEnumTextOrderedList = enums.GetAlarmSystemTypeEnumTextOrderedList();
-                Assert.AreEqual(AlarmSystemTypeEnumList.Count, AlarmSystemTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AlarmSystemTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AlarmSystemTypeEnumTextOrdered AlarmSystemTypeEnumTextOrdered = new AlarmSystemTypeEnumTextOrdered();
-                Assert.IsNotNull(AlarmSystemTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AlarmSystemTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AlarmSystemTypeEnumList[i].AlarmSystemTypeText, AlarmSystemTypeEnumTextOrderedList[i].AlarmSystemTypeText);
-                    Assert.AreEqual(AlarmSystemTypeEnumList[i].AlarmSystemType, AlarmSystemTypeEnumTextOrderedList[i].AlarmSystemType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6126,23 +6581,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AnalyzeMethodEnumTextOrdered> AnalyzeMethodEnumList = new List<AnalyzeMethodEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AnalyzeMethodEnum)).Length; i < count; i++)
                 {
-                    AnalyzeMethodEnumList.Add(new AnalyzeMethodEnumTextOrdered() { AnalyzeMethod = (AnalyzeMethodEnum)i, AnalyzeMethodText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AnalyzeMethodEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AnalyzeMethodEnum), i)) });
                 }
-                AnalyzeMethodEnumList = AnalyzeMethodEnumList.OrderBy(c => c.AnalyzeMethodText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AnalyzeMethodEnumTextOrdered> AnalyzeMethodEnumTextOrderedList = enums.GetAnalyzeMethodEnumTextOrderedList();
-                Assert.AreEqual(AnalyzeMethodEnumList.Count, AnalyzeMethodEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AnalyzeMethodEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AnalyzeMethodEnumTextOrdered AnalyzeMethodEnumTextOrdered = new AnalyzeMethodEnumTextOrdered();
-                Assert.IsNotNull(AnalyzeMethodEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AnalyzeMethodEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AnalyzeMethodEnumList[i].AnalyzeMethodText, AnalyzeMethodEnumTextOrderedList[i].AnalyzeMethodText);
-                    Assert.AreEqual(AnalyzeMethodEnumList[i].AnalyzeMethod, AnalyzeMethodEnumTextOrderedList[i].AnalyzeMethod);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6153,23 +6608,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AppTaskCommandEnumTextOrdered> AppTaskCommandEnumList = new List<AppTaskCommandEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AppTaskCommandEnum)).Length; i < count; i++)
                 {
-                    AppTaskCommandEnumList.Add(new AppTaskCommandEnumTextOrdered() { AppTaskCommand = (AppTaskCommandEnum)i, AppTaskCommandText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskCommandEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskCommandEnum), i)) });
                 }
-                AppTaskCommandEnumList = AppTaskCommandEnumList.OrderBy(c => c.AppTaskCommandText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AppTaskCommandEnumTextOrdered> AppTaskCommandEnumTextOrderedList = enums.GetAppTaskCommandEnumTextOrderedList();
-                Assert.AreEqual(AppTaskCommandEnumList.Count, AppTaskCommandEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AppTaskCommandEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AppTaskCommandEnumTextOrdered AppTaskCommandEnumTextOrdered = new AppTaskCommandEnumTextOrdered();
-                Assert.IsNotNull(AppTaskCommandEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AppTaskCommandEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AppTaskCommandEnumList[i].AppTaskCommandText, AppTaskCommandEnumTextOrderedList[i].AppTaskCommandText);
-                    Assert.AreEqual(AppTaskCommandEnumList[i].AppTaskCommand, AppTaskCommandEnumTextOrderedList[i].AppTaskCommand);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6180,23 +6635,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<AppTaskStatusEnumTextOrdered> AppTaskStatusEnumList = new List<AppTaskStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(AppTaskStatusEnum)).Length; i < count; i++)
                 {
-                    AppTaskStatusEnumList.Add(new AppTaskStatusEnumTextOrdered() { AppTaskStatus = (AppTaskStatusEnum)i, AppTaskStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(AppTaskStatusEnum), i)) });
                 }
-                AppTaskStatusEnumList = AppTaskStatusEnumList.OrderBy(c => c.AppTaskStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<AppTaskStatusEnumTextOrdered> AppTaskStatusEnumTextOrderedList = enums.GetAppTaskStatusEnumTextOrderedList();
-                Assert.AreEqual(AppTaskStatusEnumList.Count, AppTaskStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AppTaskStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                AppTaskStatusEnumTextOrdered AppTaskStatusEnumTextOrdered = new AppTaskStatusEnumTextOrdered();
-                Assert.IsNotNull(AppTaskStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = AppTaskStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(AppTaskStatusEnumList[i].AppTaskStatusText, AppTaskStatusEnumTextOrderedList[i].AppTaskStatusText);
-                    Assert.AreEqual(AppTaskStatusEnumList[i].AppTaskStatus, AppTaskStatusEnumTextOrderedList[i].AppTaskStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6207,23 +6662,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<BeaufortScaleEnumTextOrdered> BeaufortScaleEnumList = new List<BeaufortScaleEnumTextOrdered>();
-                for (int i = 1, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length; i < count; i++)
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 0, count = Enum.GetNames(typeof(BeaufortScaleEnum)).Length - 1; i < count; i++)
                 {
-                    BeaufortScaleEnumList.Add(new BeaufortScaleEnumTextOrdered() { BeaufortScale = (BeaufortScaleEnum)i, BeaufortScaleText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BeaufortScaleEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BeaufortScaleEnum), i)) });
                 }
-                BeaufortScaleEnumList = BeaufortScaleEnumList.OrderBy(c => c.BeaufortScaleText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<BeaufortScaleEnumTextOrdered> BeaufortScaleEnumTextOrderedList = enums.GetBeaufortScaleEnumTextOrderedList();
-                Assert.AreEqual(BeaufortScaleEnumList.Count, BeaufortScaleEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(BeaufortScaleEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                BeaufortScaleEnumTextOrdered BeaufortScaleEnumTextOrdered = new BeaufortScaleEnumTextOrdered();
-                Assert.IsNotNull(BeaufortScaleEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = BeaufortScaleEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(BeaufortScaleEnumList[i].BeaufortScaleText, BeaufortScaleEnumTextOrderedList[i].BeaufortScaleText);
-                    Assert.AreEqual(BeaufortScaleEnumList[i].BeaufortScale, BeaufortScaleEnumTextOrderedList[i].BeaufortScale);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6234,23 +6689,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<BoxModelResultTypeEnumTextOrdered> BoxModelResultTypeEnumList = new List<BoxModelResultTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(BoxModelResultTypeEnum)).Length; i < count; i++)
                 {
-                    BoxModelResultTypeEnumList.Add(new BoxModelResultTypeEnumTextOrdered() { BoxModelResultType = (BoxModelResultTypeEnum)i, BoxModelResultTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BoxModelResultTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(BoxModelResultTypeEnum), i)) });
                 }
-                BoxModelResultTypeEnumList = BoxModelResultTypeEnumList.OrderBy(c => c.BoxModelResultTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<BoxModelResultTypeEnumTextOrdered> BoxModelResultTypeEnumTextOrderedList = enums.GetBoxModelResultTypeEnumTextOrderedList();
-                Assert.AreEqual(BoxModelResultTypeEnumList.Count, BoxModelResultTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(BoxModelResultTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                BoxModelResultTypeEnumTextOrdered BoxModelResultTypeEnumTextOrdered = new BoxModelResultTypeEnumTextOrdered();
-                Assert.IsNotNull(BoxModelResultTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = BoxModelResultTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(BoxModelResultTypeEnumList[i].BoxModelResultTypeText, BoxModelResultTypeEnumTextOrderedList[i].BoxModelResultTypeText);
-                    Assert.AreEqual(BoxModelResultTypeEnumList[i].BoxModelResultType, BoxModelResultTypeEnumTextOrderedList[i].BoxModelResultType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6261,23 +6716,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<CollectionSystemTypeEnumTextOrdered> CollectionSystemTypeEnumList = new List<CollectionSystemTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(CollectionSystemTypeEnum)).Length; i < count; i++)
                 {
-                    CollectionSystemTypeEnumList.Add(new CollectionSystemTypeEnumTextOrdered() { CollectionSystemType = (CollectionSystemTypeEnum)i, CollectionSystemTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CollectionSystemTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CollectionSystemTypeEnum), i)) });
                 }
-                CollectionSystemTypeEnumList = CollectionSystemTypeEnumList.OrderBy(c => c.CollectionSystemTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<CollectionSystemTypeEnumTextOrdered> CollectionSystemTypeEnumTextOrderedList = enums.GetCollectionSystemTypeEnumTextOrderedList();
-                Assert.AreEqual(CollectionSystemTypeEnumList.Count, CollectionSystemTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(CollectionSystemTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                CollectionSystemTypeEnumTextOrdered CollectionSystemTypeEnumTextOrdered = new CollectionSystemTypeEnumTextOrdered();
-                Assert.IsNotNull(CollectionSystemTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = CollectionSystemTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(CollectionSystemTypeEnumList[i].CollectionSystemTypeText, CollectionSystemTypeEnumTextOrderedList[i].CollectionSystemTypeText);
-                    Assert.AreEqual(CollectionSystemTypeEnumList[i].CollectionSystemType, CollectionSystemTypeEnumTextOrderedList[i].CollectionSystemType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6288,23 +6743,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ContactTitleEnumTextOrdered> ContactTitleEnumList = new List<ContactTitleEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ContactTitleEnum)).Length; i < count; i++)
                 {
-                    ContactTitleEnumList.Add(new ContactTitleEnumTextOrdered() { ContactTitle = (ContactTitleEnum)i, ContactTitleText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ContactTitleEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ContactTitleEnum), i)) });
                 }
-                ContactTitleEnumList = ContactTitleEnumList.OrderBy(c => c.ContactTitleText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ContactTitleEnumTextOrdered> ContactTitleEnumTextOrderedList = enums.GetContactTitleEnumTextOrderedList();
-                Assert.AreEqual(ContactTitleEnumList.Count, ContactTitleEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ContactTitleEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ContactTitleEnumTextOrdered ContactTitleEnumTextOrdered = new ContactTitleEnumTextOrdered();
-                Assert.IsNotNull(ContactTitleEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ContactTitleEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ContactTitleEnumList[i].ContactTitleText, ContactTitleEnumTextOrderedList[i].ContactTitleText);
-                    Assert.AreEqual(ContactTitleEnumList[i].ContactTitle, ContactTitleEnumTextOrderedList[i].ContactTitle);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6315,23 +6770,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<CSSPWQInputSheetTypeEnumTextOrdered> CSSPWQInputSheetTypeEnumList = new List<CSSPWQInputSheetTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(CSSPWQInputSheetTypeEnum)).Length; i < count; i++)
                 {
-                    CSSPWQInputSheetTypeEnumList.Add(new CSSPWQInputSheetTypeEnumTextOrdered() { CSSPWQInputSheetType = (CSSPWQInputSheetTypeEnum)i, CSSPWQInputSheetTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputSheetTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputSheetTypeEnum), i)) });
                 }
-                CSSPWQInputSheetTypeEnumList = CSSPWQInputSheetTypeEnumList.OrderBy(c => c.CSSPWQInputSheetTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<CSSPWQInputSheetTypeEnumTextOrdered> CSSPWQInputSheetTypeEnumTextOrderedList = enums.GetCSSPWQInputSheetTypeEnumTextOrderedList();
-                Assert.AreEqual(CSSPWQInputSheetTypeEnumList.Count, CSSPWQInputSheetTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(CSSPWQInputSheetTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                CSSPWQInputSheetTypeEnumTextOrdered CSSPWQInputSheetTypeEnumTextOrdered = new CSSPWQInputSheetTypeEnumTextOrdered();
-                Assert.IsNotNull(CSSPWQInputSheetTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = CSSPWQInputSheetTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(CSSPWQInputSheetTypeEnumList[i].CSSPWQInputSheetTypeText, CSSPWQInputSheetTypeEnumTextOrderedList[i].CSSPWQInputSheetTypeText);
-                    Assert.AreEqual(CSSPWQInputSheetTypeEnumList[i].CSSPWQInputSheetType, CSSPWQInputSheetTypeEnumTextOrderedList[i].CSSPWQInputSheetType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6342,23 +6797,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<CSSPWQInputTypeEnumTextOrdered> CSSPWQInputTypeEnumList = new List<CSSPWQInputTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(CSSPWQInputTypeEnum)).Length; i < count; i++)
                 {
-                    CSSPWQInputTypeEnumList.Add(new CSSPWQInputTypeEnumTextOrdered() { CSSPWQInputType = (CSSPWQInputTypeEnum)i, CSSPWQInputTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(CSSPWQInputTypeEnum), i)) });
                 }
-                CSSPWQInputTypeEnumList = CSSPWQInputTypeEnumList.OrderBy(c => c.CSSPWQInputTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<CSSPWQInputTypeEnumTextOrdered> CSSPWQInputTypeEnumTextOrderedList = enums.GetCSSPWQInputTypeEnumTextOrderedList();
-                Assert.AreEqual(CSSPWQInputTypeEnumList.Count, CSSPWQInputTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(CSSPWQInputTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                CSSPWQInputTypeEnumTextOrdered CSSPWQInputTypeEnumTextOrdered = new CSSPWQInputTypeEnumTextOrdered();
-                Assert.IsNotNull(CSSPWQInputTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = CSSPWQInputTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(CSSPWQInputTypeEnumList[i].CSSPWQInputTypeText, CSSPWQInputTypeEnumTextOrderedList[i].CSSPWQInputTypeText);
-                    Assert.AreEqual(CSSPWQInputTypeEnumList[i].CSSPWQInputType, CSSPWQInputTypeEnumTextOrderedList[i].CSSPWQInputType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6369,23 +6824,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<DailyOrHourlyDataEnumTextOrdered> DailyOrHourlyDataEnumList = new List<DailyOrHourlyDataEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(DailyOrHourlyDataEnum)).Length; i < count; i++)
                 {
-                    DailyOrHourlyDataEnumList.Add(new DailyOrHourlyDataEnumTextOrdered() { DailyOrHourlyData = (DailyOrHourlyDataEnum)i, DailyOrHourlyDataText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DailyOrHourlyDataEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DailyOrHourlyDataEnum), i)) });
                 }
-                DailyOrHourlyDataEnumList = DailyOrHourlyDataEnumList.OrderBy(c => c.DailyOrHourlyDataText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<DailyOrHourlyDataEnumTextOrdered> DailyOrHourlyDataEnumTextOrderedList = enums.GetDailyOrHourlyDataEnumTextOrderedList();
-                Assert.AreEqual(DailyOrHourlyDataEnumList.Count, DailyOrHourlyDataEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(DailyOrHourlyDataEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                DailyOrHourlyDataEnumTextOrdered DailyOrHourlyDataEnumTextOrdered = new DailyOrHourlyDataEnumTextOrdered();
-                Assert.IsNotNull(DailyOrHourlyDataEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = DailyOrHourlyDataEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(DailyOrHourlyDataEnumList[i].DailyOrHourlyDataText, DailyOrHourlyDataEnumTextOrderedList[i].DailyOrHourlyDataText);
-                    Assert.AreEqual(DailyOrHourlyDataEnumList[i].DailyOrHourlyData, DailyOrHourlyDataEnumTextOrderedList[i].DailyOrHourlyData);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6396,23 +6851,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<DatabaseTypeEnumTextOrdered> DatabaseTypeEnumList = new List<DatabaseTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(DatabaseTypeEnum)).Length; i < count; i++)
                 {
-                    DatabaseTypeEnumList.Add(new DatabaseTypeEnumTextOrdered() { DatabaseType = (DatabaseTypeEnum)i, DatabaseTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DatabaseTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DatabaseTypeEnum), i)) });
                 }
-                DatabaseTypeEnumList = DatabaseTypeEnumList.OrderBy(c => c.DatabaseTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<DatabaseTypeEnumTextOrdered> DatabaseTypeEnumTextOrderedList = enums.GetDatabaseTypeEnumTextOrderedList();
-                Assert.AreEqual(DatabaseTypeEnumList.Count, DatabaseTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(DatabaseTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                DatabaseTypeEnumTextOrdered DatabaseTypeEnumTextOrdered = new DatabaseTypeEnumTextOrdered();
-                Assert.IsNotNull(DatabaseTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = DatabaseTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(DatabaseTypeEnumList[i].DatabaseTypeText, DatabaseTypeEnumTextOrderedList[i].DatabaseTypeText);
-                    Assert.AreEqual(DatabaseTypeEnumList[i].DatabaseType, DatabaseTypeEnumTextOrderedList[i].DatabaseType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6423,23 +6878,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<DisinfectionTypeEnumTextOrdered> DisinfectionTypeEnumList = new List<DisinfectionTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(DisinfectionTypeEnum)).Length; i < count; i++)
                 {
-                    DisinfectionTypeEnumList.Add(new DisinfectionTypeEnumTextOrdered() { DisinfectionType = (DisinfectionTypeEnum)i, DisinfectionTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DisinfectionTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(DisinfectionTypeEnum), i)) });
                 }
-                DisinfectionTypeEnumList = DisinfectionTypeEnumList.OrderBy(c => c.DisinfectionTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<DisinfectionTypeEnumTextOrdered> DisinfectionTypeEnumTextOrderedList = enums.GetDisinfectionTypeEnumTextOrderedList();
-                Assert.AreEqual(DisinfectionTypeEnumList.Count, DisinfectionTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(DisinfectionTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                DisinfectionTypeEnumTextOrdered DisinfectionTypeEnumTextOrdered = new DisinfectionTypeEnumTextOrdered();
-                Assert.IsNotNull(DisinfectionTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = DisinfectionTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(DisinfectionTypeEnumList[i].DisinfectionTypeText, DisinfectionTypeEnumTextOrderedList[i].DisinfectionTypeText);
-                    Assert.AreEqual(DisinfectionTypeEnumList[i].DisinfectionType, DisinfectionTypeEnumTextOrderedList[i].DisinfectionType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6450,23 +6905,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<EmailTypeEnumTextOrdered> EmailTypeEnumList = new List<EmailTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(EmailTypeEnum)).Length; i < count; i++)
                 {
-                    EmailTypeEnumList.Add(new EmailTypeEnumTextOrdered() { EmailType = (EmailTypeEnum)i, EmailTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(EmailTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(EmailTypeEnum), i)) });
                 }
-                EmailTypeEnumList = EmailTypeEnumList.OrderBy(c => c.EmailTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<EmailTypeEnumTextOrdered> EmailTypeEnumTextOrderedList = enums.GetEmailTypeEnumTextOrderedList();
-                Assert.AreEqual(EmailTypeEnumList.Count, EmailTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(EmailTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                EmailTypeEnumTextOrdered EmailTypeEnumTextOrdered = new EmailTypeEnumTextOrdered();
-                Assert.IsNotNull(EmailTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = EmailTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(EmailTypeEnumList[i].EmailTypeText, EmailTypeEnumTextOrderedList[i].EmailTypeText);
-                    Assert.AreEqual(EmailTypeEnumList[i].EmailType, EmailTypeEnumTextOrderedList[i].EmailType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6477,23 +6932,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<FacilityTypeEnumTextOrdered> FacilityTypeEnumList = new List<FacilityTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(FacilityTypeEnum)).Length; i < count; i++)
                 {
-                    FacilityTypeEnumList.Add(new FacilityTypeEnumTextOrdered() { FacilityType = (FacilityTypeEnum)i, FacilityTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FacilityTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FacilityTypeEnum), i)) });
                 }
-                FacilityTypeEnumList = FacilityTypeEnumList.OrderBy(c => c.FacilityTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<FacilityTypeEnumTextOrdered> FacilityTypeEnumTextOrderedList = enums.GetFacilityTypeEnumTextOrderedList();
-                Assert.AreEqual(FacilityTypeEnumList.Count, FacilityTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(FacilityTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                FacilityTypeEnumTextOrdered FacilityTypeEnumTextOrdered = new FacilityTypeEnumTextOrdered();
-                Assert.IsNotNull(FacilityTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = FacilityTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(FacilityTypeEnumList[i].FacilityTypeText, FacilityTypeEnumTextOrderedList[i].FacilityTypeText);
-                    Assert.AreEqual(FacilityTypeEnumList[i].FacilityType, FacilityTypeEnumTextOrderedList[i].FacilityType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6504,23 +6959,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<FilePurposeEnumTextOrdered> FilePurposeEnumList = new List<FilePurposeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(FilePurposeEnum)).Length; i < count; i++)
                 {
-                    FilePurposeEnumList.Add(new FilePurposeEnumTextOrdered() { FilePurpose = (FilePurposeEnum)i, FilePurposeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FilePurposeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FilePurposeEnum), i)) });
                 }
-                FilePurposeEnumList = FilePurposeEnumList.OrderBy(c => c.FilePurposeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<FilePurposeEnumTextOrdered> FilePurposeEnumTextOrderedList = enums.GetFilePurposeEnumTextOrderedList();
-                Assert.AreEqual(FilePurposeEnumList.Count, FilePurposeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(FilePurposeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                FilePurposeEnumTextOrdered FilePurposeEnumTextOrdered = new FilePurposeEnumTextOrdered();
-                Assert.IsNotNull(FilePurposeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = FilePurposeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(FilePurposeEnumList[i].FilePurposeText, FilePurposeEnumTextOrderedList[i].FilePurposeText);
-                    Assert.AreEqual(FilePurposeEnumList[i].FilePurpose, FilePurposeEnumTextOrderedList[i].FilePurpose);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6531,23 +6986,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<FileStatusEnumTextOrdered> FileStatusEnumList = new List<FileStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(FileStatusEnum)).Length; i < count; i++)
                 {
-                    FileStatusEnumList.Add(new FileStatusEnumTextOrdered() { FileStatus = (FileStatusEnum)i, FileStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileStatusEnum), i)) });
                 }
-                FileStatusEnumList = FileStatusEnumList.OrderBy(c => c.FileStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<FileStatusEnumTextOrdered> FileStatusEnumTextOrderedList = enums.GetFileStatusEnumTextOrderedList();
-                Assert.AreEqual(FileStatusEnumList.Count, FileStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(FileStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                FileStatusEnumTextOrdered FileStatusEnumTextOrdered = new FileStatusEnumTextOrdered();
-                Assert.IsNotNull(FileStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = FileStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(FileStatusEnumList[i].FileStatusText, FileStatusEnumTextOrderedList[i].FileStatusText);
-                    Assert.AreEqual(FileStatusEnumList[i].FileStatus, FileStatusEnumTextOrderedList[i].FileStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6558,23 +7013,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<FileTypeEnumTextOrdered> FileTypeEnumList = new List<FileTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(FileTypeEnum)).Length; i < count; i++)
                 {
-                    FileTypeEnumList.Add(new FileTypeEnumTextOrdered() { FileType = (FileTypeEnum)i, FileTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(FileTypeEnum), i)) });
                 }
-                FileTypeEnumList = FileTypeEnumList.OrderBy(c => c.FileTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<FileTypeEnumTextOrdered> FileTypeEnumTextOrderedList = enums.GetFileTypeEnumTextOrderedList();
-                Assert.AreEqual(FileTypeEnumList.Count, FileTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(FileTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                FileTypeEnumTextOrdered FileTypeEnumTextOrdered = new FileTypeEnumTextOrdered();
-                Assert.IsNotNull(FileTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = FileTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(FileTypeEnumList[i].FileTypeText, FileTypeEnumTextOrderedList[i].FileTypeText);
-                    Assert.AreEqual(FileTypeEnumList[i].FileType, FileTypeEnumTextOrderedList[i].FileType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6585,23 +7040,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<InfrastructureTypeEnumTextOrdered> InfrastructureTypeEnumList = new List<InfrastructureTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(InfrastructureTypeEnum)).Length; i < count; i++)
                 {
-                    InfrastructureTypeEnumList.Add(new InfrastructureTypeEnumTextOrdered() { InfrastructureType = (InfrastructureTypeEnum)i, InfrastructureTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(InfrastructureTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(InfrastructureTypeEnum), i)) });
                 }
-                InfrastructureTypeEnumList = InfrastructureTypeEnumList.OrderBy(c => c.InfrastructureTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<InfrastructureTypeEnumTextOrdered> InfrastructureTypeEnumTextOrderedList = enums.GetInfrastructureTypeEnumTextOrderedList();
-                Assert.AreEqual(InfrastructureTypeEnumList.Count, InfrastructureTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(InfrastructureTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                InfrastructureTypeEnumTextOrdered InfrastructureTypeEnumTextOrdered = new InfrastructureTypeEnumTextOrdered();
-                Assert.IsNotNull(InfrastructureTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = InfrastructureTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(InfrastructureTypeEnumList[i].InfrastructureTypeText, InfrastructureTypeEnumTextOrderedList[i].InfrastructureTypeText);
-                    Assert.AreEqual(InfrastructureTypeEnumList[i].InfrastructureType, InfrastructureTypeEnumTextOrderedList[i].InfrastructureType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6612,23 +7067,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<KMZActionEnumTextOrdered> KMZActionEnumList = new List<KMZActionEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(KMZActionEnum)).Length; i < count; i++)
                 {
-                    KMZActionEnumList.Add(new KMZActionEnumTextOrdered() { KMZAction = (KMZActionEnum)i, KMZActionText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(KMZActionEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(KMZActionEnum), i)) });
                 }
-                KMZActionEnumList = KMZActionEnumList.OrderBy(c => c.KMZActionText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<KMZActionEnumTextOrdered> KMZActionEnumTextOrderedList = enums.GetKMZActionEnumTextOrderedList();
-                Assert.AreEqual(KMZActionEnumList.Count, KMZActionEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(KMZActionEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                KMZActionEnumTextOrdered KMZActionEnumTextOrdered = new KMZActionEnumTextOrdered();
-                Assert.IsNotNull(KMZActionEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = KMZActionEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(KMZActionEnumList[i].KMZActionText, KMZActionEnumTextOrderedList[i].KMZActionText);
-                    Assert.AreEqual(KMZActionEnumList[i].KMZAction, KMZActionEnumTextOrderedList[i].KMZAction);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6639,23 +7094,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<LaboratoryEnumTextOrdered> LaboratoryEnumList = new List<LaboratoryEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(LaboratoryEnum)).Length; i < count; i++)
                 {
-                    LaboratoryEnumList.Add(new LaboratoryEnumTextOrdered() { Laboratory = (LaboratoryEnum)i, LaboratoryText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LaboratoryEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LaboratoryEnum), i)) });
                 }
-                LaboratoryEnumList = LaboratoryEnumList.OrderBy(c => c.LaboratoryText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<LaboratoryEnumTextOrdered> LaboratoryEnumTextOrderedList = enums.GetLaboratoryEnumTextOrderedList();
-                Assert.AreEqual(LaboratoryEnumList.Count, LaboratoryEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(LaboratoryEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                LaboratoryEnumTextOrdered LaboratoryEnumTextOrdered = new LaboratoryEnumTextOrdered();
-                Assert.IsNotNull(LaboratoryEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = LaboratoryEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(LaboratoryEnumList[i].LaboratoryText, LaboratoryEnumTextOrderedList[i].LaboratoryText);
-                    Assert.AreEqual(LaboratoryEnumList[i].Laboratory, LaboratoryEnumTextOrderedList[i].Laboratory);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6666,23 +7121,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<LabSheetStatusEnumTextOrdered> LabSheetStatusEnumList = new List<LabSheetStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(LabSheetStatusEnum)).Length; i < count; i++)
                 {
-                    LabSheetStatusEnumList.Add(new LabSheetStatusEnumTextOrdered() { LabSheetStatus = (LabSheetStatusEnum)i, LabSheetStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetStatusEnum), i)) });
                 }
-                LabSheetStatusEnumList = LabSheetStatusEnumList.OrderBy(c => c.LabSheetStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<LabSheetStatusEnumTextOrdered> LabSheetStatusEnumTextOrderedList = enums.GetLabSheetStatusEnumTextOrderedList();
-                Assert.AreEqual(LabSheetStatusEnumList.Count, LabSheetStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(LabSheetStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                LabSheetStatusEnumTextOrdered LabSheetStatusEnumTextOrdered = new LabSheetStatusEnumTextOrdered();
-                Assert.IsNotNull(LabSheetStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = LabSheetStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(LabSheetStatusEnumList[i].LabSheetStatusText, LabSheetStatusEnumTextOrderedList[i].LabSheetStatusText);
-                    Assert.AreEqual(LabSheetStatusEnumList[i].LabSheetStatus, LabSheetStatusEnumTextOrderedList[i].LabSheetStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6693,23 +7148,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<LabSheetTypeEnumTextOrdered> LabSheetTypeEnumList = new List<LabSheetTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(LabSheetTypeEnum)).Length; i < count; i++)
                 {
-                    LabSheetTypeEnumList.Add(new LabSheetTypeEnumTextOrdered() { LabSheetType = (LabSheetTypeEnum)i, LabSheetTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LabSheetTypeEnum), i)) });
                 }
-                LabSheetTypeEnumList = LabSheetTypeEnumList.OrderBy(c => c.LabSheetTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<LabSheetTypeEnumTextOrdered> LabSheetTypeEnumTextOrderedList = enums.GetLabSheetTypeEnumTextOrderedList();
-                Assert.AreEqual(LabSheetTypeEnumList.Count, LabSheetTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(LabSheetTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                LabSheetTypeEnumTextOrdered LabSheetTypeEnumTextOrdered = new LabSheetTypeEnumTextOrdered();
-                Assert.IsNotNull(LabSheetTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = LabSheetTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(LabSheetTypeEnumList[i].LabSheetTypeText, LabSheetTypeEnumTextOrderedList[i].LabSheetTypeText);
-                    Assert.AreEqual(LabSheetTypeEnumList[i].LabSheetType, LabSheetTypeEnumTextOrderedList[i].LabSheetType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6720,23 +7175,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<LanguageEnumTextOrdered> LanguageEnumList = new List<LanguageEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(LanguageEnum)).Length; i < count; i++)
                 {
-                    LanguageEnumList.Add(new LanguageEnumTextOrdered() { Language = (LanguageEnum)i, LanguageText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LanguageEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LanguageEnum), i)) });
                 }
-                LanguageEnumList = LanguageEnumList.OrderBy(c => c.LanguageText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<LanguageEnumTextOrdered> LanguageEnumTextOrderedList = enums.GetLanguageEnumTextOrderedList();
-                Assert.AreEqual(LanguageEnumList.Count, LanguageEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(LanguageEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                LanguageEnumTextOrdered LanguageEnumTextOrdered = new LanguageEnumTextOrdered();
-                Assert.IsNotNull(LanguageEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = LanguageEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(LanguageEnumList[i].LanguageText, LanguageEnumTextOrderedList[i].LanguageText);
-                    Assert.AreEqual(LanguageEnumList[i].Language, LanguageEnumTextOrderedList[i].Language);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6747,23 +7202,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<LogCommandEnumTextOrdered> LogCommandEnumList = new List<LogCommandEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(LogCommandEnum)).Length; i < count; i++)
                 {
-                    LogCommandEnumList.Add(new LogCommandEnumTextOrdered() { LogCommand = (LogCommandEnum)i, LogCommandText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LogCommandEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(LogCommandEnum), i)) });
                 }
-                LogCommandEnumList = LogCommandEnumList.OrderBy(c => c.LogCommandText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<LogCommandEnumTextOrdered> LogCommandEnumTextOrderedList = enums.GetLogCommandEnumTextOrderedList();
-                Assert.AreEqual(LogCommandEnumList.Count, LogCommandEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(LogCommandEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                LogCommandEnumTextOrdered LogCommandEnumTextOrdered = new LogCommandEnumTextOrdered();
-                Assert.IsNotNull(LogCommandEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = LogCommandEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(LogCommandEnumList[i].LogCommandText, LogCommandEnumTextOrderedList[i].LogCommandText);
-                    Assert.AreEqual(LogCommandEnumList[i].LogCommand, LogCommandEnumTextOrderedList[i].LogCommand);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6774,23 +7229,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<MapInfoDrawTypeEnumTextOrdered> MapInfoDrawTypeEnumList = new List<MapInfoDrawTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(MapInfoDrawTypeEnum)).Length; i < count; i++)
                 {
-                    MapInfoDrawTypeEnumList.Add(new MapInfoDrawTypeEnumTextOrdered() { MapInfoDrawType = (MapInfoDrawTypeEnum)i, MapInfoDrawTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MapInfoDrawTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MapInfoDrawTypeEnum), i)) });
                 }
-                MapInfoDrawTypeEnumList = MapInfoDrawTypeEnumList.OrderBy(c => c.MapInfoDrawTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<MapInfoDrawTypeEnumTextOrdered> MapInfoDrawTypeEnumTextOrderedList = enums.GetMapInfoDrawTypeEnumTextOrderedList();
-                Assert.AreEqual(MapInfoDrawTypeEnumList.Count, MapInfoDrawTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(MapInfoDrawTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                MapInfoDrawTypeEnumTextOrdered MapInfoDrawTypeEnumTextOrdered = new MapInfoDrawTypeEnumTextOrdered();
-                Assert.IsNotNull(MapInfoDrawTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = MapInfoDrawTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(MapInfoDrawTypeEnumList[i].MapInfoDrawTypeText, MapInfoDrawTypeEnumTextOrderedList[i].MapInfoDrawTypeText);
-                    Assert.AreEqual(MapInfoDrawTypeEnumList[i].MapInfoDrawType, MapInfoDrawTypeEnumTextOrderedList[i].MapInfoDrawType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6801,23 +7256,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<MikeBoundaryConditionLevelOrVelocityEnumTextOrdered> MikeBoundaryConditionLevelOrVelocityEnumList = new List<MikeBoundaryConditionLevelOrVelocityEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(MikeBoundaryConditionLevelOrVelocityEnum)).Length; i < count; i++)
                 {
-                    MikeBoundaryConditionLevelOrVelocityEnumList.Add(new MikeBoundaryConditionLevelOrVelocityEnumTextOrdered() { MikeBoundaryConditionLevelOrVelocity = (MikeBoundaryConditionLevelOrVelocityEnum)i, MikeBoundaryConditionLevelOrVelocityText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeBoundaryConditionLevelOrVelocityEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeBoundaryConditionLevelOrVelocityEnum), i)) });
                 }
-                MikeBoundaryConditionLevelOrVelocityEnumList = MikeBoundaryConditionLevelOrVelocityEnumList.OrderBy(c => c.MikeBoundaryConditionLevelOrVelocityText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<MikeBoundaryConditionLevelOrVelocityEnumTextOrdered> MikeBoundaryConditionLevelOrVelocityEnumTextOrderedList = enums.GetMikeBoundaryConditionLevelOrVelocityEnumTextOrderedList();
-                Assert.AreEqual(MikeBoundaryConditionLevelOrVelocityEnumList.Count, MikeBoundaryConditionLevelOrVelocityEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(MikeBoundaryConditionLevelOrVelocityEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                MikeBoundaryConditionLevelOrVelocityEnumTextOrdered MikeBoundaryConditionLevelOrVelocityEnumTextOrdered = new MikeBoundaryConditionLevelOrVelocityEnumTextOrdered();
-                Assert.IsNotNull(MikeBoundaryConditionLevelOrVelocityEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = MikeBoundaryConditionLevelOrVelocityEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(MikeBoundaryConditionLevelOrVelocityEnumList[i].MikeBoundaryConditionLevelOrVelocityText, MikeBoundaryConditionLevelOrVelocityEnumTextOrderedList[i].MikeBoundaryConditionLevelOrVelocityText);
-                    Assert.AreEqual(MikeBoundaryConditionLevelOrVelocityEnumList[i].MikeBoundaryConditionLevelOrVelocity, MikeBoundaryConditionLevelOrVelocityEnumTextOrderedList[i].MikeBoundaryConditionLevelOrVelocity);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6828,23 +7283,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<MikeScenarioSpecialResultKMLTypeEnumTextOrdered> MikeScenarioSpecialResultKMLTypeEnumList = new List<MikeScenarioSpecialResultKMLTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(MikeScenarioSpecialResultKMLTypeEnum)).Length; i < count; i++)
                 {
-                    MikeScenarioSpecialResultKMLTypeEnumList.Add(new MikeScenarioSpecialResultKMLTypeEnumTextOrdered() { MikeScenarioSpecialResultKMLType = (MikeScenarioSpecialResultKMLTypeEnum)i, MikeScenarioSpecialResultKMLTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeScenarioSpecialResultKMLTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MikeScenarioSpecialResultKMLTypeEnum), i)) });
                 }
-                MikeScenarioSpecialResultKMLTypeEnumList = MikeScenarioSpecialResultKMLTypeEnumList.OrderBy(c => c.MikeScenarioSpecialResultKMLTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<MikeScenarioSpecialResultKMLTypeEnumTextOrdered> MikeScenarioSpecialResultKMLTypeEnumTextOrderedList = enums.GetMikeScenarioSpecialResultKMLTypeEnumTextOrderedList();
-                Assert.AreEqual(MikeScenarioSpecialResultKMLTypeEnumList.Count, MikeScenarioSpecialResultKMLTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(MikeScenarioSpecialResultKMLTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                MikeScenarioSpecialResultKMLTypeEnumTextOrdered MikeScenarioSpecialResultKMLTypeEnumTextOrdered = new MikeScenarioSpecialResultKMLTypeEnumTextOrdered();
-                Assert.IsNotNull(MikeScenarioSpecialResultKMLTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = MikeScenarioSpecialResultKMLTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(MikeScenarioSpecialResultKMLTypeEnumList[i].MikeScenarioSpecialResultKMLTypeText, MikeScenarioSpecialResultKMLTypeEnumTextOrderedList[i].MikeScenarioSpecialResultKMLTypeText);
-                    Assert.AreEqual(MikeScenarioSpecialResultKMLTypeEnumList[i].MikeScenarioSpecialResultKMLType, MikeScenarioSpecialResultKMLTypeEnumTextOrderedList[i].MikeScenarioSpecialResultKMLType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6855,23 +7310,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<MWQMSiteLatestClassificationEnumTextOrdered> MWQMSiteLatestClassificationEnumList = new List<MWQMSiteLatestClassificationEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(MWQMSiteLatestClassificationEnum)).Length; i < count; i++)
                 {
-                    MWQMSiteLatestClassificationEnumList.Add(new MWQMSiteLatestClassificationEnumTextOrdered() { MWQMSiteLatestClassification = (MWQMSiteLatestClassificationEnum)i, MWQMSiteLatestClassificationText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MWQMSiteLatestClassificationEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(MWQMSiteLatestClassificationEnum), i)) });
                 }
-                MWQMSiteLatestClassificationEnumList = MWQMSiteLatestClassificationEnumList.OrderBy(c => c.MWQMSiteLatestClassificationText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<MWQMSiteLatestClassificationEnumTextOrdered> MWQMSiteLatestClassificationEnumTextOrderedList = enums.GetMWQMSiteLatestClassificationEnumTextOrderedList();
-                Assert.AreEqual(MWQMSiteLatestClassificationEnumList.Count, MWQMSiteLatestClassificationEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(MWQMSiteLatestClassificationEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                MWQMSiteLatestClassificationEnumTextOrdered MWQMSiteLatestClassificationEnumTextOrdered = new MWQMSiteLatestClassificationEnumTextOrdered();
-                Assert.IsNotNull(MWQMSiteLatestClassificationEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = MWQMSiteLatestClassificationEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(MWQMSiteLatestClassificationEnumList[i].MWQMSiteLatestClassificationText, MWQMSiteLatestClassificationEnumTextOrderedList[i].MWQMSiteLatestClassificationText);
-                    Assert.AreEqual(MWQMSiteLatestClassificationEnumList[i].MWQMSiteLatestClassification, MWQMSiteLatestClassificationEnumTextOrderedList[i].MWQMSiteLatestClassification);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6882,23 +7337,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<PolSourceInactiveReasonEnumTextOrdered> PolSourceInactiveReasonEnumList = new List<PolSourceInactiveReasonEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(PolSourceInactiveReasonEnum)).Length; i < count; i++)
                 {
-                    PolSourceInactiveReasonEnumList.Add(new PolSourceInactiveReasonEnumTextOrdered() { PolSourceInactiveReason = (PolSourceInactiveReasonEnum)i, PolSourceInactiveReasonText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceInactiveReasonEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceInactiveReasonEnum), i)) });
                 }
-                PolSourceInactiveReasonEnumList = PolSourceInactiveReasonEnumList.OrderBy(c => c.PolSourceInactiveReasonText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<PolSourceInactiveReasonEnumTextOrdered> PolSourceInactiveReasonEnumTextOrderedList = enums.GetPolSourceInactiveReasonEnumTextOrderedList();
-                Assert.AreEqual(PolSourceInactiveReasonEnumList.Count, PolSourceInactiveReasonEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PolSourceInactiveReasonEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                PolSourceInactiveReasonEnumTextOrdered PolSourceInactiveReasonEnumTextOrdered = new PolSourceInactiveReasonEnumTextOrdered();
-                Assert.IsNotNull(PolSourceInactiveReasonEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = PolSourceInactiveReasonEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(PolSourceInactiveReasonEnumList[i].PolSourceInactiveReasonText, PolSourceInactiveReasonEnumTextOrderedList[i].PolSourceInactiveReasonText);
-                    Assert.AreEqual(PolSourceInactiveReasonEnumList[i].PolSourceInactiveReason, PolSourceInactiveReasonEnumTextOrderedList[i].PolSourceInactiveReason);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6909,23 +7364,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<PolSourceIssueRiskEnumTextOrdered> PolSourceIssueRiskEnumList = new List<PolSourceIssueRiskEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(PolSourceIssueRiskEnum)).Length; i < count; i++)
                 {
-                    PolSourceIssueRiskEnumList.Add(new PolSourceIssueRiskEnumTextOrdered() { PolSourceIssueRisk = (PolSourceIssueRiskEnum)i, PolSourceIssueRiskText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceIssueRiskEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceIssueRiskEnum), i)) });
                 }
-                PolSourceIssueRiskEnumList = PolSourceIssueRiskEnumList.OrderBy(c => c.PolSourceIssueRiskText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<PolSourceIssueRiskEnumTextOrdered> PolSourceIssueRiskEnumTextOrderedList = enums.GetPolSourceIssueRiskEnumTextOrderedList();
-                Assert.AreEqual(PolSourceIssueRiskEnumList.Count, PolSourceIssueRiskEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PolSourceIssueRiskEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                PolSourceIssueRiskEnumTextOrdered PolSourceIssueRiskEnumTextOrdered = new PolSourceIssueRiskEnumTextOrdered();
-                Assert.IsNotNull(PolSourceIssueRiskEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = PolSourceIssueRiskEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(PolSourceIssueRiskEnumList[i].PolSourceIssueRiskText, PolSourceIssueRiskEnumTextOrderedList[i].PolSourceIssueRiskText);
-                    Assert.AreEqual(PolSourceIssueRiskEnumList[i].PolSourceIssueRisk, PolSourceIssueRiskEnumTextOrderedList[i].PolSourceIssueRisk);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6936,23 +7391,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<PreliminaryTreatmentTypeEnumTextOrdered> PreliminaryTreatmentTypeEnumList = new List<PreliminaryTreatmentTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(PreliminaryTreatmentTypeEnum)).Length; i < count; i++)
                 {
-                    PreliminaryTreatmentTypeEnumList.Add(new PreliminaryTreatmentTypeEnumTextOrdered() { PreliminaryTreatmentType = (PreliminaryTreatmentTypeEnum)i, PreliminaryTreatmentTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PreliminaryTreatmentTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PreliminaryTreatmentTypeEnum), i)) });
                 }
-                PreliminaryTreatmentTypeEnumList = PreliminaryTreatmentTypeEnumList.OrderBy(c => c.PreliminaryTreatmentTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<PreliminaryTreatmentTypeEnumTextOrdered> PreliminaryTreatmentTypeEnumTextOrderedList = enums.GetPreliminaryTreatmentTypeEnumTextOrderedList();
-                Assert.AreEqual(PreliminaryTreatmentTypeEnumList.Count, PreliminaryTreatmentTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PreliminaryTreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                PreliminaryTreatmentTypeEnumTextOrdered PreliminaryTreatmentTypeEnumTextOrdered = new PreliminaryTreatmentTypeEnumTextOrdered();
-                Assert.IsNotNull(PreliminaryTreatmentTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = PreliminaryTreatmentTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(PreliminaryTreatmentTypeEnumList[i].PreliminaryTreatmentTypeText, PreliminaryTreatmentTypeEnumTextOrderedList[i].PreliminaryTreatmentTypeText);
-                    Assert.AreEqual(PreliminaryTreatmentTypeEnumList[i].PreliminaryTreatmentType, PreliminaryTreatmentTypeEnumTextOrderedList[i].PreliminaryTreatmentType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6963,23 +7418,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<PrimaryTreatmentTypeEnumTextOrdered> PrimaryTreatmentTypeEnumList = new List<PrimaryTreatmentTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(PrimaryTreatmentTypeEnum)).Length; i < count; i++)
                 {
-                    PrimaryTreatmentTypeEnumList.Add(new PrimaryTreatmentTypeEnumTextOrdered() { PrimaryTreatmentType = (PrimaryTreatmentTypeEnum)i, PrimaryTreatmentTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PrimaryTreatmentTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PrimaryTreatmentTypeEnum), i)) });
                 }
-                PrimaryTreatmentTypeEnumList = PrimaryTreatmentTypeEnumList.OrderBy(c => c.PrimaryTreatmentTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<PrimaryTreatmentTypeEnumTextOrdered> PrimaryTreatmentTypeEnumTextOrderedList = enums.GetPrimaryTreatmentTypeEnumTextOrderedList();
-                Assert.AreEqual(PrimaryTreatmentTypeEnumList.Count, PrimaryTreatmentTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PrimaryTreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                PrimaryTreatmentTypeEnumTextOrdered PrimaryTreatmentTypeEnumTextOrdered = new PrimaryTreatmentTypeEnumTextOrdered();
-                Assert.IsNotNull(PrimaryTreatmentTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = PrimaryTreatmentTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(PrimaryTreatmentTypeEnumList[i].PrimaryTreatmentTypeText, PrimaryTreatmentTypeEnumTextOrderedList[i].PrimaryTreatmentTypeText);
-                    Assert.AreEqual(PrimaryTreatmentTypeEnumList[i].PrimaryTreatmentType, PrimaryTreatmentTypeEnumTextOrderedList[i].PrimaryTreatmentType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -6990,23 +7445,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportConditionEnumTextOrdered> ReportConditionEnumList = new List<ReportConditionEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportConditionEnum)).Length; i < count; i++)
                 {
-                    ReportConditionEnumList.Add(new ReportConditionEnumTextOrdered() { ReportCondition = (ReportConditionEnum)i, ReportConditionText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportConditionEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportConditionEnum), i)) });
                 }
-                ReportConditionEnumList = ReportConditionEnumList.OrderBy(c => c.ReportConditionText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportConditionEnumTextOrdered> ReportConditionEnumTextOrderedList = enums.GetReportConditionEnumTextOrderedList();
-                Assert.AreEqual(ReportConditionEnumList.Count, ReportConditionEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportConditionEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportConditionEnumTextOrdered ReportConditionEnumTextOrdered = new ReportConditionEnumTextOrdered();
-                Assert.IsNotNull(ReportConditionEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportConditionEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportConditionEnumList[i].ReportConditionText, ReportConditionEnumTextOrderedList[i].ReportConditionText);
-                    Assert.AreEqual(ReportConditionEnumList[i].ReportCondition, ReportConditionEnumTextOrderedList[i].ReportCondition);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7017,23 +7472,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportFieldTypeEnumTextOrdered> ReportFieldTypeEnumList = new List<ReportFieldTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportFieldTypeEnum)).Length; i < count; i++)
                 {
-                    ReportFieldTypeEnumList.Add(new ReportFieldTypeEnumTextOrdered() { ReportFieldType = (ReportFieldTypeEnum)i, ReportFieldTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFieldTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFieldTypeEnum), i)) });
                 }
-                ReportFieldTypeEnumList = ReportFieldTypeEnumList.OrderBy(c => c.ReportFieldTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportFieldTypeEnumTextOrdered> ReportFieldTypeEnumTextOrderedList = enums.GetReportFieldTypeEnumTextOrderedList();
-                Assert.AreEqual(ReportFieldTypeEnumList.Count, ReportFieldTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportFieldTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportFieldTypeEnumTextOrdered ReportFieldTypeEnumTextOrdered = new ReportFieldTypeEnumTextOrdered();
-                Assert.IsNotNull(ReportFieldTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportFieldTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportFieldTypeEnumList[i].ReportFieldTypeText, ReportFieldTypeEnumTextOrderedList[i].ReportFieldTypeText);
-                    Assert.AreEqual(ReportFieldTypeEnumList[i].ReportFieldType, ReportFieldTypeEnumTextOrderedList[i].ReportFieldType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7044,23 +7499,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportFileTypeEnumTextOrdered> ReportFileTypeEnumList = new List<ReportFileTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportFileTypeEnum)).Length; i < count; i++)
                 {
-                    ReportFileTypeEnumList.Add(new ReportFileTypeEnumTextOrdered() { ReportFileType = (ReportFileTypeEnum)i, ReportFileTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFileTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFileTypeEnum), i)) });
                 }
-                ReportFileTypeEnumList = ReportFileTypeEnumList.OrderBy(c => c.ReportFileTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportFileTypeEnumTextOrdered> ReportFileTypeEnumTextOrderedList = enums.GetReportFileTypeEnumTextOrderedList();
-                Assert.AreEqual(ReportFileTypeEnumList.Count, ReportFileTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportFileTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportFileTypeEnumTextOrdered ReportFileTypeEnumTextOrdered = new ReportFileTypeEnumTextOrdered();
-                Assert.IsNotNull(ReportFileTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportFileTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportFileTypeEnumList[i].ReportFileTypeText, ReportFileTypeEnumTextOrderedList[i].ReportFileTypeText);
-                    Assert.AreEqual(ReportFileTypeEnumList[i].ReportFileType, ReportFileTypeEnumTextOrderedList[i].ReportFileType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7071,23 +7526,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportFormatingDateEnumTextOrdered> ReportFormatingDateEnumList = new List<ReportFormatingDateEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportFormatingDateEnum)).Length; i < count; i++)
                 {
-                    ReportFormatingDateEnumList.Add(new ReportFormatingDateEnumTextOrdered() { ReportFormatingDate = (ReportFormatingDateEnum)i, ReportFormatingDateText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingDateEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingDateEnum), i)) });
                 }
-                ReportFormatingDateEnumList = ReportFormatingDateEnumList.OrderBy(c => c.ReportFormatingDateText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportFormatingDateEnumTextOrdered> ReportFormatingDateEnumTextOrderedList = enums.GetReportFormatingDateEnumTextOrderedList();
-                Assert.AreEqual(ReportFormatingDateEnumList.Count, ReportFormatingDateEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportFormatingDateEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportFormatingDateEnumTextOrdered ReportFormatingDateEnumTextOrdered = new ReportFormatingDateEnumTextOrdered();
-                Assert.IsNotNull(ReportFormatingDateEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportFormatingDateEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportFormatingDateEnumList[i].ReportFormatingDateText, ReportFormatingDateEnumTextOrderedList[i].ReportFormatingDateText);
-                    Assert.AreEqual(ReportFormatingDateEnumList[i].ReportFormatingDate, ReportFormatingDateEnumTextOrderedList[i].ReportFormatingDate);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7098,23 +7553,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportFormatingNumberEnumTextOrdered> ReportFormatingNumberEnumList = new List<ReportFormatingNumberEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportFormatingNumberEnum)).Length; i < count; i++)
                 {
-                    ReportFormatingNumberEnumList.Add(new ReportFormatingNumberEnumTextOrdered() { ReportFormatingNumber = (ReportFormatingNumberEnum)i, ReportFormatingNumberText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingNumberEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportFormatingNumberEnum), i)) });
                 }
-                ReportFormatingNumberEnumList = ReportFormatingNumberEnumList.OrderBy(c => c.ReportFormatingNumberText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportFormatingNumberEnumTextOrdered> ReportFormatingNumberEnumTextOrderedList = enums.GetReportFormatingNumberEnumTextOrderedList();
-                Assert.AreEqual(ReportFormatingNumberEnumList.Count, ReportFormatingNumberEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportFormatingNumberEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportFormatingNumberEnumTextOrdered ReportFormatingNumberEnumTextOrdered = new ReportFormatingNumberEnumTextOrdered();
-                Assert.IsNotNull(ReportFormatingNumberEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportFormatingNumberEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportFormatingNumberEnumList[i].ReportFormatingNumberText, ReportFormatingNumberEnumTextOrderedList[i].ReportFormatingNumberText);
-                    Assert.AreEqual(ReportFormatingNumberEnumList[i].ReportFormatingNumber, ReportFormatingNumberEnumTextOrderedList[i].ReportFormatingNumber);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7125,23 +7580,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportSortingEnumTextOrdered> ReportSortingEnumList = new List<ReportSortingEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportSortingEnum)).Length; i < count; i++)
                 {
-                    ReportSortingEnumList.Add(new ReportSortingEnumTextOrdered() { ReportSorting = (ReportSortingEnum)i, ReportSortingText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportSortingEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportSortingEnum), i)) });
                 }
-                ReportSortingEnumList = ReportSortingEnumList.OrderBy(c => c.ReportSortingText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportSortingEnumTextOrdered> ReportSortingEnumTextOrderedList = enums.GetReportSortingEnumTextOrderedList();
-                Assert.AreEqual(ReportSortingEnumList.Count, ReportSortingEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportSortingEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportSortingEnumTextOrdered ReportSortingEnumTextOrdered = new ReportSortingEnumTextOrdered();
-                Assert.IsNotNull(ReportSortingEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportSortingEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportSortingEnumList[i].ReportSortingText, ReportSortingEnumTextOrderedList[i].ReportSortingText);
-                    Assert.AreEqual(ReportSortingEnumList[i].ReportSorting, ReportSortingEnumTextOrderedList[i].ReportSorting);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7152,23 +7607,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportTreeNodeSubTypeEnumTextOrdered> ReportTreeNodeSubTypeEnumList = new List<ReportTreeNodeSubTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportTreeNodeSubTypeEnum)).Length; i < count; i++)
                 {
-                    ReportTreeNodeSubTypeEnumList.Add(new ReportTreeNodeSubTypeEnumTextOrdered() { ReportTreeNodeSubType = (ReportTreeNodeSubTypeEnum)i, ReportTreeNodeSubTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeSubTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeSubTypeEnum), i)) });
                 }
-                ReportTreeNodeSubTypeEnumList = ReportTreeNodeSubTypeEnumList.OrderBy(c => c.ReportTreeNodeSubTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportTreeNodeSubTypeEnumTextOrdered> ReportTreeNodeSubTypeEnumTextOrderedList = enums.GetReportTreeNodeSubTypeEnumTextOrderedList();
-                Assert.AreEqual(ReportTreeNodeSubTypeEnumList.Count, ReportTreeNodeSubTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportTreeNodeSubTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportTreeNodeSubTypeEnumTextOrdered ReportTreeNodeSubTypeEnumTextOrdered = new ReportTreeNodeSubTypeEnumTextOrdered();
-                Assert.IsNotNull(ReportTreeNodeSubTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportTreeNodeSubTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportTreeNodeSubTypeEnumList[i].ReportTreeNodeSubTypeText, ReportTreeNodeSubTypeEnumTextOrderedList[i].ReportTreeNodeSubTypeText);
-                    Assert.AreEqual(ReportTreeNodeSubTypeEnumList[i].ReportTreeNodeSubType, ReportTreeNodeSubTypeEnumTextOrderedList[i].ReportTreeNodeSubType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7179,23 +7634,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ReportTreeNodeTypeEnumTextOrdered> ReportTreeNodeTypeEnumList = new List<ReportTreeNodeTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ReportTreeNodeTypeEnum)).Length; i < count; i++)
                 {
-                    ReportTreeNodeTypeEnumList.Add(new ReportTreeNodeTypeEnumTextOrdered() { ReportTreeNodeType = (ReportTreeNodeTypeEnum)i, ReportTreeNodeTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ReportTreeNodeTypeEnum), i)) });
                 }
-                ReportTreeNodeTypeEnumList = ReportTreeNodeTypeEnumList.OrderBy(c => c.ReportTreeNodeTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ReportTreeNodeTypeEnumTextOrdered> ReportTreeNodeTypeEnumTextOrderedList = enums.GetReportTreeNodeTypeEnumTextOrderedList();
-                Assert.AreEqual(ReportTreeNodeTypeEnumList.Count, ReportTreeNodeTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ReportTreeNodeTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ReportTreeNodeTypeEnumTextOrdered ReportTreeNodeTypeEnumTextOrdered = new ReportTreeNodeTypeEnumTextOrdered();
-                Assert.IsNotNull(ReportTreeNodeTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ReportTreeNodeTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ReportTreeNodeTypeEnumList[i].ReportTreeNodeTypeText, ReportTreeNodeTypeEnumTextOrderedList[i].ReportTreeNodeTypeText);
-                    Assert.AreEqual(ReportTreeNodeTypeEnumList[i].ReportTreeNodeType, ReportTreeNodeTypeEnumTextOrderedList[i].ReportTreeNodeType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7206,23 +7661,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SameDayNextDayEnumTextOrdered> SameDayNextDayEnumList = new List<SameDayNextDayEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SameDayNextDayEnum)).Length; i < count; i++)
                 {
-                    SameDayNextDayEnumList.Add(new SameDayNextDayEnumTextOrdered() { SameDayNextDay = (SameDayNextDayEnum)i, SameDayNextDayText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SameDayNextDayEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SameDayNextDayEnum), i)) });
                 }
-                SameDayNextDayEnumList = SameDayNextDayEnumList.OrderBy(c => c.SameDayNextDayText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SameDayNextDayEnumTextOrdered> SameDayNextDayEnumTextOrderedList = enums.GetSameDayNextDayEnumTextOrderedList();
-                Assert.AreEqual(SameDayNextDayEnumList.Count, SameDayNextDayEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SameDayNextDayEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SameDayNextDayEnumTextOrdered SameDayNextDayEnumTextOrdered = new SameDayNextDayEnumTextOrdered();
-                Assert.IsNotNull(SameDayNextDayEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SameDayNextDayEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SameDayNextDayEnumList[i].SameDayNextDayText, SameDayNextDayEnumTextOrderedList[i].SameDayNextDayText);
-                    Assert.AreEqual(SameDayNextDayEnumList[i].SameDayNextDay, SameDayNextDayEnumTextOrderedList[i].SameDayNextDay);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7233,23 +7688,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SampleMatrixEnumTextOrdered> SampleMatrixEnumList = new List<SampleMatrixEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SampleMatrixEnum)).Length; i < count; i++)
                 {
-                    SampleMatrixEnumList.Add(new SampleMatrixEnumTextOrdered() { SampleMatrix = (SampleMatrixEnum)i, SampleMatrixText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleMatrixEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleMatrixEnum), i)) });
                 }
-                SampleMatrixEnumList = SampleMatrixEnumList.OrderBy(c => c.SampleMatrixText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SampleMatrixEnumTextOrdered> SampleMatrixEnumTextOrderedList = enums.GetSampleMatrixEnumTextOrderedList();
-                Assert.AreEqual(SampleMatrixEnumList.Count, SampleMatrixEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SampleMatrixEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SampleMatrixEnumTextOrdered SampleMatrixEnumTextOrdered = new SampleMatrixEnumTextOrdered();
-                Assert.IsNotNull(SampleMatrixEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SampleMatrixEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SampleMatrixEnumList[i].SampleMatrixText, SampleMatrixEnumTextOrderedList[i].SampleMatrixText);
-                    Assert.AreEqual(SampleMatrixEnumList[i].SampleMatrix, SampleMatrixEnumTextOrderedList[i].SampleMatrix);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7260,23 +7715,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SampleStatusEnumTextOrdered> SampleStatusEnumList = new List<SampleStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SampleStatusEnum)).Length; i < count; i++)
                 {
-                    SampleStatusEnumList.Add(new SampleStatusEnumTextOrdered() { SampleStatus = (SampleStatusEnum)i, SampleStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleStatusEnum), i)) });
                 }
-                SampleStatusEnumList = SampleStatusEnumList.OrderBy(c => c.SampleStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SampleStatusEnumTextOrdered> SampleStatusEnumTextOrderedList = enums.GetSampleStatusEnumTextOrderedList();
-                Assert.AreEqual(SampleStatusEnumList.Count, SampleStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SampleStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SampleStatusEnumTextOrdered SampleStatusEnumTextOrdered = new SampleStatusEnumTextOrdered();
-                Assert.IsNotNull(SampleStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SampleStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SampleStatusEnumList[i].SampleStatusText, SampleStatusEnumTextOrderedList[i].SampleStatusText);
-                    Assert.AreEqual(SampleStatusEnumList[i].SampleStatus, SampleStatusEnumTextOrderedList[i].SampleStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7287,23 +7742,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SampleTypeEnumTextOrdered> SampleTypeEnumList = new List<SampleTypeEnumTextOrdered>();
-                for (int i = 101, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 100; i < count; i++)
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 101, count = Enum.GetNames(typeof(SampleTypeEnum)).Length + 101; i < count; i++)
                 {
-                    SampleTypeEnumList.Add(new SampleTypeEnumTextOrdered() { SampleType = (SampleTypeEnum)i, SampleTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SampleTypeEnum), i)) });
                 }
-                SampleTypeEnumList = SampleTypeEnumList.OrderBy(c => c.SampleTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SampleTypeEnumTextOrdered> SampleTypeEnumTextOrderedList = enums.GetSampleTypeEnumTextOrderedList();
-                Assert.AreEqual(SampleTypeEnumList.Count, SampleTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SampleTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SampleTypeEnumTextOrdered SampleTypeEnumTextOrdered = new SampleTypeEnumTextOrdered();
-                Assert.IsNotNull(SampleTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SampleTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SampleTypeEnumList[i].SampleTypeText, SampleTypeEnumTextOrderedList[i].SampleTypeText);
-                    Assert.AreEqual(SampleTypeEnumList[i].SampleType, SampleTypeEnumTextOrderedList[i].SampleType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7314,23 +7769,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SamplingPlanTypeEnumTextOrdered> SamplingPlanTypeEnumList = new List<SamplingPlanTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SamplingPlanTypeEnum)).Length; i < count; i++)
                 {
-                    SamplingPlanTypeEnumList.Add(new SamplingPlanTypeEnumTextOrdered() { SamplingPlanType = (SamplingPlanTypeEnum)i, SamplingPlanTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SamplingPlanTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SamplingPlanTypeEnum), i)) });
                 }
-                SamplingPlanTypeEnumList = SamplingPlanTypeEnumList.OrderBy(c => c.SamplingPlanTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SamplingPlanTypeEnumTextOrdered> SamplingPlanTypeEnumTextOrderedList = enums.GetSamplingPlanTypeEnumTextOrderedList();
-                Assert.AreEqual(SamplingPlanTypeEnumList.Count, SamplingPlanTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SamplingPlanTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SamplingPlanTypeEnumTextOrdered SamplingPlanTypeEnumTextOrdered = new SamplingPlanTypeEnumTextOrdered();
-                Assert.IsNotNull(SamplingPlanTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SamplingPlanTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SamplingPlanTypeEnumList[i].SamplingPlanTypeText, SamplingPlanTypeEnumTextOrderedList[i].SamplingPlanTypeText);
-                    Assert.AreEqual(SamplingPlanTypeEnumList[i].SamplingPlanType, SamplingPlanTypeEnumTextOrderedList[i].SamplingPlanType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7341,23 +7796,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<ScenarioStatusEnumTextOrdered> ScenarioStatusEnumList = new List<ScenarioStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(ScenarioStatusEnum)).Length; i < count; i++)
                 {
-                    ScenarioStatusEnumList.Add(new ScenarioStatusEnumTextOrdered() { ScenarioStatus = (ScenarioStatusEnum)i, ScenarioStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ScenarioStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(ScenarioStatusEnum), i)) });
                 }
-                ScenarioStatusEnumList = ScenarioStatusEnumList.OrderBy(c => c.ScenarioStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<ScenarioStatusEnumTextOrdered> ScenarioStatusEnumTextOrderedList = enums.GetScenarioStatusEnumTextOrderedList();
-                Assert.AreEqual(ScenarioStatusEnumList.Count, ScenarioStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(ScenarioStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                ScenarioStatusEnumTextOrdered ScenarioStatusEnumTextOrdered = new ScenarioStatusEnumTextOrdered();
-                Assert.IsNotNull(ScenarioStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = ScenarioStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(ScenarioStatusEnumList[i].ScenarioStatusText, ScenarioStatusEnumTextOrderedList[i].ScenarioStatusText);
-                    Assert.AreEqual(ScenarioStatusEnumList[i].ScenarioStatus, ScenarioStatusEnumTextOrderedList[i].ScenarioStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7368,23 +7823,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SearchTagEnumTextOrdered> SearchTagEnumList = new List<SearchTagEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SearchTagEnum)).Length; i < count; i++)
                 {
-                    SearchTagEnumList.Add(new SearchTagEnumTextOrdered() { SearchTag = (SearchTagEnum)i, SearchTagText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SearchTagEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SearchTagEnum), i)) });
                 }
-                SearchTagEnumList = SearchTagEnumList.OrderBy(c => c.SearchTagText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SearchTagEnumTextOrdered> SearchTagEnumTextOrderedList = enums.GetSearchTagEnumTextOrderedList();
-                Assert.AreEqual(SearchTagEnumList.Count, SearchTagEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SearchTagEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SearchTagEnumTextOrdered SearchTagEnumTextOrdered = new SearchTagEnumTextOrdered();
-                Assert.IsNotNull(SearchTagEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SearchTagEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SearchTagEnumList[i].SearchTagText, SearchTagEnumTextOrderedList[i].SearchTagText);
-                    Assert.AreEqual(SearchTagEnumList[i].SearchTag, SearchTagEnumTextOrderedList[i].SearchTag);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7395,23 +7850,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SecondaryTreatmentTypeEnumTextOrdered> SecondaryTreatmentTypeEnumList = new List<SecondaryTreatmentTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SecondaryTreatmentTypeEnum)).Length; i < count; i++)
                 {
-                    SecondaryTreatmentTypeEnumList.Add(new SecondaryTreatmentTypeEnumTextOrdered() { SecondaryTreatmentType = (SecondaryTreatmentTypeEnum)i, SecondaryTreatmentTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SecondaryTreatmentTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SecondaryTreatmentTypeEnum), i)) });
                 }
-                SecondaryTreatmentTypeEnumList = SecondaryTreatmentTypeEnumList.OrderBy(c => c.SecondaryTreatmentTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SecondaryTreatmentTypeEnumTextOrdered> SecondaryTreatmentTypeEnumTextOrderedList = enums.GetSecondaryTreatmentTypeEnumTextOrderedList();
-                Assert.AreEqual(SecondaryTreatmentTypeEnumList.Count, SecondaryTreatmentTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SecondaryTreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SecondaryTreatmentTypeEnumTextOrdered SecondaryTreatmentTypeEnumTextOrdered = new SecondaryTreatmentTypeEnumTextOrdered();
-                Assert.IsNotNull(SecondaryTreatmentTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SecondaryTreatmentTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SecondaryTreatmentTypeEnumList[i].SecondaryTreatmentTypeText, SecondaryTreatmentTypeEnumTextOrderedList[i].SecondaryTreatmentTypeText);
-                    Assert.AreEqual(SecondaryTreatmentTypeEnumList[i].SecondaryTreatmentType, SecondaryTreatmentTypeEnumTextOrderedList[i].SecondaryTreatmentType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7422,23 +7877,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SiteTypeEnumTextOrdered> SiteTypeEnumList = new List<SiteTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SiteTypeEnum)).Length; i < count; i++)
                 {
-                    SiteTypeEnumList.Add(new SiteTypeEnumTextOrdered() { SiteType = (SiteTypeEnum)i, SiteTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SiteTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SiteTypeEnum), i)) });
                 }
-                SiteTypeEnumList = SiteTypeEnumList.OrderBy(c => c.SiteTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SiteTypeEnumTextOrdered> SiteTypeEnumTextOrderedList = enums.GetSiteTypeEnumTextOrderedList();
-                Assert.AreEqual(SiteTypeEnumList.Count, SiteTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SiteTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SiteTypeEnumTextOrdered SiteTypeEnumTextOrdered = new SiteTypeEnumTextOrdered();
-                Assert.IsNotNull(SiteTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SiteTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SiteTypeEnumList[i].SiteTypeText, SiteTypeEnumTextOrderedList[i].SiteTypeText);
-                    Assert.AreEqual(SiteTypeEnumList[i].SiteType, SiteTypeEnumTextOrderedList[i].SiteType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7449,23 +7904,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<SpecialTableTypeEnumTextOrdered> SpecialTableTypeEnumList = new List<SpecialTableTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(SpecialTableTypeEnum)).Length; i < count; i++)
                 {
-                    SpecialTableTypeEnumList.Add(new SpecialTableTypeEnumTextOrdered() { SpecialTableType = (SpecialTableTypeEnum)i, SpecialTableTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SpecialTableTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(SpecialTableTypeEnum), i)) });
                 }
-                SpecialTableTypeEnumList = SpecialTableTypeEnumList.OrderBy(c => c.SpecialTableTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<SpecialTableTypeEnumTextOrdered> SpecialTableTypeEnumTextOrderedList = enums.GetSpecialTableTypeEnumTextOrderedList();
-                Assert.AreEqual(SpecialTableTypeEnumList.Count, SpecialTableTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(SpecialTableTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                SpecialTableTypeEnumTextOrdered SpecialTableTypeEnumTextOrdered = new SpecialTableTypeEnumTextOrdered();
-                Assert.IsNotNull(SpecialTableTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = SpecialTableTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(SpecialTableTypeEnumList[i].SpecialTableTypeText, SpecialTableTypeEnumTextOrderedList[i].SpecialTableTypeText);
-                    Assert.AreEqual(SpecialTableTypeEnumList[i].SpecialTableType, SpecialTableTypeEnumTextOrderedList[i].SpecialTableType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7476,23 +7931,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<StorageDataTypeEnumTextOrdered> StorageDataTypeEnumList = new List<StorageDataTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(StorageDataTypeEnum)).Length; i < count; i++)
                 {
-                    StorageDataTypeEnumList.Add(new StorageDataTypeEnumTextOrdered() { StorageDataType = (StorageDataTypeEnum)i, StorageDataTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StorageDataTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StorageDataTypeEnum), i)) });
                 }
-                StorageDataTypeEnumList = StorageDataTypeEnumList.OrderBy(c => c.StorageDataTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<StorageDataTypeEnumTextOrdered> StorageDataTypeEnumTextOrderedList = enums.GetStorageDataTypeEnumTextOrderedList();
-                Assert.AreEqual(StorageDataTypeEnumList.Count, StorageDataTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(StorageDataTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                StorageDataTypeEnumTextOrdered StorageDataTypeEnumTextOrdered = new StorageDataTypeEnumTextOrdered();
-                Assert.IsNotNull(StorageDataTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = StorageDataTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(StorageDataTypeEnumList[i].StorageDataTypeText, StorageDataTypeEnumTextOrderedList[i].StorageDataTypeText);
-                    Assert.AreEqual(StorageDataTypeEnumList[i].StorageDataType, StorageDataTypeEnumTextOrderedList[i].StorageDataType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7503,23 +7958,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<StreetTypeEnumTextOrdered> StreetTypeEnumList = new List<StreetTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(StreetTypeEnum)).Length; i < count; i++)
                 {
-                    StreetTypeEnumList.Add(new StreetTypeEnumTextOrdered() { StreetType = (StreetTypeEnum)i, StreetTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StreetTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(StreetTypeEnum), i)) });
                 }
-                StreetTypeEnumList = StreetTypeEnumList.OrderBy(c => c.StreetTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<StreetTypeEnumTextOrdered> StreetTypeEnumTextOrderedList = enums.GetStreetTypeEnumTextOrderedList();
-                Assert.AreEqual(StreetTypeEnumList.Count, StreetTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(StreetTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                StreetTypeEnumTextOrdered StreetTypeEnumTextOrdered = new StreetTypeEnumTextOrdered();
-                Assert.IsNotNull(StreetTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = StreetTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(StreetTypeEnumList[i].StreetTypeText, StreetTypeEnumTextOrderedList[i].StreetTypeText);
-                    Assert.AreEqual(StreetTypeEnumList[i].StreetType, StreetTypeEnumTextOrderedList[i].StreetType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7530,23 +7985,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TelTypeEnumTextOrdered> TelTypeEnumList = new List<TelTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TelTypeEnum)).Length; i < count; i++)
                 {
-                    TelTypeEnumList.Add(new TelTypeEnumTextOrdered() { TelType = (TelTypeEnum)i, TelTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TelTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TelTypeEnum), i)) });
                 }
-                TelTypeEnumList = TelTypeEnumList.OrderBy(c => c.TelTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TelTypeEnumTextOrdered> TelTypeEnumTextOrderedList = enums.GetTelTypeEnumTextOrderedList();
-                Assert.AreEqual(TelTypeEnumList.Count, TelTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TelTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TelTypeEnumTextOrdered TelTypeEnumTextOrdered = new TelTypeEnumTextOrdered();
-                Assert.IsNotNull(TelTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TelTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TelTypeEnumList[i].TelTypeText, TelTypeEnumTextOrderedList[i].TelTypeText);
-                    Assert.AreEqual(TelTypeEnumList[i].TelType, TelTypeEnumTextOrderedList[i].TelType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7557,23 +8012,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TertiaryTreatmentTypeEnumTextOrdered> TertiaryTreatmentTypeEnumList = new List<TertiaryTreatmentTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TertiaryTreatmentTypeEnum)).Length; i < count; i++)
                 {
-                    TertiaryTreatmentTypeEnumList.Add(new TertiaryTreatmentTypeEnumTextOrdered() { TertiaryTreatmentType = (TertiaryTreatmentTypeEnum)i, TertiaryTreatmentTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TertiaryTreatmentTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TertiaryTreatmentTypeEnum), i)) });
                 }
-                TertiaryTreatmentTypeEnumList = TertiaryTreatmentTypeEnumList.OrderBy(c => c.TertiaryTreatmentTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TertiaryTreatmentTypeEnumTextOrdered> TertiaryTreatmentTypeEnumTextOrderedList = enums.GetTertiaryTreatmentTypeEnumTextOrderedList();
-                Assert.AreEqual(TertiaryTreatmentTypeEnumList.Count, TertiaryTreatmentTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TertiaryTreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TertiaryTreatmentTypeEnumTextOrdered TertiaryTreatmentTypeEnumTextOrdered = new TertiaryTreatmentTypeEnumTextOrdered();
-                Assert.IsNotNull(TertiaryTreatmentTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TertiaryTreatmentTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TertiaryTreatmentTypeEnumList[i].TertiaryTreatmentTypeText, TertiaryTreatmentTypeEnumTextOrderedList[i].TertiaryTreatmentTypeText);
-                    Assert.AreEqual(TertiaryTreatmentTypeEnumList[i].TertiaryTreatmentType, TertiaryTreatmentTypeEnumTextOrderedList[i].TertiaryTreatmentType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7584,23 +8039,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TideDataTypeEnumTextOrdered> TideDataTypeEnumList = new List<TideDataTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TideDataTypeEnum)).Length; i < count; i++)
                 {
-                    TideDataTypeEnumList.Add(new TideDataTypeEnumTextOrdered() { TideDataType = (TideDataTypeEnum)i, TideDataTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideDataTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideDataTypeEnum), i)) });
                 }
-                TideDataTypeEnumList = TideDataTypeEnumList.OrderBy(c => c.TideDataTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TideDataTypeEnumTextOrdered> TideDataTypeEnumTextOrderedList = enums.GetTideDataTypeEnumTextOrderedList();
-                Assert.AreEqual(TideDataTypeEnumList.Count, TideDataTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TideDataTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TideDataTypeEnumTextOrdered TideDataTypeEnumTextOrdered = new TideDataTypeEnumTextOrdered();
-                Assert.IsNotNull(TideDataTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TideDataTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TideDataTypeEnumList[i].TideDataTypeText, TideDataTypeEnumTextOrderedList[i].TideDataTypeText);
-                    Assert.AreEqual(TideDataTypeEnumList[i].TideDataType, TideDataTypeEnumTextOrderedList[i].TideDataType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7611,23 +8066,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TideTextEnumTextOrdered> TideTextEnumList = new List<TideTextEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TideTextEnum)).Length; i < count; i++)
                 {
-                    TideTextEnumList.Add(new TideTextEnumTextOrdered() { TideText = (TideTextEnum)i, TideTextText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideTextEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TideTextEnum), i)) });
                 }
-                TideTextEnumList = TideTextEnumList.OrderBy(c => c.TideTextText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TideTextEnumTextOrdered> TideTextEnumTextOrderedList = enums.GetTideTextEnumTextOrderedList();
-                Assert.AreEqual(TideTextEnumList.Count, TideTextEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TideTextEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TideTextEnumTextOrdered TideTextEnumTextOrdered = new TideTextEnumTextOrdered();
-                Assert.IsNotNull(TideTextEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TideTextEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TideTextEnumList[i].TideTextText, TideTextEnumTextOrderedList[i].TideTextText);
-                    Assert.AreEqual(TideTextEnumList[i].TideText, TideTextEnumTextOrderedList[i].TideText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7638,23 +8093,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TranslationStatusEnumTextOrdered> TranslationStatusEnumList = new List<TranslationStatusEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TranslationStatusEnum)).Length; i < count; i++)
                 {
-                    TranslationStatusEnumList.Add(new TranslationStatusEnumTextOrdered() { TranslationStatus = (TranslationStatusEnum)i, TranslationStatusText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TranslationStatusEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TranslationStatusEnum), i)) });
                 }
-                TranslationStatusEnumList = TranslationStatusEnumList.OrderBy(c => c.TranslationStatusText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TranslationStatusEnumTextOrdered> TranslationStatusEnumTextOrderedList = enums.GetTranslationStatusEnumTextOrderedList();
-                Assert.AreEqual(TranslationStatusEnumList.Count, TranslationStatusEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TranslationStatusEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TranslationStatusEnumTextOrdered TranslationStatusEnumTextOrdered = new TranslationStatusEnumTextOrdered();
-                Assert.IsNotNull(TranslationStatusEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TranslationStatusEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TranslationStatusEnumList[i].TranslationStatusText, TranslationStatusEnumTextOrderedList[i].TranslationStatusText);
-                    Assert.AreEqual(TranslationStatusEnumList[i].TranslationStatus, TranslationStatusEnumTextOrderedList[i].TranslationStatus);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7665,23 +8120,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TreatmentTypeEnumTextOrdered> TreatmentTypeEnumList = new List<TreatmentTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TreatmentTypeEnum)).Length; i < count; i++)
                 {
-                    TreatmentTypeEnumList.Add(new TreatmentTypeEnumTextOrdered() { TreatmentType = (TreatmentTypeEnum)i, TreatmentTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TreatmentTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TreatmentTypeEnum), i)) });
                 }
-                TreatmentTypeEnumList = TreatmentTypeEnumList.OrderBy(c => c.TreatmentTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TreatmentTypeEnumTextOrdered> TreatmentTypeEnumTextOrderedList = enums.GetTreatmentTypeEnumTextOrderedList();
-                Assert.AreEqual(TreatmentTypeEnumList.Count, TreatmentTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TreatmentTypeEnumTextOrdered TreatmentTypeEnumTextOrdered = new TreatmentTypeEnumTextOrdered();
-                Assert.IsNotNull(TreatmentTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TreatmentTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TreatmentTypeEnumList[i].TreatmentTypeText, TreatmentTypeEnumTextOrderedList[i].TreatmentTypeText);
-                    Assert.AreEqual(TreatmentTypeEnumList[i].TreatmentType, TreatmentTypeEnumTextOrderedList[i].TreatmentType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7692,23 +8147,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TVAuthEnumTextOrdered> TVAuthEnumList = new List<TVAuthEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TVAuthEnum)).Length; i < count; i++)
                 {
-                    TVAuthEnumList.Add(new TVAuthEnumTextOrdered() { TVAuth = (TVAuthEnum)i, TVAuthText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVAuthEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVAuthEnum), i)) });
                 }
-                TVAuthEnumList = TVAuthEnumList.OrderBy(c => c.TVAuthText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TVAuthEnumTextOrdered> TVAuthEnumTextOrderedList = enums.GetTVAuthEnumTextOrderedList();
-                Assert.AreEqual(TVAuthEnumList.Count, TVAuthEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TVAuthEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TVAuthEnumTextOrdered TVAuthEnumTextOrdered = new TVAuthEnumTextOrdered();
-                Assert.IsNotNull(TVAuthEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TVAuthEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TVAuthEnumList[i].TVAuthText, TVAuthEnumTextOrderedList[i].TVAuthText);
-                    Assert.AreEqual(TVAuthEnumList[i].TVAuth, TVAuthEnumTextOrderedList[i].TVAuth);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7719,23 +8174,23 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<TVTypeEnumTextOrdered> TVTypeEnumList = new List<TVTypeEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(TVTypeEnum)).Length; i < count; i++)
                 {
-                    TVTypeEnumList.Add(new TVTypeEnumTextOrdered() { TVType = (TVTypeEnum)i, TVTypeText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVTypeEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(TVTypeEnum), i)) });
                 }
-                TVTypeEnumList = TVTypeEnumList.OrderBy(c => c.TVTypeText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<TVTypeEnumTextOrdered> TVTypeEnumTextOrderedList = enums.GetTVTypeEnumTextOrderedList();
-                Assert.AreEqual(TVTypeEnumList.Count, TVTypeEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(TVTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                TVTypeEnumTextOrdered TVTypeEnumTextOrdered = new TVTypeEnumTextOrdered();
-                Assert.IsNotNull(TVTypeEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = TVTypeEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(TVTypeEnumList[i].TVTypeText, TVTypeEnumTextOrderedList[i].TVTypeText);
-                    Assert.AreEqual(TVTypeEnumList[i].TVType, TVTypeEnumTextOrderedList[i].TVType);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
@@ -7746,53 +8201,53 @@ namespace CSSPEnums.Tests
             {
                 SetupTest(culture);
 
-                List<WebTideDataSetEnumTextOrdered> WebTideDataSetEnumList = new List<WebTideDataSetEnumTextOrdered>();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
                 for (int i = 1, count = Enum.GetNames(typeof(WebTideDataSetEnum)).Length; i < count; i++)
                 {
-                    WebTideDataSetEnumList.Add(new WebTideDataSetEnumTextOrdered() { WebTideDataSet = (WebTideDataSetEnum)i, WebTideDataSetText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(WebTideDataSetEnum), i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(WebTideDataSetEnum), i)) });
                 }
-                WebTideDataSetEnumList = WebTideDataSetEnumList.OrderBy(c => c.WebTideDataSetText).ToList();
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-                List<WebTideDataSetEnumTextOrdered> WebTideDataSetEnumTextOrderedList = enums.GetWebTideDataSetEnumTextOrderedList();
-                Assert.AreEqual(WebTideDataSetEnumList.Count, WebTideDataSetEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(WebTideDataSetEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-                WebTideDataSetEnumTextOrdered WebTideDataSetEnumTextOrdered = new WebTideDataSetEnumTextOrdered();
-                Assert.IsNotNull(WebTideDataSetEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-                for (int i = 0, count = WebTideDataSetEnumList.Count; i < count; i++)
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
                 {
-                    Assert.AreEqual(WebTideDataSetEnumList[i].WebTideDataSetText, WebTideDataSetEnumTextOrderedList[i].WebTideDataSetText);
-                    Assert.AreEqual(WebTideDataSetEnumList[i].WebTideDataSet, WebTideDataSetEnumTextOrderedList[i].WebTideDataSet);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
                 }
             }
         }
-        //[TestMethod]
-        //public void Enums_PolSourceObsInfoEnumTextOrdered_Test()
-        //{
-        //    foreach (CultureInfo culture in cultureListGood)
-        //    {
-        //        SetupTest(culture);
+        [TestMethod]
+        public void Enums_PolSourceObsInfoEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
 
-        //        List<PolSourceObsInfoEnumTextOrdered> PolSourceObsInfoEnumList = new List<PolSourceObsInfoEnumTextOrdered>();
-        //        for (int i = 1, count = Enum.GetNames(typeof(PolSourceObsInfoEnum)).Length; i < count; i++)
-        //        {
-        //            PolSourceObsInfoEnumList.Add(new PolSourceObsInfoEnumTextOrdered() { PolSourceObsInfo = (PolSourceObsInfoEnum)i, PolSourceObsInfoText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceObsInfoEnum), i)) });
-        //        }
-        //        PolSourceObsInfoEnumList = PolSourceObsInfoEnumList.OrderBy(c => c.PolSourceObsInfoText).ToList();
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(PolSourceObsInfoEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(PolSourceObsInfoEnum), i)) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
-        //        List<PolSourceObsInfoEnumTextOrdered> PolSourceObsInfoEnumTextOrderedList = enums.GetPolSourceObsInfoEnumTextOrderedList();
-        //        Assert.AreEqual(PolSourceObsInfoEnumList.Count, PolSourceObsInfoEnumTextOrderedList.Count);
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PolSourceObsInfoEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
-        //        PolSourceObsInfoEnumTextOrdered PolSourceObsInfoEnumTextOrdered = new PolSourceObsInfoEnumTextOrdered();
-        //        Assert.IsNotNull(PolSourceObsInfoEnumTextOrdered);
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
 
-        //        for (int i = 0, count = PolSourceObsInfoEnumList.Count; i < count; i++)
-        //        {
-        //            Assert.AreEqual(PolSourceObsInfoEnumList[i].PolSourceObsInfoText, PolSourceObsInfoEnumTextOrderedList[i].PolSourceObsInfoText);
-        //            Assert.AreEqual(PolSourceObsInfoEnumList[i].PolSourceObsInfo, PolSourceObsInfoEnumTextOrderedList[i].PolSourceObsInfo);
-        //        }
-        //    }
-        //}
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
 
         #endregion Testing Methods TextOrdered public
     }

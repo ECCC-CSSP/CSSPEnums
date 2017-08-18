@@ -52,7 +52,6 @@
     <Compile Include="EnumsWithHelp.cs" />
     <Compile Include="EnumsGenerate.cs" />
     <Compile Include="EnumsTestGenerate.cs" />
-    <Compile Include="EnumsTextOrderGenerate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

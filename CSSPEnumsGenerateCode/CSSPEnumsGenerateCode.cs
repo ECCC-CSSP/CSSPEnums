@@ -61,14 +61,6 @@ namespace CSSPEnumsGenerateCode
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
-            // Will generate CSSPEnums/GeneratedEnumsTextOrder.cs file
-            // -----------------------------------------------------------------
-            // -----------------------------------------------------------------
-
-            enumGenerateCodeHelper.EnumsTextOrderGenerate();
-
-            // -----------------------------------------------------------------
-            // -----------------------------------------------------------------
             // Will generate CSSPEnums/GeneratedEnums.cs file
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -106,9 +98,8 @@ namespace CSSPEnumsGenerateCode
             EnumsFiles enumsFiles = new EnumsFiles();
             enumsFiles.CSSPEnumsDLL = textBoxCSSPEnumsDLL.Text;
             enumsFiles.BaseDir = textBoxBaseDir.Text;
-            enumsFiles.EnumsTextOrderGenearated = textBoxFile1.Text;
-            enumsFiles.EnumsGenerated = textBoxFile2.Text;
-            enumsFiles.EnumsTestGenerated = textBoxFile3.Text;
+            enumsFiles.EnumsGenerated = textBoxFile1.Text;
+            enumsFiles.EnumsTestGenerated = textBoxFile2.Text;
 
             enumGenerateCodeHelper = new EnumsGenerateCodeHelper(enumsFiles);
 

@@ -60,163 +60,6 @@ namespace CSSPEnums
         }
         #endregion Construtors
 
-        #region Functions public
-        public string GetResValueForTypeAndField(Type type, int IntVal)
-        {
-            if (LanguageRequest.ToString() != Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName)
-            {
-                if (LanguageRequest == LanguageEnum.fr)
-                {
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-CA");
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-CA");
-                }
-                else
-                {
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-CA");
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-CA");
-                }
-            }
-
-            string enumName = type.Name;
-
-            switch (enumName)
-            {
-                case "ActionDBTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ActionDBTypeEnum((ActionDBTypeEnum)IntVal));
-                case "AddressTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AddressTypeEnum((AddressTypeEnum)IntVal));
-                case "AerationTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AerationTypeEnum((AerationTypeEnum)IntVal));
-                case "AlarmSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AlarmSystemTypeEnum((AlarmSystemTypeEnum)IntVal));
-                case "AnalyzeMethodEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AnalyzeMethodEnum((AnalyzeMethodEnum)IntVal));
-                case "AppTaskCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskCommandEnum((AppTaskCommandEnum)IntVal));
-                case "AppTaskStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskStatusEnum((AppTaskStatusEnum)IntVal));
-                case "BeaufortScaleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BeaufortScaleEnum((BeaufortScaleEnum)IntVal));
-                case "BoxModelResultTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BoxModelResultTypeEnum((BoxModelResultTypeEnum)IntVal));
-                case "CollectionSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CollectionSystemTypeEnum((CollectionSystemTypeEnum)IntVal));
-                case "ContactTitleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ContactTitleEnum((ContactTitleEnum)IntVal));
-                case "CSSPWQInputSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputSheetTypeEnum((CSSPWQInputSheetTypeEnum)IntVal));
-                case "CSSPWQInputTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputTypeEnum((CSSPWQInputTypeEnum)IntVal));
-                case "DailyOrHourlyDataEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DailyOrHourlyDataEnum((DailyOrHourlyDataEnum)IntVal));
-                case "DatabaseTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DatabaseTypeEnum((DatabaseTypeEnum)IntVal));
-                case "DisinfectionTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DisinfectionTypeEnum((DisinfectionTypeEnum)IntVal));
-                case "EmailTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_EmailTypeEnum((EmailTypeEnum)IntVal));
-                case "FacilityTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FacilityTypeEnum((FacilityTypeEnum)IntVal));
-                case "FilePurposeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FilePurposeEnum((FilePurposeEnum)IntVal));
-                case "FileStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileStatusEnum((FileStatusEnum)IntVal));
-                case "FileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileTypeEnum((FileTypeEnum)IntVal));
-                case "InfrastructureTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_InfrastructureTypeEnum((InfrastructureTypeEnum)IntVal));
-                case "KMZActionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_KMZActionEnum((KMZActionEnum)IntVal));
-                case "LaboratoryEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LaboratoryEnum((LaboratoryEnum)IntVal));
-                case "LabSheetStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetStatusEnum((LabSheetStatusEnum)IntVal));
-                case "LabSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetTypeEnum((LabSheetTypeEnum)IntVal));
-                case "LanguageEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LanguageEnum((LanguageEnum)IntVal));
-                case "LogCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LogCommandEnum((LogCommandEnum)IntVal));
-                case "MapInfoDrawTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MapInfoDrawTypeEnum((MapInfoDrawTypeEnum)IntVal));
-                case "MikeBoundaryConditionLevelOrVelocityEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeBoundaryConditionLevelOrVelocityEnum((MikeBoundaryConditionLevelOrVelocityEnum)IntVal));
-                case "MikeScenarioSpecialResultKMLTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeScenarioSpecialResultKMLTypeEnum((MikeScenarioSpecialResultKMLTypeEnum)IntVal));
-                case "MWQMSiteLatestClassificationEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MWQMSiteLatestClassificationEnum((MWQMSiteLatestClassificationEnum)IntVal));
-                case "PolSourceInactiveReasonEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceInactiveReasonEnum((PolSourceInactiveReasonEnum)IntVal));
-                case "PolSourceIssueRiskEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceIssueRiskEnum((PolSourceIssueRiskEnum)IntVal));
-                case "PreliminaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PreliminaryTreatmentTypeEnum((PreliminaryTreatmentTypeEnum)IntVal));
-                case "PrimaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PrimaryTreatmentTypeEnum((PrimaryTreatmentTypeEnum)IntVal));
-                case "ReportConditionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportConditionEnum((ReportConditionEnum)IntVal));
-                case "ReportFieldTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFieldTypeEnum((ReportFieldTypeEnum)IntVal));
-                case "ReportFileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFileTypeEnum((ReportFileTypeEnum)IntVal));
-                case "ReportFormatingDateEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingDateEnum((ReportFormatingDateEnum)IntVal));
-                case "ReportFormatingNumberEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingNumberEnum((ReportFormatingNumberEnum)IntVal));
-                case "ReportSortingEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportSortingEnum((ReportSortingEnum)IntVal));
-                case "ReportTreeNodeSubTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeSubTypeEnum((ReportTreeNodeSubTypeEnum)IntVal));
-                case "ReportTreeNodeTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeTypeEnum((ReportTreeNodeTypeEnum)IntVal));
-                case "SameDayNextDayEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SameDayNextDayEnum((SameDayNextDayEnum)IntVal));
-                case "SampleMatrixEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleMatrixEnum((SampleMatrixEnum)IntVal));
-                case "SampleStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleStatusEnum((SampleStatusEnum)IntVal));
-                case "SampleTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleTypeEnum((SampleTypeEnum)IntVal));
-                case "SamplingPlanTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SamplingPlanTypeEnum((SamplingPlanTypeEnum)IntVal));
-                case "ScenarioStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ScenarioStatusEnum((ScenarioStatusEnum)IntVal));
-                case "SearchTagEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SearchTagEnum((SearchTagEnum)IntVal));
-                case "SecondaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SecondaryTreatmentTypeEnum((SecondaryTreatmentTypeEnum)IntVal));
-                case "SiteTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SiteTypeEnum((SiteTypeEnum)IntVal));
-                case "SpecialTableTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SpecialTableTypeEnum((SpecialTableTypeEnum)IntVal));
-                case "StorageDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StorageDataTypeEnum((StorageDataTypeEnum)IntVal));
-                case "StreetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StreetTypeEnum((StreetTypeEnum)IntVal));
-                case "TelTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TelTypeEnum((TelTypeEnum)IntVal));
-                case "TertiaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TertiaryTreatmentTypeEnum((TertiaryTreatmentTypeEnum)IntVal));
-                case "TideDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideDataTypeEnum((TideDataTypeEnum)IntVal));
-                case "TideTextEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideTextEnum((TideTextEnum)IntVal));
-                case "TranslationStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TranslationStatusEnum((TranslationStatusEnum)IntVal));
-                case "TreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TreatmentTypeEnum((TreatmentTypeEnum)IntVal));
-                case "TVAuthEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVAuthEnum((TVAuthEnum)IntVal));
-                case "TVTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVTypeEnum((TVTypeEnum)IntVal));
-                case "WebTideDataSetEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_WebTideDataSetEnum((WebTideDataSetEnum)IntVal));
-                default:
-                    return "";
-            }
-        }
-        #endregion Functions public
-
     }
     /// <summary>
     /// </summary>
@@ -4629,6 +4472,21 @@ namespace CSSPEnums
         /// 11 -- en [Vancouver Island (Mike Foreman)] ---- fr [Vancouver Island (Mike Foreman) (fr)]
         /// </summary>
         vigf8 = 11,
+    }
+
+    /// <summary>
+    /// Class representing the Enumeration ID and Text in allowable languages [en, fr]
+    /// </summary>
+    public class EnumIDAndText
+    {
+        /// <summary>
+        /// Enumeration ID
+        /// </summary>
+        public int EnumID { get; set; }
+        /// <summary>
+        /// Enumeration Text in allowable languages [en, fr]
+        /// </summary>
+        public string EnumText { get; set; }
     }
 
 }

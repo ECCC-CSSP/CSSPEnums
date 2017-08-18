@@ -111,46 +111,6 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"        }");
             sb.AppendLine(@"        #endregion Construtors");
             sb.AppendLine(@"");
-            sb.AppendLine(@"        #region Functions public");
-            sb.AppendLine(@"        public string GetResValueForTypeAndField(Type type, int IntVal)");
-            sb.AppendLine(@"        {");
-            sb.AppendLine(@"            if (LanguageRequest.ToString() != Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName)");
-            sb.AppendLine(@"            {");
-            sb.AppendLine(@"                if (LanguageRequest == LanguageEnum.fr)");
-            sb.AppendLine(@"                {");
-            sb.AppendLine(@"                    Thread.CurrentThread.CurrentCulture = new CultureInfo(""fr-CA"");");
-            sb.AppendLine(@"                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(""fr-CA"");");
-            sb.AppendLine(@"                }");
-            sb.AppendLine(@"                else");
-            sb.AppendLine(@"                {");
-            sb.AppendLine(@"                    Thread.CurrentThread.CurrentCulture = new CultureInfo(""en-CA"");");
-            sb.AppendLine(@"                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(""en-CA"");");
-            sb.AppendLine(@"                }");
-            sb.AppendLine(@"            }");
-            sb.AppendLine(@"");
-            sb.AppendLine(@"            string enumName = type.Name;");
-            sb.AppendLine(@"");
-            sb.AppendLine(@"            switch (enumName)");
-            sb.AppendLine(@"            {");
-            foreach (Type type in types)
-            {
-                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
-                {
-                    string enumName = type.Name;
-                    if (enumName == "PolSourceObsInfoEnum")
-                        continue;
-
-                    sb.AppendLine(@"                case """ + enumName + @""":");
-                    sb.AppendLine(@"                    return WebUtility.HtmlEncode(GetEnumText_" + enumName + @"((" + enumName + @")IntVal));");
-                }
-            }
-
-            sb.AppendLine(@"                default:");
-            sb.AppendLine(@"                    return """";");
-            sb.AppendLine(@"            }");
-            sb.AppendLine(@"        }");
-            sb.AppendLine(@"        #endregion Functions public");
-            sb.AppendLine(@"");
             sb.AppendLine(@"    }");
             #endregion Top part
 
@@ -219,6 +179,21 @@ namespace CSSPEnumsGenerateCodeHelper
                 }
             }
             sb.AppendLine(@"");
+            sb.AppendLine(@"    /// <summary>");
+            sb.AppendLine(@"    /// Class representing the Enumeration ID and Text in allowable languages [en, fr]");
+            sb.AppendLine(@"    /// </summary>");
+            sb.AppendLine(@"    public class EnumIDAndText");
+            sb.AppendLine(@"    {");
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// Enumeration ID");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        public int EnumID { get; set; }");
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// Enumeration Text in allowable languages [en, fr]");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        public string EnumText { get; set; }");
+            sb.AppendLine(@"    }");
+            sb.AppendLine(@"");
             sb.AppendLine(@"}");
 
             using (StreamWriter sw = fi.CreateText())
@@ -227,147 +202,5 @@ namespace CSSPEnumsGenerateCodeHelper
             }
             StatusEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
         }
-
-        //public string GetResValueForTypeFieldAndLanguage(Type type, FieldInfo fieldInfo, LanguageEnum language)
-        //{
-        //    Enums enums = new Enums(language);
-        //    string enumName = type.Name;
-
-        //    switch (enumName)
-        //    {
-        //        case "ActionDBTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ActionDBTypeEnum(((ActionDBTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AddressTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AddressTypeEnum(((AddressTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AerationTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AerationTypeEnum(((AerationTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AlarmSystemTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AlarmSystemTypeEnum(((AlarmSystemTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AnalyzeMethodEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AnalyzeMethodEnum(((AnalyzeMethodEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AppTaskCommandEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AppTaskCommandEnum(((AppTaskCommandEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "AppTaskStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_AppTaskStatusEnum(((AppTaskStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "BeaufortScaleEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_BeaufortScaleEnum(((BeaufortScaleEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "BoxModelResultTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_BoxModelResultTypeEnum(((BoxModelResultTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "CollectionSystemTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_CollectionSystemTypeEnum(((CollectionSystemTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ContactTitleEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ContactTitleEnum(((ContactTitleEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "CSSPWQInputSheetTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_CSSPWQInputSheetTypeEnum(((CSSPWQInputSheetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "CSSPWQInputTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_CSSPWQInputTypeEnum(((CSSPWQInputTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "DailyOrHourlyDataEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_DailyOrHourlyDataEnum(((DailyOrHourlyDataEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "DatabaseTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_DatabaseTypeEnum(((DatabaseTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "DisinfectionTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_DisinfectionTypeEnum(((DisinfectionTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "EmailTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_EmailTypeEnum(((EmailTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "FacilityTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_FacilityTypeEnum(((FacilityTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "FilePurposeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_FilePurposeEnum(((FilePurposeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "FileStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_FileStatusEnum(((FileStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "FileTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_FileTypeEnum(((FileTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "InfrastructureTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_InfrastructureTypeEnum(((InfrastructureTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "KMZActionEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_KMZActionEnum(((KMZActionEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "LaboratoryEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_LaboratoryEnum(((LaboratoryEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "LabSheetStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_LabSheetStatusEnum(((LabSheetStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "LabSheetTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_LabSheetTypeEnum(((LabSheetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "LanguageEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_LanguageEnum(((LanguageEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "LogCommandEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_LogCommandEnum(((LogCommandEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "MapInfoDrawTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_MapInfoDrawTypeEnum(((MapInfoDrawTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "MikeBoundaryConditionLevelOrVelocityEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_MikeBoundaryConditionLevelOrVelocityEnum(((MikeBoundaryConditionLevelOrVelocityEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "MikeScenarioSpecialResultKMLTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_MikeScenarioSpecialResultKMLTypeEnum(((MikeScenarioSpecialResultKMLTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "MWQMSiteLatestClassificationEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_MWQMSiteLatestClassificationEnum(((MWQMSiteLatestClassificationEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "PolSourceInactiveReasonEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_PolSourceInactiveReasonEnum(((PolSourceInactiveReasonEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "PolSourceIssueRiskEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_PolSourceIssueRiskEnum(((PolSourceIssueRiskEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "PreliminaryTreatmentTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_PreliminaryTreatmentTypeEnum(((PreliminaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "PrimaryTreatmentTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_PrimaryTreatmentTypeEnum(((PrimaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportConditionEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportConditionEnum(((ReportConditionEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportFieldTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportFieldTypeEnum(((ReportFieldTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportFileTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportFileTypeEnum(((ReportFileTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportFormatingDateEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportFormatingDateEnum(((ReportFormatingDateEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportFormatingNumberEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportFormatingNumberEnum(((ReportFormatingNumberEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportSortingEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportSortingEnum(((ReportSortingEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportTreeNodeSubTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportTreeNodeSubTypeEnum(((ReportTreeNodeSubTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ReportTreeNodeTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ReportTreeNodeTypeEnum(((ReportTreeNodeTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SameDayNextDayEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SameDayNextDayEnum(((SameDayNextDayEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SampleMatrixEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SampleMatrixEnum(((SampleMatrixEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SampleStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SampleStatusEnum(((SampleStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SampleTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SampleTypeEnum(((SampleTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SamplingPlanTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SamplingPlanTypeEnum(((SamplingPlanTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "ScenarioStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_ScenarioStatusEnum(((ScenarioStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SearchTagEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SearchTagEnum(((SearchTagEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SecondaryTreatmentTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SecondaryTreatmentTypeEnum(((SecondaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SiteTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SiteTypeEnum(((SiteTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "SpecialTableTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_SpecialTableTypeEnum(((SpecialTableTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "StorageDataTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_StorageDataTypeEnum(((StorageDataTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "StreetTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_StreetTypeEnum(((StreetTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TelTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TelTypeEnum(((TelTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TertiaryTreatmentTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TertiaryTreatmentTypeEnum(((TertiaryTreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TideDataTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TideDataTypeEnum(((TideDataTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TideTextEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TideTextEnum(((TideTextEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TranslationStatusEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TranslationStatusEnum(((TranslationStatusEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TreatmentTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TreatmentTypeEnum(((TreatmentTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TVAuthEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TVAuthEnum(((TVAuthEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "TVTypeEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_TVTypeEnum(((TVTypeEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        case "WebTideDataSetEnum":
-        //            return WebUtility.HtmlEncode(enums.GetEnumText_WebTideDataSetEnum(((WebTideDataSetEnum)(int)fieldInfo.GetValue(fieldInfo.Name))));
-        //        default:
-        //            return "";
-        //    }
-        //}
     }
 }

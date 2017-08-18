@@ -64,14 +64,12 @@ namespace CSSPEnumsGenerateCodeHelper
         {
             CSSPEnumsDLL = "";
             BaseDir = "";
-            EnumsTextOrderGenearated = "";
             EnumsGenerated = "";
             EnumsTestGenerated = "";
         }
 
         public string CSSPEnumsDLL { get; set; }
         public string BaseDir { get; set; }
-        public string EnumsTextOrderGenearated { get; set; }
         public string EnumsGenerated { get; set; }
         public string EnumsTestGenerated { get; set; }
     }
