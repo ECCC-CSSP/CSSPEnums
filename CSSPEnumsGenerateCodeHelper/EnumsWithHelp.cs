@@ -180,7 +180,6 @@ namespace CSSPEnumsGenerateCodeHelper
                                 string TypeNameModels = typeModels.Name;
                                 sb.AppendLine(@"    /// > Used by: <c>[CSSPModels." + typeModels.Name + "." + propertyInfo.Name + "] (CSSPModels." + typeModels.Name + @".html#CSSPModels_" + typeModels.Name + "_" + propertyInfo.Name + ") </c>");
                                 sb.AppendLine(@"    /// >");
-                                //CSSPModels.Address.html#CSSPModels_Address_AddressType
                             }
                         }
                     }
