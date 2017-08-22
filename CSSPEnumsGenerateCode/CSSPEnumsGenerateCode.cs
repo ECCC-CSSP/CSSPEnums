@@ -89,7 +89,7 @@ namespace CSSPEnumsGenerateCode
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            enumGenerateCodeHelper.EnumsWithHelp();
+            enumGenerateCodeHelper.EnumsWithHelpGenerate();
 
             richTextBoxStatus.AppendText("Done...\r\n\r\n");
 

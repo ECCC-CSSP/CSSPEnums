@@ -13,7 +13,7 @@ namespace CSSPEnumsGenerateCodeHelper
 {
     public partial class EnumsGenerateCodeHelper
     {
-        public void EnumsWithHelp()
+        public void EnumsWithHelpGenerate()
         {
             Enums enumsEn = new Enums(LanguageEnum.en);
             Enums enumsFr = new Enums(LanguageEnum.fr);
@@ -87,27 +87,33 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Properties");
             sb.AppendLine(@"        /// <summary>");
-            sb.AppendLine(@"        /// Allowable values are [en, fr]");
+            sb.AppendLine(@"        /// **Language requested for accessing text representing the enumeration**");
+            sb.AppendLine(@"        /// **Allowable values are LanguageRequest.en, LanguageRequest.fr**");
             sb.AppendLine(@"        /// </summary>");
             sb.AppendLine(@"        public LanguageEnum LanguageRequest { get; set; }");
             sb.AppendLine(@"        #endregion Properties");
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Constructors");
             sb.AppendLine(@"        /// <summary>");
-            sb.AppendLine(@"        /// <para>**using [en]**</para>");
+            sb.AppendLine(@"        /// <para>**using LanguageEnum.en**</para>");
             sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// <para> <c>CurrentCulture = new CultureInfo(""en-CA"");</c></para>");
             sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// <para> <c>CurrentUICulture = new CultureInfo(""en-CA"");</c></para>");
             sb.AppendLine(@"        /// ");
-            sb.AppendLine(@"        /// <para>**using [fr]**</para>");
+            sb.AppendLine(@"        /// <para>**using LanguageEnum.fr**</para>");
             sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// <para> <c>CurrentCulture = new CultureInfo(""fr-CA"");</c></para>");
             sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// <para> <c>CurrentUICulture = new CultureInfo(""fr-CA"");</c></para>");
             sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// </summary>");
-            sb.AppendLine(@"        /// <param name=""LanguageRequest""></param>");
+            sb.AppendLine(@"        /// <param name=""LanguageRequest"">The language to use when getting the text of the enumerations</param>");
+            sb.AppendLine(@"        /// <example>");
+            sb.AppendLine(@"        ///     <c>Enums enums = new Enums(LanguageEnum.en)");
+            sb.AppendLine(@"        ///     or");
+            sb.AppendLine(@"        ///     Enums enums = new Enums(LanguageEnum.fr)</c>");
+            sb.AppendLine(@"        /// </example>");
             sb.AppendLine(@"        public Enums(LanguageEnum LanguageRequest)");
             sb.AppendLine(@"        {");
             sb.AppendLine(@"            this.LanguageRequest = LanguageRequest;");
@@ -136,7 +142,25 @@ namespace CSSPEnumsGenerateCodeHelper
                         continue;
 
                     sb.AppendLine(@"    /// <summary>");
-
+                    sb.AppendLine(@"    /// " + dllTypeInfoEnums.Name + " used in other DLLs");
+                    sb.AppendLine(@"    /// </summary>");
+                    sb.AppendLine(@"    /// <remarks>");
+                    sb.AppendLine(@"    /// <code>");
+                    sb.AppendLine(@"    ///     public enum " + dllTypeInfoEnums.Type.Name + "");
+                    sb.AppendLine(@"    ///     {");
+                    foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
+                    {
+                        if (dllTypeInfoEnums.IsEnum)
+                        {
+                            string fName = dllFieldInfo.Name;
+                            sb.AppendLine(@"    ///         " + fName + " = " + ((int)dllFieldInfo.FieldInfo.GetValue(fName)).ToString() + ",");
+                        }
+                    }
+                    sb.AppendLine(@"    ///     }");
+                    sb.AppendLine(@"    /// </code>");
+                    sb.AppendLine(@"    /// ");
+                    //sb.AppendLine(@"    /// </remarks>");
+                    //sb.AppendLine(@"    /// <remarks>");
                     StringBuilder sbModels = new StringBuilder();
 
                     foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
@@ -194,7 +218,7 @@ namespace CSSPEnumsGenerateCodeHelper
                                 }
                                 catch (Exception ex)
                                 {
-                                   // nothing
+                                    // nothing
                                 }
                             }
                         }
@@ -205,21 +229,6 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"    /// <para>**Used by CSSPServices:** " + sbServices.ToString() + "</para>");
                     }
 
-                    sb.AppendLine(@"    /// </summary>");
-                    sb.AppendLine(@"    /// <remarks>");
-                    sb.AppendLine(@"    /// <code>");
-                    sb.AppendLine(@"    ///     public enum " + dllTypeInfoEnums.Type.Name + "");
-                    sb.AppendLine(@"    ///     {");
-                    foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
-                    {
-                        if (dllTypeInfoEnums.IsEnum)
-                        {
-                            string fName = dllFieldInfo.Name;
-                            sb.AppendLine(@"    ///         " + fName + " = " + ((int)dllFieldInfo.FieldInfo.GetValue(fName)).ToString() + ",");
-                        }
-                    }
-                    sb.AppendLine(@"    ///     }");
-                    sb.AppendLine(@"    /// </code>");
                     sb.AppendLine(@"    /// </remarks>");
                     sb.AppendLine(@"    public enum " + dllTypeInfoEnums.Type.Name);
                     sb.AppendLine(@"    {");
@@ -241,7 +250,7 @@ namespace CSSPEnumsGenerateCodeHelper
             }
             sb.AppendLine(@"");
             sb.AppendLine(@"    /// <summary>");
-            sb.AppendLine(@"    /// Class representing the Enumeration ID and Text in allowable languages [en, fr]");
+            sb.AppendLine(@"    /// Class representing the Enumeration ID and Text in allowable languages LanguageEnum.en, LanguageEnum.fr");
             sb.AppendLine(@"    /// </summary>");
             sb.AppendLine(@"    public class EnumIDAndText");
             sb.AppendLine(@"    {");

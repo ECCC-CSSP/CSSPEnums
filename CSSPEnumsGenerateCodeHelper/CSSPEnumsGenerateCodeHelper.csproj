@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumGenerateCodeHelper.cs" />
-    <Compile Include="EnumsWithHelp.cs" />
+    <Compile Include="EnumsWithHelpGenerate.cs" />
     <Compile Include="EnumsGenerate.cs" />
     <Compile Include="EnumsTestGenerate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

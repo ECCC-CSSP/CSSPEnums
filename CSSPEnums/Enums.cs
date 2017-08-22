@@ -23,27 +23,33 @@ namespace CSSPEnums
 
         #region Properties
         /// <summary>
-        /// Allowable values are [en, fr]
+        /// **Language requested for accessing text representing the enumeration**
+        /// **Allowable values are LanguageRequest.en, LanguageRequest.fr**
         /// </summary>
         public LanguageEnum LanguageRequest { get; set; }
         #endregion Properties
 
         #region Constructors
         /// <summary>
-        /// <para>**using [en]**</para>
+        /// <para>**using LanguageEnum.en**</para>
         /// 
         /// <para> <c>CurrentCulture = new CultureInfo("en-CA");</c></para>
         /// 
         /// <para> <c>CurrentUICulture = new CultureInfo("en-CA");</c></para>
         /// 
-        /// <para>**using [fr]**</para>
+        /// <para>**using LanguageEnum.fr**</para>
         /// 
         /// <para> <c>CurrentCulture = new CultureInfo("fr-CA");</c></para>
         /// 
         /// <para> <c>CurrentUICulture = new CultureInfo("fr-CA");</c></para>
         /// 
         /// </summary>
-        /// <param name="LanguageRequest"></param>
+        /// <param name="LanguageRequest">The language to use when getting the text of the enumerations</param>
+        /// <example>
+        ///     <c>Enums enums = new Enums(LanguageEnum.en)
+        ///     or
+        ///     Enums enums = new Enums(LanguageEnum.fr)</c>
+        /// </example>
         public Enums(LanguageEnum LanguageRequest)
         {
             this.LanguageRequest = LanguageRequest;
@@ -62,6 +68,7 @@ namespace CSSPEnums
 
     }
     /// <summary>
+    /// ActionDBTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -74,6 +81,7 @@ namespace CSSPEnums
     ///         Delete = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ActionDBTypeEnum
     {
@@ -99,6 +107,7 @@ namespace CSSPEnums
         Delete = 4,
     }
     /// <summary>
+    /// AddressTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -110,6 +119,7 @@ namespace CSSPEnums
     ///         Civic = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum AddressTypeEnum
     {
@@ -131,7 +141,7 @@ namespace CSSPEnums
         Civic = 3,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.AerationType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), </para>
+    /// AerationTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -142,6 +152,8 @@ namespace CSSPEnums
     ///         Surface = 2,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.AerationType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), </para>
     /// </remarks>
     public enum AerationTypeEnum
     {
@@ -159,7 +171,7 @@ namespace CSSPEnums
         Surface = 2,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.AlarmSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), </para>
+    /// AlarmSystemTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -173,6 +185,8 @@ namespace CSSPEnums
     ///         PagerAndLight = 5,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.AlarmSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), </para>
     /// </remarks>
     public enum AlarmSystemTypeEnum
     {
@@ -202,7 +216,7 @@ namespace CSSPEnums
         PagerAndLight = 5,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.AnalyzeMethod] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), </para>
+    /// AnalyzeMethodEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -223,6 +237,8 @@ namespace CSSPEnums
     ///         AnalyzeMethod12 = 12,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.AnalyzeMethod] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), </para>
     /// </remarks>
     public enum AnalyzeMethodEnum
     {
@@ -280,6 +296,7 @@ namespace CSSPEnums
         AnalyzeMethod12 = 12,
     }
     /// <summary>
+    /// AppTaskCommandEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -304,6 +321,7 @@ namespace CSSPEnums
     ///         CreateWebTideDataWLAtFirstNode = 16,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum AppTaskCommandEnum
     {
@@ -377,6 +395,7 @@ namespace CSSPEnums
         CreateWebTideDataWLAtFirstNode = 16,
     }
     /// <summary>
+    /// AppTaskStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -389,6 +408,7 @@ namespace CSSPEnums
     ///         Cancelled = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum AppTaskStatusEnum
     {
@@ -414,7 +434,7 @@ namespace CSSPEnums
         Cancelled = 4,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.SeaStateAtStart_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [MWQMRun.SeaStateAtEnd_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), </para>
+    /// BeaufortScaleEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -436,6 +456,8 @@ namespace CSSPEnums
     ///         HurricaneForce = 12,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.SeaStateAtStart_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [MWQMRun.SeaStateAtEnd_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), </para>
     /// </remarks>
     public enum BeaufortScaleEnum
     {
@@ -497,6 +519,7 @@ namespace CSSPEnums
         HurricaneForce = 12,
     }
     /// <summary>
+    /// BoxModelResultTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -510,6 +533,7 @@ namespace CSSPEnums
     ///         DecayPreDisinfection = 5,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum BoxModelResultTypeEnum
     {
@@ -539,7 +563,7 @@ namespace CSSPEnums
         DecayPreDisinfection = 5,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.CollectionSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), </para>
+    /// CollectionSystemTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -559,6 +583,8 @@ namespace CSSPEnums
     ///         Combined10Separated90 = 11,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.CollectionSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), </para>
     /// </remarks>
     public enum CollectionSystemTypeEnum
     {
@@ -612,7 +638,7 @@ namespace CSSPEnums
         Combined10Separated90 = 11,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [NewContact.ContactTitle] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [Contact.ContactTitle] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), </para>
+    /// ContactTitleEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -630,6 +656,8 @@ namespace CSSPEnums
     ///         Technician = 9,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [NewContact.ContactTitle] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [Contact.ContactTitle] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), </para>
     /// </remarks>
     public enum ContactTitleEnum
     {
@@ -675,6 +703,7 @@ namespace CSSPEnums
         Technician = 9,
     }
     /// <summary>
+    /// CSSPWQInputSheetTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -686,6 +715,7 @@ namespace CSSPEnums
     ///         EC = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum CSSPWQInputSheetTypeEnum
     {
@@ -707,6 +737,7 @@ namespace CSSPEnums
         EC = 3,
     }
     /// <summary>
+    /// CSSPWQInputTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -717,6 +748,7 @@ namespace CSSPEnums
     ///         Municipality = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum CSSPWQInputTypeEnum
     {
@@ -734,6 +766,7 @@ namespace CSSPEnums
         Municipality = 2,
     }
     /// <summary>
+    /// DailyOrHourlyDataEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -744,6 +777,7 @@ namespace CSSPEnums
     ///         Hourly = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum DailyOrHourlyDataEnum
     {
@@ -761,6 +795,7 @@ namespace CSSPEnums
         Hourly = 2,
     }
     /// <summary>
+    /// DatabaseTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -773,6 +808,7 @@ namespace CSSPEnums
     ///         SqlServerTestDB = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum DatabaseTypeEnum
     {
@@ -798,7 +834,7 @@ namespace CSSPEnums
         SqlServerTestDB = 4,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.DisinfectionType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), </para>
+    /// DisinfectionTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -814,6 +850,8 @@ namespace CSSPEnums
     ///         ChlorinationWithDechlorinationSeasonal = 7,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.DisinfectionType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), </para>
     /// </remarks>
     public enum DisinfectionTypeEnum
     {
@@ -851,6 +889,7 @@ namespace CSSPEnums
         ChlorinationWithDechlorinationSeasonal = 7,
     }
     /// <summary>
+    /// EmailTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -863,6 +902,7 @@ namespace CSSPEnums
     ///         Work2 = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum EmailTypeEnum
     {
@@ -888,7 +928,7 @@ namespace CSSPEnums
         Work2 = 4,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.FacilityType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), </para>
+    /// FacilityTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -899,6 +939,8 @@ namespace CSSPEnums
     ///         Plant = 2,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.FacilityType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), </para>
     /// </remarks>
     public enum FacilityTypeEnum
     {
@@ -916,6 +958,7 @@ namespace CSSPEnums
         Plant = 2,
     }
     /// <summary>
+    /// FilePurposeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -936,6 +979,7 @@ namespace CSSPEnums
     ///         Map = 12,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum FilePurposeEnum
     {
@@ -993,6 +1037,7 @@ namespace CSSPEnums
         Map = 12,
     }
     /// <summary>
+    /// FileStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1006,6 +1051,7 @@ namespace CSSPEnums
     ///         Fail = 5,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum FileStatusEnum
     {
@@ -1035,6 +1081,7 @@ namespace CSSPEnums
         Fail = 5,
     }
     /// <summary>
+    /// FileTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1064,6 +1111,7 @@ namespace CSSPEnums
     ///         CSV = 21,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum FileTypeEnum
     {
@@ -1157,7 +1205,7 @@ namespace CSSPEnums
         CSV = 21,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.InfrastructureType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), </para>
+    /// InfrastructureTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1171,6 +1219,8 @@ namespace CSSPEnums
     ///         LineOverflow = 5,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.InfrastructureType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), </para>
     /// </remarks>
     public enum InfrastructureTypeEnum
     {
@@ -1200,6 +1250,7 @@ namespace CSSPEnums
         LineOverflow = 5,
     }
     /// <summary>
+    /// KMZActionEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1216,6 +1267,7 @@ namespace CSSPEnums
     ///         GenerateKMZBoundaryConditionNodes = 8,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum KMZActionEnum
     {
@@ -1257,7 +1309,7 @@ namespace CSSPEnums
         GenerateKMZBoundaryConditionNodes = 8,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.Laboratory] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), </para>
+    /// LaboratoryEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1295,6 +1347,8 @@ namespace CSSPEnums
     ///         PetroformaInc = 29,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.Laboratory] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), </para>
     /// </remarks>
     public enum LaboratoryEnum
     {
@@ -1420,6 +1474,7 @@ namespace CSSPEnums
         PetroformaInc = 29,
     }
     /// <summary>
+    /// LabSheetStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1432,6 +1487,7 @@ namespace CSSPEnums
     ///         Rejected = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum LabSheetStatusEnum
     {
@@ -1457,6 +1513,7 @@ namespace CSSPEnums
         Rejected = 4,
     }
     /// <summary>
+    /// LabSheetTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1468,6 +1525,7 @@ namespace CSSPEnums
     ///         EC = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum LabSheetTypeEnum
     {
@@ -1489,6 +1547,7 @@ namespace CSSPEnums
         EC = 3,
     }
     /// <summary>
+    /// LanguageEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1501,6 +1560,7 @@ namespace CSSPEnums
     ///         es = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum LanguageEnum
     {
@@ -1526,6 +1586,7 @@ namespace CSSPEnums
         es = 4,
     }
     /// <summary>
+    /// LogCommandEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1537,6 +1598,7 @@ namespace CSSPEnums
     ///         Delete = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum LogCommandEnum
     {
@@ -1558,6 +1620,7 @@ namespace CSSPEnums
         Delete = 3,
     }
     /// <summary>
+    /// MapInfoDrawTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1569,6 +1632,7 @@ namespace CSSPEnums
     ///         Polygon = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum MapInfoDrawTypeEnum
     {
@@ -1590,6 +1654,7 @@ namespace CSSPEnums
         Polygon = 3,
     }
     /// <summary>
+    /// MikeBoundaryConditionLevelOrVelocityEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1600,6 +1665,7 @@ namespace CSSPEnums
     ///         Velocity = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum MikeBoundaryConditionLevelOrVelocityEnum
     {
@@ -1617,6 +1683,7 @@ namespace CSSPEnums
         Velocity = 2,
     }
     /// <summary>
+    /// MikeScenarioSpecialResultKMLTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1630,6 +1697,7 @@ namespace CSSPEnums
     ///         PollutionAnimation = 5,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum MikeScenarioSpecialResultKMLTypeEnum
     {
@@ -1659,6 +1727,7 @@ namespace CSSPEnums
         PollutionAnimation = 5,
     }
     /// <summary>
+    /// MWQMSiteLatestClassificationEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1673,6 +1742,7 @@ namespace CSSPEnums
     ///         Unclassified = 6,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum MWQMSiteLatestClassificationEnum
     {
@@ -1706,7 +1776,7 @@ namespace CSSPEnums
         Unclassified = 6,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [PolSourceSite.InactiveReason] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), </para>
+    /// PolSourceInactiveReasonEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1718,6 +1788,8 @@ namespace CSSPEnums
     ///         Removed = 3,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [PolSourceSite.InactiveReason] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), </para>
     /// </remarks>
     public enum PolSourceInactiveReasonEnum
     {
@@ -1739,6 +1811,7 @@ namespace CSSPEnums
         Removed = 3,
     }
     /// <summary>
+    /// PolSourceIssueRiskEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1750,6 +1823,7 @@ namespace CSSPEnums
     ///         HighRisk = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum PolSourceIssueRiskEnum
     {
@@ -1771,6 +1845,7 @@ namespace CSSPEnums
         HighRisk = 3,
     }
     /// <summary>
+    /// PolSourceObsInfoTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1783,6 +1858,7 @@ namespace CSSPEnums
     ///         Initial = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum PolSourceObsInfoTypeEnum
     {
@@ -1808,7 +1884,7 @@ namespace CSSPEnums
         Initial = 4,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.PreliminaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), </para>
+    /// PreliminaryTreatmentTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1820,6 +1896,8 @@ namespace CSSPEnums
     ///         Grinder = 3,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.PreliminaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), </para>
     /// </remarks>
     public enum PreliminaryTreatmentTypeEnum
     {
@@ -1841,7 +1919,7 @@ namespace CSSPEnums
         Grinder = 3,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.PrimaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), </para>
+    /// PrimaryTreatmentTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1854,6 +1932,8 @@ namespace CSSPEnums
     ///         Filtration = 4,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.PrimaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), </para>
     /// </remarks>
     public enum PrimaryTreatmentTypeEnum
     {
@@ -1879,6 +1959,7 @@ namespace CSSPEnums
         Filtration = 4,
     }
     /// <summary>
+    /// ReportConditionEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1895,6 +1976,7 @@ namespace CSSPEnums
     ///         ReportConditionEqual = 8,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportConditionEnum
     {
@@ -1936,6 +2018,7 @@ namespace CSSPEnums
         ReportConditionEqual = 8,
     }
     /// <summary>
+    /// ReportFieldTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1990,6 +2073,7 @@ namespace CSSPEnums
     ///         MikeScenarioSpecialResultKMLType = 46,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportFieldTypeEnum
     {
@@ -2183,6 +2267,7 @@ namespace CSSPEnums
         MikeScenarioSpecialResultKMLType = 46,
     }
     /// <summary>
+    /// ReportFileTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2195,6 +2280,7 @@ namespace CSSPEnums
     ///         KML = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportFileTypeEnum
     {
@@ -2220,6 +2306,7 @@ namespace CSSPEnums
         KML = 4,
     }
     /// <summary>
+    /// ReportFormatingDateEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2241,6 +2328,7 @@ namespace CSSPEnums
     ///         ReportFormatingDateYearMonthFullTextDayHourMinute = 13,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportFormatingDateEnum
     {
@@ -2302,6 +2390,7 @@ namespace CSSPEnums
         ReportFormatingDateYearMonthFullTextDayHourMinute = 13,
     }
     /// <summary>
+    /// ReportFormatingNumberEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2324,6 +2413,7 @@ namespace CSSPEnums
     ///         ReportFormatingNumberScientific6Decimal = 14,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportFormatingNumberEnum
     {
@@ -2389,6 +2479,7 @@ namespace CSSPEnums
         ReportFormatingNumberScientific6Decimal = 14,
     }
     /// <summary>
+    /// ReportSortingEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2399,6 +2490,7 @@ namespace CSSPEnums
     ///         ReportSortingDescending = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportSortingEnum
     {
@@ -2416,6 +2508,7 @@ namespace CSSPEnums
         ReportSortingDescending = 2,
     }
     /// <summary>
+    /// ReportTreeNodeSubTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2428,6 +2521,7 @@ namespace CSSPEnums
     ///         TableNotSelectable = 4,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportTreeNodeSubTypeEnum
     {
@@ -2453,6 +2547,7 @@ namespace CSSPEnums
         TableNotSelectable = 4,
     }
     /// <summary>
+    /// ReportTreeNodeTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2540,6 +2635,7 @@ namespace CSSPEnums
     ///         ReportMikeScenarioSpecialResultKMLType = 79,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ReportTreeNodeTypeEnum
     {
@@ -2865,6 +2961,7 @@ namespace CSSPEnums
         ReportMikeScenarioSpecialResultKMLType = 79,
     }
     /// <summary>
+    /// SameDayNextDayEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2875,6 +2972,7 @@ namespace CSSPEnums
     ///         NextDay = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum SameDayNextDayEnum
     {
@@ -2892,7 +2990,7 @@ namespace CSSPEnums
         NextDay = 2,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.SampleMatrix] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), </para>
+    /// SampleMatrixEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2908,6 +3006,8 @@ namespace CSSPEnums
     ///         Water = 7,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleMatrix] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), </para>
     /// </remarks>
     public enum SampleMatrixEnum
     {
@@ -2945,7 +3045,7 @@ namespace CSSPEnums
         Water = 7,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.SampleStatus] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), </para>
+    /// SampleStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2959,6 +3059,8 @@ namespace CSSPEnums
     ///         SampleStatus5 = 5,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleStatus] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), </para>
     /// </remarks>
     public enum SampleStatusEnum
     {
@@ -2988,7 +3090,7 @@ namespace CSSPEnums
         SampleStatus5 = 5,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [LabSheetA1Measurement.SampleType] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType), </para>
+    /// SampleTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3008,6 +3110,8 @@ namespace CSSPEnums
     ///         Study = 111,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [LabSheetA1Measurement.SampleType] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType), </para>
     /// </remarks>
     public enum SampleTypeEnum
     {
@@ -3061,6 +3165,7 @@ namespace CSSPEnums
         Study = 111,
     }
     /// <summary>
+    /// SamplingPlanTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3071,6 +3176,7 @@ namespace CSSPEnums
     ///         Municipality = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum SamplingPlanTypeEnum
     {
@@ -3088,6 +3194,7 @@ namespace CSSPEnums
         Municipality = 2,
     }
     /// <summary>
+    /// ScenarioStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3105,6 +3212,7 @@ namespace CSSPEnums
     ///         Cancelled = 9,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum ScenarioStatusEnum
     {
@@ -3150,6 +3258,7 @@ namespace CSSPEnums
         Cancelled = 9,
     }
     /// <summary>
+    /// SearchTagEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3194,6 +3303,7 @@ namespace CSSPEnums
     ///         fcsv = 36,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum SearchTagEnum
     {
@@ -3347,7 +3457,7 @@ namespace CSSPEnums
         fcsv = 36,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.SecondaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), </para>
+    /// SecondaryTreatmentTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3361,6 +3471,8 @@ namespace CSSPEnums
     ///         OxidationDitch = 5,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.SecondaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), </para>
     /// </remarks>
     public enum SecondaryTreatmentTypeEnum
     {
@@ -3390,6 +3502,7 @@ namespace CSSPEnums
         OxidationDitch = 5,
     }
     /// <summary>
+    /// SiteTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3401,6 +3514,7 @@ namespace CSSPEnums
     ///         Tide = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum SiteTypeEnum
     {
@@ -3422,6 +3536,7 @@ namespace CSSPEnums
         Tide = 3,
     }
     /// <summary>
+    /// SpecialTableTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3438,6 +3553,7 @@ namespace CSSPEnums
     ///         PercentOver260Table = 8,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum SpecialTableTypeEnum
     {
@@ -3479,6 +3595,7 @@ namespace CSSPEnums
         PercentOver260Table = 8,
     }
     /// <summary>
+    /// StorageDataTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3490,6 +3607,7 @@ namespace CSSPEnums
     ///         Observed = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum StorageDataTypeEnum
     {
@@ -3511,7 +3629,7 @@ namespace CSSPEnums
         Observed = 3,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Address.StreetType] (CSSPModels.Address.html#CSSPModels_Address_StreetType), </para>
+    /// StreetTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3529,6 +3647,8 @@ namespace CSSPEnums
     ///         Route = 9,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Address.StreetType] (CSSPModels.Address.html#CSSPModels_Address_StreetType), </para>
     /// </remarks>
     public enum StreetTypeEnum
     {
@@ -3574,6 +3694,7 @@ namespace CSSPEnums
         Route = 9,
     }
     /// <summary>
+    /// TelTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3588,6 +3709,7 @@ namespace CSSPEnums
     ///         Mobile2 = 6,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum TelTypeEnum
     {
@@ -3621,7 +3743,7 @@ namespace CSSPEnums
         Mobile2 = 6,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.TertiaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), </para>
+    /// TertiaryTreatmentTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3637,6 +3759,8 @@ namespace CSSPEnums
     ///         BiologicalNutrientRemoval = 7,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.TertiaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), </para>
     /// </remarks>
     public enum TertiaryTreatmentTypeEnum
     {
@@ -3674,6 +3798,7 @@ namespace CSSPEnums
         BiologicalNutrientRemoval = 7,
     }
     /// <summary>
+    /// TideDataTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3684,6 +3809,7 @@ namespace CSSPEnums
     ///         Min60 = 2,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum TideDataTypeEnum
     {
@@ -3701,7 +3827,7 @@ namespace CSSPEnums
         Min60 = 2,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [MWQMRun.Tide_Start] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [MWQMRun.Tide_End] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [TideDataValue.TideStart] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideDataValue.TideEnd] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), </para>
+    /// TideTextEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3719,6 +3845,8 @@ namespace CSSPEnums
     ///         HighTideRising = 9,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [MWQMRun.Tide_Start] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [MWQMRun.Tide_End] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [TideDataValue.TideStart] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideDataValue.TideEnd] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), </para>
     /// </remarks>
     public enum TideTextEnum
     {
@@ -3764,6 +3892,7 @@ namespace CSSPEnums
         HighTideRising = 9,
     }
     /// <summary>
+    /// TranslationStatusEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3775,6 +3904,7 @@ namespace CSSPEnums
     ///         Translated = 3,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum TranslationStatusEnum
     {
@@ -3796,7 +3926,7 @@ namespace CSSPEnums
         Translated = 3,
     }
     /// <summary>
-    /// <para>**Used by CSSPModels:** [Infrastructure.TreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), </para>
+    /// TreatmentTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3838,6 +3968,8 @@ namespace CSSPEnums
     ///         RotatingBiologicalContactor = 33,
     ///     }
     /// </code>
+    /// 
+    /// <para>**Used by CSSPModels:** [Infrastructure.TreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), </para>
     /// </remarks>
     public enum TreatmentTypeEnum
     {
@@ -3979,6 +4111,7 @@ namespace CSSPEnums
         RotatingBiologicalContactor = 33,
     }
     /// <summary>
+    /// TVAuthEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3993,6 +4126,7 @@ namespace CSSPEnums
     ///         Admin = 6,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum TVAuthEnum
     {
@@ -4026,6 +4160,7 @@ namespace CSSPEnums
         Admin = 6,
     }
     /// <summary>
+    /// TVTypeEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4107,6 +4242,7 @@ namespace CSSPEnums
     ///         MikeSourceNotIncluded = 74,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum TVTypeEnum
     {
@@ -4408,6 +4544,7 @@ namespace CSSPEnums
         MikeSourceNotIncluded = 74,
     }
     /// <summary>
+    /// WebTideDataSetEnum used in other DLLs
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4427,6 +4564,7 @@ namespace CSSPEnums
     ///         vigf8 = 11,
     ///     }
     /// </code>
+    /// 
     /// </remarks>
     public enum WebTideDataSetEnum
     {
@@ -4481,7 +4619,7 @@ namespace CSSPEnums
     }
 
     /// <summary>
-    /// Class representing the Enumeration ID and Text in allowable languages [en, fr]
+    /// Class representing the Enumeration ID and Text in allowable languages LanguageEnum.en, LanguageEnum.fr
     /// </summary>
     public class EnumIDAndText
     {
