@@ -54,10 +54,10 @@ namespace CSSPEnumsGenerateCodeHelper
                     sb.AppendLine(@"            {");
                     sb.AppendLine(@"                SetupTest(culture);");
                     sb.AppendLine(@"");
-                    sb.AppendLine(@"                string retStr = enums.GetResValueForTypeAndField(typeof(" + enumName + @"), -1);");
+                    sb.AppendLine(@"                string retStr = enums.GetResValueForTypeAndID(typeof(" + enumName + @"), -1);");
                     sb.AppendLine(@"                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);");
                     sb.AppendLine(@"");
-                    sb.AppendLine(@"                retStr = enums.GetResValueForTypeAndField(typeof(" + enumName + @"), null);");
+                    sb.AppendLine(@"                retStr = enums.GetResValueForTypeAndID(typeof(" + enumName + @"), null);");
                     sb.AppendLine(@"                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);");
                     sb.AppendLine(@"");
                     if (enumName == "BeaufortScaleEnum")
@@ -73,7 +73,7 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 5; i < count; i++)");
                     }
                     sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    retStr = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(" + enumName + "), i));");
+                    sb.AppendLine(@"                    retStr = enums.GetResValueForTypeAndID(typeof(" + enumName + "), i);");
                     sb.AppendLine(@"        ");
                     sb.AppendLine(@"                    switch ((" + enumName + ")i)");
                     sb.AppendLine(@"                    {");
@@ -119,6 +119,25 @@ namespace CSSPEnumsGenerateCodeHelper
 
             // Doing Testing Methods Check OK public
             sb.AppendLine(@"        #region Testing Methods Check OK public");
+            sb.AppendLine(@"        [TestMethod]");
+            sb.AppendLine(@"        public void Enums_EnumTypeListOK_Test()");
+            sb.AppendLine(@"        {");
+            sb.AppendLine(@"            foreach (CultureInfo culture in cultureListGood)");
+            sb.AppendLine(@"            {");
+            sb.AppendLine(@"                SetupTest(culture);");
+            sb.AppendLine(@"");
+            sb.AppendLine(@"                List<int?> intList = new List<int?>() { (int)PolSourceObsInfoEnum.AgricultureBuilding, (int)PolSourceObsInfoEnum.AquacultureLarge };");
+            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AgricultureBuilding, intList[0]);");
+            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AquacultureLarge, intList[1]);");
+            sb.AppendLine(@"                string retStr = enums.EnumTypeListOK(typeof(PolSourceObsInfoEnum), intList);");
+            sb.AppendLine(@"                Assert.AreEqual("""", retStr);");
+            sb.AppendLine(@"");
+            sb.AppendLine(@"                intList.Add(1000000);");
+            sb.AppendLine(@"                retStr = enums.EnumTypeListOK(typeof(PolSourceObsInfoEnum), intList);");
+            sb.AppendLine(@"                Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, ""PolSourceObsInfoEnum""), retStr);");
+            sb.AppendLine(@"            }");
+            sb.AppendLine(@"        }");
+
             importAssembly = Assembly.LoadFile(fiDLL.FullName);
             types = importAssembly.GetTypes();
             foreach (Type type in types)
@@ -126,8 +145,6 @@ namespace CSSPEnumsGenerateCodeHelper
                 if (type.GetTypeInfo().BaseType == typeof(System.Enum))
                 {
                     string enumName = type.Name;
-                    if (enumName == "PolSourceObsInfoEnum")
-                        continue;
 
                     sb.AppendLine(@"        [TestMethod]");
                     sb.AppendLine(@"        public void Enums_" + enumName.Substring(0, enumName.Length - 4) + "OK_Test()");
@@ -152,10 +169,13 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(typeof(" + enumName + ")).Length + 5; i < count; i++)");
                     }
                     sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    if (i == 32)");
-                    sb.AppendLine(@"                    {");
-                    sb.AppendLine(@"                        continue;");
-                    sb.AppendLine(@"                    }");
+                    if (enumName == "TVTypeEnum")
+                    {
+                        sb.AppendLine(@"                    if (i == 32)");
+                        sb.AppendLine(@"                    {");
+                        sb.AppendLine(@"                        continue;");
+                        sb.AppendLine(@"                    }");
+                    }
                     sb.AppendLine(@"                    retStr = enums.EnumTypeOK(typeof(" + enumName + @"), i);");
                     sb.AppendLine(@"");
                     sb.AppendLine(@"                    switch ((" + enumName + ")i)");
@@ -193,8 +213,6 @@ namespace CSSPEnumsGenerateCodeHelper
                 if (type.GetTypeInfo().BaseType == typeof(System.Enum))
                 {
                     string enumName = type.Name;
-                    //if (enumName == "PolSourceObsInfoEnum")
-                    //    continue;
 
                     sb.AppendLine(@"        [TestMethod]");
                     sb.AppendLine(@"        public void Enums_" + enumName + "TextOrdered_Test()");
@@ -217,7 +235,7 @@ namespace CSSPEnumsGenerateCodeHelper
                         sb.AppendLine(@"                for (int i = 1, count = Enum.GetNames(typeof(" + enumName + ")).Length; i < count; i++)");
                     }
                     sb.AppendLine(@"                {");
-                    sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(enums.GetResValueForTypeAndField(typeof(" + enumName + "), i)) });");
+                    sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(" + enumName + "), i) });");
                     sb.AppendLine(@"                }");
                     sb.AppendLine(@"                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();");
                     sb.AppendLine(@"");

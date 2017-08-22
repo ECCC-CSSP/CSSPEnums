@@ -13,7 +13,39 @@ namespace CSSPEnums
 {
     public partial class Enums
     {
-        #region Enum CheckOK
+        #region Enum Functions public
+        /// <summary>
+        /// <para>**Allowable types:** <c>[ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html)</c>, <c>[AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html)</c>, <c>[AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html)</c>, <c>[AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html)</c>, <c>[AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html)</c>, <c>[AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html)</c>, <c>[AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html)</c>, <c>[BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html)</c>, <c>[BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html)</c>, <c>[CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html)</c>, <c>[ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html)</c>, <c>[CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html)</c>, <c>[CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html)</c>, <c>[DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html)</c>, <c>[DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html)</c>, <c>[DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html)</c>, <c>[EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html)</c>, <c>[FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html)</c>, <c>[FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html)</c>, <c>[FileStatusEnum] (CSSPEnums.FileStatusEnum.html)</c>, <c>[FileTypeEnum] (CSSPEnums.FileTypeEnum.html)</c>, <c>[InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html)</c>, <c>[KMZActionEnum] (CSSPEnums.KMZActionEnum.html)</c>, <c>[LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html)</c>, <c>[LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html)</c>, <c>[LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html)</c>, <c>[LanguageEnum] (CSSPEnums.LanguageEnum.html)</c>, <c>[LogCommandEnum] (CSSPEnums.LogCommandEnum.html)</c>, <c>[MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html)</c>, <c>[MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html)</c>, <c>[MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html)</c>, <c>[MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html)</c>, <c>[PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html)</c>, <c>[PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html)</c>, <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>, <c>[PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html)</c>, <c>[PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html)</c>, <c>[ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html)</c>, <c>[ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html)</c>, <c>[ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html)</c>, <c>[ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html)</c>, <c>[ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html)</c>, <c>[ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html)</c>, <c>[ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html)</c>, <c>[ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html)</c>, <c>[SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html)</c>, <c>[SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html)</c>, <c>[SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html)</c>, <c>[SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html)</c>, <c>[SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html)</c>, <c>[ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html)</c>, <c>[SearchTagEnum] (CSSPEnums.SearchTagEnum.html)</c>, <c>[SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html)</c>, <c>[SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html)</c>, <c>[SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html)</c>, <c>[StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html)</c>, <c>[StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html)</c>, <c>[TelTypeEnum] (CSSPEnums.TelTypeEnum.html)</c>, <c>[TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html)</c>, <c>[TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html)</c>, <c>[TideTextEnum] (CSSPEnums.TideTextEnum.html)</c>, <c>[TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html)</c>, <c>[TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html)</c>, <c>[TVAuthEnum] (CSSPEnums.TVAuthEnum.html)</c>, <c>[TVTypeEnum] (CSSPEnums.TVTypeEnum.html)</c>, <c>[WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html)</c>, <c>[PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</c>, </para>
+        /// </summary>
+        /// <param name="type">One of the allowable types (Enum)</param>
+        /// <param name="intList">List of nullable IDs representing the enumeration values (int?)</param>
+        /// <returns>Will return empty string if OK otherwise will return the error message</returns>
+        public string EnumTypeListOK(Type type, List<int?> intList)
+        {
+            string retStr = "";
+
+            foreach (int? ID in intList)
+            {
+                retStr = EnumTypeOK(type, ID);
+                if (!string.IsNullOrWhiteSpace(retStr))
+                {
+                    break;
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(retStr))
+            {
+                return "";
+            }
+
+            return string.Format(CSSPEnumsRes._IsRequired, type.Name);
+        }
+        /// <summary>
+        /// <para>**Allowable types:** <c>[ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html)</c>, <c>[AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html)</c>, <c>[AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html)</c>, <c>[AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html)</c>, <c>[AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html)</c>, <c>[AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html)</c>, <c>[AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html)</c>, <c>[BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html)</c>, <c>[BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html)</c>, <c>[CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html)</c>, <c>[ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html)</c>, <c>[CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html)</c>, <c>[CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html)</c>, <c>[DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html)</c>, <c>[DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html)</c>, <c>[DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html)</c>, <c>[EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html)</c>, <c>[FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html)</c>, <c>[FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html)</c>, <c>[FileStatusEnum] (CSSPEnums.FileStatusEnum.html)</c>, <c>[FileTypeEnum] (CSSPEnums.FileTypeEnum.html)</c>, <c>[InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html)</c>, <c>[KMZActionEnum] (CSSPEnums.KMZActionEnum.html)</c>, <c>[LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html)</c>, <c>[LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html)</c>, <c>[LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html)</c>, <c>[LanguageEnum] (CSSPEnums.LanguageEnum.html)</c>, <c>[LogCommandEnum] (CSSPEnums.LogCommandEnum.html)</c>, <c>[MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html)</c>, <c>[MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html)</c>, <c>[MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html)</c>, <c>[MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html)</c>, <c>[PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html)</c>, <c>[PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html)</c>, <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>, <c>[PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html)</c>, <c>[PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html)</c>, <c>[ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html)</c>, <c>[ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html)</c>, <c>[ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html)</c>, <c>[ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html)</c>, <c>[ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html)</c>, <c>[ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html)</c>, <c>[ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html)</c>, <c>[ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html)</c>, <c>[SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html)</c>, <c>[SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html)</c>, <c>[SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html)</c>, <c>[SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html)</c>, <c>[SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html)</c>, <c>[ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html)</c>, <c>[SearchTagEnum] (CSSPEnums.SearchTagEnum.html)</c>, <c>[SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html)</c>, <c>[SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html)</c>, <c>[SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html)</c>, <c>[StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html)</c>, <c>[StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html)</c>, <c>[TelTypeEnum] (CSSPEnums.TelTypeEnum.html)</c>, <c>[TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html)</c>, <c>[TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html)</c>, <c>[TideTextEnum] (CSSPEnums.TideTextEnum.html)</c>, <c>[TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html)</c>, <c>[TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html)</c>, <c>[TVAuthEnum] (CSSPEnums.TVAuthEnum.html)</c>, <c>[TVTypeEnum] (CSSPEnums.TVTypeEnum.html)</c>, <c>[WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html)</c>, <c>[PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</c>, </para>
+        /// </summary>
+        /// <param name="type">One of the allowable types (Enum)</param>
+        /// <param name="ID">ID representing the enumeration values (int?)</param>
+        /// <returns>Will return empty string if OK otherwise will return the error message</returns>
         public string EnumTypeOK(Type type, int? ID)
         {
             if (ID == null)
@@ -55,6 +87,14 @@ namespace CSSPEnums
                     }
                 }
             }
+            else if (type.Name == "PolSourceObsInfoEnum")
+            {
+                List<int> PolSourceIntList = Enum.GetValues(typeof(PolSourceObsInfoEnum)).OfType<PolSourceObsInfoEnum>().Select(c => (int)c).ToList();
+                if (PolSourceIntList.Contains((int)ID))
+                {
+                    return "";
+                }
+            }
             else
             {
                 for (int i = 0, count = Enum.GetNames(type).Count(); i < count; i++)
@@ -68,9 +108,11 @@ namespace CSSPEnums
 
             return string.Format(CSSPEnumsRes._IsRequired, type.Name);
         }
-        #endregion Enum CheckOK
-
-        #region Function Get Enum Text Ordered
+        /// <summary>
+        /// <para>**Allowable types:** <c>[ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html)</c>, <c>[AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html)</c>, <c>[AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html)</c>, <c>[AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html)</c>, <c>[AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html)</c>, <c>[AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html)</c>, <c>[AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html)</c>, <c>[BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html)</c>, <c>[BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html)</c>, <c>[CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html)</c>, <c>[ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html)</c>, <c>[CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html)</c>, <c>[CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html)</c>, <c>[DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html)</c>, <c>[DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html)</c>, <c>[DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html)</c>, <c>[EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html)</c>, <c>[FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html)</c>, <c>[FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html)</c>, <c>[FileStatusEnum] (CSSPEnums.FileStatusEnum.html)</c>, <c>[FileTypeEnum] (CSSPEnums.FileTypeEnum.html)</c>, <c>[InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html)</c>, <c>[KMZActionEnum] (CSSPEnums.KMZActionEnum.html)</c>, <c>[LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html)</c>, <c>[LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html)</c>, <c>[LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html)</c>, <c>[LanguageEnum] (CSSPEnums.LanguageEnum.html)</c>, <c>[LogCommandEnum] (CSSPEnums.LogCommandEnum.html)</c>, <c>[MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html)</c>, <c>[MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html)</c>, <c>[MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html)</c>, <c>[MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html)</c>, <c>[PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html)</c>, <c>[PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html)</c>, <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>, <c>[PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html)</c>, <c>[PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html)</c>, <c>[ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html)</c>, <c>[ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html)</c>, <c>[ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html)</c>, <c>[ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html)</c>, <c>[ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html)</c>, <c>[ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html)</c>, <c>[ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html)</c>, <c>[ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html)</c>, <c>[SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html)</c>, <c>[SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html)</c>, <c>[SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html)</c>, <c>[SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html)</c>, <c>[SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html)</c>, <c>[ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html)</c>, <c>[SearchTagEnum] (CSSPEnums.SearchTagEnum.html)</c>, <c>[SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html)</c>, <c>[SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html)</c>, <c>[SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html)</c>, <c>[StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html)</c>, <c>[StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html)</c>, <c>[TelTypeEnum] (CSSPEnums.TelTypeEnum.html)</c>, <c>[TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html)</c>, <c>[TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html)</c>, <c>[TideTextEnum] (CSSPEnums.TideTextEnum.html)</c>, <c>[TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html)</c>, <c>[TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html)</c>, <c>[TVAuthEnum] (CSSPEnums.TVAuthEnum.html)</c>, <c>[TVTypeEnum] (CSSPEnums.TVTypeEnum.html)</c>, <c>[WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html)</c>, <c>[PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</c>, </para>
+        /// </summary>
+        /// <param name="type">One of the allowable types (Enum)</param>
+        /// <returns>Will return list of EnumIDAndText ordered by the Enum text for one of the allowable languages [en, fr]</returns>
         public List<EnumIDAndText> GetEnumTextOrderedList(Type type)
         {
             List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
@@ -79,21 +121,21 @@ namespace CSSPEnums
             {
                 for (int i = 0, count = Enum.GetNames(type).Count() - 1; i < count; i++)
                 {
-                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });
                 }
             }
             else if (type.Name == "SampleTypeEnum")
             {
                 for (int i = 101, count = Enum.GetNames(type).Count() + 101; i < count; i++)
                 {
-                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });
                 }
             }
             else
             {
                 for (int i = 1, count = Enum.GetNames(type).Count(); i < count; i++)
                 {
-                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });
                 }
             }
 
@@ -103,10 +145,15 @@ namespace CSSPEnums
 
             return enumTextOrderedList;
         }
-        #endregion Function Get Enum Text Ordered
-
-        #region Function public GetResValueForTypeAndField
-        public string GetResValueForTypeAndField(Type type, int? IntVal)
+        /// <summary>
+        /// <para>**Allowable types:** <c>[ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html)</c>, <c>[AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html)</c>, <c>[AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html)</c>, <c>[AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html)</c>, <c>[AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html)</c>, <c>[AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html)</c>, <c>[AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html)</c>, <c>[BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html)</c>, <c>[BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html)</c>, <c>[CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html)</c>, <c>[ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html)</c>, <c>[CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html)</c>, <c>[CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html)</c>, <c>[DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html)</c>, <c>[DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html)</c>, <c>[DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html)</c>, <c>[EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html)</c>, <c>[FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html)</c>, <c>[FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html)</c>, <c>[FileStatusEnum] (CSSPEnums.FileStatusEnum.html)</c>, <c>[FileTypeEnum] (CSSPEnums.FileTypeEnum.html)</c>, <c>[InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html)</c>, <c>[KMZActionEnum] (CSSPEnums.KMZActionEnum.html)</c>, <c>[LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html)</c>, <c>[LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html)</c>, <c>[LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html)</c>, <c>[LanguageEnum] (CSSPEnums.LanguageEnum.html)</c>, <c>[LogCommandEnum] (CSSPEnums.LogCommandEnum.html)</c>, <c>[MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html)</c>, <c>[MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html)</c>, <c>[MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html)</c>, <c>[MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html)</c>, <c>[PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html)</c>, <c>[PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html)</c>, <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>, <c>[PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html)</c>, <c>[PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html)</c>, <c>[ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html)</c>, <c>[ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html)</c>, <c>[ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html)</c>, <c>[ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html)</c>, <c>[ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html)</c>, <c>[ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html)</c>, <c>[ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html)</c>, <c>[ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html)</c>, <c>[SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html)</c>, <c>[SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html)</c>, <c>[SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html)</c>, <c>[SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html)</c>, <c>[SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html)</c>, <c>[ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html)</c>, <c>[SearchTagEnum] (CSSPEnums.SearchTagEnum.html)</c>, <c>[SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html)</c>, <c>[SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html)</c>, <c>[SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html)</c>, <c>[StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html)</c>, <c>[StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html)</c>, <c>[TelTypeEnum] (CSSPEnums.TelTypeEnum.html)</c>, <c>[TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html)</c>, <c>[TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html)</c>, <c>[TideTextEnum] (CSSPEnums.TideTextEnum.html)</c>, <c>[TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html)</c>, <c>[TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html)</c>, <c>[TVAuthEnum] (CSSPEnums.TVAuthEnum.html)</c>, <c>[TVTypeEnum] (CSSPEnums.TVTypeEnum.html)</c>, <c>[WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html)</c>, <c>[PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</c>, </para>
+        /// <para>**Allowable <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>:** Error,Description,Report,Text,Initial,</para>
+        /// </summary>
+        /// <param name="type">One of the allowable types (Enum)</param>
+        /// <param name="ID">ID representing the enumeration values (int?)</param>
+        /// <param name="polSourceObsInfoTypeEnum">One of the allowable PolSourceObsInfoTypeEnum</param>
+        /// <returns>Will return list of EnumIDAndText ordered by the Enum text for one of the allowable languages [en, fr]</returns>
+        public string GetResValueForTypeAndID(Type type, int? ID, PolSourceObsInfoTypeEnum? polSourceObsInfoTypeEnum = PolSourceObsInfoTypeEnum.Error)
         {
             if (LanguageRequest.ToString() != Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName)
             {
@@ -127,140 +174,160 @@ namespace CSSPEnums
             switch (enumName)
             {
                 case "ActionDBTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ActionDBTypeEnum((IntVal == null ? null : (ActionDBTypeEnum?)IntVal)));
+                    return GetEnumText_ActionDBTypeEnum((ID == null ? null : (ActionDBTypeEnum?)ID));
                 case "AddressTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AddressTypeEnum((IntVal == null ? null : (AddressTypeEnum?)IntVal)));
+                    return GetEnumText_AddressTypeEnum((ID == null ? null : (AddressTypeEnum?)ID));
                 case "AerationTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AerationTypeEnum((IntVal == null ? null : (AerationTypeEnum?)IntVal)));
+                    return GetEnumText_AerationTypeEnum((ID == null ? null : (AerationTypeEnum?)ID));
                 case "AlarmSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AlarmSystemTypeEnum((IntVal == null ? null : (AlarmSystemTypeEnum?)IntVal)));
+                    return GetEnumText_AlarmSystemTypeEnum((ID == null ? null : (AlarmSystemTypeEnum?)ID));
                 case "AnalyzeMethodEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AnalyzeMethodEnum((IntVal == null ? null : (AnalyzeMethodEnum?)IntVal)));
+                    return GetEnumText_AnalyzeMethodEnum((ID == null ? null : (AnalyzeMethodEnum?)ID));
                 case "AppTaskCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskCommandEnum((IntVal == null ? null : (AppTaskCommandEnum?)IntVal)));
+                    return GetEnumText_AppTaskCommandEnum((ID == null ? null : (AppTaskCommandEnum?)ID));
                 case "AppTaskStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_AppTaskStatusEnum((IntVal == null ? null : (AppTaskStatusEnum?)IntVal)));
+                    return GetEnumText_AppTaskStatusEnum((ID == null ? null : (AppTaskStatusEnum?)ID));
                 case "BeaufortScaleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BeaufortScaleEnum((IntVal == null ? null : (BeaufortScaleEnum?)IntVal)));
+                    return GetEnumText_BeaufortScaleEnum((ID == null ? null : (BeaufortScaleEnum?)ID));
                 case "BoxModelResultTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_BoxModelResultTypeEnum((IntVal == null ? null : (BoxModelResultTypeEnum?)IntVal)));
+                    return GetEnumText_BoxModelResultTypeEnum((ID == null ? null : (BoxModelResultTypeEnum?)ID));
                 case "CollectionSystemTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CollectionSystemTypeEnum((IntVal == null ? null : (CollectionSystemTypeEnum?)IntVal)));
+                    return GetEnumText_CollectionSystemTypeEnum((ID == null ? null : (CollectionSystemTypeEnum?)ID));
                 case "ContactTitleEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ContactTitleEnum((IntVal == null ? null : (ContactTitleEnum?)IntVal)));
+                    return GetEnumText_ContactTitleEnum((ID == null ? null : (ContactTitleEnum?)ID));
                 case "CSSPWQInputSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputSheetTypeEnum((IntVal == null ? null : (CSSPWQInputSheetTypeEnum?)IntVal)));
+                    return GetEnumText_CSSPWQInputSheetTypeEnum((ID == null ? null : (CSSPWQInputSheetTypeEnum?)ID));
                 case "CSSPWQInputTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_CSSPWQInputTypeEnum((IntVal == null ? null : (CSSPWQInputTypeEnum?)IntVal)));
+                    return GetEnumText_CSSPWQInputTypeEnum((ID == null ? null : (CSSPWQInputTypeEnum?)ID));
                 case "DailyOrHourlyDataEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DailyOrHourlyDataEnum((IntVal == null ? null : (DailyOrHourlyDataEnum?)IntVal)));
+                    return GetEnumText_DailyOrHourlyDataEnum((ID == null ? null : (DailyOrHourlyDataEnum?)ID));
                 case "DatabaseTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DatabaseTypeEnum((IntVal == null ? null : (DatabaseTypeEnum?)IntVal)));
+                    return GetEnumText_DatabaseTypeEnum((ID == null ? null : (DatabaseTypeEnum?)ID));
                 case "DisinfectionTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_DisinfectionTypeEnum((IntVal == null ? null : (DisinfectionTypeEnum?)IntVal)));
+                    return GetEnumText_DisinfectionTypeEnum((ID == null ? null : (DisinfectionTypeEnum?)ID));
                 case "EmailTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_EmailTypeEnum((IntVal == null ? null : (EmailTypeEnum?)IntVal)));
+                    return GetEnumText_EmailTypeEnum((ID == null ? null : (EmailTypeEnum?)ID));
                 case "FacilityTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FacilityTypeEnum((IntVal == null ? null : (FacilityTypeEnum?)IntVal)));
+                    return GetEnumText_FacilityTypeEnum((ID == null ? null : (FacilityTypeEnum?)ID));
                 case "FilePurposeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FilePurposeEnum((IntVal == null ? null : (FilePurposeEnum?)IntVal)));
+                    return GetEnumText_FilePurposeEnum((ID == null ? null : (FilePurposeEnum?)ID));
                 case "FileStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileStatusEnum((IntVal == null ? null : (FileStatusEnum?)IntVal)));
+                    return GetEnumText_FileStatusEnum((ID == null ? null : (FileStatusEnum?)ID));
                 case "FileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_FileTypeEnum((IntVal == null ? null : (FileTypeEnum?)IntVal)));
+                    return GetEnumText_FileTypeEnum((ID == null ? null : (FileTypeEnum?)ID));
                 case "InfrastructureTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_InfrastructureTypeEnum((IntVal == null ? null : (InfrastructureTypeEnum?)IntVal)));
+                    return GetEnumText_InfrastructureTypeEnum((ID == null ? null : (InfrastructureTypeEnum?)ID));
                 case "KMZActionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_KMZActionEnum((IntVal == null ? null : (KMZActionEnum?)IntVal)));
+                    return GetEnumText_KMZActionEnum((ID == null ? null : (KMZActionEnum?)ID));
                 case "LaboratoryEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LaboratoryEnum((IntVal == null ? null : (LaboratoryEnum?)IntVal)));
+                    return GetEnumText_LaboratoryEnum((ID == null ? null : (LaboratoryEnum?)ID));
                 case "LabSheetStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetStatusEnum((IntVal == null ? null : (LabSheetStatusEnum?)IntVal)));
+                    return GetEnumText_LabSheetStatusEnum((ID == null ? null : (LabSheetStatusEnum?)ID));
                 case "LabSheetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LabSheetTypeEnum((IntVal == null ? null : (LabSheetTypeEnum?)IntVal)));
+                    return GetEnumText_LabSheetTypeEnum((ID == null ? null : (LabSheetTypeEnum?)ID));
                 case "LanguageEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LanguageEnum((IntVal == null ? null : (LanguageEnum?)IntVal)));
+                    return GetEnumText_LanguageEnum((ID == null ? null : (LanguageEnum?)ID));
                 case "LogCommandEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_LogCommandEnum((IntVal == null ? null : (LogCommandEnum?)IntVal)));
+                    return GetEnumText_LogCommandEnum((ID == null ? null : (LogCommandEnum?)ID));
                 case "MapInfoDrawTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MapInfoDrawTypeEnum((IntVal == null ? null : (MapInfoDrawTypeEnum?)IntVal)));
+                    return GetEnumText_MapInfoDrawTypeEnum((ID == null ? null : (MapInfoDrawTypeEnum?)ID));
                 case "MikeBoundaryConditionLevelOrVelocityEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeBoundaryConditionLevelOrVelocityEnum((IntVal == null ? null : (MikeBoundaryConditionLevelOrVelocityEnum?)IntVal)));
+                    return GetEnumText_MikeBoundaryConditionLevelOrVelocityEnum((ID == null ? null : (MikeBoundaryConditionLevelOrVelocityEnum?)ID));
                 case "MikeScenarioSpecialResultKMLTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MikeScenarioSpecialResultKMLTypeEnum((IntVal == null ? null : (MikeScenarioSpecialResultKMLTypeEnum?)IntVal)));
+                    return GetEnumText_MikeScenarioSpecialResultKMLTypeEnum((ID == null ? null : (MikeScenarioSpecialResultKMLTypeEnum?)ID));
                 case "MWQMSiteLatestClassificationEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_MWQMSiteLatestClassificationEnum((IntVal == null ? null : (MWQMSiteLatestClassificationEnum?)IntVal)));
+                    return GetEnumText_MWQMSiteLatestClassificationEnum((ID == null ? null : (MWQMSiteLatestClassificationEnum?)ID));
                 case "PolSourceInactiveReasonEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceInactiveReasonEnum((IntVal == null ? null : (PolSourceInactiveReasonEnum?)IntVal)));
+                    return GetEnumText_PolSourceInactiveReasonEnum((ID == null ? null : (PolSourceInactiveReasonEnum?)ID));
                 case "PolSourceIssueRiskEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PolSourceIssueRiskEnum((IntVal == null ? null : (PolSourceIssueRiskEnum?)IntVal)));
+                    return GetEnumText_PolSourceIssueRiskEnum((ID == null ? null : (PolSourceIssueRiskEnum?)ID));
+                case "PolSourceObsInfoTypeEnum":
+                    return GetEnumText_PolSourceObsInfoTypeEnum((ID == null ? null : (PolSourceObsInfoTypeEnum?)ID));
                 case "PreliminaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PreliminaryTreatmentTypeEnum((IntVal == null ? null : (PreliminaryTreatmentTypeEnum?)IntVal)));
+                    return GetEnumText_PreliminaryTreatmentTypeEnum((ID == null ? null : (PreliminaryTreatmentTypeEnum?)ID));
                 case "PrimaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_PrimaryTreatmentTypeEnum((IntVal == null ? null : (PrimaryTreatmentTypeEnum?)IntVal)));
+                    return GetEnumText_PrimaryTreatmentTypeEnum((ID == null ? null : (PrimaryTreatmentTypeEnum?)ID));
                 case "ReportConditionEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportConditionEnum((IntVal == null ? null : (ReportConditionEnum?)IntVal)));
+                    return GetEnumText_ReportConditionEnum((ID == null ? null : (ReportConditionEnum?)ID));
                 case "ReportFieldTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFieldTypeEnum((IntVal == null ? null : (ReportFieldTypeEnum?)IntVal)));
+                    return GetEnumText_ReportFieldTypeEnum((ID == null ? null : (ReportFieldTypeEnum?)ID));
                 case "ReportFileTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFileTypeEnum((IntVal == null ? null : (ReportFileTypeEnum?)IntVal)));
+                    return GetEnumText_ReportFileTypeEnum((ID == null ? null : (ReportFileTypeEnum?)ID));
                 case "ReportFormatingDateEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingDateEnum((IntVal == null ? null : (ReportFormatingDateEnum?)IntVal)));
+                    return GetEnumText_ReportFormatingDateEnum((ID == null ? null : (ReportFormatingDateEnum?)ID));
                 case "ReportFormatingNumberEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportFormatingNumberEnum((IntVal == null ? null : (ReportFormatingNumberEnum?)IntVal)));
+                    return GetEnumText_ReportFormatingNumberEnum((ID == null ? null : (ReportFormatingNumberEnum?)ID));
                 case "ReportSortingEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportSortingEnum((IntVal == null ? null : (ReportSortingEnum?)IntVal)));
+                    return GetEnumText_ReportSortingEnum((ID == null ? null : (ReportSortingEnum?)ID));
                 case "ReportTreeNodeSubTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeSubTypeEnum((IntVal == null ? null : (ReportTreeNodeSubTypeEnum?)IntVal)));
+                    return GetEnumText_ReportTreeNodeSubTypeEnum((ID == null ? null : (ReportTreeNodeSubTypeEnum?)ID));
                 case "ReportTreeNodeTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ReportTreeNodeTypeEnum((IntVal == null ? null : (ReportTreeNodeTypeEnum?)IntVal)));
+                    return GetEnumText_ReportTreeNodeTypeEnum((ID == null ? null : (ReportTreeNodeTypeEnum?)ID));
                 case "SameDayNextDayEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SameDayNextDayEnum((IntVal == null ? null : (SameDayNextDayEnum?)IntVal)));
+                    return GetEnumText_SameDayNextDayEnum((ID == null ? null : (SameDayNextDayEnum?)ID));
                 case "SampleMatrixEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleMatrixEnum((IntVal == null ? null : (SampleMatrixEnum?)IntVal)));
+                    return GetEnumText_SampleMatrixEnum((ID == null ? null : (SampleMatrixEnum?)ID));
                 case "SampleStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleStatusEnum((IntVal == null ? null : (SampleStatusEnum?)IntVal)));
+                    return GetEnumText_SampleStatusEnum((ID == null ? null : (SampleStatusEnum?)ID));
                 case "SampleTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SampleTypeEnum((IntVal == null ? null : (SampleTypeEnum?)IntVal)));
+                    return GetEnumText_SampleTypeEnum((ID == null ? null : (SampleTypeEnum?)ID));
                 case "SamplingPlanTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SamplingPlanTypeEnum((IntVal == null ? null : (SamplingPlanTypeEnum?)IntVal)));
+                    return GetEnumText_SamplingPlanTypeEnum((ID == null ? null : (SamplingPlanTypeEnum?)ID));
                 case "ScenarioStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_ScenarioStatusEnum((IntVal == null ? null : (ScenarioStatusEnum?)IntVal)));
+                    return GetEnumText_ScenarioStatusEnum((ID == null ? null : (ScenarioStatusEnum?)ID));
                 case "SearchTagEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SearchTagEnum((IntVal == null ? null : (SearchTagEnum?)IntVal)));
+                    return GetEnumText_SearchTagEnum((ID == null ? null : (SearchTagEnum?)ID));
                 case "SecondaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SecondaryTreatmentTypeEnum((IntVal == null ? null : (SecondaryTreatmentTypeEnum?)IntVal)));
+                    return GetEnumText_SecondaryTreatmentTypeEnum((ID == null ? null : (SecondaryTreatmentTypeEnum?)ID));
                 case "SiteTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SiteTypeEnum((IntVal == null ? null : (SiteTypeEnum?)IntVal)));
+                    return GetEnumText_SiteTypeEnum((ID == null ? null : (SiteTypeEnum?)ID));
                 case "SpecialTableTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_SpecialTableTypeEnum((IntVal == null ? null : (SpecialTableTypeEnum?)IntVal)));
+                    return GetEnumText_SpecialTableTypeEnum((ID == null ? null : (SpecialTableTypeEnum?)ID));
                 case "StorageDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StorageDataTypeEnum((IntVal == null ? null : (StorageDataTypeEnum?)IntVal)));
+                    return GetEnumText_StorageDataTypeEnum((ID == null ? null : (StorageDataTypeEnum?)ID));
                 case "StreetTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_StreetTypeEnum((IntVal == null ? null : (StreetTypeEnum?)IntVal)));
+                    return GetEnumText_StreetTypeEnum((ID == null ? null : (StreetTypeEnum?)ID));
                 case "TelTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TelTypeEnum((IntVal == null ? null : (TelTypeEnum?)IntVal)));
+                    return GetEnumText_TelTypeEnum((ID == null ? null : (TelTypeEnum?)ID));
                 case "TertiaryTreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TertiaryTreatmentTypeEnum((IntVal == null ? null : (TertiaryTreatmentTypeEnum?)IntVal)));
+                    return GetEnumText_TertiaryTreatmentTypeEnum((ID == null ? null : (TertiaryTreatmentTypeEnum?)ID));
                 case "TideDataTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideDataTypeEnum((IntVal == null ? null : (TideDataTypeEnum?)IntVal)));
+                    return GetEnumText_TideDataTypeEnum((ID == null ? null : (TideDataTypeEnum?)ID));
                 case "TideTextEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TideTextEnum((IntVal == null ? null : (TideTextEnum?)IntVal)));
+                    return GetEnumText_TideTextEnum((ID == null ? null : (TideTextEnum?)ID));
                 case "TranslationStatusEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TranslationStatusEnum((IntVal == null ? null : (TranslationStatusEnum?)IntVal)));
+                    return GetEnumText_TranslationStatusEnum((ID == null ? null : (TranslationStatusEnum?)ID));
                 case "TreatmentTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TreatmentTypeEnum((IntVal == null ? null : (TreatmentTypeEnum?)IntVal)));
+                    return GetEnumText_TreatmentTypeEnum((ID == null ? null : (TreatmentTypeEnum?)ID));
                 case "TVAuthEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVAuthEnum((IntVal == null ? null : (TVAuthEnum?)IntVal)));
+                    return GetEnumText_TVAuthEnum((ID == null ? null : (TVAuthEnum?)ID));
                 case "TVTypeEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_TVTypeEnum((IntVal == null ? null : (TVTypeEnum?)IntVal)));
+                    return GetEnumText_TVTypeEnum((ID == null ? null : (TVTypeEnum?)ID));
                 case "WebTideDataSetEnum":
-                    return WebUtility.HtmlEncode(GetEnumText_WebTideDataSetEnum((IntVal == null ? null : (WebTideDataSetEnum?)IntVal)));
+                    return GetEnumText_WebTideDataSetEnum((ID == null ? null : (WebTideDataSetEnum?)ID));
+                case "PolSourceObsInfoEnum":
+                {
+                    switch (polSourceObsInfoTypeEnum)
+                    {
+                        case PolSourceObsInfoTypeEnum.Error:
+                            return GetEnumText_PolSourceObsInfoEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                        case PolSourceObsInfoTypeEnum.Description:
+                            return GetEnumText_PolSourceObsInfoDescEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                        case PolSourceObsInfoTypeEnum.Report:
+                            return GetEnumText_PolSourceObsInfoReportEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                        case PolSourceObsInfoTypeEnum.Text:
+                            return GetEnumText_PolSourceObsInfoTextEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                        case PolSourceObsInfoTypeEnum.Initial:
+                            return GetEnumText_PolSourceObsInfoInitEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                        default:
+                            return GetEnumText_PolSourceObsInfoEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));
+                    }
+                }
                 default:
                     return "";
             }
         }
-        #endregion Function public GetResValueForTypeAndField
+        #endregion Function public
 
         #region Functions private
         private string GetEnumText_ActionDBTypeEnum(ActionDBTypeEnum? actionDBType)
@@ -1149,6 +1216,27 @@ namespace CSSPEnums
                     return CSSPEnumsRes.PolSourceIssueRiskEnumModerateRisk;
                 case PolSourceIssueRiskEnum.HighRisk:
                     return CSSPEnumsRes.PolSourceIssueRiskEnumHighRisk;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_PolSourceObsInfoTypeEnum(PolSourceObsInfoTypeEnum? polSourceObsInfoType)
+        {
+            if (polSourceObsInfoType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (polSourceObsInfoType)
+            {
+                case PolSourceObsInfoTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case PolSourceObsInfoTypeEnum.Description:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumDescription;
+                case PolSourceObsInfoTypeEnum.Report:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumReport;
+                case PolSourceObsInfoTypeEnum.Text:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumText;
+                case PolSourceObsInfoTypeEnum.Initial:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumInitial;
                 default:
                     return CSSPEnumsRes.Empty;
             }

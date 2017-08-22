@@ -19,34 +19,47 @@ namespace CSSPEnumsGenerateCodeHelper
             Enums enumsFr = new Enums(LanguageEnum.fr);
 
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
+            FileInfo fiCSSPEnumsDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
             FileInfo fi = new FileInfo(enumsFiles.BaseDir + @"CSSPEnums\CSSPEnums\EnumsWithHelp.cs");
-            FileInfo fiModels = new FileInfo(enumsFiles.BaseDir + @"CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
-            FileInfo fiServices = new FileInfo(enumsFiles.BaseDir + @"CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
+            FileInfo fiCSSPModelsDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
+            FileInfo fiCSSPServicesDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
-            if (!fiDLL.Exists)
+            if (!fiCSSPEnumsDLL.Exists)
             {
-                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiDLL.FullName + "]"));
+                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPEnumsDLL.FullName + "]"));
                 return;
             }
-            var importAssembly = Assembly.LoadFile(fiDLL.FullName);
-            Type[] types = importAssembly.GetTypes();
 
-            if (!fiModels.Exists)
+            List<DLLTypeInfo> DLLTypeInfoCSSPEnumsList = new List<DLLTypeInfo>();
+            if (FillDLLTypeInfoList(fiCSSPEnumsDLL, DLLTypeInfoCSSPEnumsList))
             {
-                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiModels.FullName + "]"));
+                ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPEnumsDLL.FullName + "]"));
                 return;
             }
-            var importAssemblyModels = Assembly.LoadFile(fiModels.FullName);
-            Type[] typesModels = importAssemblyModels.GetTypes();
 
-            if (!fiServices.Exists)
+            if (!fiCSSPModelsDLL.Exists)
             {
-                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiServices.FullName + "]"));
+                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPModelsDLL.FullName + "]"));
                 return;
             }
-            var importAssemblyServices = Assembly.LoadFile(fiServices.FullName);
-            Type[] typesServices = importAssemblyModels.GetTypes();
+            List<DLLTypeInfo> DLLTypeInfoCSSPModelsList = new List<DLLTypeInfo>();
+            if (FillDLLTypeInfoList(fiCSSPModelsDLL, DLLTypeInfoCSSPModelsList))
+            {
+                ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPModelsDLL.FullName + "]"));
+                return;
+            }
+
+            if (!fiCSSPServicesDLL.Exists)
+            {
+                ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPServicesDLL.FullName + "]"));
+                return;
+            }
+            List<DLLTypeInfo> DLLTypeInfoCSSPServicesList = new List<DLLTypeInfo>();
+            if (FillDLLTypeInfoList(fiCSSPServicesDLL, DLLTypeInfoCSSPServicesList))
+            {
+                ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPServicesDLL.FullName + "]"));
+                return;
+            }
 
             #region Top part
             sb.AppendLine(@"using System;");
@@ -61,11 +74,11 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"namespace CSSPEnums");
             sb.AppendLine(@"{");
             sb.AppendLine(@"    /// <summary>");
-            sb.AppendLine(@"    /// > Class holding all Enum used in CSSP applications and methods used to get text associated with the Enum in both languages [en, fr]");
+            sb.AppendLine(@"    /// Class holding all Enum used in CSSP applications and methods used to get text associated with the Enum in both languages [en, fr]");
             sb.AppendLine(@"    /// ");
-            sb.AppendLine(@"    /// > Used by ");
-            sb.AppendLine(@"    /// > * <c>[CSSPModels] (CSSPModels.html)</c>");
-            sb.AppendLine(@"    /// > * <c>[CSSPServices] (CSSPServices.html)</c>");
+            sb.AppendLine(@"    /// Used by ");
+            sb.AppendLine(@"    /// * <c>[CSSPModels] (CSSPModels.html)</c>");
+            sb.AppendLine(@"    /// * <c>[CSSPServices] (CSSPServices.html)</c>");
             sb.AppendLine(@"    /// </summary>");
             sb.AppendLine(@"    public partial class Enums");
             sb.AppendLine(@"    {");
@@ -74,25 +87,25 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Properties");
             sb.AppendLine(@"        /// <summary>");
-            sb.AppendLine(@"        /// > Allowable values are [en, fr]");
+            sb.AppendLine(@"        /// Allowable values are [en, fr]");
             sb.AppendLine(@"        /// </summary>");
             sb.AppendLine(@"        public LanguageEnum LanguageRequest { get; set; }");
             sb.AppendLine(@"        #endregion Properties");
             sb.AppendLine(@"");
             sb.AppendLine(@"        #region Constructors");
             sb.AppendLine(@"        /// <summary>");
-            sb.AppendLine(@"        /// > using [en]");
-            sb.AppendLine(@"        /// >");
-            sb.AppendLine(@"        /// > <c>CurrentCulture = new CultureInfo(""en-CA"");</c>");
-            sb.AppendLine(@"        /// >   ");
-            sb.AppendLine(@"        /// > <c>CurrentUICulture = new CultureInfo(""en-CA"");</c>");
-            sb.AppendLine(@"        /// >");
-            sb.AppendLine(@"        /// > using [fr]");
-            sb.AppendLine(@"        /// >");
-            sb.AppendLine(@"        /// > <c>CurrentCulture = new CultureInfo(""fr-CA"");</c>");
-            sb.AppendLine(@"        /// > ");
-            sb.AppendLine(@"        /// > <c>CurrentUICulture = new CultureInfo(""fr-CA"");</c>");
-            sb.AppendLine(@"        /// >");
+            sb.AppendLine(@"        /// <para>**using [en]**</para>");
+            sb.AppendLine(@"        /// ");
+            sb.AppendLine(@"        /// <para> <c>CurrentCulture = new CultureInfo(""en-CA"");</c></para>");
+            sb.AppendLine(@"        /// ");
+            sb.AppendLine(@"        /// <para> <c>CurrentUICulture = new CultureInfo(""en-CA"");</c></para>");
+            sb.AppendLine(@"        /// ");
+            sb.AppendLine(@"        /// <para>**using [fr]**</para>");
+            sb.AppendLine(@"        /// ");
+            sb.AppendLine(@"        /// <para> <c>CurrentCulture = new CultureInfo(""fr-CA"");</c></para>");
+            sb.AppendLine(@"        /// ");
+            sb.AppendLine(@"        /// <para> <c>CurrentUICulture = new CultureInfo(""fr-CA"");</c></para>");
+            sb.AppendLine(@"        /// ");
             sb.AppendLine(@"        /// </summary>");
             sb.AppendLine(@"        /// <param name=""LanguageRequest""></param>");
             sb.AppendLine(@"        public Enums(LanguageEnum LanguageRequest)");
@@ -114,63 +127,111 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"    }");
             #endregion Top part
 
-            foreach (Type type in types)
+            foreach (DLLTypeInfo dllTypeInfoEnums in DLLTypeInfoCSSPEnumsList)
             {
-                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
+                StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "]"));
+                if (dllTypeInfoEnums.IsEnum)
                 {
-                    string enumName = type.Name;
-                    if (enumName == "PolSourceObsInfoEnum")
+                    if (dllTypeInfoEnums.Name == "PolSourceObsInfoEnum")
                         continue;
 
                     sb.AppendLine(@"    /// <summary>");
 
-                    foreach (Type typeModels in typesModels)
+                    StringBuilder sbModels = new StringBuilder();
+
+                    foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
                     {
-                        foreach (PropertyInfo propertyInfo in typeModels.GetProperties())
+                        StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "] [" + dllTypeInfoModels.Name + "]"));
+
+                        foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                         {
-                            string PropTypeName = propertyInfo.PropertyType.FullName;
+                            string PropTypeName = dllPropertyInfo.PropertyType.FullName;
                             if (PropTypeName.StartsWith("System.Nullable"))
                             {
                                 PropTypeName = PropTypeName.Substring(PropTypeName.IndexOf("[[") + 2);
                                 PropTypeName = PropTypeName.Substring(PropTypeName.IndexOf(".") + 1);
                                 PropTypeName = PropTypeName.Substring(0, PropTypeName.IndexOf(","));
                             }
-                            if (PropTypeName == type.Name)
+                            if (PropTypeName == dllTypeInfoEnums.Type.Name)
                             {
-                                string TypeNameModels = typeModels.Name;
-                                sb.AppendLine(@"    /// > Used by: <c>[CSSPModels." + typeModels.Name + "." + propertyInfo.Name + "] (CSSPModels." + typeModels.Name + @".html#CSSPModels_" + typeModels.Name + "_" + propertyInfo.Name + ") </c>");
-                                sb.AppendLine(@"    /// >");
+                                string TypeNameModels = dllTypeInfoModels.Name;
+                                sbModels.Append(@"[" + dllTypeInfoModels.Name + "." + dllPropertyInfo.Name + "] (CSSPModels." + dllTypeInfoModels.Name + @".html#CSSPModels_" + dllTypeInfoModels.Name + "_" + dllPropertyInfo.Name + "), ");
                             }
                         }
+                    }
+
+                    if (sbModels.ToString().Length > 0)
+                    {
+                        sb.AppendLine(@"    /// <para>**Used by CSSPModels:** " + sbModels.ToString() + "</para>");
+                    }
+
+                    StringBuilder sbServices = new StringBuilder();
+
+                    foreach (DLLTypeInfo dllTypeInfoServices in DLLTypeInfoCSSPServicesList)
+                    {
+                        StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Type.Name + "] [" + dllTypeInfoServices.Name + "]"));
+
+                        foreach (DLLMethodInfo dllMethodInfo in dllTypeInfoServices.MethodInfoList)
+                        {
+                            if (dllMethodInfo.DeclaringTypeName.StartsWith("CSSP"))
+                            {
+                                try
+                                {
+                                    StringBuilder sbParamTypeText = new StringBuilder();
+                                    bool ShouldShowLink = false;
+                                    foreach (DLLParameterInfo dllParameterInfo in dllMethodInfo.ParameterInfoList)
+                                    {
+                                        if (dllParameterInfo.Name == dllTypeInfoEnums.Name)
+                                        {
+                                            ShouldShowLink = true;
+                                        }
+                                        sbParamTypeText.Append(dllParameterInfo.Name + "_");
+                                    }
+                                    if (ShouldShowLink)
+                                    {
+                                        sbServices.Append(@"[" + dllTypeInfoServices.Name + "." + dllMethodInfo.Name + "] (CSSPServices." + dllTypeInfoServices.Name + @".html#CSSPServices_" + dllTypeInfoServices.Name + "_" + dllMethodInfo.Name + "_" + sbParamTypeText.ToString().Replace(".", "_").Replace("+", "_") + "), ");
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                   // nothing
+                                }
+                            }
+                        }
+                    }
+
+                    if (sbServices.ToString().Length > 0)
+                    {
+                        sb.AppendLine(@"    /// <para>**Used by CSSPServices:** " + sbServices.ToString() + "</para>");
                     }
 
                     sb.AppendLine(@"    /// </summary>");
                     sb.AppendLine(@"    /// <remarks>");
                     sb.AppendLine(@"    /// <code>");
-                    sb.AppendLine(@"    ///     public enum " + enumName + "");
+                    sb.AppendLine(@"    ///     public enum " + dllTypeInfoEnums.Type.Name + "");
                     sb.AppendLine(@"    ///     {");
-                    foreach (FieldInfo fieldInfo in type.GetFields())
+                    foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
                     {
-                        if (fieldInfo.FieldType.GetTypeInfo().BaseType == typeof(System.Enum))
+                        if (dllTypeInfoEnums.IsEnum)
                         {
-                            string fName = fieldInfo.Name;
-                            sb.AppendLine(@"    ///         " + fName + " = " + ((int)fieldInfo.GetValue(fName)).ToString() + ",");
+                            string fName = dllFieldInfo.Name;
+                            sb.AppendLine(@"    ///         " + fName + " = " + ((int)dllFieldInfo.FieldInfo.GetValue(fName)).ToString() + ",");
                         }
                     }
                     sb.AppendLine(@"    ///     }");
                     sb.AppendLine(@"    /// </code>");
                     sb.AppendLine(@"    /// </remarks>");
-                    sb.AppendLine(@"    public enum " + enumName);
+                    sb.AppendLine(@"    public enum " + dllTypeInfoEnums.Type.Name);
                     sb.AppendLine(@"    {");
-                    foreach (FieldInfo fieldInfo in type.GetFields())
+                    foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
                     {
-                        if (fieldInfo.FieldType.GetTypeInfo().BaseType == typeof(System.Enum))
+                        if (dllTypeInfoEnums.IsEnum)
                         {
-                            string fName = fieldInfo.Name;
-                            int IntVal = (int)fieldInfo.GetValue(fieldInfo.Name);
+                            string fName = dllFieldInfo.Name;
+                            int IntVal = (int)dllFieldInfo.FieldInfo.GetValue(dllFieldInfo.Name);
 
                             sb.AppendLine(@"        /// <summary>");
-                            sb.AppendLine(@"        /// " + IntVal.ToString() + " -- en [" + enumsEn.GetResValueForTypeAndField(type, IntVal) + "] ---- fr [" + enumsFr.GetResValueForTypeAndField(type, IntVal) + "]");
+                            sb.AppendLine(@"        /// " + IntVal.ToString() + " -- en [" + enumsEn.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "] ---- fr [" + enumsFr.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "]");
                             sb.AppendLine(@"        /// </summary>");
                             sb.AppendLine(@"        " + fName + " = " + IntVal.ToString() + ",");
                         }

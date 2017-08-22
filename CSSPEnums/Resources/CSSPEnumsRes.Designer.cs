@@ -2825,6 +2825,42 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string PolSourceObsInfoTypeEnumDescription {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoTypeEnumDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial.
+        /// </summary>
+        public static string PolSourceObsInfoTypeEnumInitial {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoTypeEnumInitial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report.
+        /// </summary>
+        public static string PolSourceObsInfoTypeEnumReport {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoTypeEnumReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        public static string PolSourceObsInfoTypeEnumText {
+            get {
+                return ResourceManager.GetString("PolSourceObsInfoTypeEnumText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PreliminaryTreatmentType.
         /// </summary>
         public static string PreliminaryTreatmentType {

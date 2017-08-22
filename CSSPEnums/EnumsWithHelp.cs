@@ -10,11 +10,11 @@ using System.Net;
 namespace CSSPEnums
 {
     /// <summary>
-    /// > Class holding all Enum used in CSSP applications and methods used to get text associated with the Enum in both languages [en, fr]
+    /// Class holding all Enum used in CSSP applications and methods used to get text associated with the Enum in both languages [en, fr]
     /// 
-    /// > Used by 
-    /// > * <c>[CSSPModels] (CSSPModels.html)</c>
-    /// > * <c>[CSSPServices] (CSSPServices.html)</c>
+    /// Used by 
+    /// * <c>[CSSPModels] (CSSPModels.html)</c>
+    /// * <c>[CSSPServices] (CSSPServices.html)</c>
     /// </summary>
     public partial class Enums
     {
@@ -23,25 +23,25 @@ namespace CSSPEnums
 
         #region Properties
         /// <summary>
-        /// > Allowable values are [en, fr]
+        /// Allowable values are [en, fr]
         /// </summary>
         public LanguageEnum LanguageRequest { get; set; }
         #endregion Properties
 
         #region Constructors
         /// <summary>
-        /// > using [en]
-        /// >
-        /// > <c>CurrentCulture = new CultureInfo("en-CA");</c>
-        /// >   
-        /// > <c>CurrentUICulture = new CultureInfo("en-CA");</c>
-        /// >
-        /// > using [fr]
-        /// >
-        /// > <c>CurrentCulture = new CultureInfo("fr-CA");</c>
-        /// > 
-        /// > <c>CurrentUICulture = new CultureInfo("fr-CA");</c>
-        /// >
+        /// <para>**using [en]**</para>
+        /// 
+        /// <para> <c>CurrentCulture = new CultureInfo("en-CA");</c></para>
+        /// 
+        /// <para> <c>CurrentUICulture = new CultureInfo("en-CA");</c></para>
+        /// 
+        /// <para>**using [fr]**</para>
+        /// 
+        /// <para> <c>CurrentCulture = new CultureInfo("fr-CA");</c></para>
+        /// 
+        /// <para> <c>CurrentUICulture = new CultureInfo("fr-CA");</c></para>
+        /// 
         /// </summary>
         /// <param name="LanguageRequest"></param>
         public Enums(LanguageEnum LanguageRequest)
@@ -82,7 +82,7 @@ namespace CSSPEnums
         /// </summary>
         Error = 0,
         /// <summary>
-        /// 1 -- en [Create] ---- fr [Cr&#233;er]
+        /// 1 -- en [Create] ---- fr [Créer]
         /// </summary>
         Create = 1,
         /// <summary>
@@ -90,7 +90,7 @@ namespace CSSPEnums
         /// </summary>
         Read = 2,
         /// <summary>
-        /// 3 -- en [Update] ---- fr [Mettre &#224; jour]
+        /// 3 -- en [Update] ---- fr [Mettre à jour]
         /// </summary>
         Update = 3,
         /// <summary>
@@ -131,8 +131,7 @@ namespace CSSPEnums
         Civic = 3,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.AerationType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.AerationType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -160,8 +159,7 @@ namespace CSSPEnums
         Surface = 2,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.AlarmSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.AlarmSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -204,8 +202,7 @@ namespace CSSPEnums
         PagerAndLight = 5,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.AnalyzeMethod] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.AnalyzeMethod] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -262,23 +259,23 @@ namespace CSSPEnums
         /// </summary>
         ZZ_0Q = 7,
         /// <summary>
-        /// 8 -- en [AnalyzeMethod8] ---- fr [M&#233;thode analytique 8]
+        /// 8 -- en [AnalyzeMethod8] ---- fr [Méthode analytique 8]
         /// </summary>
         AnalyzeMethod8 = 8,
         /// <summary>
-        /// 9 -- en [AnalyzeMethod9] ---- fr [M&#233;thode analytique 9]
+        /// 9 -- en [AnalyzeMethod9] ---- fr [Méthode analytique 9]
         /// </summary>
         AnalyzeMethod9 = 9,
         /// <summary>
-        /// 10 -- en [AnalyzeMethod10] ---- fr [M&#233;thode analytique 10 ]
+        /// 10 -- en [AnalyzeMethod10] ---- fr [Méthode analytique 10 ]
         /// </summary>
         AnalyzeMethod10 = 10,
         /// <summary>
-        /// 11 -- en [AnalyzeMethod11] ---- fr [M&#233;thode analytique 11]
+        /// 11 -- en [AnalyzeMethod11] ---- fr [Méthode analytique 11]
         /// </summary>
         AnalyzeMethod11 = 11,
         /// <summary>
-        /// 12 -- en [AnalyzeMethod12] ---- fr [M&#233;thode analytique 12 ]
+        /// 12 -- en [AnalyzeMethod12] ---- fr [Méthode analytique 12 ]
         /// </summary>
         AnalyzeMethod12 = 12,
     }
@@ -375,7 +372,7 @@ namespace CSSPEnums
         /// </summary>
         GetClimateSitesDataForRunsOfYear = 15,
         /// <summary>
-        /// 16 -- en [Create WebTide data (water level) at first node] ---- fr [Creation de donn&#233;es WebTide (niveau d&#39;eau) au premier noeud]
+        /// 16 -- en [Create WebTide data (water level) at first node] ---- fr [Creation de données WebTide (niveau d'eau) au premier noeud]
         /// </summary>
         CreateWebTideDataWLAtFirstNode = 16,
     }
@@ -400,7 +397,7 @@ namespace CSSPEnums
         /// </summary>
         Error = 0,
         /// <summary>
-        /// 1 -- en [Created] ---- fr [Cr&#233;&#233;]
+        /// 1 -- en [Created] ---- fr [Créé]
         /// </summary>
         Created = 1,
         /// <summary>
@@ -408,19 +405,16 @@ namespace CSSPEnums
         /// </summary>
         Running = 2,
         /// <summary>
-        /// 3 -- en [Completed] ---- fr [Termin&#233;]
+        /// 3 -- en [Completed] ---- fr [Terminé]
         /// </summary>
         Completed = 3,
         /// <summary>
-        /// 4 -- en [Cancelled] ---- fr [Annul&#233;]
+        /// 4 -- en [Cancelled] ---- fr [Annulé]
         /// </summary>
         Cancelled = 4,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.SeaStateAtStart_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale) </c>
-    /// >
-    /// > Used by: <c>[CSSPModels.MWQMRun.SeaStateAtEnd_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.SeaStateAtStart_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [MWQMRun.SeaStateAtEnd_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -545,8 +539,7 @@ namespace CSSPEnums
         DecayPreDisinfection = 5,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.CollectionSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.CollectionSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -619,10 +612,7 @@ namespace CSSPEnums
         Combined10Separated90 = 11,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.NewContact.ContactTitle] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle) </c>
-    /// >
-    /// > Used by: <c>[CSSPModels.Contact.ContactTitle] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [NewContact.ContactTitle] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [Contact.ContactTitle] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -808,8 +798,7 @@ namespace CSSPEnums
         SqlServerTestDB = 4,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.DisinfectionType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.DisinfectionType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -899,8 +888,7 @@ namespace CSSPEnums
         Work2 = 4,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.FacilityType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.FacilityType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1034,7 +1022,7 @@ namespace CSSPEnums
         /// </summary>
         Sent = 2,
         /// <summary>
-        /// 3 -- en [Accepted] ---- fr [Accept&#233;]
+        /// 3 -- en [Accepted] ---- fr [Accepté]
         /// </summary>
         Accepted = 3,
         /// <summary>
@@ -1169,8 +1157,7 @@ namespace CSSPEnums
         CSV = 21,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.InfrastructureType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.InfrastructureType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1270,8 +1257,7 @@ namespace CSSPEnums
         GenerateKMZBoundaryConditionNodes = 8,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.Laboratory] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.Laboratory] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1401,7 +1387,7 @@ namespace CSSPEnums
         /// </summary>
         EasternCharlotteWaterwayLaboratory = 21,
         /// <summary>
-        /// 22 -- en [Institut de recherche sur les zones coti&#232;res] ---- fr [Institut de recherche sur les zones coti&#232;res]
+        /// 22 -- en [Institut de recherche sur les zones cotières] ---- fr [Institut de recherche sur les zones cotières]
         /// </summary>
         InstitutDeRechercheSurLesZonesCotieres = 22,
         /// <summary>
@@ -1462,7 +1448,7 @@ namespace CSSPEnums
         /// </summary>
         Transferred = 2,
         /// <summary>
-        /// 3 -- en [Accepted] ---- fr [Accept&#233;]
+        /// 3 -- en [Accepted] ---- fr [Accepté]
         /// </summary>
         Accepted = 3,
         /// <summary>
@@ -1656,7 +1642,7 @@ namespace CSSPEnums
         /// </summary>
         Mesh = 1,
         /// <summary>
-        /// 2 -- en [Study area] ---- fr [R&#233;gion d&#39;&#233;tude]
+        /// 2 -- en [Study area] ---- fr [Région d'étude]
         /// </summary>
         StudyArea = 2,
         /// <summary>
@@ -1720,8 +1706,7 @@ namespace CSSPEnums
         Unclassified = 6,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.PolSourceSite.InactiveReason] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [PolSourceSite.InactiveReason] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1786,8 +1771,44 @@ namespace CSSPEnums
         HighRisk = 3,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.PreliminaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType) </c>
-    /// >
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum PolSourceObsInfoTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Description = 1,
+    ///         Report = 2,
+    ///         Text = 3,
+    ///         Initial = 4,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum PolSourceObsInfoTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Description] ---- fr [Description (fr)]
+        /// </summary>
+        Description = 1,
+        /// <summary>
+        /// 2 -- en [Report] ---- fr [Report (fr)]
+        /// </summary>
+        Report = 2,
+        /// <summary>
+        /// 3 -- en [Text] ---- fr [Text (fr)]
+        /// </summary>
+        Text = 3,
+        /// <summary>
+        /// 4 -- en [Initial] ---- fr [Initial (fr)]
+        /// </summary>
+        Initial = 4,
+    }
+    /// <summary>
+    /// <para>**Used by CSSPModels:** [Infrastructure.PreliminaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1820,8 +1841,7 @@ namespace CSSPEnums
         Grinder = 3,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.PrimaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.PrimaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2158,7 +2178,7 @@ namespace CSSPEnums
         /// </summary>
         PolSourceIssueRisk = 45,
         /// <summary>
-        /// 46 -- en [MikeScenarioSpecialResultKMLType] ---- fr [Type de r&#233;sultat sp&#233;cial du sc&#233;nario MIKE (KML)]
+        /// 46 -- en [MikeScenarioSpecialResultKMLType] ---- fr [Type de résultat spécial du scénario MIKE (KML)]
         /// </summary>
         MikeScenarioSpecialResultKMLType = 46,
     }
@@ -2840,7 +2860,7 @@ namespace CSSPEnums
         /// </summary>
         ReportSubsectorSpecialTableType = 78,
         /// <summary>
-        /// 79 -- en [ReportMikeScenarioSpecialResultKMLType] ---- fr [Type de r&#233;sultat sp&#233;cial du sc&#233;nario MIKE raport (KML) ]
+        /// 79 -- en [ReportMikeScenarioSpecialResultKMLType] ---- fr [Type de résultat spécial du scénario MIKE raport (KML) ]
         /// </summary>
         ReportMikeScenarioSpecialResultKMLType = 79,
     }
@@ -2872,8 +2892,7 @@ namespace CSSPEnums
         NextDay = 2,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.SampleMatrix] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleMatrix] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2926,8 +2945,7 @@ namespace CSSPEnums
         Water = 7,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.SampleStatus] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleStatus] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2970,8 +2988,7 @@ namespace CSSPEnums
         SampleStatus5 = 5,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.LabSheetA1Measurement.SampleType] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [LabSheetA1Measurement.SampleType] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3330,8 +3347,7 @@ namespace CSSPEnums
         fcsv = 36,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.SecondaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.SecondaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3495,8 +3511,7 @@ namespace CSSPEnums
         Observed = 3,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Address.StreetType] (CSSPModels.Address.html#CSSPModels_Address_StreetType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Address.StreetType] (CSSPModels.Address.html#CSSPModels_Address_StreetType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3542,7 +3557,7 @@ namespace CSSPEnums
         /// </summary>
         Court = 5,
         /// <summary>
-        /// 6 -- en [Alley] ---- fr [All&#233;e]
+        /// 6 -- en [Alley] ---- fr [Allée]
         /// </summary>
         Alley = 6,
         /// <summary>
@@ -3606,8 +3621,7 @@ namespace CSSPEnums
         Mobile2 = 6,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.TertiaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.TertiaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3687,14 +3701,7 @@ namespace CSSPEnums
         Min60 = 2,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.MWQMRun.Tide_Start] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start) </c>
-    /// >
-    /// > Used by: <c>[CSSPModels.MWQMRun.Tide_End] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End) </c>
-    /// >
-    /// > Used by: <c>[CSSPModels.TideDataValue.TideStart] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart) </c>
-    /// >
-    /// > Used by: <c>[CSSPModels.TideDataValue.TideEnd] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [MWQMRun.Tide_Start] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [MWQMRun.Tide_End] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [TideDataValue.TideStart] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideDataValue.TideEnd] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3789,8 +3796,7 @@ namespace CSSPEnums
         Translated = 3,
     }
     /// <summary>
-    /// > Used by: <c>[CSSPModels.Infrastructure.TreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType) </c>
-    /// >
+    /// <para>**Used by CSSPModels:** [Infrastructure.TreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), </para>
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4117,7 +4123,7 @@ namespace CSSPEnums
         /// </summary>
         Address = 2,
         /// <summary>
-        /// 3 -- en [Area] ---- fr [R&#233;gion]
+        /// 3 -- en [Area] ---- fr [Région]
         /// </summary>
         Area = 3,
         /// <summary>
@@ -4141,7 +4147,7 @@ namespace CSSPEnums
         /// </summary>
         File = 8,
         /// <summary>
-        /// 9 -- en [Hydrometric Site] ---- fr [Poste hydrom&#233;trique]
+        /// 9 -- en [Hydrometric Site] ---- fr [Poste hydrométrique]
         /// </summary>
         HydrometricSite = 9,
         /// <summary>
@@ -4157,7 +4163,7 @@ namespace CSSPEnums
         /// </summary>
         MikeBoundaryConditionMesh = 12,
         /// <summary>
-        /// 13 -- en [Mike Scenario] ---- fr [Sc&#233;nario MIKE]
+        /// 13 -- en [Mike Scenario] ---- fr [Scénario MIKE]
         /// </summary>
         MikeScenario = 13,
         /// <summary>
@@ -4165,7 +4171,7 @@ namespace CSSPEnums
         /// </summary>
         MikeSource = 14,
         /// <summary>
-        /// 15 -- en [Municipality] ---- fr [Municipalit&#233;]
+        /// 15 -- en [Municipality] ---- fr [Municipalité]
         /// </summary>
         Municipality = 15,
         /// <summary>
@@ -4189,11 +4195,11 @@ namespace CSSPEnums
         /// </summary>
         Subsector = 20,
         /// <summary>
-        /// 21 -- en [Tel] ---- fr [T&#233;l]
+        /// 21 -- en [Tel] ---- fr [Tél]
         /// </summary>
         Tel = 21,
         /// <summary>
-        /// 22 -- en [Tide Site] ---- fr [Poste de mar&#233;e]
+        /// 22 -- en [Tide Site] ---- fr [Poste de marée]
         /// </summary>
         TideSite = 22,
         /// <summary>
@@ -4201,7 +4207,7 @@ namespace CSSPEnums
         /// </summary>
         MWQMSiteSample = 23,
         /// <summary>
-        /// 24 -- en [Waste Water Treatment Plant] ---- fr [Usine de traitement de eaux us&#233;es]
+        /// 24 -- en [Waste Water Treatment Plant] ---- fr [Usine de traitement de eaux usées]
         /// </summary>
         WasteWaterTreatmentPlant = 24,
         /// <summary>
@@ -4209,7 +4215,7 @@ namespace CSSPEnums
         /// </summary>
         LiftStation = 25,
         /// <summary>
-        /// 26 -- en [Spill] ---- fr [D&#233;versement]
+        /// 26 -- en [Spill] ---- fr [Déversement]
         /// </summary>
         Spill = 26,
         /// <summary>
@@ -4217,11 +4223,11 @@ namespace CSSPEnums
         /// </summary>
         BoxModel = 27,
         /// <summary>
-        /// 28 -- en [Visual Plumes Scenario] ---- fr [Sc&#233;nario Visual Plumes]
+        /// 28 -- en [Visual Plumes Scenario] ---- fr [Scénario Visual Plumes]
         /// </summary>
         VisualPlumesScenario = 28,
         /// <summary>
-        /// 29 -- en [Outfall] ---- fr [&#201;missaire]
+        /// 29 -- en [Outfall] ---- fr [Émissaire]
         /// </summary>
         Outfall = 29,
         /// <summary>
@@ -4237,15 +4243,15 @@ namespace CSSPEnums
         /// </summary>
         NoDepuration = 33,
         /// <summary>
-        /// 34 -- en [Failed] ---- fr [&#201;chec]
+        /// 34 -- en [Failed] ---- fr [Échec]
         /// </summary>
         Failed = 34,
         /// <summary>
-        /// 35 -- en [Passed] ---- fr [R&#233;ussi]
+        /// 35 -- en [Passed] ---- fr [Réussi]
         /// </summary>
         Passed = 35,
         /// <summary>
-        /// 36 -- en [No Data] ---- fr [Aucune donn&#233;e]
+        /// 36 -- en [No Data] ---- fr [Aucune donnée]
         /// </summary>
         NoData = 36,
         /// <summary>
@@ -4385,11 +4391,11 @@ namespace CSSPEnums
         /// </summary>
         VisualPlumesScenarioResults = 70,
         /// <summary>
-        /// 71 -- en [Total file] ---- fr [Totale fili&#232;re]
+        /// 71 -- en [Total file] ---- fr [Totale filière]
         /// </summary>
         TotalFile = 71,
         /// <summary>
-        /// 72 -- en [Mike source is river] ---- fr [Source de pollution MIKE rivi&#232;re]
+        /// 72 -- en [Mike source is river] ---- fr [Source de pollution MIKE rivière]
         /// </summary>
         MikeSourceIsRiver = 72,
         /// <summary>

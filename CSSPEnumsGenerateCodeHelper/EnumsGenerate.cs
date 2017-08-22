@@ -26,6 +26,33 @@ namespace CSSPEnumsGenerateCodeHelper
             var importAssembly = Assembly.LoadFile(fiDLL.FullName);
             Type[] types = importAssembly.GetTypes();
 
+            StringBuilder sbAllowableTypesText = new StringBuilder();
+            foreach (Type type in types)
+            {
+                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
+                {
+                    sbAllowableTypesText.Append("<c>[" + type.Name + "] (CSSPEnums." + type.Name + @".html)</c>, ");
+                }
+            }
+
+            StringBuilder sbAllowablePolSourceObsInfoTypeEnumText = new StringBuilder();
+            foreach (Type type in types)
+            {
+                if (type.GetTypeInfo().BaseType == typeof(System.Enum))
+                {
+                    if (type.Name == "PolSourceObsInfoTypeEnum")
+                    {
+                        foreach (FieldInfo fieldInfo in type.GetFields())
+                        {
+                            if (fieldInfo.FieldType.GetTypeInfo().BaseType == typeof(System.Enum))
+                            {
+                                sbAllowablePolSourceObsInfoTypeEnumText.Append(fieldInfo.Name + ",");
+                            }
+                        }
+                    }
+                }
+            }
+
             sb.AppendLine(@"using CSSPEnums;");
             sb.AppendLine(@"using CSSPEnums.Resources;");
             sb.AppendLine(@"using System;");
@@ -43,7 +70,39 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"    {");
 
             #region Doing Function public EnumTypeOK
-            sb.AppendLine(@"        #region Enum CheckOK");
+            sb.AppendLine(@"        #region Enum Functions public");
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// <para>**Allowable types:** " + sbAllowableTypesText.ToString() + @"</para>");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        /// <param name=""type"">One of the allowable types (Enum)</param>");
+            sb.AppendLine(@"        /// <param name=""intList"">List of nullable IDs representing the enumeration values (int?)</param>");
+            sb.AppendLine(@"        /// <returns>Will return empty string if OK otherwise will return the error message</returns>");
+            sb.AppendLine(@"        public string EnumTypeListOK(Type type, List<int?> intList)");
+            sb.AppendLine(@"        {");
+            sb.AppendLine(@"            string retStr = """";");
+            sb.AppendLine(@"");
+            sb.AppendLine(@"            foreach (int? ID in intList)");
+            sb.AppendLine(@"            {");
+            sb.AppendLine(@"                retStr = EnumTypeOK(type, ID);");
+            sb.AppendLine(@"                if (!string.IsNullOrWhiteSpace(retStr))");
+            sb.AppendLine(@"                {");
+            sb.AppendLine(@"                    break;");
+            sb.AppendLine(@"                }");
+            sb.AppendLine(@"            }");
+            sb.AppendLine(@"");
+            sb.AppendLine(@"            if (string.IsNullOrWhiteSpace(retStr))");
+            sb.AppendLine(@"            {");
+            sb.AppendLine(@"                return """";");
+            sb.AppendLine(@"            }");
+            sb.AppendLine(@"");
+            sb.AppendLine(@"            return string.Format(CSSPEnumsRes._IsRequired, type.Name);");
+            sb.AppendLine(@"        }");
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// <para>**Allowable types:** " + sbAllowableTypesText.ToString() + @"</para>");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        /// <param name=""type"">One of the allowable types (Enum)</param>");
+            sb.AppendLine(@"        /// <param name=""ID"">ID representing the enumeration values (int?)</param>");
+            sb.AppendLine(@"        /// <returns>Will return empty string if OK otherwise will return the error message</returns>");
             sb.AppendLine(@"        public string EnumTypeOK(Type type, int? ID)");
             sb.AppendLine(@"        {");
             sb.AppendLine(@"            if (ID == null)");
@@ -85,6 +144,14 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"                    }");
             sb.AppendLine(@"                }");
             sb.AppendLine(@"            }");
+            sb.AppendLine(@"            else if (type.Name == ""PolSourceObsInfoEnum"")");
+            sb.AppendLine(@"            {");
+            sb.AppendLine(@"                List<int> PolSourceIntList = Enum.GetValues(typeof(PolSourceObsInfoEnum)).OfType<PolSourceObsInfoEnum>().Select(c => (int)c).ToList();");
+            sb.AppendLine(@"                if (PolSourceIntList.Contains((int)ID))");
+            sb.AppendLine(@"                {");
+            sb.AppendLine(@"                    return """";");
+            sb.AppendLine(@"                }");
+            sb.AppendLine(@"            }");
             sb.AppendLine(@"            else");
             sb.AppendLine(@"            {");
             sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(type).Count(); i < count; i++)");
@@ -98,12 +165,14 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"");
             sb.AppendLine(@"            return string.Format(CSSPEnumsRes._IsRequired, type.Name);");
             sb.AppendLine(@"        }");
-            sb.AppendLine(@"        #endregion Enum CheckOK");
             #endregion Doing Function public EnumTypeOK
 
             #region Doing Function public GetEnumTextOrderedList
-            sb.AppendLine(@"");
-            sb.AppendLine(@"        #region Function Get Enum Text Ordered");
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// <para>**Allowable types:** " + sbAllowableTypesText.ToString() + @"</para>");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        /// <param name=""type"">One of the allowable types (Enum)</param>");
+            sb.AppendLine(@"        /// <returns>Will return list of EnumIDAndText ordered by the Enum text for one of the allowable languages [en, fr]</returns>");
             sb.AppendLine(@"        public List<EnumIDAndText> GetEnumTextOrderedList(Type type)");
             sb.AppendLine(@"        {");
             sb.AppendLine(@"            List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();");
@@ -112,21 +181,21 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"            {");
             sb.AppendLine(@"                for (int i = 0, count = Enum.GetNames(type).Count() - 1; i < count; i++)");
             sb.AppendLine(@"                {");
-            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });");
+            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });");
             sb.AppendLine(@"                }");
             sb.AppendLine(@"            }");
             sb.AppendLine(@"            else if (type.Name == ""SampleTypeEnum"")");
             sb.AppendLine(@"            {");
             sb.AppendLine(@"                for (int i = 101, count = Enum.GetNames(type).Count() + 101; i < count; i++)");
             sb.AppendLine(@"                {");
-            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });");
+            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });");
             sb.AppendLine(@"                }");
             sb.AppendLine(@"            }");
             sb.AppendLine(@"            else");
             sb.AppendLine(@"            {");
             sb.AppendLine(@"                for (int i = 1, count = Enum.GetNames(type).Count(); i < count; i++)");
             sb.AppendLine(@"                {");
-            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = WebUtility.HtmlDecode(GetResValueForTypeAndField(type, i)) });");
+            sb.AppendLine(@"                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = GetResValueForTypeAndID(type, i) });");
             sb.AppendLine(@"                }");
             sb.AppendLine(@"            }");
             sb.AppendLine(@"");
@@ -136,13 +205,18 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"");
             sb.AppendLine(@"            return enumTextOrderedList;");
             sb.AppendLine(@"        }");
-            sb.AppendLine(@"        #endregion Function Get Enum Text Ordered");
-            sb.AppendLine(@"");
             #endregion Doing Function public GetEnumTextOrderedList
 
-            #region Doing Function public GetResValueForTypeAndField
-            sb.AppendLine(@"        #region Function public GetResValueForTypeAndField");
-            sb.AppendLine(@"        public string GetResValueForTypeAndField(Type type, int? IntVal)");
+            #region Doing Function public GetResValueForTypeID
+            sb.AppendLine(@"        /// <summary>");
+            sb.AppendLine(@"        /// <para>**Allowable types:** " + sbAllowableTypesText.ToString() + @"</para>");
+            sb.AppendLine(@"        /// <para>**Allowable <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>:** " + sbAllowablePolSourceObsInfoTypeEnumText.ToString() + @"</para>");
+            sb.AppendLine(@"        /// </summary>");
+            sb.AppendLine(@"        /// <param name=""type"">One of the allowable types (Enum)</param>");
+            sb.AppendLine(@"        /// <param name=""ID"">ID representing the enumeration values (int?)</param>");
+            sb.AppendLine(@"        /// <param name=""polSourceObsInfoTypeEnum"">One of the allowable PolSourceObsInfoTypeEnum</param>");
+            sb.AppendLine(@"        /// <returns>Will return list of EnumIDAndText ordered by the Enum text for one of the allowable languages [en, fr]</returns>");
+            sb.AppendLine(@"        public string GetResValueForTypeAndID(Type type, int? ID, PolSourceObsInfoTypeEnum? polSourceObsInfoTypeEnum = PolSourceObsInfoTypeEnum.Error)");
             sb.AppendLine(@"        {");
             sb.AppendLine(@"            if (LanguageRequest.ToString() != Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName)");
             sb.AppendLine(@"            {");
@@ -168,19 +242,40 @@ namespace CSSPEnumsGenerateCodeHelper
                 {
                     string enumName = type.Name;
                     if (enumName == "PolSourceObsInfoEnum")
-                        continue;
-
-                    sb.AppendLine(@"                case """ + enumName + @""":");
-                    sb.AppendLine(@"                    return WebUtility.HtmlEncode(GetEnumText_" + enumName + @"((IntVal == null ? null : (" + enumName + @"?)IntVal)));");
+                    {
+                        sb.AppendLine(@"                case ""PolSourceObsInfoEnum"":");
+                        sb.AppendLine(@"                {");
+                        sb.AppendLine(@"                    switch (polSourceObsInfoTypeEnum)");
+                        sb.AppendLine(@"                    {");
+                        sb.AppendLine(@"                        case PolSourceObsInfoTypeEnum.Error:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                        case PolSourceObsInfoTypeEnum.Description:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoDescEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                        case PolSourceObsInfoTypeEnum.Report:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoReportEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                        case PolSourceObsInfoTypeEnum.Text:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoTextEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                        case PolSourceObsInfoTypeEnum.Initial:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoInitEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                        default:");
+                        sb.AppendLine(@"                            return GetEnumText_PolSourceObsInfoEnum((ID == null ? null : (PolSourceObsInfoEnum?)ID));");
+                        sb.AppendLine(@"                    }");
+                        sb.AppendLine(@"                }");
+                    }
+                    else
+                    {
+                        sb.AppendLine(@"                case """ + enumName + @""":");
+                        sb.AppendLine(@"                    return GetEnumText_" + enumName + @"((ID == null ? null : (" + enumName + @"?)ID));");
+                    }
                 }
             }
             sb.AppendLine(@"                default:");
             sb.AppendLine(@"                    return """";");
             sb.AppendLine(@"            }");
             sb.AppendLine(@"        }");
-            sb.AppendLine(@"        #endregion Function public GetResValueForTypeAndField");
+            sb.AppendLine(@"        #endregion Function public");
             sb.AppendLine(@"");
-            #endregion Doing Function public GetResValueForTypeAndField
+            #endregion Doing Function public GetResValueForTypeAndID
 
             #region Doing Functions private
             sb.AppendLine(@"        #region Functions private");

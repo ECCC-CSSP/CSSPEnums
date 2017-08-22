@@ -2442,4 +2442,16 @@
   <data name="CouldNotFind_Within_" xml:space="preserve">
     <value>Could not find {0} within {1}</value>
   </data>
+  <data name="PolSourceObsInfoTypeEnumDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PolSourceObsInfoTypeEnumInitial" xml:space="preserve">
+    <value>Initial</value>
+  </data>
+  <data name="PolSourceObsInfoTypeEnumReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="PolSourceObsInfoTypeEnumText" xml:space="preserve">
+    <value>Text</value>
+  </data>
 </root>

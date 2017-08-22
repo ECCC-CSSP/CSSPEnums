@@ -42,7 +42,9 @@ namespace CSSPEnumsGenerateCode
         }
         private void EnumGenerateCodeHelper_StatusHandler(object sender, StatusEventArgs e)
         {
-            richTextBoxStatus.AppendText(e.Status + "\r\n");
+            lblStatus.Text = e.Status;
+            lblStatus.Refresh();
+            Application.DoEvents();
         }
         private void butGenerateEnumsWithHelp_Click(object sender, EventArgs e)
         {
