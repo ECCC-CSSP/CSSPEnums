@@ -115,6 +115,42 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AddContactType.
+        /// </summary>
+        public static string AddContactType {
+            get {
+                return ResourceManager.GetString("AddContactType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First.
+        /// </summary>
+        public static string AddContactTypeEnumFirst {
+            get {
+                return ResourceManager.GetString("AddContactTypeEnumFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logged in.
+        /// </summary>
+        public static string AddContactTypeEnumLoggedIn {
+            get {
+                return ResourceManager.GetString("AddContactTypeEnumLoggedIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string AddContactTypeEnumRegister {
+            get {
+                return ResourceManager.GetString("AddContactTypeEnumRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AddressType.
         /// </summary>
         public static string AddressType {
@@ -255,6 +291,69 @@ namespace CSSPEnums.Resources {
         public static string AlarmSystemTypeSCADA {
             get {
                 return ResourceManager.GetString("AlarmSystemTypeSCADA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All - All - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumAllAllAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumAllAllAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dry - All - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumDryAllAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumDryAllAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dry - Dry - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumDryDryAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumDryDryAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dry - Wet - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumDryWetAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumDryWetAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wet - All - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumWetAllAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumWetAllAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wet - Dry - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumWetDryAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumWetDryAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wet - Wet - All.
+        /// </summary>
+        public static string AnalysisCalculationTypeEnumWetWetAll {
+            get {
+                return ResourceManager.GetString("AnalysisCalculationTypeEnumWetWetAll", resourceCulture);
             }
         }
         

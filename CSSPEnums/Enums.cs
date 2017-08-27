@@ -68,7 +68,7 @@ namespace CSSPEnums
 
     }
     /// <summary>
-    /// ActionDBTypeEnum used in other DLLs
+    /// ActionDBTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -107,7 +107,41 @@ namespace CSSPEnums
         Delete = 4,
     }
     /// <summary>
-    /// AddressTypeEnum used in other DLLs
+    /// AddContactTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AddContactTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         First = 1,
+    ///         Register = 2,
+    ///         LoggedIn = 3,
+    ///     }
+    /// </code>
+    /// 
+    /// </remarks>
+    public enum AddContactTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [First] ---- fr [First]
+        /// </summary>
+        First = 1,
+        /// <summary>
+        /// 2 -- en [Register] ---- fr [Register]
+        /// </summary>
+        Register = 2,
+        /// <summary>
+        /// 3 -- en [Logged in] ---- fr [Logged in]
+        /// </summary>
+        LoggedIn = 3,
+    }
+    /// <summary>
+    /// AddressTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -141,7 +175,7 @@ namespace CSSPEnums
         Civic = 3,
     }
     /// <summary>
-    /// AerationTypeEnum used in other DLLs
+    /// AerationTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -171,7 +205,7 @@ namespace CSSPEnums
         Surface = 2,
     }
     /// <summary>
-    /// AlarmSystemTypeEnum used in other DLLs
+    /// AlarmSystemTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -216,7 +250,61 @@ namespace CSSPEnums
         PagerAndLight = 5,
     }
     /// <summary>
-    /// AnalyzeMethodEnum used in other DLLs
+    /// AnalysisCalculationTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AnalysisCalculationTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         AllAllAll = 1,
+    ///         WetAllAll = 2,
+    ///         DryAllAll = 3,
+    ///         WetWetAll = 4,
+    ///         DryDryAll = 5,
+    ///         WetDryAll = 6,
+    ///         DryWetAll = 7,
+    ///     }
+    /// </code>
+    /// 
+    /// </remarks>
+    public enum AnalysisCalculationTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [All - All - All] ---- fr [All - All - All (fr)]
+        /// </summary>
+        AllAllAll = 1,
+        /// <summary>
+        /// 2 -- en [Wet - All - All] ---- fr [Wet - All - All (fr)]
+        /// </summary>
+        WetAllAll = 2,
+        /// <summary>
+        /// 3 -- en [Dry - All - All] ---- fr [Dry - All - All (fr)]
+        /// </summary>
+        DryAllAll = 3,
+        /// <summary>
+        /// 4 -- en [Wet - Wet - All] ---- fr [Wet - Wet - All (fr)]
+        /// </summary>
+        WetWetAll = 4,
+        /// <summary>
+        /// 5 -- en [Dry - Dry - All] ---- fr [Dry - Dry - All (fr)]
+        /// </summary>
+        DryDryAll = 5,
+        /// <summary>
+        /// 6 -- en [Wet - Dry - All] ---- fr [Wet - Dry - All (fr)]
+        /// </summary>
+        WetDryAll = 6,
+        /// <summary>
+        /// 7 -- en [Dry - Wet - All] ---- fr [Dry - Wet - All (fr)]
+        /// </summary>
+        DryWetAll = 7,
+    }
+    /// <summary>
+    /// AnalyzeMethodEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -296,7 +384,7 @@ namespace CSSPEnums
         AnalyzeMethod12 = 12,
     }
     /// <summary>
-    /// AppTaskCommandEnum used in other DLLs
+    /// AppTaskCommandEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -395,7 +483,7 @@ namespace CSSPEnums
         CreateWebTideDataWLAtFirstNode = 16,
     }
     /// <summary>
-    /// AppTaskStatusEnum used in other DLLs
+    /// AppTaskStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -434,7 +522,7 @@ namespace CSSPEnums
         Cancelled = 4,
     }
     /// <summary>
-    /// BeaufortScaleEnum used in other DLLs
+    /// BeaufortScaleEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -519,7 +607,7 @@ namespace CSSPEnums
         HurricaneForce = 12,
     }
     /// <summary>
-    /// BoxModelResultTypeEnum used in other DLLs
+    /// BoxModelResultTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -563,7 +651,7 @@ namespace CSSPEnums
         DecayPreDisinfection = 5,
     }
     /// <summary>
-    /// CollectionSystemTypeEnum used in other DLLs
+    /// CollectionSystemTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -638,7 +726,7 @@ namespace CSSPEnums
         Combined10Separated90 = 11,
     }
     /// <summary>
-    /// ContactTitleEnum used in other DLLs
+    /// ContactTitleEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -703,7 +791,7 @@ namespace CSSPEnums
         Technician = 9,
     }
     /// <summary>
-    /// CSSPWQInputSheetTypeEnum used in other DLLs
+    /// CSSPWQInputSheetTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -737,7 +825,7 @@ namespace CSSPEnums
         EC = 3,
     }
     /// <summary>
-    /// CSSPWQInputTypeEnum used in other DLLs
+    /// CSSPWQInputTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -766,7 +854,7 @@ namespace CSSPEnums
         Municipality = 2,
     }
     /// <summary>
-    /// DailyOrHourlyDataEnum used in other DLLs
+    /// DailyOrHourlyDataEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -795,7 +883,7 @@ namespace CSSPEnums
         Hourly = 2,
     }
     /// <summary>
-    /// DatabaseTypeEnum used in other DLLs
+    /// DatabaseTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -834,7 +922,7 @@ namespace CSSPEnums
         SqlServerTestDB = 4,
     }
     /// <summary>
-    /// DisinfectionTypeEnum used in other DLLs
+    /// DisinfectionTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -889,7 +977,7 @@ namespace CSSPEnums
         ChlorinationWithDechlorinationSeasonal = 7,
     }
     /// <summary>
-    /// EmailTypeEnum used in other DLLs
+    /// EmailTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -928,7 +1016,7 @@ namespace CSSPEnums
         Work2 = 4,
     }
     /// <summary>
-    /// FacilityTypeEnum used in other DLLs
+    /// FacilityTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -958,7 +1046,7 @@ namespace CSSPEnums
         Plant = 2,
     }
     /// <summary>
-    /// FilePurposeEnum used in other DLLs
+    /// FilePurposeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1037,7 +1125,7 @@ namespace CSSPEnums
         Map = 12,
     }
     /// <summary>
-    /// FileStatusEnum used in other DLLs
+    /// FileStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1081,7 +1169,7 @@ namespace CSSPEnums
         Fail = 5,
     }
     /// <summary>
-    /// FileTypeEnum used in other DLLs
+    /// FileTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1205,7 +1293,7 @@ namespace CSSPEnums
         CSV = 21,
     }
     /// <summary>
-    /// InfrastructureTypeEnum used in other DLLs
+    /// InfrastructureTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1250,7 +1338,7 @@ namespace CSSPEnums
         LineOverflow = 5,
     }
     /// <summary>
-    /// KMZActionEnum used in other DLLs
+    /// KMZActionEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1309,7 +1397,7 @@ namespace CSSPEnums
         GenerateKMZBoundaryConditionNodes = 8,
     }
     /// <summary>
-    /// LaboratoryEnum used in other DLLs
+    /// LaboratoryEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1474,7 +1562,7 @@ namespace CSSPEnums
         PetroformaInc = 29,
     }
     /// <summary>
-    /// LabSheetStatusEnum used in other DLLs
+    /// LabSheetStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1513,7 +1601,7 @@ namespace CSSPEnums
         Rejected = 4,
     }
     /// <summary>
-    /// LabSheetTypeEnum used in other DLLs
+    /// LabSheetTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1547,7 +1635,7 @@ namespace CSSPEnums
         EC = 3,
     }
     /// <summary>
-    /// LanguageEnum used in other DLLs
+    /// LanguageEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1586,7 +1674,7 @@ namespace CSSPEnums
         es = 4,
     }
     /// <summary>
-    /// LogCommandEnum used in other DLLs
+    /// LogCommandEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1620,7 +1708,7 @@ namespace CSSPEnums
         Delete = 3,
     }
     /// <summary>
-    /// MapInfoDrawTypeEnum used in other DLLs
+    /// MapInfoDrawTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1654,7 +1742,7 @@ namespace CSSPEnums
         Polygon = 3,
     }
     /// <summary>
-    /// MikeBoundaryConditionLevelOrVelocityEnum used in other DLLs
+    /// MikeBoundaryConditionLevelOrVelocityEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1683,7 +1771,7 @@ namespace CSSPEnums
         Velocity = 2,
     }
     /// <summary>
-    /// MikeScenarioSpecialResultKMLTypeEnum used in other DLLs
+    /// MikeScenarioSpecialResultKMLTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1727,7 +1815,7 @@ namespace CSSPEnums
         PollutionAnimation = 5,
     }
     /// <summary>
-    /// MWQMSiteLatestClassificationEnum used in other DLLs
+    /// MWQMSiteLatestClassificationEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1776,7 +1864,7 @@ namespace CSSPEnums
         Unclassified = 6,
     }
     /// <summary>
-    /// PolSourceInactiveReasonEnum used in other DLLs
+    /// PolSourceInactiveReasonEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1811,7 +1899,7 @@ namespace CSSPEnums
         Removed = 3,
     }
     /// <summary>
-    /// PolSourceIssueRiskEnum used in other DLLs
+    /// PolSourceIssueRiskEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1845,7 +1933,7 @@ namespace CSSPEnums
         HighRisk = 3,
     }
     /// <summary>
-    /// PolSourceObsInfoTypeEnum used in other DLLs
+    /// PolSourceObsInfoTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1884,7 +1972,7 @@ namespace CSSPEnums
         Initial = 4,
     }
     /// <summary>
-    /// PreliminaryTreatmentTypeEnum used in other DLLs
+    /// PreliminaryTreatmentTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1919,7 +2007,7 @@ namespace CSSPEnums
         Grinder = 3,
     }
     /// <summary>
-    /// PrimaryTreatmentTypeEnum used in other DLLs
+    /// PrimaryTreatmentTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -1959,7 +2047,7 @@ namespace CSSPEnums
         Filtration = 4,
     }
     /// <summary>
-    /// ReportConditionEnum used in other DLLs
+    /// ReportConditionEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2018,7 +2106,7 @@ namespace CSSPEnums
         ReportConditionEqual = 8,
     }
     /// <summary>
-    /// ReportFieldTypeEnum used in other DLLs
+    /// ReportFieldTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2267,7 +2355,7 @@ namespace CSSPEnums
         MikeScenarioSpecialResultKMLType = 46,
     }
     /// <summary>
-    /// ReportFileTypeEnum used in other DLLs
+    /// ReportFileTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2306,7 +2394,7 @@ namespace CSSPEnums
         KML = 4,
     }
     /// <summary>
-    /// ReportFormatingDateEnum used in other DLLs
+    /// ReportFormatingDateEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2390,7 +2478,7 @@ namespace CSSPEnums
         ReportFormatingDateYearMonthFullTextDayHourMinute = 13,
     }
     /// <summary>
-    /// ReportFormatingNumberEnum used in other DLLs
+    /// ReportFormatingNumberEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2479,7 +2567,7 @@ namespace CSSPEnums
         ReportFormatingNumberScientific6Decimal = 14,
     }
     /// <summary>
-    /// ReportSortingEnum used in other DLLs
+    /// ReportSortingEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2508,7 +2596,7 @@ namespace CSSPEnums
         ReportSortingDescending = 2,
     }
     /// <summary>
-    /// ReportTreeNodeSubTypeEnum used in other DLLs
+    /// ReportTreeNodeSubTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2547,7 +2635,7 @@ namespace CSSPEnums
         TableNotSelectable = 4,
     }
     /// <summary>
-    /// ReportTreeNodeTypeEnum used in other DLLs
+    /// ReportTreeNodeTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2961,7 +3049,7 @@ namespace CSSPEnums
         ReportMikeScenarioSpecialResultKMLType = 79,
     }
     /// <summary>
-    /// SameDayNextDayEnum used in other DLLs
+    /// SameDayNextDayEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -2990,7 +3078,7 @@ namespace CSSPEnums
         NextDay = 2,
     }
     /// <summary>
-    /// SampleMatrixEnum used in other DLLs
+    /// SampleMatrixEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3045,7 +3133,7 @@ namespace CSSPEnums
         Water = 7,
     }
     /// <summary>
-    /// SampleStatusEnum used in other DLLs
+    /// SampleStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3090,7 +3178,7 @@ namespace CSSPEnums
         SampleStatus5 = 5,
     }
     /// <summary>
-    /// SampleTypeEnum used in other DLLs
+    /// SampleTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3165,7 +3253,7 @@ namespace CSSPEnums
         Study = 111,
     }
     /// <summary>
-    /// SamplingPlanTypeEnum used in other DLLs
+    /// SamplingPlanTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3194,7 +3282,7 @@ namespace CSSPEnums
         Municipality = 2,
     }
     /// <summary>
-    /// ScenarioStatusEnum used in other DLLs
+    /// ScenarioStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3258,7 +3346,7 @@ namespace CSSPEnums
         Cancelled = 9,
     }
     /// <summary>
-    /// SearchTagEnum used in other DLLs
+    /// SearchTagEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3457,7 +3545,7 @@ namespace CSSPEnums
         fcsv = 36,
     }
     /// <summary>
-    /// SecondaryTreatmentTypeEnum used in other DLLs
+    /// SecondaryTreatmentTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3502,7 +3590,7 @@ namespace CSSPEnums
         OxidationDitch = 5,
     }
     /// <summary>
-    /// SiteTypeEnum used in other DLLs
+    /// SiteTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3536,7 +3624,7 @@ namespace CSSPEnums
         Tide = 3,
     }
     /// <summary>
-    /// SpecialTableTypeEnum used in other DLLs
+    /// SpecialTableTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3595,7 +3683,7 @@ namespace CSSPEnums
         PercentOver260Table = 8,
     }
     /// <summary>
-    /// StorageDataTypeEnum used in other DLLs
+    /// StorageDataTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3629,7 +3717,7 @@ namespace CSSPEnums
         Observed = 3,
     }
     /// <summary>
-    /// StreetTypeEnum used in other DLLs
+    /// StreetTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3694,7 +3782,7 @@ namespace CSSPEnums
         Route = 9,
     }
     /// <summary>
-    /// TelTypeEnum used in other DLLs
+    /// TelTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3743,7 +3831,7 @@ namespace CSSPEnums
         Mobile2 = 6,
     }
     /// <summary>
-    /// TertiaryTreatmentTypeEnum used in other DLLs
+    /// TertiaryTreatmentTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3798,7 +3886,7 @@ namespace CSSPEnums
         BiologicalNutrientRemoval = 7,
     }
     /// <summary>
-    /// TideDataTypeEnum used in other DLLs
+    /// TideDataTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3827,7 +3915,7 @@ namespace CSSPEnums
         Min60 = 2,
     }
     /// <summary>
-    /// TideTextEnum used in other DLLs
+    /// TideTextEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3892,7 +3980,7 @@ namespace CSSPEnums
         HighTideRising = 9,
     }
     /// <summary>
-    /// TranslationStatusEnum used in other DLLs
+    /// TranslationStatusEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -3926,7 +4014,7 @@ namespace CSSPEnums
         Translated = 3,
     }
     /// <summary>
-    /// TreatmentTypeEnum used in other DLLs
+    /// TreatmentTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4111,7 +4199,7 @@ namespace CSSPEnums
         RotatingBiologicalContactor = 33,
     }
     /// <summary>
-    /// TVAuthEnum used in other DLLs
+    /// TVAuthEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4160,7 +4248,7 @@ namespace CSSPEnums
         Admin = 6,
     }
     /// <summary>
-    /// TVTypeEnum used in other DLLs
+    /// TVTypeEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>
@@ -4544,7 +4632,7 @@ namespace CSSPEnums
         MikeSourceNotIncluded = 74,
     }
     /// <summary>
-    /// WebTideDataSetEnum used in other DLLs
+    /// WebTideDataSetEnum used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) 
     /// </summary>
     /// <remarks>
     /// <code>

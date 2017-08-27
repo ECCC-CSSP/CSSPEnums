@@ -264,7 +264,7 @@ namespace CSSPEnumsGenerateCodeHelper
             {
                 sw.Write(sb.ToString());
             }
-            StatusEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
+            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
         }
     }
 }

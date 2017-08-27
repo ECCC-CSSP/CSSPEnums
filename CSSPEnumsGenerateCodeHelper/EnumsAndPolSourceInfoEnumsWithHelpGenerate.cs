@@ -13,14 +13,17 @@ namespace CSSPEnumsGenerateCodeHelper
 {
     public partial class EnumsGenerateCodeHelper
     {
-        public void EnumsWithHelpGenerate()
+        public void EnumsAndPolSourceInfoEnumsWithHelpGenerate()
         {
             Enums enumsEn = new Enums(LanguageEnum.en);
             Enums enumsFr = new Enums(LanguageEnum.fr);
 
             StringBuilder sb = new StringBuilder();
+            StringBuilder sbPol = new StringBuilder();
+
             FileInfo fiCSSPEnumsDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
             FileInfo fi = new FileInfo(enumsFiles.BaseDir + @"CSSPEnums\CSSPEnums\EnumsWithHelp.cs");
+            FileInfo fiPol = new FileInfo(enumsFiles.BaseDir + @"CSSPEnums\CSSPEnums\PolSourceObsInfoEnumGeneratedWithHelp.cs");
             FileInfo fiCSSPModelsDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
             FileInfo fiCSSPServicesDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
@@ -61,7 +64,7 @@ namespace CSSPEnumsGenerateCodeHelper
                 return;
             }
 
-            #region Top part
+            #region Top part Enums.cs
             sb.AppendLine(@"using System;");
             sb.AppendLine(@"using System.Collections.Generic;");
             sb.AppendLine(@"using System.Linq;");
@@ -131,41 +134,50 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"        #endregion Construtors");
             sb.AppendLine(@"");
             sb.AppendLine(@"    }");
-            #endregion Top part
+            #endregion Top part Enums.cs
+
+            #region Top part PolSourceObsInfoEnumGenerated.cs
+            sbPol.AppendLine(@"using System;");
+            sbPol.AppendLine(@"using System.Collections.Generic;");
+            sbPol.AppendLine(@"using System.Linq;");
+            sbPol.AppendLine(@"using System.Text;");
+            sbPol.AppendLine(@"using System.Threading.Tasks;");
+            sbPol.AppendLine(@"");
+            sbPol.AppendLine(@"namespace CSSPEnums");
+            sbPol.AppendLine(@"{");
+            #endregion Top part PolSourceObsInfoEnumGenerated.cs
 
             foreach (DLLTypeInfo dllTypeInfoEnums in DLLTypeInfoCSSPEnumsList)
             {
-                StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "]"));
+                StringBuilder sbType = new StringBuilder();
+
+                StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "]"));
                 if (dllTypeInfoEnums.IsEnum)
                 {
-                    if (dllTypeInfoEnums.Name == "PolSourceObsInfoEnum")
-                        continue;
-
-                    sb.AppendLine(@"    /// <summary>");
-                    sb.AppendLine(@"    /// " + dllTypeInfoEnums.Name + " used in other DLLs");
-                    sb.AppendLine(@"    /// </summary>");
-                    sb.AppendLine(@"    /// <remarks>");
-                    sb.AppendLine(@"    /// <code>");
-                    sb.AppendLine(@"    ///     public enum " + dllTypeInfoEnums.Type.Name + "");
-                    sb.AppendLine(@"    ///     {");
+                 
+                    sbType.AppendLine(@"    /// <summary>");
+                    sbType.AppendLine(@"    /// " + dllTypeInfoEnums.Name + " used by [CSSPModels] (CSSPModels.html) and [CSSPServices] (CSSPServices.html) ");
+                    sbType.AppendLine(@"    /// </summary>");
+                    sbType.AppendLine(@"    /// <remarks>");
+                    sbType.AppendLine(@"    /// <code>");
+                    sbType.AppendLine(@"    ///     public enum " + dllTypeInfoEnums.Type.Name + "");
+                    sbType.AppendLine(@"    ///     {");
                     foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
                     {
                         if (dllTypeInfoEnums.IsEnum)
                         {
                             string fName = dllFieldInfo.Name;
-                            sb.AppendLine(@"    ///         " + fName + " = " + ((int)dllFieldInfo.FieldInfo.GetValue(fName)).ToString() + ",");
+                            sbType.AppendLine(@"    ///         " + fName + " = " + ((int)dllFieldInfo.FieldInfo.GetValue(fName)).ToString() + ",");
                         }
                     }
-                    sb.AppendLine(@"    ///     }");
-                    sb.AppendLine(@"    /// </code>");
-                    sb.AppendLine(@"    /// ");
-                    //sb.AppendLine(@"    /// </remarks>");
-                    //sb.AppendLine(@"    /// <remarks>");
+                    sbType.AppendLine(@"    ///     }");
+                    sbType.AppendLine(@"    /// </code>");
+                    sbType.AppendLine(@"    /// ");
                     StringBuilder sbModels = new StringBuilder();
 
                     foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
                     {
-                        StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "] [" + dllTypeInfoModels.Name + "]"));
+                        StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "] [" + dllTypeInfoModels.Name + "]"));
 
                         foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                         {
@@ -186,14 +198,14 @@ namespace CSSPEnumsGenerateCodeHelper
 
                     if (sbModels.ToString().Length > 0)
                     {
-                        sb.AppendLine(@"    /// <para>**Used by CSSPModels:** " + sbModels.ToString() + "</para>");
+                        sbType.AppendLine(@"    /// <para>**Used by CSSPModels:** " + sbModels.ToString() + "</para>");
                     }
 
                     StringBuilder sbServices = new StringBuilder();
 
                     foreach (DLLTypeInfo dllTypeInfoServices in DLLTypeInfoCSSPServicesList)
                     {
-                        StatusEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Type.Name + "] [" + dllTypeInfoServices.Name + "]"));
+                        StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Type.Name + "] [" + dllTypeInfoServices.Name + "]"));
 
                         foreach (DLLMethodInfo dllMethodInfo in dllTypeInfoServices.MethodInfoList)
                         {
@@ -226,12 +238,12 @@ namespace CSSPEnumsGenerateCodeHelper
 
                     if (sbServices.ToString().Length > 0)
                     {
-                        sb.AppendLine(@"    /// <para>**Used by CSSPServices:** " + sbServices.ToString() + "</para>");
+                        sbType.AppendLine(@"    /// <para>**Used by CSSPServices:** " + sbServices.ToString() + "</para>");
                     }
 
-                    sb.AppendLine(@"    /// </remarks>");
-                    sb.AppendLine(@"    public enum " + dllTypeInfoEnums.Type.Name);
-                    sb.AppendLine(@"    {");
+                    sbType.AppendLine(@"    /// </remarks>");
+                    sbType.AppendLine(@"    public enum " + dllTypeInfoEnums.Type.Name);
+                    sbType.AppendLine(@"    {");
                     foreach (DLLFieldInfo dllFieldInfo in dllTypeInfoEnums.FieldInfoList)
                     {
                         if (dllTypeInfoEnums.IsEnum)
@@ -239,14 +251,25 @@ namespace CSSPEnumsGenerateCodeHelper
                             string fName = dllFieldInfo.Name;
                             int IntVal = (int)dllFieldInfo.FieldInfo.GetValue(dllFieldInfo.Name);
 
-                            sb.AppendLine(@"        /// <summary>");
-                            sb.AppendLine(@"        /// " + IntVal.ToString() + " -- en [" + enumsEn.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "] ---- fr [" + enumsFr.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "]");
-                            sb.AppendLine(@"        /// </summary>");
-                            sb.AppendLine(@"        " + fName + " = " + IntVal.ToString() + ",");
+                            sbType.AppendLine(@"        /// <summary>");
+                            sbType.AppendLine(@"        /// " + IntVal.ToString() + " -- en [" + enumsEn.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "] ---- fr [" + enumsFr.GetResValueForTypeAndID(dllTypeInfoEnums.Type, IntVal) + "]");
+                            sbType.AppendLine(@"        /// </summary>");
+                            sbType.AppendLine(@"        " + fName + " = " + IntVal.ToString() + ",");
                         }
                     }
-                    sb.AppendLine(@"    }");
+                    sbType.AppendLine(@"    }");
                 }
+
+                if (dllTypeInfoEnums.Name == "PolSourceObsInfoEnum")
+                {
+                    sbPol.Append(sbType);
+                    sbPol.AppendLine(@"}");
+                }
+                else
+                {
+                    sb.Append(sbType);
+                }
+
             }
             sb.AppendLine(@"");
             sb.AppendLine(@"    /// <summary>");
@@ -270,7 +293,13 @@ namespace CSSPEnumsGenerateCodeHelper
             {
                 sw.Write(sb.ToString());
             }
-            StatusEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
+            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ...\r\n"));
+
+            using (StreamWriter sw = fiPol.CreateText())
+            {
+                sw.Write(sbPol.ToString());
+            }
+            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ...\r\n"));
         }
     }
 }

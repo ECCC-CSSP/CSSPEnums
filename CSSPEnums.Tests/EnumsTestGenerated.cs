@@ -58,6 +58,44 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_GetEnumText_AddContactTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(AddContactTypeEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(AddContactTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AddContactTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(AddContactTypeEnum), i);
+        
+                    switch ((AddContactTypeEnum)i)
+                    {
+                        case AddContactTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case AddContactTypeEnum.First:
+                            Assert.AreEqual(CSSPEnumsRes.AddContactTypeEnumFirst, retStr);
+                            break;
+                        case AddContactTypeEnum.Register:
+                            Assert.AreEqual(CSSPEnumsRes.AddContactTypeEnumRegister, retStr);
+                            break;
+                        case AddContactTypeEnum.LoggedIn:
+                            Assert.AreEqual(CSSPEnumsRes.AddContactTypeEnumLoggedIn, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_GetEnumText_AddressTypeEnum_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -166,6 +204,56 @@ namespace CSSPEnums.Tests
                             break;
                         case AlarmSystemTypeEnum.PagerAndLight:
                             Assert.AreEqual(CSSPEnumsRes.AlarmSystemTypeEnumPagerAndLight, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_GetEnumText_AnalysisCalculationTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(AnalysisCalculationTypeEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(AnalysisCalculationTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AnalysisCalculationTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(AnalysisCalculationTypeEnum), i);
+        
+                    switch ((AnalysisCalculationTypeEnum)i)
+                    {
+                        case AnalysisCalculationTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.AllAllAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumAllAllAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.WetAllAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumWetAllAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.DryAllAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumDryAllAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.WetWetAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumWetWetAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.DryDryAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumDryDryAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.WetDryAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumWetDryAll, retStr);
+                            break;
+                        case AnalysisCalculationTypeEnum.DryWetAll:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisCalculationTypeEnumDryWetAll, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -3952,6 +4040,35 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_AddContactTypeOK_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(AddContactTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AddContactTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(AddContactTypeEnum), i);
+
+                    switch ((AddContactTypeEnum)i)
+                    {
+                        case AddContactTypeEnum.Error:
+                        case AddContactTypeEnum.First:
+                        case AddContactTypeEnum.Register:
+                        case AddContactTypeEnum.LoggedIn:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AddContactTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_AddressTypeOK_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -4034,6 +4151,39 @@ namespace CSSPEnums.Tests
                             break;
                         default:
                             Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AlarmSystemTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_AnalysisCalculationTypeOK_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(AnalysisCalculationTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AnalysisCalculationTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(AnalysisCalculationTypeEnum), i);
+
+                    switch ((AnalysisCalculationTypeEnum)i)
+                    {
+                        case AnalysisCalculationTypeEnum.Error:
+                        case AnalysisCalculationTypeEnum.AllAllAll:
+                        case AnalysisCalculationTypeEnum.WetAllAll:
+                        case AnalysisCalculationTypeEnum.DryAllAll:
+                        case AnalysisCalculationTypeEnum.WetWetAll:
+                        case AnalysisCalculationTypeEnum.DryDryAll:
+                        case AnalysisCalculationTypeEnum.WetDryAll:
+                        case AnalysisCalculationTypeEnum.DryWetAll:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AnalysisCalculationTypeEnum"), retStr);
                             break;
                     }
                 }
@@ -6681,6 +6831,33 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_AddContactTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(AddContactTypeEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(AddContactTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AddContactTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_AddressTypeEnumTextOrdered_Test()
         {
             foreach (CultureInfo culture in cultureListGood)
@@ -6749,6 +6926,33 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AlarmSystemTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_AnalysisCalculationTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in cultureListGood)
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(AnalysisCalculationTypeEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(AnalysisCalculationTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AnalysisCalculationTypeEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();

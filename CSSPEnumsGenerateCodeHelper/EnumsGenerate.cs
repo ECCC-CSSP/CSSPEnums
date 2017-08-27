@@ -214,7 +214,7 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"        /// </summary>");
             sb.AppendLine(@"        /// <param name=""type"">One of the allowable types (Enum)</param>");
             sb.AppendLine(@"        /// <param name=""ID"">ID representing the enumeration values (int?)</param>");
-            sb.AppendLine(@"        /// <param name=""polSourceObsInfoTypeEnum"">One of the allowable PolSourceObsInfoTypeEnum</param>");
+            sb.AppendLine(@"        /// <param name=""polSourceObsInfoTypeEnum"">Null or one of the allowable PolSourceObsInfoTypeEnum</param>");
             sb.AppendLine(@"        /// <returns>Will return list of EnumIDAndText ordered by the Enum text for one of the allowable languages [en, fr]</returns>");
             sb.AppendLine(@"        public string GetResValueForTypeAndID(Type type, int? ID, PolSourceObsInfoTypeEnum? polSourceObsInfoTypeEnum = PolSourceObsInfoTypeEnum.Error)");
             sb.AppendLine(@"        {");
@@ -327,7 +327,7 @@ namespace CSSPEnumsGenerateCodeHelper
             {
                 sw.Write(sb.ToString());
             }
-            StatusEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
+            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
         }
     }
 }

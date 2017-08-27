@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSSPGenerateCodeBase">
+      <HintPath>..\..\CSSPGenerateCodeBase\CSSPGenerateCodeBase\bin\Debug\CSSPGenerateCodeBase.dll</HintPath>
+    </Reference>
     <Reference Include="CSSPModels">
       <HintPath>..\..\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll</HintPath>
     </Reference>
@@ -49,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumGenerateCodeHelper.cs" />
-    <Compile Include="EnumsWithHelpGenerate.cs" />
+    <Compile Include="EnumsAndPolSourceInfoEnumsWithHelpGenerate.cs" />
     <Compile Include="EnumsGenerate.cs" />
     <Compile Include="EnumsTestGenerate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CSSPEnumsGenerateCodeHelper;
+using CSSPGenerateCodeBase;
 
 namespace CSSPEnumsGenerateCode
 {
@@ -36,20 +37,24 @@ namespace CSSPEnumsGenerateCode
             richTextBoxStatus.Text = "";
             GenerateCode();
         }
-        private void EnumGenerateCodeHelper_ErrorHandler(object sender, CSSPEnumsGenerateCodeHelper.ErrorEventArgs e)
+        private void EnumGenerateCodeHelper_ErrorHandler(object sender, GenerateCodeBase.ErrorEventArgs e)
         {
             richTextBoxStatus.AppendText("Error [" + e.Error + "]\r\n");
         }
-        private void EnumGenerateCodeHelper_StatusHandler(object sender, StatusEventArgs e)
+        private void EnumGenerateCodeHelper_StatusTempHandler(object sender, GenerateCodeBase.StatusEventArgs e)
         {
             lblStatus.Text = e.Status;
             lblStatus.Refresh();
             Application.DoEvents();
         }
+        private void EnumGenerateCodeHelper_StatusPermanentHandler(object sender, GenerateCodeBase.StatusEventArgs e)
+        {
+            richTextBoxStatus.AppendText("Status [" + e.Status + "]\r\n");
+        }
         private void butGenerateEnumsWithHelp_Click(object sender, EventArgs e)
         {
             richTextBoxStatus.Text = "";
-            GenerateEnumsWithHelpCode();
+            GenerateEnumsAndPolSourceInfoEnumsWithHelpCode();
         }
         #endregion Events
 
@@ -59,7 +64,7 @@ namespace CSSPEnumsGenerateCode
         #region Functions private
         private void GenerateCode()
         {
-            richTextBoxStatus.AppendText("Stating...\r\n");
+            richTextBoxStatus.AppendText("Starting...\r\n");
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
@@ -79,25 +84,27 @@ namespace CSSPEnumsGenerateCode
 
             richTextBoxStatus.AppendText("Done...\r\n");
         }
-        private void GenerateEnumsWithHelpCode()
+        private void GenerateEnumsAndPolSourceInfoEnumsWithHelpCode()
         {
-            richTextBoxStatus.AppendText("Stating...\r\n");
+            richTextBoxStatus.AppendText("Starting...\r\n");
 
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
             // Will generate CSSPEnums/EnumsWithHelp.cs file
+            // Will generate CSSPEnums/PolSourceObsInfoEnumGeneratedWithHelp.cs file
             // -----------------------------------------------------------------
             // -----------------------------------------------------------------
 
-            enumGenerateCodeHelper.EnumsWithHelpGenerate();
+            enumGenerateCodeHelper.EnumsAndPolSourceInfoEnumsWithHelpGenerate();
 
             richTextBoxStatus.AppendText("Done...\r\n\r\n");
 
             richTextBoxStatus.AppendText("You can now replace the Enums.cs content with the content of EnumsWithHelp.cs file ...\r\n");
+            richTextBoxStatus.AppendText("You can now replace the PolSourceObsInfoEnumGenerated.cs content with the content of PolSourceObsInfoEnumGeneratedWithHelp.cs file ...\r\n");
         }
         private void StartUp()
         {
-            EnumsFiles enumsFiles = new EnumsFiles();
+            GenerateCodeBase.EnumsFiles enumsFiles = new GenerateCodeBase.EnumsFiles();
             enumsFiles.CSSPEnumsDLL = textBoxCSSPEnumsDLL.Text;
             enumsFiles.BaseDir = textBoxBaseDir.Text;
             enumsFiles.EnumsGenerated = textBoxFile1.Text;
@@ -106,8 +113,10 @@ namespace CSSPEnumsGenerateCode
             enumGenerateCodeHelper = new EnumsGenerateCodeHelper(enumsFiles);
 
             enumGenerateCodeHelper.ErrorHandler += EnumGenerateCodeHelper_ErrorHandler;
-            enumGenerateCodeHelper.StatusHandler += EnumGenerateCodeHelper_StatusHandler;
+            enumGenerateCodeHelper.StatusTempHandler += EnumGenerateCodeHelper_StatusTempHandler;
+            enumGenerateCodeHelper.StatusPermanentHandler += EnumGenerateCodeHelper_StatusPermanentHandler;
         }
+
         #endregion Functions private
     }
 }

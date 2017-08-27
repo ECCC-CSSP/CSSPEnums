@@ -365,11 +365,11 @@ namespace CSSPEnums
         /// </summary>
         WaterBased = 10102,
         /// <summary>
-        /// 10200 -- en [Distance from shore (meters)] ---- fr [Distance de la côte (mètres)]
+        /// 10200 -- en [Distance from shore (meters)] ---- fr [Distance de la cÃ´te (mÃ¨tres)]
         /// </summary>
         DistanceFromShoreInMetersStart = 10200,
         /// <summary>
-        /// 10201 -- en [        On shore] ---- fr [          Sur la côte]
+        /// 10201 -- en [        On shore] ---- fr [          Sur la cÃ´te]
         /// </summary>
         DistanceFromShoreInMetersOnShore = 10201,
         /// <summary>
@@ -377,15 +377,15 @@ namespace CSSPEnums
         /// </summary>
         DistanceFromShoreInMetersLessThan100 = 10202,
         /// <summary>
-        /// 10203 -- en [   100 - 250] ---- fr [   100 à 250]
+        /// 10203 -- en [   100 - 250] ---- fr [   100 Ã  250]
         /// </summary>
         DistanceFromShoreInMetersBetween100And250 = 10203,
         /// <summary>
-        /// 10204 -- en [  250 - 500] ---- fr [  250 à 500]
+        /// 10204 -- en [  250 - 500] ---- fr [  250 Ã  500]
         /// </summary>
         DistanceFromShoreInMetersBetween250And500 = 10204,
         /// <summary>
-        /// 10205 -- en [ 500 - 1000] ---- fr [ 500 à 1000]
+        /// 10205 -- en [ 500 - 1000] ---- fr [ 500 Ã  1000]
         /// </summary>
         DistanceFromShoreInMetersBetween500And1000 = 10205,
         /// <summary>
@@ -401,15 +401,15 @@ namespace CSSPEnums
         /// </summary>
         DistanceOnWaterMetersLessThan100 = 10301,
         /// <summary>
-        /// 10302 -- en [    100 - 250] ---- fr [    100 à 250]
+        /// 10302 -- en [    100 - 250] ---- fr [    100 Ã  250]
         /// </summary>
         DistanceOnWaterMetersBetween100And250 = 10302,
         /// <summary>
-        /// 10303 -- en [   250 - 500] ---- fr [   250 à 500]
+        /// 10303 -- en [   250 - 500] ---- fr [   250 Ã  500]
         /// </summary>
         DistanceOnWaterMetersBetween250And500 = 10303,
         /// <summary>
-        /// 10304 -- en [  500 - 1000] ---- fr [  500 à 1000]
+        /// 10304 -- en [  500 - 1000] ---- fr [  500 Ã  1000]
         /// </summary>
         DistanceOnWaterMetersBetween500And1000 = 10304,
         /// <summary>
@@ -425,7 +425,7 @@ namespace CSSPEnums
         /// </summary>
         AreaSlopeLow = 10401,
         /// <summary>
-        /// 10402 -- en [Medium] ---- fr [Modérée]
+        /// 10402 -- en [Medium] ---- fr [ModÃ©rÃ©e]
         /// </summary>
         AreaSlopeMedium = 10402,
         /// <summary>
@@ -449,11 +449,11 @@ namespace CSSPEnums
         /// </summary>
         SourceTypeLandIndustry = 10503,
         /// <summary>
-        /// 10504 -- en [Marine] ---- fr [Activités maritimes]
+        /// 10504 -- en [Marine] ---- fr [ActivitÃ©s maritimes]
         /// </summary>
         SourceTypeLandMarine = 10504,
         /// <summary>
-        /// 10505 -- en [Recreational ] ---- fr [Récréatives]
+        /// 10505 -- en [Recreational ] ---- fr [RÃ©crÃ©atives]
         /// </summary>
         SourceTypeLandRecreation = 10505,
         /// <summary>
@@ -461,7 +461,7 @@ namespace CSSPEnums
         /// </summary>
         SourceTypeLandUrban = 10506,
         /// <summary>
-        /// 10507 -- en [Shoreline] ---- fr [Sur la côte]
+        /// 10507 -- en [Shoreline] ---- fr [Sur la cÃ´te]
         /// </summary>
         SourceTypeShore = 10507,
         /// <summary>
@@ -469,11 +469,11 @@ namespace CSSPEnums
         /// </summary>
         AgricultureStart = 10600,
         /// <summary>
-        /// 10601 -- en [Crop] ---- fr [Récolte]
+        /// 10601 -- en [Crop] ---- fr [RÃ©colte]
         /// </summary>
         AgricultureCrop = 10601,
         /// <summary>
-        /// 10602 -- en [Pasture] ---- fr [Pâturage]
+        /// 10602 -- en [Pasture] ---- fr [PÃ¢turage]
         /// </summary>
         AgriculturePasture = 10602,
         /// <summary>
@@ -485,11 +485,11 @@ namespace CSSPEnums
         /// </summary>
         AgricultureFarm = 10604,
         /// <summary>
-        /// 10605 -- en [Buildings] ---- fr [Bâtiments]
+        /// 10605 -- en [Buildings] ---- fr [BÃ¢timents]
         /// </summary>
         AgricultureBuilding = 10605,
         /// <summary>
-        /// 10700 -- en [Crop] ---- fr [Récolte]
+        /// 10700 -- en [Crop] ---- fr [RÃ©colte]
         /// </summary>
         CropStart = 10700,
         /// <summary>
@@ -505,7 +505,7 @@ namespace CSSPEnums
         /// </summary>
         CropPeatMoss = 10703,
         /// <summary>
-        /// 10800 -- en [Pasture] ---- fr [Pâturage]
+        /// 10800 -- en [Pasture] ---- fr [PÃ¢turage]
         /// </summary>
         PastureStart = 10800,
         /// <summary>
@@ -513,7 +513,7 @@ namespace CSSPEnums
         /// </summary>
         PastureActive = 10801,
         /// <summary>
-        /// 10802 -- en [Fallow] ---- fr [Jachère]
+        /// 10802 -- en [Fallow] ---- fr [JachÃ¨re]
         /// </summary>
         PastureFallow = 10802,
         /// <summary>
@@ -545,11 +545,11 @@ namespace CSSPEnums
         /// </summary>
         ForestedStart = 11100,
         /// <summary>
-        /// 11101 -- en [Forest harvesting] ---- fr [Activités d'exploitation forestière]
+        /// 11101 -- en [Forest harvesting] ---- fr [ActivitÃ©s d'exploitation forestiÃ¨re]
         /// </summary>
         ForestedLoggingActivity = 11101,
         /// <summary>
-        /// 11102 -- en [Clearcut] ---- fr [Coupe à blanc]
+        /// 11102 -- en [Clearcut] ---- fr [Coupe Ã  blanc]
         /// </summary>
         ForestedClearcut = 11102,
         /// <summary>
@@ -557,7 +557,7 @@ namespace CSSPEnums
         /// </summary>
         ForestedRegrowth = 11103,
         /// <summary>
-        /// 11104 -- en [Building] ---- fr [Bâtiment]
+        /// 11104 -- en [Building] ---- fr [BÃ¢timent]
         /// </summary>
         ForestedBuilding = 11104,
         /// <summary>
@@ -565,7 +565,7 @@ namespace CSSPEnums
         /// </summary>
         IndustryStart = 11200,
         /// <summary>
-        /// 11201 -- en [Airport] ---- fr [Aéroport]
+        /// 11201 -- en [Airport] ---- fr [AÃ©roport]
         /// </summary>
         IndustryAirport = 11201,
         /// <summary>
@@ -573,15 +573,15 @@ namespace CSSPEnums
         /// </summary>
         IndustryLandfill = 11202,
         /// <summary>
-        /// 11203 -- en [Fisheries] ---- fr [Pêches]
+        /// 11203 -- en [Fisheries] ---- fr [PÃªches]
         /// </summary>
         IndustryFisheriesRelated = 11203,
         /// <summary>
-        /// 11204 -- en [Waste treatment] ---- fr [Traitement des eaux usées]
+        /// 11204 -- en [Waste treatment] ---- fr [Traitement des eaux usÃ©es]
         /// </summary>
         IndustryWaste = 11204,
         /// <summary>
-        /// 11205 -- en [Storage tank] ---- fr [Réservoir]
+        /// 11205 -- en [Storage tank] ---- fr [RÃ©servoir]
         /// </summary>
         IndustryStorageTank = 11205,
         /// <summary>
@@ -601,7 +601,7 @@ namespace CSSPEnums
         /// </summary>
         FishProcessingFinfish = 11302,
         /// <summary>
-        /// 11303 -- en [Fish meal] ---- fr [Nourriture à base de poisson]
+        /// 11303 -- en [Fish meal] ---- fr [Nourriture Ã  base de poisson]
         /// </summary>
         FishProcessingFishMeal = 11303,
         /// <summary>
@@ -613,7 +613,7 @@ namespace CSSPEnums
         /// </summary>
         MarineWharf = 11401,
         /// <summary>
-        /// 11402 -- en [Buildings] ---- fr [Bâtiment]
+        /// 11402 -- en [Buildings] ---- fr [BÃ¢timent]
         /// </summary>
         MarineBuildings = 11402,
         /// <summary>
@@ -629,11 +629,11 @@ namespace CSSPEnums
         /// </summary>
         WharfCommercialTransportation = 11501,
         /// <summary>
-        /// 11502 -- en [Fishing] ---- fr [Pêche]
+        /// 11502 -- en [Fishing] ---- fr [PÃªche]
         /// </summary>
         WharfFishing = 11502,
         /// <summary>
-        /// 11503 -- en [Private] ---- fr [Privé]
+        /// 11503 -- en [Private] ---- fr [PrivÃ©]
         /// </summary>
         WharfPrivate = 11503,
         /// <summary>
@@ -641,7 +641,7 @@ namespace CSSPEnums
         /// </summary>
         WharfMarina = 11504,
         /// <summary>
-        /// 11505 -- en [Abandoned] ---- fr [Abandonné]
+        /// 11505 -- en [Abandoned] ---- fr [AbandonnÃ©]
         /// </summary>
         WharfAbandoned = 11505,
         /// <summary>
@@ -657,7 +657,7 @@ namespace CSSPEnums
         /// </summary>
         TransportationFerry = 11602,
         /// <summary>
-        /// 11700 -- en [Recreational Activities] ---- fr [Activités récréatives]
+        /// 11700 -- en [Recreational Activities] ---- fr [ActivitÃ©s rÃ©crÃ©atives]
         /// </summary>
         RecreationStart = 11700,
         /// <summary>
@@ -665,7 +665,7 @@ namespace CSSPEnums
         /// </summary>
         RecreationCampground = 11701,
         /// <summary>
-        /// 11702 -- en [Day use area] ---- fr [Aire d'utilisation journalière]
+        /// 11702 -- en [Day use area] ---- fr [Aire d'utilisation journaliÃ¨re]
         /// </summary>
         RecreationDayUseArea = 11702,
         /// <summary>
@@ -673,7 +673,7 @@ namespace CSSPEnums
         /// </summary>
         RecreationSwimmingArea = 11703,
         /// <summary>
-        /// 11704 -- en [Residental or recreational area] ---- fr [Aire Activités récréatives or residental]
+        /// 11704 -- en [Residental or recreational area] ---- fr [Aire ActivitÃ©s rÃ©crÃ©atives or residental]
         /// </summary>
         RecreationRecreationaltArea = 11704,
         /// <summary>
@@ -689,23 +689,23 @@ namespace CSSPEnums
         /// </summary>
         CampgroundFacilitiesStart = 11800,
         /// <summary>
-        /// 11801 -- en [no dump station ] ---- fr [Aucune station d’élimination des eaux usées]
+        /// 11801 -- en [no dump station ] ---- fr [Aucune station dâ€™Ã©limination des eaux usÃ©es]
         /// </summary>
         CampgroundNoDumpStn = 11801,
         /// <summary>
-        /// 11802 -- en [dump station] ---- fr [Station d’élimination des eaux usées]
+        /// 11802 -- en [dump station] ---- fr [Station dâ€™Ã©limination des eaux usÃ©es]
         /// </summary>
         CampgroundwithDumpStn = 11802,
         /// <summary>
-        /// 11900 -- en [Sewage] ---- fr [Égoûts]
+        /// 11900 -- en [Sewage] ---- fr [Ã‰goÃ»ts]
         /// </summary>
         SewageStart = 11900,
         /// <summary>
-        /// 11901 -- en [Cesspool/Holding tank] ---- fr [Fosse / Réservoir]
+        /// 11901 -- en [Cesspool/Holding tank] ---- fr [Fosse / RÃ©servoir]
         /// </summary>
         SewageCesspool = 11901,
         /// <summary>
-        /// 11902 -- en [Direct discharge] ---- fr [Décharge directe]
+        /// 11902 -- en [Direct discharge] ---- fr [DÃ©charge directe]
         /// </summary>
         SewageDirectDischarge = 11902,
         /// <summary>
@@ -713,7 +713,7 @@ namespace CSSPEnums
         /// </summary>
         SewagePrivyOuthouse = 11903,
         /// <summary>
-        /// 11904 -- en [Municipal system] ---- fr [Système municipal]
+        /// 11904 -- en [Municipal system] ---- fr [SystÃ¨me municipal]
         /// </summary>
         SewageMunicipalSystem = 11904,
         /// <summary>
@@ -721,7 +721,7 @@ namespace CSSPEnums
         /// </summary>
         SepticSystemDrainageField = 11905,
         /// <summary>
-        /// 11906 -- en [Full retention] ---- fr [Rétention complète]
+        /// 11906 -- en [Full retention] ---- fr [RÃ©tention complÃ¨te]
         /// </summary>
         SepticSystemFullRention = 11906,
         /// <summary>
@@ -749,7 +749,7 @@ namespace CSSPEnums
         /// </summary>
         UrbanSurfaceRunoff = 12106,
         /// <summary>
-        /// 12107 -- en [Dump Station] ---- fr [Station d’élimination des eaux usées]
+        /// 12107 -- en [Dump Station] ---- fr [Station dâ€™Ã©limination des eaux usÃ©es]
         /// </summary>
         UrbanDumpStation = 12107,
         /// <summary>
@@ -761,11 +761,11 @@ namespace CSSPEnums
         /// </summary>
         WildlifeBirds = 12201,
         /// <summary>
-        /// 12202 -- en [Land mammals] ---- fr [Mammifères terrestres]
+        /// 12202 -- en [Land mammals] ---- fr [MammifÃ¨res terrestres]
         /// </summary>
         WildlifeLandMammals = 12202,
         /// <summary>
-        /// 12203 -- en [Marine Mammals] ---- fr [Mammifères marins]
+        /// 12203 -- en [Marine Mammals] ---- fr [MammifÃ¨res marins]
         /// </summary>
         WildlifeMarineMammals = 12203,
         /// <summary>
@@ -781,7 +781,7 @@ namespace CSSPEnums
         /// </summary>
         MunicipalSystemNotConnected = 12302,
         /// <summary>
-        /// 12400 -- en [StorageTank] ---- fr [Réservoir de stockage]
+        /// 12400 -- en [StorageTank] ---- fr [RÃ©servoir de stockage]
         /// </summary>
         StorageTankStart = 12400,
         /// <summary>
@@ -797,7 +797,7 @@ namespace CSSPEnums
         /// </summary>
         StorageTankChemicals = 12403,
         /// <summary>
-        /// 12500 -- en [Tank Size] ---- fr [Taille du réservoir]
+        /// 12500 -- en [Tank Size] ---- fr [Taille du rÃ©servoir]
         /// </summary>
         TankSizeStart = 12500,
         /// <summary>
@@ -809,15 +809,15 @@ namespace CSSPEnums
         /// </summary>
         TankSizeLarge = 12502,
         /// <summary>
-        /// 12600 -- en [Building Types] ---- fr [Type d'édifices]
+        /// 12600 -- en [Building Types] ---- fr [Type d'Ã©difices]
         /// </summary>
         BuildingAgricultureStart = 12600,
         /// <summary>
-        /// 12601 -- en [Residental ] ---- fr [Résidentiel]
+        /// 12601 -- en [Residental ] ---- fr [RÃ©sidentiel]
         /// </summary>
         BuildingResidentialFarm = 12601,
         /// <summary>
-        /// 12602 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 12602 -- en [Warehouse] ---- fr [EntrepÃ´t]
         /// </summary>
         BuildingWarehouseFarm = 12602,
         /// <summary>
@@ -829,23 +829,23 @@ namespace CSSPEnums
         /// </summary>
         BuildingBarnFarm = 12604,
         /// <summary>
-        /// 12605 -- en [Recreational] ---- fr [Récréatif]
+        /// 12605 -- en [Recreational] ---- fr [RÃ©crÃ©atif]
         /// </summary>
         BuildingRecreational = 12605,
         /// <summary>
-        /// 12700 -- en [Forested Buildings ] ---- fr [Édifice forestier]
+        /// 12700 -- en [Forested Buildings ] ---- fr [Ã‰difice forestier]
         /// </summary>
         BuildingForestedStart = 12700,
         /// <summary>
-        /// 12701 -- en [Residental ] ---- fr [Résidentiel]
+        /// 12701 -- en [Residental ] ---- fr [RÃ©sidentiel]
         /// </summary>
         BuildingForestedResidential = 12701,
         /// <summary>
-        /// 12702 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 12702 -- en [Warehouse] ---- fr [EntrepÃ´t]
         /// </summary>
         BuildingForestedWarehouse = 12702,
         /// <summary>
-        /// 12703 -- en [Recreational] ---- fr [Récréatif]
+        /// 12703 -- en [Recreational] ---- fr [RÃ©crÃ©atif]
         /// </summary>
         BuildingForestedRecreational = 12703,
         /// <summary>
@@ -861,11 +861,11 @@ namespace CSSPEnums
         /// </summary>
         BuildingForestedCommerical = 12706,
         /// <summary>
-        /// 12800 -- en [Type of Buildings] ---- fr [Type d'édifices]
+        /// 12800 -- en [Type of Buildings] ---- fr [Type d'Ã©difices]
         /// </summary>
         BuildingTypeStart = 12800,
         /// <summary>
-        /// 12801 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 12801 -- en [Warehouse] ---- fr [EntrepÃ´t]
         /// </summary>
         BuildingindustryWarehouse = 12801,
         /// <summary>
@@ -877,7 +877,7 @@ namespace CSSPEnums
         /// </summary>
         BuildingIndustryCommerical = 12803,
         /// <summary>
-        /// 12900 -- en [Fishery Buildings] ---- fr [Bâtiments pour la pêche]
+        /// 12900 -- en [Fishery Buildings] ---- fr [BÃ¢timents pour la pÃªche]
         /// </summary>
         BuildingFishStart = 12900,
         /// <summary>
@@ -885,11 +885,11 @@ namespace CSSPEnums
         /// </summary>
         BuildingFishHatchery = 12901,
         /// <summary>
-        /// 12902 -- en [Tanks ] ---- fr [Réservoirs]
+        /// 12902 -- en [Tanks ] ---- fr [RÃ©servoirs]
         /// </summary>
         BuildingFishTanks = 12902,
         /// <summary>
-        /// 12903 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 12903 -- en [Warehouse] ---- fr [EntrepÃ´t]
         /// </summary>
         BuildingFishWarehouse = 12903,
         /// <summary>
@@ -897,7 +897,7 @@ namespace CSSPEnums
         /// </summary>
         BuildingFishCommercial = 12904,
         /// <summary>
-        /// 13000 -- en [Buildings] ---- fr [Bâtiments]
+        /// 13000 -- en [Buildings] ---- fr [BÃ¢timents]
         /// </summary>
         BuildingAllStart = 13000,
         /// <summary>
@@ -909,15 +909,15 @@ namespace CSSPEnums
         /// </summary>
         BuildingAllTrailer = 13002,
         /// <summary>
-        /// 13003 -- en [Residental ] ---- fr [Résidentiel]
+        /// 13003 -- en [Residental ] ---- fr [RÃ©sidentiel]
         /// </summary>
         BuildingAllResidential = 13003,
         /// <summary>
-        /// 13004 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 13004 -- en [Warehouse] ---- fr [EntrepÃ´t]
         /// </summary>
         BuildingAllWarehouse = 13004,
         /// <summary>
-        /// 13005 -- en [Hotel or motel] ---- fr [Hôtel ou motel]
+        /// 13005 -- en [Hotel or motel] ---- fr [HÃ´tel ou motel]
         /// </summary>
         BuildingAllHotelMotel = 13005,
         /// <summary>
@@ -925,7 +925,7 @@ namespace CSSPEnums
         /// </summary>
         BuildingAllCommerical = 13006,
         /// <summary>
-        /// 13100 -- en [Number ] ---- fr [Nombre d'unités]
+        /// 13100 -- en [Number ] ---- fr [Nombre d'unitÃ©s]
         /// </summary>
         CountNumberStart = 13100,
         /// <summary>
@@ -933,19 +933,19 @@ namespace CSSPEnums
         /// </summary>
         CountNumberEqualTo1 = 13101,
         /// <summary>
-        /// 13102 -- en [   1 - 5] ---- fr [1 à 5]
+        /// 13102 -- en [   1 - 5] ---- fr [1 Ã  5]
         /// </summary>
         CountNumberBetween1and5 = 13102,
         /// <summary>
-        /// 13103 -- en [  5 - 10] ---- fr [5 à 10]
+        /// 13103 -- en [  5 - 10] ---- fr [5 Ã  10]
         /// </summary>
         CountNumberbBetween5and10 = 13103,
         /// <summary>
-        /// 13104 -- en [10 - 25] ---- fr [10 à 25]
+        /// 13104 -- en [10 - 25] ---- fr [10 Ã  25]
         /// </summary>
         CountNumberbBetween10and25 = 13104,
         /// <summary>
-        /// 13105 -- en [25 - 40] ---- fr [25 à 40]
+        /// 13105 -- en [25 - 40] ---- fr [25 Ã  40]
         /// </summary>
         CountNumberbBetween25and40 = 13105,
         /// <summary>
@@ -965,11 +965,11 @@ namespace CSSPEnums
         /// </summary>
         AreaSizeLarge = 13202,
         /// <summary>
-        /// 13300 -- en [Fecal source] ---- fr [Source fécale]
+        /// 13300 -- en [Fecal source] ---- fr [Source fÃ©cale]
         /// </summary>
         FecalSourceStart = 13300,
         /// <summary>
-        /// 13301 -- en [Livestock] ---- fr [Bétail]
+        /// 13301 -- en [Livestock] ---- fr [BÃ©tail]
         /// </summary>
         FecalSourceLivestock = 13301,
         /// <summary>
@@ -985,11 +985,11 @@ namespace CSSPEnums
         /// </summary>
         FecalSourceAbsent = 13304,
         /// <summary>
-        /// 13305 -- en [Drainage Water] ---- fr [Écoulement d'eau]
+        /// 13305 -- en [Drainage Water] ---- fr [Ã‰coulement d'eau]
         /// </summary>
         FecalSourceDrainagewater = 13305,
         /// <summary>
-        /// 13400 -- en [Major Issue] ---- fr [Préoccupation majeure]
+        /// 13400 -- en [Major Issue] ---- fr [PrÃ©occupation majeure]
         /// </summary>
         MajorIssueSourceStart = 13400,
         /// <summary>
@@ -997,7 +997,7 @@ namespace CSSPEnums
         /// </summary>
         MajorIssueSourceManurePile = 13401,
         /// <summary>
-        /// 13402 -- en [No issue identified] ---- fr [Aucun problème identifié]
+        /// 13402 -- en [No issue identified] ---- fr [Aucun problÃ¨me identifiÃ©]
         /// </summary>
         MajorIssueAbsent1 = 13402,
         /// <summary>
@@ -1005,23 +1005,23 @@ namespace CSSPEnums
         /// </summary>
         MajorIssueRunoff = 13403,
         /// <summary>
-        /// 13500 -- en [Land Fill Type] ---- fr [Type de mise en décharge]
+        /// 13500 -- en [Land Fill Type] ---- fr [Type de mise en dÃ©charge]
         /// </summary>
         LandfillTypeStart = 13500,
         /// <summary>
-        /// 13501 -- en [Residental Landfill] ---- fr [Mise en décharge résidentielle]
+        /// 13501 -- en [Residental Landfill] ---- fr [Mise en dÃ©charge rÃ©sidentielle]
         /// </summary>
         LandfillTypeResidental = 13501,
         /// <summary>
-        /// 13502 -- en [Industrial Landfill] ---- fr [Mise en décharge industrielle]
+        /// 13502 -- en [Industrial Landfill] ---- fr [Mise en dÃ©charge industrielle]
         /// </summary>
         LandfillTypeIndustrial = 13502,
         /// <summary>
-        /// 13503 -- en [Woodwaste Landfill] ---- fr [Mise en décharge de déchets ligneux]
+        /// 13503 -- en [Woodwaste Landfill] ---- fr [Mise en dÃ©charge de dÃ©chets ligneux]
         /// </summary>
         LandfillTypeWoodwaste = 13503,
         /// <summary>
-        /// 13600 -- en [Number present] ---- fr [Nombre présent]
+        /// 13600 -- en [Number present] ---- fr [Nombre prÃ©sent]
         /// </summary>
         NumberPresentStart = 13600,
         /// <summary>
@@ -1029,11 +1029,11 @@ namespace CSSPEnums
         /// </summary>
         NumberPresentLessThan5 = 13601,
         /// <summary>
-        /// 13602 -- en [   5 - 10] ---- fr [5 à 10]
+        /// 13602 -- en [   5 - 10] ---- fr [5 Ã  10]
         /// </summary>
         NumberPresentBetween5and10 = 13602,
         /// <summary>
-        /// 13603 -- en [ 10 - 25] ---- fr [10 à 25]
+        /// 13603 -- en [ 10 - 25] ---- fr [10 Ã  25]
         /// </summary>
         NumberPresentBetween10and25 = 13603,
         /// <summary>
@@ -1041,7 +1041,7 @@ namespace CSSPEnums
         /// </summary>
         NumberPresentGreaterThan25 = 13604,
         /// <summary>
-        /// 13700 -- en [Type of livestock] ---- fr [Type de bétail]
+        /// 13700 -- en [Type of livestock] ---- fr [Type de bÃ©tail]
         /// </summary>
         TypesOfLivestockStart = 13700,
         /// <summary>
@@ -1089,7 +1089,7 @@ namespace CSSPEnums
         /// </summary>
         TypesEqualSmallBirds = 13805,
         /// <summary>
-        /// 13900 -- en [Number present] ---- fr [Nombre présent]
+        /// 13900 -- en [Number present] ---- fr [Nombre prÃ©sent]
         /// </summary>
         AnimalNumberPresentStart = 13900,
         /// <summary>
@@ -1097,15 +1097,15 @@ namespace CSSPEnums
         /// </summary>
         NumberAnimalPresentLessThan5 = 13901,
         /// <summary>
-        /// 13902 -- en [     5 - 10] ---- fr [5 à 10]
+        /// 13902 -- en [     5 - 10] ---- fr [5 Ã  10]
         /// </summary>
         NumberAnimalPresentBetween5and10 = 13902,
         /// <summary>
-        /// 13903 -- en [   10 - 25] ---- fr [10 à 25 ]
+        /// 13903 -- en [   10 - 25] ---- fr [10 Ã  25 ]
         /// </summary>
         NumberAnimalPresentBetween10and25 = 13903,
         /// <summary>
-        /// 13904 -- en [  25 - 100] ---- fr [ 25 à 100 ]
+        /// 13904 -- en [  25 - 100] ---- fr [ 25 Ã  100 ]
         /// </summary>
         NumberAnimalPresentBetween25and100 = 13904,
         /// <summary>
@@ -1129,19 +1129,19 @@ namespace CSSPEnums
         /// </summary>
         BoatCountEquals1 = 14001,
         /// <summary>
-        /// 14002 -- en [  2 - 5] ---- fr [ 2 à 5 bateaux]
+        /// 14002 -- en [  2 - 5] ---- fr [ 2 Ã  5 bateaux]
         /// </summary>
         BoatCountLessThan5 = 14002,
         /// <summary>
-        /// 14003 -- en [  5 - 25] ---- fr [ 5 à 25 bateaux]
+        /// 14003 -- en [  5 - 25] ---- fr [ 5 Ã  25 bateaux]
         /// </summary>
         BoatCountBetween5and25 = 14003,
         /// <summary>
-        /// 14004 -- en [ 25 - 50] ---- fr [ 25 à 50 bateaux]
+        /// 14004 -- en [ 25 - 50] ---- fr [ 25 Ã  50 bateaux]
         /// </summary>
         BoatCountBetween25and50 = 14004,
         /// <summary>
-        /// 14005 -- en [ 50 - 100] ---- fr [ 50 à 100 bateaux]
+        /// 14005 -- en [ 50 - 100] ---- fr [ 50 Ã  100 bateaux]
         /// </summary>
         BoatCountBetween50and100 = 14005,
         /// <summary>
@@ -1153,7 +1153,7 @@ namespace CSSPEnums
         /// </summary>
         OilDumpingFacilityStart = 14100,
         /// <summary>
-        /// 14101 -- en [Present] ---- fr [Présent]
+        /// 14101 -- en [Present] ---- fr [PrÃ©sent]
         /// </summary>
         OilDumpingFacilityPresent = 14101,
         /// <summary>
@@ -1161,11 +1161,11 @@ namespace CSSPEnums
         /// </summary>
         OilDumpingFacilityAbsent = 14102,
         /// <summary>
-        /// 14200 -- en [Sewage dumping station] ---- fr [Station d’élimination des eaux usées]
+        /// 14200 -- en [Sewage dumping station] ---- fr [Station dâ€™Ã©limination des eaux usÃ©es]
         /// </summary>
         SewageDumpingStationStart = 14200,
         /// <summary>
-        /// 14201 -- en [Present] ---- fr [Présent]
+        /// 14201 -- en [Present] ---- fr [PrÃ©sent]
         /// </summary>
         SewageDumpingStationPresent = 14201,
         /// <summary>
@@ -1189,11 +1189,11 @@ namespace CSSPEnums
         /// </summary>
         SourceTypeLandWaterCourse = 14303,
         /// <summary>
-        /// 14304 -- en [Ditch] ---- fr [Fossé]
+        /// 14304 -- en [Ditch] ---- fr [FossÃ©]
         /// </summary>
         SourceTypeLandDitch = 14304,
         /// <summary>
-        /// 14305 -- en [Surface Drainage] ---- fr [Débit]
+        /// 14305 -- en [Surface Drainage] ---- fr [DÃ©bit]
         /// </summary>
         SourceTypeLandDrainage = 14305,
         /// <summary>
@@ -1205,15 +1205,15 @@ namespace CSSPEnums
         /// </summary>
         PointSourceManureStart = 14400,
         /// <summary>
-        /// 14401 -- en [Drainage] ---- fr [Écoulement]
+        /// 14401 -- en [Drainage] ---- fr [Ã‰coulement]
         /// </summary>
         SourceManureLandDrainage = 14401,
         /// <summary>
-        /// 14402 -- en [Ditch] ---- fr [Fossé]
+        /// 14402 -- en [Ditch] ---- fr [FossÃ©]
         /// </summary>
         SourceManureDitch = 14402,
         /// <summary>
-        /// 14500 -- en [Pipe or culvert diameter (centimeters)] ---- fr [Diamètre du tuyau ou aqueduc en centimètres ]
+        /// 14500 -- en [Pipe or culvert diameter (centimeters)] ---- fr [DiamÃ¨tre du tuyau ou aqueduc en centimÃ¨tres ]
         /// </summary>
         DiameterInCentimetersStart = 14500,
         /// <summary>
@@ -1221,11 +1221,11 @@ namespace CSSPEnums
         /// </summary>
         DiameterInCentimetersLessThan30 = 14501,
         /// <summary>
-        /// 14502 -- en [ 30 - 100] ---- fr [ 30 à 100 (cm)]
+        /// 14502 -- en [ 30 - 100] ---- fr [ 30 Ã  100 (cm)]
         /// </summary>
         DiameterInCentimetersBetween30and100cm = 14502,
         /// <summary>
-        /// 14503 -- en [100 - 200] ---- fr [100 à 200 (cm)]
+        /// 14503 -- en [100 - 200] ---- fr [100 Ã  200 (cm)]
         /// </summary>
         DiameterInCentimetersBetween100and200cm = 14503,
         /// <summary>
@@ -1233,15 +1233,15 @@ namespace CSSPEnums
         /// </summary>
         DiameterInCentimetersMoreThan200cm = 14504,
         /// <summary>
-        /// 14600 -- en [Flow] ---- fr [Débit]
+        /// 14600 -- en [Flow] ---- fr [DÃ©bit]
         /// </summary>
         FlowLevelStart = 14600,
         /// <summary>
-        /// 14601 -- en [High] ---- fr [Élevé]
+        /// 14601 -- en [High] ---- fr [Ã‰levÃ©]
         /// </summary>
         FlowLevelHigh = 14601,
         /// <summary>
-        /// 14602 -- en [ Medium] ---- fr [ Modéré]
+        /// 14602 -- en [ Medium] ---- fr [ ModÃ©rÃ©]
         /// </summary>
         FlowLevelMedium = 14602,
         /// <summary>
@@ -1253,7 +1253,7 @@ namespace CSSPEnums
         /// </summary>
         OuthouseStart = 14700,
         /// <summary>
-        /// 14701 -- en [Cement holding tank] ---- fr [Réservoir en béton]
+        /// 14701 -- en [Cement holding tank] ---- fr [RÃ©servoir en bÃ©ton]
         /// </summary>
         OuthouseCementHoldingTank = 14701,
         /// <summary>
@@ -1261,7 +1261,7 @@ namespace CSSPEnums
         /// </summary>
         OuthouseSittingOnGround = 14702,
         /// <summary>
-        /// 14800 -- en [Width (meters)] ---- fr [Largeur (mètres)]
+        /// 14800 -- en [Width (meters)] ---- fr [Largeur (mÃ¨tres)]
         /// </summary>
         WidthInMetersStart = 14800,
         /// <summary>
@@ -1269,11 +1269,11 @@ namespace CSSPEnums
         /// </summary>
         WidthInMetersLessThan1 = 14801,
         /// <summary>
-        /// 14802 -- en [ 1 - 5] ---- fr [1 à 5]
+        /// 14802 -- en [ 1 - 5] ---- fr [1 Ã  5]
         /// </summary>
         WidthInMetersBetween1And5 = 14802,
         /// <summary>
-        /// 14803 -- en [ 5 - 25] ---- fr [5 à 25]
+        /// 14803 -- en [ 5 - 25] ---- fr [5 Ã  25]
         /// </summary>
         WidthInMetersBetween5And25 = 14803,
         /// <summary>
@@ -1281,7 +1281,7 @@ namespace CSSPEnums
         /// </summary>
         WidthInMetersMoreThan25 = 14804,
         /// <summary>
-        /// 14900 -- en [Ditch] ---- fr [Fossé]
+        /// 14900 -- en [Ditch] ---- fr [FossÃ©]
         /// </summary>
         DitchStart = 14900,
         /// <summary>
@@ -1301,11 +1301,11 @@ namespace CSSPEnums
         /// </summary>
         DrainagePavedSurfaces = 15001,
         /// <summary>
-        /// 15002 -- en [Vegetated surface] ---- fr [Surface recouverte de végétation]
+        /// 15002 -- en [Vegetated surface] ---- fr [Surface recouverte de vÃ©gÃ©tation]
         /// </summary>
         DrainageVegetatedSurfaces = 15002,
         /// <summary>
-        /// 15003 -- en [Direct flow] ---- fr [Débit direct]
+        /// 15003 -- en [Direct flow] ---- fr [DÃ©bit direct]
         /// </summary>
         DrainageDirect = 15003,
         /// <summary>
@@ -1325,7 +1325,7 @@ namespace CSSPEnums
         /// </summary>
         ManurePileLarge = 15102,
         /// <summary>
-        /// 15200 -- en [Source type ] ---- fr [Source définie]
+        /// 15200 -- en [Source type ] ---- fr [Source dÃ©finie]
         /// </summary>
         SourceTypeWaterStart = 15200,
         /// <summary>
@@ -1337,7 +1337,7 @@ namespace CSSPEnums
         /// </summary>
         SourceTypeWaterAnchorageMooringSite = 15202,
         /// <summary>
-        /// 15203 -- en [Disposal -Dredging] ---- fr [Décharge en haute mer]
+        /// 15203 -- en [Disposal -Dredging] ---- fr [DÃ©charge en haute mer]
         /// </summary>
         SourceTypeWaterDisposalAtSea = 15203,
         /// <summary>
@@ -1361,7 +1361,7 @@ namespace CSSPEnums
         /// </summary>
         WaterAquacultureSiteActive = 15301,
         /// <summary>
-        /// 15302 -- en [Fallow] ---- fr [Inutilisé]
+        /// 15302 -- en [Fallow] ---- fr [InutilisÃ©]
         /// </summary>
         WaterAquacultureSiteFallow = 15302,
         /// <summary>
@@ -1377,7 +1377,7 @@ namespace CSSPEnums
         /// </summary>
         AquacultureFloatingBags = 15402,
         /// <summary>
-        /// 15403 -- en [Submerged lines] ---- fr [Lignes submergées ]
+        /// 15403 -- en [Submerged lines] ---- fr [Lignes submergÃ©es ]
         /// </summary>
         AquacultureSubmergedLines = 15403,
         /// <summary>
@@ -1393,7 +1393,7 @@ namespace CSSPEnums
         /// </summary>
         WaterStructureBarge = 15502,
         /// <summary>
-        /// 15503 -- en [Residental] ---- fr [Résidentiel]
+        /// 15503 -- en [Residental] ---- fr [RÃ©sidentiel]
         /// </summary>
         WaterStructureResidental = 15503,
         /// <summary>
@@ -1405,15 +1405,15 @@ namespace CSSPEnums
         /// </summary>
         WaterStructureNotActive = 15505,
         /// <summary>
-        /// 15600 -- en [Disposal at sea] ---- fr [Décharge en haute mer]
+        /// 15600 -- en [Disposal at sea] ---- fr [DÃ©charge en haute mer]
         /// </summary>
         WaterDisposalAtSeaStart = 15600,
         /// <summary>
-        /// 15601 -- en [Dump site active] ---- fr [Site de décharge actif]
+        /// 15601 -- en [Dump site active] ---- fr [Site de dÃ©charge actif]
         /// </summary>
         WaterDumpSiteActive = 15601,
         /// <summary>
-        /// 15602 -- en [Dump site not active] ---- fr [Site de décharge inactif]
+        /// 15602 -- en [Dump site not active] ---- fr [Site de dÃ©charge inactif]
         /// </summary>
         WaterDumpSiteNotActive = 15602,
         /// <summary>
@@ -1469,7 +1469,7 @@ namespace CSSPEnums
         /// </summary>
         WaterAreaSizeLarge = 16002,
         /// <summary>
-        /// 16100 -- en [Fecal source] ---- fr [Source de coliformes fécaux]
+        /// 16100 -- en [Fecal source] ---- fr [Source de coliformes fÃ©caux]
         /// </summary>
         WaterFecalSourceStart = 16100,
         /// <summary>
@@ -1485,7 +1485,7 @@ namespace CSSPEnums
         /// </summary>
         WaterFecalSourceAbsent = 16103,
         /// <summary>
-        /// 16200 -- en [Number of units] ---- fr [Nombre d'unités]
+        /// 16200 -- en [Number of units] ---- fr [Nombre d'unitÃ©s]
         /// </summary>
         WaterCountNumberStart = 16200,
         /// <summary>
@@ -1493,11 +1493,11 @@ namespace CSSPEnums
         /// </summary>
         WaterCountNumberLessThan5 = 16201,
         /// <summary>
-        /// 16202 -- en [ 5 - 10] ---- fr [ 5 à 10.]
+        /// 16202 -- en [ 5 - 10] ---- fr [ 5 Ã  10.]
         /// </summary>
         WaterCountNumberBetween5and10 = 16202,
         /// <summary>
-        /// 16203 -- en [ 10 - 25] ---- fr [ 10 à 25.]
+        /// 16203 -- en [ 10 - 25] ---- fr [ 10 Ã  25.]
         /// </summary>
         WaterCountNumberBetween10and25 = 16203,
         /// <summary>
@@ -1505,11 +1505,11 @@ namespace CSSPEnums
         /// </summary>
         WaterCountNumberGreaterThan25 = 16204,
         /// <summary>
-        /// 16300 -- en [Sewage] ---- fr [Eaux usées]
+        /// 16300 -- en [Sewage] ---- fr [Eaux usÃ©es]
         /// </summary>
         WaterSewageStart = 16300,
         /// <summary>
-        /// 16301 -- en [Direct discharge] ---- fr [Décharge directe]
+        /// 16301 -- en [Direct discharge] ---- fr [DÃ©charge directe]
         /// </summary>
         WaterSewageDirectDischarge = 16301,
         /// <summary>
@@ -1517,7 +1517,7 @@ namespace CSSPEnums
         /// </summary>
         WaterSepticSystemFullRention = 16302,
         /// <summary>
-        /// 16400 -- en [Number present] ---- fr [Nombre présents.]
+        /// 16400 -- en [Number present] ---- fr [Nombre prÃ©sents.]
         /// </summary>
         WaterNumberPresentStart = 16400,
         /// <summary>
@@ -1525,11 +1525,11 @@ namespace CSSPEnums
         /// </summary>
         WaterNumberPresentLessThan5 = 16401,
         /// <summary>
-        /// 16402 -- en [  5 - 10] ---- fr [5 à 10.]
+        /// 16402 -- en [  5 - 10] ---- fr [5 Ã  10.]
         /// </summary>
         WaterNumberPresentBetween5and10 = 16402,
         /// <summary>
-        /// 16403 -- en [ 10 - 25] ---- fr [10 à 25.]
+        /// 16403 -- en [ 10 - 25] ---- fr [10 Ã  25.]
         /// </summary>
         WaterNumberPresentBetween10and25 = 16403,
         /// <summary>
@@ -1573,11 +1573,11 @@ namespace CSSPEnums
         /// </summary>
         ShorelineRocky = 17002,
         /// <summary>
-        /// 17100 -- en [Items on shoreline] ---- fr [Éléments sur le rivage]
+        /// 17100 -- en [Items on shoreline] ---- fr [Ã‰lÃ©ments sur le rivage]
         /// </summary>
         ShorelineIssueStart = 17100,
         /// <summary>
-        /// 17101 -- en [Building] ---- fr [Édifices]
+        /// 17101 -- en [Building] ---- fr [Ã‰difices]
         /// </summary>
         ShorelineBuildings = 17101,
         /// <summary>
@@ -1589,7 +1589,7 @@ namespace CSSPEnums
         /// </summary>
         ShorelineLandFill = 17103,
         /// <summary>
-        /// 17104 -- en [Slipway] ---- fr [Mise à l'eau]
+        /// 17104 -- en [Slipway] ---- fr [Mise Ã  l'eau]
         /// </summary>
         ShorelineSlipway = 17104,
         /// <summary>
@@ -1597,15 +1597,15 @@ namespace CSSPEnums
         /// </summary>
         ShorelineDayuse = 17105,
         /// <summary>
-        /// 18000 -- en [Type of Slipway] ---- fr [Genre de mise à l'eau]
+        /// 18000 -- en [Type of Slipway] ---- fr [Genre de mise Ã  l'eau]
         /// </summary>
         SlipwayStart = 18000,
         /// <summary>
-        /// 18001 -- en [Paved slipway] ---- fr [Mise à l'eau pavé]
+        /// 18001 -- en [Paved slipway] ---- fr [Mise Ã  l'eau pavÃ©]
         /// </summary>
         SlipwayPaved = 18001,
         /// <summary>
-        /// 18002 -- en [Natural slipway] ---- fr [Mise à l'eau, surface naturelle]
+        /// 18002 -- en [Natural slipway] ---- fr [Mise Ã  l'eau, surface naturelle]
         /// </summary>
         SlipwayRocks = 18002,
         /// <summary>
@@ -1621,11 +1621,11 @@ namespace CSSPEnums
         /// </summary>
         SourceTypeMarine = 19002,
         /// <summary>
-        /// 90000 -- en [Status as a pollutant source ] ---- fr [Évaluation de la source de pollution]
+        /// 90000 -- en [Status as a pollutant source ] ---- fr [Ã‰valuation de la source de pollution]
         /// </summary>
         StatusStart = 90000,
         /// <summary>
-        /// 90001 -- en [  Definite] ---- fr [Définitif,]
+        /// 90001 -- en [  Definite] ---- fr [DÃ©finitif,]
         /// </summary>
         StatusDefinite = 90001,
         /// <summary>
@@ -1653,7 +1653,7 @@ namespace CSSPEnums
         /// </summary>
         RiskModerate = 92001,
         /// <summary>
-        /// 92002 -- en [High] ---- fr [Élevé]
+        /// 92002 -- en [High] ---- fr [Ã‰levÃ©]
         /// </summary>
         RiskHighP = 92002,
         /// <summary>
@@ -1661,7 +1661,7 @@ namespace CSSPEnums
         /// </summary>
         RiskCStart = 93000,
         /// <summary>
-        /// 93001 -- en [High] ---- fr [Élevé]
+        /// 93001 -- en [High] ---- fr [Ã‰levÃ©]
         /// </summary>
         RiskHigh = 93001,
     }
