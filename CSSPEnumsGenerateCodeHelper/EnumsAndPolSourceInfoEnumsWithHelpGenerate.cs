@@ -21,11 +21,11 @@ namespace CSSPEnumsGenerateCodeHelper
             StringBuilder sb = new StringBuilder();
             StringBuilder sbPol = new StringBuilder();
 
-            FileInfo fiCSSPEnumsDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
-            FileInfo fi = new FileInfo(enumsFiles.BaseDir + @"CSSPEnums\CSSPEnums\EnumsWithHelp.cs");
-            FileInfo fiPol = new FileInfo(enumsFiles.BaseDir + @"CSSPEnums\CSSPEnums\PolSourceObsInfoEnumGeneratedWithHelp.cs");
-            FileInfo fiCSSPModelsDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
-            FileInfo fiCSSPServicesDLL = new FileInfo(enumsFiles.BaseDir + @"CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
+            FileInfo fiCSSPEnumsDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
+            FileInfo fi = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\EnumsWithHelp.cs");
+            FileInfo fiPol = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\PolSourceObsInfoEnumGeneratedWithHelp.cs");
+            FileInfo fiCSSPModelsDLL = new FileInfo(@"C:\CSSP Code\CSSPModels\CSSPModels\bin\Debug\CSSPModels.dll");
+            FileInfo fiCSSPServicesDLL = new FileInfo(@"C:\CSSP Code\CSSPServices\CSSPServices\bin\Debug\CSSPServices.dll");
 
             if (!fiCSSPEnumsDLL.Exists)
             {

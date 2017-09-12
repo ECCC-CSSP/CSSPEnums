@@ -104,13 +104,7 @@ namespace CSSPEnumsGenerateCode
         }
         private void StartUp()
         {
-            GenerateCodeBase.EnumsFiles enumsFiles = new GenerateCodeBase.EnumsFiles();
-            enumsFiles.CSSPEnumsDLL = textBoxCSSPEnumsDLL.Text;
-            enumsFiles.BaseDir = textBoxBaseDir.Text;
-            enumsFiles.EnumsGenerated = textBoxFile1.Text;
-            enumsFiles.EnumsTestGenerated = textBoxFile2.Text;
-
-            enumGenerateCodeHelper = new EnumsGenerateCodeHelper(enumsFiles);
+            enumGenerateCodeHelper = new EnumsGenerateCodeHelper();
 
             enumGenerateCodeHelper.ErrorHandler += EnumGenerateCodeHelper_ErrorHandler;
             enumGenerateCodeHelper.StatusTempHandler += EnumGenerateCodeHelper_StatusTempHandler;

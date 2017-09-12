@@ -16,13 +16,13 @@ namespace CSSPEnumsGenerateCodeHelper
         #endregion Variables
 
         #region Properties
-        private EnumsFiles enumsFiles { get; set; }
+        //private EnumsFiles enumsFiles { get; set; }
         #endregion Properties
 
         #region Constructors
-        public EnumsGenerateCodeHelper(EnumsFiles enumFiles)
+        public EnumsGenerateCodeHelper() //EnumsFiles enumFiles)
         {
-            this.enumsFiles = enumFiles;
+            //this.enumsFiles = enumFiles;
         }
         #endregion Constructors
 

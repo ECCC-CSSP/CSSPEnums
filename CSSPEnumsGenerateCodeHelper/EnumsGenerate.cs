@@ -14,8 +14,8 @@ namespace CSSPEnumsGenerateCodeHelper
         public void EnumsGenerate()
         {
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
-            FileInfo fi = new FileInfo(enumsFiles.BaseDir + enumsFiles.EnumsGenerated);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
+            FileInfo fi = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\EnumsGenerated.cs");
 
             if (!fiDLL.Exists)
             {

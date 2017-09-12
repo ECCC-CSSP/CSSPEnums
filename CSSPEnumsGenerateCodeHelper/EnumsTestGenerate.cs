@@ -14,8 +14,8 @@ namespace CSSPEnumsGenerateCodeHelper
         public void EnumsTestGenerate()
         {
             StringBuilder sb = new StringBuilder();
-            FileInfo fiDLL = new FileInfo(enumsFiles.CSSPEnumsDLL);
-            FileInfo fi = new FileInfo(enumsFiles.BaseDir + enumsFiles.EnumsTestGenerated);
+            FileInfo fiDLL = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums\bin\Debug\CSSPEnums.dll");
+            FileInfo fi = new FileInfo(@"C:\CSSP Code\CSSPEnums\CSSPEnums.Tests\EnumsTestGenerated.cs");
 
             sb.AppendLine(@"using System;");
             sb.AppendLine(@"using System.Text;");

@@ -32,16 +32,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.lblDocumentsToGenerate = new System.Windows.Forms.Label();
-            this.textBoxCSSPEnumsDLL = new System.Windows.Forms.TextBox();
-            this.lblDoc = new System.Windows.Forms.Label();
             this.lblNote = new System.Windows.Forms.Label();
-            this.textBoxFile2 = new System.Windows.Forms.TextBox();
-            this.lblFile2 = new System.Windows.Forms.Label();
-            this.textBoxFile1 = new System.Windows.Forms.TextBox();
-            this.lblFile1 = new System.Windows.Forms.Label();
-            this.textBoxBaseDir = new System.Windows.Forms.TextBox();
-            this.lblBaseDir = new System.Windows.Forms.Label();
             this.butGenerateEnumWithHelp = new System.Windows.Forms.Button();
             this.butGenerateAllCodeFiles = new System.Windows.Forms.Button();
             this.richTextBoxStatus = new System.Windows.Forms.RichTextBox();
@@ -62,16 +53,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.panel2);
-            this.splitContainer1.Panel1.Controls.Add(this.lblDocumentsToGenerate);
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxCSSPEnumsDLL);
-            this.splitContainer1.Panel1.Controls.Add(this.lblDoc);
             this.splitContainer1.Panel1.Controls.Add(this.lblNote);
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxFile2);
-            this.splitContainer1.Panel1.Controls.Add(this.lblFile2);
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxFile1);
-            this.splitContainer1.Panel1.Controls.Add(this.lblFile1);
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxBaseDir);
-            this.splitContainer1.Panel1.Controls.Add(this.lblBaseDir);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateEnumWithHelp);
             this.splitContainer1.Panel1.Controls.Add(this.butGenerateAllCodeFiles);
             // 
@@ -79,7 +61,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.richTextBoxStatus);
             this.splitContainer1.Size = new System.Drawing.Size(827, 477);
-            this.splitContainer1.SplitterDistance = 354;
+            this.splitContainer1.SplitterDistance = 106;
             this.splitContainer1.TabIndex = 2;
             // 
             // panel2
@@ -87,7 +69,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 323);
+            this.panel2.Location = new System.Drawing.Point(0, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(827, 31);
             this.panel2.TabIndex = 30;
@@ -109,97 +91,21 @@
             this.lblStatus.Size = new System.Drawing.Size(0, 13);
             this.lblStatus.TabIndex = 4;
             // 
-            // lblDocumentsToGenerate
-            // 
-            this.lblDocumentsToGenerate.AutoSize = true;
-            this.lblDocumentsToGenerate.Location = new System.Drawing.Point(69, 113);
-            this.lblDocumentsToGenerate.Name = "lblDocumentsToGenerate";
-            this.lblDocumentsToGenerate.Size = new System.Drawing.Size(121, 13);
-            this.lblDocumentsToGenerate.TabIndex = 29;
-            this.lblDocumentsToGenerate.Text = "Documents to generate:";
-            // 
-            // textBoxCSSPEnumsDLL
-            // 
-            this.textBoxCSSPEnumsDLL.Location = new System.Drawing.Point(109, 15);
-            this.textBoxCSSPEnumsDLL.Name = "textBoxCSSPEnumsDLL";
-            this.textBoxCSSPEnumsDLL.Size = new System.Drawing.Size(517, 20);
-            this.textBoxCSSPEnumsDLL.TabIndex = 28;
-            this.textBoxCSSPEnumsDLL.Text = "C:\\CSSP Code\\CSSPEnums\\CSSPEnums\\bin\\Debug\\CSSPEnums.dll";
-            // 
-            // lblDoc
-            // 
-            this.lblDoc.AutoSize = true;
-            this.lblDoc.Location = new System.Drawing.Point(15, 18);
-            this.lblDoc.Name = "lblDoc";
-            this.lblDoc.Size = new System.Drawing.Size(83, 13);
-            this.lblDoc.TabIndex = 27;
-            this.lblDoc.Text = "CSSPEnums dll:";
-            // 
             // lblNote
             // 
             this.lblNote.AutoSize = true;
-            this.lblNote.Location = new System.Drawing.Point(15, 288);
+            this.lblNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNote.Location = new System.Drawing.Point(12, 38);
             this.lblNote.Name = "lblNote";
-            this.lblNote.Size = new System.Drawing.Size(278, 13);
+            this.lblNote.Size = new System.Drawing.Size(492, 24);
             this.lblNote.TabIndex = 26;
             this.lblNote.Text = "Note: You will have to recompile the CSSPEnums project.";
             // 
-            // textBoxFile2
-            // 
-            this.textBoxFile2.Location = new System.Drawing.Point(72, 195);
-            this.textBoxFile2.Name = "textBoxFile2";
-            this.textBoxFile2.Size = new System.Drawing.Size(554, 20);
-            this.textBoxFile2.TabIndex = 19;
-            this.textBoxFile2.Text = "CSSPEnums\\CSSPEnums.Tests\\EnumsTestGenerated.cs";
-            // 
-            // lblFile2
-            // 
-            this.lblFile2.AutoSize = true;
-            this.lblFile2.Location = new System.Drawing.Point(15, 198);
-            this.lblFile2.Name = "lblFile2";
-            this.lblFile2.Size = new System.Drawing.Size(35, 13);
-            this.lblFile2.TabIndex = 18;
-            this.lblFile2.Text = "File 2:";
-            // 
-            // textBoxFile1
-            // 
-            this.textBoxFile1.Location = new System.Drawing.Point(72, 166);
-            this.textBoxFile1.Name = "textBoxFile1";
-            this.textBoxFile1.Size = new System.Drawing.Size(554, 20);
-            this.textBoxFile1.TabIndex = 17;
-            this.textBoxFile1.Text = "CSSPEnums\\CSSPEnums\\EnumsGenerated.cs";
-            // 
-            // lblFile1
-            // 
-            this.lblFile1.AutoSize = true;
-            this.lblFile1.Location = new System.Drawing.Point(15, 169);
-            this.lblFile1.Name = "lblFile1";
-            this.lblFile1.Size = new System.Drawing.Size(35, 13);
-            this.lblFile1.TabIndex = 16;
-            this.lblFile1.Text = "File 1:";
-            // 
-            // textBoxBaseDir
-            // 
-            this.textBoxBaseDir.Location = new System.Drawing.Point(72, 65);
-            this.textBoxBaseDir.Name = "textBoxBaseDir";
-            this.textBoxBaseDir.Size = new System.Drawing.Size(554, 20);
-            this.textBoxBaseDir.TabIndex = 13;
-            this.textBoxBaseDir.Text = "C:\\CSSP Code\\";
-            // 
-            // lblBaseDir
-            // 
-            this.lblBaseDir.AutoSize = true;
-            this.lblBaseDir.Location = new System.Drawing.Point(15, 68);
-            this.lblBaseDir.Name = "lblBaseDir";
-            this.lblBaseDir.Size = new System.Drawing.Size(50, 13);
-            this.lblBaseDir.TabIndex = 12;
-            this.lblBaseDir.Text = "Base Dir:";
-            // 
             // butGenerateEnumWithHelp
             // 
-            this.butGenerateEnumWithHelp.Location = new System.Drawing.Point(414, 239);
+            this.butGenerateEnumWithHelp.Location = new System.Drawing.Point(181, 12);
             this.butGenerateEnumWithHelp.Name = "butGenerateEnumWithHelp";
-            this.butGenerateEnumWithHelp.Size = new System.Drawing.Size(199, 23);
+            this.butGenerateEnumWithHelp.Size = new System.Drawing.Size(183, 23);
             this.butGenerateEnumWithHelp.TabIndex = 11;
             this.butGenerateEnumWithHelp.Text = "Generate EnumsWithHelp.cs";
             this.butGenerateEnumWithHelp.UseVisualStyleBackColor = true;
@@ -207,9 +113,9 @@
             // 
             // butGenerateAllCodeFiles
             // 
-            this.butGenerateAllCodeFiles.Location = new System.Drawing.Point(189, 239);
+            this.butGenerateAllCodeFiles.Location = new System.Drawing.Point(12, 12);
             this.butGenerateAllCodeFiles.Name = "butGenerateAllCodeFiles";
-            this.butGenerateAllCodeFiles.Size = new System.Drawing.Size(199, 23);
+            this.butGenerateAllCodeFiles.Size = new System.Drawing.Size(163, 23);
             this.butGenerateAllCodeFiles.TabIndex = 11;
             this.butGenerateAllCodeFiles.Text = "Generate all code files";
             this.butGenerateAllCodeFiles.UseVisualStyleBackColor = true;
@@ -220,7 +126,7 @@
             this.richTextBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxStatus.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxStatus.Name = "richTextBoxStatus";
-            this.richTextBoxStatus.Size = new System.Drawing.Size(827, 119);
+            this.richTextBoxStatus.Size = new System.Drawing.Size(827, 367);
             this.richTextBoxStatus.TabIndex = 0;
             this.richTextBoxStatus.Text = "";
             // 
@@ -249,16 +155,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Label lblDocumentsToGenerate;
-        private System.Windows.Forms.TextBox textBoxCSSPEnumsDLL;
-        private System.Windows.Forms.Label lblDoc;
         private System.Windows.Forms.Label lblNote;
-        private System.Windows.Forms.TextBox textBoxFile2;
-        private System.Windows.Forms.Label lblFile2;
-        private System.Windows.Forms.TextBox textBoxFile1;
-        private System.Windows.Forms.Label lblFile1;
-        private System.Windows.Forms.TextBox textBoxBaseDir;
-        private System.Windows.Forms.Label lblBaseDir;
         private System.Windows.Forms.Button butGenerateAllCodeFiles;
         private System.Windows.Forms.RichTextBox richTextBoxStatus;
         private System.Windows.Forms.Button butGenerateEnumWithHelp;
