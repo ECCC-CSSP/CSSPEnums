@@ -154,6 +154,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [Address.AddressTypeEnum] (CSSPModels.Address.html#CSSPModels_Address_AddressType), </para>
     /// </remarks>
     public enum AddressTypeEnum
     {
@@ -187,7 +188,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.AerationType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.AerationTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AerationType), </para>
     /// </remarks>
     public enum AerationTypeEnum
     {
@@ -220,7 +221,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.AlarmSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.AlarmSystemTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_AlarmSystemType), </para>
     /// </remarks>
     public enum AlarmSystemTypeEnum
     {
@@ -267,6 +268,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [MWQMAnalysisReportParameter.AnalysisCalculationTypeEnum] (CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_AnalysisCalculationType), </para>
     /// </remarks>
     public enum AnalysisCalculationTypeEnum
     {
@@ -326,7 +328,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.AnalyzeMethod] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.AnalyzeMethodEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), </para>
     /// </remarks>
     public enum AnalyzeMethodEnum
     {
@@ -410,6 +412,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [AppTask.AppTaskCommandEnum] (CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskCommand), </para>
     /// </remarks>
     public enum AppTaskCommandEnum
     {
@@ -497,6 +500,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [AppTask.AppTaskStatusEnum] (CSSPModels.AppTask.html#CSSPModels_AppTask_AppTaskStatus), </para>
     /// </remarks>
     public enum AppTaskStatusEnum
     {
@@ -545,7 +549,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.SeaStateAtStart_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [MWQMRun.SeaStateAtEnd_BeaufortScale] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.BeaufortScaleEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtStart_BeaufortScale), [MWQMRun.BeaufortScaleEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SeaStateAtEnd_BeaufortScale), </para>
     /// </remarks>
     public enum BeaufortScaleEnum
     {
@@ -622,6 +626,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [BoxModelCalNumb.BoxModelResultTypeEnum] (CSSPModels.BoxModelCalNumb.html#CSSPModels_BoxModelCalNumb_BoxModelResultType), [BoxModelResult.BoxModelResultTypeEnum] (CSSPModels.BoxModelResult.html#CSSPModels_BoxModelResult_BoxModelResultType), </para>
     /// </remarks>
     public enum BoxModelResultTypeEnum
     {
@@ -672,7 +677,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.CollectionSystemType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.CollectionSystemTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_CollectionSystemType), </para>
     /// </remarks>
     public enum CollectionSystemTypeEnum
     {
@@ -745,7 +750,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [NewContact.ContactTitle] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [Contact.ContactTitle] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), </para>
+    /// <para>**Used by CSSPModels:** [NewContact.ContactTitleEnum] (CSSPModels.NewContact.html#CSSPModels_NewContact_ContactTitle), [Contact.ContactTitleEnum] (CSSPModels.Contact.html#CSSPModels_Contact_ContactTitle), </para>
     /// </remarks>
     public enum ContactTitleEnum
     {
@@ -837,6 +842,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [CSSPWQInputParam.CSSPWQInputTypeEnum] (CSSPModels.CSSPWQInputParam.html#CSSPModels_CSSPWQInputParam_CSSPWQInputType), </para>
     /// </remarks>
     public enum CSSPWQInputTypeEnum
     {
@@ -897,6 +903,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [CSSPWebToolsDBContext.DatabaseTypeEnum] (CSSPModels.CSSPWebToolsDBContext.html#CSSPModels_CSSPWebToolsDBContext_DatabaseType), </para>
     /// </remarks>
     public enum DatabaseTypeEnum
     {
@@ -939,7 +946,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.DisinfectionType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.DisinfectionTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType), </para>
     /// </remarks>
     public enum DisinfectionTypeEnum
     {
@@ -991,6 +998,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [Email.EmailTypeEnum] (CSSPModels.Email.html#CSSPModels_Email_EmailType), </para>
     /// </remarks>
     public enum EmailTypeEnum
     {
@@ -1028,7 +1036,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.FacilityType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.FacilityTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType), </para>
     /// </remarks>
     public enum FacilityTypeEnum
     {
@@ -1068,6 +1076,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [FilePurposeAndText.FilePurposeEnum] (CSSPModels.FilePurposeAndText.html#CSSPModels_FilePurposeAndText_FilePurpose), [TVFile.FilePurposeEnum] (CSSPModels.TVFile.html#CSSPModels_TVFile_FilePurpose), </para>
     /// </remarks>
     public enum FilePurposeEnum
     {
@@ -1200,6 +1209,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [TVFile.FileTypeEnum] (CSSPModels.TVFile.html#CSSPModels_TVFile_FileType), </para>
     /// </remarks>
     public enum FileTypeEnum
     {
@@ -1308,7 +1318,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.InfrastructureType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), </para>
+    /// <para>**Used by CSSPModels:** [TVItemInfrastructureTypeTVItemLink.InfrastructureTypeEnum] (CSSPModels.TVItemInfrastructureTypeTVItemLink.html#CSSPModels_TVItemInfrastructureTypeTVItemLink_InfrastructureType), [Infrastructure.InfrastructureTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_InfrastructureType), </para>
     /// </remarks>
     public enum InfrastructureTypeEnum
     {
@@ -1436,7 +1446,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.Laboratory] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.LaboratoryEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), </para>
     /// </remarks>
     public enum LaboratoryEnum
     {
@@ -1576,6 +1586,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [LabSheet.LabSheetStatusEnum] (CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetStatus), </para>
     /// </remarks>
     public enum LabSheetStatusEnum
     {
@@ -1614,6 +1625,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [LabSheetA1Sheet.LabSheetTypeEnum] (CSSPModels.LabSheetA1Sheet.html#CSSPModels_LabSheetA1Sheet_LabSheetType), [LabSheet.LabSheetTypeEnum] (CSSPModels.LabSheet.html#CSSPModels_LabSheet_LabSheetType), [SamplingPlan.LabSheetTypeEnum] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LabSheetType), </para>
     /// </remarks>
     public enum LabSheetTypeEnum
     {
@@ -1649,6 +1661,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [AppTask.LanguageEnum] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [EmailDistributionListContactLanguage.LanguageEnum] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListLanguage.LanguageEnum] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [TVTextLanguage.LanguageEnum] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language), [AppTaskLanguage.LanguageEnum] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [BoxModelLanguage.LanguageEnum] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [DocTemplate.LanguageEnum] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [InfrastructureLanguage.LanguageEnum] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [MWQMRunLanguage.LanguageEnum] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMSampleLanguage.LanguageEnum] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSubsectorLanguage.LanguageEnum] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [SpillLanguage.LanguageEnum] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [TVFile.LanguageEnum] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileLanguage.LanguageEnum] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVItemLanguage.LanguageEnum] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [VPScenarioLanguage.LanguageEnum] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), </para>
     /// </remarks>
     public enum LanguageEnum
     {
@@ -1687,6 +1700,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [Log.LogCommandEnum] (CSSPModels.Log.html#CSSPModels_Log_LogCommand), </para>
     /// </remarks>
     public enum LogCommandEnum
     {
@@ -1721,6 +1735,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [MapObj.MapInfoDrawTypeEnum] (CSSPModels.MapObj.html#CSSPModels_MapObj_MapInfoDrawType), [MapInfo.MapInfoDrawTypeEnum] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_MapInfoDrawType), </para>
     /// </remarks>
     public enum MapInfoDrawTypeEnum
     {
@@ -1754,6 +1769,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [MikeBoundaryCondition.MikeBoundaryConditionLevelOrVelocityEnum] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_MikeBoundaryConditionLevelOrVelocity), </para>
     /// </remarks>
     public enum MikeBoundaryConditionLevelOrVelocityEnum
     {
@@ -1831,6 +1847,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [MWQMSite.MWQMSiteLatestClassificationEnum] (CSSPModels.MWQMSite.html#CSSPModels_MWQMSite_MWQMSiteLatestClassification), </para>
     /// </remarks>
     public enum MWQMSiteLatestClassificationEnum
     {
@@ -1877,7 +1894,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [PolSourceSite.InactiveReason] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), </para>
+    /// <para>**Used by CSSPModels:** [PolSourceSite.PolSourceInactiveReasonEnum] (CSSPModels.PolSourceSite.html#CSSPModels_PolSourceSite_InactiveReason), </para>
     /// </remarks>
     public enum PolSourceInactiveReasonEnum
     {
@@ -1985,7 +2002,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.PreliminaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.PreliminaryTreatmentTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PreliminaryTreatmentType), </para>
     /// </remarks>
     public enum PreliminaryTreatmentTypeEnum
     {
@@ -2021,7 +2038,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.PrimaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.PrimaryTreatmentTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_PrimaryTreatmentType), </para>
     /// </remarks>
     public enum PrimaryTreatmentTypeEnum
     {
@@ -3095,7 +3112,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.SampleMatrix] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleMatrixEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), </para>
     /// </remarks>
     public enum SampleMatrixEnum
     {
@@ -3148,7 +3165,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.SampleStatus] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.SampleStatusEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleStatus), </para>
     /// </remarks>
     public enum SampleStatusEnum
     {
@@ -3199,7 +3216,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [LabSheetA1Measurement.SampleType] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType), </para>
+    /// <para>**Used by CSSPModels:** [LabSheetA1Measurement.SampleTypeEnum] (CSSPModels.LabSheetA1Measurement.html#CSSPModels_LabSheetA1Measurement_SampleType), [LabSheetA1Sheet.SampleTypeEnum] (CSSPModels.LabSheetA1Sheet.html#CSSPModels_LabSheetA1Sheet_SampleType), [LabSheet.SampleTypeEnum] (CSSPModels.LabSheet.html#CSSPModels_LabSheet_SampleType), [LabSheetTubeMPNDetail.SampleTypeEnum] (CSSPModels.LabSheetTubeMPNDetail.html#CSSPModels_LabSheetTubeMPNDetail_SampleType), [MWQMRun.SampleTypeEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_RunSampleType), [MWQMSample.SampleTypeEnum] (CSSPModels.MWQMSample.html#CSSPModels_MWQMSample_SampleType_old), [SamplingPlan.SampleTypeEnum] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleType), </para>
     /// </remarks>
     public enum SampleTypeEnum
     {
@@ -3265,6 +3282,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [LabSheetA1Sheet.SamplingPlanTypeEnum] (CSSPModels.LabSheetA1Sheet.html#CSSPModels_LabSheetA1Sheet_SamplingPlanType), [LabSheet.SamplingPlanTypeEnum] (CSSPModels.LabSheet.html#CSSPModels_LabSheet_SamplingPlanType), [SamplingPlan.SamplingPlanTypeEnum] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SamplingPlanType), </para>
     /// </remarks>
     public enum SamplingPlanTypeEnum
     {
@@ -3301,6 +3319,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [MikeScenario.ScenarioStatusEnum] (CSSPModels.MikeScenario.html#CSSPModels_MikeScenario_ScenarioStatus), [VPScenario.ScenarioStatusEnum] (CSSPModels.VPScenario.html#CSSPModels_VPScenario_VPScenarioStatus), </para>
     /// </remarks>
     public enum ScenarioStatusEnum
     {
@@ -3392,6 +3411,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [SearchTagAndTerms.SearchTagEnum] (CSSPModels.SearchTagAndTerms.html#CSSPModels_SearchTagAndTerms_SearchTag), </para>
     /// </remarks>
     public enum SearchTagEnum
     {
@@ -3560,7 +3580,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.SecondaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.SecondaryTreatmentTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_SecondaryTreatmentType), </para>
     /// </remarks>
     public enum SecondaryTreatmentTypeEnum
     {
@@ -3603,6 +3623,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [UseOfSite.SiteTypeEnum] (CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), </para>
     /// </remarks>
     public enum SiteTypeEnum
     {
@@ -3696,6 +3717,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [ClimateDataValue.StorageDataTypeEnum] (CSSPModels.ClimateDataValue.html#CSSPModels_ClimateDataValue_StorageDataType), [HydrometricDataValue.StorageDataTypeEnum] (CSSPModels.HydrometricDataValue.html#CSSPModels_HydrometricDataValue_StorageDataType), [TideDataValue.StorageDataTypeEnum] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_StorageDataType), </para>
     /// </remarks>
     public enum StorageDataTypeEnum
     {
@@ -3736,7 +3758,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Address.StreetType] (CSSPModels.Address.html#CSSPModels_Address_StreetType), </para>
+    /// <para>**Used by CSSPModels:** [Address.StreetTypeEnum] (CSSPModels.Address.html#CSSPModels_Address_StreetType), </para>
     /// </remarks>
     public enum StreetTypeEnum
     {
@@ -3798,6 +3820,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [Tel.TelTypeEnum] (CSSPModels.Tel.html#CSSPModels_Tel_TelType), </para>
     /// </remarks>
     public enum TelTypeEnum
     {
@@ -3848,7 +3871,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.TertiaryTreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.TertiaryTreatmentTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TertiaryTreatmentType), </para>
     /// </remarks>
     public enum TertiaryTreatmentTypeEnum
     {
@@ -3898,6 +3921,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [TideDataValue.TideDataTypeEnum] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideDataType), </para>
     /// </remarks>
     public enum TideDataTypeEnum
     {
@@ -3934,7 +3958,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [MWQMRun.Tide_Start] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [MWQMRun.Tide_End] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [TideDataValue.TideStart] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideDataValue.TideEnd] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), </para>
+    /// <para>**Used by CSSPModels:** [MWQMRun.TideTextEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_Start), [MWQMRun.TideTextEnum] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Tide_End), [TideDataValue.TideTextEnum] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideStart), [TideDataValue.TideTextEnum] (CSSPModels.TideDataValue.html#CSSPModels_TideDataValue_TideEnd), </para>
     /// </remarks>
     public enum TideTextEnum
     {
@@ -3993,6 +4017,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [EmailDistributionListContactLanguage.TranslationStatusEnum] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_TranslationStatus), [EmailDistributionListLanguage.TranslationStatusEnum] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_TranslationStatus), [AppTaskLanguage.TranslationStatusEnum] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_TranslationStatus), [BoxModelLanguage.TranslationStatusEnum] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_TranslationStatus), [InfrastructureLanguage.TranslationStatusEnum] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_TranslationStatus), [MWQMRunLanguage.TranslationStatusEnum] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunComment), [MWQMRunLanguage.TranslationStatusEnum] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_TranslationStatusRunWeatherComment), [MWQMSampleLanguage.TranslationStatusEnum] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_TranslationStatus), [MWQMSubsectorLanguage.TranslationStatusEnum] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_TranslationStatus), [SpillLanguage.TranslationStatusEnum] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_TranslationStatus), [TVFileLanguage.TranslationStatusEnum] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_TranslationStatus), [TVItemLanguage.TranslationStatusEnum] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_TranslationStatus), [VPScenarioLanguage.TranslationStatusEnum] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_TranslationStatus), </para>
     /// </remarks>
     public enum TranslationStatusEnum
     {
@@ -4057,7 +4082,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
-    /// <para>**Used by CSSPModels:** [Infrastructure.TreatmentType] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), </para>
+    /// <para>**Used by CSSPModels:** [Infrastructure.TreatmentTypeEnum] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_TreatmentType), </para>
     /// </remarks>
     public enum TreatmentTypeEnum
     {
@@ -4215,6 +4240,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [TVItemTVAuth.TVAuthEnum] (CSSPModels.TVItemTVAuth.html#CSSPModels_TVItemTVAuth_TVAuth), [TVItemUserAuthorization.TVAuthEnum] (CSSPModels.TVItemUserAuthorization.html#CSSPModels_TVItemUserAuthorization_TVAuth), [TVTypeUserAuthorization.TVAuthEnum] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVAuth), </para>
     /// </remarks>
     public enum TVAuthEnum
     {
@@ -4331,6 +4357,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [TVLocation.TVTypeEnum] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [TVLocation.TVTypeEnum] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType), [ContactPreference.TVTypeEnum] (CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [DocTemplate.TVTypeEnum] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [MapInfo.TVTypeEnum] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [MikeBoundaryCondition.TVTypeEnum] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [TVFile.TVTypeEnum] (CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [TVItem.TVTypeEnum] (CSSPModels.TVItem.html#CSSPModels_TVItem_TVType), [TVItemLink.TVTypeEnum] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [TVItemLink.TVTypeEnum] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [TVItemStat.TVTypeEnum] (CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [TVTypeUserAuthorization.TVTypeEnum] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), </para>
     /// </remarks>
     public enum TVTypeEnum
     {
@@ -4653,6 +4680,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [DataPathOfTide.WebTideDataSetEnum] (CSSPModels.DataPathOfTide.html#CSSPModels_DataPathOfTide_WebTideDataSet), [MikeBoundaryCondition.WebTideDataSetEnum] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_WebTideDataSet), </para>
     /// </remarks>
     public enum WebTideDataSetEnum
     {

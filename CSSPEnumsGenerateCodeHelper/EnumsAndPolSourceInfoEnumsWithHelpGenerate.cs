@@ -33,36 +33,42 @@ namespace CSSPEnumsGenerateCodeHelper
                 return;
             }
 
+            StatusPermanentEvent(new StatusEventArgs("Reading [" + fiCSSPEnumsDLL.FullName + "] ..."));
             List<DLLTypeInfo> DLLTypeInfoCSSPEnumsList = new List<DLLTypeInfo>();
             if (FillDLLTypeInfoList(fiCSSPEnumsDLL, DLLTypeInfoCSSPEnumsList))
             {
                 ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPEnumsDLL.FullName + "]"));
                 return;
             }
+            StatusPermanentEvent(new StatusEventArgs("Loaded [" + fiCSSPEnumsDLL.FullName + "] ..."));
 
             if (!fiCSSPModelsDLL.Exists)
             {
                 ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPModelsDLL.FullName + "]"));
                 return;
             }
+            StatusPermanentEvent(new StatusEventArgs("Reading [" + fiCSSPModelsDLL.FullName + "] ..."));
             List<DLLTypeInfo> DLLTypeInfoCSSPModelsList = new List<DLLTypeInfo>();
             if (FillDLLTypeInfoList(fiCSSPModelsDLL, DLLTypeInfoCSSPModelsList))
             {
                 ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPModelsDLL.FullName + "]"));
                 return;
             }
+            StatusPermanentEvent(new StatusEventArgs("Loaded [" + fiCSSPModelsDLL.FullName + "] ..."));
 
             if (!fiCSSPServicesDLL.Exists)
             {
                 ErrorEvent(new ErrorEventArgs("File does not exist [" + fiCSSPServicesDLL.FullName + "]"));
                 return;
             }
+            StatusPermanentEvent(new StatusEventArgs("Reading [" + fiCSSPServicesDLL.FullName + "] ..."));
             List<DLLTypeInfo> DLLTypeInfoCSSPServicesList = new List<DLLTypeInfo>();
             if (FillDLLTypeInfoList(fiCSSPServicesDLL, DLLTypeInfoCSSPServicesList))
             {
                 ErrorEvent(new ErrorEventArgs("Could not read the file [" + fiCSSPServicesDLL.FullName + "]"));
                 return;
             }
+            StatusPermanentEvent(new StatusEventArgs("Loaded [" + fiCSSPServicesDLL.FullName + "] ..."));
 
             #region Top part Enums.cs
             sb.AppendLine(@"using System;");
@@ -181,17 +187,10 @@ namespace CSSPEnumsGenerateCodeHelper
 
                         foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                         {
-                            string PropTypeName = dllPropertyInfo.PropertyType.FullName;
-                            if (PropTypeName.StartsWith("System.Nullable"))
-                            {
-                                PropTypeName = PropTypeName.Substring(PropTypeName.IndexOf("[[") + 2);
-                                PropTypeName = PropTypeName.Substring(PropTypeName.IndexOf(".") + 1);
-                                PropTypeName = PropTypeName.Substring(0, PropTypeName.IndexOf(","));
-                            }
-                            if (PropTypeName == dllTypeInfoEnums.Type.Name)
+                            if (dllPropertyInfo.CSSPProp.PropType == dllTypeInfoEnums.Type.Name)
                             {
                                 string TypeNameModels = dllTypeInfoModels.Name;
-                                sbModels.Append(@"[" + dllTypeInfoModels.Name + "." + dllPropertyInfo.Name + "] (CSSPModels." + dllTypeInfoModels.Name + @".html#CSSPModels_" + dllTypeInfoModels.Name + "_" + dllPropertyInfo.Name + "), ");
+                                sbModels.Append(@"[" + dllTypeInfoModels.Name + "." + dllPropertyInfo.CSSPProp.PropType + "] (CSSPModels." + dllTypeInfoModels.Name + @".html#CSSPModels_" + dllTypeInfoModels.Name + "_" + dllPropertyInfo.CSSPProp.PropName + "), ");
                             }
                         }
                     }
@@ -293,13 +292,15 @@ namespace CSSPEnumsGenerateCodeHelper
             {
                 sw.Write(sb.ToString());
             }
-            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ...\r\n"));
+            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
+            StatusPermanentEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
 
             using (StreamWriter sw = fiPol.CreateText())
             {
                 sw.Write(sbPol.ToString());
             }
-            StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ...\r\n"));
+            StatusTempEvent(new StatusEventArgs("Created [" + fiPol.FullName + "] ..."));
+            StatusPermanentEvent(new StatusEventArgs("Created [" + fiPol.FullName + "] ..."));
         }
     }
 }

@@ -345,6 +345,7 @@ namespace CSSPEnums
     ///     }
     /// </code>
     /// 
+    /// <para>**Used by CSSPModels:** [PolSourceObsInfoChild.PolSourceObsInfoEnum] (CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfo), [PolSourceObsInfoChild.PolSourceObsInfoEnum] (CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStart), </para>
     /// </remarks>
     public enum PolSourceObsInfoEnum
     {

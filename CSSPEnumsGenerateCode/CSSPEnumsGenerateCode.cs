@@ -82,6 +82,7 @@ namespace CSSPEnumsGenerateCode
 
             enumGenerateCodeHelper.EnumsTestGenerate();
 
+            lblStatus.Text = "Done...";
             richTextBoxStatus.AppendText("Done...\r\n");
         }
         private void GenerateEnumsAndPolSourceInfoEnumsWithHelpCode()
@@ -99,8 +100,9 @@ namespace CSSPEnumsGenerateCode
 
             richTextBoxStatus.AppendText("Done...\r\n\r\n");
 
-            richTextBoxStatus.AppendText("You can now replace the Enums.cs content with the content of EnumsWithHelp.cs file ...\r\n");
-            richTextBoxStatus.AppendText("You can now replace the PolSourceObsInfoEnumGenerated.cs content with the content of PolSourceObsInfoEnumGeneratedWithHelp.cs file ...\r\n");
+            richTextBoxStatus.AppendText("In order to compile the CSSPEnums project with documentation\r\n");
+            richTextBoxStatus.AppendText("You need to [EXCLUDE] Enums.cs and PolSourceObsInfoEnumGenerated.cs from the CSSPEnums project\r\n");
+            richTextBoxStatus.AppendText("and [INCLUDE] EnumsWithHelp.cs and PolSourceObsInfoEnumGeneratedWithHelp.cs from the CSSPEnums project\r\n");
         }
         private void StartUp()
         {

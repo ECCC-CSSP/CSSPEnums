@@ -328,6 +328,7 @@ namespace CSSPEnumsGenerateCodeHelper
                 sw.Write(sb.ToString());
             }
             StatusTempEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
+            StatusPermanentEvent(new StatusEventArgs("Created [" + fi.FullName + "] ..."));
         }
     }
 }
