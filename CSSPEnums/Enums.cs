@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * This document is manually edited. 
+ * It's the only document in CSSPEnums.proj the coder actually edit. 
+ * Every other document is automatically generated.
+ * 
+ * When changing the document it should be re-included in the project
+ * while excluding EnumsWithHelp.cs before recompiling.
+ * 
+ * Last edited by Charles LeBlanc. 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

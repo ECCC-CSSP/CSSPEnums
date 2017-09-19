@@ -1,17 +1,22 @@
+/*
+ * This document is manually edited.
+ * 
+ * All testing function are generated under documents
+ * EnumsTestGenerated.cs and EnumsPolSourceObsInfoEnumTestGenerated.cs
+ * 
+ * Last edited by Charles LeBlanc. 
+ * 
+ */
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Globalization;
 using System.Threading;
 
 namespace CSSPEnums.Tests
 {
-    /// <summary>
-    /// Summary description for EnumsTest
-    /// </summary>
     [TestClass]
-    public partial class EnumsTest : SetupData
+    public partial class EnumsTest
     {
         #region Variables
-        private SetupData setupData;
         private Enums enums { get; set; }
         #endregion Variables
 
@@ -22,7 +27,6 @@ namespace CSSPEnums.Tests
         #region Constructors
         public EnumsTest()
         {
-            setupData = new SetupData();
         }
         #endregion Constructors
 
