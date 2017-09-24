@@ -2487,4 +2487,25 @@
   <data name="AddContactType" xml:space="preserve">
     <value>AddContactType</value>
   </data>
+  <data name="AnalysisReportExportCommandEnumExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="AnalysisReportExportCommandEnumReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="AppTaskCommandEnumExportAnalysisToExcel" xml:space="preserve">
+    <value>Export analysis to Excel</value>
+  </data>
+  <data name="AppTaskCommandEnumExportEmailDistributionLists" xml:space="preserve">
+    <value>Export email distribution lists</value>
+  </data>
+  <data name="FilePurposeEnumAnalysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="TVTypeEnumEmailDistributionList" xml:space="preserve">
+    <value>Email distribution list</value>
+  </data>
+  <data name="TVTypeEnumRainExceedance" xml:space="preserve">
+    <value>Rain exceedance</value>
+  </data>
 </root>

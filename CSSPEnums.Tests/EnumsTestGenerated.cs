@@ -271,6 +271,41 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_GetEnumText_AnalysisReportExportCommandEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(AnalysisReportExportCommandEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(AnalysisReportExportCommandEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AnalysisReportExportCommandEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(AnalysisReportExportCommandEnum), i);
+        
+                    switch ((AnalysisReportExportCommandEnum)i)
+                    {
+                        case AnalysisReportExportCommandEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case AnalysisReportExportCommandEnum.Report:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisReportExportCommandEnumReport, retStr);
+                            break;
+                        case AnalysisReportExportCommandEnum.Excel:
+                            Assert.AreEqual(CSSPEnumsRes.AnalysisReportExportCommandEnumExcel, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_GetEnumText_AnalyzeMethodEnum_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -404,6 +439,12 @@ namespace CSSPEnums.Tests
                             break;
                         case AppTaskCommandEnum.CreateWebTideDataWLAtFirstNode:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumCreateWebTideDataWLAtFirstNode, retStr);
+                            break;
+                        case AppTaskCommandEnum.ExportEmailDistributionLists:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumExportEmailDistributionLists, retStr);
+                            break;
+                        case AppTaskCommandEnum.ExportAnalysisToExcel:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumExportAnalysisToExcel, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -1015,6 +1056,9 @@ namespace CSSPEnums.Tests
                             break;
                         case FilePurposeEnum.Map:
                             Assert.AreEqual(CSSPEnumsRes.FilePurposeEnumMap, retStr);
+                            break;
+                        case FilePurposeEnum.Analysis:
+                            Assert.AreEqual(CSSPEnumsRes.FilePurposeEnumAnalysis, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -3926,6 +3970,12 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.MikeSourceNotIncluded:
                             Assert.AreEqual(CSSPEnumsRes.TVTypeEnumMikeSourceNotIncluded, retStr);
                             break;
+                        case TVTypeEnum.RainExceedance:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumRainExceedance, retStr);
+                            break;
+                        case TVTypeEnum.EmailDistributionList:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumEmailDistributionList, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4198,6 +4248,34 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_AnalysisReportExportCommandOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(AnalysisReportExportCommandEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(AnalysisReportExportCommandEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(AnalysisReportExportCommandEnum), i);
+
+                    switch ((AnalysisReportExportCommandEnum)i)
+                    {
+                        case AnalysisReportExportCommandEnum.Error:
+                        case AnalysisReportExportCommandEnum.Report:
+                        case AnalysisReportExportCommandEnum.Excel:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "AnalysisReportExportCommandEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_AnalyzeMethodOK_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -4268,6 +4346,8 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.CreateDocumentFromTemplate:
                         case AppTaskCommandEnum.GetClimateSitesDataForRunsOfYear:
                         case AppTaskCommandEnum.CreateWebTideDataWLAtFirstNode:
+                        case AppTaskCommandEnum.ExportEmailDistributionLists:
+                        case AppTaskCommandEnum.ExportAnalysisToExcel:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -4684,6 +4764,7 @@ namespace CSSPEnums.Tests
                         case FilePurposeEnum.GeneratedFCForm:
                         case FilePurposeEnum.Template:
                         case FilePurposeEnum.Map:
+                        case FilePurposeEnum.Analysis:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -6408,6 +6489,8 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.MikeSourceIsRiver:
                         case TVTypeEnum.MikeSourceIncluded:
                         case TVTypeEnum.MikeSourceNotIncluded:
+                        case TVTypeEnum.RainExceedance:
+                        case TVTypeEnum.EmailDistributionList:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -6961,6 +7044,33 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AnalysisCalculationTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_AnalysisReportExportCommandEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(AnalysisReportExportCommandEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(AnalysisReportExportCommandEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(AnalysisReportExportCommandEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();

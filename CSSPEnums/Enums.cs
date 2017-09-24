@@ -94,6 +94,12 @@ namespace CSSPEnums
         WetDryAll = 6,
         DryWetAll = 7,
     }
+    public enum AnalysisReportExportCommandEnum
+    {
+        Error = 0,
+        Report = 1,
+        Excel = 2,
+    }
     public enum AnalyzeMethodEnum
     {
         Error = 0,
@@ -129,6 +135,8 @@ namespace CSSPEnums
         CreateDocumentFromTemplate = 14,
         GetClimateSitesDataForRunsOfYear = 15,
         CreateWebTideDataWLAtFirstNode = 16,
+        ExportEmailDistributionLists = 17,
+        ExportAnalysisToExcel = 18,
     }
     public enum AppTaskStatusEnum
     {
@@ -259,6 +267,7 @@ namespace CSSPEnums
         GeneratedFCForm = 10,
         Template = 11,
         Map = 12,
+        Analysis = 13,
     }
     public enum FileStatusEnum
     {
@@ -432,6 +441,7 @@ namespace CSSPEnums
         Text = 3,
         Initial = 4,
     }
+    //public enum PolSourceObsInfoEnum is under file EnumsPolSourceInfo.cs
     public enum PreliminaryTreatmentTypeEnum
     {
         Error = 0,
@@ -967,21 +977,23 @@ namespace CSSPEnums
         MikeSourceIsRiver = 72,
         MikeSourceIncluded = 73,
         MikeSourceNotIncluded = 74,
+        RainExceedance = 75,
+        EmailDistributionList = 76
     }
     public enum WebTideDataSetEnum
     {
         Error = 0,
-        arctic9 = 1,
-        brador = 2,
-        HRglobal = 3,
-        h3o = 4,
-        hudson = 5,
-        ne_pac4 = 6,
-        nwatl = 7,
-        QuatsinoModel14 = 8,
-        sshelf = 9,
-        flood = 10,
-        vigf8 = 11,
+        arctic9 = 1,            // Arctic
+        brador = 2,             // Brador
+        HRglobal = 3,           // Global (LEGOS France)
+        h3o = 4,                // Halifax Harbour
+        hudson = 5,             // Hudson Bay (IML) 
+        ne_pac4 = 6,            // North East Pacific (IOS)
+        nwatl = 7,              // North West Atlantic 
+        QuatsinoModel14 = 8,    // Quatsino Sound
+        sshelf = 9,             // Scotian Fundy Maine
+        flood = 10,             // Upper Bay of Fundy
+        vigf8 = 11,             // Vancouver Island (Mike Foreman)
     }
 
     public class EnumIDAndText

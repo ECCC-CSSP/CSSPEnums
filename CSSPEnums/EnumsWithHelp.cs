@@ -336,6 +336,38 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMAnalysisReportParameter] (CSSPModels.MWQMAnalysisReportParameter.html#CSSPModels_MWQMAnalysisReportParameter_Command)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMAnalysisReportParameterService] (CSSPServices.MWQMAnalysisReportParameterService.html)</para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum AnalysisReportExportCommandEnum
+    ///     {
+    ///         Error = 0,
+    ///         Report = 1,
+    ///         Excel = 2,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum AnalysisReportExportCommandEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Report] ---- fr [Rapport]
+        /// </summary>
+        Report = 1,
+        /// <summary>
+        /// 2 -- en [Excel] ---- fr [Excel]
+        /// </summary>
+        Excel = 2,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
@@ -443,6 +475,8 @@ namespace CSSPEnums
     ///         CreateDocumentFromTemplate = 14,
     ///         GetClimateSitesDataForRunsOfYear = 15,
     ///         CreateWebTideDataWLAtFirstNode = 16,
+    ///         ExportEmailDistributionLists = 17,
+    ///         ExportAnalysisToExcel = 18,
     ///     }
     /// </code>
     /// </remarks>
@@ -516,6 +550,14 @@ namespace CSSPEnums
         /// 16 -- en [Create WebTide data (water level) at first node] ---- fr [Creation de données WebTide (niveau d'eau) au premier noeud]
         /// </summary>
         CreateWebTideDataWLAtFirstNode = 16,
+        /// <summary>
+        /// 17 -- en [Export email distribution lists] ---- fr [Exporter liste de distribution]
+        /// </summary>
+        ExportEmailDistributionLists = 17,
+        /// <summary>
+        /// 18 -- en [Export analysis to Excel] ---- fr [Exporter l'analyse en format Excel]
+        /// </summary>
+        ExportAnalysisToExcel = 18,
     }
     /// <summary>
     /// > [!NOTE]
@@ -1131,6 +1173,7 @@ namespace CSSPEnums
     ///         GeneratedFCForm = 10,
     ///         Template = 11,
     ///         Map = 12,
+    ///         Analysis = 13,
     ///     }
     /// </code>
     /// </remarks>
@@ -1188,6 +1231,10 @@ namespace CSSPEnums
         /// 12 -- en [Map] ---- fr [Map (fr)]
         /// </summary>
         Map = 12,
+        /// <summary>
+        /// 13 -- en [Analysis] ---- fr [Analyses]
+        /// </summary>
+        Analysis = 13,
     }
     /// <summary>
     /// > [!NOTE]
@@ -4489,6 +4536,8 @@ namespace CSSPEnums
     ///         MikeSourceIsRiver = 72,
     ///         MikeSourceIncluded = 73,
     ///         MikeSourceNotIncluded = 74,
+    ///         RainExceedance = 75,
+    ///         EmailDistributionList = 76,
     ///     }
     /// </code>
     /// </remarks>
@@ -4790,6 +4839,14 @@ namespace CSSPEnums
         /// 74 -- en [Mike source not included] ---- fr [Source de pollution MIKE non inclus]
         /// </summary>
         MikeSourceNotIncluded = 74,
+        /// <summary>
+        /// 75 -- en [Rain exceedance] ---- fr [Exceedance de pluie]
+        /// </summary>
+        RainExceedance = 75,
+        /// <summary>
+        /// 76 -- en [Email distribution list] ---- fr [Liste de distribution des courriels]
+        /// </summary>
+        EmailDistributionList = 76,
     }
     /// <summary>
     /// > [!NOTE]

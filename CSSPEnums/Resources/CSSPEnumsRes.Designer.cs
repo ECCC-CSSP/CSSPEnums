@@ -358,6 +358,24 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Excel.
+        /// </summary>
+        public static string AnalysisReportExportCommandEnumExcel {
+            get {
+                return ResourceManager.GetString("AnalysisReportExportCommandEnumExcel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report.
+        /// </summary>
+        public static string AnalysisReportExportCommandEnumReport {
+            get {
+                return ResourceManager.GetString("AnalysisReportExportCommandEnumReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AnalyzeMethod.
         /// </summary>
         public static string AnalyzeMethod {
@@ -516,6 +534,24 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumCreateWebTideDataWLAtFirstNode {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumCreateWebTideDataWLAtFirstNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export analysis to Excel.
+        /// </summary>
+        public static string AppTaskCommandEnumExportAnalysisToExcel {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumExportAnalysisToExcel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export email distribution lists.
+        /// </summary>
+        public static string AppTaskCommandEnumExportEmailDistributionLists {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumExportEmailDistributionLists", resourceCulture);
             }
         }
         
@@ -1723,6 +1759,15 @@ namespace CSSPEnums.Resources {
         public static string FilePurpose {
             get {
                 return ResourceManager.GetString("FilePurpose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Analysis.
+        /// </summary>
+        public static string FilePurposeEnumAnalysis {
+            get {
+                return ResourceManager.GetString("FilePurposeEnumAnalysis", resourceCulture);
             }
         }
         
@@ -6479,6 +6524,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email distribution list.
+        /// </summary>
+        public static string TVTypeEnumEmailDistributionList {
+            get {
+                return ResourceManager.GetString("TVTypeEnumEmailDistributionList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed.
         /// </summary>
         public static string TVTypeEnumFailed {
@@ -6853,6 +6907,15 @@ namespace CSSPEnums.Resources {
         public static string TVTypeEnumProvince {
             get {
                 return ResourceManager.GetString("TVTypeEnumProvince", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rain exceedance.
+        /// </summary>
+        public static string TVTypeEnumRainExceedance {
+            get {
+                return ResourceManager.GetString("TVTypeEnumRainExceedance", resourceCulture);
             }
         }
         
