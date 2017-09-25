@@ -965,6 +965,79 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_GetEnumText_EntityQueryTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryTypeEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(EntityQueryTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryTypeEnum), i);
+        
+                    switch ((EntityQueryTypeEnum)i)
+                    {
+                        case EntityQueryTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case EntityQueryTypeEnum.AsNoTracking:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryTypeEnumAsNoTracking, retStr);
+                            break;
+                        case EntityQueryTypeEnum.WithTracking:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryTypeEnumWithTracking, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_GetEnumText_EntityQueryDetailTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryDetailTypeEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryDetailTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(EntityQueryDetailTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(EntityQueryDetailTypeEnum), i);
+        
+                    switch ((EntityQueryDetailTypeEnum)i)
+                    {
+                        case EntityQueryDetailTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case EntityQueryDetailTypeEnum.EntityOnly:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityOnly, retStr);
+                            break;
+                        case EntityQueryDetailTypeEnum.EntityIncludingNotMapped:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityIncludingNotMapped, retStr);
+                            break;
+                        case EntityQueryDetailTypeEnum.EntityForReport:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityForReport, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_GetEnumText_FacilityTypeEnum_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -4708,6 +4781,63 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_EntityQueryTypeOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(EntityQueryTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(EntityQueryTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(EntityQueryTypeEnum), i);
+
+                    switch ((EntityQueryTypeEnum)i)
+                    {
+                        case EntityQueryTypeEnum.Error:
+                        case EntityQueryTypeEnum.AsNoTracking:
+                        case EntityQueryTypeEnum.WithTracking:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "EntityQueryTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_EntityQueryDetailTypeOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(EntityQueryDetailTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(EntityQueryDetailTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(EntityQueryDetailTypeEnum), i);
+
+                    switch ((EntityQueryDetailTypeEnum)i)
+                    {
+                        case EntityQueryDetailTypeEnum.Error:
+                        case EntityQueryDetailTypeEnum.EntityOnly:
+                        case EntityQueryDetailTypeEnum.EntityIncludingNotMapped:
+                        case EntityQueryDetailTypeEnum.EntityForReport:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "EntityQueryDetailTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_FacilityTypeOK_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -7422,6 +7552,60 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(EmailTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_EntityQueryTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(EntityQueryTypeEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(EntityQueryTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(EntityQueryTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_EntityQueryDetailTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(EntityQueryDetailTypeEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(EntityQueryDetailTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(EntityQueryDetailTypeEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();

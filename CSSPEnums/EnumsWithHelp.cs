@@ -1120,6 +1120,71 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum EntityQueryTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         AsNoTracking = 1,
+    ///         WithTracking = 2,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum EntityQueryTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [As no tracking] ---- fr [As no tracking (fr)]
+        /// </summary>
+        AsNoTracking = 1,
+        /// <summary>
+        /// 2 -- en [With tracking] ---- fr [With tracking (fr)]
+        /// </summary>
+        WithTracking = 2,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum EntityQueryDetailTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         EntityOnly = 1,
+    ///         EntityIncludingNotMapped = 2,
+    ///         EntityForReport = 3,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum EntityQueryDetailTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Entity only] ---- fr [Entity only (fr)]
+        /// </summary>
+        EntityOnly = 1,
+        /// <summary>
+        /// 2 -- en [Entity including not mapped] ---- fr [Entity including not mapped (fr)]
+        /// </summary>
+        EntityIncludingNotMapped = 2,
+        /// <summary>
+        /// 3 -- en [Entity for report] ---- fr [Entity for report (fr)]
+        /// </summary>
+        EntityForReport = 3,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [Infrastructure] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_FacilityType)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureService] (CSSPServices.InfrastructureService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>

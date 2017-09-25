@@ -3787,4 +3787,19 @@
   <data name="TVTypeEnumRainExceedance" xml:space="preserve">
     <value>Exceedance de pluie</value>
   </data>
+  <data name="EntityQueryDetailTypeEnumEntityForReport" xml:space="preserve">
+    <value>Entity for report (fr)</value>
+  </data>
+  <data name="EntityQueryDetailTypeEnumEntityIncludingNotMapped" xml:space="preserve">
+    <value>Entity including not mapped (fr)</value>
+  </data>
+  <data name="EntityQueryDetailTypeEnumEntityOnly" xml:space="preserve">
+    <value>Entity only (fr)</value>
+  </data>
+  <data name="EntityQueryTypeEnumAsNoTracking" xml:space="preserve">
+    <value>As no tracking (fr)</value>
+  </data>
+  <data name="EntityQueryTypeEnumWithTracking" xml:space="preserve">
+    <value>With tracking (fr)</value>
+  </data>
 </root>

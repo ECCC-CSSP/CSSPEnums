@@ -19,6 +19,7 @@ using System.Net;
 
 namespace CSSPEnums
 {
+
     public partial class Enums
     {
         #region Variables
@@ -245,6 +246,19 @@ namespace CSSPEnums
         Work = 2,
         Personal2 = 3,
         Work2 = 4,
+    }
+    public enum EntityQueryTypeEnum
+    {
+        Error = 0,
+        AsNoTracking = 1,
+        WithTracking = 2,
+    }
+    public enum EntityQueryDetailTypeEnum
+    {
+        Error = 0,
+        EntityOnly = 1,
+        EntityIncludingNotMapped = 2, 
+        EntityForReport = 3,
     }
     public enum FacilityTypeEnum
     {
@@ -998,7 +1012,7 @@ namespace CSSPEnums
 
     public class EnumIDAndText
     {
-        public int EnumID { get; set; }
+        public int? EnumID { get; set; }
         public string EnumText { get; set; }
     }
 
