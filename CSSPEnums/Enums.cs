@@ -257,8 +257,8 @@ namespace CSSPEnums
     {
         Error = 0,
         EntityOnly = 1,
-        EntityIncludingNotMapped = 2, 
-        EntityForReport = 3,
+        EntityWeb = 2, 
+        EntityReport = 3,
     }
     public enum FacilityTypeEnum
     {

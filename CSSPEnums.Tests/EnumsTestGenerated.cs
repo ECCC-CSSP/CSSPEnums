@@ -1024,11 +1024,11 @@ namespace CSSPEnums.Tests
                         case EntityQueryDetailTypeEnum.EntityOnly:
                             Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityOnly, retStr);
                             break;
-                        case EntityQueryDetailTypeEnum.EntityIncludingNotMapped:
-                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityIncludingNotMapped, retStr);
+                        case EntityQueryDetailTypeEnum.EntityWeb:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityWeb, retStr);
                             break;
-                        case EntityQueryDetailTypeEnum.EntityForReport:
-                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityForReport, retStr);
+                        case EntityQueryDetailTypeEnum.EntityReport:
+                            Assert.AreEqual(CSSPEnumsRes.EntityQueryDetailTypeEnumEntityReport, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -4826,8 +4826,8 @@ namespace CSSPEnums.Tests
                     {
                         case EntityQueryDetailTypeEnum.Error:
                         case EntityQueryDetailTypeEnum.EntityOnly:
-                        case EntityQueryDetailTypeEnum.EntityIncludingNotMapped:
-                        case EntityQueryDetailTypeEnum.EntityForReport:
+                        case EntityQueryDetailTypeEnum.EntityWeb:
+                        case EntityQueryDetailTypeEnum.EntityReport:
                             Assert.AreEqual("", retStr);
                             break;
                         default:

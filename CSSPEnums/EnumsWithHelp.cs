@@ -1158,8 +1158,8 @@ namespace CSSPEnums
     ///     {
     ///         Error = 0,
     ///         EntityOnly = 1,
-    ///         EntityIncludingNotMapped = 2,
-    ///         EntityForReport = 3,
+    ///         EntityWeb = 2,
+    ///         EntityReport = 3,
     ///     }
     /// </code>
     /// </remarks>
@@ -1174,13 +1174,13 @@ namespace CSSPEnums
         /// </summary>
         EntityOnly = 1,
         /// <summary>
-        /// 2 -- en [Entity including not mapped] ---- fr [Entity including not mapped (fr)]
+        /// 2 -- en [Entity web] ---- fr [Entity web (fr)]
         /// </summary>
-        EntityIncludingNotMapped = 2,
+        EntityWeb = 2,
         /// <summary>
-        /// 3 -- en [Entity for report] ---- fr [Entity for report (fr)]
+        /// 3 -- en [EntityReport] ---- fr [EntityReport (fr)]
         /// </summary>
-        EntityForReport = 3,
+        EntityReport = 3,
     }
     /// <summary>
     /// > [!NOTE]

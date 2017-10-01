@@ -1367,29 +1367,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entity for report.
-        /// </summary>
-        public static string EntityQueryDetailTypeEnumEntityForReport {
-            get {
-                return ResourceManager.GetString("EntityQueryDetailTypeEnumEntityForReport", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Entity including not mapped.
-        /// </summary>
-        public static string EntityQueryDetailTypeEnumEntityIncludingNotMapped {
-            get {
-                return ResourceManager.GetString("EntityQueryDetailTypeEnumEntityIncludingNotMapped", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Entity only.
         /// </summary>
         public static string EntityQueryDetailTypeEnumEntityOnly {
             get {
                 return ResourceManager.GetString("EntityQueryDetailTypeEnumEntityOnly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EntityReport.
+        /// </summary>
+        public static string EntityQueryDetailTypeEnumEntityReport {
+            get {
+                return ResourceManager.GetString("EntityQueryDetailTypeEnumEntityReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entity web.
+        /// </summary>
+        public static string EntityQueryDetailTypeEnumEntityWeb {
+            get {
+                return ResourceManager.GetString("EntityQueryDetailTypeEnumEntityWeb", resourceCulture);
             }
         }
         

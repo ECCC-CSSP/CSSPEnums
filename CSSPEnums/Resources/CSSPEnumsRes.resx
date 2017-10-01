@@ -2508,12 +2508,6 @@
   <data name="TVTypeEnumRainExceedance" xml:space="preserve">
     <value>Rain exceedance</value>
   </data>
-  <data name="EntityQueryDetailTypeEnumEntityForReport" xml:space="preserve">
-    <value>Entity for report</value>
-  </data>
-  <data name="EntityQueryDetailTypeEnumEntityIncludingNotMapped" xml:space="preserve">
-    <value>Entity including not mapped</value>
-  </data>
   <data name="EntityQueryDetailTypeEnumEntityOnly" xml:space="preserve">
     <value>Entity only</value>
   </data>
@@ -2522,5 +2516,11 @@
   </data>
   <data name="EntityQueryTypeEnumWithTracking" xml:space="preserve">
     <value>With tracking</value>
+  </data>
+  <data name="EntityQueryDetailTypeEnumEntityReport" xml:space="preserve">
+    <value>EntityReport</value>
+  </data>
+  <data name="EntityQueryDetailTypeEnumEntityWeb" xml:space="preserve">
+    <value>Entity web</value>
   </data>
 </root>

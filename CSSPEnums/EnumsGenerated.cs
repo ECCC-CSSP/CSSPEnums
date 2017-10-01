@@ -885,10 +885,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.Empty;
                 case EntityQueryDetailTypeEnum.EntityOnly:
                     return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityOnly;
-                case EntityQueryDetailTypeEnum.EntityIncludingNotMapped:
-                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityIncludingNotMapped;
-                case EntityQueryDetailTypeEnum.EntityForReport:
-                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityForReport;
+                case EntityQueryDetailTypeEnum.EntityWeb:
+                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityWeb;
+                case EntityQueryDetailTypeEnum.EntityReport:
+                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityReport;
                 default:
                     return CSSPEnumsRes.Empty;
             }
