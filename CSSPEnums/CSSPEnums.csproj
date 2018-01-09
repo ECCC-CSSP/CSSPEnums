@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
-    <Compile Include="PolSourceObsInfoEnumGeneratedWithHelp.cs" />
+    <Compile Include="PolSourceObsInfoEnumGenerated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CSSPEnumsRes.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -81,12 +81,13 @@
     <EmbeddedResource Include="Resources\PolSourceInfoEnumGeneratedRes.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>PolSourceInfoEnumGeneratedRes.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\PolSourceInfoEnumGeneratedRes.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>PolSourceInfoEnumGeneratedRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

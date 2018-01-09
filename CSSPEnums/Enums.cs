@@ -455,7 +455,7 @@ namespace CSSPEnums
         Text = 3,
         Initial = 4,
     }
-    //public enum PolSourceObsInfoEnum is under file EnumsPolSourceInfo.cs
+    //public enum PolSourceObsInfoEnum is under file EnumsPolSourceInfoGenerated.cs
     public enum PreliminaryTreatmentTypeEnum
     {
         Error = 0,

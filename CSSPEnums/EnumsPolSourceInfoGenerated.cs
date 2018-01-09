@@ -34,8 +34,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStart;
                 case PolSourceObsInfoEnum.DistanceFromShoreInMetersStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersStart;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersStart;
+                case PolSourceObsInfoEnum.ShorelineRiparionZoneStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparionZoneStart;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterStart;
                 case PolSourceObsInfoEnum.AreaSlopeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeStart;
                 case PolSourceObsInfoEnum.SourceTypeLandStart:
@@ -50,22 +52,64 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotStart;
                 case PolSourceObsInfoEnum.FarmStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmStart;
+                case PolSourceObsInfoEnum.AgrAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaSizeStart;
                 case PolSourceObsInfoEnum.ForestedStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedStart;
+                case PolSourceObsInfoEnum.ForAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaSizeStart;
                 case PolSourceObsInfoEnum.IndustryStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStart;
+                case PolSourceObsInfoEnum.INDCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberStart;
                 case PolSourceObsInfoEnum.TypeOfFishStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypeOfFishStart;
-                case PolSourceObsInfoEnum.MarineStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineStart;
+                case PolSourceObsInfoEnum.FishOperationStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishOperationStart;
+                case PolSourceObsInfoEnum.BuildingFishSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishSingleStart;
+                case PolSourceObsInfoEnum.BuildingFishStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishStart;
+                case PolSourceObsInfoEnum.FISCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberStart;
+                case PolSourceObsInfoEnum.MarineStructureStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineStructureStart;
+                case PolSourceObsInfoEnum.MarNumPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentStart;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleStart;
+                case PolSourceObsInfoEnum.SeaWallSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceStart;
                 case PolSourceObsInfoEnum.WharfStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfStart;
+                case PolSourceObsInfoEnum.VesselStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselStart;
+                case PolSourceObsInfoEnum.WharfTransportationSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfTransportationSingleStart;
                 case PolSourceObsInfoEnum.WharfTransportationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfTransportationStart;
+                case PolSourceObsInfoEnum.MarWhfWharfCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfWharfCountNumberStart;
+                case PolSourceObsInfoEnum.MarBldCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberStart;
+                case PolSourceObsInfoEnum.MARBuildingAllSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSingleStart;
+                case PolSourceObsInfoEnum.MARBuildingAllStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllStart;
                 case PolSourceObsInfoEnum.RecreationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationStart;
+                case PolSourceObsInfoEnum.RECCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECCountNumberStart;
+                case PolSourceObsInfoEnum.RecTypeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTypeStart;
                 case PolSourceObsInfoEnum.CampgroundFacilitiesStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundFacilitiesStart;
+                case PolSourceObsInfoEnum.RECFecalSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECFecalSourceStart;
+                case PolSourceObsInfoEnum.RecSewageStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageStart;
+                case PolSourceObsInfoEnum.RecNumPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentStart;
                 case PolSourceObsInfoEnum.SewageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageStart;
                 case PolSourceObsInfoEnum.SeeMunicipalityInfrastructureStart:
@@ -80,14 +124,24 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankStart;
                 case PolSourceObsInfoEnum.TankSizeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeStart;
+                case PolSourceObsInfoEnum.BuildingAgricultureSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAgricultureSingleStart;
                 case PolSourceObsInfoEnum.BuildingAgricultureStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAgricultureStart;
+                case PolSourceObsInfoEnum.AGRCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberStart;
+                case PolSourceObsInfoEnum.FORCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberStart;
+                case PolSourceObsInfoEnum.BuildingForestedSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSingleStart;
                 case PolSourceObsInfoEnum.BuildingForestedStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedStart;
+                case PolSourceObsInfoEnum.BuildingTypeSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingTypeSingleStart;
                 case PolSourceObsInfoEnum.BuildingTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingTypeStart;
-                case PolSourceObsInfoEnum.BuildingFishStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishStart;
+                case PolSourceObsInfoEnum.BuildingAllSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSingleStart;
                 case PolSourceObsInfoEnum.BuildingAllStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllStart;
                 case PolSourceObsInfoEnum.CountNumberStart:
@@ -100,14 +154,22 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceStart;
                 case PolSourceObsInfoEnum.LandfillTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeStart;
-                case PolSourceObsInfoEnum.NumberPresentStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentStart;
                 case PolSourceObsInfoEnum.TypesOfLivestockStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockStart;
                 case PolSourceObsInfoEnum.TypesOfWildlifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeStart;
+                case PolSourceObsInfoEnum.TypesLandBIrdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBIrdsStart;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsStart;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsStart;
                 case PolSourceObsInfoEnum.AnimalNumberPresentStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnimalNumberPresentStart;
+                case PolSourceObsInfoEnum.WasteSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceStart;
+                case PolSourceObsInfoEnum.FieldLocationStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationStart;
                 case PolSourceObsInfoEnum.PointSourceWildlifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceWildlifeStart;
                 case PolSourceObsInfoEnum.BoatStart:
@@ -116,6 +178,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityStart;
                 case PolSourceObsInfoEnum.SewageDumpingStationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationStart;
+                case PolSourceObsInfoEnum.PointCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberStart;
+                case PolSourceObsInfoEnum.PointSourceSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceSingleStart;
                 case PolSourceObsInfoEnum.PointSourceStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceStart;
                 case PolSourceObsInfoEnum.PointSourceManureStart:
@@ -132,36 +198,70 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchStart;
                 case PolSourceObsInfoEnum.DrainageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageStart;
-                case PolSourceObsInfoEnum.ManurePileSizeStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileSizeStart;
+                case PolSourceObsInfoEnum.ManureAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaSizeStart;
                 case PolSourceObsInfoEnum.SourceTypeWaterStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterStart;
+                case PolSourceObsInfoEnum.AquacultureSiteStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSiteStart;
+                case PolSourceObsInfoEnum.AnchorageMooringSiteStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSiteStart;
+                case PolSourceObsInfoEnum.DisposalAtSeaStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSeaStart;
+                case PolSourceObsInfoEnum.MarineParkStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineParkStart;
+                case PolSourceObsInfoEnum.OutcropStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropStart;
                 case PolSourceObsInfoEnum.WaterAquacultureStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureStart;
+                case PolSourceObsInfoEnum.WatAquaCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberStart;
+                case PolSourceObsInfoEnum.WaterAquacultureTypeSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureTypeSingleStart;
                 case PolSourceObsInfoEnum.WaterAquacultureTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureTypeStart;
+                case PolSourceObsInfoEnum.WatStructActiveStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActiveStart;
+                case PolSourceObsInfoEnum.WaterStructureSiteSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureSiteSingleStart;
                 case PolSourceObsInfoEnum.WaterStructureSiteStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureSiteStart;
+                case PolSourceObsInfoEnum.WatStructCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberStart;
                 case PolSourceObsInfoEnum.WaterDisposalAtSeaStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDisposalAtSeaStart;
                 case PolSourceObsInfoEnum.WaterSeaportStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSeaportStart;
                 case PolSourceObsInfoEnum.WaterSizeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeStart;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersStart;
                 case PolSourceObsInfoEnum.WaterTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeStart;
-                case PolSourceObsInfoEnum.WaterAreaSizeStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeStart;
                 case PolSourceObsInfoEnum.WaterFecalSourceStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceStart;
                 case PolSourceObsInfoEnum.WaterCountNumberStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberStart;
+                case PolSourceObsInfoEnum.HumanSewageStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageStart;
                 case PolSourceObsInfoEnum.WaterSewageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageStart;
                 case PolSourceObsInfoEnum.WaterNumberPresentStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentStart;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeStart;
+                case PolSourceObsInfoEnum.ShorelineBirdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsStart;
+                case PolSourceObsInfoEnum.SeaBirdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsStart;
+                case PolSourceObsInfoEnum.LargeMarineMammalStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStart;
+                case PolSourceObsInfoEnum.SmallMarineanimalStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalStart;
+                case PolSourceObsInfoEnum.MarineAnimalPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentStart;
+                case PolSourceObsInfoEnum.MarinePointSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePointSourceStart;
                 case PolSourceObsInfoEnum.ShorelineStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineStart;
                 case PolSourceObsInfoEnum.ShorelineIssueStart:
@@ -172,38 +272,76 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeShoreStart;
                 case PolSourceObsInfoEnum.StatusStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusStart;
-                case PolSourceObsInfoEnum.RiskAStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskAStart;
-                case PolSourceObsInfoEnum.RiskBStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskBStart;
-                case PolSourceObsInfoEnum.RiskCStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskCStart;
+                case PolSourceObsInfoEnum.RiskStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskStart;
+                case PolSourceObsInfoEnum.FollowupStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupStart;
                 case PolSourceObsInfoEnum.LandBased:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandBased;
                 case PolSourceObsInfoEnum.WaterBased:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterBased;
                 case PolSourceObsInfoEnum.DistanceFromShoreInMetersOnShore:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersOnShore;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersLessThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersLessThan100;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween100And250:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween100And250;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween250And500:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween250And500;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween500And1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween500And1000;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersMoreThan1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersMoreThan1000;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersLessThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersLessThan100;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween100And250:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween100And250;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween250And500:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween250And500;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween500And1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween500And1000;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersMoreThan1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersMoreThan1000;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters5;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters10;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters20;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters30;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters40;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters50;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters75;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters100;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters150;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters200;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters300;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters400;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters600;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters800;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters1000;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersGreaterThan1000;
+                case PolSourceObsInfoEnum.ShorelineRiparianZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZonePresent;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsent;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfo:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfo;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters5;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters10;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters20;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters30;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters50;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters100;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters200;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters400;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters800;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters1000;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMetersGreaterThan1000;
                 case PolSourceObsInfoEnum.AreaSlopeLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeLow;
                 case PolSourceObsInfoEnum.AreaSlopeMedium:
@@ -214,10 +352,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandAgriculture;
                 case PolSourceObsInfoEnum.SourceTypeLandForested:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandForested;
+                case PolSourceObsInfoEnum.SourceTypeLandFisheries:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandFisheries;
                 case PolSourceObsInfoEnum.SourceTypeLandIndustry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandIndustry;
-                case PolSourceObsInfoEnum.SourceTypeLandMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarine;
+                case PolSourceObsInfoEnum.SourceTypeLandMarineStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineStructure;
                 case PolSourceObsInfoEnum.SourceTypeLandRecreation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandRecreation;
                 case PolSourceObsInfoEnum.SourceTypeLandUrban:
@@ -250,8 +390,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotNotActive;
                 case PolSourceObsInfoEnum.FarmHobby:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmHobby;
-                case PolSourceObsInfoEnum.FarmCommerical:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommerical;
+                case PolSourceObsInfoEnum.FarmCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommercial;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals10;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals20;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals40;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals60;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals80;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals100;
+                case PolSourceObsInfoEnum.AgrAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersbetween101And250;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween251And500;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween501And1000;
+                case PolSourceObsInfoEnum.AgrAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersGreaterThan1000;
                 case PolSourceObsInfoEnum.ForestedLoggingActivity:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedLoggingActivity;
                 case PolSourceObsInfoEnum.ForestedClearcut:
@@ -260,30 +420,164 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedRegrowth;
                 case PolSourceObsInfoEnum.ForestedBuilding:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedBuilding;
+                case PolSourceObsInfoEnum.ForAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals10;
+                case PolSourceObsInfoEnum.ForAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals20;
+                case PolSourceObsInfoEnum.ForAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals40;
+                case PolSourceObsInfoEnum.ForAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals60;
+                case PolSourceObsInfoEnum.ForAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals80;
+                case PolSourceObsInfoEnum.ForAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals100;
+                case PolSourceObsInfoEnum.ForAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersbetween101And250;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween251And500;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween501And1000;
+                case PolSourceObsInfoEnum.ForAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersGreaterThan1000;
                 case PolSourceObsInfoEnum.IndustryAirport:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryAirport;
                 case PolSourceObsInfoEnum.IndustryLandfill:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryLandfill;
-                case PolSourceObsInfoEnum.IndustryFisheriesRelated:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryFisheriesRelated;
                 case PolSourceObsInfoEnum.IndustryWaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryWaste;
                 case PolSourceObsInfoEnum.IndustryStorageTank:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStorageTank;
-                case PolSourceObsInfoEnum.IndustryCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryCommercial;
-                case PolSourceObsInfoEnum.FishProcessingShellfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingShellfish;
-                case PolSourceObsInfoEnum.FishProcessingFinfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFinfish;
-                case PolSourceObsInfoEnum.FishProcessingFishMeal:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFishMeal;
+                case PolSourceObsInfoEnum.IndustryBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryBuildings;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.INDCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween10and25;
+                case PolSourceObsInfoEnum.INDCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween25and40;
+                case PolSourceObsInfoEnum.INDCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.FishShellfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishShellfish;
+                case PolSourceObsInfoEnum.FishFinfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFinfish;
+                case PolSourceObsInfoEnum.FishLobster:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishLobster;
+                case PolSourceObsInfoEnum.FishFishMeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFishMeal;
+                case PolSourceObsInfoEnum.FishProcessing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessing;
+                case PolSourceObsInfoEnum.FishHeldAlive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishHeldAlive;
+                case PolSourceObsInfoEnum.FishPackaging:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishPackaging;
+                case PolSourceObsInfoEnum.FishingRearing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishingRearing;
+                case PolSourceObsInfoEnum.BuildingFishHatcherySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcherySingle;
+                case PolSourceObsInfoEnum.BuildingFishTanksSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksSingle;
+                case PolSourceObsInfoEnum.BuildingFishPondsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPondsSingle;
+                case PolSourceObsInfoEnum.BuildingFishWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseSingle;
+                case PolSourceObsInfoEnum.BuildingFishCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialSingle;
+                case PolSourceObsInfoEnum.BuildingFishHatchery:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatchery;
+                case PolSourceObsInfoEnum.BuildingFishInsideTanks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishInsideTanks;
+                case PolSourceObsInfoEnum.BuildingFishPounds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPounds;
+                case PolSourceObsInfoEnum.BuildingFishWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouse;
+                case PolSourceObsInfoEnum.BuildingFishCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercial;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.FISCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween10and25;
+                case PolSourceObsInfoEnum.FISCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween25and40;
+                case PolSourceObsInfoEnum.FISCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberGreaterThan40;
                 case PolSourceObsInfoEnum.MarineWharf:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineWharf;
                 case PolSourceObsInfoEnum.MarineBuildings:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineBuildings;
                 case PolSourceObsInfoEnum.MarineSeaWall:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineSeaWall;
+                case PolSourceObsInfoEnum.MarNumPresentEqual1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual1;
+                case PolSourceObsInfoEnum.MarNumPresentEqual2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual2;
+                case PolSourceObsInfoEnum.MarNumPresentEqual3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual3;
+                case PolSourceObsInfoEnum.MarNumPresentEqual4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual4;
+                case PolSourceObsInfoEnum.MarNumPresentEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual5;
+                case PolSourceObsInfoEnum.MarNumPresentEqual6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual6;
+                case PolSourceObsInfoEnum.MarNumPresentEqual7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual7;
+                case PolSourceObsInfoEnum.MarNumPresentEqual8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual8;
+                case PolSourceObsInfoEnum.MarNumPresentEqual9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual9;
+                case PolSourceObsInfoEnum.MarNumPresentEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual10;
+                case PolSourceObsInfoEnum.MarNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween11and25;
+                case PolSourceObsInfoEnum.MarNumPresentBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween25and40;
+                case PolSourceObsInfoEnum.MarNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentGreaterThan40;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleCulvert;
+                case PolSourceObsInfoEnum.SeaWallSourceSinglePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSinglePipe;
+                case PolSourceObsInfoEnum.SeaWallSourceCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceCulvert;
+                case PolSourceObsInfoEnum.SeaWallSourcePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourcePipe;
                 case PolSourceObsInfoEnum.WharfCommercialTransportation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfCommercialTransportation;
                 case PolSourceObsInfoEnum.WharfFishing:
@@ -294,10 +588,132 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfMarina;
                 case PolSourceObsInfoEnum.WharfAbandoned:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfAbandoned;
+                case PolSourceObsInfoEnum.WharfBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfBuildings;
+                case PolSourceObsInfoEnum.VesselCountEquals1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals1;
+                case PolSourceObsInfoEnum.VesselCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals2;
+                case PolSourceObsInfoEnum.VesselCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals3;
+                case PolSourceObsInfoEnum.VesselCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals4;
+                case PolSourceObsInfoEnum.VesselCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals5;
+                case PolSourceObsInfoEnum.VesselCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals6;
+                case PolSourceObsInfoEnum.VesselCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals7;
+                case PolSourceObsInfoEnum.VesselCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals8;
+                case PolSourceObsInfoEnum.VesselCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals9;
+                case PolSourceObsInfoEnum.VesselCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals10;
+                case PolSourceObsInfoEnum.VesselCountBetwee11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetwee11and25;
+                case PolSourceObsInfoEnum.VesselCountBetween26and50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween26and50;
+                case PolSourceObsInfoEnum.VesselCountBetween51and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween51and100;
+                case PolSourceObsInfoEnum.VesselCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountGreaterThan100;
+                case PolSourceObsInfoEnum.TransportationCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalSingle;
+                case PolSourceObsInfoEnum.TransportationFerrySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerrySingle;
+                case PolSourceObsInfoEnum.TransportationPleasureCraftSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftSingle;
                 case PolSourceObsInfoEnum.TransportationCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommerical;
                 case PolSourceObsInfoEnum.TransportationFerry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerry;
+                case PolSourceObsInfoEnum.TransportationPleasureCraft:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraft;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.MarWhfCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.MarBldCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.MARBuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchSingle;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilitySingle;
+                case PolSourceObsInfoEnum.MARBuildingAllCottage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottage;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailer;
+                case PolSourceObsInfoEnum.MARBuildingAllResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidential;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouse;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotel;
+                case PolSourceObsInfoEnum.MARBuildingAllCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommerical;
+                case PolSourceObsInfoEnum.MARBuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchool;
+                case PolSourceObsInfoEnum.MARBuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurch;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacility;
                 case PolSourceObsInfoEnum.RecreationCampground:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCampground;
                 case PolSourceObsInfoEnum.RecreationDayUseArea:
@@ -310,24 +726,96 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCommunityCentre;
                 case PolSourceObsInfoEnum.RecreationGolfCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationGolfCourse;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox10;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox30;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox50;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox100;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox200;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox300;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox500;
+                case PolSourceObsInfoEnum.RecTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailer;
+                case PolSourceObsInfoEnum.RecTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTents;
+                case PolSourceObsInfoEnum.RecTrailersandTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailersandTents;
                 case PolSourceObsInfoEnum.CampgroundNoDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundNoDumpStn;
                 case PolSourceObsInfoEnum.CampgroundwithDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundwithDumpStn;
-                case PolSourceObsInfoEnum.SewageCesspool:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspool;
+                case PolSourceObsInfoEnum.RecFecalSourcePeople:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePeople;
+                case PolSourceObsInfoEnum.RecFecalSourceWildlife:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceWildlife;
+                case PolSourceObsInfoEnum.RecFecalSourceDrainagewater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceDrainagewater;
+                case PolSourceObsInfoEnum.RecFecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePets;
+                case PolSourceObsInfoEnum.RecSewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageCesspool;
+                case PolSourceObsInfoEnum.RecSewagePrivyOuthouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewagePrivyOuthouse;
+                case PolSourceObsInfoEnum.RecSewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageMunicipalSystem;
+                case PolSourceObsInfoEnum.RecSepticSystemDrainageField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemDrainageField;
+                case PolSourceObsInfoEnum.RecSepticSystemLagoon:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemLagoon;
+                case PolSourceObsInfoEnum.RecSepticSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemConstructedWetland;
+                case PolSourceObsInfoEnum.RecSepticFreeFlow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticFreeFlow;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo1;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo2;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo3;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo4;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo5;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo6;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo7;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo8;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo9;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo10;
+                case PolSourceObsInfoEnum.RecNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween11and25;
+                case PolSourceObsInfoEnum.RecNumPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween26and40;
+                case PolSourceObsInfoEnum.RecNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentGreaterThan40;
                 case PolSourceObsInfoEnum.SewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDirectDischarge;
+                case PolSourceObsInfoEnum.SewageFlowStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageFlowStructure;
                 case PolSourceObsInfoEnum.SewagePrivyOuthouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewagePrivyOuthouse;
-                case PolSourceObsInfoEnum.SewageMunicipalSystem:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystem;
-                case PolSourceObsInfoEnum.SepticSystemDrainageField:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemDrainageField;
+                case PolSourceObsInfoEnum.SepticSystemLeachateField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLeachateField;
                 case PolSourceObsInfoEnum.SepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemFullRention;
+                case PolSourceObsInfoEnum.SewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspool;
                 case PolSourceObsInfoEnum.SepticSystemLagoon:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLagoon;
+                case PolSourceObsInfoEnum.SewageSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageSystemConstructedWetland;
+                case PolSourceObsInfoEnum.SewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystem;
                 case PolSourceObsInfoEnum.SepticNoStructure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticNoStructure;
                 case PolSourceObsInfoEnum.UrbanStormWater:
@@ -352,10 +840,30 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankPropane;
                 case PolSourceObsInfoEnum.StorageTankChemicals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankChemicals;
-                case PolSourceObsInfoEnum.TankSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeSmall;
-                case PolSourceObsInfoEnum.TankSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeLarge;
+                case PolSourceObsInfoEnum.TankSize100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize100;
+                case PolSourceObsInfoEnum.TankSize500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize500;
+                case PolSourceObsInfoEnum.TankSize1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize1000;
+                case PolSourceObsInfoEnum.TankSize2000plus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize2000plus;
+                case PolSourceObsInfoEnum.BuildingResidentialFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmSingle;
+                case PolSourceObsInfoEnum.BuildingWarehouseFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingWarehouseFarmSingle;
+                case PolSourceObsInfoEnum.BuildingCommericalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmSingle;
+                case PolSourceObsInfoEnum.BuildingBarnFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmSingle;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmSingle;
+                case PolSourceObsInfoEnum.BuildingSchoolFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmSingle;
+                case PolSourceObsInfoEnum.BuildingChurchFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmSingle;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmSingle;
                 case PolSourceObsInfoEnum.BuildingResidentialFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarm;
                 case PolSourceObsInfoEnum.BuildingWarehouseFarm:
@@ -364,8 +872,84 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarm;
                 case PolSourceObsInfoEnum.BuildingBarnFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarm;
-                case PolSourceObsInfoEnum.BuildingRecreational:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreational;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarm;
+                case PolSourceObsInfoEnum.BuildingSchoolFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarm;
+                case PolSourceObsInfoEnum.BuildingChurchFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarm;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarm;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.AGRCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.FORCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.FORCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.FORCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.BuildingForestedResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialSingle;
+                case PolSourceObsInfoEnum.BuildingForestedWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedWarehouseSingle;
+                case PolSourceObsInfoEnum.BuildingForestedRecreationalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedRecreationalSingle;
+                case PolSourceObsInfoEnum.BuildingForestedTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedTrailerSingle;
+                case PolSourceObsInfoEnum.BuildingForestedFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactorySingle;
+                case PolSourceObsInfoEnum.BuildingForestedCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalSingle;
+                case PolSourceObsInfoEnum.BuildingForestedSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolSingle;
+                case PolSourceObsInfoEnum.BuildingForestedChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchSingle;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilitySingle;
                 case PolSourceObsInfoEnum.BuildingForestedResidential:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidential;
                 case PolSourceObsInfoEnum.BuildingForestedWarehouse:
@@ -378,20 +962,54 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactory;
                 case PolSourceObsInfoEnum.BuildingForestedCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommerical;
+                case PolSourceObsInfoEnum.BuildingForestedSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchool;
+                case PolSourceObsInfoEnum.BuildingForestedChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurch;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacility;
+                case PolSourceObsInfoEnum.BuildingindustryWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseSingle;
+                case PolSourceObsInfoEnum.BuildingIndustryFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactorySingle;
+                case PolSourceObsInfoEnum.BuildingIndustryCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalSingle;
+                case PolSourceObsInfoEnum.BuildingIndustrySchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolSingle;
+                case PolSourceObsInfoEnum.BuildingIndustryChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchSingle;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilitySingle;
                 case PolSourceObsInfoEnum.BuildingindustryWarehouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouse;
                 case PolSourceObsInfoEnum.BuildingIndustryFactory:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactory;
                 case PolSourceObsInfoEnum.BuildingIndustryCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommerical;
-                case PolSourceObsInfoEnum.BuildingFishHatchery:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatchery;
-                case PolSourceObsInfoEnum.BuildingFishTanks:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanks;
-                case PolSourceObsInfoEnum.BuildingFishWarehouse:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouse;
-                case PolSourceObsInfoEnum.BuildingFishCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercial;
+                case PolSourceObsInfoEnum.BuildingIndustrySchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchool;
+                case PolSourceObsInfoEnum.BuildingIndustryChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurch;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacility;
+                case PolSourceObsInfoEnum.BuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageSingle;
+                case PolSourceObsInfoEnum.BuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllTrailerSingle;
+                case PolSourceObsInfoEnum.BuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllResidentialSingle;
+                case PolSourceObsInfoEnum.BuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllWarehouseSingle;
+                case PolSourceObsInfoEnum.BuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelSingle;
+                case PolSourceObsInfoEnum.BuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalSingle;
+                case PolSourceObsInfoEnum.BuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolSingle;
+                case PolSourceObsInfoEnum.BuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchSingle;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilitySingle;
                 case PolSourceObsInfoEnum.BuildingAllCottage:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottage;
                 case PolSourceObsInfoEnum.BuildingAllTrailer:
@@ -404,104 +1022,262 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotel;
                 case PolSourceObsInfoEnum.BuildingAllCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommerical;
+                case PolSourceObsInfoEnum.BuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchool;
+                case PolSourceObsInfoEnum.BuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurch;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacility;
                 case PolSourceObsInfoEnum.CountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo1;
-                case PolSourceObsInfoEnum.CountNumberBetween1and5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween1and5;
-                case PolSourceObsInfoEnum.CountNumberbBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween5and10;
-                case PolSourceObsInfoEnum.CountNumberbBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween10and25;
-                case PolSourceObsInfoEnum.CountNumberbBetween25and40:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween25and40;
+                case PolSourceObsInfoEnum.CountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.CountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.CountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.CountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.CountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.CountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.CountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.CountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.CountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.CountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.CountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween26and40;
                 case PolSourceObsInfoEnum.CountNumberGreaterThan40:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberGreaterThan40;
-                case PolSourceObsInfoEnum.AreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeSmall;
-                case PolSourceObsInfoEnum.AreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeLarge;
-                case PolSourceObsInfoEnum.FecalSourceLivestock:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestock;
+                case PolSourceObsInfoEnum.AreaMetersEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals5;
+                case PolSourceObsInfoEnum.AreaMetersEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals10;
+                case PolSourceObsInfoEnum.AreaMetersEquals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals20;
+                case PolSourceObsInfoEnum.AreaMetersEquals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals40;
+                case PolSourceObsInfoEnum.AreaMetersEquals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals60;
+                case PolSourceObsInfoEnum.AreaMetersEquals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals80;
+                case PolSourceObsInfoEnum.AreaMetersEquals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals100;
+                case PolSourceObsInfoEnum.AreaMetersBetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween101And250;
+                case PolSourceObsInfoEnum.AreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween251And500;
+                case PolSourceObsInfoEnum.AreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween501And1000;
+                case PolSourceObsInfoEnum.AreaMetersgreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersgreaterThan1000;
                 case PolSourceObsInfoEnum.FecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePeople;
+                case PolSourceObsInfoEnum.FecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePets;
                 case PolSourceObsInfoEnum.FecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceWildlife;
-                case PolSourceObsInfoEnum.FecalSourceAbsent:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsent;
+                case PolSourceObsInfoEnum.FecalSourceLivestock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestock;
                 case PolSourceObsInfoEnum.FecalSourceDrainagewater:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceDrainagewater;
+                case PolSourceObsInfoEnum.FecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalProcessWater;
+                case PolSourceObsInfoEnum.FecalPotentialContamination:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalPotentialContamination;
+                case PolSourceObsInfoEnum.FecalSourceAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsent;
                 case PolSourceObsInfoEnum.MajorIssueSourceManurePile:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceManurePile;
                 case PolSourceObsInfoEnum.MajorIssueAbsent1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueAbsent1;
-                case PolSourceObsInfoEnum.MajorIssueRunoff:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueRunoff;
+                case PolSourceObsInfoEnum.MajorIssueCollectedRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueCollectedRunoff;
+                case PolSourceObsInfoEnum.MajorIssueSurfaceRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSurfaceRunoff;
                 case PolSourceObsInfoEnum.LandfillTypeResidental:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeResidental;
                 case PolSourceObsInfoEnum.LandfillTypeIndustrial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeIndustrial;
                 case PolSourceObsInfoEnum.LandfillTypeWoodwaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeWoodwaste;
-                case PolSourceObsInfoEnum.NumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentLessThan5;
-                case PolSourceObsInfoEnum.NumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween5and10;
-                case PolSourceObsInfoEnum.NumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween10and25;
-                case PolSourceObsInfoEnum.NumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentGreaterThan25;
-                case PolSourceObsInfoEnum.TypesEqualLargeDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeDomestic;
-                case PolSourceObsInfoEnum.TypesEqualSmallDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallDomestic;
-                case PolSourceObsInfoEnum.TypesEqualDomesticBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticBirds;
+                case PolSourceObsInfoEnum.TypesEqualHorses:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualHorses;
+                case PolSourceObsInfoEnum.TypesEqualCows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualCows;
+                case PolSourceObsInfoEnum.TypesEqualSheep:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSheep;
+                case PolSourceObsInfoEnum.TypesEqualPigs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualPigs;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureLarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureLarge;
+                case PolSourceObsInfoEnum.TypesEqualChickens:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualChickens;
+                case PolSourceObsInfoEnum.TypesEqualTurkeys:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualTurkeys;
+                case PolSourceObsInfoEnum.TypesEqualDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDucks;
+                case PolSourceObsInfoEnum.TypesEqualGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualGeese;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureSmall:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureSmall;
                 case PolSourceObsInfoEnum.TypesEqualFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualFurFarms;
-                case PolSourceObsInfoEnum.TypesEqualDomesticMixture:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixture;
                 case PolSourceObsInfoEnum.TypesEqualSmallWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallWildAnimals;
                 case PolSourceObsInfoEnum.TypesEqualLargeWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeWildAnimals;
-                case PolSourceObsInfoEnum.TypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeBirds;
-                case PolSourceObsInfoEnum.TypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMediumBirds;
-                case PolSourceObsInfoEnum.TypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallBirds;
-                case PolSourceObsInfoEnum.NumberAnimalPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentLessThan5;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween5and10;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween10and25;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween25and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween25and100;
-                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan100;
+                case PolSourceObsInfoEnum.TypesEquallandBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEquallandBirds;
+                case PolSourceObsInfoEnum.TypesEqualMarinebirdsSeals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMarinebirdsSeals;
+                case PolSourceObsInfoEnum.TypesLandBirdsCrows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsCrows;
+                case PolSourceObsInfoEnum.TypesLandBirdsEagle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsEagle;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsMoose:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsMoose;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsDeer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsDeer;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsCoyote:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsCoyote;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsFoxes:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsFoxes;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsGroundHogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsGroundHogs;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsSkunks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsSkunks;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox2;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox10;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox15:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox15;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox25;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox50;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox100;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox500;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox1000;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5000;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan10000;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan20000;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandCulvert;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandPipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandPipe;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandWaterCourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandWaterCourse;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDitch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDitch;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDrainage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDrainage;
+                case PolSourceObsInfoEnum.WasteSourceTypeDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeDirectInputToMarine;
+                case PolSourceObsInfoEnum.WasteSourceTypetoField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypetoField;
+                case PolSourceObsInfoEnum.FieldLocationOnFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOnFarm;
+                case PolSourceObsInfoEnum.FieldLocationOffFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOffFarm;
                 case PolSourceObsInfoEnum.SourceDirectInputToMarine:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceDirectInputToMarine;
                 case PolSourceObsInfoEnum.BoatCountEquals1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals1;
-                case PolSourceObsInfoEnum.BoatCountLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountLessThan5;
-                case PolSourceObsInfoEnum.BoatCountBetween5and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween5and25;
-                case PolSourceObsInfoEnum.BoatCountBetween25and50:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween25and50;
-                case PolSourceObsInfoEnum.BoatCountBetween50and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween50and100;
-                case PolSourceObsInfoEnum.BoatCountBetweenMoreThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetweenMoreThan100;
+                case PolSourceObsInfoEnum.BoatCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals2;
+                case PolSourceObsInfoEnum.BoatCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals3;
+                case PolSourceObsInfoEnum.BoatCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals4;
+                case PolSourceObsInfoEnum.BoatCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals5;
+                case PolSourceObsInfoEnum.BoatCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals6;
+                case PolSourceObsInfoEnum.BoatCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals7;
+                case PolSourceObsInfoEnum.BoatCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals8;
+                case PolSourceObsInfoEnum.BoatCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals9;
+                case PolSourceObsInfoEnum.BoatCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals10;
+                case PolSourceObsInfoEnum.BoatCountBetween11to25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween11to25;
+                case PolSourceObsInfoEnum.BoatCountBetween26to50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween26to50;
+                case PolSourceObsInfoEnum.BoatCountBetween51to75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween51to75;
+                case PolSourceObsInfoEnum.BoatCountBetween76to100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween76to100;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan100;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan150;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan250;
                 case PolSourceObsInfoEnum.OilDumpingFacilityPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityPresent;
                 case PolSourceObsInfoEnum.OilDumpingFacilityAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityAbsent;
+                case PolSourceObsInfoEnum.OilDumpingFacilityNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityNotObserved;
                 case PolSourceObsInfoEnum.SewageDumpingStationPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationPresent;
                 case PolSourceObsInfoEnum.SewageDumpingStationAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationAbsent;
+                case PolSourceObsInfoEnum.SewageDumpingStationNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationNotObserved;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.PointCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.PointCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.PointCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.SourceTypeLandCulvertSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertSingle;
+                case PolSourceObsInfoEnum.SourceTypeLandPipeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandPipeSingle;
+                case PolSourceObsInfoEnum.SourceTypeLandWaterCourseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandWaterCourseSingle;
+                case PolSourceObsInfoEnum.SourceTypeLandDitchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDitchSingle;
+                case PolSourceObsInfoEnum.SourceTypeLandDrainageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDrainageSingle;
                 case PolSourceObsInfoEnum.SourceTypeLandCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvert;
                 case PolSourceObsInfoEnum.SourceTypeLandPipe:
@@ -520,12 +1296,22 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceManureDitch;
                 case PolSourceObsInfoEnum.DiameterInCentimetersLessThan30:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersLessThan30;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween30and100cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween30and100cm;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween100and200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween100and200cm;
-                case PolSourceObsInfoEnum.DiameterInCentimetersMoreThan200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersMoreThan200cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween31and50cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween31and50cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween51and100cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween51and100cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween101and200cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween101and200cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween201and300cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween201and300cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween301and400cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween301and400cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween401and500cm;
+                case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersGreaterThan500cm;
+                case PolSourceObsInfoEnum.DiameterNoInformation:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterNoInformation;
                 case PolSourceObsInfoEnum.FlowLevelHigh:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelHigh;
                 case PolSourceObsInfoEnum.FlowLevelMedium:
@@ -536,18 +1322,38 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseCementHoldingTank;
                 case PolSourceObsInfoEnum.OuthouseSittingOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseSittingOnGround;
-                case PolSourceObsInfoEnum.WidthInMetersLessThan1:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersLessThan1;
-                case PolSourceObsInfoEnum.WidthInMetersBetween1And5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween1And5;
-                case PolSourceObsInfoEnum.WidthInMetersBetween5And25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween5And25;
-                case PolSourceObsInfoEnum.WidthInMetersMoreThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersMoreThan25;
+                case PolSourceObsInfoEnum.WidthInMetersApprox1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox1;
+                case PolSourceObsInfoEnum.WidthInMetersApprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox2;
+                case PolSourceObsInfoEnum.WidthInMetersApprox3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox3;
+                case PolSourceObsInfoEnum.WidthInMetersApprox4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox4;
+                case PolSourceObsInfoEnum.WidthInMetersApprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox5;
+                case PolSourceObsInfoEnum.WidthInMetersApprox6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox6;
+                case PolSourceObsInfoEnum.WidthInMetersApprox7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox7;
+                case PolSourceObsInfoEnum.WidthInMetersApprox8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox8;
+                case PolSourceObsInfoEnum.WidthInMetersApprox9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox9;
+                case PolSourceObsInfoEnum.WidthInMetersApprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox10;
+                case PolSourceObsInfoEnum.WidthInMetersBetween11And25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween11And25;
+                case PolSourceObsInfoEnum.WidthInMetersBetween26And40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween26And40;
+                case PolSourceObsInfoEnum.WidthInMetersGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersGreaterThan40;
                 case PolSourceObsInfoEnum.DitchAlongRoad:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchAlongRoad;
                 case PolSourceObsInfoEnum.DitchBetweenAcrossProperties:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchBetweenAcrossProperties;
+                case PolSourceObsInfoEnum.DitchDirectlytoWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchDirectlytoWater;
                 case PolSourceObsInfoEnum.DrainagePavedSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainagePavedSurfaces;
                 case PolSourceObsInfoEnum.DrainageVegetatedSurfaces:
@@ -556,10 +1362,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageDirect;
                 case PolSourceObsInfoEnum.DrainageBareSoilSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageBareSoilSurfaces;
-                case PolSourceObsInfoEnum.ManurePileSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileSmall;
-                case PolSourceObsInfoEnum.ManurePileLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileLarge;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately10;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately20;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately30;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately40;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately50;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately60;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately70:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately70;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately80;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately90:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately90;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately100;
+                case PolSourceObsInfoEnum.ManureAreaMetersMoreThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersMoreThan100;
                 case PolSourceObsInfoEnum.SourceTypeWaterAquacultureSite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterAquacultureSite;
                 case PolSourceObsInfoEnum.SourceTypeWaterAnchorageMooringSite:
@@ -568,20 +1392,86 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterDisposalAtSea;
                 case PolSourceObsInfoEnum.SourceTypeWaterMarinePark:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterMarinePark;
-                case PolSourceObsInfoEnum.SourceTypeWaterSeaport:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterSeaport;
-                case PolSourceObsInfoEnum.SourceSandBar:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceSandBar;
+                case PolSourceObsInfoEnum.SourceLandOutcrop:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceLandOutcrop;
+                case PolSourceObsInfoEnum.AquacultureSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSite;
+                case PolSourceObsInfoEnum.AnchorageMooringSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSite;
+                case PolSourceObsInfoEnum.DisposalAtSea:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSea;
+                case PolSourceObsInfoEnum.MarinePark:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePark;
+                case PolSourceObsInfoEnum.OutcropSandBar:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropSandBar;
+                case PolSourceObsInfoEnum.OutcropRock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropRock;
+                case PolSourceObsInfoEnum.OutcropIsland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropIsland;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteActive;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteFallow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteFallow;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.WatAquaCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.AquacultureCagesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesSingle;
+                case PolSourceObsInfoEnum.AquacultureFloatingBagsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsSingle;
+                case PolSourceObsInfoEnum.AquacultureSubmergedLinesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesSingle;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageSingle;
+                case PolSourceObsInfoEnum.AquacultureBargesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesSingle;
                 case PolSourceObsInfoEnum.AquacultureCages:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCages;
                 case PolSourceObsInfoEnum.AquacultureFloatingBags:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBags;
                 case PolSourceObsInfoEnum.AquacultureSubmergedLines:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLines;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCage;
+                case PolSourceObsInfoEnum.AquacultureBarges:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBarges;
+                case PolSourceObsInfoEnum.WatStructActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActive;
+                case PolSourceObsInfoEnum.WatStructInactive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructInactive;
+                case PolSourceObsInfoEnum.WaterStructureVesselSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselSingle;
+                case PolSourceObsInfoEnum.WaterStructureBargeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureBargeSingle;
+                case PolSourceObsInfoEnum.WaterStructureResidentalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureResidentalSingle;
+                case PolSourceObsInfoEnum.WaterStructureCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialSingle;
+                case PolSourceObsInfoEnum.WaterStructureNotActiveSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveSingle;
                 case PolSourceObsInfoEnum.WaterStructureVessel:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVessel;
                 case PolSourceObsInfoEnum.WaterStructureBarge:
@@ -592,6 +1482,32 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercial;
                 case PolSourceObsInfoEnum.WaterStructureNotActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActive;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.WatStructCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberGreaterThan40;
                 case PolSourceObsInfoEnum.WaterDumpSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDumpSiteActive;
                 case PolSourceObsInfoEnum.WaterDumpSiteNotActive:
@@ -600,56 +1516,218 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportRecreational;
                 case PolSourceObsInfoEnum.SeaportCommercial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportCommercial;
-                case PolSourceObsInfoEnum.AquacultureSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSmall;
-                case PolSourceObsInfoEnum.AquacultureLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLarge;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual5;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual10;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual20;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual40;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual60;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual80;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual100;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual150;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual200;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual250;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual300;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual400;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual500;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual750:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual750;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual1000;
+                case PolSourceObsInfoEnum.WaterSizeMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersGreaterThan1000;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual5;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual10;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual20;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual30;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual40;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual50;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual75;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual100;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual150;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual200;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual300;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual400;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual600;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual800;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual1000;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersGreaterThan1000;
                 case PolSourceObsInfoEnum.WaterTypeSalt:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeSalt;
                 case PolSourceObsInfoEnum.WaterTypeBrachish:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeBrachish;
                 case PolSourceObsInfoEnum.WaterTypeFresh:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeFresh;
-                case PolSourceObsInfoEnum.WaterAreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeSmall;
-                case PolSourceObsInfoEnum.WaterAreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeLarge;
                 case PolSourceObsInfoEnum.WaterFecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourcePeople;
                 case PolSourceObsInfoEnum.WaterFecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceWildlife;
                 case PolSourceObsInfoEnum.WaterFecalSourceAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceAbsent;
-                case PolSourceObsInfoEnum.WaterCountNumberLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberLessThan5;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween5and10;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween10and25;
-                case PolSourceObsInfoEnum.WaterCountNumberGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberGreaterThan25;
+                case PolSourceObsInfoEnum.WaterFecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalProcessWater;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo1;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo2;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo3;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo4;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo5;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo6;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo7;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo8;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo9;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo10;
+                case PolSourceObsInfoEnum.WatCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween11and25;
+                case PolSourceObsInfoEnum.WatCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween26and40;
+                case PolSourceObsInfoEnum.WatCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberGreaterThan40;
+                case PolSourceObsInfoEnum.HumanSewageWashroom:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroom;
+                case PolSourceObsInfoEnum.HumanSewageWashroomAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomAbsent;
                 case PolSourceObsInfoEnum.WaterSewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageDirectDischarge;
                 case PolSourceObsInfoEnum.WaterSepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSepticSystemFullRention;
-                case PolSourceObsInfoEnum.WaterNumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentLessThan5;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween5and10;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween10and25;
-                case PolSourceObsInfoEnum.WaterNumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentGreaterThan25;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo1;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo2;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo3;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo4;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo5;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo6;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo7;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo8;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo9;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo10;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween11and25;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween26and40;
+                case PolSourceObsInfoEnum.WatNumberPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentGreaterThan40;
                 case PolSourceObsInfoEnum.WaterTypesEqualSmallMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallMammals;
                 case PolSourceObsInfoEnum.WaterTypesEqualLargeMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeMammals;
-                case PolSourceObsInfoEnum.WaterTypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeBirds;
-                case PolSourceObsInfoEnum.WaterTypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualMediumBirds;
-                case PolSourceObsInfoEnum.WaterTypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallBirds;
+                case PolSourceObsInfoEnum.WaterTypesEqualSeaBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSeaBirds;
+                case PolSourceObsInfoEnum.WaterTypesEqualShorelineBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualShorelineBirds;
+                case PolSourceObsInfoEnum.ShorelineBirdsPloversandSandpipers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsPloversandSandpipers;
+                case PolSourceObsInfoEnum.ShorelineBirdsBlackBackedGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBlackBackedGulls;
+                case PolSourceObsInfoEnum.ShorelineBirdsHerringGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsHerringGulls;
+                case PolSourceObsInfoEnum.ShorelineBirdsGreaterYellowlegs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsGreaterYellowlegs;
+                case PolSourceObsInfoEnum.ShorelineBirdsSurfScoter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsSurfScoter;
+                case PolSourceObsInfoEnum.ShorelineBirdsBrownPelican:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBrownPelican;
+                case PolSourceObsInfoEnum.ShorelineBirdsOthers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsOthers;
+                case PolSourceObsInfoEnum.SeaBirdsCormorants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsCormorants;
+                case PolSourceObsInfoEnum.SeaBirdsDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsDucks;
+                case PolSourceObsInfoEnum.SeaBirdsGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsGeese;
+                case PolSourceObsInfoEnum.SeaBirdsBlackBlackGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsBlackBlackGulls;
+                case PolSourceObsInfoEnum.SeaBirdsLoons:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsLoons;
+                case PolSourceObsInfoEnum.SeaBirdsSeaducks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsSeaducks;
+                case PolSourceObsInfoEnum.SeaBirdsOther:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsOther;
+                case PolSourceObsInfoEnum.LargeMarineMammaGreySeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammaGreySeal;
+                case PolSourceObsInfoEnum.LargeMarineMammalHoodedSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalHoodedSeal;
+                case PolSourceObsInfoEnum.LargeMarineMammalBeardSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalBeardSeal;
+                case PolSourceObsInfoEnum.LargeMarineMammalStellarSeaLion:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStellarSeaLion;
+                case PolSourceObsInfoEnum.LargeMarineMammalAtlanticWalrus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalAtlanticWalrus;
+                case PolSourceObsInfoEnum.LargeMarineMammalNorthernFurSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalNorthernFurSeal;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarpSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarpSeal;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarbourSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarbourSeal;
+                case PolSourceObsInfoEnum.SmallMarineanimalSeaOtter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalSeaOtter;
+                case PolSourceObsInfoEnum.MarineAnimalPresentLessThan5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentLessThan5;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween6and10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween6and10;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween11and25;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween26and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween26and100;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan100;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan500;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan1000;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan10000;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan20000;
+                case PolSourceObsInfoEnum.MarinePointSourceInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePointSourceInputToMarine;
                 case PolSourceObsInfoEnum.ShorelineSandy:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineSandy;
                 case PolSourceObsInfoEnum.ShorelineRocky:
@@ -670,8 +1748,6 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSlipwayRocks;
                 case PolSourceObsInfoEnum.SourceTypeShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeShoreline;
-                case PolSourceObsInfoEnum.SourceTypeMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeMarine;
                 case PolSourceObsInfoEnum.StatusDefinite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusDefinite;
                 case PolSourceObsInfoEnum.StatusPotential:
@@ -684,8 +1760,14 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskModerate;
                 case PolSourceObsInfoEnum.RiskHighP:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighP;
-                case PolSourceObsInfoEnum.RiskHigh:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHigh;
+                case PolSourceObsInfoEnum.RiskHighConfirmedVisual:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighConfirmedVisual;
+                case PolSourceObsInfoEnum.RishHighConfirmedWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRishHighConfirmedWater;
+                case PolSourceObsInfoEnum.FollowupRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupRequired;
+                case PolSourceObsInfoEnum.FollowupNotRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupNotRequired;
                 default:
                     return CSSPEnumsRes.Error;
             }
@@ -703,8 +1785,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStartDesc;
                 case PolSourceObsInfoEnum.DistanceFromShoreInMetersStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersStartDesc;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersStartDesc;
+                case PolSourceObsInfoEnum.ShorelineRiparionZoneStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparionZoneStartDesc;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterStartDesc;
                 case PolSourceObsInfoEnum.AreaSlopeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeStartDesc;
                 case PolSourceObsInfoEnum.SourceTypeLandStart:
@@ -719,22 +1803,64 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotStartDesc;
                 case PolSourceObsInfoEnum.FarmStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmStartDesc;
+                case PolSourceObsInfoEnum.AgrAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaSizeStartDesc;
                 case PolSourceObsInfoEnum.ForestedStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedStartDesc;
+                case PolSourceObsInfoEnum.ForAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaSizeStartDesc;
                 case PolSourceObsInfoEnum.IndustryStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStartDesc;
+                case PolSourceObsInfoEnum.INDCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberStartDesc;
                 case PolSourceObsInfoEnum.TypeOfFishStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypeOfFishStartDesc;
-                case PolSourceObsInfoEnum.MarineStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineStartDesc;
+                case PolSourceObsInfoEnum.FishOperationStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishOperationStartDesc;
+                case PolSourceObsInfoEnum.BuildingFishSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishSingleStartDesc;
+                case PolSourceObsInfoEnum.BuildingFishStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishStartDesc;
+                case PolSourceObsInfoEnum.FISCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberStartDesc;
+                case PolSourceObsInfoEnum.MarineStructureStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineStructureStartDesc;
+                case PolSourceObsInfoEnum.MarNumPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentStartDesc;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleStartDesc;
+                case PolSourceObsInfoEnum.SeaWallSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceStartDesc;
                 case PolSourceObsInfoEnum.WharfStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfStartDesc;
+                case PolSourceObsInfoEnum.VesselStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselStartDesc;
+                case PolSourceObsInfoEnum.WharfTransportationSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfTransportationSingleStartDesc;
                 case PolSourceObsInfoEnum.WharfTransportationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfTransportationStartDesc;
+                case PolSourceObsInfoEnum.MarWhfWharfCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfWharfCountNumberStartDesc;
+                case PolSourceObsInfoEnum.MarBldCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberStartDesc;
+                case PolSourceObsInfoEnum.MARBuildingAllSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSingleStartDesc;
+                case PolSourceObsInfoEnum.MARBuildingAllStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllStartDesc;
                 case PolSourceObsInfoEnum.RecreationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationStartDesc;
+                case PolSourceObsInfoEnum.RECCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECCountNumberStartDesc;
+                case PolSourceObsInfoEnum.RecTypeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTypeStartDesc;
                 case PolSourceObsInfoEnum.CampgroundFacilitiesStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundFacilitiesStartDesc;
+                case PolSourceObsInfoEnum.RECFecalSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECFecalSourceStartDesc;
+                case PolSourceObsInfoEnum.RecSewageStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageStartDesc;
+                case PolSourceObsInfoEnum.RecNumPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentStartDesc;
                 case PolSourceObsInfoEnum.SewageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageStartDesc;
                 case PolSourceObsInfoEnum.SeeMunicipalityInfrastructureStart:
@@ -749,14 +1875,24 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankStartDesc;
                 case PolSourceObsInfoEnum.TankSizeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeStartDesc;
+                case PolSourceObsInfoEnum.BuildingAgricultureSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAgricultureSingleStartDesc;
                 case PolSourceObsInfoEnum.BuildingAgricultureStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAgricultureStartDesc;
+                case PolSourceObsInfoEnum.AGRCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberStartDesc;
+                case PolSourceObsInfoEnum.FORCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberStartDesc;
+                case PolSourceObsInfoEnum.BuildingForestedSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSingleStartDesc;
                 case PolSourceObsInfoEnum.BuildingForestedStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedStartDesc;
+                case PolSourceObsInfoEnum.BuildingTypeSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingTypeSingleStartDesc;
                 case PolSourceObsInfoEnum.BuildingTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingTypeStartDesc;
-                case PolSourceObsInfoEnum.BuildingFishStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishStartDesc;
+                case PolSourceObsInfoEnum.BuildingAllSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSingleStartDesc;
                 case PolSourceObsInfoEnum.BuildingAllStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllStartDesc;
                 case PolSourceObsInfoEnum.CountNumberStart:
@@ -769,14 +1905,22 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceStartDesc;
                 case PolSourceObsInfoEnum.LandfillTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeStartDesc;
-                case PolSourceObsInfoEnum.NumberPresentStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentStartDesc;
                 case PolSourceObsInfoEnum.TypesOfLivestockStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockStartDesc;
                 case PolSourceObsInfoEnum.TypesOfWildlifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeStartDesc;
+                case PolSourceObsInfoEnum.TypesLandBIrdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBIrdsStartDesc;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsStartDesc;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsStartDesc;
                 case PolSourceObsInfoEnum.AnimalNumberPresentStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnimalNumberPresentStartDesc;
+                case PolSourceObsInfoEnum.WasteSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceStartDesc;
+                case PolSourceObsInfoEnum.FieldLocationStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationStartDesc;
                 case PolSourceObsInfoEnum.PointSourceWildlifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceWildlifeStartDesc;
                 case PolSourceObsInfoEnum.BoatStart:
@@ -785,6 +1929,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityStartDesc;
                 case PolSourceObsInfoEnum.SewageDumpingStationStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationStartDesc;
+                case PolSourceObsInfoEnum.PointCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberStartDesc;
+                case PolSourceObsInfoEnum.PointSourceSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceSingleStartDesc;
                 case PolSourceObsInfoEnum.PointSourceStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointSourceStartDesc;
                 case PolSourceObsInfoEnum.PointSourceManureStart:
@@ -801,36 +1949,70 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchStartDesc;
                 case PolSourceObsInfoEnum.DrainageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageStartDesc;
-                case PolSourceObsInfoEnum.ManurePileSizeStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileSizeStartDesc;
+                case PolSourceObsInfoEnum.ManureAreaSizeStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaSizeStartDesc;
                 case PolSourceObsInfoEnum.SourceTypeWaterStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterStartDesc;
+                case PolSourceObsInfoEnum.AquacultureSiteStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSiteStartDesc;
+                case PolSourceObsInfoEnum.AnchorageMooringSiteStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSiteStartDesc;
+                case PolSourceObsInfoEnum.DisposalAtSeaStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSeaStartDesc;
+                case PolSourceObsInfoEnum.MarineParkStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineParkStartDesc;
+                case PolSourceObsInfoEnum.OutcropStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropStartDesc;
                 case PolSourceObsInfoEnum.WaterAquacultureStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureStartDesc;
+                case PolSourceObsInfoEnum.WatAquaCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberStartDesc;
+                case PolSourceObsInfoEnum.WaterAquacultureTypeSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureTypeSingleStartDesc;
                 case PolSourceObsInfoEnum.WaterAquacultureTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureTypeStartDesc;
+                case PolSourceObsInfoEnum.WatStructActiveStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActiveStartDesc;
+                case PolSourceObsInfoEnum.WaterStructureSiteSingleStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureSiteSingleStartDesc;
                 case PolSourceObsInfoEnum.WaterStructureSiteStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureSiteStartDesc;
+                case PolSourceObsInfoEnum.WatStructCountNumberStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberStartDesc;
                 case PolSourceObsInfoEnum.WaterDisposalAtSeaStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDisposalAtSeaStartDesc;
                 case PolSourceObsInfoEnum.WaterSeaportStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSeaportStartDesc;
                 case PolSourceObsInfoEnum.WaterSizeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeStartDesc;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersStartDesc;
                 case PolSourceObsInfoEnum.WaterTypeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeStartDesc;
-                case PolSourceObsInfoEnum.WaterAreaSizeStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeStartDesc;
                 case PolSourceObsInfoEnum.WaterFecalSourceStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceStartDesc;
                 case PolSourceObsInfoEnum.WaterCountNumberStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberStartDesc;
+                case PolSourceObsInfoEnum.HumanSewageStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageStartDesc;
                 case PolSourceObsInfoEnum.WaterSewageStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageStartDesc;
                 case PolSourceObsInfoEnum.WaterNumberPresentStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentStartDesc;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeStartDesc;
+                case PolSourceObsInfoEnum.ShorelineBirdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsStartDesc;
+                case PolSourceObsInfoEnum.SeaBirdsStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsStartDesc;
+                case PolSourceObsInfoEnum.LargeMarineMammalStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStartDesc;
+                case PolSourceObsInfoEnum.SmallMarineanimalStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalStartDesc;
+                case PolSourceObsInfoEnum.MarineAnimalPresentStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentStartDesc;
+                case PolSourceObsInfoEnum.MarinePointSourceStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePointSourceStartDesc;
                 case PolSourceObsInfoEnum.ShorelineStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineStartDesc;
                 case PolSourceObsInfoEnum.ShorelineIssueStart:
@@ -841,12 +2023,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeShoreStartDesc;
                 case PolSourceObsInfoEnum.StatusStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusStartDesc;
-                case PolSourceObsInfoEnum.RiskAStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskAStartDesc;
-                case PolSourceObsInfoEnum.RiskBStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskBStartDesc;
-                case PolSourceObsInfoEnum.RiskCStart:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskCStartDesc;
+                case PolSourceObsInfoEnum.RiskStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskStartDesc;
+                case PolSourceObsInfoEnum.FollowupStart:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupStartDesc;
                 default:
                     return CSSPEnumsRes.Error;
             }
@@ -866,26 +2046,66 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterBasedReport;
                 case PolSourceObsInfoEnum.DistanceFromShoreInMetersOnShore:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersOnShoreReport;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersLessThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersLessThan100Report;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween100And250:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween100And250Report;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween250And500:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween250And500Report;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersBetween500And1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersBetween500And1000Report;
-                case PolSourceObsInfoEnum.DistanceFromShoreInMetersMoreThan1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersMoreThan1000Report;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersLessThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersLessThan100Report;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween100And250:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween100And250Report;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween250And500:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween250And500Report;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersBetween500And1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersBetween500And1000Report;
-                case PolSourceObsInfoEnum.DistanceOnWaterMetersMoreThan1000:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersMoreThan1000Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters5Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters10Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters20Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters30Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters40Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters50Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters75Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters100Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters150Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters200Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters300Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters400Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters600Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters800Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters1000Report;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersGreaterThan1000Report;
+                case PolSourceObsInfoEnum.ShorelineRiparianZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZonePresentReport;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentReport;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfo:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoReport;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters5Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters10Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters20Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters30Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters50Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters100Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters200Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters400Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters800Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters1000Report;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMetersGreaterThan1000Report;
                 case PolSourceObsInfoEnum.AreaSlopeLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeLowReport;
                 case PolSourceObsInfoEnum.AreaSlopeMedium:
@@ -896,10 +2116,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandAgricultureReport;
                 case PolSourceObsInfoEnum.SourceTypeLandForested:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandForestedReport;
+                case PolSourceObsInfoEnum.SourceTypeLandFisheries:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandFisheriesReport;
                 case PolSourceObsInfoEnum.SourceTypeLandIndustry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandIndustryReport;
-                case PolSourceObsInfoEnum.SourceTypeLandMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineReport;
+                case PolSourceObsInfoEnum.SourceTypeLandMarineStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineStructureReport;
                 case PolSourceObsInfoEnum.SourceTypeLandRecreation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandRecreationReport;
                 case PolSourceObsInfoEnum.SourceTypeLandUrban:
@@ -932,8 +2154,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotNotActiveReport;
                 case PolSourceObsInfoEnum.FarmHobby:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmHobbyReport;
-                case PolSourceObsInfoEnum.FarmCommerical:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommericalReport;
+                case PolSourceObsInfoEnum.FarmCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommercialReport;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals10Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals20Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals40Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals60Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals80Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals100Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersbetween101And250Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween251And500Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween501And1000Report;
+                case PolSourceObsInfoEnum.AgrAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersGreaterThan1000Report;
                 case PolSourceObsInfoEnum.ForestedLoggingActivity:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedLoggingActivityReport;
                 case PolSourceObsInfoEnum.ForestedClearcut:
@@ -942,30 +2184,164 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedRegrowthReport;
                 case PolSourceObsInfoEnum.ForestedBuilding:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedBuildingReport;
+                case PolSourceObsInfoEnum.ForAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals10Report;
+                case PolSourceObsInfoEnum.ForAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals20Report;
+                case PolSourceObsInfoEnum.ForAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals40Report;
+                case PolSourceObsInfoEnum.ForAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals60Report;
+                case PolSourceObsInfoEnum.ForAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals80Report;
+                case PolSourceObsInfoEnum.ForAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals100Report;
+                case PolSourceObsInfoEnum.ForAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersbetween101And250Report;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween251And500Report;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween501And1000Report;
+                case PolSourceObsInfoEnum.ForAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersGreaterThan1000Report;
                 case PolSourceObsInfoEnum.IndustryAirport:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryAirportReport;
                 case PolSourceObsInfoEnum.IndustryLandfill:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryLandfillReport;
-                case PolSourceObsInfoEnum.IndustryFisheriesRelated:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryFisheriesRelatedReport;
                 case PolSourceObsInfoEnum.IndustryWaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryWasteReport;
                 case PolSourceObsInfoEnum.IndustryStorageTank:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStorageTankReport;
-                case PolSourceObsInfoEnum.IndustryCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryCommercialReport;
-                case PolSourceObsInfoEnum.FishProcessingShellfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingShellfishReport;
-                case PolSourceObsInfoEnum.FishProcessingFinfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFinfishReport;
-                case PolSourceObsInfoEnum.FishProcessingFishMeal:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFishMealReport;
+                case PolSourceObsInfoEnum.IndustryBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryBuildingsReport;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.INDCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween10and25Report;
+                case PolSourceObsInfoEnum.INDCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween25and40Report;
+                case PolSourceObsInfoEnum.INDCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.FishShellfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishShellfishReport;
+                case PolSourceObsInfoEnum.FishFinfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFinfishReport;
+                case PolSourceObsInfoEnum.FishLobster:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishLobsterReport;
+                case PolSourceObsInfoEnum.FishFishMeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFishMealReport;
+                case PolSourceObsInfoEnum.FishProcessing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingReport;
+                case PolSourceObsInfoEnum.FishHeldAlive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishHeldAliveReport;
+                case PolSourceObsInfoEnum.FishPackaging:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishPackagingReport;
+                case PolSourceObsInfoEnum.FishingRearing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishingRearingReport;
+                case PolSourceObsInfoEnum.BuildingFishHatcherySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcherySingleReport;
+                case PolSourceObsInfoEnum.BuildingFishTanksSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksSingleReport;
+                case PolSourceObsInfoEnum.BuildingFishPondsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPondsSingleReport;
+                case PolSourceObsInfoEnum.BuildingFishWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseSingleReport;
+                case PolSourceObsInfoEnum.BuildingFishCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialSingleReport;
+                case PolSourceObsInfoEnum.BuildingFishHatchery:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcheryReport;
+                case PolSourceObsInfoEnum.BuildingFishInsideTanks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishInsideTanksReport;
+                case PolSourceObsInfoEnum.BuildingFishPounds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPoundsReport;
+                case PolSourceObsInfoEnum.BuildingFishWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseReport;
+                case PolSourceObsInfoEnum.BuildingFishCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialReport;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.FISCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween10and25Report;
+                case PolSourceObsInfoEnum.FISCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween25and40Report;
+                case PolSourceObsInfoEnum.FISCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberGreaterThan40Report;
                 case PolSourceObsInfoEnum.MarineWharf:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineWharfReport;
                 case PolSourceObsInfoEnum.MarineBuildings:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineBuildingsReport;
                 case PolSourceObsInfoEnum.MarineSeaWall:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineSeaWallReport;
+                case PolSourceObsInfoEnum.MarNumPresentEqual1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual1Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual2Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual3Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual4Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual5Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual6Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual7Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual8Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual9Report;
+                case PolSourceObsInfoEnum.MarNumPresentEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual10Report;
+                case PolSourceObsInfoEnum.MarNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween11and25Report;
+                case PolSourceObsInfoEnum.MarNumPresentBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween25and40Report;
+                case PolSourceObsInfoEnum.MarNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentGreaterThan40Report;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleCulvertReport;
+                case PolSourceObsInfoEnum.SeaWallSourceSinglePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSinglePipeReport;
+                case PolSourceObsInfoEnum.SeaWallSourceCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceCulvertReport;
+                case PolSourceObsInfoEnum.SeaWallSourcePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourcePipeReport;
                 case PolSourceObsInfoEnum.WharfCommercialTransportation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfCommercialTransportationReport;
                 case PolSourceObsInfoEnum.WharfFishing:
@@ -976,10 +2352,132 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfMarinaReport;
                 case PolSourceObsInfoEnum.WharfAbandoned:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfAbandonedReport;
+                case PolSourceObsInfoEnum.WharfBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfBuildingsReport;
+                case PolSourceObsInfoEnum.VesselCountEquals1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals1Report;
+                case PolSourceObsInfoEnum.VesselCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals2Report;
+                case PolSourceObsInfoEnum.VesselCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals3Report;
+                case PolSourceObsInfoEnum.VesselCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals4Report;
+                case PolSourceObsInfoEnum.VesselCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals5Report;
+                case PolSourceObsInfoEnum.VesselCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals6Report;
+                case PolSourceObsInfoEnum.VesselCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals7Report;
+                case PolSourceObsInfoEnum.VesselCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals8Report;
+                case PolSourceObsInfoEnum.VesselCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals9Report;
+                case PolSourceObsInfoEnum.VesselCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals10Report;
+                case PolSourceObsInfoEnum.VesselCountBetwee11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetwee11and25Report;
+                case PolSourceObsInfoEnum.VesselCountBetween26and50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween26and50Report;
+                case PolSourceObsInfoEnum.VesselCountBetween51and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween51and100Report;
+                case PolSourceObsInfoEnum.VesselCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountGreaterThan100Report;
+                case PolSourceObsInfoEnum.TransportationCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalSingleReport;
+                case PolSourceObsInfoEnum.TransportationFerrySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerrySingleReport;
+                case PolSourceObsInfoEnum.TransportationPleasureCraftSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftSingleReport;
                 case PolSourceObsInfoEnum.TransportationCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalReport;
                 case PolSourceObsInfoEnum.TransportationFerry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerryReport;
+                case PolSourceObsInfoEnum.TransportationPleasureCraft:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftReport;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.MarWhfCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.MarBldCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.MARBuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchSingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilitySingleReport;
+                case PolSourceObsInfoEnum.MARBuildingAllCottage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageReport;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerReport;
+                case PolSourceObsInfoEnum.MARBuildingAllResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialReport;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseReport;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelReport;
+                case PolSourceObsInfoEnum.MARBuildingAllCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalReport;
+                case PolSourceObsInfoEnum.MARBuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolReport;
+                case PolSourceObsInfoEnum.MARBuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchReport;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilityReport;
                 case PolSourceObsInfoEnum.RecreationCampground:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCampgroundReport;
                 case PolSourceObsInfoEnum.RecreationDayUseArea:
@@ -992,24 +2490,96 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCommunityCentreReport;
                 case PolSourceObsInfoEnum.RecreationGolfCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationGolfCourseReport;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox10Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox30Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox50Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox100Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox200Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox300Report;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox500Report;
+                case PolSourceObsInfoEnum.RecTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailerReport;
+                case PolSourceObsInfoEnum.RecTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTentsReport;
+                case PolSourceObsInfoEnum.RecTrailersandTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailersandTentsReport;
                 case PolSourceObsInfoEnum.CampgroundNoDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundNoDumpStnReport;
                 case PolSourceObsInfoEnum.CampgroundwithDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundwithDumpStnReport;
-                case PolSourceObsInfoEnum.SewageCesspool:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolReport;
+                case PolSourceObsInfoEnum.RecFecalSourcePeople:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePeopleReport;
+                case PolSourceObsInfoEnum.RecFecalSourceWildlife:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceWildlifeReport;
+                case PolSourceObsInfoEnum.RecFecalSourceDrainagewater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceDrainagewaterReport;
+                case PolSourceObsInfoEnum.RecFecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePetsReport;
+                case PolSourceObsInfoEnum.RecSewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageCesspoolReport;
+                case PolSourceObsInfoEnum.RecSewagePrivyOuthouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewagePrivyOuthouseReport;
+                case PolSourceObsInfoEnum.RecSewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageMunicipalSystemReport;
+                case PolSourceObsInfoEnum.RecSepticSystemDrainageField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemDrainageFieldReport;
+                case PolSourceObsInfoEnum.RecSepticSystemLagoon:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemLagoonReport;
+                case PolSourceObsInfoEnum.RecSepticSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemConstructedWetlandReport;
+                case PolSourceObsInfoEnum.RecSepticFreeFlow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticFreeFlowReport;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo1Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo2Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo3Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo4Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo5Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo6Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo7Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo8Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo9Report;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo10Report;
+                case PolSourceObsInfoEnum.RecNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween11and25Report;
+                case PolSourceObsInfoEnum.RecNumPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween26and40Report;
+                case PolSourceObsInfoEnum.RecNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentGreaterThan40Report;
                 case PolSourceObsInfoEnum.SewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDirectDischargeReport;
+                case PolSourceObsInfoEnum.SewageFlowStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageFlowStructureReport;
                 case PolSourceObsInfoEnum.SewagePrivyOuthouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewagePrivyOuthouseReport;
-                case PolSourceObsInfoEnum.SewageMunicipalSystem:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemReport;
-                case PolSourceObsInfoEnum.SepticSystemDrainageField:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemDrainageFieldReport;
+                case PolSourceObsInfoEnum.SepticSystemLeachateField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLeachateFieldReport;
                 case PolSourceObsInfoEnum.SepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemFullRentionReport;
+                case PolSourceObsInfoEnum.SewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolReport;
                 case PolSourceObsInfoEnum.SepticSystemLagoon:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLagoonReport;
+                case PolSourceObsInfoEnum.SewageSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageSystemConstructedWetlandReport;
+                case PolSourceObsInfoEnum.SewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemReport;
                 case PolSourceObsInfoEnum.SepticNoStructure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticNoStructureReport;
                 case PolSourceObsInfoEnum.UrbanStormWater:
@@ -1034,10 +2604,30 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankPropaneReport;
                 case PolSourceObsInfoEnum.StorageTankChemicals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankChemicalsReport;
-                case PolSourceObsInfoEnum.TankSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeSmallReport;
-                case PolSourceObsInfoEnum.TankSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeLargeReport;
+                case PolSourceObsInfoEnum.TankSize100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize100Report;
+                case PolSourceObsInfoEnum.TankSize500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize500Report;
+                case PolSourceObsInfoEnum.TankSize1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize1000Report;
+                case PolSourceObsInfoEnum.TankSize2000plus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize2000plusReport;
+                case PolSourceObsInfoEnum.BuildingResidentialFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingWarehouseFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingWarehouseFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingCommericalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingBarnFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingSchoolFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingChurchFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmSingleReport;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmSingleReport;
                 case PolSourceObsInfoEnum.BuildingResidentialFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmReport;
                 case PolSourceObsInfoEnum.BuildingWarehouseFarm:
@@ -1046,8 +2636,84 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmReport;
                 case PolSourceObsInfoEnum.BuildingBarnFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmReport;
-                case PolSourceObsInfoEnum.BuildingRecreational:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalReport;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmReport;
+                case PolSourceObsInfoEnum.BuildingSchoolFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmReport;
+                case PolSourceObsInfoEnum.BuildingChurchFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmReport;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmReport;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.AGRCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.FORCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.FORCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.FORCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.BuildingForestedResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedWarehouseSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedRecreationalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedRecreationalSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedTrailerSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactorySingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchSingleReport;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilitySingleReport;
                 case PolSourceObsInfoEnum.BuildingForestedResidential:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialReport;
                 case PolSourceObsInfoEnum.BuildingForestedWarehouse:
@@ -1060,20 +2726,54 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactoryReport;
                 case PolSourceObsInfoEnum.BuildingForestedCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalReport;
+                case PolSourceObsInfoEnum.BuildingForestedSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolReport;
+                case PolSourceObsInfoEnum.BuildingForestedChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchReport;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilityReport;
+                case PolSourceObsInfoEnum.BuildingindustryWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseSingleReport;
+                case PolSourceObsInfoEnum.BuildingIndustryFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactorySingleReport;
+                case PolSourceObsInfoEnum.BuildingIndustryCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalSingleReport;
+                case PolSourceObsInfoEnum.BuildingIndustrySchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolSingleReport;
+                case PolSourceObsInfoEnum.BuildingIndustryChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchSingleReport;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilitySingleReport;
                 case PolSourceObsInfoEnum.BuildingindustryWarehouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseReport;
                 case PolSourceObsInfoEnum.BuildingIndustryFactory:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactoryReport;
                 case PolSourceObsInfoEnum.BuildingIndustryCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalReport;
-                case PolSourceObsInfoEnum.BuildingFishHatchery:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcheryReport;
-                case PolSourceObsInfoEnum.BuildingFishTanks:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksReport;
-                case PolSourceObsInfoEnum.BuildingFishWarehouse:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseReport;
-                case PolSourceObsInfoEnum.BuildingFishCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialReport;
+                case PolSourceObsInfoEnum.BuildingIndustrySchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolReport;
+                case PolSourceObsInfoEnum.BuildingIndustryChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchReport;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilityReport;
+                case PolSourceObsInfoEnum.BuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllTrailerSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllResidentialSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllWarehouseSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchSingleReport;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilitySingleReport;
                 case PolSourceObsInfoEnum.BuildingAllCottage:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageReport;
                 case PolSourceObsInfoEnum.BuildingAllTrailer:
@@ -1086,104 +2786,262 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelReport;
                 case PolSourceObsInfoEnum.BuildingAllCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalReport;
+                case PolSourceObsInfoEnum.BuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolReport;
+                case PolSourceObsInfoEnum.BuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchReport;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilityReport;
                 case PolSourceObsInfoEnum.CountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo1Report;
-                case PolSourceObsInfoEnum.CountNumberBetween1and5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween1and5Report;
-                case PolSourceObsInfoEnum.CountNumberbBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween5and10Report;
-                case PolSourceObsInfoEnum.CountNumberbBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween10and25Report;
-                case PolSourceObsInfoEnum.CountNumberbBetween25and40:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween25and40Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.CountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.CountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.CountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween26and40Report;
                 case PolSourceObsInfoEnum.CountNumberGreaterThan40:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberGreaterThan40Report;
-                case PolSourceObsInfoEnum.AreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeSmallReport;
-                case PolSourceObsInfoEnum.AreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeLargeReport;
-                case PolSourceObsInfoEnum.FecalSourceLivestock:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestockReport;
+                case PolSourceObsInfoEnum.AreaMetersEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals5Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals10Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals20Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals40Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals60Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals80Report;
+                case PolSourceObsInfoEnum.AreaMetersEquals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals100Report;
+                case PolSourceObsInfoEnum.AreaMetersBetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween101And250Report;
+                case PolSourceObsInfoEnum.AreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween251And500Report;
+                case PolSourceObsInfoEnum.AreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween501And1000Report;
+                case PolSourceObsInfoEnum.AreaMetersgreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersgreaterThan1000Report;
                 case PolSourceObsInfoEnum.FecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePeopleReport;
+                case PolSourceObsInfoEnum.FecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePetsReport;
                 case PolSourceObsInfoEnum.FecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceWildlifeReport;
-                case PolSourceObsInfoEnum.FecalSourceAbsent:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsentReport;
+                case PolSourceObsInfoEnum.FecalSourceLivestock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestockReport;
                 case PolSourceObsInfoEnum.FecalSourceDrainagewater:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceDrainagewaterReport;
+                case PolSourceObsInfoEnum.FecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalProcessWaterReport;
+                case PolSourceObsInfoEnum.FecalPotentialContamination:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalPotentialContaminationReport;
+                case PolSourceObsInfoEnum.FecalSourceAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsentReport;
                 case PolSourceObsInfoEnum.MajorIssueSourceManurePile:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceManurePileReport;
                 case PolSourceObsInfoEnum.MajorIssueAbsent1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueAbsent1Report;
-                case PolSourceObsInfoEnum.MajorIssueRunoff:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueRunoffReport;
+                case PolSourceObsInfoEnum.MajorIssueCollectedRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueCollectedRunoffReport;
+                case PolSourceObsInfoEnum.MajorIssueSurfaceRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSurfaceRunoffReport;
                 case PolSourceObsInfoEnum.LandfillTypeResidental:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeResidentalReport;
                 case PolSourceObsInfoEnum.LandfillTypeIndustrial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeIndustrialReport;
                 case PolSourceObsInfoEnum.LandfillTypeWoodwaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeWoodwasteReport;
-                case PolSourceObsInfoEnum.NumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentLessThan5Report;
-                case PolSourceObsInfoEnum.NumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween5and10Report;
-                case PolSourceObsInfoEnum.NumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween10and25Report;
-                case PolSourceObsInfoEnum.NumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentGreaterThan25Report;
-                case PolSourceObsInfoEnum.TypesEqualLargeDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeDomesticReport;
-                case PolSourceObsInfoEnum.TypesEqualSmallDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallDomesticReport;
-                case PolSourceObsInfoEnum.TypesEqualDomesticBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticBirdsReport;
+                case PolSourceObsInfoEnum.TypesEqualHorses:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualHorsesReport;
+                case PolSourceObsInfoEnum.TypesEqualCows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualCowsReport;
+                case PolSourceObsInfoEnum.TypesEqualSheep:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSheepReport;
+                case PolSourceObsInfoEnum.TypesEqualPigs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualPigsReport;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureLarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureLargeReport;
+                case PolSourceObsInfoEnum.TypesEqualChickens:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualChickensReport;
+                case PolSourceObsInfoEnum.TypesEqualTurkeys:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualTurkeysReport;
+                case PolSourceObsInfoEnum.TypesEqualDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDucksReport;
+                case PolSourceObsInfoEnum.TypesEqualGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualGeeseReport;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureSmall:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureSmallReport;
                 case PolSourceObsInfoEnum.TypesEqualFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualFurFarmsReport;
-                case PolSourceObsInfoEnum.TypesEqualDomesticMixture:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureReport;
                 case PolSourceObsInfoEnum.TypesEqualSmallWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallWildAnimalsReport;
                 case PolSourceObsInfoEnum.TypesEqualLargeWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeWildAnimalsReport;
-                case PolSourceObsInfoEnum.TypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeBirdsReport;
-                case PolSourceObsInfoEnum.TypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMediumBirdsReport;
-                case PolSourceObsInfoEnum.TypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallBirdsReport;
-                case PolSourceObsInfoEnum.NumberAnimalPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentLessThan5Report;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween5and10Report;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween10and25Report;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween25and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween25and100Report;
-                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan100Report;
+                case PolSourceObsInfoEnum.TypesEquallandBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEquallandBirdsReport;
+                case PolSourceObsInfoEnum.TypesEqualMarinebirdsSeals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMarinebirdsSealsReport;
+                case PolSourceObsInfoEnum.TypesLandBirdsCrows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsCrowsReport;
+                case PolSourceObsInfoEnum.TypesLandBirdsEagle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsEagleReport;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsMoose:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsMooseReport;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsDeer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsDeerReport;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsCoyote:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsCoyoteReport;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsFoxes:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsFoxesReport;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsGroundHogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsGroundHogsReport;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsSkunks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsSkunksReport;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox2Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox10Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox15:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox15Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox25Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox50Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox100Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox500Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox1000Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5000Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan10000Report;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan20000Report;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandCulvertReport;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandPipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandPipeReport;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandWaterCourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandWaterCourseReport;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDitch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDitchReport;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDrainage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDrainageReport;
+                case PolSourceObsInfoEnum.WasteSourceTypeDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeDirectInputToMarineReport;
+                case PolSourceObsInfoEnum.WasteSourceTypetoField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypetoFieldReport;
+                case PolSourceObsInfoEnum.FieldLocationOnFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOnFarmReport;
+                case PolSourceObsInfoEnum.FieldLocationOffFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOffFarmReport;
                 case PolSourceObsInfoEnum.SourceDirectInputToMarine:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceDirectInputToMarineReport;
                 case PolSourceObsInfoEnum.BoatCountEquals1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals1Report;
-                case PolSourceObsInfoEnum.BoatCountLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountLessThan5Report;
-                case PolSourceObsInfoEnum.BoatCountBetween5and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween5and25Report;
-                case PolSourceObsInfoEnum.BoatCountBetween25and50:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween25and50Report;
-                case PolSourceObsInfoEnum.BoatCountBetween50and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween50and100Report;
-                case PolSourceObsInfoEnum.BoatCountBetweenMoreThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetweenMoreThan100Report;
+                case PolSourceObsInfoEnum.BoatCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals2Report;
+                case PolSourceObsInfoEnum.BoatCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals3Report;
+                case PolSourceObsInfoEnum.BoatCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals4Report;
+                case PolSourceObsInfoEnum.BoatCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals5Report;
+                case PolSourceObsInfoEnum.BoatCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals6Report;
+                case PolSourceObsInfoEnum.BoatCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals7Report;
+                case PolSourceObsInfoEnum.BoatCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals8Report;
+                case PolSourceObsInfoEnum.BoatCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals9Report;
+                case PolSourceObsInfoEnum.BoatCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals10Report;
+                case PolSourceObsInfoEnum.BoatCountBetween11to25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween11to25Report;
+                case PolSourceObsInfoEnum.BoatCountBetween26to50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween26to50Report;
+                case PolSourceObsInfoEnum.BoatCountBetween51to75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween51to75Report;
+                case PolSourceObsInfoEnum.BoatCountBetween76to100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween76to100Report;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan100Report;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan150Report;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan250Report;
                 case PolSourceObsInfoEnum.OilDumpingFacilityPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityPresentReport;
                 case PolSourceObsInfoEnum.OilDumpingFacilityAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityAbsentReport;
+                case PolSourceObsInfoEnum.OilDumpingFacilityNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityNotObservedReport;
                 case PolSourceObsInfoEnum.SewageDumpingStationPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationPresentReport;
                 case PolSourceObsInfoEnum.SewageDumpingStationAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationAbsentReport;
+                case PolSourceObsInfoEnum.SewageDumpingStationNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationNotObservedReport;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.PointCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.PointCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.PointCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.SourceTypeLandCulvertSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertSingleReport;
+                case PolSourceObsInfoEnum.SourceTypeLandPipeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandPipeSingleReport;
+                case PolSourceObsInfoEnum.SourceTypeLandWaterCourseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandWaterCourseSingleReport;
+                case PolSourceObsInfoEnum.SourceTypeLandDitchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDitchSingleReport;
+                case PolSourceObsInfoEnum.SourceTypeLandDrainageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDrainageSingleReport;
                 case PolSourceObsInfoEnum.SourceTypeLandCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertReport;
                 case PolSourceObsInfoEnum.SourceTypeLandPipe:
@@ -1202,12 +3060,22 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceManureDitchReport;
                 case PolSourceObsInfoEnum.DiameterInCentimetersLessThan30:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersLessThan30Report;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween30and100cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween30and100cmReport;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween100and200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween100and200cmReport;
-                case PolSourceObsInfoEnum.DiameterInCentimetersMoreThan200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersMoreThan200cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween31and50cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween31and50cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween51and100cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween51and100cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween101and200cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween101and200cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween201and300cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween201and300cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween301and400cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween301and400cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween401and500cmReport;
+                case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersGreaterThan500cmReport;
+                case PolSourceObsInfoEnum.DiameterNoInformation:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterNoInformationReport;
                 case PolSourceObsInfoEnum.FlowLevelHigh:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelHighReport;
                 case PolSourceObsInfoEnum.FlowLevelMedium:
@@ -1218,18 +3086,38 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseCementHoldingTankReport;
                 case PolSourceObsInfoEnum.OuthouseSittingOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseSittingOnGroundReport;
-                case PolSourceObsInfoEnum.WidthInMetersLessThan1:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersLessThan1Report;
-                case PolSourceObsInfoEnum.WidthInMetersBetween1And5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween1And5Report;
-                case PolSourceObsInfoEnum.WidthInMetersBetween5And25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween5And25Report;
-                case PolSourceObsInfoEnum.WidthInMetersMoreThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersMoreThan25Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox1Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox2Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox3Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox4Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox5Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox6Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox7Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox8Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox9Report;
+                case PolSourceObsInfoEnum.WidthInMetersApprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox10Report;
+                case PolSourceObsInfoEnum.WidthInMetersBetween11And25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween11And25Report;
+                case PolSourceObsInfoEnum.WidthInMetersBetween26And40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween26And40Report;
+                case PolSourceObsInfoEnum.WidthInMetersGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersGreaterThan40Report;
                 case PolSourceObsInfoEnum.DitchAlongRoad:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchAlongRoadReport;
                 case PolSourceObsInfoEnum.DitchBetweenAcrossProperties:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchBetweenAcrossPropertiesReport;
+                case PolSourceObsInfoEnum.DitchDirectlytoWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchDirectlytoWaterReport;
                 case PolSourceObsInfoEnum.DrainagePavedSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainagePavedSurfacesReport;
                 case PolSourceObsInfoEnum.DrainageVegetatedSurfaces:
@@ -1238,10 +3126,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageDirectReport;
                 case PolSourceObsInfoEnum.DrainageBareSoilSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageBareSoilSurfacesReport;
-                case PolSourceObsInfoEnum.ManurePileSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileSmallReport;
-                case PolSourceObsInfoEnum.ManurePileLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileLargeReport;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately10Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately20Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately30Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately40Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately50Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately60Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately70:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately70Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately80Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately90:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately90Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately100Report;
+                case PolSourceObsInfoEnum.ManureAreaMetersMoreThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersMoreThan100Report;
                 case PolSourceObsInfoEnum.SourceTypeWaterAquacultureSite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterAquacultureSiteReport;
                 case PolSourceObsInfoEnum.SourceTypeWaterAnchorageMooringSite:
@@ -1250,20 +3156,86 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterDisposalAtSeaReport;
                 case PolSourceObsInfoEnum.SourceTypeWaterMarinePark:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterMarineParkReport;
-                case PolSourceObsInfoEnum.SourceTypeWaterSeaport:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterSeaportReport;
-                case PolSourceObsInfoEnum.SourceSandBar:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceSandBarReport;
+                case PolSourceObsInfoEnum.SourceLandOutcrop:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceLandOutcropReport;
+                case PolSourceObsInfoEnum.AquacultureSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSiteReport;
+                case PolSourceObsInfoEnum.AnchorageMooringSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSiteReport;
+                case PolSourceObsInfoEnum.DisposalAtSea:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSeaReport;
+                case PolSourceObsInfoEnum.MarinePark:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineParkReport;
+                case PolSourceObsInfoEnum.OutcropSandBar:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropSandBarReport;
+                case PolSourceObsInfoEnum.OutcropRock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropRockReport;
+                case PolSourceObsInfoEnum.OutcropIsland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropIslandReport;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteActiveReport;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteFallow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteFallowReport;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.WatAquaCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.AquacultureCagesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesSingleReport;
+                case PolSourceObsInfoEnum.AquacultureFloatingBagsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsSingleReport;
+                case PolSourceObsInfoEnum.AquacultureSubmergedLinesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesSingleReport;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageSingleReport;
+                case PolSourceObsInfoEnum.AquacultureBargesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesSingleReport;
                 case PolSourceObsInfoEnum.AquacultureCages:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesReport;
                 case PolSourceObsInfoEnum.AquacultureFloatingBags:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsReport;
                 case PolSourceObsInfoEnum.AquacultureSubmergedLines:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesReport;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageReport;
+                case PolSourceObsInfoEnum.AquacultureBarges:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesReport;
+                case PolSourceObsInfoEnum.WatStructActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActiveReport;
+                case PolSourceObsInfoEnum.WatStructInactive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructInactiveReport;
+                case PolSourceObsInfoEnum.WaterStructureVesselSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselSingleReport;
+                case PolSourceObsInfoEnum.WaterStructureBargeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureBargeSingleReport;
+                case PolSourceObsInfoEnum.WaterStructureResidentalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureResidentalSingleReport;
+                case PolSourceObsInfoEnum.WaterStructureCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialSingleReport;
+                case PolSourceObsInfoEnum.WaterStructureNotActiveSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveSingleReport;
                 case PolSourceObsInfoEnum.WaterStructureVessel:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselReport;
                 case PolSourceObsInfoEnum.WaterStructureBarge:
@@ -1274,6 +3246,32 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialReport;
                 case PolSourceObsInfoEnum.WaterStructureNotActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveReport;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.WatStructCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberGreaterThan40Report;
                 case PolSourceObsInfoEnum.WaterDumpSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDumpSiteActiveReport;
                 case PolSourceObsInfoEnum.WaterDumpSiteNotActive:
@@ -1282,56 +3280,218 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportRecreationalReport;
                 case PolSourceObsInfoEnum.SeaportCommercial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportCommercialReport;
-                case PolSourceObsInfoEnum.AquacultureSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSmallReport;
-                case PolSourceObsInfoEnum.AquacultureLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLargeReport;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual5Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual10Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual20Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual40Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual60Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual80Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual100Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual150Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual200Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual250Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual300Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual400Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual500Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual750:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual750Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual1000Report;
+                case PolSourceObsInfoEnum.WaterSizeMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersGreaterThan1000Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual5Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual10Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual20Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual30Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual40Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual50Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual75Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual100Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual150Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual200Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual300Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual400Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual600Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual800Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual1000Report;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersGreaterThan1000Report;
                 case PolSourceObsInfoEnum.WaterTypeSalt:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeSaltReport;
                 case PolSourceObsInfoEnum.WaterTypeBrachish:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeBrachishReport;
                 case PolSourceObsInfoEnum.WaterTypeFresh:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeFreshReport;
-                case PolSourceObsInfoEnum.WaterAreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeSmallReport;
-                case PolSourceObsInfoEnum.WaterAreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeLargeReport;
                 case PolSourceObsInfoEnum.WaterFecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourcePeopleReport;
                 case PolSourceObsInfoEnum.WaterFecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceWildlifeReport;
                 case PolSourceObsInfoEnum.WaterFecalSourceAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceAbsentReport;
-                case PolSourceObsInfoEnum.WaterCountNumberLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberLessThan5Report;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween5and10Report;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween10and25Report;
-                case PolSourceObsInfoEnum.WaterCountNumberGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberGreaterThan25Report;
+                case PolSourceObsInfoEnum.WaterFecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalProcessWaterReport;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo1Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo2Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo3Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo4Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo5Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo6Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo7Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo8Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo9Report;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo10Report;
+                case PolSourceObsInfoEnum.WatCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween11and25Report;
+                case PolSourceObsInfoEnum.WatCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween26and40Report;
+                case PolSourceObsInfoEnum.WatCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberGreaterThan40Report;
+                case PolSourceObsInfoEnum.HumanSewageWashroom:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomReport;
+                case PolSourceObsInfoEnum.HumanSewageWashroomAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomAbsentReport;
                 case PolSourceObsInfoEnum.WaterSewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageDirectDischargeReport;
                 case PolSourceObsInfoEnum.WaterSepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSepticSystemFullRentionReport;
-                case PolSourceObsInfoEnum.WaterNumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentLessThan5Report;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween5and10Report;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween10and25Report;
-                case PolSourceObsInfoEnum.WaterNumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentGreaterThan25Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo1Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo2Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo3Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo4Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo5Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo6Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo7Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo8Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo9Report;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo10Report;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween11and25Report;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween26and40Report;
+                case PolSourceObsInfoEnum.WatNumberPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentGreaterThan40Report;
                 case PolSourceObsInfoEnum.WaterTypesEqualSmallMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallMammalsReport;
                 case PolSourceObsInfoEnum.WaterTypesEqualLargeMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeMammalsReport;
-                case PolSourceObsInfoEnum.WaterTypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeBirdsReport;
-                case PolSourceObsInfoEnum.WaterTypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualMediumBirdsReport;
-                case PolSourceObsInfoEnum.WaterTypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallBirdsReport;
+                case PolSourceObsInfoEnum.WaterTypesEqualSeaBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSeaBirdsReport;
+                case PolSourceObsInfoEnum.WaterTypesEqualShorelineBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualShorelineBirdsReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsPloversandSandpipers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsPloversandSandpipersReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsBlackBackedGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBlackBackedGullsReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsHerringGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsHerringGullsReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsGreaterYellowlegs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsGreaterYellowlegsReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsSurfScoter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsSurfScoterReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsBrownPelican:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBrownPelicanReport;
+                case PolSourceObsInfoEnum.ShorelineBirdsOthers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsOthersReport;
+                case PolSourceObsInfoEnum.SeaBirdsCormorants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsCormorantsReport;
+                case PolSourceObsInfoEnum.SeaBirdsDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsDucksReport;
+                case PolSourceObsInfoEnum.SeaBirdsGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsGeeseReport;
+                case PolSourceObsInfoEnum.SeaBirdsBlackBlackGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsBlackBlackGullsReport;
+                case PolSourceObsInfoEnum.SeaBirdsLoons:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsLoonsReport;
+                case PolSourceObsInfoEnum.SeaBirdsSeaducks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsSeaducksReport;
+                case PolSourceObsInfoEnum.SeaBirdsOther:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsOtherReport;
+                case PolSourceObsInfoEnum.LargeMarineMammaGreySeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammaGreySealReport;
+                case PolSourceObsInfoEnum.LargeMarineMammalHoodedSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalHoodedSealReport;
+                case PolSourceObsInfoEnum.LargeMarineMammalBeardSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalBeardSealReport;
+                case PolSourceObsInfoEnum.LargeMarineMammalStellarSeaLion:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStellarSeaLionReport;
+                case PolSourceObsInfoEnum.LargeMarineMammalAtlanticWalrus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalAtlanticWalrusReport;
+                case PolSourceObsInfoEnum.LargeMarineMammalNorthernFurSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalNorthernFurSealReport;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarpSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarpSealReport;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarbourSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarbourSealReport;
+                case PolSourceObsInfoEnum.SmallMarineanimalSeaOtter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalSeaOtterReport;
+                case PolSourceObsInfoEnum.MarineAnimalPresentLessThan5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentLessThan5Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween6and10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween6and10Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween11and25Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween26and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween26and100Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan100Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan500Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan1000Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan10000Report;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan20000Report;
+                case PolSourceObsInfoEnum.MarinePointSourceInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePointSourceInputToMarineReport;
                 case PolSourceObsInfoEnum.ShorelineSandy:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineSandyReport;
                 case PolSourceObsInfoEnum.ShorelineRocky:
@@ -1352,8 +3512,6 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSlipwayRocksReport;
                 case PolSourceObsInfoEnum.SourceTypeShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeShorelineReport;
-                case PolSourceObsInfoEnum.SourceTypeMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeMarineReport;
                 case PolSourceObsInfoEnum.StatusDefinite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusDefiniteReport;
                 case PolSourceObsInfoEnum.StatusPotential:
@@ -1366,8 +3524,14 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskModerateReport;
                 case PolSourceObsInfoEnum.RiskHighP:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighPReport;
-                case PolSourceObsInfoEnum.RiskHigh:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighReport;
+                case PolSourceObsInfoEnum.RiskHighConfirmedVisual:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighConfirmedVisualReport;
+                case PolSourceObsInfoEnum.RishHighConfirmedWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRishHighConfirmedWaterReport;
+                case PolSourceObsInfoEnum.FollowupRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupRequiredReport;
+                case PolSourceObsInfoEnum.FollowupNotRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupNotRequiredReport;
                 default:
                     return "";
             }
@@ -1381,14 +3545,20 @@ namespace CSSPEnums
             {
                 case PolSourceObsInfoEnum.Error:
                     return  CSSPEnumsRes.Empty;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters10Text;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters75Text;
                 case PolSourceObsInfoEnum.SourceTypeLandAgriculture:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandAgricultureText;
                 case PolSourceObsInfoEnum.SourceTypeLandForested:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandForestedText;
+                case PolSourceObsInfoEnum.SourceTypeLandFisheries:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandFisheriesText;
                 case PolSourceObsInfoEnum.SourceTypeLandIndustry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandIndustryText;
-                case PolSourceObsInfoEnum.SourceTypeLandMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineText;
+                case PolSourceObsInfoEnum.SourceTypeLandMarineStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineStructureText;
                 case PolSourceObsInfoEnum.SourceTypeLandRecreation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandRecreationText;
                 case PolSourceObsInfoEnum.SourceTypeLandUrban:
@@ -1421,8 +3591,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotNotActiveText;
                 case PolSourceObsInfoEnum.FarmHobby:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmHobbyText;
-                case PolSourceObsInfoEnum.FarmCommerical:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommericalText;
+                case PolSourceObsInfoEnum.FarmCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommercialText;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals10Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals20Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals40Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals60Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals80Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals100Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersbetween101And250Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween251And500Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween501And1000Text;
+                case PolSourceObsInfoEnum.AgrAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersGreaterThan1000Text;
                 case PolSourceObsInfoEnum.ForestedLoggingActivity:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedLoggingActivityText;
                 case PolSourceObsInfoEnum.ForestedClearcut:
@@ -1431,30 +3621,164 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedRegrowthText;
                 case PolSourceObsInfoEnum.ForestedBuilding:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedBuildingText;
+                case PolSourceObsInfoEnum.ForAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals10Text;
+                case PolSourceObsInfoEnum.ForAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals20Text;
+                case PolSourceObsInfoEnum.ForAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals40Text;
+                case PolSourceObsInfoEnum.ForAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals60Text;
+                case PolSourceObsInfoEnum.ForAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals80Text;
+                case PolSourceObsInfoEnum.ForAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals100Text;
+                case PolSourceObsInfoEnum.ForAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersbetween101And250Text;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween251And500Text;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween501And1000Text;
+                case PolSourceObsInfoEnum.ForAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersGreaterThan1000Text;
                 case PolSourceObsInfoEnum.IndustryAirport:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryAirportText;
                 case PolSourceObsInfoEnum.IndustryLandfill:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryLandfillText;
-                case PolSourceObsInfoEnum.IndustryFisheriesRelated:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryFisheriesRelatedText;
                 case PolSourceObsInfoEnum.IndustryWaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryWasteText;
                 case PolSourceObsInfoEnum.IndustryStorageTank:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStorageTankText;
-                case PolSourceObsInfoEnum.IndustryCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryCommercialText;
-                case PolSourceObsInfoEnum.FishProcessingShellfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingShellfishText;
-                case PolSourceObsInfoEnum.FishProcessingFinfish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFinfishText;
-                case PolSourceObsInfoEnum.FishProcessingFishMeal:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingFishMealText;
+                case PolSourceObsInfoEnum.IndustryBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryBuildingsText;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.INDCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.INDCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween10and25Text;
+                case PolSourceObsInfoEnum.INDCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberBetween25and40Text;
+                case PolSourceObsInfoEnum.INDCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumINDCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.FishShellfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishShellfishText;
+                case PolSourceObsInfoEnum.FishFinfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFinfishText;
+                case PolSourceObsInfoEnum.FishLobster:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishLobsterText;
+                case PolSourceObsInfoEnum.FishFishMeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFishMealText;
+                case PolSourceObsInfoEnum.FishProcessing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingText;
+                case PolSourceObsInfoEnum.FishHeldAlive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishHeldAliveText;
+                case PolSourceObsInfoEnum.FishPackaging:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishPackagingText;
+                case PolSourceObsInfoEnum.FishingRearing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishingRearingText;
+                case PolSourceObsInfoEnum.BuildingFishHatcherySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcherySingleText;
+                case PolSourceObsInfoEnum.BuildingFishTanksSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksSingleText;
+                case PolSourceObsInfoEnum.BuildingFishPondsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPondsSingleText;
+                case PolSourceObsInfoEnum.BuildingFishWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseSingleText;
+                case PolSourceObsInfoEnum.BuildingFishCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialSingleText;
+                case PolSourceObsInfoEnum.BuildingFishHatchery:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcheryText;
+                case PolSourceObsInfoEnum.BuildingFishInsideTanks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishInsideTanksText;
+                case PolSourceObsInfoEnum.BuildingFishPounds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPoundsText;
+                case PolSourceObsInfoEnum.BuildingFishWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseText;
+                case PolSourceObsInfoEnum.BuildingFishCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialText;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.FISCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.FISCountNumberBetween10and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween10and25Text;
+                case PolSourceObsInfoEnum.FISCountNumberBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberBetween25and40Text;
+                case PolSourceObsInfoEnum.FISCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFISCountNumberGreaterThan40Text;
                 case PolSourceObsInfoEnum.MarineWharf:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineWharfText;
                 case PolSourceObsInfoEnum.MarineBuildings:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineBuildingsText;
                 case PolSourceObsInfoEnum.MarineSeaWall:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineSeaWallText;
+                case PolSourceObsInfoEnum.MarNumPresentEqual1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual1Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual2Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual3Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual4Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual5Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual6Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual7Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual8Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual9Text;
+                case PolSourceObsInfoEnum.MarNumPresentEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentEqual10Text;
+                case PolSourceObsInfoEnum.MarNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween11and25Text;
+                case PolSourceObsInfoEnum.MarNumPresentBetween25and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentBetween25and40Text;
+                case PolSourceObsInfoEnum.MarNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarNumPresentGreaterThan40Text;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleCulvertText;
+                case PolSourceObsInfoEnum.SeaWallSourceSinglePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSinglePipeText;
+                case PolSourceObsInfoEnum.SeaWallSourceCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceCulvertText;
+                case PolSourceObsInfoEnum.SeaWallSourcePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourcePipeText;
                 case PolSourceObsInfoEnum.WharfCommercialTransportation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfCommercialTransportationText;
                 case PolSourceObsInfoEnum.WharfFishing:
@@ -1465,10 +3789,132 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfMarinaText;
                 case PolSourceObsInfoEnum.WharfAbandoned:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfAbandonedText;
+                case PolSourceObsInfoEnum.WharfBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfBuildingsText;
+                case PolSourceObsInfoEnum.VesselCountEquals1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals1Text;
+                case PolSourceObsInfoEnum.VesselCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals2Text;
+                case PolSourceObsInfoEnum.VesselCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals3Text;
+                case PolSourceObsInfoEnum.VesselCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals4Text;
+                case PolSourceObsInfoEnum.VesselCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals5Text;
+                case PolSourceObsInfoEnum.VesselCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals6Text;
+                case PolSourceObsInfoEnum.VesselCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals7Text;
+                case PolSourceObsInfoEnum.VesselCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals8Text;
+                case PolSourceObsInfoEnum.VesselCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals9Text;
+                case PolSourceObsInfoEnum.VesselCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountEquals10Text;
+                case PolSourceObsInfoEnum.VesselCountBetwee11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetwee11and25Text;
+                case PolSourceObsInfoEnum.VesselCountBetween26and50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween26and50Text;
+                case PolSourceObsInfoEnum.VesselCountBetween51and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountBetween51and100Text;
+                case PolSourceObsInfoEnum.VesselCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumVesselCountGreaterThan100Text;
+                case PolSourceObsInfoEnum.TransportationCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalSingleText;
+                case PolSourceObsInfoEnum.TransportationFerrySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerrySingleText;
+                case PolSourceObsInfoEnum.TransportationPleasureCraftSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftSingleText;
                 case PolSourceObsInfoEnum.TransportationCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalText;
                 case PolSourceObsInfoEnum.TransportationFerry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerryText;
+                case PolSourceObsInfoEnum.TransportationPleasureCraft:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftText;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.MarWhfCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarWhfCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.MarBldCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarBldCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.MARBuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchSingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilitySingleText;
+                case PolSourceObsInfoEnum.MARBuildingAllCottage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageText;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerText;
+                case PolSourceObsInfoEnum.MARBuildingAllResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialText;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseText;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelText;
+                case PolSourceObsInfoEnum.MARBuildingAllCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalText;
+                case PolSourceObsInfoEnum.MARBuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolText;
+                case PolSourceObsInfoEnum.MARBuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchText;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilityText;
                 case PolSourceObsInfoEnum.RecreationCampground:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCampgroundText;
                 case PolSourceObsInfoEnum.RecreationDayUseArea:
@@ -1481,24 +3927,96 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCommunityCentreText;
                 case PolSourceObsInfoEnum.RecreationGolfCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationGolfCourseText;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox10Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox30Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox50Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox100Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox200Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox300Text;
+                case PolSourceObsInfoEnum.RECcampgrdLotsapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRECcampgrdLotsapprox500Text;
+                case PolSourceObsInfoEnum.RecTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailerText;
+                case PolSourceObsInfoEnum.RecTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTentsText;
+                case PolSourceObsInfoEnum.RecTrailersandTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailersandTentsText;
                 case PolSourceObsInfoEnum.CampgroundNoDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundNoDumpStnText;
                 case PolSourceObsInfoEnum.CampgroundwithDumpStn:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundwithDumpStnText;
-                case PolSourceObsInfoEnum.SewageCesspool:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolText;
+                case PolSourceObsInfoEnum.RecFecalSourcePeople:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePeopleText;
+                case PolSourceObsInfoEnum.RecFecalSourceWildlife:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceWildlifeText;
+                case PolSourceObsInfoEnum.RecFecalSourceDrainagewater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceDrainagewaterText;
+                case PolSourceObsInfoEnum.RecFecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePetsText;
+                case PolSourceObsInfoEnum.RecSewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageCesspoolText;
+                case PolSourceObsInfoEnum.RecSewagePrivyOuthouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewagePrivyOuthouseText;
+                case PolSourceObsInfoEnum.RecSewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageMunicipalSystemText;
+                case PolSourceObsInfoEnum.RecSepticSystemDrainageField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemDrainageFieldText;
+                case PolSourceObsInfoEnum.RecSepticSystemLagoon:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemLagoonText;
+                case PolSourceObsInfoEnum.RecSepticSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemConstructedWetlandText;
+                case PolSourceObsInfoEnum.RecSepticFreeFlow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticFreeFlowText;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo1Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo2Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo3Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo4Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo5Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo6Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo7Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo8Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo9Text;
+                case PolSourceObsInfoEnum.RecNumPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentEqualTo10Text;
+                case PolSourceObsInfoEnum.RecNumPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween11and25Text;
+                case PolSourceObsInfoEnum.RecNumPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentBetween26and40Text;
+                case PolSourceObsInfoEnum.RecNumPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecNumPresentGreaterThan40Text;
                 case PolSourceObsInfoEnum.SewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDirectDischargeText;
+                case PolSourceObsInfoEnum.SewageFlowStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageFlowStructureText;
                 case PolSourceObsInfoEnum.SewagePrivyOuthouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewagePrivyOuthouseText;
-                case PolSourceObsInfoEnum.SewageMunicipalSystem:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemText;
-                case PolSourceObsInfoEnum.SepticSystemDrainageField:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemDrainageFieldText;
+                case PolSourceObsInfoEnum.SepticSystemLeachateField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLeachateFieldText;
                 case PolSourceObsInfoEnum.SepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemFullRentionText;
+                case PolSourceObsInfoEnum.SewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolText;
                 case PolSourceObsInfoEnum.SepticSystemLagoon:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLagoonText;
+                case PolSourceObsInfoEnum.SewageSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageSystemConstructedWetlandText;
+                case PolSourceObsInfoEnum.SewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemText;
                 case PolSourceObsInfoEnum.SepticNoStructure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticNoStructureText;
                 case PolSourceObsInfoEnum.UrbanStormWater:
@@ -1523,10 +4041,30 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankPropaneText;
                 case PolSourceObsInfoEnum.StorageTankChemicals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankChemicalsText;
-                case PolSourceObsInfoEnum.TankSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeSmallText;
-                case PolSourceObsInfoEnum.TankSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSizeLargeText;
+                case PolSourceObsInfoEnum.TankSize100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize100Text;
+                case PolSourceObsInfoEnum.TankSize500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize500Text;
+                case PolSourceObsInfoEnum.TankSize1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize1000Text;
+                case PolSourceObsInfoEnum.TankSize2000plus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTankSize2000plusText;
+                case PolSourceObsInfoEnum.BuildingResidentialFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingWarehouseFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingWarehouseFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingCommericalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingBarnFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingSchoolFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingChurchFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmSingleText;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmSingleText;
                 case PolSourceObsInfoEnum.BuildingResidentialFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmText;
                 case PolSourceObsInfoEnum.BuildingWarehouseFarm:
@@ -1535,8 +4073,84 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmText;
                 case PolSourceObsInfoEnum.BuildingBarnFarm:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmText;
-                case PolSourceObsInfoEnum.BuildingRecreational:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalText;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmText;
+                case PolSourceObsInfoEnum.BuildingSchoolFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmText;
+                case PolSourceObsInfoEnum.BuildingChurchFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmText;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmText;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.AGRCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.AGRCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.AGRCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAGRCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.FORCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.FORCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.FORCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.FORCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFORCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.BuildingForestedResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedWarehouseSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedRecreationalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedRecreationalSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedTrailerSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactorySingleText;
+                case PolSourceObsInfoEnum.BuildingForestedCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchSingleText;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilitySingleText;
                 case PolSourceObsInfoEnum.BuildingForestedResidential:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialText;
                 case PolSourceObsInfoEnum.BuildingForestedWarehouse:
@@ -1549,20 +4163,54 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactoryText;
                 case PolSourceObsInfoEnum.BuildingForestedCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalText;
+                case PolSourceObsInfoEnum.BuildingForestedSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolText;
+                case PolSourceObsInfoEnum.BuildingForestedChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchText;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilityText;
+                case PolSourceObsInfoEnum.BuildingindustryWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseSingleText;
+                case PolSourceObsInfoEnum.BuildingIndustryFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactorySingleText;
+                case PolSourceObsInfoEnum.BuildingIndustryCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalSingleText;
+                case PolSourceObsInfoEnum.BuildingIndustrySchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolSingleText;
+                case PolSourceObsInfoEnum.BuildingIndustryChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchSingleText;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilitySingleText;
                 case PolSourceObsInfoEnum.BuildingindustryWarehouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseText;
                 case PolSourceObsInfoEnum.BuildingIndustryFactory:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactoryText;
                 case PolSourceObsInfoEnum.BuildingIndustryCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalText;
-                case PolSourceObsInfoEnum.BuildingFishHatchery:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcheryText;
-                case PolSourceObsInfoEnum.BuildingFishTanks:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksText;
-                case PolSourceObsInfoEnum.BuildingFishWarehouse:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseText;
-                case PolSourceObsInfoEnum.BuildingFishCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialText;
+                case PolSourceObsInfoEnum.BuildingIndustrySchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolText;
+                case PolSourceObsInfoEnum.BuildingIndustryChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchText;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilityText;
+                case PolSourceObsInfoEnum.BuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageSingleText;
+                case PolSourceObsInfoEnum.BuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllTrailerSingleText;
+                case PolSourceObsInfoEnum.BuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllResidentialSingleText;
+                case PolSourceObsInfoEnum.BuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllWarehouseSingleText;
+                case PolSourceObsInfoEnum.BuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelSingleText;
+                case PolSourceObsInfoEnum.BuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalSingleText;
+                case PolSourceObsInfoEnum.BuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolSingleText;
+                case PolSourceObsInfoEnum.BuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchSingleText;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilitySingleText;
                 case PolSourceObsInfoEnum.BuildingAllCottage:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageText;
                 case PolSourceObsInfoEnum.BuildingAllTrailer:
@@ -1575,104 +4223,262 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelText;
                 case PolSourceObsInfoEnum.BuildingAllCommerical:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalText;
+                case PolSourceObsInfoEnum.BuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolText;
+                case PolSourceObsInfoEnum.BuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchText;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilityText;
                 case PolSourceObsInfoEnum.CountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo1Text;
-                case PolSourceObsInfoEnum.CountNumberBetween1and5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween1and5Text;
-                case PolSourceObsInfoEnum.CountNumberbBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween5and10Text;
-                case PolSourceObsInfoEnum.CountNumberbBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween10and25Text;
-                case PolSourceObsInfoEnum.CountNumberbBetween25and40:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberbBetween25and40Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.CountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.CountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.CountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberBetween26and40Text;
                 case PolSourceObsInfoEnum.CountNumberGreaterThan40:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCountNumberGreaterThan40Text;
-                case PolSourceObsInfoEnum.AreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeSmallText;
-                case PolSourceObsInfoEnum.AreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSizeLargeText;
-                case PolSourceObsInfoEnum.FecalSourceLivestock:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestockText;
+                case PolSourceObsInfoEnum.AreaMetersEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals5Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals10Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals20Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals40Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals60Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals80Text;
+                case PolSourceObsInfoEnum.AreaMetersEquals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals100Text;
+                case PolSourceObsInfoEnum.AreaMetersBetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween101And250Text;
+                case PolSourceObsInfoEnum.AreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween251And500Text;
+                case PolSourceObsInfoEnum.AreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween501And1000Text;
+                case PolSourceObsInfoEnum.AreaMetersgreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersgreaterThan1000Text;
                 case PolSourceObsInfoEnum.FecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePeopleText;
+                case PolSourceObsInfoEnum.FecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePetsText;
                 case PolSourceObsInfoEnum.FecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceWildlifeText;
-                case PolSourceObsInfoEnum.FecalSourceAbsent:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsentText;
+                case PolSourceObsInfoEnum.FecalSourceLivestock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestockText;
                 case PolSourceObsInfoEnum.FecalSourceDrainagewater:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceDrainagewaterText;
+                case PolSourceObsInfoEnum.FecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalProcessWaterText;
+                case PolSourceObsInfoEnum.FecalPotentialContamination:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalPotentialContaminationText;
+                case PolSourceObsInfoEnum.FecalSourceAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsentText;
                 case PolSourceObsInfoEnum.MajorIssueSourceManurePile:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceManurePileText;
                 case PolSourceObsInfoEnum.MajorIssueAbsent1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueAbsent1Text;
-                case PolSourceObsInfoEnum.MajorIssueRunoff:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueRunoffText;
+                case PolSourceObsInfoEnum.MajorIssueCollectedRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueCollectedRunoffText;
+                case PolSourceObsInfoEnum.MajorIssueSurfaceRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSurfaceRunoffText;
                 case PolSourceObsInfoEnum.LandfillTypeResidental:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeResidentalText;
                 case PolSourceObsInfoEnum.LandfillTypeIndustrial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeIndustrialText;
                 case PolSourceObsInfoEnum.LandfillTypeWoodwaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeWoodwasteText;
-                case PolSourceObsInfoEnum.NumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentLessThan5Text;
-                case PolSourceObsInfoEnum.NumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween5and10Text;
-                case PolSourceObsInfoEnum.NumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentBetween10and25Text;
-                case PolSourceObsInfoEnum.NumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberPresentGreaterThan25Text;
-                case PolSourceObsInfoEnum.TypesEqualLargeDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeDomesticText;
-                case PolSourceObsInfoEnum.TypesEqualSmallDomestic:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallDomesticText;
-                case PolSourceObsInfoEnum.TypesEqualDomesticBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticBirdsText;
+                case PolSourceObsInfoEnum.TypesEqualHorses:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualHorsesText;
+                case PolSourceObsInfoEnum.TypesEqualCows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualCowsText;
+                case PolSourceObsInfoEnum.TypesEqualSheep:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSheepText;
+                case PolSourceObsInfoEnum.TypesEqualPigs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualPigsText;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureLarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureLargeText;
+                case PolSourceObsInfoEnum.TypesEqualChickens:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualChickensText;
+                case PolSourceObsInfoEnum.TypesEqualTurkeys:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualTurkeysText;
+                case PolSourceObsInfoEnum.TypesEqualDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDucksText;
+                case PolSourceObsInfoEnum.TypesEqualGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualGeeseText;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureSmall:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureSmallText;
                 case PolSourceObsInfoEnum.TypesEqualFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualFurFarmsText;
-                case PolSourceObsInfoEnum.TypesEqualDomesticMixture:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureText;
                 case PolSourceObsInfoEnum.TypesEqualSmallWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallWildAnimalsText;
                 case PolSourceObsInfoEnum.TypesEqualLargeWildAnimals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeWildAnimalsText;
-                case PolSourceObsInfoEnum.TypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeBirdsText;
-                case PolSourceObsInfoEnum.TypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMediumBirdsText;
-                case PolSourceObsInfoEnum.TypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallBirdsText;
-                case PolSourceObsInfoEnum.NumberAnimalPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentLessThan5Text;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween5and10Text;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween10and25Text;
-                case PolSourceObsInfoEnum.NumberAnimalPresentBetween25and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentBetween25and100Text;
-                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan100Text;
+                case PolSourceObsInfoEnum.TypesEquallandBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEquallandBirdsText;
+                case PolSourceObsInfoEnum.TypesEqualMarinebirdsSeals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMarinebirdsSealsText;
+                case PolSourceObsInfoEnum.TypesLandBirdsCrows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsCrowsText;
+                case PolSourceObsInfoEnum.TypesLandBirdsEagle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsEagleText;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsMoose:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsMooseText;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsDeer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsDeerText;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsCoyote:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsCoyoteText;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsFoxes:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsFoxesText;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsGroundHogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsGroundHogsText;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsSkunks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsSkunksText;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox2Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox10Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox15:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox15Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox25Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox50Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox100Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox500Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox1000Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentapprox5000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentapprox5000Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan10000Text;
+                case PolSourceObsInfoEnum.NumberAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumNumberAnimalPresentGreaterThan20000Text;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandCulvertText;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandPipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandPipeText;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandWaterCourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandWaterCourseText;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDitch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDitchText;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDrainage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDrainageText;
+                case PolSourceObsInfoEnum.WasteSourceTypeDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeDirectInputToMarineText;
+                case PolSourceObsInfoEnum.WasteSourceTypetoField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypetoFieldText;
+                case PolSourceObsInfoEnum.FieldLocationOnFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOnFarmText;
+                case PolSourceObsInfoEnum.FieldLocationOffFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOffFarmText;
                 case PolSourceObsInfoEnum.SourceDirectInputToMarine:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceDirectInputToMarineText;
                 case PolSourceObsInfoEnum.BoatCountEquals1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals1Text;
-                case PolSourceObsInfoEnum.BoatCountLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountLessThan5Text;
-                case PolSourceObsInfoEnum.BoatCountBetween5and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween5and25Text;
-                case PolSourceObsInfoEnum.BoatCountBetween25and50:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween25and50Text;
-                case PolSourceObsInfoEnum.BoatCountBetween50and100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween50and100Text;
-                case PolSourceObsInfoEnum.BoatCountBetweenMoreThan100:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetweenMoreThan100Text;
+                case PolSourceObsInfoEnum.BoatCountEquals2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals2Text;
+                case PolSourceObsInfoEnum.BoatCountEquals3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals3Text;
+                case PolSourceObsInfoEnum.BoatCountEquals4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals4Text;
+                case PolSourceObsInfoEnum.BoatCountEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals5Text;
+                case PolSourceObsInfoEnum.BoatCountEquals6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals6Text;
+                case PolSourceObsInfoEnum.BoatCountEquals7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals7Text;
+                case PolSourceObsInfoEnum.BoatCountEquals8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals8Text;
+                case PolSourceObsInfoEnum.BoatCountEquals9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals9Text;
+                case PolSourceObsInfoEnum.BoatCountEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountEquals10Text;
+                case PolSourceObsInfoEnum.BoatCountBetween11to25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween11to25Text;
+                case PolSourceObsInfoEnum.BoatCountBetween26to50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween26to50Text;
+                case PolSourceObsInfoEnum.BoatCountBetween51to75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween51to75Text;
+                case PolSourceObsInfoEnum.BoatCountBetween76to100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountBetween76to100Text;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan100Text;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan150Text;
+                case PolSourceObsInfoEnum.BoatCountGreaterThan250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBoatCountGreaterThan250Text;
                 case PolSourceObsInfoEnum.OilDumpingFacilityPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityPresentText;
                 case PolSourceObsInfoEnum.OilDumpingFacilityAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityAbsentText;
+                case PolSourceObsInfoEnum.OilDumpingFacilityNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityNotObservedText;
                 case PolSourceObsInfoEnum.SewageDumpingStationPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationPresentText;
                 case PolSourceObsInfoEnum.SewageDumpingStationAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationAbsentText;
+                case PolSourceObsInfoEnum.SewageDumpingStationNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationNotObservedText;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.PointCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.PointCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.PointCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.PointCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPointCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.SourceTypeLandCulvertSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertSingleText;
+                case PolSourceObsInfoEnum.SourceTypeLandPipeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandPipeSingleText;
+                case PolSourceObsInfoEnum.SourceTypeLandWaterCourseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandWaterCourseSingleText;
+                case PolSourceObsInfoEnum.SourceTypeLandDitchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDitchSingleText;
+                case PolSourceObsInfoEnum.SourceTypeLandDrainageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDrainageSingleText;
                 case PolSourceObsInfoEnum.SourceTypeLandCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertText;
                 case PolSourceObsInfoEnum.SourceTypeLandPipe:
@@ -1691,12 +4497,22 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceManureDitchText;
                 case PolSourceObsInfoEnum.DiameterInCentimetersLessThan30:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersLessThan30Text;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween30and100cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween30and100cmText;
-                case PolSourceObsInfoEnum.DiameterInCentimetersBetween100and200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween100and200cmText;
-                case PolSourceObsInfoEnum.DiameterInCentimetersMoreThan200cm:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersMoreThan200cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween31and50cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween31and50cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween51and100cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween51and100cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween101and200cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween101and200cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween201and300cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween201and300cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween301and400cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween301and400cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersBetween401and500cmText;
+                case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterInCentimetersGreaterThan500cmText;
+                case PolSourceObsInfoEnum.DiameterNoInformation:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDiameterNoInformationText;
                 case PolSourceObsInfoEnum.FlowLevelHigh:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelHighText;
                 case PolSourceObsInfoEnum.FlowLevelMedium:
@@ -1707,18 +4523,38 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseCementHoldingTankText;
                 case PolSourceObsInfoEnum.OuthouseSittingOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseSittingOnGroundText;
-                case PolSourceObsInfoEnum.WidthInMetersLessThan1:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersLessThan1Text;
-                case PolSourceObsInfoEnum.WidthInMetersBetween1And5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween1And5Text;
-                case PolSourceObsInfoEnum.WidthInMetersBetween5And25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween5And25Text;
-                case PolSourceObsInfoEnum.WidthInMetersMoreThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersMoreThan25Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox1Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox2Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox3Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox4Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox5Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox6Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox7Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox8Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox9Text;
+                case PolSourceObsInfoEnum.WidthInMetersApprox10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersApprox10Text;
+                case PolSourceObsInfoEnum.WidthInMetersBetween11And25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween11And25Text;
+                case PolSourceObsInfoEnum.WidthInMetersBetween26And40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersBetween26And40Text;
+                case PolSourceObsInfoEnum.WidthInMetersGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWidthInMetersGreaterThan40Text;
                 case PolSourceObsInfoEnum.DitchAlongRoad:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchAlongRoadText;
                 case PolSourceObsInfoEnum.DitchBetweenAcrossProperties:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchBetweenAcrossPropertiesText;
+                case PolSourceObsInfoEnum.DitchDirectlytoWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchDirectlytoWaterText;
                 case PolSourceObsInfoEnum.DrainagePavedSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainagePavedSurfacesText;
                 case PolSourceObsInfoEnum.DrainageVegetatedSurfaces:
@@ -1727,10 +4563,28 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageDirectText;
                 case PolSourceObsInfoEnum.DrainageBareSoilSurfaces:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageBareSoilSurfacesText;
-                case PolSourceObsInfoEnum.ManurePileSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileSmallText;
-                case PolSourceObsInfoEnum.ManurePileLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManurePileLargeText;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately10Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately20Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately30Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately40Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately50Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately60Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately70:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately70Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately80Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately90:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately90Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately100Text;
+                case PolSourceObsInfoEnum.ManureAreaMetersMoreThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersMoreThan100Text;
                 case PolSourceObsInfoEnum.SourceTypeWaterAquacultureSite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterAquacultureSiteText;
                 case PolSourceObsInfoEnum.SourceTypeWaterAnchorageMooringSite:
@@ -1739,20 +4593,82 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterDisposalAtSeaText;
                 case PolSourceObsInfoEnum.SourceTypeWaterMarinePark:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterMarineParkText;
-                case PolSourceObsInfoEnum.SourceTypeWaterSeaport:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterSeaportText;
-                case PolSourceObsInfoEnum.SourceSandBar:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceSandBarText;
+                case PolSourceObsInfoEnum.SourceLandOutcrop:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceLandOutcropText;
+                case PolSourceObsInfoEnum.AquacultureSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSiteText;
+                case PolSourceObsInfoEnum.AnchorageMooringSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSiteText;
+                case PolSourceObsInfoEnum.DisposalAtSea:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSeaText;
+                case PolSourceObsInfoEnum.MarinePark:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineParkText;
+                case PolSourceObsInfoEnum.OutcropSandBar:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropSandBarText;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteActiveText;
                 case PolSourceObsInfoEnum.WaterAquacultureSiteFallow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteFallowText;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.WatAquaCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatAquaCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.AquacultureCagesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesSingleText;
+                case PolSourceObsInfoEnum.AquacultureFloatingBagsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsSingleText;
+                case PolSourceObsInfoEnum.AquacultureSubmergedLinesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesSingleText;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageSingleText;
+                case PolSourceObsInfoEnum.AquacultureBargesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesSingleText;
                 case PolSourceObsInfoEnum.AquacultureCages:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesText;
                 case PolSourceObsInfoEnum.AquacultureFloatingBags:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsText;
                 case PolSourceObsInfoEnum.AquacultureSubmergedLines:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesText;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageText;
+                case PolSourceObsInfoEnum.AquacultureBarges:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesText;
+                case PolSourceObsInfoEnum.WatStructActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActiveText;
+                case PolSourceObsInfoEnum.WatStructInactive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructInactiveText;
+                case PolSourceObsInfoEnum.WaterStructureVesselSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselSingleText;
+                case PolSourceObsInfoEnum.WaterStructureBargeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureBargeSingleText;
+                case PolSourceObsInfoEnum.WaterStructureResidentalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureResidentalSingleText;
+                case PolSourceObsInfoEnum.WaterStructureCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialSingleText;
+                case PolSourceObsInfoEnum.WaterStructureNotActiveSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveSingleText;
                 case PolSourceObsInfoEnum.WaterStructureVessel:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselText;
                 case PolSourceObsInfoEnum.WaterStructureBarge:
@@ -1763,6 +4679,32 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialText;
                 case PolSourceObsInfoEnum.WaterStructureNotActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveText;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.WatStructCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructCountNumberGreaterThan40Text;
                 case PolSourceObsInfoEnum.WaterDumpSiteActive:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDumpSiteActiveText;
                 case PolSourceObsInfoEnum.WaterDumpSiteNotActive:
@@ -1771,56 +4713,186 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportRecreationalText;
                 case PolSourceObsInfoEnum.SeaportCommercial:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportCommercialText;
-                case PolSourceObsInfoEnum.AquacultureSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSmallText;
-                case PolSourceObsInfoEnum.AquacultureLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLargeText;
-                case PolSourceObsInfoEnum.WaterTypeSalt:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeSaltText;
-                case PolSourceObsInfoEnum.WaterTypeBrachish:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeBrachishText;
-                case PolSourceObsInfoEnum.WaterTypeFresh:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeFreshText;
-                case PolSourceObsInfoEnum.WaterAreaSizeSmall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeSmallText;
-                case PolSourceObsInfoEnum.WaterAreaSizeLarge:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAreaSizeLargeText;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual5Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual10Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual20Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual40Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual60Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual80Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual100Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual150Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual200Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual250Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual300Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual400Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual500Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual750:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual750Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual1000Text;
+                case PolSourceObsInfoEnum.WaterSizeMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersGreaterThan1000Text;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual5Text;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual10Text;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual75Text;
                 case PolSourceObsInfoEnum.WaterFecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourcePeopleText;
                 case PolSourceObsInfoEnum.WaterFecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceWildlifeText;
                 case PolSourceObsInfoEnum.WaterFecalSourceAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceAbsentText;
-                case PolSourceObsInfoEnum.WaterCountNumberLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberLessThan5Text;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween5and10Text;
-                case PolSourceObsInfoEnum.WaterCountNumberBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberBetween10and25Text;
-                case PolSourceObsInfoEnum.WaterCountNumberGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterCountNumberGreaterThan25Text;
+                case PolSourceObsInfoEnum.WaterFecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalProcessWaterText;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo1Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo2Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo3Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo4Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo5Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo6Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo7Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo8Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo9Text;
+                case PolSourceObsInfoEnum.WatCountNumberEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberEqualTo10Text;
+                case PolSourceObsInfoEnum.WatCountNumberBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween11and25Text;
+                case PolSourceObsInfoEnum.WatCountNumberBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberBetween26and40Text;
+                case PolSourceObsInfoEnum.WatCountNumberGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatCountNumberGreaterThan40Text;
+                case PolSourceObsInfoEnum.HumanSewageWashroom:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomText;
+                case PolSourceObsInfoEnum.HumanSewageWashroomAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomAbsentText;
                 case PolSourceObsInfoEnum.WaterSewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageDirectDischargeText;
                 case PolSourceObsInfoEnum.WaterSepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSepticSystemFullRentionText;
-                case PolSourceObsInfoEnum.WaterNumberPresentLessThan5:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentLessThan5Text;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween5and10:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween5and10Text;
-                case PolSourceObsInfoEnum.WaterNumberPresentBetween10and25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentBetween10and25Text;
-                case PolSourceObsInfoEnum.WaterNumberPresentGreaterThan25:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterNumberPresentGreaterThan25Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo1:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo1Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo2:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo2Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo3:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo3Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo4:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo4Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo5Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo6:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo6Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo7:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo7Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo8:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo8Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo9:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo9Text;
+                case PolSourceObsInfoEnum.WatNumberPresentEqualTo10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentEqualTo10Text;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween11and25Text;
+                case PolSourceObsInfoEnum.WatNumberPresentBetween26and40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentBetween26and40Text;
+                case PolSourceObsInfoEnum.WatNumberPresentGreaterThan40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatNumberPresentGreaterThan40Text;
                 case PolSourceObsInfoEnum.WaterTypesEqualSmallMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallMammalsText;
                 case PolSourceObsInfoEnum.WaterTypesEqualLargeMammals:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeMammalsText;
-                case PolSourceObsInfoEnum.WaterTypesEqualLargeBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeBirdsText;
-                case PolSourceObsInfoEnum.WaterTypesEqualMediumBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualMediumBirdsText;
-                case PolSourceObsInfoEnum.WaterTypesEqualSmallBirds:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallBirdsText;
+                case PolSourceObsInfoEnum.WaterTypesEqualSeaBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSeaBirdsText;
+                case PolSourceObsInfoEnum.WaterTypesEqualShorelineBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualShorelineBirdsText;
+                case PolSourceObsInfoEnum.ShorelineBirdsPloversandSandpipers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsPloversandSandpipersText;
+                case PolSourceObsInfoEnum.ShorelineBirdsBlackBackedGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBlackBackedGullsText;
+                case PolSourceObsInfoEnum.ShorelineBirdsHerringGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsHerringGullsText;
+                case PolSourceObsInfoEnum.ShorelineBirdsGreaterYellowlegs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsGreaterYellowlegsText;
+                case PolSourceObsInfoEnum.ShorelineBirdsSurfScoter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsSurfScoterText;
+                case PolSourceObsInfoEnum.ShorelineBirdsBrownPelican:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBrownPelicanText;
+                case PolSourceObsInfoEnum.ShorelineBirdsOthers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsOthersText;
+                case PolSourceObsInfoEnum.SeaBirdsCormorants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsCormorantsText;
+                case PolSourceObsInfoEnum.SeaBirdsDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsDucksText;
+                case PolSourceObsInfoEnum.SeaBirdsGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsGeeseText;
+                case PolSourceObsInfoEnum.SeaBirdsBlackBlackGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsBlackBlackGullsText;
+                case PolSourceObsInfoEnum.SeaBirdsLoons:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsLoonsText;
+                case PolSourceObsInfoEnum.SeaBirdsSeaducks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsSeaducksText;
+                case PolSourceObsInfoEnum.SeaBirdsOther:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsOtherText;
+                case PolSourceObsInfoEnum.LargeMarineMammaGreySeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammaGreySealText;
+                case PolSourceObsInfoEnum.LargeMarineMammalHoodedSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalHoodedSealText;
+                case PolSourceObsInfoEnum.LargeMarineMammalBeardSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalBeardSealText;
+                case PolSourceObsInfoEnum.LargeMarineMammalStellarSeaLion:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStellarSeaLionText;
+                case PolSourceObsInfoEnum.LargeMarineMammalAtlanticWalrus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalAtlanticWalrusText;
+                case PolSourceObsInfoEnum.LargeMarineMammalNorthernFurSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalNorthernFurSealText;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarpSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarpSealText;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarbourSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarbourSealText;
+                case PolSourceObsInfoEnum.SmallMarineanimalSeaOtter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalSeaOtterText;
+                case PolSourceObsInfoEnum.MarineAnimalPresentLessThan5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentLessThan5Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween6and10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween6and10Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween11and25:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween11and25Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentBetween26and100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentBetween26and100Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan100Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan500Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan1000Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan10000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan10000Text;
+                case PolSourceObsInfoEnum.MarineAnimalPresentGreaterThan20000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineAnimalPresentGreaterThan20000Text;
+                case PolSourceObsInfoEnum.MarinePointSourceInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarinePointSourceInputToMarineText;
                 case PolSourceObsInfoEnum.ShorelineSandy:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineSandyText;
                 case PolSourceObsInfoEnum.ShorelineRocky:
@@ -1841,8 +4913,6 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSlipwayRocksText;
                 case PolSourceObsInfoEnum.SourceTypeShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeShorelineText;
-                case PolSourceObsInfoEnum.SourceTypeMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeMarineText;
                 case PolSourceObsInfoEnum.StatusDefinite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusDefiniteText;
                 case PolSourceObsInfoEnum.StatusPotential:
@@ -1855,8 +4925,14 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskModerateText;
                 case PolSourceObsInfoEnum.RiskHighP:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighPText;
-                case PolSourceObsInfoEnum.RiskHigh:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighText;
+                case PolSourceObsInfoEnum.RiskHighConfirmedVisual:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighConfirmedVisualText;
+                case PolSourceObsInfoEnum.RishHighConfirmedWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRishHighConfirmedWaterText;
+                case PolSourceObsInfoEnum.FollowupRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupRequiredText;
+                case PolSourceObsInfoEnum.FollowupNotRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupNotRequiredText;
                 default:
                     return "";
             }
@@ -1870,14 +4946,88 @@ namespace CSSPEnums
             {
                 case PolSourceObsInfoEnum.Error:
                     return  CSSPEnumsRes.Empty;
+                case PolSourceObsInfoEnum.LandBased:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandBasedInit;
+                case PolSourceObsInfoEnum.WaterBased:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterBasedInit;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMetersOnShore:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersOnShoreInit;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters5Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters10Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters20Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters30Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters40Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters50Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters75Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters100Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters150Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters200Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters300Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters400Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters600Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters800Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMeters1000Init;
+                case PolSourceObsInfoEnum.DistanceFromShoreInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceFromShoreInMetersGreaterThan1000Init;
+                case PolSourceObsInfoEnum.ShorelineRiparianZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZonePresentInit;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentInit;
+                case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfo:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoInit;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters5Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters10Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters20Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters30Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters50Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters100Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters200Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters400Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters800Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMeters1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMeters1000Init;
+                case PolSourceObsInfoEnum.DistancetoSaltWaterInMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistancetoSaltWaterInMetersGreaterThan1000Init;
+                case PolSourceObsInfoEnum.AreaSlopeLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeLowInit;
+                case PolSourceObsInfoEnum.AreaSlopeMedium:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeMediumInit;
+                case PolSourceObsInfoEnum.AreaSlopeHigh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaSlopeHighInit;
                 case PolSourceObsInfoEnum.SourceTypeLandAgriculture:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandAgricultureInit;
                 case PolSourceObsInfoEnum.SourceTypeLandForested:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandForestedInit;
+                case PolSourceObsInfoEnum.SourceTypeLandFisheries:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandFisheriesInit;
                 case PolSourceObsInfoEnum.SourceTypeLandIndustry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandIndustryInit;
-                case PolSourceObsInfoEnum.SourceTypeLandMarine:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineInit;
+                case PolSourceObsInfoEnum.SourceTypeLandMarineStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandMarineStructureInit;
                 case PolSourceObsInfoEnum.SourceTypeLandRecreation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandRecreationInit;
                 case PolSourceObsInfoEnum.SourceTypeLandUrban:
@@ -1894,6 +5044,44 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureFarmInit;
                 case PolSourceObsInfoEnum.AgricultureBuilding:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureBuildingInit;
+                case PolSourceObsInfoEnum.CropFood:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCropFoodInit;
+                case PolSourceObsInfoEnum.CropHay:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCropHayInit;
+                case PolSourceObsInfoEnum.CropPeatMoss:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCropPeatMossInit;
+                case PolSourceObsInfoEnum.PastureActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPastureActiveInit;
+                case PolSourceObsInfoEnum.PastureFallow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumPastureFallowInit;
+                case PolSourceObsInfoEnum.FeedlotActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotActiveInit;
+                case PolSourceObsInfoEnum.FeedlotNotActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFeedlotNotActiveInit;
+                case PolSourceObsInfoEnum.FarmHobby:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmHobbyInit;
+                case PolSourceObsInfoEnum.FarmCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFarmCommercialInit;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals10Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals20Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals40Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals60Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals80Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersequals100Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersbetween101And250Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween251And500Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersBetween501And1000Init;
+                case PolSourceObsInfoEnum.AgrAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgrAreaMetersGreaterThan1000Init;
                 case PolSourceObsInfoEnum.ForestedLoggingActivity:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedLoggingActivityInit;
                 case PolSourceObsInfoEnum.ForestedClearcut:
@@ -1902,24 +5090,134 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedRegrowthInit;
                 case PolSourceObsInfoEnum.ForestedBuilding:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForestedBuildingInit;
+                case PolSourceObsInfoEnum.ForAreaMetersequals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals10Init;
+                case PolSourceObsInfoEnum.ForAreaMetersequals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals20Init;
+                case PolSourceObsInfoEnum.ForAreaMetersequals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals40Init;
+                case PolSourceObsInfoEnum.ForAreaMetersequals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals60Init;
+                case PolSourceObsInfoEnum.ForAreaMetersequals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals80Init;
+                case PolSourceObsInfoEnum.ForAreaMetersequals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersequals100Init;
+                case PolSourceObsInfoEnum.ForAreaMetersbetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersbetween101And250Init;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween251And500Init;
+                case PolSourceObsInfoEnum.ForAreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersBetween501And1000Init;
+                case PolSourceObsInfoEnum.ForAreaMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumForAreaMetersGreaterThan1000Init;
                 case PolSourceObsInfoEnum.IndustryAirport:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryAirportInit;
-                case PolSourceObsInfoEnum.IndustryLandfill:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryLandfillInit;
-                case PolSourceObsInfoEnum.IndustryFisheriesRelated:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryFisheriesRelatedInit;
                 case PolSourceObsInfoEnum.IndustryWaste:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryWasteInit;
-                case PolSourceObsInfoEnum.IndustryStorageTank:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryStorageTankInit;
-                case PolSourceObsInfoEnum.IndustryCommercial:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryCommercialInit;
+                case PolSourceObsInfoEnum.IndustryBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustryBuildingsInit;
+                case PolSourceObsInfoEnum.FishShellfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishShellfishInit;
+                case PolSourceObsInfoEnum.FishFinfish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFinfishInit;
+                case PolSourceObsInfoEnum.FishLobster:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishLobsterInit;
+                case PolSourceObsInfoEnum.FishFishMeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishFishMealInit;
+                case PolSourceObsInfoEnum.FishProcessing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishProcessingInit;
+                case PolSourceObsInfoEnum.FishHeldAlive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishHeldAliveInit;
+                case PolSourceObsInfoEnum.FishPackaging:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishPackagingInit;
+                case PolSourceObsInfoEnum.FishingRearing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFishingRearingInit;
+                case PolSourceObsInfoEnum.BuildingFishHatcherySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcherySingleInit;
+                case PolSourceObsInfoEnum.BuildingFishTanksSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishTanksSingleInit;
+                case PolSourceObsInfoEnum.BuildingFishPondsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPondsSingleInit;
+                case PolSourceObsInfoEnum.BuildingFishWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseSingleInit;
+                case PolSourceObsInfoEnum.BuildingFishCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialSingleInit;
+                case PolSourceObsInfoEnum.BuildingFishHatchery:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishHatcheryInit;
+                case PolSourceObsInfoEnum.BuildingFishInsideTanks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishInsideTanksInit;
+                case PolSourceObsInfoEnum.BuildingFishPounds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishPoundsInit;
+                case PolSourceObsInfoEnum.BuildingFishWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishWarehouseInit;
+                case PolSourceObsInfoEnum.BuildingFishCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingFishCommercialInit;
                 case PolSourceObsInfoEnum.MarineWharf:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineWharfInit;
                 case PolSourceObsInfoEnum.MarineBuildings:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineBuildingsInit;
-                case PolSourceObsInfoEnum.MarineSeaWall:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineSeaWallInit;
+                case PolSourceObsInfoEnum.SeaWallSourceSingleCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSingleCulvertInit;
+                case PolSourceObsInfoEnum.SeaWallSourceSinglePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceSinglePipeInit;
+                case PolSourceObsInfoEnum.SeaWallSourceCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourceCulvertInit;
+                case PolSourceObsInfoEnum.SeaWallSourcePipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaWallSourcePipeInit;
+                case PolSourceObsInfoEnum.WharfCommercialTransportation:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfCommercialTransportationInit;
+                case PolSourceObsInfoEnum.WharfFishing:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfFishingInit;
+                case PolSourceObsInfoEnum.WharfPrivate:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfPrivateInit;
+                case PolSourceObsInfoEnum.WharfMarina:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfMarinaInit;
+                case PolSourceObsInfoEnum.WharfAbandoned:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfAbandonedInit;
+                case PolSourceObsInfoEnum.WharfBuildings:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWharfBuildingsInit;
+                case PolSourceObsInfoEnum.TransportationCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationCommericalSingleInit;
+                case PolSourceObsInfoEnum.TransportationFerrySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationFerrySingleInit;
+                case PolSourceObsInfoEnum.TransportationPleasureCraftSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTransportationPleasureCraftSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchSingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilitySingleInit;
+                case PolSourceObsInfoEnum.MARBuildingAllCottage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCottageInit;
+                case PolSourceObsInfoEnum.MARBuildingAllTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllTrailerInit;
+                case PolSourceObsInfoEnum.MARBuildingAllResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllResidentialInit;
+                case PolSourceObsInfoEnum.MARBuildingAllWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllWarehouseInit;
+                case PolSourceObsInfoEnum.MARBuildingAllHotelMotel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllHotelMotelInit;
+                case PolSourceObsInfoEnum.MARBuildingAllCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllCommericalInit;
+                case PolSourceObsInfoEnum.MARBuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllSchoolInit;
+                case PolSourceObsInfoEnum.MARBuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllChurchInit;
+                case PolSourceObsInfoEnum.MARBuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMARBuildingAllmedicalFacilityInit;
                 case PolSourceObsInfoEnum.RecreationCampground:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCampgroundInit;
                 case PolSourceObsInfoEnum.RecreationDayUseArea:
@@ -1932,20 +5230,54 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationCommunityCentreInit;
                 case PolSourceObsInfoEnum.RecreationGolfCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecreationGolfCourseInit;
-                case PolSourceObsInfoEnum.SewageCesspool:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolInit;
+                case PolSourceObsInfoEnum.RecTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailerInit;
+                case PolSourceObsInfoEnum.RecTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTentsInit;
+                case PolSourceObsInfoEnum.RecTrailersandTents:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecTrailersandTentsInit;
+                case PolSourceObsInfoEnum.CampgroundwithDumpStn:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumCampgroundwithDumpStnInit;
+                case PolSourceObsInfoEnum.RecFecalSourcePeople:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePeopleInit;
+                case PolSourceObsInfoEnum.RecFecalSourceWildlife:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceWildlifeInit;
+                case PolSourceObsInfoEnum.RecFecalSourceDrainagewater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourceDrainagewaterInit;
+                case PolSourceObsInfoEnum.RecFecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecFecalSourcePetsInit;
+                case PolSourceObsInfoEnum.RecSewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageCesspoolInit;
+                case PolSourceObsInfoEnum.RecSewagePrivyOuthouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewagePrivyOuthouseInit;
+                case PolSourceObsInfoEnum.RecSewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSewageMunicipalSystemInit;
+                case PolSourceObsInfoEnum.RecSepticSystemDrainageField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemDrainageFieldInit;
+                case PolSourceObsInfoEnum.RecSepticSystemLagoon:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemLagoonInit;
+                case PolSourceObsInfoEnum.RecSepticSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticSystemConstructedWetlandInit;
+                case PolSourceObsInfoEnum.RecSepticFreeFlow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRecSepticFreeFlowInit;
                 case PolSourceObsInfoEnum.SewageDirectDischarge:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDirectDischargeInit;
+                case PolSourceObsInfoEnum.SewageFlowStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageFlowStructureInit;
                 case PolSourceObsInfoEnum.SewagePrivyOuthouse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewagePrivyOuthouseInit;
-                case PolSourceObsInfoEnum.SewageMunicipalSystem:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemInit;
-                case PolSourceObsInfoEnum.SepticSystemDrainageField:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemDrainageFieldInit;
+                case PolSourceObsInfoEnum.SepticSystemLeachateField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLeachateFieldInit;
                 case PolSourceObsInfoEnum.SepticSystemFullRention:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemFullRentionInit;
+                case PolSourceObsInfoEnum.SewageCesspool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageCesspoolInit;
                 case PolSourceObsInfoEnum.SepticSystemLagoon:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticSystemLagoonInit;
+                case PolSourceObsInfoEnum.SewageSystemConstructedWetland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageSystemConstructedWetlandInit;
+                case PolSourceObsInfoEnum.SewageMunicipalSystem:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageMunicipalSystemInit;
                 case PolSourceObsInfoEnum.SepticNoStructure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSepticNoStructureInit;
                 case PolSourceObsInfoEnum.UrbanStormWater:
@@ -1954,8 +5286,286 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumUrbanSurfaceRunoffInit;
                 case PolSourceObsInfoEnum.UrbanDumpStation:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumUrbanDumpStationInit;
+                case PolSourceObsInfoEnum.WildlifeBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWildlifeBirdsInit;
+                case PolSourceObsInfoEnum.WildlifeLandMammals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWildlifeLandMammalsInit;
+                case PolSourceObsInfoEnum.WildlifeMarineMammals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWildlifeMarineMammalsInit;
+                case PolSourceObsInfoEnum.MuncipialSystemConnected:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMuncipialSystemConnectedInit;
+                case PolSourceObsInfoEnum.StorageTankFuel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankFuelInit;
+                case PolSourceObsInfoEnum.StorageTankPropane:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankPropaneInit;
+                case PolSourceObsInfoEnum.StorageTankChemicals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStorageTankChemicalsInit;
+                case PolSourceObsInfoEnum.BuildingResidentialFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingWarehouseFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingWarehouseFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingCommericalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingBarnFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingSchoolFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingChurchFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarmSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmSingleInit;
+                case PolSourceObsInfoEnum.BuildingResidentialFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingResidentialFarmInit;
+                case PolSourceObsInfoEnum.BuildingWarehouseFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingWarehouseFarmInit;
+                case PolSourceObsInfoEnum.BuildingCommericalFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingCommericalFarmInit;
+                case PolSourceObsInfoEnum.BuildingBarnFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingBarnFarmInit;
+                case PolSourceObsInfoEnum.BuildingRecreationalFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingRecreationalFarmInit;
+                case PolSourceObsInfoEnum.BuildingSchoolFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingSchoolFarmInit;
+                case PolSourceObsInfoEnum.BuildingChurchFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingChurchFarmInit;
+                case PolSourceObsInfoEnum.BuildingMedicalFacilityFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingMedicalFacilityFarmInit;
+                case PolSourceObsInfoEnum.BuildingForestedResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedWarehouseSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedRecreationalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedRecreationalSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedTrailerSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactorySingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchSingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilitySingleInit;
+                case PolSourceObsInfoEnum.BuildingForestedResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedResidentialInit;
+                case PolSourceObsInfoEnum.BuildingForestedWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedWarehouseInit;
+                case PolSourceObsInfoEnum.BuildingForestedRecreational:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedRecreationalInit;
+                case PolSourceObsInfoEnum.BuildingForestedTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedTrailerInit;
+                case PolSourceObsInfoEnum.BuildingForestedFactory:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedFactoryInit;
+                case PolSourceObsInfoEnum.BuildingForestedCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedCommericalInit;
+                case PolSourceObsInfoEnum.BuildingForestedSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedSchoolInit;
+                case PolSourceObsInfoEnum.BuildingForestedChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedChurchInit;
+                case PolSourceObsInfoEnum.BuildingForestedMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingForestedMedicalFacilityInit;
+                case PolSourceObsInfoEnum.BuildingindustryWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseSingleInit;
+                case PolSourceObsInfoEnum.BuildingIndustryFactorySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactorySingleInit;
+                case PolSourceObsInfoEnum.BuildingIndustryCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalSingleInit;
+                case PolSourceObsInfoEnum.BuildingIndustrySchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolSingleInit;
+                case PolSourceObsInfoEnum.BuildingIndustryChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchSingleInit;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilitySingleInit;
+                case PolSourceObsInfoEnum.BuildingindustryWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingindustryWarehouseInit;
+                case PolSourceObsInfoEnum.BuildingIndustryFactory:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryFactoryInit;
+                case PolSourceObsInfoEnum.BuildingIndustryCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryCommericalInit;
+                case PolSourceObsInfoEnum.BuildingIndustrySchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustrySchoolInit;
+                case PolSourceObsInfoEnum.BuildingIndustryChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryChurchInit;
+                case PolSourceObsInfoEnum.BuildingIndustryMedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingIndustryMedicalFacilityInit;
+                case PolSourceObsInfoEnum.BuildingAllCottageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllTrailerSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllTrailerSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllResidentialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllResidentialSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllWarehouseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllWarehouseSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllHotelMotelSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllCommericalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllSchoolSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllChurchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchSingleInit;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacilitySingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilitySingleInit;
+                case PolSourceObsInfoEnum.BuildingAllCottage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCottageInit;
+                case PolSourceObsInfoEnum.BuildingAllTrailer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllTrailerInit;
+                case PolSourceObsInfoEnum.BuildingAllResidential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllResidentialInit;
+                case PolSourceObsInfoEnum.BuildingAllWarehouse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllWarehouseInit;
+                case PolSourceObsInfoEnum.BuildingAllHotelMotel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllHotelMotelInit;
+                case PolSourceObsInfoEnum.BuildingAllCommerical:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllCommericalInit;
+                case PolSourceObsInfoEnum.BuildingAllSchool:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllSchoolInit;
+                case PolSourceObsInfoEnum.BuildingAllChurch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllChurchInit;
+                case PolSourceObsInfoEnum.BuildingAllmedicalFacility:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumBuildingAllmedicalFacilityInit;
+                case PolSourceObsInfoEnum.AreaMetersEquals5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals5Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals10Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals20Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals40Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals60Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals80Init;
+                case PolSourceObsInfoEnum.AreaMetersEquals100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersEquals100Init;
+                case PolSourceObsInfoEnum.AreaMetersBetween101And250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween101And250Init;
+                case PolSourceObsInfoEnum.AreaMetersBetween251And500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween251And500Init;
+                case PolSourceObsInfoEnum.AreaMetersBetween501And1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersBetween501And1000Init;
+                case PolSourceObsInfoEnum.AreaMetersgreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAreaMetersgreaterThan1000Init;
+                case PolSourceObsInfoEnum.FecalSourcePeople:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePeopleInit;
+                case PolSourceObsInfoEnum.FecalSourcePets:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourcePetsInit;
+                case PolSourceObsInfoEnum.FecalSourceWildlife:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceWildlifeInit;
+                case PolSourceObsInfoEnum.FecalSourceLivestock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceLivestockInit;
+                case PolSourceObsInfoEnum.FecalSourceDrainagewater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceDrainagewaterInit;
+                case PolSourceObsInfoEnum.FecalProcessWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalProcessWaterInit;
+                case PolSourceObsInfoEnum.FecalPotentialContamination:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalPotentialContaminationInit;
+                case PolSourceObsInfoEnum.FecalSourceAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFecalSourceAbsentInit;
+                case PolSourceObsInfoEnum.MajorIssueSourceManurePile:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSourceManurePileInit;
+                case PolSourceObsInfoEnum.MajorIssueCollectedRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueCollectedRunoffInit;
+                case PolSourceObsInfoEnum.MajorIssueSurfaceRunoff:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMajorIssueSurfaceRunoffInit;
+                case PolSourceObsInfoEnum.LandfillTypeResidental:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeResidentalInit;
+                case PolSourceObsInfoEnum.LandfillTypeIndustrial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeIndustrialInit;
+                case PolSourceObsInfoEnum.LandfillTypeWoodwaste:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLandfillTypeWoodwasteInit;
+                case PolSourceObsInfoEnum.TypesEqualHorses:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualHorsesInit;
+                case PolSourceObsInfoEnum.TypesEqualCows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualCowsInit;
+                case PolSourceObsInfoEnum.TypesEqualSheep:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSheepInit;
+                case PolSourceObsInfoEnum.TypesEqualPigs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualPigsInit;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureLarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureLargeInit;
+                case PolSourceObsInfoEnum.TypesEqualChickens:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualChickensInit;
+                case PolSourceObsInfoEnum.TypesEqualTurkeys:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualTurkeysInit;
+                case PolSourceObsInfoEnum.TypesEqualDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDucksInit;
+                case PolSourceObsInfoEnum.TypesEqualGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualGeeseInit;
+                case PolSourceObsInfoEnum.TypesEqualDomesticMixtureSmall:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualDomesticMixtureSmallInit;
+                case PolSourceObsInfoEnum.TypesEqualFurFarms:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualFurFarmsInit;
+                case PolSourceObsInfoEnum.TypesEqualSmallWildAnimals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualSmallWildAnimalsInit;
+                case PolSourceObsInfoEnum.TypesEqualLargeWildAnimals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualLargeWildAnimalsInit;
+                case PolSourceObsInfoEnum.TypesEquallandBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEquallandBirdsInit;
+                case PolSourceObsInfoEnum.TypesEqualMarinebirdsSeals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesEqualMarinebirdsSealsInit;
+                case PolSourceObsInfoEnum.TypesLandBirdsCrows:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsCrowsInit;
+                case PolSourceObsInfoEnum.TypesLandBirdsEagle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLandBirdsEagleInit;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsMoose:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsMooseInit;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsDeer:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsDeerInit;
+                case PolSourceObsInfoEnum.TypesLargeWildAnimalsCoyote:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesLargeWildAnimalsCoyoteInit;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsFoxes:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsFoxesInit;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsGroundHogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsGroundHogsInit;
+                case PolSourceObsInfoEnum.TypesSmallWildAnimalsSkunks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesSmallWildAnimalsSkunksInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandCulvert:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandCulvertInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandPipe:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandPipeInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandWaterCourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandWaterCourseInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDitch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDitchInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeLandDrainage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeLandDrainageInit;
+                case PolSourceObsInfoEnum.WasteSourceTypeDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypeDirectInputToMarineInit;
+                case PolSourceObsInfoEnum.WasteSourceTypetoField:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWasteSourceTypetoFieldInit;
+                case PolSourceObsInfoEnum.FieldLocationOnFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOnFarmInit;
+                case PolSourceObsInfoEnum.FieldLocationOffFarm:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFieldLocationOffFarmInit;
+                case PolSourceObsInfoEnum.SourceDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceDirectInputToMarineInit;
+                case PolSourceObsInfoEnum.OilDumpingFacilityPresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityPresentInit;
+                case PolSourceObsInfoEnum.OilDumpingFacilityAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityAbsentInit;
+                case PolSourceObsInfoEnum.OilDumpingFacilityNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOilDumpingFacilityNotObservedInit;
                 case PolSourceObsInfoEnum.SewageDumpingStationPresent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationPresentInit;
+                case PolSourceObsInfoEnum.SewageDumpingStationAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationAbsentInit;
+                case PolSourceObsInfoEnum.SewageDumpingStationNotObserved:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSewageDumpingStationNotObservedInit;
+                case PolSourceObsInfoEnum.SourceTypeLandCulvertSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertSingleInit;
+                case PolSourceObsInfoEnum.SourceTypeLandPipeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandPipeSingleInit;
+                case PolSourceObsInfoEnum.SourceTypeLandWaterCourseSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandWaterCourseSingleInit;
+                case PolSourceObsInfoEnum.SourceTypeLandDitchSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDitchSingleInit;
+                case PolSourceObsInfoEnum.SourceTypeLandDrainageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDrainageSingleInit;
                 case PolSourceObsInfoEnum.SourceTypeLandCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandCulvertInit;
                 case PolSourceObsInfoEnum.SourceTypeLandPipe:
@@ -1966,6 +5576,58 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDitchInit;
                 case PolSourceObsInfoEnum.SourceTypeLandDrainage:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeLandDrainageInit;
+                case PolSourceObsInfoEnum.SourceTypeDirectInputToMarine:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeDirectInputToMarineInit;
+                case PolSourceObsInfoEnum.SourceManureLandDrainage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceManureLandDrainageInit;
+                case PolSourceObsInfoEnum.SourceManureDitch:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceManureDitchInit;
+                case PolSourceObsInfoEnum.FlowLevelHigh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelHighInit;
+                case PolSourceObsInfoEnum.FlowLevelMedium:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelMediumInit;
+                case PolSourceObsInfoEnum.FlowLevelLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowLevelLowInit;
+                case PolSourceObsInfoEnum.OuthouseCementHoldingTank:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseCementHoldingTankInit;
+                case PolSourceObsInfoEnum.OuthouseSittingOnGround:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseSittingOnGroundInit;
+                case PolSourceObsInfoEnum.DitchAlongRoad:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchAlongRoadInit;
+                case PolSourceObsInfoEnum.DitchBetweenAcrossProperties:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchBetweenAcrossPropertiesInit;
+                case PolSourceObsInfoEnum.DitchDirectlytoWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchDirectlytoWaterInit;
+                case PolSourceObsInfoEnum.DrainagePavedSurfaces:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainagePavedSurfacesInit;
+                case PolSourceObsInfoEnum.DrainageVegetatedSurfaces:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageVegetatedSurfacesInit;
+                case PolSourceObsInfoEnum.DrainageDirect:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageDirectInit;
+                case PolSourceObsInfoEnum.DrainageBareSoilSurfaces:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDrainageBareSoilSurfacesInit;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately10Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately20Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately30Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately40Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately50Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately60Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately70:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately70Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately80Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately90:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately90Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersapproximately100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersapproximately100Init;
+                case PolSourceObsInfoEnum.ManureAreaMetersMoreThan100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureAreaMetersMoreThan100Init;
                 case PolSourceObsInfoEnum.SourceTypeWaterAquacultureSite:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterAquacultureSiteInit;
                 case PolSourceObsInfoEnum.SourceTypeWaterAnchorageMooringSite:
@@ -1974,16 +5636,220 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterDisposalAtSeaInit;
                 case PolSourceObsInfoEnum.SourceTypeWaterMarinePark:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterMarineParkInit;
-                case PolSourceObsInfoEnum.SourceTypeWaterSeaport:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceTypeWaterSeaportInit;
-                case PolSourceObsInfoEnum.SourceSandBar:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceSandBarInit;
+                case PolSourceObsInfoEnum.SourceLandOutcrop:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSourceLandOutcropInit;
+                case PolSourceObsInfoEnum.AquacultureSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSiteInit;
+                case PolSourceObsInfoEnum.AnchorageMooringSite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAnchorageMooringSiteInit;
+                case PolSourceObsInfoEnum.DisposalAtSea:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDisposalAtSeaInit;
+                case PolSourceObsInfoEnum.MarinePark:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineParkInit;
+                case PolSourceObsInfoEnum.OutcropSandBar:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropSandBarInit;
+                case PolSourceObsInfoEnum.OutcropRock:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropRockInit;
+                case PolSourceObsInfoEnum.OutcropIsland:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOutcropIslandInit;
+                case PolSourceObsInfoEnum.WaterAquacultureSiteActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteActiveInit;
+                case PolSourceObsInfoEnum.WaterAquacultureSiteFallow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterAquacultureSiteFallowInit;
+                case PolSourceObsInfoEnum.AquacultureCagesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesSingleInit;
+                case PolSourceObsInfoEnum.AquacultureFloatingBagsSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsSingleInit;
+                case PolSourceObsInfoEnum.AquacultureSubmergedLinesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesSingleInit;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCageSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageSingleInit;
+                case PolSourceObsInfoEnum.AquacultureBargesSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesSingleInit;
+                case PolSourceObsInfoEnum.AquacultureCages:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureCagesInit;
+                case PolSourceObsInfoEnum.AquacultureFloatingBags:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureFloatingBagsInit;
+                case PolSourceObsInfoEnum.AquacultureSubmergedLines:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureSubmergedLinesInit;
+                case PolSourceObsInfoEnum.AquacultureLosterPoundCage:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureLosterPoundCageInit;
+                case PolSourceObsInfoEnum.AquacultureBarges:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAquacultureBargesInit;
+                case PolSourceObsInfoEnum.WatStructActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructActiveInit;
+                case PolSourceObsInfoEnum.WatStructInactive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWatStructInactiveInit;
+                case PolSourceObsInfoEnum.WaterStructureVesselSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselSingleInit;
+                case PolSourceObsInfoEnum.WaterStructureBargeSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureBargeSingleInit;
+                case PolSourceObsInfoEnum.WaterStructureResidentalSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureResidentalSingleInit;
+                case PolSourceObsInfoEnum.WaterStructureCommercialSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialSingleInit;
+                case PolSourceObsInfoEnum.WaterStructureNotActiveSingle:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveSingleInit;
+                case PolSourceObsInfoEnum.WaterStructureVessel:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureVesselInit;
+                case PolSourceObsInfoEnum.WaterStructureBarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureBargeInit;
+                case PolSourceObsInfoEnum.WaterStructureResidental:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureResidentalInit;
+                case PolSourceObsInfoEnum.WaterStructureCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureCommercialInit;
+                case PolSourceObsInfoEnum.WaterStructureNotActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterStructureNotActiveInit;
+                case PolSourceObsInfoEnum.WaterDumpSiteActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDumpSiteActiveInit;
+                case PolSourceObsInfoEnum.WaterDumpSiteNotActive:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterDumpSiteNotActiveInit;
+                case PolSourceObsInfoEnum.SeaportRecreational:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportRecreationalInit;
+                case PolSourceObsInfoEnum.SeaportCommercial:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaportCommercialInit;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual5Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual10Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual20Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual40Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual60:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual60Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual80:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual80Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual100Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual150Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual200Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual250:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual250Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual300Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual400Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual500:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual500Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual750:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual750Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersEqual1000Init;
+                case PolSourceObsInfoEnum.WaterSizeMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSizeMetersGreaterThan1000Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual5:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual5Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual10:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual10Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual20:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual20Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual30:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual30Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual40:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual40Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual50:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual50Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual75:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual75Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual100:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual100Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual150:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual150Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual200:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual200Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual300:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual300Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual400:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual400Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual600:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual600Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual800:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual800Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersEqual1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersEqual1000Init;
+                case PolSourceObsInfoEnum.DistanceOnWaterMetersGreaterThan1000:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceOnWaterMetersGreaterThan1000Init;
+                case PolSourceObsInfoEnum.WaterTypeSalt:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeSaltInit;
+                case PolSourceObsInfoEnum.WaterTypeBrachish:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeBrachishInit;
+                case PolSourceObsInfoEnum.WaterTypeFresh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypeFreshInit;
                 case PolSourceObsInfoEnum.WaterFecalSourcePeople:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourcePeopleInit;
                 case PolSourceObsInfoEnum.WaterFecalSourceWildlife:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceWildlifeInit;
                 case PolSourceObsInfoEnum.WaterFecalSourceAbsent:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterFecalSourceAbsentInit;
+                case PolSourceObsInfoEnum.HumanSewageWashroom:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomInit;
+                case PolSourceObsInfoEnum.HumanSewageWashroomAbsent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanSewageWashroomAbsentInit;
+                case PolSourceObsInfoEnum.WaterSewageDirectDischarge:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSewageDirectDischargeInit;
+                case PolSourceObsInfoEnum.WaterSepticSystemFullRention:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterSepticSystemFullRentionInit;
+                case PolSourceObsInfoEnum.WaterTypesEqualSmallMammals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSmallMammalsInit;
+                case PolSourceObsInfoEnum.WaterTypesEqualLargeMammals:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualLargeMammalsInit;
+                case PolSourceObsInfoEnum.WaterTypesEqualSeaBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualSeaBirdsInit;
+                case PolSourceObsInfoEnum.WaterTypesEqualShorelineBirds:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesEqualShorelineBirdsInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsPloversandSandpipers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsPloversandSandpipersInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsBlackBackedGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBlackBackedGullsInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsHerringGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsHerringGullsInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsGreaterYellowlegs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsGreaterYellowlegsInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsSurfScoter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsSurfScoterInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsBrownPelican:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsBrownPelicanInit;
+                case PolSourceObsInfoEnum.ShorelineBirdsOthers:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBirdsOthersInit;
+                case PolSourceObsInfoEnum.SeaBirdsCormorants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsCormorantsInit;
+                case PolSourceObsInfoEnum.SeaBirdsDucks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsDucksInit;
+                case PolSourceObsInfoEnum.SeaBirdsGeese:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsGeeseInit;
+                case PolSourceObsInfoEnum.SeaBirdsBlackBlackGulls:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsBlackBlackGullsInit;
+                case PolSourceObsInfoEnum.SeaBirdsLoons:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsLoonsInit;
+                case PolSourceObsInfoEnum.SeaBirdsSeaducks:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsSeaducksInit;
+                case PolSourceObsInfoEnum.SeaBirdsOther:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSeaBirdsOtherInit;
+                case PolSourceObsInfoEnum.LargeMarineMammaGreySeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammaGreySealInit;
+                case PolSourceObsInfoEnum.LargeMarineMammalHoodedSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalHoodedSealInit;
+                case PolSourceObsInfoEnum.LargeMarineMammalBeardSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalBeardSealInit;
+                case PolSourceObsInfoEnum.LargeMarineMammalStellarSeaLion:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalStellarSeaLionInit;
+                case PolSourceObsInfoEnum.LargeMarineMammalAtlanticWalrus:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalAtlanticWalrusInit;
+                case PolSourceObsInfoEnum.LargeMarineMammalNorthernFurSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumLargeMarineMammalNorthernFurSealInit;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarpSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarpSealInit;
+                case PolSourceObsInfoEnum.SmallMarineanimalHarbourSeal:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalHarbourSealInit;
+                case PolSourceObsInfoEnum.SmallMarineanimalSeaOtter:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumSmallMarineanimalSeaOtterInit;
+                case PolSourceObsInfoEnum.ShorelineSandy:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineSandyInit;
+                case PolSourceObsInfoEnum.ShorelineRocky:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRockyInit;
                 case PolSourceObsInfoEnum.ShorelineBuildings:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineBuildingsInit;
                 case PolSourceObsInfoEnum.ShorelineWildlife:
@@ -1994,14 +5860,24 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineSlipwayInit;
                 case PolSourceObsInfoEnum.ShorelineDayuse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineDayuseInit;
+                case PolSourceObsInfoEnum.StatusDefinite:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusDefiniteInit;
+                case PolSourceObsInfoEnum.StatusPotential:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusPotentialInit;
+                case PolSourceObsInfoEnum.StatusNonPollutionSource:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStatusNonPollutionSourceInit;
                 case PolSourceObsInfoEnum.RiskLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskLowInit;
                 case PolSourceObsInfoEnum.RiskModerate:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskModerateInit;
                 case PolSourceObsInfoEnum.RiskHighP:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighPInit;
-                case PolSourceObsInfoEnum.RiskHigh:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighInit;
+                case PolSourceObsInfoEnum.RiskHighConfirmedVisual:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRiskHighConfirmedVisualInit;
+                case PolSourceObsInfoEnum.RishHighConfirmedWater:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumRishHighConfirmedWaterInit;
+                case PolSourceObsInfoEnum.FollowupRequired:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFollowupRequiredInit;
                 default:
                     return "";
             }
