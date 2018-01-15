@@ -36,108 +36,131 @@ namespace CSSPEnums
     ///     public enum PolSourceObsInfoEnum
     ///     {
     ///         Error = 0,
-    ///         Start = 10100,
-    ///         LandBased = 10101,
-    ///         WaterBased = 10102,
-    ///         AreaSlopeStart = 10400,
-    ///         AreaSlopeLow = 10401,
-    ///         AreaSlopeMedium = 10402,
-    ///         AreaSlopeHigh = 10403,
-    ///         SourceTypeLandStart = 10500,
-    ///         SourceTypeLandAgriculture = 10501,
-    ///         SourceTypeLandForested = 10502,
-    ///         SourceTypeLandFisheries = 10503,
-    ///         SourceTypeLandIndustry = 10504,
-    ///         SourceTypeLandMarineStructure = 10505,
-    ///         SourceTypeLandRecreation = 10506,
-    ///         SourceTypeLandUrban = 10507,
-    ///         SourceTypeShore = 10508,
-    ///         AgricultureStart = 10600,
-    ///         AgricultureCrop = 10601,
-    ///         AgriculturePasture = 10602,
-    ///         AgricultureFeedlot = 10603,
-    ///         AgricultureFarm = 10604,
-    ///         AgricultureBuilding = 10605,
-    ///         CropStart = 10700,
-    ///         CropFood = 10701,
-    ///         CropHay = 10702,
-    ///         CropPeatMoss = 10703,
+    ///         SourceStart = 10100,
+    ///         SourceHuman = 10101,
+    ///         SourceAnimal = 10102,
+    ///         SourceIndustrial = 10103,
+    ///         HumanPollutionSingleStart = 12600,
+    ///         HumanPollutionSingleResidential = 12601,
+    ///         HumanPollutionSingleCottage = 12602,
+    ///         HumanPollutionSingleTrailer = 12603,
+    ///         HumanPollutionSingleWarehouse = 12604,
+    ///         HumanPollutionSingleCommerical = 12605,
+    ///         HumanPollutionSingleBarn = 12606,
+    ///         HumanPollutionSinglePublic = 12607,
+    ///         HumanPollutionSingleSchool = 12608,
+    ///         HumanPollutionSingleChurch = 12609,
+    ///         HumanPollutionSingleMedicalFacility = 12610,
+    ///         HumanPollutionSingleOuthouse = 12611,
+    ///         HumanPollutionSingleBoatOrBarge = 12612,
+    ///         HumanPollutionMultipleStart = 21000,
+    ///         HumanPollutionMultipleResidences = 21001,
+    ///         HumanPollutionMultipleCottages = 21002,
+    ///         HumanPollutionMultipleTrailers = 21003,
+    ///         HumanPollutionMultipleWarehouses = 21004,
+    ///         HumanPollutionMultipleCommericals = 21005,
+    ///         HumanPollutionMultipleBarns = 21006,
+    ///         HumanPollutionMultiplePublic = 21007,
+    ///         HumanPollutionMultipleSchools = 21008,
+    ///         HumanPollutionMultipleChurches = 21009,
+    ///         HumanPollutionMultipleMedicalFacilities = 21010,
+    ///         HumanPollutionMultipleOuthouses = 21011,
+    ///         HumanPollutionMultipleBoatsOrBarges = 21012,
+    ///         CountNumberStart = 16900,
+    ///         CountNumberEqualTo1 = 16901,
+    ///         CountNumberEqualTo2 = 16902,
+    ///         CountNumberEqualTo3 = 16903,
+    ///         CountNumberEqualTo4 = 16904,
+    ///         CountNumberEqualTo5 = 16905,
+    ///         CountNumberEqualTo6 = 16906,
+    ///         CountNumberEqualTo7 = 16907,
+    ///         CountNumberEqualTo8 = 16908,
+    ///         CountNumberEqualTo9 = 16909,
+    ///         CountNumberEqualTo10 = 16910,
+    ///         CountNumberBetween11and25 = 16911,
+    ///         CountNumberBetween26and40 = 16912,
+    ///         CountNumberGreaterThan40 = 16913,
+    ///         GeneralLocationStart = 12700,
+    ///         GeneralLocationRural = 12701,
+    ///         GeneralLocationUrban = 12702,
+    ///         GeneralLocationForested = 12703,
+    ///         GeneralLocationAgricultural = 12704,
+    ///         GeneralLocationFarm = 12705,
+    ///         GeneralLocationShoreline = 12706,
+    ///         GeneralLocationWharf = 12707,
+    ///         GeneralLocationBarge = 12708,
+    ///         GeneralLocationIsland = 12709,
+    ///         GeneralLocationRecreationalArea = 12710,
+    ///         GeneralLocationCottageLot = 12711,
+    ///         GeneralLocationWetland = 12712,
+    ///         GeneralLocationWaterCourse = 12713,
+    ///         GeneralLocationSandBar = 12714,
+    ///         GeneralLocationRock = 12715,
+    ///         GeneralLocationAquacultureSite = 12716,
+    ///         GeneralLocationOffShoreline = 12717,
+    ///         OuthouseStart = 14700,
+    ///         OuthouseConcreteTank = 14701,
+    ///         OuthouseOnGround = 14702,
+    ///         IndustrialEffluentStart = 11200,
+    ///         IndustrialEffluentForestry = 11201,
+    ///         IndustrialEffluentAgriculture = 11202,
+    ///         IndustrialEffluentFisheries = 11203,
+    ///         IndustrialEffluentShorelineStructures = 11204,
+    ///         IndustrialEffluentIndustrial = 11205,
+    ///         IndustrialEffluentStorageTank = 11206,
+    ///         IndustrialEffluentAirport = 11207,
+    ///         IndustrialEffluentLandfill = 11208,
+    ///         IndustrialEffluentUrbanRunoff = 11209,
+    ///         IndustrialEffluentRecreation = 11210,
+    ///         IndustrialEffluentAquacultureSite = 11211,
+    ///         IndustrialEffluentAnchorageMooringSite = 11212,
+    ///         IndustrialEffluentDisposalAtSea = 11213,
+    ///         IndustrialEffluentMarinePark = 11214,
+    ///         AreaSizeStart = 16800,
+    ///         AreaSizeMetersEquals10 = 16801,
+    ///         AreaSizeMetersEquals20 = 16802,
+    ///         AreaSizeMetersEquals40 = 16803,
+    ///         AreaSizeMetersEquals60 = 16804,
+    ///         AreaSizeMetersEquals80 = 16805,
+    ///         AreaSizeMetersEquals100 = 16806,
+    ///         AreaSizeMetersBetween101And250 = 16807,
+    ///         AreaSizeMetersBetween251And500 = 16808,
+    ///         AreaSizeMetersBetween501And1000 = 16809,
+    ///         AreaSizeMetersGreaterThan1000 = 16810,
+    ///         AgriculturalSourceStart = 10600,
+    ///         AgriculturalSourceCrop = 10601,
+    ///         AgricultureSourcePasture = 10602,
+    ///         AgriculturesourceFeedlot = 10603,
+    ///         AriculturalSourcePeatMoss = 10604,
     ///         PastureStart = 10800,
     ///         PastureActive = 10801,
-    ///         PastureFallow = 10802,
+    ///         PastureActiveWithManurePIle = 10802,
+    ///         PastureFallow = 10803,
     ///         FeedlotStart = 10900,
     ///         FeedlotActive = 10901,
     ///         FeedlotNotActive = 10902,
-    ///         FarmStart = 11000,
-    ///         FarmHobby = 11001,
-    ///         FarmCommercial = 11002,
-    ///         AgrAreaSizeStart = 16700,
-    ///         AgrAreaMetersequals20 = 16701,
-    ///         AgrAreaMetersequals40 = 16702,
-    ///         AgrAreaMetersequals60 = 16703,
-    ///         AgrAreaMetersequals80 = 16704,
-    ///         AgrAreaMetersequals100 = 16705,
-    ///         AgrAreaMetersbetween101And250 = 16706,
-    ///         AgrAreaMetersBetween251And500 = 16707,
-    ///         AgrAreaMetersBetween501And1000 = 16708,
-    ///         AgrAreaMetersGreaterThan1000 = 16709,
-    ///         ForestedStart = 11100,
-    ///         ForestedLoggingActivity = 11101,
-    ///         ForestedClearcut = 11102,
-    ///         ForestedRegrowth = 11103,
-    ///         ForestedBuilding = 11104,
-    ///         ForAreaSizeStart = 16800,
-    ///         ForAreaMetersequals20 = 16801,
-    ///         ForAreaMetersequals40 = 16802,
-    ///         ForAreaMetersequals60 = 16803,
-    ///         ForAreaMetersequals80 = 16804,
-    ///         ForAreaMetersequals100 = 16805,
-    ///         ForAreaMetersbetween101And250 = 16806,
-    ///         ForAreaMetersBetween251And500 = 16807,
-    ///         ForAreaMetersBetween501And1000 = 16808,
-    ///         ForAreaMetersGreaterThan1000 = 16809,
-    ///         IndustryStart = 11200,
-    ///         IndustryAirport = 11201,
-    ///         IndustryLandfill = 11202,
-    ///         IndustryWaste = 11203,
-    ///         IndustryStorageTank = 11204,
-    ///         IndustryBuildings = 11205,
-    ///         INDCountNumberStart = 17200,
-    ///         INDCountNumberEqualTo1 = 17201,
-    ///         INDCountNumberEqualTo2 = 17202,
-    ///         INDCountNumberEqualTo3 = 17203,
-    ///         INDCountNumberEqualTo4 = 17204,
-    ///         INDCountNumberEqualTo5 = 17205,
-    ///         INDCountNumberEqualTo6 = 17206,
-    ///         INDCountNumberEqualTo7 = 17207,
-    ///         INDCountNumberEqualTo8 = 17208,
-    ///         INDCountNumberEqualTo9 = 17209,
-    ///         INDCountNumberEqualTo10 = 17210,
-    ///         INDCountNumberBetween10and25 = 17211,
-    ///         INDCountNumberBetween25and40 = 17212,
-    ///         INDCountNumberGreaterThan40 = 17213,
-    ///         TypeOfFishStart = 11300,
-    ///         FishShellfish = 11301,
-    ///         FishFinfish = 11302,
-    ///         FishLobster = 11303,
-    ///         FishFishMeal = 11304,
+    ///         FisheriesSourceStart = 11300,
+    ///         FisheriesSourceShellfish = 11301,
+    ///         FisheriesSourceFinfish = 11302,
+    ///         FisheriesSourceLobster = 11303,
     ///         FishOperationStart = 21700,
-    ///         FishProcessing = 21701,
-    ///         FishHeldAlive = 21702,
-    ///         FishPackaging = 21703,
-    ///         FishingRearing = 21704,
-    ///         BuildingFishSingleStart = 19500,
-    ///         BuildingFishHatcherySingle = 19501,
-    ///         BuildingFishTanksSingle = 19502,
-    ///         BuildingFishPondsSingle = 19503,
-    ///         BuildingFishWarehouseSingle = 19504,
-    ///         BuildingFishCommercialSingle = 19505,
-    ///         BuildingFishStart = 12900,
-    ///         BuildingFishHatchery = 12901,
-    ///         BuildingFishInsideTanks = 12902,
-    ///         BuildingFishPounds = 12903,
-    ///         BuildingFishWarehouse = 12904,
-    ///         BuildingFishCommercial = 12905,
+    ///         FishOperationProcessing = 21701,
+    ///         FishOperationHoldingTanks = 21702,
+    ///         FishOperationPackaging = 21703,
+    ///         FishOperationRearing = 21704,
+    ///         FishOperationFishMeal = 21705,
+    ///         FishBuildingTypeSingleStart = 19500,
+    ///         FishBuildingTypeSingleProcessingPlant = 19501,
+    ///         FishBuildingTypeSingleHatchery = 19502,
+    ///         FishBuildingTypeSinglePond = 19503,
+    ///         FishBuildingTypeSingleTank = 19504,
+    ///         FishBuildingTypeSinglePound = 19506,
+    ///         FishBuildingTypeMultipleStart = 12900,
+    ///         FishBuildingTypeMultipleProcessingPlants = 12901,
+    ///         FishBuildingTypeMultipleHatcheries = 12902,
+    ///         FishBuildingTypeMultiplePonds = 12903,
+    ///         FishBuildingTypeMultipleTanks = 12904,
+    ///         FishBuildingTypeMultiplePounds = 12905,
     ///         FISCountNumberStart = 17400,
     ///         FISCountNumberEqualTo1 = 17401,
     ///         FISCountNumberEqualTo2 = 17402,
@@ -152,34 +175,19 @@ namespace CSSPEnums
     ///         FISCountNumberBetween10and25 = 17411,
     ///         FISCountNumberBetween25and40 = 17412,
     ///         FISCountNumberGreaterThan40 = 17413,
-    ///         MarineStructureStart = 11400,
-    ///         MarineWharf = 11401,
-    ///         MarineBuildings = 11402,
-    ///         MarineSeaWall = 11403,
-    ///         MarNumPresentStart = 20500,
-    ///         MarNumPresentEqual1 = 20501,
-    ///         MarNumPresentEqual2 = 20502,
-    ///         MarNumPresentEqual3 = 20503,
-    ///         MarNumPresentEqual4 = 20504,
-    ///         MarNumPresentEqual5 = 20505,
-    ///         MarNumPresentEqual6 = 20506,
-    ///         MarNumPresentEqual7 = 20507,
-    ///         MarNumPresentEqual8 = 20508,
-    ///         MarNumPresentEqual9 = 20509,
-    ///         MarNumPresentEqual10 = 20510,
-    ///         SeaWallSourceSingleStart = 20600,
-    ///         SeaWallSourceSingleCulvert = 20601,
-    ///         SeaWallSourceSinglePipe = 20602,
-    ///         SeaWallSourceStart = 20800,
-    ///         SeaWallSourceCulvert = 20801,
-    ///         SeaWallSourcePipe = 20802,
+    ///         ShorelineSourceStart = 11400,
+    ///         ShorelineSourceWharf = 11401,
+    ///         ShorelineSourceSeaWall = 11403,
+    ///         ShorelineSourceSlipway = 11404,
+    ///         SlipwayStart = 18000,
+    ///         SlipwayPaved = 18001,
+    ///         SlipwayRocks = 18002,
     ///         WharfStart = 11500,
     ///         WharfCommercialTransportation = 11501,
     ///         WharfFishing = 11502,
     ///         WharfPrivate = 11503,
     ///         WharfMarina = 11504,
     ///         WharfAbandoned = 11505,
-    ///         WharfBuildings = 11506,
     ///         VesselStart = 17700,
     ///         VesselCountEquals1 = 17701,
     ///         VesselCountEquals2 = 17702,
@@ -196,13 +204,15 @@ namespace CSSPEnums
     ///         VesselCountBetween51and100 = 17713,
     ///         VesselCountGreaterThan100 = 17714,
     ///         WharfTransportationSingleStart = 20700,
-    ///         TransportationCommericalSingle = 20701,
-    ///         TransportationFerrySingle = 20702,
-    ///         TransportationPleasureCraftSingle = 20703,
+    ///         WharfTransportationCommericalSingle = 20701,
+    ///         WharfTransportationFerrySingle = 20702,
+    ///         WharfTransportationBoatSingle = 20703,
+    ///         WharfTransportationBargeSingle = 20704,
     ///         WharfTransportationStart = 11600,
-    ///         TransportationCommerical = 11601,
-    ///         TransportationFerry = 11602,
-    ///         TransportationPleasureCraft = 11603,
+    ///         WharfTransportationCommerical = 11601,
+    ///         WharfTransportationFerry = 11602,
+    ///         WharfTransportationPleasureCraft = 11603,
+    ///         WharfTransportationBarges = 11604,
     ///         MarWhfWharfCountNumberStart = 17500,
     ///         MarWhfCountNumberEqualTo1 = 17501,
     ///         MarWhfCountNumberEqualTo2 = 17502,
@@ -217,285 +227,58 @@ namespace CSSPEnums
     ///         MarWhfCountNumberBetween11and25 = 17511,
     ///         MarWhfCountNumberBetween26and40 = 17512,
     ///         MarWhfCountNumberGreaterThan40 = 17513,
-    ///         MarBldCountNumberStart = 17600,
-    ///         MarBldCountNumberEqualTo1 = 17601,
-    ///         MarBldCountNumberEqualTo2 = 17602,
-    ///         MarBldCountNumberEqualTo3 = 17603,
-    ///         MarBldCountNumberEqualTo4 = 17604,
-    ///         MarBldCountNumberEqualTo5 = 17605,
-    ///         MarBldCountNumberEqualTo6 = 17606,
-    ///         MarBldCountNumberEqualTo7 = 17607,
-    ///         MarBldCountNumberEqualTo8 = 17608,
-    ///         MarBldCountNumberEqualTo9 = 17609,
-    ///         MarBldCountNumberEqualTo10 = 17610,
-    ///         MARBuildingAllSingleStart = 20900,
-    ///         MARBuildingAllCottageSingle = 20901,
-    ///         MARBuildingAllTrailerSingle = 20902,
-    ///         MARBuildingAllResidentialSingle = 20903,
-    ///         MARBuildingAllWarehouseSingle = 20904,
-    ///         MARBuildingAllHotelMotelSingle = 20905,
-    ///         MARBuildingAllCommericalSingle = 20906,
-    ///         MARBuildingAllSchoolSingle = 20907,
-    ///         MARBuildingAllChurchSingle = 20908,
-    ///         MARBuildingAllmedicalFacilitySingle = 20909,
-    ///         MARBuildingAllStart = 17800,
-    ///         MARBuildingAllCottage = 17801,
-    ///         MARBuildingAllTrailer = 17802,
-    ///         MARBuildingAllResidential = 17803,
-    ///         MARBuildingAllWarehouse = 17804,
-    ///         MARBuildingAllHotelMotel = 17805,
-    ///         MARBuildingAllCommerical = 17806,
-    ///         MARBuildingAllSchool = 17807,
-    ///         MARBuildingAllChurch = 17808,
-    ///         MARBuildingAllmedicalFacility = 17809,
     ///         RecreationStart = 11700,
     ///         RecreationCampground = 11701,
     ///         RecreationDayUseArea = 11702,
     ///         RecreationSwimmingArea = 11703,
-    ///         RecreationRecreationaltArea = 11704,
-    ///         RecreationCommunityCentre = 11705,
-    ///         RecreationGolfCourse = 11706,
+    ///         RecreationGolfCourse = 11704,
     ///         RECCountNumberStart = 17900,
-    ///         RECcampgrdLotsapprox50 = 17901,
-    ///         RECcampgrdLotsapprox100 = 17902,
-    ///         RECcampgrdLotsapprox200 = 17903,
-    ///         RECcampgrdLotsapprox300 = 17904,
-    ///         RECcampgrdLotsapprox500 = 17905,
-    ///         RecTypeStart = 18100,
-    ///         RecTrailer = 18101,
-    ///         RecTents = 18102,
-    ///         RecTrailersandTents = 18103,
+    ///         RECCountNumber10 = 17901,
+    ///         RECCountNumber30 = 17902,
+    ///         RECCountNumber50 = 17903,
+    ///         RECCountNumber100 = 17904,
+    ///         RECCountNumber200 = 17905,
+    ///         RECCountNumber300 = 17906,
+    ///         RECCountNumber500 = 17907,
     ///         CampgroundFacilitiesStart = 11800,
     ///         CampgroundNoDumpStn = 11801,
-    ///         CampgroundwithDumpStn = 11802,
-    ///         RECFecalSourceStart = 18200,
-    ///         RecFecalSourcePeople = 18201,
-    ///         RecFecalSourceWildlife = 18203,
-    ///         RecFecalSourceDrainagewater = 18204,
-    ///         RecFecalSourcePets = 18205,
-    ///         RecSewageStart = 18300,
-    ///         RecSewageCesspool = 18301,
-    ///         RecSewagePrivyOuthouse = 18302,
-    ///         RecSewageMunicipalSystem = 18304,
-    ///         RecSepticSystemDrainageField = 18305,
-    ///         RecSepticSystemLagoon = 18306,
-    ///         RecSepticSystemConstructedWetland = 18307,
-    ///         RecSepticNoStructure = 18308,
-    ///         RecNumPresentStart = 13600,
-    ///         RecNumPresentEqualTo1 = 13601,
-    ///         RecNumPresentEqualTo2 = 13602,
-    ///         RecNumPresentEqualTo3 = 13603,
-    ///         RecNumPresentEqualTo4 = 13604,
-    ///         RecNumPresentEqualTo5 = 13605,
-    ///         RecNumPresentEqualTo6 = 13606,
-    ///         RecNumPresentEqualTo7 = 13607,
-    ///         RecNumPresentEqualTo8 = 13608,
-    ///         RecNumPresentEqualTo9 = 13609,
-    ///         RecNumPresentEqualTo10 = 13610,
-    ///         RecNumPresentBetween11and25 = 13611,
-    ///         RecNumPresentBetween26and40 = 13612,
-    ///         RecNumPresentGreaterThan40 = 13613,
-    ///         SewageStart = 11900,
-    ///         SewageDirectDischarge = 11901,
-    ///         SewageFlowStructure = 11902,
-    ///         SewagePrivyOuthouse = 11903,
-    ///         SepticSystemLeachateField = 11904,
-    ///         SepticSystemFullRention = 11905,
-    ///         SewageCesspool = 11906,
-    ///         SepticSystemLagoon = 11907,
-    ///         SewageSystemConstructedWetland = 11908,
-    ///         SewageMunicipalSystem = 11909,
-    ///         SepticNoStructure = 11910,
-    ///         SeeMunicipalityInfrastructureStart = 12000,
+    ///         CampgroundWithDumpStn = 11802,
     ///         UrbanStart = 12100,
     ///         UrbanStormWater = 12101,
-    ///         UrbanSurfaceRunoff = 12102,
-    ///         UrbanDumpStation = 12103,
-    ///         WildlifeStart = 12200,
-    ///         WildlifeBirds = 12201,
-    ///         WildlifeLandMammals = 12202,
-    ///         WildlifeMarineMammals = 12203,
-    ///         MunicipalSystemStart = 12300,
-    ///         MuncipialSystemConnected = 12301,
-    ///         MunicipalSystemNotConnected = 12302,
-    ///         StorageTankStart = 12400,
-    ///         StorageTankFuel = 12401,
-    ///         StorageTankPropane = 12402,
-    ///         StorageTankChemicals = 12403,
+    ///         UrbanDumpStation = 12102,
     ///         TankSizeStart = 12500,
-    ///         TankSize100 = 12501,
-    ///         TankSize500 = 12502,
-    ///         TankSize1000 = 12503,
-    ///         TankSize2000plus = 12504,
-    ///         BuildingAgricultureSingleStart = 12600,
-    ///         BuildingResidentialFarmSingle = 12601,
-    ///         BuildingWarehouseFarmSingle = 12602,
-    ///         BuildingCommericalFarmSingle = 12603,
-    ///         BuildingBarnFarmSingle = 12604,
-    ///         BuildingRecreationalFarmSingle = 12605,
-    ///         BuildingSchoolFarmSingle = 12606,
-    ///         BuildingChurchFarmSingle = 12607,
-    ///         BuildingMedicalFacilityFarmSingle = 12608,
-    ///         BuildingAgricultureStart = 21000,
-    ///         BuildingResidentialFarm = 21001,
-    ///         BuildingWarehouseFarm = 21002,
-    ///         BuildingCommericalFarm = 21003,
-    ///         BuildingBarnFarm = 21004,
-    ///         BuildingRecreationalFarm = 21005,
-    ///         BuildingSchoolFarm = 21006,
-    ///         BuildingChurchFarm = 21007,
-    ///         BuildingMedicalFacilityFarm = 21008,
-    ///         AGRCountNumberStart = 16900,
-    ///         AGRCountNumberEqualTo1 = 16901,
-    ///         AGRCountNumberEqualTo2 = 16902,
-    ///         AGRCountNumberEqualTo3 = 16903,
-    ///         AGRCountNumberEqualTo4 = 16904,
-    ///         AGRCountNumberEqualTo5 = 16905,
-    ///         AGRCountNumberEqualTo6 = 16906,
-    ///         AGRCountNumberEqualTo7 = 16907,
-    ///         AGRCountNumberEqualTo8 = 16908,
-    ///         AGRCountNumberEqualTo9 = 16909,
-    ///         AGRCountNumberEqualTo10 = 16910,
-    ///         AGRCountNumberBetween11and25 = 16911,
-    ///         AGRCountNumberBetween26and40 = 16912,
-    ///         AGRCountNumberGreaterThan40 = 16913,
-    ///         FORCountNumberStart = 17300,
-    ///         FORCountNumberEqualTo1 = 17301,
-    ///         FORCountNumberEqualTo2 = 17302,
-    ///         FORCountNumberEqualTo3 = 17303,
-    ///         FORCountNumberEqualTo4 = 17304,
-    ///         FORCountNumberEqualTo5 = 17305,
-    ///         FORCountNumberEqualTo6 = 17306,
-    ///         FORCountNumberEqualTo7 = 17307,
-    ///         FORCountNumberEqualTo8 = 17308,
-    ///         FORCountNumberEqualTo9 = 17309,
-    ///         FORCountNumberEqualTo10 = 17310,
-    ///         FORCountNumberBetween11and25 = 17311,
-    ///         FORCountNumberBetween26and40 = 17312,
-    ///         FORCountNumberGreaterThan40 = 17313,
-    ///         BuildingForestedSingleStart = 12700,
-    ///         BuildingForestedResidentialSingle = 12701,
-    ///         BuildingForestedWarehouseSingle = 12702,
-    ///         BuildingForestedRecreationalSingle = 12703,
-    ///         BuildingForestedTrailerSingle = 12704,
-    ///         BuildingForestedFactorySingle = 12705,
-    ///         BuildingForestedCommericalSingle = 12706,
-    ///         BuildingForestedSchoolSingle = 12707,
-    ///         BuildingForestedChurchSingle = 12708,
-    ///         BuildingForestedMedicalFacilitySingle = 12709,
-    ///         BuildingForestedStart = 21100,
-    ///         BuildingForestedResidential = 21101,
-    ///         BuildingForestedWarehouse = 21102,
-    ///         BuildingForestedRecreational = 21103,
-    ///         BuildingForestedTrailer = 21104,
-    ///         BuildingForestedFactory = 21105,
-    ///         BuildingForestedCommerical = 21106,
-    ///         BuildingForestedSchool = 21107,
-    ///         BuildingForestedChurch = 21108,
-    ///         BuildingForestedMedicalFacility = 21109,
-    ///         BuildingTypeSingleStart = 12800,
-    ///         BuildingindustryWarehouseSingle = 12801,
-    ///         BuildingIndustryFactorySingle = 12802,
-    ///         BuildingIndustryCommericalSingle = 12803,
-    ///         BuildingIndustrySchoolSingle = 12804,
-    ///         BuildingIndustryChurchSingle = 12805,
-    ///         BuildingIndustryMedicalFacilitySingle = 12806,
-    ///         BuildingTypeStart = 21200,
-    ///         BuildingindustryWarehouse = 21201,
-    ///         BuildingIndustryFactory = 21202,
-    ///         BuildingIndustryCommerical = 21203,
-    ///         BuildingIndustrySchool = 21204,
-    ///         BuildingIndustryChurch = 21205,
-    ///         BuildingIndustryMedicalFacility = 21206,
-    ///         BuildingAllSingleStart = 13000,
-    ///         BuildingAllCottageSingle = 13001,
-    ///         BuildingAllTrailerSingle = 13002,
-    ///         BuildingAllResidentialSingle = 13003,
-    ///         BuildingAllWarehouseSingle = 13004,
-    ///         BuildingAllHotelMotelSingle = 13005,
-    ///         BuildingAllCommericalSingle = 13006,
-    ///         BuildingAllSchoolSingle = 13007,
-    ///         BuildingAllChurchSingle = 13008,
-    ///         BuildingAllmedicalFacilitySingle = 13009,
-    ///         BuildingAllStart = 21300,
-    ///         BuildingAllCottage = 21301,
-    ///         BuildingAllTrailer = 21302,
-    ///         BuildingAllResidential = 21303,
-    ///         BuildingAllWarehouse = 21304,
-    ///         BuildingAllHotelMotel = 21305,
-    ///         BuildingAllCommerical = 21306,
-    ///         BuildingAllSchool = 21307,
-    ///         BuildingAllChurch = 21308,
-    ///         BuildingAllmedicalFacility = 21309,
-    ///         CountNumberStart = 13100,
-    ///         CountNumberEqualTo1 = 13101,
-    ///         CountNumberEqualTo2 = 13102,
-    ///         CountNumberEqualTo3 = 13103,
-    ///         CountNumberEqualTo4 = 13104,
-    ///         CountNumberEqualTo5 = 13105,
-    ///         CountNumberEqualTo6 = 13106,
-    ///         CountNumberEqualTo7 = 13107,
-    ///         CountNumberEqualTo8 = 13108,
-    ///         CountNumberEqualTo9 = 13109,
-    ///         CountNumberEqualTo10 = 13110,
-    ///         CountNumberBetween11and25 = 13111,
-    ///         CountNumberBetween26and40 = 13112,
-    ///         CountNumberGreaterThan40 = 13113,
-    ///         AreaSizeStart = 13200,
-    ///         AreaMetersEquals20 = 13201,
-    ///         AreaMetersEquals40 = 13202,
-    ///         AreaMetersEquals60 = 13203,
-    ///         AreaMetersEquals80 = 13204,
-    ///         AreaMetersEquals100 = 13205,
-    ///         AreaMetersBetween101And250 = 13206,
-    ///         AreaMetersBetween251And500 = 13207,
-    ///         AreaMetersBetween501And1000 = 13208,
-    ///         AreaMetersgreaterThan1000 = 13209,
-    ///         FecalSourceStart = 13300,
-    ///         FecalSourcePeople = 13301,
-    ///         FecalSourcePets = 13302,
-    ///         FecalSourceWildlife = 13303,
-    ///         FecalSourceLivestock = 13304,
-    ///         FecalSourceDrainagewater = 13305,
-    ///         FecalProcessWater = 13306,
-    ///         FecalPotentialContamination = 13307,
-    ///         FecalSourceAbsent = 13308,
-    ///         MajorIssueSourceStart = 13400,
-    ///         MajorIssueSourceManurePile = 13401,
-    ///         MajorIssueAbsent1 = 13402,
-    ///         MajorIssueRunoff = 13403,
+    ///         TankSize400 = 12501,
+    ///         TankSize2000 = 12502,
+    ///         TankSize4000 = 12503,
+    ///         TankSize8000 = 12504,
     ///         LandfillTypeStart = 13500,
     ///         LandfillTypeResidental = 13501,
     ///         LandfillTypeIndustrial = 13502,
     ///         LandfillTypeWoodwaste = 13503,
     ///         TypesOfLivestockStart = 13700,
-    ///         TypesEqualHorses = 13701,
-    ///         TypesEqualCows = 13702,
-    ///         TypesEqualSheep = 13703,
-    ///         TypesEqualPigs = 13704,
-    ///         TypesEqualDomesticMixtureLarge = 13705,
-    ///         TypesEqualChickens = 13706,
-    ///         TypesEqualTurkeys = 13707,
-    ///         TypesEqualDucks = 13708,
-    ///         TypesEqualGeese = 13709,
-    ///         TypesEqualDomesticMixtureSmall = 13710,
-    ///         TypesEqualFurFarms = 13711,
+    ///         TypesOfLivestockHorses = 13701,
+    ///         TypesOfLivestockCows = 13702,
+    ///         TypesOfLivestockSheep = 13703,
+    ///         TypesOfLivestockPigs = 13704,
+    ///         TypesOfLivestockMixtureLarge = 13705,
+    ///         TypesOfLivestockChickens = 13706,
+    ///         TypesOfLivestockTurkeys = 13707,
+    ///         TypesOfLivestockDucks = 13708,
+    ///         TypesOfLivestockMixtureSmall = 13709,
+    ///         TypesOfLivestockFurFarms = 13710,
     ///         TypesOfWildlifeStart = 13800,
-    ///         TypesEqualSmallWildAnimals = 13801,
-    ///         TypesEqualLargeWildAnimals = 13802,
-    ///         TypesEquallandBirds = 13804,
-    ///         TypesEqualMarinebirdsSeals = 13805,
-    ///         TypesLandBIrdsStart = 21800,
-    ///         TypesLandBirdsCrows = 21801,
-    ///         TypesLandBirdsEagle = 21802,
-    ///         TypesLargeWildAnimalsStart = 21900,
-    ///         TypesLargeWildAnimalsMoose = 21901,
-    ///         TypesLargeWildAnimalsDeer = 21902,
-    ///         TypesLargeWildAnimalsCoyote = 21903,
-    ///         TypesSmallWildAnimalsStart = 22000,
-    ///         TypesSmallWildAnimalsFoxes = 22001,
-    ///         TypesSmallWildAnimalsGroundHogs = 22002,
-    ///         TypesSmallWildAnimalsSkunks = 22003,
+    ///         TypesOfWildlifeCrows = 13801,
+    ///         TypesOfWildlifeGulls = 13802,
+    ///         TypesOfWildlifeEagle = 13803,
+    ///         TypesOfWildlifeUngulate = 13804,
+    ///         TypesOfWildlifeCoyote = 13805,
+    ///         TypesOfWildlifeGeneral = 13806,
+    ///         TypesOfWildlifeBeaver = 13807,
+    ///         TypesOfWildlifeMuskrat = 13808,
+    ///         TypesOfAnimalStart = 10700,
+    ///         TypesOfAnimalLivestock = 10701,
+    ///         TypesOfAnimalWildlife = 10702,
+    ///         TypesOfAnimalMarine = 10703,
     ///         AnimalNumberPresentStart = 13900,
     ///         NumberAnimalPresentapprox2 = 13901,
     ///         NumberAnimalPresentapprox5 = 13902,
@@ -509,19 +292,6 @@ namespace CSSPEnums
     ///         NumberAnimalPresentapprox5000 = 13910,
     ///         NumberAnimalPresentGreaterThan10000 = 13911,
     ///         NumberAnimalPresentGreaterThan20000 = 13912,
-    ///         WasteSourceStart = 20300,
-    ///         WasteSourceTypeLandCulvert = 20301,
-    ///         WasteSourceTypeLandPipe = 20302,
-    ///         WasteSourceTypeLandWaterCourse = 20303,
-    ///         WasteSourceTypeLandDitch = 20304,
-    ///         WasteSourceTypeLandDrainage = 20305,
-    ///         WasteSourceTypeDirectInputToMarine = 20306,
-    ///         WasteSourceTypetoField = 20307,
-    ///         FieldLocationStart = 20400,
-    ///         FieldLocationOnFarm = 20401,
-    ///         FieldLocationOffFarm = 20402,
-    ///         PointSourceWildlifeStart = 16600,
-    ///         SourceDirectInputToMarine = 16601,
     ///         BoatStart = 14000,
     ///         BoatCountEquals1 = 14001,
     ///         BoatCountEquals2 = 14002,
@@ -544,110 +314,11 @@ namespace CSSPEnums
     ///         OilDumpingFacilityPresent = 14101,
     ///         OilDumpingFacilityAbsent = 14102,
     ///         OilDumpingFacilityNotObserved = 14103,
+    ///         OilDumpingFacilityNotApplicable = 14104,
     ///         SewageDumpingStationStart = 14200,
     ///         SewageDumpingStationPresent = 14201,
     ///         SewageDumpingStationAbsent = 14202,
     ///         SewageDumpingStationNotObserved = 14203,
-    ///         PointCountNumberStart = 21600,
-    ///         PointCountNumberEqualTo1 = 21601,
-    ///         PointCountNumberEqualTo2 = 21602,
-    ///         PointCountNumberEqualTo3 = 21603,
-    ///         PointCountNumberEqualTo4 = 21604,
-    ///         PointCountNumberEqualTo5 = 21605,
-    ///         PointCountNumberEqualTo6 = 21606,
-    ///         PointCountNumberEqualTo7 = 21607,
-    ///         PointCountNumberEqualTo8 = 21608,
-    ///         PointCountNumberEqualTo9 = 21609,
-    ///         PointCountNumberEqualTo10 = 21610,
-    ///         PointCountNumberBetween11and25 = 21611,
-    ///         PointCountNumberBetween26and40 = 21612,
-    ///         PointCountNumberGreaterThan40 = 21613,
-    ///         PointSourceSingleStart = 14300,
-    ///         SourceTypeLandCulvertSingle = 14301,
-    ///         SourceTypeLandPipeSingle = 14302,
-    ///         SourceTypeLandWaterCourseSingle = 14303,
-    ///         SourceTypeLandDitchSingle = 14304,
-    ///         SourceTypeLandDrainageSingle = 14305,
-    ///         PointSourceStart = 21400,
-    ///         SourceTypeLandCulvert = 21401,
-    ///         SourceTypeLandPipe = 21402,
-    ///         SourceTypeLandWaterCourse = 21403,
-    ///         SourceTypeLandDitch = 21404,
-    ///         SourceTypeLandDrainage = 21405,
-    ///         SourceTypeDirectInputToMarine = 21406,
-    ///         PointSourceManureStart = 14400,
-    ///         SourceManureLandDrainage = 14401,
-    ///         SourceManureDitch = 14402,
-    ///         DiameterInCentimetersStart = 14500,
-    ///         DiameterInCentimetersLessThan30 = 14501,
-    ///         DiameterInCentimetersBetween31and50cm = 14502,
-    ///         DiameterInCentimetersBetween50and100cm = 14503,
-    ///         DiameterInCentimetersBetween101and200cm = 14504,
-    ///         DiameterInCentimetersBetween201and300cm = 14505,
-    ///         DiameterInCentimetersBetween301and400cm = 14506,
-    ///         DiameterInCentimetersBetween401and500cm = 14507,
-    ///         DiameterInCentimetersGreaterThan500cm = 14508,
-    ///         DiameterNoInformation = 14509,
-    ///         FlowLevelStart = 14600,
-    ///         FlowLevelHigh = 14601,
-    ///         FlowLevelMedium = 14602,
-    ///         FlowLevelLow = 14603,
-    ///         OuthouseStart = 14700,
-    ///         OuthouseCementHoldingTank = 14701,
-    ///         OuthouseSittingOnGround = 14702,
-    ///         WidthInMetersStart = 14800,
-    ///         WidthInMetersApprox1 = 14801,
-    ///         WidthInMetersApprox2 = 14802,
-    ///         WidthInMetersApprox3 = 14803,
-    ///         WidthInMetersApprox4 = 14804,
-    ///         WidthInMetersApprox5 = 14805,
-    ///         WidthInMetersApprox6 = 14806,
-    ///         WidthInMetersApprox7 = 14807,
-    ///         WidthInMetersApprox8 = 14808,
-    ///         WidthInMetersApprox9 = 14809,
-    ///         WidthInMetersApprox10 = 14810,
-    ///         WidthInMetersBetween11And25 = 14811,
-    ///         WidthInMetersBetween26And40 = 14812,
-    ///         WidthInMetersGreaterThan40 = 14813,
-    ///         DitchStart = 14900,
-    ///         DitchAlongRoad = 14901,
-    ///         DitchBetweenAcrossProperties = 14902,
-    ///         DitchDirectlytoWater = 14903,
-    ///         DrainageStart = 15000,
-    ///         DrainagePavedSurfaces = 15001,
-    ///         DrainageVegetatedSurfaces = 15002,
-    ///         DrainageDirect = 15003,
-    ///         DrainageBareSoilSurfaces = 15004,
-    ///         ManureAreaSizeStart = 15100,
-    ///         ManureAreaMetersapproximately10 = 15101,
-    ///         ManureAreaMetersapproximately20 = 15102,
-    ///         ManureAreaMetersapproximately30 = 15103,
-    ///         ManureAreaMetersapproximately40 = 15104,
-    ///         ManureAreaMetersapproximately50 = 15105,
-    ///         ManureAreaMetersapproximately60 = 15106,
-    ///         ManureAreaMetersapproximately70 = 15107,
-    ///         ManureAreaMetersapproximately80 = 15108,
-    ///         ManureAreaMetersapproximately90 = 15109,
-    ///         ManureAreaMetersapproximately100 = 15110,
-    ///         ManureAreaMetersMoreThan100 = 15111,
-    ///         SourceTypeWaterStart = 15200,
-    ///         SourceTypeWaterAquacultureSite = 15201,
-    ///         SourceTypeWaterAnchorageMooringSite = 15202,
-    ///         SourceTypeWaterDisposalAtSea = 15203,
-    ///         SourceTypeWaterMarinePark = 15204,
-    ///         SourceLandOutcrop = 15205,
-    ///         AquacultureSiteStart = 19100,
-    ///         AquacultureSite = 19101,
-    ///         AnchorageMooringSiteStart = 19200,
-    ///         AnchorageMooringSite = 19201,
-    ///         DisposalAtSeaStart = 19300,
-    ///         DisposalAtSea = 19301,
-    ///         MarineParkStart = 19400,
-    ///         MarinePark = 19401,
-    ///         OutcropStart = 19600,
-    ///         OutcropSandBar = 19601,
-    ///         OutcropRock = 19602,
-    ///         OutcropIsland = 19603,
     ///         WaterAquacultureStart = 18900,
     ///         WaterAquacultureSiteActive = 18901,
     ///         WaterAquacultureSiteFallow = 18902,
@@ -666,229 +337,199 @@ namespace CSSPEnums
     ///         WatAquaCountNumberBetween26and40 = 18412,
     ///         WatAquaCountNumberGreaterThan40 = 18413,
     ///         WaterAquacultureTypeSingleStart = 15400,
-    ///         AquacultureCagesSingle = 15401,
-    ///         AquacultureFloatingBagsSingle = 15402,
-    ///         AquacultureSubmergedLinesSingle = 15403,
-    ///         AquacultureLosterPoundCageSingle = 15404,
-    ///         AquacultureBargesSingle = 15405,
+    ///         WaterAquacultureTypeSingleCages = 15401,
+    ///         WaterAquacultureTypeSingleFloatingBags = 15402,
+    ///         WaterAquacultureTypeSingleSubmergedLines = 15403,
+    ///         WaterAquacultureTypeSingleLosterPound = 15404,
+    ///         WaterAquacultureTypeSingleBarges = 15405,
     ///         WaterAquacultureTypeStart = 18800,
-    ///         AquacultureCages = 18801,
-    ///         AquacultureFloatingBags = 18802,
-    ///         AquacultureSubmergedLines = 18803,
-    ///         AquacultureLosterPoundCage = 18804,
-    ///         AquacultureBarges = 18805,
-    ///         WatStructActiveStart = 15300,
-    ///         WatStructActive = 15301,
-    ///         WatStructInactive = 15302,
-    ///         WaterStructureSiteSingleStart = 15500,
-    ///         WaterStructureVesselSingle = 15501,
-    ///         WaterStructureBargeSingle = 15502,
-    ///         WaterStructureResidentalSingle = 15503,
-    ///         WaterStructureCommercialSingle = 15504,
-    ///         WaterStructureNotActiveSingle = 15505,
-    ///         WaterStructureSiteStart = 21500,
-    ///         WaterStructureVessel = 21501,
-    ///         WaterStructureBarge = 21502,
-    ///         WaterStructureResidental = 21503,
-    ///         WaterStructureCommercial = 21504,
-    ///         WaterStructureNotActive = 21505,
-    ///         WatStructCountNumberStart = 18500,
-    ///         WatStructCountNumberEqualTo1 = 18501,
-    ///         WatStructCountNumberEqualTo2 = 18502,
-    ///         WatStructCountNumberEqualTo3 = 18503,
-    ///         WatStructCountNumberEqualTo4 = 18504,
-    ///         WatStructCountNumberEqualTo5 = 18505,
-    ///         WatStructCountNumberEqualTo6 = 18506,
-    ///         WatStructCountNumberEqualTo7 = 18507,
-    ///         WatStructCountNumberEqualTo8 = 18508,
-    ///         WatStructCountNumberEqualTo9 = 18509,
-    ///         WatStructCountNumberEqualTo10 = 18510,
-    ///         WatStructCountNumberBetween11and25 = 18511,
-    ///         WatStructCountNumberBetween26and40 = 18512,
-    ///         WatStructCountNumberGreaterThan40 = 18513,
-    ///         WaterDisposalAtSeaStart = 15600,
-    ///         WaterDumpSiteActive = 15601,
-    ///         WaterDumpSiteNotActive = 15602,
-    ///         WaterSeaportStart = 15700,
-    ///         SeaportRecreational = 15701,
-    ///         SeaportCommercial = 15702,
-    ///         WaterSizeStart = 15800,
-    ///         WaterSizeMetersEqual20 = 15801,
-    ///         WaterSizeMetersEqual40 = 15802,
-    ///         WaterSizeMetersEqual60 = 15803,
-    ///         WaterSizeMetersEqual80 = 15804,
-    ///         WaterSizeMetersEqual100 = 15805,
-    ///         WaterSizeMetersEqual150 = 15806,
-    ///         WaterSizeMetersEqual200 = 15807,
-    ///         WaterSizeMetersEqual250 = 15808,
-    ///         WaterSizeMetersEqual300 = 15809,
-    ///         WaterSizeMetersEqual400 = 15810,
-    ///         WaterSizeMetersEqual500 = 15811,
-    ///         WaterSizeMetersEqual750 = 15812,
-    ///         WaterSizeMetersEqual1000 = 15813,
-    ///         WaterSizeMetersGreaterThan1000 = 15814,
-    ///         DistanceOnWaterMetersStart = 10300,
-    ///         DistanceOnWaterMetersapproximately10 = 10301,
-    ///         DistanceOnWaterMetersEqual20 = 10302,
-    ///         DistanceOnWaterMetersEqual30 = 10303,
-    ///         DistanceOnWaterMetersEqual40 = 10304,
-    ///         DistanceOnWaterMetersEqual50 = 10305,
-    ///         DistanceOnWaterMetersEqual75 = 10306,
-    ///         DistanceOnWaterMetersEqual100 = 10307,
-    ///         DistanceOnWaterMetersEqual150 = 10308,
-    ///         DistanceOnWaterMetersEqual200 = 10309,
-    ///         DistanceOnWaterMetersEqual300 = 10310,
-    ///         DistanceOnWaterMetersEqual400 = 10311,
-    ///         DistanceOnWaterMetersEqual600 = 10312,
-    ///         DistanceOnWaterMetersEqual800 = 10313,
-    ///         DistanceOnWaterMetersEqual1000 = 10314,
-    ///         DistanceOnWaterMetersGreaterThan1000 = 10315,
-    ///         WaterTypeStart = 15900,
-    ///         WaterTypeSalt = 15901,
-    ///         WaterTypeBrachish = 15902,
-    ///         WaterTypeFresh = 15903,
-    ///         WaterFecalSourceStart = 16100,
-    ///         WaterFecalSourcePeople = 16101,
-    ///         WaterFecalSourceWildlife = 16102,
-    ///         WaterFecalSourceAbsent = 16103,
-    ///         WaterFecalProcessWater = 16104,
-    ///         WaterCountNumberStart = 16200,
-    ///         WatCountNumberEqualTo1 = 16201,
-    ///         WatCountNumberEqualTo2 = 16202,
-    ///         WatCountNumberEqualTo3 = 16203,
-    ///         WatCountNumberEqualTo4 = 16204,
-    ///         WatCountNumberEqualTo5 = 16205,
-    ///         WatCountNumberEqualTo6 = 16206,
-    ///         WatCountNumberEqualTo7 = 16207,
-    ///         WatCountNumberEqualTo8 = 16208,
-    ///         WatCountNumberEqualTo9 = 16209,
-    ///         WatCountNumberEqualTo10 = 16210,
-    ///         WatCountNumberBetween11and25 = 16211,
-    ///         WatCountNumberBetween26and40 = 16212,
-    ///         WatCountNumberGreaterThan40 = 16213,
-    ///         HumanSewageStart = 18700,
-    ///         HumanSewageWashroom = 18701,
-    ///         HumanSewageWashroomAbsent = 18702,
-    ///         WaterSewageStart = 16300,
-    ///         WaterSewageDirectDischarge = 16301,
-    ///         WaterSepticSystemFullRention = 16302,
-    ///         WaterNumberPresentStart = 16400,
-    ///         WatNumberPresentEqualTo1 = 16401,
-    ///         WatNumberPresentEqualTo2 = 16402,
-    ///         WatNumberPresentEqualTo3 = 16403,
-    ///         WatNumberPresentEqualTo4 = 16404,
-    ///         WatNumberPresentEqualTo5 = 16405,
-    ///         WatNumberPresentEqualTo6 = 16406,
-    ///         WatNumberPresentEqualTo7 = 16407,
-    ///         WatNumberPresentEqualTo8 = 16408,
-    ///         WatNumberPresentEqualTo9 = 16409,
-    ///         WatNumberPresentEqualTo10 = 16410,
-    ///         WatNumberPresentBetween11and25 = 16411,
-    ///         WatNumberPresentBetween26and40 = 16412,
-    ///         WatNumberPresentGreaterThan40 = 16413,
+    ///         WaterAquacultureTypeCages = 18801,
+    ///         WaterAquacultureTypeFloatingBags = 18802,
+    ///         WaterAquacultureTypeSubmergedLines = 18803,
+    ///         WaterAquacultureTypeLosterPounds = 18804,
+    ///         WaterAquacultureTypeBarges = 18805,
     ///         WaterTypesOfMarineLifeStart = 16500,
-    ///         WaterTypesEqualSmallMammals = 16501,
-    ///         WaterTypesEqualLargeMammals = 16502,
-    ///         WaterTypesEqualSeaBirds = 16503,
-    ///         WaterTypesEqualShorelineBirds = 16504,
-    ///         ShorelineBirdsStart = 19700,
-    ///         ShorelineBirdsPloversandSandpipers = 19701,
-    ///         ShorelineBirdsBlackBackedGulls = 19702,
-    ///         ShorelineBirdsHerringGulls = 19703,
-    ///         ShorelineBirdsGreaterYellowlegs = 19704,
-    ///         ShorelineBirdsSurfScoter = 19705,
-    ///         ShorelineBirdsBrownPelican = 19706,
-    ///         ShorelineBirdsOthers = 19707,
-    ///         SeaBirdsStart = 19800,
-    ///         SeaBirdsCormorants = 19801,
-    ///         SeaBirdsDucks = 19802,
-    ///         SeaBirdsGeese = 19803,
-    ///         SeaBirdsBlackBlackGulls = 19804,
-    ///         SeaBirdsLoons = 19805,
-    ///         SeaBirdsSeaducks = 19806,
-    ///         SeaBirdsOther = 19807,
-    ///         LargeMarineMammalStart = 19900,
-    ///         LargeMarineMammaGreySeal = 19901,
-    ///         LargeMarineMammalHoodedSeal = 19902,
-    ///         LargeMarineMammalBeardSeal = 19903,
-    ///         LargeMarineMammalStellarSeaLion = 19904,
-    ///         LargeMarineMammalAtlanticWalrus = 19905,
-    ///         LargeMarineMammalNorthernFurSeal = 19906,
-    ///         SmallMarineanimalStart = 20000,
-    ///         SmallMarineanimalHarpSeal = 20001,
-    ///         SmallMarineanimalHarbourSeal = 20002,
-    ///         SmallMarineanimalSeaOtter = 20003,
-    ///         MarineAnimalPresentStart = 20100,
-    ///         MarineAnimalPresentLessThan5 = 20101,
-    ///         MarineAnimalPresentBetween6and10 = 20102,
-    ///         MarineAnimalPresentBetween11and25 = 20103,
-    ///         MarineAnimalPresentBetween26and100 = 20104,
-    ///         MarineAnimalPresentGreaterThan100 = 20105,
-    ///         MarineAnimalPresentGreaterThan500 = 20106,
-    ///         MarineAnimalPresentGreaterThan1000 = 20107,
-    ///         MarineAnimalPresentGreaterThan10000 = 20108,
-    ///         MarineAnimalPresentGreaterThan20000 = 20109,
-    ///         MarinePointSourceStart = 20200,
-    ///         MarinePointSourceInputToMarine = 20201,
-    ///         ShorelineStart = 17000,
-    ///         ShorelineSandy = 17001,
-    ///         ShorelineRocky = 17002,
-    ///         ShorelineIssueStart = 17100,
-    ///         ShorelineBuildings = 17101,
-    ///         ShorelineWildlife = 17102,
-    ///         ShorelineLandFill = 17103,
-    ///         ShorelineSlipway = 17104,
-    ///         ShorelineDayuse = 17105,
-    ///         SlipwayStart = 18000,
-    ///         SlipwayPaved = 18001,
-    ///         SlipwayRocks = 18002,
-    ///         SourceTypeShoreStart = 19000,
-    ///         SourceTypeShoreline = 19001,
+    ///         WaterTypesOfMarineLifeShorelineBirds = 16501,
+    ///         WaterTypesOfMarineLifeGulls = 16502,
+    ///         WaterTypesOfMarineLifeCormorants = 16503,
+    ///         WaterTypesOfMarineLifeDucksGeese = 16504,
+    ///         WaterTypesOfMarineLifeLoons = 16505,
+    ///         WaterTypesOfMarineLifeSeaducks = 16506,
+    ///         WaterTypesOfMarineLifeOther = 16507,
+    ///         WaterTypesOfMarineLifeSeal = 16508,
+    ///         WaterTypesOfMarineLifeSeaOtter = 16509,
+    ///         MajorIssueSourceStart = 13400,
+    ///         MajorIssueSourceManurePile = 13401,
+    ///         MajorIssueSourceLiqSpread = 13402,
+    ///         FieldLocationStart = 20400,
+    ///         FieldLocationOnFarm = 20401,
+    ///         FieldLocationOffFarm = 20402,
+    ///         FieldLocationBoth = 20403,
+    ///         SourcesOfContaminantStart = 10500,
+    ///         SourcesOfContaminantRunoff = 10501,
+    ///         SourcesOfContaminantRunoffFromManure = 10502,
+    ///         SourcesOfContaminantProcessingWater = 10503,
+    ///         SourcesOfContaminantTankWater = 10504,
+    ///         SourcesOfContaminantWashrooms = 10505,
+    ///         SourcesOfContaminantEffluent = 10506,
+    ///         SourcesOfContaminantExcrement = 10507,
+    ///         SewageStart = 11900,
+    ///         SewageDirectDischarge = 11901,
+    ///         SewageThruConduit = 11902,
+    ///         SewageSepticSystemLeachateField = 11903,
+    ///         SewageRetentionTank = 11904,
+    ///         SewageOpenTank = 11905,
+    ///         SewageSystemConstructedWetland = 11906,
+    ///         SewageOnSiteSystem = 11907,
+    ///         SewageOffSiteSystem = 11908,
+    ///         SepticNoInformation = 11909,
     ///         StatusStart = 90000,
     ///         StatusDefinite = 90001,
     ///         StatusPotential = 90002,
     ///         StatusNonPollutionSource = 90003,
-    ///         RiskCStart = 91000,
-    ///         RiskLow = 91001,
-    ///         RiskBStart = 92000,
-    ///         RiskModerate = 92001,
-    ///         RiskHighP = 92002,
-    ///         RiskAStart = 93000,
-    ///         RiskHighConfirmedVisual = 93001,
-    ///         RishHighConfirmedWater = 93002,
-    ///         FollowupStart = 94000,
-    ///         FollowupRequired = 94001,
-    ///         FollowupNotRequired = 94002,
+    ///         PathWayStart = 25000,
+    ///         PathwayLand = 25001,
+    ///         PathWayWater = 25002,
+    ///         PathwaySourceFirstStart = 14300,
+    ///         PathwaySourceFirstCulvert = 14301,
+    ///         PathwaySourceFirstPipe = 14302,
+    ///         PathwaySourceFirstStream = 14303,
+    ///         PathwaySourceFirstDitch = 14304,
+    ///         PathwaySourceFirstSurfaceDrainage = 14305,
+    ///         PathwaySourceFirstSubSurfaceDrainage = 14306,
+    ///         PathwaySourceFirstDirect = 14307,
+    ///         PathwaySourceSecondPipeStart = 13000,
+    ///         PathwaySourceSecondPipeStream = 13001,
+    ///         PathwaySourceSecondPipeDitch = 13002,
+    ///         PathwaySourceSecondPipeSurfaceDrainage = 13003,
+    ///         PathwaySourceSecondPipeSubSurfaceDrainage = 13004,
+    ///         PathwaySourceSecondPipeDirect = 13005,
+    ///         PathwaySourceSecondCulvertStart = 13200,
+    ///         PathwaySourceSecondCulvertStream = 13201,
+    ///         PathwaySourceSecondCulvertDitch = 13202,
+    ///         PathwaySourceSecondCulvertSurfaceDrainage = 13203,
+    ///         PathwaySourceSecondCulvertSubSurfaceDrainage = 13204,
+    ///         PathwaySourceSecondCulvertDirectInput = 13205,
+    ///         WidthInMetersStart = 14800,
+    ///         WidthInMetersApprox1 = 14801,
+    ///         WidthInMetersApprox2 = 14802,
+    ///         WidthInMetersApprox3 = 14803,
+    ///         WidthInMetersApprox4 = 14804,
+    ///         WidthInMetersApprox5 = 14805,
+    ///         WidthInMetersApprox6 = 14806,
+    ///         WidthInMetersApprox7 = 14807,
+    ///         WidthInMetersApprox8 = 14808,
+    ///         WidthInMetersApprox9 = 14809,
+    ///         WidthInMetersApprox10 = 14810,
+    ///         WidthInMetersBetween11And25 = 14811,
+    ///         WidthInMetersBetween26And40 = 14812,
+    ///         WidthInMetersGreaterThan40 = 14813,
     ///         DistanceFromShoreInMetersStart = 10200,
     ///         DistanceFromShoreInMetersOnShore = 10201,
-    ///         DistanceFromShoreInMeters10 = 10202,
-    ///         DistanceFromShoreInMeters20 = 10203,
-    ///         DistanceFromShoreInMeters30 = 10204,
-    ///         DistanceFromShoreInMeters40 = 10205,
-    ///         DistanceFromShoreInMeters50 = 10206,
-    ///         DistanceFromShoreInMeters75 = 10207,
-    ///         DistanceFromShoreInMeters100 = 10208,
-    ///         DistanceFromShoreInMeters150 = 10209,
-    ///         DistanceFromShoreInMeters200 = 10210,
-    ///         DistanceFromShoreInMeters300 = 10212,
-    ///         DistanceFromShoreInMeters400 = 10213,
-    ///         DistanceFromShoreInMeters600 = 10215,
-    ///         DistanceFromShoreInMeters800 = 10216,
-    ///         DistanceFromShoreInMeters1000 = 10218,
-    ///         DistanceFromShoreInMetersGreaterThan1000 = 10219,
+    ///         DistanceFromShoreInMeters5 = 10202,
+    ///         DistanceFromShoreInMeters10 = 10203,
+    ///         DistanceFromShoreInMeters20 = 10204,
+    ///         DistanceFromShoreInMeters30 = 10205,
+    ///         DistanceFromShoreInMeters40 = 10206,
+    ///         DistanceFromShoreInMeters50 = 10207,
+    ///         DistanceFromShoreInMeters75 = 10208,
+    ///         DistanceFromShoreInMeters100 = 10209,
+    ///         DistanceFromShoreInMeters150 = 10210,
+    ///         DistanceFromShoreInMeters200 = 10212,
+    ///         DistanceFromShoreInMeters300 = 10213,
+    ///         DistanceFromShoreInMeters400 = 10215,
+    ///         DistanceFromShoreInMeters600 = 10216,
+    ///         DistanceFromShoreInMeters800 = 10218,
+    ///         DistanceFromShoreInMeters1000 = 10219,
+    ///         DistanceFromShoreInMetersGreaterThan1000 = 10220,
     ///         ShorelineRiparionZoneStart = 23000,
     ///         ShorelineRiparianZonePresent = 23001,
     ///         ShorelineRiparianZoneAbsent = 23002,
     ///         ShorelineRiparianZoneNoInfo = 23003,
-    ///         DistancetoGrowingAreaStart = 24000,
-    ///         DistancetoGrowAreasInMeters30 = 24001,
-    ///         DistancetoGrowAreasInMeters50 = 24002,
-    ///         DistancetoGrowAreasInMeters100 = 24003,
-    ///         DistancetoGrowAreasInMeters200 = 24004,
-    ///         DistancetoGrowAreasInMeters400 = 24005,
-    ///         DistancetoGrowAreasInMeters800 = 24006,
-    ///         DistancetoGrowAreasInMeters1000 = 24007,
-    ///         DistancetoGrowAreasInMetersGreaterThan1000 = 24008,
+    ///         DistanceToSaltWaterStart = 24000,
+    ///         DistanceToSaltWaterInMeters5 = 24001,
+    ///         DistanceToSaltWaterInMeters10 = 24002,
+    ///         DistancetoSaltWaterInMeters20 = 24003,
+    ///         DistanceToSaltWaterInMeters30 = 24004,
+    ///         DistanceToSaltWaterInMeters50 = 24005,
+    ///         DistanceToSaltWaterInMeters100 = 24006,
+    ///         DistanceToSaltWaterInMeters200 = 24007,
+    ///         DistanceToSaltWaterInMeters400 = 24008,
+    ///         DistanceToSaltWaterInMeters800 = 24009,
+    ///         DistanceToSaltWaterInMeters1000 = 24010,
+    ///         DistanceToSaltWaterInMetersGreaterThan1000 = 24011,
+    ///         AreaSlopeStart = 10400,
+    ///         AreaSlopeLow = 10401,
+    ///         AreaSlopeMedium = 10402,
+    ///         AreaSlopeHigh = 10403,
+    ///         AreaSlopeNA = 10404,
+    ///         MunicipalityDataStart = 12000,
+    ///         PipeCountNumberStart = 21600,
+    ///         PipeCountNumberEqualTo1 = 21601,
+    ///         PipeCountNumberEqualTo2 = 21602,
+    ///         PipeCountNumberEqualTo3 = 21603,
+    ///         PipeCountNumberEqualTo4 = 21604,
+    ///         PipeCountNumberEqualTo5 = 21605,
+    ///         PipeCountNumberEqualTo6 = 21606,
+    ///         PipeCountNumberEqualTo7 = 21607,
+    ///         PipeCountNumberEqualTo8 = 21608,
+    ///         PipeCountNumberEqualTo9 = 21609,
+    ///         PipeCountNumberEqualTo10 = 21610,
+    ///         DiameterInCentimetersStart = 14500,
+    ///         DiameterInCentimetersLessThan30 = 14501,
+    ///         DiameterInCentimetersBetween31and50cm = 14502,
+    ///         DiameterInCentimetersBetween51and100cm = 14503,
+    ///         DiameterInCentimetersBetween101and200cm = 14504,
+    ///         DiameterInCentimetersBetween201and300cm = 14505,
+    ///         DiameterInCentimetersBetween301and400cm = 14506,
+    ///         DiameterInCentimetersBetween401and500cm = 14507,
+    ///         DiameterInCentimetersGreaterThan500cm = 14508,
+    ///         DiameterNoInformation = 14509,
+    ///         DitchStart = 14900,
+    ///         DitchAlongRoad = 14901,
+    ///         DitchAcrossProperties = 14902,
+    ///         DrainageStart = 15000,
+    ///         DrainagePavedSurfaces = 15001,
+    ///         DrainageVegetatedSurfaces = 15002,
+    ///         DrainageBareSoilSurfaces = 15003,
+    ///         FlowLevelStart = 14600,
+    ///         FlowLevelHigh = 14601,
+    ///         FlowLevelMedium = 14602,
+    ///         FlowLevelLow = 14603,
+    ///         PipeFlowStart = 13300,
+    ///         PipeFlowlHigh = 13301,
+    ///         PipeFlowMedium = 13302,
+    ///         PipeFlowLow = 13303,
+    ///         PathwaySourceWaterStart = 20200,
+    ///         PathwaySourceWaterDirectToMarine = 20201,
+    ///         PathwaySourceWaterPipe = 20202,
+    ///         PathwaySourceWaterLandDisposal = 20203,
+    ///         DistanceOnWaterMetersStart = 10300,
+    ///         DistanceOnWaterMetersEqual5 = 10301,
+    ///         DistanceOnWaterMetersEqual10 = 10302,
+    ///         DistanceOnWaterMetersEqual20 = 10303,
+    ///         DistanceOnWaterMetersEqual30 = 10304,
+    ///         DistanceOnWaterMetersEqual40 = 10305,
+    ///         DistanceOnWaterMetersEqual50 = 10306,
+    ///         DistanceOnWaterMetersEqual75 = 10307,
+    ///         DistanceOnWaterMetersEqual100 = 10308,
+    ///         DistanceOnWaterMetersEqual150 = 10309,
+    ///         DistanceOnWaterMetersEqual200 = 10310,
+    ///         DistanceOnWaterMetersEqual300 = 10311,
+    ///         DistanceOnWaterMetersEqual400 = 10312,
+    ///         DistanceOnWaterMetersEqual600 = 10313,
+    ///         DistanceOnWaterMetersEqual800 = 10314,
+    ///         DistanceOnWaterMetersEqual1000 = 10315,
+    ///         DistanceOnWaterMetersGreaterThan1000 = 10316,
+    ///         RiskStart = 91000,
+    ///         RiskLow = 91001,
+    ///         RiskModerate = 91002,
+    ///         RiskHighP = 91003,
+    ///         RiskHighConfirmedVisual = 91004,
+    ///         RishHighConfirmedWater = 91005,
+    ///         FollowupStart = 92000,
+    ///         FollowupRequired = 92001,
+    ///         FollowupNotRequired = 92002,
     ///     }
     /// </code>
     /// </remarks>
@@ -899,109 +540,389 @@ namespace CSSPEnums
         /// </summary>
         Error = 0,
         /// <summary>
-        /// 10100 -- en [Pollution source and type] ---- fr [Source et type de pollution]
+        /// 10100 -- en [Pollution Source] ---- fr [Source et type de pollution]
         /// </summary>
-        Start = 10100,
+        SourceStart = 10100,
         /// <summary>
-        /// 10101 -- en [Land Issue] ---- fr [Terrestre]
+        /// 10101 -- en [           Human] ---- fr [    Terrestre]
         /// </summary>
-        LandBased = 10101,
+        SourceHuman = 10101,
         /// <summary>
-        /// 10102 -- en [Water Issue] ---- fr [Marin]
+        /// 10102 -- en [     Animal ] ---- fr [  Marin]
         /// </summary>
-        WaterBased = 10102,
+        SourceAnimal = 10102,
         /// <summary>
-        /// 10400 -- en [Area slope] ---- fr [Pente du milieu]
+        /// 10103 -- en [Industrial ] ---- fr [Marin]
         /// </summary>
-        AreaSlopeStart = 10400,
+        SourceIndustrial = 10103,
         /// <summary>
-        /// 10401 -- en [    Low] ---- fr [   Faible]
+        /// 12600 -- en [Structure] ---- fr [Types d'édifices]
         /// </summary>
-        AreaSlopeLow = 10401,
+        HumanPollutionSingleStart = 12600,
         /// <summary>
-        /// 10402 -- en [  Medium] ---- fr [  Modérée]
+        /// 12601 -- en [                                 Residential ] ---- fr [Résidentiel]
         /// </summary>
-        AreaSlopeMedium = 10402,
+        HumanPollutionSingleResidential = 12601,
         /// <summary>
-        /// 10403 -- en [High] ---- fr [Forte]
+        /// 12602 -- en [                             Cottage] ---- fr [Cottage,]
         /// </summary>
-        AreaSlopeHigh = 10403,
+        HumanPollutionSingleCottage = 12602,
         /// <summary>
-        /// 10500 -- en [Land Type] ---- fr [Type de milieu]
+        /// 12603 -- en [                           Trailer ] ---- fr [Trailer,]
         /// </summary>
-        SourceTypeLandStart = 10500,
+        HumanPollutionSingleTrailer = 12603,
         /// <summary>
-        /// 10501 -- en [Agriculture] ---- fr [Agricole]
+        /// 12604 -- en [       Warehouse] ---- fr [Entrepôt]
         /// </summary>
-        SourceTypeLandAgriculture = 10501,
+        HumanPollutionSingleWarehouse = 12604,
         /// <summary>
-        /// 10502 -- en [Forested] ---- fr [Forestier]
+        /// 12605 -- en [         Commercial] ---- fr [Commercial-affaires, ]
         /// </summary>
-        SourceTypeLandForested = 10502,
+        HumanPollutionSingleCommerical = 12605,
         /// <summary>
-        /// 10503 -- en [Fisheries] ---- fr [Pêche]
+        /// 12606 -- en [             Barn] ---- fr [Grange]
         /// </summary>
-        SourceTypeLandFisheries = 10503,
+        HumanPollutionSingleBarn = 12606,
         /// <summary>
-        /// 10504 -- en [Industry] ---- fr [Industriel]
+        /// 12607 -- en [                        Public] ---- fr [Récréatif]
         /// </summary>
-        SourceTypeLandIndustry = 10504,
+        HumanPollutionSinglePublic = 12607,
         /// <summary>
-        /// 10505 -- en [Marine Structure] ---- fr [Structure marine]
+        /// 12608 -- en [                      School] ---- fr [École]
         /// </summary>
-        SourceTypeLandMarineStructure = 10505,
+        HumanPollutionSingleSchool = 12608,
         /// <summary>
-        /// 10506 -- en [Recreational ] ---- fr [Récréatif]
+        /// 12609 -- en [                   Church] ---- fr [Église]
         /// </summary>
-        SourceTypeLandRecreation = 10506,
+        HumanPollutionSingleChurch = 12609,
         /// <summary>
-        /// 10507 -- en [Urban] ---- fr [Urbain]
+        /// 12610 -- en [                 Medical ] ---- fr [Clinique médicale]
         /// </summary>
-        SourceTypeLandUrban = 10507,
+        HumanPollutionSingleMedicalFacility = 12610,
         /// <summary>
-        /// 10508 -- en [Shoreline  ] ---- fr [Sur la côte]
+        /// 12611 -- en [              Outhouse] ---- fr [outhouse]
         /// </summary>
-        SourceTypeShore = 10508,
+        HumanPollutionSingleOuthouse = 12611,
         /// <summary>
-        /// 10600 -- en [Agriculture] ---- fr [Agriculture]
+        /// 12612 -- en [Boats or Barges] ---- fr [Boats or Barges]
         /// </summary>
-        AgricultureStart = 10600,
+        HumanPollutionSingleBoatOrBarge = 12612,
         /// <summary>
-        /// 10601 -- en [Crop] ---- fr [Récolte]
+        /// 21000 -- en [Structures] ---- fr [Type d'édifices]
         /// </summary>
-        AgricultureCrop = 10601,
+        HumanPollutionMultipleStart = 21000,
         /// <summary>
-        /// 10602 -- en [Pasture] ---- fr [Pâturage]
+        /// 21001 -- en [                                 Residential ] ---- fr [Résidentiel]
         /// </summary>
-        AgriculturePasture = 10602,
+        HumanPollutionMultipleResidences = 21001,
         /// <summary>
-        /// 10603 -- en [Feedlot] ---- fr [Enclos]
+        /// 21002 -- en [                             Cottages] ---- fr [Cottages, ]
         /// </summary>
-        AgricultureFeedlot = 10603,
+        HumanPollutionMultipleCottages = 21002,
         /// <summary>
-        /// 10604 -- en [Farm] ---- fr [Ferme]
+        /// 21003 -- en [                           Trailers] ---- fr [Trailers,]
         /// </summary>
-        AgricultureFarm = 10604,
+        HumanPollutionMultipleTrailers = 21003,
         /// <summary>
-        /// 10605 -- en [Buildings] ---- fr [Bâtiments]
+        /// 21004 -- en [       Warehouses] ---- fr [Entrepôts]
         /// </summary>
-        AgricultureBuilding = 10605,
+        HumanPollutionMultipleWarehouses = 21004,
         /// <summary>
-        /// 10700 -- en [Crop] ---- fr [Récolte]
+        /// 21005 -- en [         Commercial] ---- fr [Commercial-affaires]
         /// </summary>
-        CropStart = 10700,
+        HumanPollutionMultipleCommericals = 21005,
         /// <summary>
-        /// 10701 -- en [Food] ---- fr [Nourriture]
+        /// 21006 -- en [             Barns] ---- fr [Granges]
         /// </summary>
-        CropFood = 10701,
+        HumanPollutionMultipleBarns = 21006,
         /// <summary>
-        /// 10702 -- en [Hay] ---- fr [Foin]
+        /// 21007 -- en [                        Public] ---- fr [Récréatif]
         /// </summary>
-        CropHay = 10702,
+        HumanPollutionMultiplePublic = 21007,
         /// <summary>
-        /// 10703 -- en [Peat Moss] ---- fr [Tourbe]
+        /// 21008 -- en [                      Schools] ---- fr [Écoles]
         /// </summary>
-        CropPeatMoss = 10703,
+        HumanPollutionMultipleSchools = 21008,
+        /// <summary>
+        /// 21009 -- en [                   Churches] ---- fr [Églises]
+        /// </summary>
+        HumanPollutionMultipleChurches = 21009,
+        /// <summary>
+        /// 21010 -- en [                 Medical ] ---- fr [Cliniques médicales]
+        /// </summary>
+        HumanPollutionMultipleMedicalFacilities = 21010,
+        /// <summary>
+        /// 21011 -- en [              Outhouses] ---- fr [Outhouse]
+        /// </summary>
+        HumanPollutionMultipleOuthouses = 21011,
+        /// <summary>
+        /// 21012 -- en [Boats or Barges] ---- fr [outhouse]
+        /// </summary>
+        HumanPollutionMultipleBoatsOrBarges = 21012,
+        /// <summary>
+        /// 16900 -- en [Number of Structures] ---- fr [Nombre d'unités]
+        /// </summary>
+        CountNumberStart = 16900,
+        /// <summary>
+        /// 16901 -- en [            1] ---- fr [            1]
+        /// </summary>
+        CountNumberEqualTo1 = 16901,
+        /// <summary>
+        /// 16902 -- en [          2] ---- fr [          2]
+        /// </summary>
+        CountNumberEqualTo2 = 16902,
+        /// <summary>
+        /// 16903 -- en [         3] ---- fr [         3]
+        /// </summary>
+        CountNumberEqualTo3 = 16903,
+        /// <summary>
+        /// 16904 -- en [         4] ---- fr [         4]
+        /// </summary>
+        CountNumberEqualTo4 = 16904,
+        /// <summary>
+        /// 16905 -- en [        5] ---- fr [        5]
+        /// </summary>
+        CountNumberEqualTo5 = 16905,
+        /// <summary>
+        /// 16906 -- en [       6] ---- fr [       6]
+        /// </summary>
+        CountNumberEqualTo6 = 16906,
+        /// <summary>
+        /// 16907 -- en [      7] ---- fr [      7]
+        /// </summary>
+        CountNumberEqualTo7 = 16907,
+        /// <summary>
+        /// 16908 -- en [      8] ---- fr [      8]
+        /// </summary>
+        CountNumberEqualTo8 = 16908,
+        /// <summary>
+        /// 16909 -- en [     9] ---- fr [     9]
+        /// </summary>
+        CountNumberEqualTo9 = 16909,
+        /// <summary>
+        /// 16910 -- en [    10] ---- fr [    10]
+        /// </summary>
+        CountNumberEqualTo10 = 16910,
+        /// <summary>
+        /// 16911 -- en [   11 - 25] ---- fr [   11 - 25]
+        /// </summary>
+        CountNumberBetween11and25 = 16911,
+        /// <summary>
+        /// 16912 -- en [  26 - 40] ---- fr [  26 - 40]
+        /// </summary>
+        CountNumberBetween26and40 = 16912,
+        /// <summary>
+        /// 16913 -- en [ > 40] ---- fr [ > 40]
+        /// </summary>
+        CountNumberGreaterThan40 = 16913,
+        /// <summary>
+        /// 12700 -- en [Location ] ---- fr [Types d'édifices]
+        /// </summary>
+        GeneralLocationStart = 12700,
+        /// <summary>
+        /// 12701 -- en [                                       Rural] ---- fr [Rural Community]
+        /// </summary>
+        GeneralLocationRural = 12701,
+        /// <summary>
+        /// 12702 -- en [                                    Urban] ---- fr [Urban]
+        /// </summary>
+        GeneralLocationUrban = 12702,
+        /// <summary>
+        /// 12703 -- en [                       Forested] ---- fr [Forested]
+        /// </summary>
+        GeneralLocationForested = 12703,
+        /// <summary>
+        /// 12704 -- en [                    Agricultural] ---- fr [Agricultural]
+        /// </summary>
+        GeneralLocationAgricultural = 12704,
+        /// <summary>
+        /// 12705 -- en [                 Farm] ---- fr [Farm]
+        /// </summary>
+        GeneralLocationFarm = 12705,
+        /// <summary>
+        /// 12706 -- en [             Shoreline] ---- fr [Shoreline]
+        /// </summary>
+        GeneralLocationShoreline = 12706,
+        /// <summary>
+        /// 12707 -- en [          Wharf] ---- fr [Wharf]
+        /// </summary>
+        GeneralLocationWharf = 12707,
+        /// <summary>
+        /// 12708 -- en [      Barge] ---- fr [Barge]
+        /// </summary>
+        GeneralLocationBarge = 12708,
+        /// <summary>
+        /// 12709 -- en [   Island] ---- fr [Island]
+        /// </summary>
+        GeneralLocationIsland = 12709,
+        /// <summary>
+        /// 12710 -- en [                             Recreational ] ---- fr [Recreational Area]
+        /// </summary>
+        GeneralLocationRecreationalArea = 12710,
+        /// <summary>
+        /// 12711 -- en [                        Cottage-trailer] ---- fr [Cottage-trailer Lot]
+        /// </summary>
+        GeneralLocationCottageLot = 12711,
+        /// <summary>
+        /// 12712 -- en [ Wetland] ---- fr [Wetland]
+        /// </summary>
+        GeneralLocationWetland = 12712,
+        /// <summary>
+        /// 12713 -- en [       Stream ] ---- fr [Water Course ]
+        /// </summary>
+        GeneralLocationWaterCourse = 12713,
+        /// <summary>
+        /// 12714 -- en [    Sandbar] ---- fr [Banc de sable]
+        /// </summary>
+        GeneralLocationSandBar = 12714,
+        /// <summary>
+        /// 12715 -- en [   Rock] ---- fr [Roche]
+        /// </summary>
+        GeneralLocationRock = 12715,
+        /// <summary>
+        /// 12716 -- en [ Aquaculure ] ---- fr [Île]
+        /// </summary>
+        GeneralLocationAquacultureSite = 12716,
+        /// <summary>
+        /// 12717 -- en [Off -Shore] ---- fr [Shoreline]
+        /// </summary>
+        GeneralLocationOffShoreline = 12717,
+        /// <summary>
+        /// 14700 -- en [Foundation] ---- fr [Fosse des latrines]
+        /// </summary>
+        OuthouseStart = 14700,
+        /// <summary>
+        /// 14701 -- en [Concrete ] ---- fr [Réservoir en béton]
+        /// </summary>
+        OuthouseConcreteTank = 14701,
+        /// <summary>
+        /// 14702 -- en [On-ground] ---- fr [Sur le sol]
+        /// </summary>
+        OuthouseOnGround = 14702,
+        /// <summary>
+        /// 11200 -- en [Location] ---- fr [Type of Locations]
+        /// </summary>
+        IndustrialEffluentStart = 11200,
+        /// <summary>
+        /// 11201 -- en [Forestry] ---- fr [Forestry]
+        /// </summary>
+        IndustrialEffluentForestry = 11201,
+        /// <summary>
+        /// 11202 -- en [Agriculture] ---- fr [Agriculture]
+        /// </summary>
+        IndustrialEffluentAgriculture = 11202,
+        /// <summary>
+        /// 11203 -- en [Fisheries] ---- fr [Fisheries]
+        /// </summary>
+        IndustrialEffluentFisheries = 11203,
+        /// <summary>
+        /// 11204 -- en [Shoreline Structures] ---- fr [Shoreline Structures]
+        /// </summary>
+        IndustrialEffluentShorelineStructures = 11204,
+        /// <summary>
+        /// 11205 -- en [Industrial ] ---- fr [Traitement des eaux usées]
+        /// </summary>
+        IndustrialEffluentIndustrial = 11205,
+        /// <summary>
+        /// 11206 -- en [Storage tank] ---- fr [Réservoir]
+        /// </summary>
+        IndustrialEffluentStorageTank = 11206,
+        /// <summary>
+        /// 11207 -- en [Airport] ---- fr [Aéroport]
+        /// </summary>
+        IndustrialEffluentAirport = 11207,
+        /// <summary>
+        /// 11208 -- en [Landfill] ---- fr [Centre d'enfouissement]
+        /// </summary>
+        IndustrialEffluentLandfill = 11208,
+        /// <summary>
+        /// 11209 -- en [Urban] ---- fr [Eaux pluviales]
+        /// </summary>
+        IndustrialEffluentUrbanRunoff = 11209,
+        /// <summary>
+        /// 11210 -- en [Recreational] ---- fr [Recreational]
+        /// </summary>
+        IndustrialEffluentRecreation = 11210,
+        /// <summary>
+        /// 11211 -- en [Aquaculture] ---- fr [Site de l'aquaculture]
+        /// </summary>
+        IndustrialEffluentAquacultureSite = 11211,
+        /// <summary>
+        /// 11212 -- en [Anchorage ] ---- fr [Site de mouillage ou de amarrage]
+        /// </summary>
+        IndustrialEffluentAnchorageMooringSite = 11212,
+        /// <summary>
+        /// 11213 -- en [Disposal at sea] ---- fr [Décharge en haute mer]
+        /// </summary>
+        IndustrialEffluentDisposalAtSea = 11213,
+        /// <summary>
+        /// 11214 -- en [Marine park] ---- fr [Parc marin]
+        /// </summary>
+        IndustrialEffluentMarinePark = 11214,
+        /// <summary>
+        /// 16800 -- en [Linear Distance (m)] ---- fr [Superficie]
+        /// </summary>
+        AreaSizeStart = 16800,
+        /// <summary>
+        /// 16801 -- en [                           10] ---- fr [                           10]
+        /// </summary>
+        AreaSizeMetersEquals10 = 16801,
+        /// <summary>
+        /// 16802 -- en [                          20] ---- fr [                          20]
+        /// </summary>
+        AreaSizeMetersEquals20 = 16802,
+        /// <summary>
+        /// 16803 -- en [                        40] ---- fr [                        40]
+        /// </summary>
+        AreaSizeMetersEquals40 = 16803,
+        /// <summary>
+        /// 16804 -- en [                      60] ---- fr [                      60]
+        /// </summary>
+        AreaSizeMetersEquals60 = 16804,
+        /// <summary>
+        /// 16805 -- en [                 80] ---- fr [                 80]
+        /// </summary>
+        AreaSizeMetersEquals80 = 16805,
+        /// <summary>
+        /// 16806 -- en [            100] ---- fr [            100]
+        /// </summary>
+        AreaSizeMetersEquals100 = 16806,
+        /// <summary>
+        /// 16807 -- en [         101- 250] ---- fr [         101- 250]
+        /// </summary>
+        AreaSizeMetersBetween101And250 = 16807,
+        /// <summary>
+        /// 16808 -- en [       251 - 500] ---- fr [       251 - 500]
+        /// </summary>
+        AreaSizeMetersBetween251And500 = 16808,
+        /// <summary>
+        /// 16809 -- en [    501 - 1000] ---- fr [    501 - 1000]
+        /// </summary>
+        AreaSizeMetersBetween501And1000 = 16809,
+        /// <summary>
+        /// 16810 -- en [> 1000] ---- fr [> 1000]
+        /// </summary>
+        AreaSizeMetersGreaterThan1000 = 16810,
+        /// <summary>
+        /// 10600 -- en [Agriculture Features] ---- fr [Agriculture]
+        /// </summary>
+        AgriculturalSourceStart = 10600,
+        /// <summary>
+        /// 10601 -- en [                                     Crop] ---- fr [Récolte]
+        /// </summary>
+        AgriculturalSourceCrop = 10601,
+        /// <summary>
+        /// 10602 -- en [                             Pasture] ---- fr [Pâturage]
+        /// </summary>
+        AgricultureSourcePasture = 10602,
+        /// <summary>
+        /// 10603 -- en [                   Feedlot] ---- fr [Enclos]
+        /// </summary>
+        AgriculturesourceFeedlot = 10603,
+        /// <summary>
+        /// 10604 -- en [Peat Moss] ---- fr [Tourbe]
+        /// </summary>
+        AriculturalSourcePeatMoss = 10604,
         /// <summary>
         /// 10800 -- en [Pasture] ---- fr [Pâturage]
         /// </summary>
@@ -1011,9 +932,13 @@ namespace CSSPEnums
         /// </summary>
         PastureActive = 10801,
         /// <summary>
-        /// 10802 -- en [Fallow] ---- fr [Jachère]
+        /// 10802 -- en [Manure Pile] ---- fr [Actif]
         /// </summary>
-        PastureFallow = 10802,
+        PastureActiveWithManurePIle = 10802,
+        /// <summary>
+        /// 10803 -- en [Fallow] ---- fr [Jachère]
+        /// </summary>
+        PastureFallow = 10803,
         /// <summary>
         /// 10900 -- en [Feedlot] ---- fr [Enclos]
         /// </summary>
@@ -1027,285 +952,93 @@ namespace CSSPEnums
         /// </summary>
         FeedlotNotActive = 10902,
         /// <summary>
-        /// 11000 -- en [Farm] ---- fr [Ferme]
-        /// </summary>
-        FarmStart = 11000,
-        /// <summary>
-        /// 11001 -- en [Hobby] ---- fr [Divertissement]
-        /// </summary>
-        FarmHobby = 11001,
-        /// <summary>
-        /// 11002 -- en [Commercial] ---- fr [Commerciale]
-        /// </summary>
-        FarmCommercial = 11002,
-        /// <summary>
-        /// 16700 -- en [Area size] ---- fr [Superficie]
-        /// </summary>
-        AgrAreaSizeStart = 16700,
-        /// <summary>
-        /// 16701 -- en [             20] ---- fr [             20]
-        /// </summary>
-        AgrAreaMetersequals20 = 16701,
-        /// <summary>
-        /// 16702 -- en [           40] ---- fr [           40]
-        /// </summary>
-        AgrAreaMetersequals40 = 16702,
-        /// <summary>
-        /// 16703 -- en [         60] ---- fr [         60]
-        /// </summary>
-        AgrAreaMetersequals60 = 16703,
-        /// <summary>
-        /// 16704 -- en [        80] ---- fr [        80]
-        /// </summary>
-        AgrAreaMetersequals80 = 16704,
-        /// <summary>
-        /// 16705 -- en [      100] ---- fr [      100]
-        /// </summary>
-        AgrAreaMetersequals100 = 16705,
-        /// <summary>
-        /// 16706 -- en [    101- 250] ---- fr [    101- 250]
-        /// </summary>
-        AgrAreaMetersbetween101And250 = 16706,
-        /// <summary>
-        /// 16707 -- en [   251 - 500] ---- fr [   251 - 500]
-        /// </summary>
-        AgrAreaMetersBetween251And500 = 16707,
-        /// <summary>
-        /// 16708 -- en [  501 - 1000] ---- fr [  501 - 1000]
-        /// </summary>
-        AgrAreaMetersBetween501And1000 = 16708,
-        /// <summary>
-        /// 16709 -- en [> 1000] ---- fr [> 1000]
-        /// </summary>
-        AgrAreaMetersGreaterThan1000 = 16709,
-        /// <summary>
-        /// 11100 -- en [Forested] ---- fr [Foresterie]
-        /// </summary>
-        ForestedStart = 11100,
-        /// <summary>
-        /// 11101 -- en [Logging activity] ---- fr [Activités d'exploitation forestière]
-        /// </summary>
-        ForestedLoggingActivity = 11101,
-        /// <summary>
-        /// 11102 -- en [Clearcut] ---- fr [Coupe à blanc]
-        /// </summary>
-        ForestedClearcut = 11102,
-        /// <summary>
-        /// 11103 -- en [Forested] ---- fr [Foresterie]
-        /// </summary>
-        ForestedRegrowth = 11103,
-        /// <summary>
-        /// 11104 -- en [Building] ---- fr [Bâtiment]
-        /// </summary>
-        ForestedBuilding = 11104,
-        /// <summary>
-        /// 16800 -- en [Area size] ---- fr [Superficie]
-        /// </summary>
-        ForAreaSizeStart = 16800,
-        /// <summary>
-        /// 16801 -- en [             20] ---- fr [             20]
-        /// </summary>
-        ForAreaMetersequals20 = 16801,
-        /// <summary>
-        /// 16802 -- en [           40] ---- fr [           40]
-        /// </summary>
-        ForAreaMetersequals40 = 16802,
-        /// <summary>
-        /// 16803 -- en [         60] ---- fr [         60]
-        /// </summary>
-        ForAreaMetersequals60 = 16803,
-        /// <summary>
-        /// 16804 -- en [        80] ---- fr [        80]
-        /// </summary>
-        ForAreaMetersequals80 = 16804,
-        /// <summary>
-        /// 16805 -- en [      100] ---- fr [      100]
-        /// </summary>
-        ForAreaMetersequals100 = 16805,
-        /// <summary>
-        /// 16806 -- en [    101- 250] ---- fr [    101- 250]
-        /// </summary>
-        ForAreaMetersbetween101And250 = 16806,
-        /// <summary>
-        /// 16807 -- en [   251 - 500] ---- fr [   251 - 500]
-        /// </summary>
-        ForAreaMetersBetween251And500 = 16807,
-        /// <summary>
-        /// 16808 -- en [  501 - 1000] ---- fr [  501 - 1000]
-        /// </summary>
-        ForAreaMetersBetween501And1000 = 16808,
-        /// <summary>
-        /// 16809 -- en [> 1000] ---- fr [> 1000]
-        /// </summary>
-        ForAreaMetersGreaterThan1000 = 16809,
-        /// <summary>
-        /// 11200 -- en [Industry] ---- fr [Industrie]
-        /// </summary>
-        IndustryStart = 11200,
-        /// <summary>
-        /// 11201 -- en [Airport] ---- fr [Aéroport]
-        /// </summary>
-        IndustryAirport = 11201,
-        /// <summary>
-        /// 11202 -- en [Landfill] ---- fr [Centre d'enfouissement]
-        /// </summary>
-        IndustryLandfill = 11202,
-        /// <summary>
-        /// 11203 -- en [Waste treatment] ---- fr [Traitement des eaux usées]
-        /// </summary>
-        IndustryWaste = 11203,
-        /// <summary>
-        /// 11204 -- en [Storage tank] ---- fr [Réservoir]
-        /// </summary>
-        IndustryStorageTank = 11204,
-        /// <summary>
-        /// 11205 -- en [Buildings] ---- fr [Bâtiments]
-        /// </summary>
-        IndustryBuildings = 11205,
-        /// <summary>
-        /// 17200 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        INDCountNumberStart = 17200,
-        /// <summary>
-        /// 17201 -- en [            1] ---- fr [1]
-        /// </summary>
-        INDCountNumberEqualTo1 = 17201,
-        /// <summary>
-        /// 17202 -- en [           2] ---- fr [2]
-        /// </summary>
-        INDCountNumberEqualTo2 = 17202,
-        /// <summary>
-        /// 17203 -- en [          3] ---- fr [3]
-        /// </summary>
-        INDCountNumberEqualTo3 = 17203,
-        /// <summary>
-        /// 17204 -- en [         4] ---- fr [4]
-        /// </summary>
-        INDCountNumberEqualTo4 = 17204,
-        /// <summary>
-        /// 17205 -- en [        5] ---- fr [5]
-        /// </summary>
-        INDCountNumberEqualTo5 = 17205,
-        /// <summary>
-        /// 17206 -- en [       6] ---- fr [6]
-        /// </summary>
-        INDCountNumberEqualTo6 = 17206,
-        /// <summary>
-        /// 17207 -- en [      7] ---- fr [7]
-        /// </summary>
-        INDCountNumberEqualTo7 = 17207,
-        /// <summary>
-        /// 17208 -- en [     8] ---- fr [8]
-        /// </summary>
-        INDCountNumberEqualTo8 = 17208,
-        /// <summary>
-        /// 17209 -- en [    9] ---- fr [9]
-        /// </summary>
-        INDCountNumberEqualTo9 = 17209,
-        /// <summary>
-        /// 17210 -- en [   10] ---- fr [10]
-        /// </summary>
-        INDCountNumberEqualTo10 = 17210,
-        /// <summary>
-        /// 17211 -- en [  11 - 25] ---- fr [11 à 25]
-        /// </summary>
-        INDCountNumberBetween10and25 = 17211,
-        /// <summary>
-        /// 17212 -- en [ 26 - 40] ---- fr [26 à 40]
-        /// </summary>
-        INDCountNumberBetween25and40 = 17212,
-        /// <summary>
-        /// 17213 -- en [> 40] ---- fr [40 et plus]
-        /// </summary>
-        INDCountNumberGreaterThan40 = 17213,
-        /// <summary>
         /// 11300 -- en [Type of fish] ---- fr [Type de poisson]
         /// </summary>
-        TypeOfFishStart = 11300,
+        FisheriesSourceStart = 11300,
         /// <summary>
-        /// 11301 -- en [Shellfish] ---- fr [Mollusques]
+        /// 11301 -- en [                            Shellfish] ---- fr [Mollusques]
         /// </summary>
-        FishShellfish = 11301,
+        FisheriesSourceShellfish = 11301,
         /// <summary>
         /// 11302 -- en [Finfish] ---- fr [Poissons]
         /// </summary>
-        FishFinfish = 11302,
+        FisheriesSourceFinfish = 11302,
         /// <summary>
-        /// 11303 -- en [Lobster] ---- fr [Homard]
+        /// 11303 -- en [                Lobster] ---- fr [Homard]
         /// </summary>
-        FishLobster = 11303,
+        FisheriesSourceLobster = 11303,
         /// <summary>
-        /// 11304 -- en [Fish meal] ---- fr [Farine de poisson]
-        /// </summary>
-        FishFishMeal = 11304,
-        /// <summary>
-        /// 21700 -- en [Processing type] ---- fr [La transformation]
+        /// 21700 -- en [Processing Type] ---- fr [La transformation]
         /// </summary>
         FishOperationStart = 21700,
         /// <summary>
-        /// 21701 -- en [Processed/packaged] ---- fr [Produit transformé et empaqueté]
+        /// 21701 -- en [                  Processed/packaged] ---- fr [Produit transformé et empaqueté]
         /// </summary>
-        FishProcessing = 21701,
+        FishOperationProcessing = 21701,
         /// <summary>
-        /// 21702 -- en [Held alive] ---- fr [Tenir vivant]
+        /// 21702 -- en [             Holding tanks] ---- fr [Tenir vivant]
         /// </summary>
-        FishHeldAlive = 21702,
+        FishOperationHoldingTanks = 21702,
         /// <summary>
-        /// 21703 -- en [Packaged alive] ---- fr [Empaqueter vivant]
+        /// 21703 -- en [      Packaged alive] ---- fr [Empaqueter vivant]
         /// </summary>
-        FishPackaging = 21703,
+        FishOperationPackaging = 21703,
         /// <summary>
         /// 21704 -- en [Rearing ] ---- fr [Élevage]
         /// </summary>
-        FishingRearing = 21704,
+        FishOperationRearing = 21704,
         /// <summary>
-        /// 19500 -- en [Fishery Building] ---- fr [Bâtiment pour la pêche]
+        /// 21705 -- en [     Fish meal] ---- fr [Farine de poisson]
         /// </summary>
-        BuildingFishSingleStart = 19500,
+        FishOperationFishMeal = 21705,
         /// <summary>
-        /// 19501 -- en [Hatchery] ---- fr [Incubateur]
+        /// 19500 -- en [Building] ---- fr [Bâtiment pour la pêche]
         /// </summary>
-        BuildingFishHatcherySingle = 19501,
+        FishBuildingTypeSingleStart = 19500,
         /// <summary>
-        /// 19502 -- en [Tank] ---- fr [Réservoir]
+        /// 19501 -- en [                   Processing Plant] ---- fr [Incubateur]
         /// </summary>
-        BuildingFishTanksSingle = 19502,
+        FishBuildingTypeSingleProcessingPlant = 19501,
         /// <summary>
-        /// 19503 -- en [Pond] ---- fr [Étang]
+        /// 19502 -- en [                Hatchery] ---- fr [Incubateur]
         /// </summary>
-        BuildingFishPondsSingle = 19503,
+        FishBuildingTypeSingleHatchery = 19502,
         /// <summary>
-        /// 19504 -- en [Warehouse] ---- fr [Entrepôt]
+        /// 19503 -- en [            Pond] ---- fr [Étang]
         /// </summary>
-        BuildingFishWarehouseSingle = 19504,
+        FishBuildingTypeSinglePond = 19503,
         /// <summary>
-        /// 19505 -- en [Commercial] ---- fr [Commercial]
+        /// 19504 -- en [          Tank] ---- fr [Réservoir]
         /// </summary>
-        BuildingFishCommercialSingle = 19505,
+        FishBuildingTypeSingleTank = 19504,
         /// <summary>
-        /// 12900 -- en [Fishery Buildings] ---- fr [Bâtiments pour la pêche]
+        /// 19506 -- en [Pound] ---- fr [Étangs]
         /// </summary>
-        BuildingFishStart = 12900,
+        FishBuildingTypeSinglePound = 19506,
         /// <summary>
-        /// 12901 -- en [Hatcheries] ---- fr [Incubateurs]
+        /// 12900 -- en [Buildings] ---- fr [Bâtiments pour la pêche]
         /// </summary>
-        BuildingFishHatchery = 12901,
+        FishBuildingTypeMultipleStart = 12900,
         /// <summary>
-        /// 12902 -- en [Tanks ] ---- fr [Réservoirs]
+        /// 12901 -- en [                    Processing Plants] ---- fr [Incubateur]
         /// </summary>
-        BuildingFishInsideTanks = 12902,
+        FishBuildingTypeMultipleProcessingPlants = 12901,
         /// <summary>
-        /// 12903 -- en [Ponds] ---- fr [Étangs]
+        /// 12902 -- en [                Hatcheries] ---- fr [Incubateurs]
         /// </summary>
-        BuildingFishPounds = 12903,
+        FishBuildingTypeMultipleHatcheries = 12902,
         /// <summary>
-        /// 12904 -- en [Warehouses] ---- fr [Entrepôts]
+        /// 12903 -- en [            Ponds ] ---- fr [ponds for ]
         /// </summary>
-        BuildingFishWarehouse = 12904,
+        FishBuildingTypeMultiplePonds = 12903,
         /// <summary>
-        /// 12905 -- en [Commercial plant] ---- fr [Usine commerciale]
+        /// 12904 -- en [       Tanks ] ---- fr [Réservoirs]
         /// </summary>
-        BuildingFishCommercial = 12905,
+        FishBuildingTypeMultipleTanks = 12904,
+        /// <summary>
+        /// 12905 -- en [ Pounds ] ---- fr [Étangs]
+        /// </summary>
+        FishBuildingTypeMultiplePounds = 12905,
         /// <summary>
         /// 17400 -- en [Number ] ---- fr [Nombre d'unités]
         /// </summary>
@@ -1363,95 +1096,39 @@ namespace CSSPEnums
         /// </summary>
         FISCountNumberGreaterThan40 = 17413,
         /// <summary>
-        /// 11400 -- en [Marine facilities] ---- fr [Installations marines]
+        /// 11400 -- en [Structures] ---- fr [Installations marines]
         /// </summary>
-        MarineStructureStart = 11400,
+        ShorelineSourceStart = 11400,
         /// <summary>
-        /// 11401 -- en [Wharf] ---- fr [Quai]
+        /// 11401 -- en [                    Wharf] ---- fr [                      Quai]
         /// </summary>
-        MarineWharf = 11401,
-        /// <summary>
-        /// 11402 -- en [Buildings] ---- fr [Bâtiments]
-        /// </summary>
-        MarineBuildings = 11402,
+        ShorelineSourceWharf = 11401,
         /// <summary>
         /// 11403 -- en [Seawall] ---- fr [Mur marin]
         /// </summary>
-        MarineSeaWall = 11403,
+        ShorelineSourceSeaWall = 11403,
         /// <summary>
-        /// 20500 -- en [Number present] ---- fr [Nombre présent]
+        /// 11404 -- en [              Slipway] ---- fr [                 Mise à l'eau]
         /// </summary>
-        MarNumPresentStart = 20500,
+        ShorelineSourceSlipway = 11404,
         /// <summary>
-        /// 20501 -- en [           1] ---- fr [           1]
+        /// 18000 -- en [Slipway Material] ---- fr [Type de mise à l'eau]
         /// </summary>
-        MarNumPresentEqual1 = 20501,
+        SlipwayStart = 18000,
         /// <summary>
-        /// 20502 -- en [          2] ---- fr [          2]
+        /// 18001 -- en [Paved ] ---- fr [Mise à l'eau, surface d'asphalte]
         /// </summary>
-        MarNumPresentEqual2 = 20502,
+        SlipwayPaved = 18001,
         /// <summary>
-        /// 20503 -- en [         3] ---- fr [         3]
+        /// 18002 -- en [Natural ] ---- fr [Mise à l'eau, surface naturelle]
         /// </summary>
-        MarNumPresentEqual3 = 20503,
+        SlipwayRocks = 18002,
         /// <summary>
-        /// 20504 -- en [        4] ---- fr [        4]
-        /// </summary>
-        MarNumPresentEqual4 = 20504,
-        /// <summary>
-        /// 20505 -- en [        5] ---- fr [        5]
-        /// </summary>
-        MarNumPresentEqual5 = 20505,
-        /// <summary>
-        /// 20506 -- en [       6] ---- fr [       6]
-        /// </summary>
-        MarNumPresentEqual6 = 20506,
-        /// <summary>
-        /// 20507 -- en [       7] ---- fr [       7]
-        /// </summary>
-        MarNumPresentEqual7 = 20507,
-        /// <summary>
-        /// 20508 -- en [      8] ---- fr [      8]
-        /// </summary>
-        MarNumPresentEqual8 = 20508,
-        /// <summary>
-        /// 20509 -- en [     9] ---- fr [     9]
-        /// </summary>
-        MarNumPresentEqual9 = 20509,
-        /// <summary>
-        /// 20510 -- en [   10] ---- fr [   10]
-        /// </summary>
-        MarNumPresentEqual10 = 20510,
-        /// <summary>
-        /// 20600 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        SeaWallSourceSingleStart = 20600,
-        /// <summary>
-        /// 20601 -- en [Culvert] ---- fr [Conduit d'eau]
-        /// </summary>
-        SeaWallSourceSingleCulvert = 20601,
-        /// <summary>
-        /// 20602 -- en [Pipe] ---- fr [Tuyau]
-        /// </summary>
-        SeaWallSourceSinglePipe = 20602,
-        /// <summary>
-        /// 20800 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        SeaWallSourceStart = 20800,
-        /// <summary>
-        /// 20801 -- en [Culverts] ---- fr [Conduits d'eau]
-        /// </summary>
-        SeaWallSourceCulvert = 20801,
-        /// <summary>
-        /// 20802 -- en [Pipes] ---- fr [Tuyaux]
-        /// </summary>
-        SeaWallSourcePipe = 20802,
-        /// <summary>
-        /// 11500 -- en [Wharf] ---- fr [Quai]
+        /// 11500 -- en [Wharf Use] ---- fr [Quai]
         /// </summary>
         WharfStart = 11500,
         /// <summary>
-        /// 11501 -- en [Commercial transportation] ---- fr [Transport commercial]
+        /// 11501 -- en [Commercial ] ---- fr [Transport commercial]
         /// </summary>
         WharfCommercialTransportation = 11501,
         /// <summary>
@@ -1471,103 +1148,107 @@ namespace CSSPEnums
         /// </summary>
         WharfAbandoned = 11505,
         /// <summary>
-        /// 11506 -- en [Buildings] ---- fr [Bâtiments]
-        /// </summary>
-        WharfBuildings = 11506,
-        /// <summary>
-        /// 17700 -- en [Boat] ---- fr [Bateau]
+        /// 17700 -- en [Count] ---- fr [Bateau]
         /// </summary>
         VesselStart = 17700,
         /// <summary>
-        /// 17701 -- en [      1] ---- fr [ 1 bateau]
+        /// 17701 -- en [                             1] ---- fr [                             1]
         /// </summary>
         VesselCountEquals1 = 17701,
         /// <summary>
-        /// 17702 -- en [     2] ---- fr [ 2 bateaux]
+        /// 17702 -- en [                         2] ---- fr [                         2]
         /// </summary>
         VesselCountEquals2 = 17702,
         /// <summary>
-        /// 17703 -- en [      3] ---- fr [ 3 bateaux]
+        /// 17703 -- en [                       3] ---- fr [                       3]
         /// </summary>
         VesselCountEquals3 = 17703,
         /// <summary>
-        /// 17704 -- en [     4] ---- fr [4 bateaux]
+        /// 17704 -- en [                      4] ---- fr [                      4]
         /// </summary>
         VesselCountEquals4 = 17704,
         /// <summary>
-        /// 17705 -- en [    5] ---- fr [5 bateaux]
+        /// 17705 -- en [                   5] ---- fr [                   5]
         /// </summary>
         VesselCountEquals5 = 17705,
         /// <summary>
-        /// 17706 -- en [    6] ---- fr [6 bateaux]
+        /// 17706 -- en [                 6] ---- fr [                 6]
         /// </summary>
         VesselCountEquals6 = 17706,
         /// <summary>
-        /// 17707 -- en [   7] ---- fr [7 bateaux]
+        /// 17707 -- en [              7] ---- fr [              7]
         /// </summary>
         VesselCountEquals7 = 17707,
         /// <summary>
-        /// 17708 -- en [   8] ---- fr [8 bateaux]
+        /// 17708 -- en [             8] ---- fr [             8]
         /// </summary>
         VesselCountEquals8 = 17708,
         /// <summary>
-        /// 17709 -- en [   9] ---- fr [9 bateaux]
+        /// 17709 -- en [            9] ---- fr [            9]
         /// </summary>
         VesselCountEquals9 = 17709,
         /// <summary>
-        /// 17710 -- en [ 10] ---- fr [10 bateaux]
+        /// 17710 -- en [          10] ---- fr [          10]
         /// </summary>
         VesselCountEquals10 = 17710,
         /// <summary>
-        /// 17711 -- en [ 11-25] ---- fr [11 à 25 bateaux]
+        /// 17711 -- en [         11-25] ---- fr [         11-25]
         /// </summary>
         VesselCountBetwee11and25 = 17711,
         /// <summary>
-        /// 17712 -- en [ 26 - 50] ---- fr [ 26 à 50 bateaux]
+        /// 17712 -- en [       26 - 50] ---- fr [       26 - 50]
         /// </summary>
         VesselCountBetween26and50 = 17712,
         /// <summary>
-        /// 17713 -- en [ 51 - 100] ---- fr [ 51 à 100 bateaux]
+        /// 17713 -- en [      51 - 100] ---- fr [      51 - 100]
         /// </summary>
         VesselCountBetween51and100 = 17713,
         /// <summary>
-        /// 17714 -- en [> 100] ---- fr [ 101 bateaux ]
+        /// 17714 -- en [ > 100] ---- fr [ > 100]
         /// </summary>
         VesselCountGreaterThan100 = 17714,
         /// <summary>
-        /// 20700 -- en [Vessel Type] ---- fr [Type de bateau]
+        /// 20700 -- en [Type] ---- fr [Type de bateau]
         /// </summary>
         WharfTransportationSingleStart = 20700,
         /// <summary>
         /// 20701 -- en [Ship] ---- fr [Navire]
         /// </summary>
-        TransportationCommericalSingle = 20701,
+        WharfTransportationCommericalSingle = 20701,
         /// <summary>
         /// 20702 -- en [Ferry] ---- fr [Traversier]
         /// </summary>
-        TransportationFerrySingle = 20702,
+        WharfTransportationFerrySingle = 20702,
         /// <summary>
-        /// 20703 -- en [Pleasurecraft] ---- fr [Embarcation de plaisance]
+        /// 20703 -- en [Boats] ---- fr [Embarcation de plaisance]
         /// </summary>
-        TransportationPleasureCraftSingle = 20703,
+        WharfTransportationBoatSingle = 20703,
         /// <summary>
-        /// 11600 -- en [Vessel Type] ---- fr [Type de bateau]
+        /// 20704 -- en [Barge] ---- fr [Embarcation de plaisance]
+        /// </summary>
+        WharfTransportationBargeSingle = 20704,
+        /// <summary>
+        /// 11600 -- en [Types] ---- fr [Type de bateau]
         /// </summary>
         WharfTransportationStart = 11600,
         /// <summary>
         /// 11601 -- en [Ships] ---- fr [Navires]
         /// </summary>
-        TransportationCommerical = 11601,
+        WharfTransportationCommerical = 11601,
         /// <summary>
         /// 11602 -- en [Ferries] ---- fr [Traversiers]
         /// </summary>
-        TransportationFerry = 11602,
+        WharfTransportationFerry = 11602,
         /// <summary>
-        /// 11603 -- en [Pleasurecrafts] ---- fr [Embarcations de plaisance]
+        /// 11603 -- en [Boats] ---- fr [Embarcations de plaisance]
         /// </summary>
-        TransportationPleasureCraft = 11603,
+        WharfTransportationPleasureCraft = 11603,
         /// <summary>
-        /// 17500 -- en [Number ] ---- fr [Nombre d'unités]
+        /// 11604 -- en [Barges] ---- fr [Embarcations de plaisance]
+        /// </summary>
+        WharfTransportationBarges = 11604,
+        /// <summary>
+        /// 17500 -- en [Number] ---- fr [Nombre d'unités]
         /// </summary>
         MarWhfWharfCountNumberStart = 17500,
         /// <summary>
@@ -1575,7 +1256,7 @@ namespace CSSPEnums
         /// </summary>
         MarWhfCountNumberEqualTo1 = 17501,
         /// <summary>
-        /// 17502 -- en [          2] ---- fr [          2]
+        /// 17502 -- en [           2] ---- fr [           2]
         /// </summary>
         MarWhfCountNumberEqualTo2 = 17502,
         /// <summary>
@@ -1623,131 +1304,7 @@ namespace CSSPEnums
         /// </summary>
         MarWhfCountNumberGreaterThan40 = 17513,
         /// <summary>
-        /// 17600 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        MarBldCountNumberStart = 17600,
-        /// <summary>
-        /// 17601 -- en [          1] ---- fr [          1]
-        /// </summary>
-        MarBldCountNumberEqualTo1 = 17601,
-        /// <summary>
-        /// 17602 -- en [         2] ---- fr [         2]
-        /// </summary>
-        MarBldCountNumberEqualTo2 = 17602,
-        /// <summary>
-        /// 17603 -- en [        3] ---- fr [        3]
-        /// </summary>
-        MarBldCountNumberEqualTo3 = 17603,
-        /// <summary>
-        /// 17604 -- en [       4] ---- fr [       4]
-        /// </summary>
-        MarBldCountNumberEqualTo4 = 17604,
-        /// <summary>
-        /// 17605 -- en [      5] ---- fr [      5]
-        /// </summary>
-        MarBldCountNumberEqualTo5 = 17605,
-        /// <summary>
-        /// 17606 -- en [     6] ---- fr [     6]
-        /// </summary>
-        MarBldCountNumberEqualTo6 = 17606,
-        /// <summary>
-        /// 17607 -- en [    7] ---- fr [    7]
-        /// </summary>
-        MarBldCountNumberEqualTo7 = 17607,
-        /// <summary>
-        /// 17608 -- en [   8] ---- fr [   8]
-        /// </summary>
-        MarBldCountNumberEqualTo8 = 17608,
-        /// <summary>
-        /// 17609 -- en [  9] ---- fr [  9]
-        /// </summary>
-        MarBldCountNumberEqualTo9 = 17609,
-        /// <summary>
-        /// 17610 -- en [10] ---- fr [10]
-        /// </summary>
-        MarBldCountNumberEqualTo10 = 17610,
-        /// <summary>
-        /// 20900 -- en [Building] ---- fr [Bâtiment]
-        /// </summary>
-        MARBuildingAllSingleStart = 20900,
-        /// <summary>
-        /// 20901 -- en [Cottage] ---- fr [Chalet]
-        /// </summary>
-        MARBuildingAllCottageSingle = 20901,
-        /// <summary>
-        /// 20902 -- en [Trailer] ---- fr [Véhicule récréationel]
-        /// </summary>
-        MARBuildingAllTrailerSingle = 20902,
-        /// <summary>
-        /// 20903 -- en [Residental ] ---- fr [Résidentiel]
-        /// </summary>
-        MARBuildingAllResidentialSingle = 20903,
-        /// <summary>
-        /// 20904 -- en [Warehouse] ---- fr [Entrepôt]
-        /// </summary>
-        MARBuildingAllWarehouseSingle = 20904,
-        /// <summary>
-        /// 20905 -- en [Hotel or motel] ---- fr [Hôtel ou motel]
-        /// </summary>
-        MARBuildingAllHotelMotelSingle = 20905,
-        /// <summary>
-        /// 20906 -- en [Commercial-Business] ---- fr [Commercial-affaires]
-        /// </summary>
-        MARBuildingAllCommericalSingle = 20906,
-        /// <summary>
-        /// 20907 -- en [School] ---- fr [École]
-        /// </summary>
-        MARBuildingAllSchoolSingle = 20907,
-        /// <summary>
-        /// 20908 -- en [Church] ---- fr [Église]
-        /// </summary>
-        MARBuildingAllChurchSingle = 20908,
-        /// <summary>
-        /// 20909 -- en [Medical Facility] ---- fr [Clinique médicale]
-        /// </summary>
-        MARBuildingAllmedicalFacilitySingle = 20909,
-        /// <summary>
-        /// 17800 -- en [Buildings] ---- fr [Bâtiments]
-        /// </summary>
-        MARBuildingAllStart = 17800,
-        /// <summary>
-        /// 17801 -- en [Cottages] ---- fr [Chalets]
-        /// </summary>
-        MARBuildingAllCottage = 17801,
-        /// <summary>
-        /// 17802 -- en [Trailers] ---- fr [Véhicules récréationels]
-        /// </summary>
-        MARBuildingAllTrailer = 17802,
-        /// <summary>
-        /// 17803 -- en [Residental ] ---- fr [Résidentiel]
-        /// </summary>
-        MARBuildingAllResidential = 17803,
-        /// <summary>
-        /// 17804 -- en [Warehouses] ---- fr [Entrepôts]
-        /// </summary>
-        MARBuildingAllWarehouse = 17804,
-        /// <summary>
-        /// 17805 -- en [Hotels or motels] ---- fr [Hôtels ou motels]
-        /// </summary>
-        MARBuildingAllHotelMotel = 17805,
-        /// <summary>
-        /// 17806 -- en [Commercial-Business] ---- fr [Commercial-affaires]
-        /// </summary>
-        MARBuildingAllCommerical = 17806,
-        /// <summary>
-        /// 17807 -- en [Schools] ---- fr [Écoles]
-        /// </summary>
-        MARBuildingAllSchool = 17807,
-        /// <summary>
-        /// 17808 -- en [Churches] ---- fr [Églises]
-        /// </summary>
-        MARBuildingAllChurch = 17808,
-        /// <summary>
-        /// 17809 -- en [Medical Facilities] ---- fr [Cliniques médicales]
-        /// </summary>
-        MARBuildingAllmedicalFacility = 17809,
-        /// <summary>
-        /// 11700 -- en [Recreational Activities] ---- fr [Activités récréatives]
+        /// 11700 -- en [Activities] ---- fr [Activités récréatives]
         /// </summary>
         RecreationStart = 11700,
         /// <summary>
@@ -1763,227 +1320,55 @@ namespace CSSPEnums
         /// </summary>
         RecreationSwimmingArea = 11703,
         /// <summary>
-        /// 11704 -- en [Buildings] ---- fr [Bâtiments]
+        /// 11704 -- en [Golf Course] ---- fr [Terrain de golf]
         /// </summary>
-        RecreationRecreationaltArea = 11704,
+        RecreationGolfCourse = 11704,
         /// <summary>
-        /// 11705 -- en [Community Centre] ---- fr [Centre communautaire]
-        /// </summary>
-        RecreationCommunityCentre = 11705,
-        /// <summary>
-        /// 11706 -- en [Golf Course] ---- fr [Terrain de golf]
-        /// </summary>
-        RecreationGolfCourse = 11706,
-        /// <summary>
-        /// 17900 -- en [Number ] ---- fr [Nombre d'unités]
+        /// 17900 -- en [Number of Sites] ---- fr [Nombre d'unités]
         /// </summary>
         RECCountNumberStart = 17900,
         /// <summary>
-        /// 17901 -- en [     50] ---- fr [     50]
+        /// 17901 -- en [                  10] ---- fr [                  10]
         /// </summary>
-        RECcampgrdLotsapprox50 = 17901,
+        RECCountNumber10 = 17901,
         /// <summary>
-        /// 17902 -- en [    100] ---- fr [    100]
+        /// 17902 -- en [              30] ---- fr [              30]
         /// </summary>
-        RECcampgrdLotsapprox100 = 17902,
+        RECCountNumber30 = 17902,
         /// <summary>
-        /// 17903 -- en [   200] ---- fr [   200]
+        /// 17903 -- en [           50] ---- fr [           50]
         /// </summary>
-        RECcampgrdLotsapprox200 = 17903,
+        RECCountNumber50 = 17903,
         /// <summary>
-        /// 17904 -- en [  300] ---- fr [  300]
+        /// 17904 -- en [       100] ---- fr [       100]
         /// </summary>
-        RECcampgrdLotsapprox300 = 17904,
+        RECCountNumber100 = 17904,
         /// <summary>
-        /// 17905 -- en [500] ---- fr [500]
+        /// 17905 -- en [      200] ---- fr [      200]
         /// </summary>
-        RECcampgrdLotsapprox500 = 17905,
+        RECCountNumber200 = 17905,
         /// <summary>
-        /// 18100 -- en [Recreation Accomodation Type] ---- fr [Type d'hébergement récréatif]
+        /// 17906 -- en [    300] ---- fr [    300]
         /// </summary>
-        RecTypeStart = 18100,
+        RECCountNumber300 = 17906,
         /// <summary>
-        /// 18101 -- en [Trailers] ---- fr [Véhicules récréationels]
+        /// 17907 -- en [ 500] ---- fr [ 500]
         /// </summary>
-        RecTrailer = 18101,
+        RECCountNumber500 = 17907,
         /// <summary>
-        /// 18102 -- en [Tents] ---- fr [Tentes]
-        /// </summary>
-        RecTents = 18102,
-        /// <summary>
-        /// 18103 -- en [Trailers and Tents] ---- fr [Véhicules récréationels et tentes]
-        /// </summary>
-        RecTrailersandTents = 18103,
-        /// <summary>
-        /// 11800 -- en [Campground size] ---- fr [Taille du terrain de camping]
+        /// 11800 -- en [Dump Station] ---- fr [Taille du terrain de camping]
         /// </summary>
         CampgroundFacilitiesStart = 11800,
         /// <summary>
-        /// 11801 -- en [no dump station ] ---- fr [Aucune station d’élimination des eaux usées]
+        /// 11801 -- en [No] ---- fr [Aucune station d’élimination des eaux usées]
         /// </summary>
         CampgroundNoDumpStn = 11801,
         /// <summary>
-        /// 11802 -- en [dump station] ---- fr [Station d’élimination des eaux usées]
+        /// 11802 -- en [Yes] ---- fr [Station d’élimination des eaux usées]
         /// </summary>
-        CampgroundwithDumpStn = 11802,
+        CampgroundWithDumpStn = 11802,
         /// <summary>
-        /// 18200 -- en [Fecal source] ---- fr [Source fécale]
-        /// </summary>
-        RECFecalSourceStart = 18200,
-        /// <summary>
-        /// 18201 -- en [People] ---- fr [Personnes]
-        /// </summary>
-        RecFecalSourcePeople = 18201,
-        /// <summary>
-        /// 18203 -- en [Wildlife] ---- fr [Faune]
-        /// </summary>
-        RecFecalSourceWildlife = 18203,
-        /// <summary>
-        /// 18204 -- en [Drainage Water] ---- fr [Écoulement d'eau]
-        /// </summary>
-        RecFecalSourceDrainagewater = 18204,
-        /// <summary>
-        /// 18205 -- en [Family Pets] ---- fr [Animaux domestiques]
-        /// </summary>
-        RecFecalSourcePets = 18205,
-        /// <summary>
-        /// 18300 -- en [Wastewater] ---- fr [Eaux usées]
-        /// </summary>
-        RecSewageStart = 18300,
-        /// <summary>
-        /// 18301 -- en [Cesspool/Holding tank] ---- fr [Fosse / Réservoir]
-        /// </summary>
-        RecSewageCesspool = 18301,
-        /// <summary>
-        /// 18302 -- en [Pirvy Outhouse] ---- fr [Fosse des latrines]
-        /// </summary>
-        RecSewagePrivyOuthouse = 18302,
-        /// <summary>
-        /// 18304 -- en [Municipal system] ---- fr [Système municipal]
-        /// </summary>
-        RecSewageMunicipalSystem = 18304,
-        /// <summary>
-        /// 18305 -- en [Septic and drainage field] ---- fr [Aire de drainage]
-        /// </summary>
-        RecSepticSystemDrainageField = 18305,
-        /// <summary>
-        /// 18306 -- en [Lagoon ] ---- fr [Lagune]
-        /// </summary>
-        RecSepticSystemLagoon = 18306,
-        /// <summary>
-        /// 18307 -- en [Constructed Wetland] ---- fr [Zones humides créées]
-        /// </summary>
-        RecSepticSystemConstructedWetland = 18307,
-        /// <summary>
-        /// 18308 -- en [No Structure] ---- fr [Aucune structure]
-        /// </summary>
-        RecSepticNoStructure = 18308,
-        /// <summary>
-        /// 13600 -- en [Number present] ---- fr [Nombre présent]
-        /// </summary>
-        RecNumPresentStart = 13600,
-        /// <summary>
-        /// 13601 -- en [              1] ---- fr [              1]
-        /// </summary>
-        RecNumPresentEqualTo1 = 13601,
-        /// <summary>
-        /// 13602 -- en [            2] ---- fr [            2]
-        /// </summary>
-        RecNumPresentEqualTo2 = 13602,
-        /// <summary>
-        /// 13603 -- en [           3] ---- fr [           3]
-        /// </summary>
-        RecNumPresentEqualTo3 = 13603,
-        /// <summary>
-        /// 13604 -- en [          4] ---- fr [          4]
-        /// </summary>
-        RecNumPresentEqualTo4 = 13604,
-        /// <summary>
-        /// 13605 -- en [         5] ---- fr [         5]
-        /// </summary>
-        RecNumPresentEqualTo5 = 13605,
-        /// <summary>
-        /// 13606 -- en [        6] ---- fr [        6]
-        /// </summary>
-        RecNumPresentEqualTo6 = 13606,
-        /// <summary>
-        /// 13607 -- en [       7] ---- fr [       7]
-        /// </summary>
-        RecNumPresentEqualTo7 = 13607,
-        /// <summary>
-        /// 13608 -- en [      8] ---- fr [      8]
-        /// </summary>
-        RecNumPresentEqualTo8 = 13608,
-        /// <summary>
-        /// 13609 -- en [     9] ---- fr [     9]
-        /// </summary>
-        RecNumPresentEqualTo9 = 13609,
-        /// <summary>
-        /// 13610 -- en [    10] ---- fr [    10]
-        /// </summary>
-        RecNumPresentEqualTo10 = 13610,
-        /// <summary>
-        /// 13611 -- en [    11 - 25] ---- fr [    11 - 25]
-        /// </summary>
-        RecNumPresentBetween11and25 = 13611,
-        /// <summary>
-        /// 13612 -- en [   26 - 40] ---- fr [   26 - 40]
-        /// </summary>
-        RecNumPresentBetween26and40 = 13612,
-        /// <summary>
-        /// 13613 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        RecNumPresentGreaterThan40 = 13613,
-        /// <summary>
-        /// 11900 -- en [Wastewater] ---- fr [Eaux usées]
-        /// </summary>
-        SewageStart = 11900,
-        /// <summary>
-        /// 11901 -- en [Directly to water] ---- fr [Décharge directe]
-        /// </summary>
-        SewageDirectDischarge = 11901,
-        /// <summary>
-        /// 11902 -- en [Flow structure] ---- fr [Structure d'écoulement]
-        /// </summary>
-        SewageFlowStructure = 11902,
-        /// <summary>
-        /// 11903 -- en [Pirvy Outhouse] ---- fr [Fosse des latrines]
-        /// </summary>
-        SewagePrivyOuthouse = 11903,
-        /// <summary>
-        /// 11904 -- en [Septic and leachate field] ---- fr [Aire de drainage]
-        /// </summary>
-        SepticSystemLeachateField = 11904,
-        /// <summary>
-        /// 11905 -- en [Full retention] ---- fr [Rétention complète]
-        /// </summary>
-        SepticSystemFullRention = 11905,
-        /// <summary>
-        /// 11906 -- en [Cesspool/Holding tank] ---- fr [Fosse / Réservoir]
-        /// </summary>
-        SewageCesspool = 11906,
-        /// <summary>
-        /// 11907 -- en [Lagoon ] ---- fr [Lagune]
-        /// </summary>
-        SepticSystemLagoon = 11907,
-        /// <summary>
-        /// 11908 -- en [Constructed Wetland] ---- fr [Zones humides créées]
-        /// </summary>
-        SewageSystemConstructedWetland = 11908,
-        /// <summary>
-        /// 11909 -- en [Municipal system] ---- fr [Système municipal]
-        /// </summary>
-        SewageMunicipalSystem = 11909,
-        /// <summary>
-        /// 11910 -- en [No Structure] ---- fr [Aucune structure]
-        /// </summary>
-        SepticNoStructure = 11910,
-        /// <summary>
-        /// 12000 -- en [Infrastructure] ---- fr [Infrastructure]
-        /// </summary>
-        SeeMunicipalityInfrastructureStart = 12000,
-        /// <summary>
-        /// 12100 -- en [Urban] ---- fr [Urbain]
+        /// 12100 -- en [Structures] ---- fr [Urbain]
         /// </summary>
         UrbanStart = 12100,
         /// <summary>
@@ -1991,899 +1376,235 @@ namespace CSSPEnums
         /// </summary>
         UrbanStormWater = 12101,
         /// <summary>
-        /// 12102 -- en [Surface runoff] ---- fr [Ruisellement de surface]
+        /// 12102 -- en [Dump Station] ---- fr [Station d’élimination des eaux usées]
         /// </summary>
-        UrbanSurfaceRunoff = 12102,
+        UrbanDumpStation = 12102,
         /// <summary>
-        /// 12103 -- en [Dump Station] ---- fr [Station d’élimination des eaux usées]
-        /// </summary>
-        UrbanDumpStation = 12103,
-        /// <summary>
-        /// 12200 -- en [Wildlife] ---- fr [Faune]
-        /// </summary>
-        WildlifeStart = 12200,
-        /// <summary>
-        /// 12201 -- en [Birds] ---- fr [Oiseaux]
-        /// </summary>
-        WildlifeBirds = 12201,
-        /// <summary>
-        /// 12202 -- en [Land mammals] ---- fr [Mammifères terrestres]
-        /// </summary>
-        WildlifeLandMammals = 12202,
-        /// <summary>
-        /// 12203 -- en [Marine Mammals] ---- fr [Mammifères marins]
-        /// </summary>
-        WildlifeMarineMammals = 12203,
-        /// <summary>
-        /// 12300 -- en [Municipal System] ---- fr [Système municipal]
-        /// </summary>
-        MunicipalSystemStart = 12300,
-        /// <summary>
-        /// 12301 -- en [Connected to Infrastructure] ---- fr [Relié à l'infrastructure]
-        /// </summary>
-        MuncipialSystemConnected = 12301,
-        /// <summary>
-        /// 12302 -- en [Not connected to Municipal System] ---- fr [Pas connecté au système municipal]
-        /// </summary>
-        MunicipalSystemNotConnected = 12302,
-        /// <summary>
-        /// 12400 -- en [StorageTank] ---- fr [Réservoir de stockage]
-        /// </summary>
-        StorageTankStart = 12400,
-        /// <summary>
-        /// 12401 -- en [Fuel Tank] ---- fr [Carburant]
-        /// </summary>
-        StorageTankFuel = 12401,
-        /// <summary>
-        /// 12402 -- en [Propane Tank] ---- fr [Propane]
-        /// </summary>
-        StorageTankPropane = 12402,
-        /// <summary>
-        /// 12403 -- en [Chemical Tank] ---- fr [Produits chimiques]
-        /// </summary>
-        StorageTankChemicals = 12403,
-        /// <summary>
-        /// 12500 -- en [Tank Size] ---- fr [Taille du réservoir]
+        /// 12500 -- en [Litres] ---- fr [Taille du réservoir]
         /// </summary>
         TankSizeStart = 12500,
         /// <summary>
-        /// 12501 -- en [    100 gallon] ---- fr [   100 gallons]
+        /// 12501 -- en [ 400] ---- fr [400 litres]
         /// </summary>
-        TankSize100 = 12501,
+        TankSize400 = 12501,
         /// <summary>
-        /// 12502 -- en [    500 gallon] ---- fr [   500 gallons]
+        /// 12502 -- en [ 2000 ] ---- fr [2000 litres]
         /// </summary>
-        TankSize500 = 12502,
+        TankSize2000 = 12502,
         /// <summary>
-        /// 12503 -- en [  1000 gallon] ---- fr [  1000 gallons]
+        /// 12503 -- en [4000] ---- fr [4000 litres]
         /// </summary>
-        TankSize1000 = 12503,
+        TankSize4000 = 12503,
         /// <summary>
-        /// 12504 -- en [ 2000 plus gallons] ---- fr [ 2000 gallons et plus]
+        /// 12504 -- en [8000] ---- fr [8000 litres]
         /// </summary>
-        TankSize2000plus = 12504,
+        TankSize8000 = 12504,
         /// <summary>
-        /// 12600 -- en [Building ] ---- fr [Types d'édifices]
-        /// </summary>
-        BuildingAgricultureSingleStart = 12600,
-        /// <summary>
-        /// 12601 -- en [Residential ] ---- fr [Résidentiel]
-        /// </summary>
-        BuildingResidentialFarmSingle = 12601,
-        /// <summary>
-        /// 12602 -- en [Warehouse] ---- fr [Entrepôt]
-        /// </summary>
-        BuildingWarehouseFarmSingle = 12602,
-        /// <summary>
-        /// 12603 -- en [Commercial] ---- fr [Commercial-affaires, ]
-        /// </summary>
-        BuildingCommericalFarmSingle = 12603,
-        /// <summary>
-        /// 12604 -- en [Barn] ---- fr [Grange]
-        /// </summary>
-        BuildingBarnFarmSingle = 12604,
-        /// <summary>
-        /// 12605 -- en [Recreational] ---- fr [Récréatif]
-        /// </summary>
-        BuildingRecreationalFarmSingle = 12605,
-        /// <summary>
-        /// 12606 -- en [School] ---- fr [École]
-        /// </summary>
-        BuildingSchoolFarmSingle = 12606,
-        /// <summary>
-        /// 12607 -- en [Church] ---- fr [Église]
-        /// </summary>
-        BuildingChurchFarmSingle = 12607,
-        /// <summary>
-        /// 12608 -- en [Medical Facility] ---- fr [Clinique médicale]
-        /// </summary>
-        BuildingMedicalFacilityFarmSingle = 12608,
-        /// <summary>
-        /// 21000 -- en [Building Types] ---- fr [Type d'édifices]
-        /// </summary>
-        BuildingAgricultureStart = 21000,
-        /// <summary>
-        /// 21001 -- en [Residental ] ---- fr [Résidentiel]
-        /// </summary>
-        BuildingResidentialFarm = 21001,
-        /// <summary>
-        /// 21002 -- en [Warehouses] ---- fr [Entrepôts]
-        /// </summary>
-        BuildingWarehouseFarm = 21002,
-        /// <summary>
-        /// 21003 -- en [Commercial] ---- fr [Commercial-affaires]
-        /// </summary>
-        BuildingCommericalFarm = 21003,
-        /// <summary>
-        /// 21004 -- en [Barns] ---- fr [Granges]
-        /// </summary>
-        BuildingBarnFarm = 21004,
-        /// <summary>
-        /// 21005 -- en [Recreational] ---- fr [Récréatif]
-        /// </summary>
-        BuildingRecreationalFarm = 21005,
-        /// <summary>
-        /// 21006 -- en [Schools] ---- fr [Écoles]
-        /// </summary>
-        BuildingSchoolFarm = 21006,
-        /// <summary>
-        /// 21007 -- en [Churches] ---- fr [Églises]
-        /// </summary>
-        BuildingChurchFarm = 21007,
-        /// <summary>
-        /// 21008 -- en [Medical Facilities] ---- fr [Cliniques médicales]
-        /// </summary>
-        BuildingMedicalFacilityFarm = 21008,
-        /// <summary>
-        /// 16900 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        AGRCountNumberStart = 16900,
-        /// <summary>
-        /// 16901 -- en [            1] ---- fr [            1]
-        /// </summary>
-        AGRCountNumberEqualTo1 = 16901,
-        /// <summary>
-        /// 16902 -- en [          2] ---- fr [          2]
-        /// </summary>
-        AGRCountNumberEqualTo2 = 16902,
-        /// <summary>
-        /// 16903 -- en [         3] ---- fr [         3]
-        /// </summary>
-        AGRCountNumberEqualTo3 = 16903,
-        /// <summary>
-        /// 16904 -- en [         4] ---- fr [         4]
-        /// </summary>
-        AGRCountNumberEqualTo4 = 16904,
-        /// <summary>
-        /// 16905 -- en [        5] ---- fr [        5]
-        /// </summary>
-        AGRCountNumberEqualTo5 = 16905,
-        /// <summary>
-        /// 16906 -- en [       6] ---- fr [       6]
-        /// </summary>
-        AGRCountNumberEqualTo6 = 16906,
-        /// <summary>
-        /// 16907 -- en [      7] ---- fr [      7]
-        /// </summary>
-        AGRCountNumberEqualTo7 = 16907,
-        /// <summary>
-        /// 16908 -- en [      8] ---- fr [      8]
-        /// </summary>
-        AGRCountNumberEqualTo8 = 16908,
-        /// <summary>
-        /// 16909 -- en [     9] ---- fr [     9]
-        /// </summary>
-        AGRCountNumberEqualTo9 = 16909,
-        /// <summary>
-        /// 16910 -- en [    10] ---- fr [    10]
-        /// </summary>
-        AGRCountNumberEqualTo10 = 16910,
-        /// <summary>
-        /// 16911 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        AGRCountNumberBetween11and25 = 16911,
-        /// <summary>
-        /// 16912 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        AGRCountNumberBetween26and40 = 16912,
-        /// <summary>
-        /// 16913 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        AGRCountNumberGreaterThan40 = 16913,
-        /// <summary>
-        /// 17300 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        FORCountNumberStart = 17300,
-        /// <summary>
-        /// 17301 -- en [            1] ---- fr [            1]
-        /// </summary>
-        FORCountNumberEqualTo1 = 17301,
-        /// <summary>
-        /// 17302 -- en [          2] ---- fr [          2]
-        /// </summary>
-        FORCountNumberEqualTo2 = 17302,
-        /// <summary>
-        /// 17303 -- en [         3] ---- fr [         3]
-        /// </summary>
-        FORCountNumberEqualTo3 = 17303,
-        /// <summary>
-        /// 17304 -- en [         4] ---- fr [         4]
-        /// </summary>
-        FORCountNumberEqualTo4 = 17304,
-        /// <summary>
-        /// 17305 -- en [        5] ---- fr [        5]
-        /// </summary>
-        FORCountNumberEqualTo5 = 17305,
-        /// <summary>
-        /// 17306 -- en [       6] ---- fr [       6]
-        /// </summary>
-        FORCountNumberEqualTo6 = 17306,
-        /// <summary>
-        /// 17307 -- en [      7] ---- fr [      7]
-        /// </summary>
-        FORCountNumberEqualTo7 = 17307,
-        /// <summary>
-        /// 17308 -- en [      8] ---- fr [      8]
-        /// </summary>
-        FORCountNumberEqualTo8 = 17308,
-        /// <summary>
-        /// 17309 -- en [     9] ---- fr [     9]
-        /// </summary>
-        FORCountNumberEqualTo9 = 17309,
-        /// <summary>
-        /// 17310 -- en [    10] ---- fr [    10]
-        /// </summary>
-        FORCountNumberEqualTo10 = 17310,
-        /// <summary>
-        /// 17311 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        FORCountNumberBetween11and25 = 17311,
-        /// <summary>
-        /// 17312 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        FORCountNumberBetween26and40 = 17312,
-        /// <summary>
-        /// 17313 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        FORCountNumberGreaterThan40 = 17313,
-        /// <summary>
-        /// 12700 -- en [Forested Buildings ] ---- fr [Édifices forestiers]
-        /// </summary>
-        BuildingForestedSingleStart = 12700,
-        /// <summary>
-        /// 12701 -- en [Residential ] ---- fr [Résidentiel]
-        /// </summary>
-        BuildingForestedResidentialSingle = 12701,
-        /// <summary>
-        /// 12702 -- en [Warehouse] ---- fr [Entrepôt]
-        /// </summary>
-        BuildingForestedWarehouseSingle = 12702,
-        /// <summary>
-        /// 12703 -- en [Recreational] ---- fr [Récréatif]
-        /// </summary>
-        BuildingForestedRecreationalSingle = 12703,
-        /// <summary>
-        /// 12704 -- en [Trailer] ---- fr [Véhicule récréationel]
-        /// </summary>
-        BuildingForestedTrailerSingle = 12704,
-        /// <summary>
-        /// 12705 -- en [Factory] ---- fr [Usine]
-        /// </summary>
-        BuildingForestedFactorySingle = 12705,
-        /// <summary>
-        /// 12706 -- en [Commercial] ---- fr [Commercial]
-        /// </summary>
-        BuildingForestedCommericalSingle = 12706,
-        /// <summary>
-        /// 12707 -- en [School] ---- fr [École]
-        /// </summary>
-        BuildingForestedSchoolSingle = 12707,
-        /// <summary>
-        /// 12708 -- en [Church] ---- fr [Église]
-        /// </summary>
-        BuildingForestedChurchSingle = 12708,
-        /// <summary>
-        /// 12709 -- en [Medical Facility] ---- fr [Clinique médicale]
-        /// </summary>
-        BuildingForestedMedicalFacilitySingle = 12709,
-        /// <summary>
-        /// 21100 -- en [Forested Buildings ] ---- fr [Édifices forestiers]
-        /// </summary>
-        BuildingForestedStart = 21100,
-        /// <summary>
-        /// 21101 -- en [Residences ] ---- fr [Résidences]
-        /// </summary>
-        BuildingForestedResidential = 21101,
-        /// <summary>
-        /// 21102 -- en [Warehouses] ---- fr [Entrepôts]
-        /// </summary>
-        BuildingForestedWarehouse = 21102,
-        /// <summary>
-        /// 21103 -- en [Recreational] ---- fr [Récréatifs]
-        /// </summary>
-        BuildingForestedRecreational = 21103,
-        /// <summary>
-        /// 21104 -- en [Trailers] ---- fr [Véhicules récréationels]
-        /// </summary>
-        BuildingForestedTrailer = 21104,
-        /// <summary>
-        /// 21105 -- en [Factories] ---- fr [Usines]
-        /// </summary>
-        BuildingForestedFactory = 21105,
-        /// <summary>
-        /// 21106 -- en [Commercial] ---- fr [Commercial]
-        /// </summary>
-        BuildingForestedCommerical = 21106,
-        /// <summary>
-        /// 21107 -- en [Schools] ---- fr [Écoles]
-        /// </summary>
-        BuildingForestedSchool = 21107,
-        /// <summary>
-        /// 21108 -- en [Churches] ---- fr [Églises]
-        /// </summary>
-        BuildingForestedChurch = 21108,
-        /// <summary>
-        /// 21109 -- en [Medical Facilities] ---- fr [Cliniques médicales]
-        /// </summary>
-        BuildingForestedMedicalFacility = 21109,
-        /// <summary>
-        /// 12800 -- en [Type of Building] ---- fr [Type d'édifices]
-        /// </summary>
-        BuildingTypeSingleStart = 12800,
-        /// <summary>
-        /// 12801 -- en [Warehouse] ---- fr [Entrepôt]
-        /// </summary>
-        BuildingindustryWarehouseSingle = 12801,
-        /// <summary>
-        /// 12802 -- en [Factory] ---- fr [Usine]
-        /// </summary>
-        BuildingIndustryFactorySingle = 12802,
-        /// <summary>
-        /// 12803 -- en [Commercial] ---- fr [Commercial]
-        /// </summary>
-        BuildingIndustryCommericalSingle = 12803,
-        /// <summary>
-        /// 12804 -- en [School] ---- fr [École]
-        /// </summary>
-        BuildingIndustrySchoolSingle = 12804,
-        /// <summary>
-        /// 12805 -- en [Church] ---- fr [Église]
-        /// </summary>
-        BuildingIndustryChurchSingle = 12805,
-        /// <summary>
-        /// 12806 -- en [Medical Facility] ---- fr [Clinique médicale]
-        /// </summary>
-        BuildingIndustryMedicalFacilitySingle = 12806,
-        /// <summary>
-        /// 21200 -- en [Type of Buildings] ---- fr [Type d'édifices]
-        /// </summary>
-        BuildingTypeStart = 21200,
-        /// <summary>
-        /// 21201 -- en [Warehouses] ---- fr [Entrepôts]
-        /// </summary>
-        BuildingindustryWarehouse = 21201,
-        /// <summary>
-        /// 21202 -- en [Factories] ---- fr [Usines]
-        /// </summary>
-        BuildingIndustryFactory = 21202,
-        /// <summary>
-        /// 21203 -- en [Commercial] ---- fr [Commercial]
-        /// </summary>
-        BuildingIndustryCommerical = 21203,
-        /// <summary>
-        /// 21204 -- en [Schools] ---- fr [Écoles]
-        /// </summary>
-        BuildingIndustrySchool = 21204,
-        /// <summary>
-        /// 21205 -- en [Churches] ---- fr [Églises]
-        /// </summary>
-        BuildingIndustryChurch = 21205,
-        /// <summary>
-        /// 21206 -- en [Medical Facilities] ---- fr [Cliniques médicales]
-        /// </summary>
-        BuildingIndustryMedicalFacility = 21206,
-        /// <summary>
-        /// 13000 -- en [Building] ---- fr [Bâtiment]
-        /// </summary>
-        BuildingAllSingleStart = 13000,
-        /// <summary>
-        /// 13001 -- en [Cottage] ---- fr [Chalet]
-        /// </summary>
-        BuildingAllCottageSingle = 13001,
-        /// <summary>
-        /// 13002 -- en [Trailer] ---- fr [Véhicule récréationel]
-        /// </summary>
-        BuildingAllTrailerSingle = 13002,
-        /// <summary>
-        /// 13003 -- en [Residental ] ---- fr [Résidentiel]
-        /// </summary>
-        BuildingAllResidentialSingle = 13003,
-        /// <summary>
-        /// 13004 -- en [Warehouse] ---- fr [Entrepôt]
-        /// </summary>
-        BuildingAllWarehouseSingle = 13004,
-        /// <summary>
-        /// 13005 -- en [Hotel or motel] ---- fr [Hôtel ou motel]
-        /// </summary>
-        BuildingAllHotelMotelSingle = 13005,
-        /// <summary>
-        /// 13006 -- en [Commercial-Business] ---- fr [Commercial-affaires]
-        /// </summary>
-        BuildingAllCommericalSingle = 13006,
-        /// <summary>
-        /// 13007 -- en [School] ---- fr [École]
-        /// </summary>
-        BuildingAllSchoolSingle = 13007,
-        /// <summary>
-        /// 13008 -- en [Church] ---- fr [Église]
-        /// </summary>
-        BuildingAllChurchSingle = 13008,
-        /// <summary>
-        /// 13009 -- en [Medical Facility] ---- fr [Clinique médicale]
-        /// </summary>
-        BuildingAllmedicalFacilitySingle = 13009,
-        /// <summary>
-        /// 21300 -- en [Buildings] ---- fr [Bâtiments]
-        /// </summary>
-        BuildingAllStart = 21300,
-        /// <summary>
-        /// 21301 -- en [Cottages] ---- fr [Chalets]
-        /// </summary>
-        BuildingAllCottage = 21301,
-        /// <summary>
-        /// 21302 -- en [Trailers] ---- fr [Véhicules récréationels]
-        /// </summary>
-        BuildingAllTrailer = 21302,
-        /// <summary>
-        /// 21303 -- en [Residences] ---- fr [Résidentiel]
-        /// </summary>
-        BuildingAllResidential = 21303,
-        /// <summary>
-        /// 21304 -- en [Warehouses] ---- fr [Entrepôts]
-        /// </summary>
-        BuildingAllWarehouse = 21304,
-        /// <summary>
-        /// 21305 -- en [Hotels or motels] ---- fr [Hôtels ou motels]
-        /// </summary>
-        BuildingAllHotelMotel = 21305,
-        /// <summary>
-        /// 21306 -- en [Commercial-Business] ---- fr [Commercial-affaires]
-        /// </summary>
-        BuildingAllCommerical = 21306,
-        /// <summary>
-        /// 21307 -- en [Schools] ---- fr [Écoles]
-        /// </summary>
-        BuildingAllSchool = 21307,
-        /// <summary>
-        /// 21308 -- en [Churches] ---- fr [Églises]
-        /// </summary>
-        BuildingAllChurch = 21308,
-        /// <summary>
-        /// 21309 -- en [Medical Facilities] ---- fr [Cliniques médicales]
-        /// </summary>
-        BuildingAllmedicalFacility = 21309,
-        /// <summary>
-        /// 13100 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        CountNumberStart = 13100,
-        /// <summary>
-        /// 13101 -- en [            1] ---- fr [            1]
-        /// </summary>
-        CountNumberEqualTo1 = 13101,
-        /// <summary>
-        /// 13102 -- en [          2] ---- fr [          2]
-        /// </summary>
-        CountNumberEqualTo2 = 13102,
-        /// <summary>
-        /// 13103 -- en [         3] ---- fr [         3]
-        /// </summary>
-        CountNumberEqualTo3 = 13103,
-        /// <summary>
-        /// 13104 -- en [         4] ---- fr [         4]
-        /// </summary>
-        CountNumberEqualTo4 = 13104,
-        /// <summary>
-        /// 13105 -- en [        5] ---- fr [        5]
-        /// </summary>
-        CountNumberEqualTo5 = 13105,
-        /// <summary>
-        /// 13106 -- en [       6] ---- fr [       6]
-        /// </summary>
-        CountNumberEqualTo6 = 13106,
-        /// <summary>
-        /// 13107 -- en [      7] ---- fr [      7]
-        /// </summary>
-        CountNumberEqualTo7 = 13107,
-        /// <summary>
-        /// 13108 -- en [      8] ---- fr [      8]
-        /// </summary>
-        CountNumberEqualTo8 = 13108,
-        /// <summary>
-        /// 13109 -- en [     9] ---- fr [     9]
-        /// </summary>
-        CountNumberEqualTo9 = 13109,
-        /// <summary>
-        /// 13110 -- en [    10] ---- fr [    10]
-        /// </summary>
-        CountNumberEqualTo10 = 13110,
-        /// <summary>
-        /// 13111 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        CountNumberBetween11and25 = 13111,
-        /// <summary>
-        /// 13112 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        CountNumberBetween26and40 = 13112,
-        /// <summary>
-        /// 13113 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        CountNumberGreaterThan40 = 13113,
-        /// <summary>
-        /// 13200 -- en [Area size] ---- fr [Superficie]
-        /// </summary>
-        AreaSizeStart = 13200,
-        /// <summary>
-        /// 13201 -- en [         20] ---- fr [         20]
-        /// </summary>
-        AreaMetersEquals20 = 13201,
-        /// <summary>
-        /// 13202 -- en [        40] ---- fr [        40]
-        /// </summary>
-        AreaMetersEquals40 = 13202,
-        /// <summary>
-        /// 13203 -- en [        60] ---- fr [        60]
-        /// </summary>
-        AreaMetersEquals60 = 13203,
-        /// <summary>
-        /// 13204 -- en [       80] ---- fr [       80]
-        /// </summary>
-        AreaMetersEquals80 = 13204,
-        /// <summary>
-        /// 13205 -- en [      100] ---- fr [      100]
-        /// </summary>
-        AreaMetersEquals100 = 13205,
-        /// <summary>
-        /// 13206 -- en [     101 - 250] ---- fr [     101 - 250]
-        /// </summary>
-        AreaMetersBetween101And250 = 13206,
-        /// <summary>
-        /// 13207 -- en [    251 - 500] ---- fr [    251 - 500]
-        /// </summary>
-        AreaMetersBetween251And500 = 13207,
-        /// <summary>
-        /// 13208 -- en [   501 - 1000] ---- fr [   501 - 1000]
-        /// </summary>
-        AreaMetersBetween501And1000 = 13208,
-        /// <summary>
-        /// 13209 -- en [  > 1000] ---- fr [  > 1000]
-        /// </summary>
-        AreaMetersgreaterThan1000 = 13209,
-        /// <summary>
-        /// 13300 -- en [Fecal source] ---- fr [Source de coliformes fécaux]
-        /// </summary>
-        FecalSourceStart = 13300,
-        /// <summary>
-        /// 13301 -- en [People] ---- fr [Personnes]
-        /// </summary>
-        FecalSourcePeople = 13301,
-        /// <summary>
-        /// 13302 -- en [Family Pets] ---- fr [Animaux domestiques]
-        /// </summary>
-        FecalSourcePets = 13302,
-        /// <summary>
-        /// 13303 -- en [Wildlife] ---- fr [Faune]
-        /// </summary>
-        FecalSourceWildlife = 13303,
-        /// <summary>
-        /// 13304 -- en [Livestock] ---- fr [Bétail]
-        /// </summary>
-        FecalSourceLivestock = 13304,
-        /// <summary>
-        /// 13305 -- en [Drainage Water] ---- fr [Écoulement d'eau]
-        /// </summary>
-        FecalSourceDrainagewater = 13305,
-        /// <summary>
-        /// 13306 -- en [Process water] ---- fr [Eau de traitement]
-        /// </summary>
-        FecalProcessWater = 13306,
-        /// <summary>
-        /// 13307 -- en [Potential contamination] ---- fr [Contamination potentielle]
-        /// </summary>
-        FecalPotentialContamination = 13307,
-        /// <summary>
-        /// 13308 -- en [Absent] ---- fr [Absent]
-        /// </summary>
-        FecalSourceAbsent = 13308,
-        /// <summary>
-        /// 13400 -- en [Major Issue] ---- fr [Préoccupation majeure]
-        /// </summary>
-        MajorIssueSourceStart = 13400,
-        /// <summary>
-        /// 13401 -- en [Manure pile] ---- fr [Tas de fumier]
-        /// </summary>
-        MajorIssueSourceManurePile = 13401,
-        /// <summary>
-        /// 13402 -- en [No issue identified] ---- fr [Aucun problème identifié]
-        /// </summary>
-        MajorIssueAbsent1 = 13402,
-        /// <summary>
-        /// 13403 -- en [Runoff] ---- fr [Ruisellement]
-        /// </summary>
-        MajorIssueRunoff = 13403,
-        /// <summary>
-        /// 13500 -- en [Land Fill Type] ---- fr [Type de mise en décharge]
+        /// 13500 -- en [LandFill] ---- fr [Type de mise en décharge]
         /// </summary>
         LandfillTypeStart = 13500,
         /// <summary>
-        /// 13501 -- en [Residental Landfill] ---- fr [Mise en décharge résidentielle]
+        /// 13501 -- en [Residental] ---- fr [Mise en décharge résidentielle]
         /// </summary>
         LandfillTypeResidental = 13501,
         /// <summary>
-        /// 13502 -- en [Industrial Landfill] ---- fr [Mise en décharge industrielle]
+        /// 13502 -- en [Industrial] ---- fr [Mise en décharge industrielle]
         /// </summary>
         LandfillTypeIndustrial = 13502,
         /// <summary>
-        /// 13503 -- en [Woodwaste Landfill] ---- fr [Mise en décharge de déchets ligneux]
+        /// 13503 -- en [Woodwaste ] ---- fr [Mise en décharge de déchets ligneux]
         /// </summary>
         LandfillTypeWoodwaste = 13503,
         /// <summary>
-        /// 13700 -- en [Type of livestock] ---- fr [Type de bétail]
+        /// 13700 -- en [Livestock] ---- fr [Type de bétail]
         /// </summary>
         TypesOfLivestockStart = 13700,
         /// <summary>
-        /// 13701 -- en [Horses] ---- fr [Chevaux]
+        /// 13701 -- en [                   Horses] ---- fr [                                Chevaux]
         /// </summary>
-        TypesEqualHorses = 13701,
+        TypesOfLivestockHorses = 13701,
         /// <summary>
-        /// 13702 -- en [Cows] ---- fr [Vaches]
+        /// 13702 -- en [                Cows] ---- fr [                              Vaches]
         /// </summary>
-        TypesEqualCows = 13702,
+        TypesOfLivestockCows = 13702,
         /// <summary>
-        /// 13703 -- en [Sheep] ---- fr [Moutons]
+        /// 13703 -- en [             Sheep] ---- fr [                            Moutons]
         /// </summary>
-        TypesEqualSheep = 13703,
+        TypesOfLivestockSheep = 13703,
         /// <summary>
-        /// 13704 -- en [Pigs] ---- fr [Cochons]
+        /// 13704 -- en [           Pigs] ---- fr [                         Cochons]
         /// </summary>
-        TypesEqualPigs = 13704,
+        TypesOfLivestockPigs = 13704,
         /// <summary>
-        /// 13705 -- en [A mixture of large animals] ---- fr [Grands animaux, mixte]
+        /// 13705 -- en [         Mixture of large animals] ---- fr [                     Grands animaux, mixte]
         /// </summary>
-        TypesEqualDomesticMixtureLarge = 13705,
+        TypesOfLivestockMixtureLarge = 13705,
         /// <summary>
-        /// 13706 -- en [Chickens] ---- fr [Poules]
+        /// 13706 -- en [                                    Chickens] ---- fr [                                                Poules]
         /// </summary>
-        TypesEqualChickens = 13706,
+        TypesOfLivestockChickens = 13706,
         /// <summary>
-        /// 13707 -- en [Turkeys] ---- fr [Dindes]
+        /// 13707 -- en [                                  Turkeys] ---- fr [                                             Dindes]
         /// </summary>
-        TypesEqualTurkeys = 13707,
+        TypesOfLivestockTurkeys = 13707,
         /// <summary>
-        /// 13708 -- en [Ducks] ---- fr [Canards]
+        /// 13708 -- en [                               Ducks] ---- fr [                                          Canards]
         /// </summary>
-        TypesEqualDucks = 13708,
+        TypesOfLivestockDucks = 13708,
         /// <summary>
-        /// 13709 -- en [Geese] ---- fr [Oies]
+        /// 13709 -- en [                        Mixture of fowl] ---- fr [                                     Oiseaux, mixte]
         /// </summary>
-        TypesEqualGeese = 13709,
+        TypesOfLivestockMixtureSmall = 13709,
         /// <summary>
-        /// 13710 -- en [A mixture of fowl] ---- fr [Oiseaux, mixte]
+        /// 13710 -- en [ Fur farm animals] ---- fr [ Animaux de fourrure, de la ferme]
         /// </summary>
-        TypesEqualDomesticMixtureSmall = 13710,
+        TypesOfLivestockFurFarms = 13710,
         /// <summary>
-        /// 13711 -- en [Fur farm animals] ---- fr [Animaux de fourrure, de la ferme]
-        /// </summary>
-        TypesEqualFurFarms = 13711,
-        /// <summary>
-        /// 13800 -- en [Type of animals] ---- fr [Type d'animaux]
+        /// 13800 -- en [Wildlife] ---- fr [Type d'animaux]
         /// </summary>
         TypesOfWildlifeStart = 13800,
         /// <summary>
-        /// 13801 -- en [Small animals] ---- fr [Petits animaux]
+        /// 13801 -- en [                                         Crows] ---- fr [Corneilles]
         /// </summary>
-        TypesEqualSmallWildAnimals = 13801,
+        TypesOfWildlifeCrows = 13801,
         /// <summary>
-        /// 13802 -- en [ Large animals] ---- fr [Grands animaux]
+        /// 13802 -- en [                                        Gulls] ---- fr [Goéland à dos noir]
         /// </summary>
-        TypesEqualLargeWildAnimals = 13802,
+        TypesOfWildlifeGulls = 13802,
         /// <summary>
-        /// 13804 -- en [Land Birds] ---- fr [Oiseaux terrestres]
+        /// 13803 -- en [                                      Eagles] ---- fr [Aigles]
         /// </summary>
-        TypesEquallandBirds = 13804,
+        TypesOfWildlifeEagle = 13803,
         /// <summary>
-        /// 13805 -- en [Marine birds and Seals] ---- fr [Oiseaux marins et phoques]
+        /// 13804 -- en [                            Ungulate] ---- fr [Ungulate,]
         /// </summary>
-        TypesEqualMarinebirdsSeals = 13805,
+        TypesOfWildlifeUngulate = 13804,
         /// <summary>
-        /// 21800 -- en [Land Birds] ---- fr [Oiseaux terrestres]
+        /// 13805 -- en [                              Coyote-bear] ---- fr [Coyote]
         /// </summary>
-        TypesLandBIrdsStart = 21800,
+        TypesOfWildlifeCoyote = 13805,
         /// <summary>
-        /// 21801 -- en [Crows] ---- fr [Corneilles]
+        /// 13806 -- en [                   Small animals] ---- fr [Small wild animals,]
         /// </summary>
-        TypesLandBirdsCrows = 21801,
+        TypesOfWildlifeGeneral = 13806,
         /// <summary>
-        /// 21802 -- en [Eagles] ---- fr [Aigles]
+        /// 13807 -- en [               Beaver] ---- fr [Beavers,]
         /// </summary>
-        TypesLandBirdsEagle = 21802,
+        TypesOfWildlifeBeaver = 13807,
         /// <summary>
-        /// 21900 -- en [Large Animals] ---- fr [Grands animaux]
+        /// 13808 -- en [            Muskrat] ---- fr [Muskrats,]
         /// </summary>
-        TypesLargeWildAnimalsStart = 21900,
+        TypesOfWildlifeMuskrat = 13808,
         /// <summary>
-        /// 21901 -- en [Moose] ---- fr [Orignal]
+        /// 10700 -- en [Animals] ---- fr [Type de bétail]
         /// </summary>
-        TypesLargeWildAnimalsMoose = 21901,
+        TypesOfAnimalStart = 10700,
         /// <summary>
-        /// 21902 -- en [Deer] ---- fr [Chevreuil]
+        /// 10701 -- en [                Domestic] ---- fr [                 Type de bétail]
         /// </summary>
-        TypesLargeWildAnimalsDeer = 21902,
+        TypesOfAnimalLivestock = 10701,
         /// <summary>
-        /// 21903 -- en [Coyote] ---- fr [Coyote]
+        /// 10702 -- en [           Wildlife ] ---- fr [        Type d'animaux]
         /// </summary>
-        TypesLargeWildAnimalsCoyote = 21903,
+        TypesOfAnimalWildlife = 10702,
         /// <summary>
-        /// 22000 -- en [Small Animals] ---- fr [Petits animaux]
+        /// 10703 -- en [Marine] ---- fr [Type d'animaux]
         /// </summary>
-        TypesSmallWildAnimalsStart = 22000,
+        TypesOfAnimalMarine = 10703,
         /// <summary>
-        /// 22001 -- en [Foxes] ---- fr [Renards]
-        /// </summary>
-        TypesSmallWildAnimalsFoxes = 22001,
-        /// <summary>
-        /// 22002 -- en [Ground Hogs] ---- fr [Porcs broyés]
-        /// </summary>
-        TypesSmallWildAnimalsGroundHogs = 22002,
-        /// <summary>
-        /// 22003 -- en [Skunk] ---- fr [Moufette]
-        /// </summary>
-        TypesSmallWildAnimalsSkunks = 22003,
-        /// <summary>
-        /// 13900 -- en [Number present] ---- fr [Nombre présent]
+        /// 13900 -- en [Population ] ---- fr [Nombre présent]
         /// </summary>
         AnimalNumberPresentStart = 13900,
         /// <summary>
-        /// 13901 -- en [                 2] ---- fr [                 2]
+        /// 13901 -- en [                                         2] ---- fr [                                         2]
         /// </summary>
         NumberAnimalPresentapprox2 = 13901,
         /// <summary>
-        /// 13902 -- en [               5] ---- fr [               5]
+        /// 13902 -- en [                                 5] ---- fr [                                 5]
         /// </summary>
         NumberAnimalPresentapprox5 = 13902,
         /// <summary>
-        /// 13903 -- en [            10] ---- fr [            10]
+        /// 13903 -- en [                            10] ---- fr [                            10]
         /// </summary>
         NumberAnimalPresentapprox10 = 13903,
         /// <summary>
-        /// 13904 -- en [           15] ---- fr [           15]
+        /// 13904 -- en [                         15] ---- fr [                         15]
         /// </summary>
         NumberAnimalPresentapprox15 = 13904,
         /// <summary>
-        /// 13905 -- en [          25] ---- fr [          25]
+        /// 13905 -- en [                      25] ---- fr [                      25]
         /// </summary>
         NumberAnimalPresentapprox25 = 13905,
         /// <summary>
-        /// 13906 -- en [         50] ---- fr [         50]
+        /// 13906 -- en [                   50] ---- fr [                   50]
         /// </summary>
         NumberAnimalPresentapprox50 = 13906,
         /// <summary>
-        /// 13907 -- en [       100] ---- fr [       100]
+        /// 13907 -- en [               100] ---- fr [               100]
         /// </summary>
         NumberAnimalPresentapprox100 = 13907,
         /// <summary>
-        /// 13908 -- en [       500] ---- fr [       500]
+        /// 13908 -- en [              500] ---- fr [              500]
         /// </summary>
         NumberAnimalPresentapprox500 = 13908,
         /// <summary>
-        /// 13909 -- en [      1000] ---- fr [      1000]
+        /// 13909 -- en [          1000] ---- fr [          1000]
         /// </summary>
         NumberAnimalPresentapprox1000 = 13909,
         /// <summary>
-        /// 13910 -- en [     5000] ---- fr [     5000]
+        /// 13910 -- en [       5000] ---- fr [       5000]
         /// </summary>
         NumberAnimalPresentapprox5000 = 13910,
         /// <summary>
-        /// 13911 -- en [  >10000] ---- fr [  >10000]
+        /// 13911 -- en [  > 10000] ---- fr [  > 10000]
         /// </summary>
         NumberAnimalPresentGreaterThan10000 = 13911,
         /// <summary>
-        /// 13912 -- en [ >20000] ---- fr [ >20000]
+        /// 13912 -- en [ > 20000] ---- fr [ > 20000]
         /// </summary>
         NumberAnimalPresentGreaterThan20000 = 13912,
         /// <summary>
-        /// 20300 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        WasteSourceStart = 20300,
-        /// <summary>
-        /// 20301 -- en [Culvert] ---- fr [Conduit d'eau]
-        /// </summary>
-        WasteSourceTypeLandCulvert = 20301,
-        /// <summary>
-        /// 20302 -- en [Pipe] ---- fr [Tuyau]
-        /// </summary>
-        WasteSourceTypeLandPipe = 20302,
-        /// <summary>
-        /// 20303 -- en [Water course] ---- fr [Cours d'eau]
-        /// </summary>
-        WasteSourceTypeLandWaterCourse = 20303,
-        /// <summary>
-        /// 20304 -- en [Ditch] ---- fr [Fossé]
-        /// </summary>
-        WasteSourceTypeLandDitch = 20304,
-        /// <summary>
-        /// 20305 -- en [Surface Drainage] ---- fr [Écoulement de surface]
-        /// </summary>
-        WasteSourceTypeLandDrainage = 20305,
-        /// <summary>
-        /// 20306 -- en [Directly to water] ---- fr [Directement vers l'eau]
-        /// </summary>
-        WasteSourceTypeDirectInputToMarine = 20306,
-        /// <summary>
-        /// 20307 -- en [Spread on Fields] ---- fr [Étendre sur les champs]
-        /// </summary>
-        WasteSourceTypetoField = 20307,
-        /// <summary>
-        /// 20400 -- en [Field Location] ---- fr [Localisation du champ]
-        /// </summary>
-        FieldLocationStart = 20400,
-        /// <summary>
-        /// 20401 -- en [On Farm property] ---- fr [Terrain de la ferme]
-        /// </summary>
-        FieldLocationOnFarm = 20401,
-        /// <summary>
-        /// 20402 -- en [On another property] ---- fr [Autre propriété]
-        /// </summary>
-        FieldLocationOffFarm = 20402,
-        /// <summary>
-        /// 16600 -- en [Point Source] ---- fr [Source ponctuelle]
-        /// </summary>
-        PointSourceWildlifeStart = 16600,
-        /// <summary>
-        /// 16601 -- en [Directly to water] ---- fr [Directement vers l'eau]
-        /// </summary>
-        SourceDirectInputToMarine = 16601,
-        /// <summary>
-        /// 14000 -- en [Boat] ---- fr [Bateau]
+        /// 14000 -- en [Number ] ---- fr [Bateau]
         /// </summary>
         BoatStart = 14000,
         /// <summary>
-        /// 14001 -- en [                  1] ---- fr [                  1]
+        /// 14001 -- en [                              1] ---- fr [                              1]
         /// </summary>
         BoatCountEquals1 = 14001,
         /// <summary>
-        /// 14002 -- en [                 2] ---- fr [                 2]
+        /// 14002 -- en [                             2] ---- fr [                             2]
         /// </summary>
         BoatCountEquals2 = 14002,
         /// <summary>
-        /// 14003 -- en [                3] ---- fr [                3]
+        /// 14003 -- en [                          3] ---- fr [                          3]
         /// </summary>
         BoatCountEquals3 = 14003,
         /// <summary>
-        /// 14004 -- en [                4] ---- fr [                4]
+        /// 14004 -- en [                         4] ---- fr [                         4]
         /// </summary>
         BoatCountEquals4 = 14004,
         /// <summary>
-        /// 14005 -- en [                5] ---- fr [                5]
+        /// 14005 -- en [                      5] ---- fr [                      5]
         /// </summary>
         BoatCountEquals5 = 14005,
         /// <summary>
-        /// 14006 -- en [               6] ---- fr [               6]
+        /// 14006 -- en [                     6] ---- fr [                     6]
         /// </summary>
         BoatCountEquals6 = 14006,
         /// <summary>
-        /// 14007 -- en [              7] ---- fr [              7]
+        /// 14007 -- en [                    7] ---- fr [                    7]
         /// </summary>
         BoatCountEquals7 = 14007,
         /// <summary>
-        /// 14008 -- en [             8] ---- fr [             8]
+        /// 14008 -- en [                  8] ---- fr [                  8]
         /// </summary>
         BoatCountEquals8 = 14008,
         /// <summary>
-        /// 14009 -- en [            9] ---- fr [            9]
+        /// 14009 -- en [                9] ---- fr [                9]
         /// </summary>
         BoatCountEquals9 = 14009,
         /// <summary>
-        /// 14010 -- en [           10] ---- fr [           10]
+        /// 14010 -- en [             10] ---- fr [             10]
         /// </summary>
         BoatCountEquals10 = 14010,
         /// <summary>
@@ -2899,7 +1620,7 @@ namespace CSSPEnums
         /// </summary>
         BoatCountBetween51to75 = 14013,
         /// <summary>
-        /// 14014 -- en [       76 - 100] ---- fr [ '      76 - 100]
+        /// 14014 -- en [      76 - 100] ---- fr [      76 - 100]
         /// </summary>
         BoatCountBetween76to100 = 14014,
         /// <summary>
@@ -2907,7 +1628,7 @@ namespace CSSPEnums
         /// </summary>
         BoatCountGreaterThan100 = 14015,
         /// <summary>
-        /// 14016 -- en [    > 150] ---- fr [  '  > 150]
+        /// 14016 -- en [  > 150] ---- fr [  > 150]
         /// </summary>
         BoatCountGreaterThan150 = 14016,
         /// <summary>
@@ -2915,7 +1636,7 @@ namespace CSSPEnums
         /// </summary>
         BoatCountGreaterThan250 = 14017,
         /// <summary>
-        /// 14100 -- en [Oil dumping facility] ---- fr [Installations pour vider l'huile]
+        /// 14100 -- en [Oil Dump Station] ---- fr [Installations pour vider l'huile]
         /// </summary>
         OilDumpingFacilityStart = 14100,
         /// <summary>
@@ -2931,7 +1652,11 @@ namespace CSSPEnums
         /// </summary>
         OilDumpingFacilityNotObserved = 14103,
         /// <summary>
-        /// 14200 -- en [ Wasterwater dumping station] ---- fr [Station d’élimination des eaux usées]
+        /// 14104 -- en [Not applicable] ---- fr [Non observées]
+        /// </summary>
+        OilDumpingFacilityNotApplicable = 14104,
+        /// <summary>
+        /// 14200 -- en [Sewage Dump Station] ---- fr [Station d’élimination des eaux usées]
         /// </summary>
         SewageDumpingStationStart = 14200,
         /// <summary>
@@ -2947,407 +1672,7 @@ namespace CSSPEnums
         /// </summary>
         SewageDumpingStationNotObserved = 14203,
         /// <summary>
-        /// 21600 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        PointCountNumberStart = 21600,
-        /// <summary>
-        /// 21601 -- en [            1] ---- fr [            1]
-        /// </summary>
-        PointCountNumberEqualTo1 = 21601,
-        /// <summary>
-        /// 21602 -- en [          2] ---- fr [          2]
-        /// </summary>
-        PointCountNumberEqualTo2 = 21602,
-        /// <summary>
-        /// 21603 -- en [         3] ---- fr [         3]
-        /// </summary>
-        PointCountNumberEqualTo3 = 21603,
-        /// <summary>
-        /// 21604 -- en [         4] ---- fr [         4]
-        /// </summary>
-        PointCountNumberEqualTo4 = 21604,
-        /// <summary>
-        /// 21605 -- en [        5] ---- fr [        5]
-        /// </summary>
-        PointCountNumberEqualTo5 = 21605,
-        /// <summary>
-        /// 21606 -- en [       6] ---- fr [       6]
-        /// </summary>
-        PointCountNumberEqualTo6 = 21606,
-        /// <summary>
-        /// 21607 -- en [      7] ---- fr [      7]
-        /// </summary>
-        PointCountNumberEqualTo7 = 21607,
-        /// <summary>
-        /// 21608 -- en [      8] ---- fr [      8]
-        /// </summary>
-        PointCountNumberEqualTo8 = 21608,
-        /// <summary>
-        /// 21609 -- en [     9] ---- fr [     9]
-        /// </summary>
-        PointCountNumberEqualTo9 = 21609,
-        /// <summary>
-        /// 21610 -- en [    10] ---- fr [    10]
-        /// </summary>
-        PointCountNumberEqualTo10 = 21610,
-        /// <summary>
-        /// 21611 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        PointCountNumberBetween11and25 = 21611,
-        /// <summary>
-        /// 21612 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        PointCountNumberBetween26and40 = 21612,
-        /// <summary>
-        /// 21613 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        PointCountNumberGreaterThan40 = 21613,
-        /// <summary>
-        /// 14300 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        PointSourceSingleStart = 14300,
-        /// <summary>
-        /// 14301 -- en [Culvert] ---- fr [Conduit d'eau]
-        /// </summary>
-        SourceTypeLandCulvertSingle = 14301,
-        /// <summary>
-        /// 14302 -- en [Pipe] ---- fr [Tuyau]
-        /// </summary>
-        SourceTypeLandPipeSingle = 14302,
-        /// <summary>
-        /// 14303 -- en [Water course] ---- fr [Cours d'eau]
-        /// </summary>
-        SourceTypeLandWaterCourseSingle = 14303,
-        /// <summary>
-        /// 14304 -- en [Ditch] ---- fr [Fossé]
-        /// </summary>
-        SourceTypeLandDitchSingle = 14304,
-        /// <summary>
-        /// 14305 -- en [Surface Drainage] ---- fr [Écoulement de surface]
-        /// </summary>
-        SourceTypeLandDrainageSingle = 14305,
-        /// <summary>
-        /// 21400 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        PointSourceStart = 21400,
-        /// <summary>
-        /// 21401 -- en [Culverts] ---- fr [Conduits d'eau]
-        /// </summary>
-        SourceTypeLandCulvert = 21401,
-        /// <summary>
-        /// 21402 -- en [Pipes] ---- fr [Tuyaux]
-        /// </summary>
-        SourceTypeLandPipe = 21402,
-        /// <summary>
-        /// 21403 -- en [Water course] ---- fr [Cours d'eau]
-        /// </summary>
-        SourceTypeLandWaterCourse = 21403,
-        /// <summary>
-        /// 21404 -- en [Ditches] ---- fr [Fossés]
-        /// </summary>
-        SourceTypeLandDitch = 21404,
-        /// <summary>
-        /// 21405 -- en [Surface Drainage] ---- fr [Écoulement de surface]
-        /// </summary>
-        SourceTypeLandDrainage = 21405,
-        /// <summary>
-        /// 21406 -- en [Directly to water] ---- fr [Directement vers un cours d'eau]
-        /// </summary>
-        SourceTypeDirectInputToMarine = 21406,
-        /// <summary>
-        /// 14400 -- en [Manure point source] ---- fr [Source ponctuelle du fumier]
-        /// </summary>
-        PointSourceManureStart = 14400,
-        /// <summary>
-        /// 14401 -- en [Drainage] ---- fr [Écoulement]
-        /// </summary>
-        SourceManureLandDrainage = 14401,
-        /// <summary>
-        /// 14402 -- en [Ditch] ---- fr [Fossé]
-        /// </summary>
-        SourceManureDitch = 14402,
-        /// <summary>
-        /// 14500 -- en [Pipe or culvert diameter (centimeters)] ---- fr [Diamètre du tuyau ou d'un conduit d'eau en centimètres ]
-        /// </summary>
-        DiameterInCentimetersStart = 14500,
-        /// <summary>
-        /// 14501 -- en [            < 30] ---- fr [            < 30]
-        /// </summary>
-        DiameterInCentimetersLessThan30 = 14501,
-        /// <summary>
-        /// 14502 -- en [           31-50] ---- fr [           31-50]
-        /// </summary>
-        DiameterInCentimetersBetween31and50cm = 14502,
-        /// <summary>
-        /// 14503 -- en [          51-100] ---- fr [          51-100]
-        /// </summary>
-        DiameterInCentimetersBetween50and100cm = 14503,
-        /// <summary>
-        /// 14504 -- en [        101 - 200] ---- fr [        101 - 200]
-        /// </summary>
-        DiameterInCentimetersBetween101and200cm = 14504,
-        /// <summary>
-        /// 14505 -- en [       201 - 300] ---- fr [       201 - 300]
-        /// </summary>
-        DiameterInCentimetersBetween201and300cm = 14505,
-        /// <summary>
-        /// 14506 -- en [     301 - 400] ---- fr [     301 - 400]
-        /// </summary>
-        DiameterInCentimetersBetween301and400cm = 14506,
-        /// <summary>
-        /// 14507 -- en [    401-500] ---- fr [    401-500]
-        /// </summary>
-        DiameterInCentimetersBetween401and500cm = 14507,
-        /// <summary>
-        /// 14508 -- en [ > 500] ---- fr [ > 500]
-        /// </summary>
-        DiameterInCentimetersGreaterThan500cm = 14508,
-        /// <summary>
-        /// 14509 -- en [Information Not Available] ---- fr [Information Not Available]
-        /// </summary>
-        DiameterNoInformation = 14509,
-        /// <summary>
-        /// 14600 -- en [Flow] ---- fr [Débit]
-        /// </summary>
-        FlowLevelStart = 14600,
-        /// <summary>
-        /// 14601 -- en [High] ---- fr [Élevé]
-        /// </summary>
-        FlowLevelHigh = 14601,
-        /// <summary>
-        /// 14602 -- en [ Medium] ---- fr [ Moyen]
-        /// </summary>
-        FlowLevelMedium = 14602,
-        /// <summary>
-        /// 14603 -- en [  Low] ---- fr [  Faible]
-        /// </summary>
-        FlowLevelLow = 14603,
-        /// <summary>
-        /// 14700 -- en [Outhouse] ---- fr [Fosse des latrines]
-        /// </summary>
-        OuthouseStart = 14700,
-        /// <summary>
-        /// 14701 -- en [Cement holding tank] ---- fr [Réservoir en béton]
-        /// </summary>
-        OuthouseCementHoldingTank = 14701,
-        /// <summary>
-        /// 14702 -- en [On ground] ---- fr [Sur le sol]
-        /// </summary>
-        OuthouseSittingOnGround = 14702,
-        /// <summary>
-        /// 14800 -- en [Width (meters)] ---- fr [Largeur (mètres)]
-        /// </summary>
-        WidthInMetersStart = 14800,
-        /// <summary>
-        /// 14801 -- en [            1] ---- fr [            1]
-        /// </summary>
-        WidthInMetersApprox1 = 14801,
-        /// <summary>
-        /// 14802 -- en [          2] ---- fr [          2]
-        /// </summary>
-        WidthInMetersApprox2 = 14802,
-        /// <summary>
-        /// 14803 -- en [         3] ---- fr [         3]
-        /// </summary>
-        WidthInMetersApprox3 = 14803,
-        /// <summary>
-        /// 14804 -- en [         4] ---- fr [         4]
-        /// </summary>
-        WidthInMetersApprox4 = 14804,
-        /// <summary>
-        /// 14805 -- en [        5] ---- fr [        5]
-        /// </summary>
-        WidthInMetersApprox5 = 14805,
-        /// <summary>
-        /// 14806 -- en [       6] ---- fr [       6]
-        /// </summary>
-        WidthInMetersApprox6 = 14806,
-        /// <summary>
-        /// 14807 -- en [      7] ---- fr [      7]
-        /// </summary>
-        WidthInMetersApprox7 = 14807,
-        /// <summary>
-        /// 14808 -- en [      8] ---- fr [      8]
-        /// </summary>
-        WidthInMetersApprox8 = 14808,
-        /// <summary>
-        /// 14809 -- en [     9] ---- fr [     9]
-        /// </summary>
-        WidthInMetersApprox9 = 14809,
-        /// <summary>
-        /// 14810 -- en [    10] ---- fr [    10]
-        /// </summary>
-        WidthInMetersApprox10 = 14810,
-        /// <summary>
-        /// 14811 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        WidthInMetersBetween11And25 = 14811,
-        /// <summary>
-        /// 14812 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        WidthInMetersBetween26And40 = 14812,
-        /// <summary>
-        /// 14813 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        WidthInMetersGreaterThan40 = 14813,
-        /// <summary>
-        /// 14900 -- en [Ditch] ---- fr [Fossé]
-        /// </summary>
-        DitchStart = 14900,
-        /// <summary>
-        /// 14901 -- en [Along a road] ---- fr [Le long d'un chemin]
-        /// </summary>
-        DitchAlongRoad = 14901,
-        /// <summary>
-        /// 14902 -- en [Across properties] ---- fr [Par le biais de terrains]
-        /// </summary>
-        DitchBetweenAcrossProperties = 14902,
-        /// <summary>
-        /// 14903 -- en [Directly to marine water] ---- fr [Directement aux eaux marines]
-        /// </summary>
-        DitchDirectlytoWater = 14903,
-        /// <summary>
-        /// 15000 -- en [Drainage] ---- fr [Écoulement]
-        /// </summary>
-        DrainageStart = 15000,
-        /// <summary>
-        /// 15001 -- en [Paved surface] ---- fr [Surface d'asphalte]
-        /// </summary>
-        DrainagePavedSurfaces = 15001,
-        /// <summary>
-        /// 15002 -- en [Vegetated surface] ---- fr [Surface recouverte de végétation]
-        /// </summary>
-        DrainageVegetatedSurfaces = 15002,
-        /// <summary>
-        /// 15003 -- en [Direct flow] ---- fr [Débit direct]
-        /// </summary>
-        DrainageDirect = 15003,
-        /// <summary>
-        /// 15004 -- en [Bare soil] ---- fr [Sol]
-        /// </summary>
-        DrainageBareSoilSurfaces = 15004,
-        /// <summary>
-        /// 15100 -- en [Area size] ---- fr [Superficie]
-        /// </summary>
-        ManureAreaSizeStart = 15100,
-        /// <summary>
-        /// 15101 -- en [              10] ---- fr [              10]
-        /// </summary>
-        ManureAreaMetersapproximately10 = 15101,
-        /// <summary>
-        /// 15102 -- en [             20] ---- fr [             20]
-        /// </summary>
-        ManureAreaMetersapproximately20 = 15102,
-        /// <summary>
-        /// 15103 -- en [            30] ---- fr [            30]
-        /// </summary>
-        ManureAreaMetersapproximately30 = 15103,
-        /// <summary>
-        /// 15104 -- en [           40] ---- fr [           40]
-        /// </summary>
-        ManureAreaMetersapproximately40 = 15104,
-        /// <summary>
-        /// 15105 -- en [          50] ---- fr [          50]
-        /// </summary>
-        ManureAreaMetersapproximately50 = 15105,
-        /// <summary>
-        /// 15106 -- en [         60] ---- fr [         60]
-        /// </summary>
-        ManureAreaMetersapproximately60 = 15106,
-        /// <summary>
-        /// 15107 -- en [        70] ---- fr [        70]
-        /// </summary>
-        ManureAreaMetersapproximately70 = 15107,
-        /// <summary>
-        /// 15108 -- en [        80] ---- fr [        80]
-        /// </summary>
-        ManureAreaMetersapproximately80 = 15108,
-        /// <summary>
-        /// 15109 -- en [       90] ---- fr [       90]
-        /// </summary>
-        ManureAreaMetersapproximately90 = 15109,
-        /// <summary>
-        /// 15110 -- en [    100] ---- fr [     ' 100]
-        /// </summary>
-        ManureAreaMetersapproximately100 = 15110,
-        /// <summary>
-        /// 15111 -- en [ > 100] ---- fr [ '> 100]
-        /// </summary>
-        ManureAreaMetersMoreThan100 = 15111,
-        /// <summary>
-        /// 15200 -- en [Source type ] ---- fr [Source définie]
-        /// </summary>
-        SourceTypeWaterStart = 15200,
-        /// <summary>
-        /// 15201 -- en [Aquaculture] ---- fr [Site de l'aquaculture]
-        /// </summary>
-        SourceTypeWaterAquacultureSite = 15201,
-        /// <summary>
-        /// 15202 -- en [Anchorage mooring] ---- fr [Site de mouillage ou de amarrage]
-        /// </summary>
-        SourceTypeWaterAnchorageMooringSite = 15202,
-        /// <summary>
-        /// 15203 -- en [Disposal at sea] ---- fr [Décharge en haute mer]
-        /// </summary>
-        SourceTypeWaterDisposalAtSea = 15203,
-        /// <summary>
-        /// 15204 -- en [Marine park] ---- fr [Parc marin]
-        /// </summary>
-        SourceTypeWaterMarinePark = 15204,
-        /// <summary>
-        /// 15205 -- en [Land Outcrop] ---- fr [Formation de terrain]
-        /// </summary>
-        SourceLandOutcrop = 15205,
-        /// <summary>
-        /// 19100 -- en [Aquaculture] ---- fr [Site de l'aquaculture]
-        /// </summary>
-        AquacultureSiteStart = 19100,
-        /// <summary>
-        /// 19101 -- en [Aquaculture site] ---- fr [Site de l'aquaculture]
-        /// </summary>
-        AquacultureSite = 19101,
-        /// <summary>
-        /// 19200 -- en [Anchorage-Mooring] ---- fr [Site de mouillage ou de amarrage]
-        /// </summary>
-        AnchorageMooringSiteStart = 19200,
-        /// <summary>
-        /// 19201 -- en [Anchorage mooring site] ---- fr [Site de mouillage ou de amarrage]
-        /// </summary>
-        AnchorageMooringSite = 19201,
-        /// <summary>
-        /// 19300 -- en [Disposal Site] ---- fr [Site de décharge en haute mer]
-        /// </summary>
-        DisposalAtSeaStart = 19300,
-        /// <summary>
-        /// 19301 -- en [Disposal at sea] ---- fr [Décharge en haute mer]
-        /// </summary>
-        DisposalAtSea = 19301,
-        /// <summary>
-        /// 19400 -- en [Marine Park] ---- fr [Parc marin]
-        /// </summary>
-        MarineParkStart = 19400,
-        /// <summary>
-        /// 19401 -- en [Marine park] ---- fr [Parc marin]
-        /// </summary>
-        MarinePark = 19401,
-        /// <summary>
-        /// 19600 -- en [Land Outcrop] ---- fr [Formation de terrain]
-        /// </summary>
-        OutcropStart = 19600,
-        /// <summary>
-        /// 19601 -- en [Sandbar] ---- fr [Banc de sable]
-        /// </summary>
-        OutcropSandBar = 19601,
-        /// <summary>
-        /// 19602 -- en [Rock] ---- fr [Roche]
-        /// </summary>
-        OutcropRock = 19602,
-        /// <summary>
-        /// 19603 -- en [Island] ---- fr [Île]
-        /// </summary>
-        OutcropIsland = 19603,
-        /// <summary>
-        /// 18900 -- en [Aquaculture site] ---- fr [Site de l'aquaculture]
+        /// 18900 -- en [Status] ---- fr [Site de l'aquaculture]
         /// </summary>
         WaterAquacultureStart = 18900,
         /// <summary>
@@ -3359,7 +1684,7 @@ namespace CSSPEnums
         /// </summary>
         WaterAquacultureSiteFallow = 18902,
         /// <summary>
-        /// 18400 -- en [Number ] ---- fr [Nombre d'unités]
+        /// 18400 -- en [Number] ---- fr [Nombre d'unités]
         /// </summary>
         WatAquaCountNumberStart = 18400,
         /// <summary>
@@ -3415,731 +1740,203 @@ namespace CSSPEnums
         /// </summary>
         WatAquaCountNumberGreaterThan40 = 18413,
         /// <summary>
-        /// 15400 -- en [Aquaculture type] ---- fr [Type d'aquaculture  ]
+        /// 15400 -- en [Aquaculture Type] ---- fr [Type d'aquaculture  ]
         /// </summary>
         WaterAquacultureTypeSingleStart = 15400,
         /// <summary>
-        /// 15401 -- en [Fin-Fish Cage] ---- fr [Poissons en cages]
+        /// 15401 -- en [Fish Cage] ---- fr [Poissons en cages]
         /// </summary>
-        AquacultureCagesSingle = 15401,
+        WaterAquacultureTypeSingleCages = 15401,
         /// <summary>
-        /// 15402 -- en [Floating Shellfish Cage] ---- fr [Mollusques en cages flottantes]
+        /// 15402 -- en [Floating Cage] ---- fr [Mollusques en cages flottantes]
         /// </summary>
-        AquacultureFloatingBagsSingle = 15402,
+        WaterAquacultureTypeSingleFloatingBags = 15402,
         /// <summary>
-        /// 15403 -- en [Submerged shellfish line] ---- fr [Lignes de mollusques submergées ]
+        /// 15403 -- en [Submerged Line] ---- fr [Lignes de mollusques submergées ]
         /// </summary>
-        AquacultureSubmergedLinesSingle = 15403,
+        WaterAquacultureTypeSingleSubmergedLines = 15403,
         /// <summary>
         /// 15404 -- en [Lobster Pound] ---- fr [Enclos commercial pour le homard]
         /// </summary>
-        AquacultureLosterPoundCageSingle = 15404,
+        WaterAquacultureTypeSingleLosterPound = 15404,
         /// <summary>
-        /// 15405 -- en [Work-barge] ---- fr [Barges]
+        /// 15405 -- en [Barge] ---- fr [Barges]
         /// </summary>
-        AquacultureBargesSingle = 15405,
+        WaterAquacultureTypeSingleBarges = 15405,
         /// <summary>
-        /// 18800 -- en [Aquaculture type] ---- fr [Type d'aquaculture  ]
+        /// 18800 -- en [Aquaculture Types] ---- fr [Type d'aquaculture  ]
         /// </summary>
         WaterAquacultureTypeStart = 18800,
         /// <summary>
-        /// 18801 -- en [Fin-Fish Cages] ---- fr [Poissons en cages]
+        /// 18801 -- en [Fish Cages] ---- fr [Poissons en cages]
         /// </summary>
-        AquacultureCages = 18801,
+        WaterAquacultureTypeCages = 18801,
         /// <summary>
-        /// 18802 -- en [Floating Shellfish Cages] ---- fr [Mollusques en cages flottantes]
+        /// 18802 -- en [Floating Cages] ---- fr [Mollusques en cages flottantes]
         /// </summary>
-        AquacultureFloatingBags = 18802,
+        WaterAquacultureTypeFloatingBags = 18802,
         /// <summary>
-        /// 18803 -- en [Submerged shellfish lines] ---- fr [Lignes de mollusques submergées ]
+        /// 18803 -- en [Submerged Lines] ---- fr [Lignes de mollusques submergées ]
         /// </summary>
-        AquacultureSubmergedLines = 18803,
+        WaterAquacultureTypeSubmergedLines = 18803,
         /// <summary>
-        /// 18804 -- en [Lobster Pound] ---- fr [Enclos commercial pour le homard]
+        /// 18804 -- en [Lobster Pounds] ---- fr [Enclos commercial pour le homard]
         /// </summary>
-        AquacultureLosterPoundCage = 18804,
+        WaterAquacultureTypeLosterPounds = 18804,
         /// <summary>
-        /// 18805 -- en [Work-barges] ---- fr [Barges]
+        /// 18805 -- en [Barges] ---- fr [Barges]
         /// </summary>
-        AquacultureBarges = 18805,
+        WaterAquacultureTypeBarges = 18805,
         /// <summary>
-        /// 15300 -- en [Aquaculture site] ---- fr [Site de l'aquaculture]
-        /// </summary>
-        WatStructActiveStart = 15300,
-        /// <summary>
-        /// 15301 -- en [Active] ---- fr [Actif]
-        /// </summary>
-        WatStructActive = 15301,
-        /// <summary>
-        /// 15302 -- en [Fallow] ---- fr [Inactif]
-        /// </summary>
-        WatStructInactive = 15302,
-        /// <summary>
-        /// 15500 -- en [Structure] ---- fr [Structure]
-        /// </summary>
-        WaterStructureSiteSingleStart = 15500,
-        /// <summary>
-        /// 15501 -- en [Vessel] ---- fr [Embarcation]
-        /// </summary>
-        WaterStructureVesselSingle = 15501,
-        /// <summary>
-        /// 15502 -- en [Barge] ---- fr [Barge]
-        /// </summary>
-        WaterStructureBargeSingle = 15502,
-        /// <summary>
-        /// 15503 -- en [Residential] ---- fr [Résidentielle]
-        /// </summary>
-        WaterStructureResidentalSingle = 15503,
-        /// <summary>
-        /// 15504 -- en [Commercial] ---- fr [Commerciale]
-        /// </summary>
-        WaterStructureCommercialSingle = 15504,
-        /// <summary>
-        /// 15505 -- en [Not Active] ---- fr [Inactive]
-        /// </summary>
-        WaterStructureNotActiveSingle = 15505,
-        /// <summary>
-        /// 21500 -- en [Structure] ---- fr [Structure]
-        /// </summary>
-        WaterStructureSiteStart = 21500,
-        /// <summary>
-        /// 21501 -- en [Vessels] ---- fr [Embarcations]
-        /// </summary>
-        WaterStructureVessel = 21501,
-        /// <summary>
-        /// 21502 -- en [Barges] ---- fr [Barges]
-        /// </summary>
-        WaterStructureBarge = 21502,
-        /// <summary>
-        /// 21503 -- en [Residences] ---- fr [Résidences]
-        /// </summary>
-        WaterStructureResidental = 21503,
-        /// <summary>
-        /// 21504 -- en [Commercial] ---- fr [Commerciale]
-        /// </summary>
-        WaterStructureCommercial = 21504,
-        /// <summary>
-        /// 21505 -- en [Not Active] ---- fr [Inactive]
-        /// </summary>
-        WaterStructureNotActive = 21505,
-        /// <summary>
-        /// 18500 -- en [Number ] ---- fr [Nombre d'unités]
-        /// </summary>
-        WatStructCountNumberStart = 18500,
-        /// <summary>
-        /// 18501 -- en [            1] ---- fr [            1]
-        /// </summary>
-        WatStructCountNumberEqualTo1 = 18501,
-        /// <summary>
-        /// 18502 -- en [          2] ---- fr [          2]
-        /// </summary>
-        WatStructCountNumberEqualTo2 = 18502,
-        /// <summary>
-        /// 18503 -- en [         3] ---- fr [         3]
-        /// </summary>
-        WatStructCountNumberEqualTo3 = 18503,
-        /// <summary>
-        /// 18504 -- en [         4] ---- fr [         4]
-        /// </summary>
-        WatStructCountNumberEqualTo4 = 18504,
-        /// <summary>
-        /// 18505 -- en [        5] ---- fr [        5]
-        /// </summary>
-        WatStructCountNumberEqualTo5 = 18505,
-        /// <summary>
-        /// 18506 -- en [       6] ---- fr [       6]
-        /// </summary>
-        WatStructCountNumberEqualTo6 = 18506,
-        /// <summary>
-        /// 18507 -- en [      7] ---- fr [      7]
-        /// </summary>
-        WatStructCountNumberEqualTo7 = 18507,
-        /// <summary>
-        /// 18508 -- en [      8] ---- fr [      8]
-        /// </summary>
-        WatStructCountNumberEqualTo8 = 18508,
-        /// <summary>
-        /// 18509 -- en [     9] ---- fr [     9]
-        /// </summary>
-        WatStructCountNumberEqualTo9 = 18509,
-        /// <summary>
-        /// 18510 -- en [    10] ---- fr [    10]
-        /// </summary>
-        WatStructCountNumberEqualTo10 = 18510,
-        /// <summary>
-        /// 18511 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        WatStructCountNumberBetween11and25 = 18511,
-        /// <summary>
-        /// 18512 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        WatStructCountNumberBetween26and40 = 18512,
-        /// <summary>
-        /// 18513 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        WatStructCountNumberGreaterThan40 = 18513,
-        /// <summary>
-        /// 15600 -- en [Disposal at sea] ---- fr [Décharge en haute mer]
-        /// </summary>
-        WaterDisposalAtSeaStart = 15600,
-        /// <summary>
-        /// 15601 -- en [Dump site active] ---- fr [Site de décharge actif]
-        /// </summary>
-        WaterDumpSiteActive = 15601,
-        /// <summary>
-        /// 15602 -- en [Dump site not active] ---- fr [Site de décharge inactif]
-        /// </summary>
-        WaterDumpSiteNotActive = 15602,
-        /// <summary>
-        /// 15700 -- en [Seaport] ---- fr [Port de mer]
-        /// </summary>
-        WaterSeaportStart = 15700,
-        /// <summary>
-        /// 15701 -- en [Recreational boats] ---- fr [Bateaux de plaisance ]
-        /// </summary>
-        SeaportRecreational = 15701,
-        /// <summary>
-        /// 15702 -- en [Commerical Vessels] ---- fr [Bateaux commerciaux]
-        /// </summary>
-        SeaportCommercial = 15702,
-        /// <summary>
-        /// 15800 -- en [Size] ---- fr [Grandeur]
-        /// </summary>
-        WaterSizeStart = 15800,
-        /// <summary>
-        /// 15801 -- en [                       20] ---- fr [                       20]
-        /// </summary>
-        WaterSizeMetersEqual20 = 15801,
-        /// <summary>
-        /// 15802 -- en [                   40] ---- fr [                   40]
-        /// </summary>
-        WaterSizeMetersEqual40 = 15802,
-        /// <summary>
-        /// 15803 -- en [                60] ---- fr [                60]
-        /// </summary>
-        WaterSizeMetersEqual60 = 15803,
-        /// <summary>
-        /// 15804 -- en [               80] ---- fr [               80]
-        /// </summary>
-        WaterSizeMetersEqual80 = 15804,
-        /// <summary>
-        /// 15805 -- en [             100] ---- fr [             100]
-        /// </summary>
-        WaterSizeMetersEqual100 = 15805,
-        /// <summary>
-        /// 15806 -- en [            150] ---- fr [            150]
-        /// </summary>
-        WaterSizeMetersEqual150 = 15806,
-        /// <summary>
-        /// 15807 -- en [          200] ---- fr [          200]
-        /// </summary>
-        WaterSizeMetersEqual200 = 15807,
-        /// <summary>
-        /// 15808 -- en [        250] ---- fr [        250]
-        /// </summary>
-        WaterSizeMetersEqual250 = 15808,
-        /// <summary>
-        /// 15809 -- en [       300] ---- fr [       300]
-        /// </summary>
-        WaterSizeMetersEqual300 = 15809,
-        /// <summary>
-        /// 15810 -- en [      400] ---- fr [      400]
-        /// </summary>
-        WaterSizeMetersEqual400 = 15810,
-        /// <summary>
-        /// 15811 -- en [      500] ---- fr [      500]
-        /// </summary>
-        WaterSizeMetersEqual500 = 15811,
-        /// <summary>
-        /// 15812 -- en [     750] ---- fr [     750]
-        /// </summary>
-        WaterSizeMetersEqual750 = 15812,
-        /// <summary>
-        /// 15813 -- en [   1000] ---- fr [   1000]
-        /// </summary>
-        WaterSizeMetersEqual1000 = 15813,
-        /// <summary>
-        /// 15814 -- en [ >1000] ---- fr [ >1000]
-        /// </summary>
-        WaterSizeMetersGreaterThan1000 = 15814,
-        /// <summary>
-        /// 10300 -- en [Distance on water] ---- fr [Distance sur l'eau]
-        /// </summary>
-        DistanceOnWaterMetersStart = 10300,
-        /// <summary>
-        /// 10301 -- en [                      10] ---- fr [                      10]
-        /// </summary>
-        DistanceOnWaterMetersapproximately10 = 10301,
-        /// <summary>
-        /// 10302 -- en [                     20] ---- fr [                     20]
-        /// </summary>
-        DistanceOnWaterMetersEqual20 = 10302,
-        /// <summary>
-        /// 10303 -- en [                    30] ---- fr [                    30]
-        /// </summary>
-        DistanceOnWaterMetersEqual30 = 10303,
-        /// <summary>
-        /// 10304 -- en [                40] ---- fr [                40]
-        /// </summary>
-        DistanceOnWaterMetersEqual40 = 10304,
-        /// <summary>
-        /// 10305 -- en [               50] ---- fr [               50]
-        /// </summary>
-        DistanceOnWaterMetersEqual50 = 10305,
-        /// <summary>
-        /// 10306 -- en [              75] ---- fr [              75]
-        /// </summary>
-        DistanceOnWaterMetersEqual75 = 10306,
-        /// <summary>
-        /// 10307 -- en [             100] ---- fr [             100]
-        /// </summary>
-        DistanceOnWaterMetersEqual100 = 10307,
-        /// <summary>
-        /// 10308 -- en [            150] ---- fr [            150]
-        /// </summary>
-        DistanceOnWaterMetersEqual150 = 10308,
-        /// <summary>
-        /// 10309 -- en [           200] ---- fr [           200]
-        /// </summary>
-        DistanceOnWaterMetersEqual200 = 10309,
-        /// <summary>
-        /// 10310 -- en [          300] ---- fr [          300]
-        /// </summary>
-        DistanceOnWaterMetersEqual300 = 10310,
-        /// <summary>
-        /// 10311 -- en [         400] ---- fr [         400]
-        /// </summary>
-        DistanceOnWaterMetersEqual400 = 10311,
-        /// <summary>
-        /// 10312 -- en [         600] ---- fr [         600]
-        /// </summary>
-        DistanceOnWaterMetersEqual600 = 10312,
-        /// <summary>
-        /// 10313 -- en [        800] ---- fr [        800]
-        /// </summary>
-        DistanceOnWaterMetersEqual800 = 10313,
-        /// <summary>
-        /// 10314 -- en [      1000] ---- fr [      1000]
-        /// </summary>
-        DistanceOnWaterMetersEqual1000 = 10314,
-        /// <summary>
-        /// 10315 -- en [  > 1000] ---- fr [   >1000]
-        /// </summary>
-        DistanceOnWaterMetersGreaterThan1000 = 10315,
-        /// <summary>
-        /// 15900 -- en [Water Type] ---- fr [Type d'eau]
-        /// </summary>
-        WaterTypeStart = 15900,
-        /// <summary>
-        /// 15901 -- en [Salt] ---- fr [Salée]
-        /// </summary>
-        WaterTypeSalt = 15901,
-        /// <summary>
-        /// 15902 -- en [Brackish] ---- fr [Saumâtre]
-        /// </summary>
-        WaterTypeBrachish = 15902,
-        /// <summary>
-        /// 15903 -- en [Fresh] ---- fr [Douce]
-        /// </summary>
-        WaterTypeFresh = 15903,
-        /// <summary>
-        /// 16100 -- en [Fecal source] ---- fr [Source de coliformes fécaux]
-        /// </summary>
-        WaterFecalSourceStart = 16100,
-        /// <summary>
-        /// 16101 -- en [People] ---- fr [Humain]
-        /// </summary>
-        WaterFecalSourcePeople = 16101,
-        /// <summary>
-        /// 16102 -- en [Population of wildlife] ---- fr [Population de la faune]
-        /// </summary>
-        WaterFecalSourceWildlife = 16102,
-        /// <summary>
-        /// 16103 -- en [Absent] ---- fr [Absent]
-        /// </summary>
-        WaterFecalSourceAbsent = 16103,
-        /// <summary>
-        /// 16104 -- en [Process water] ---- fr [Eau de traitement]
-        /// </summary>
-        WaterFecalProcessWater = 16104,
-        /// <summary>
-        /// 16200 -- en [Number of units] ---- fr [Nombre d'unités]
-        /// </summary>
-        WaterCountNumberStart = 16200,
-        /// <summary>
-        /// 16201 -- en [            1] ---- fr [            1]
-        /// </summary>
-        WatCountNumberEqualTo1 = 16201,
-        /// <summary>
-        /// 16202 -- en [          2] ---- fr [          2]
-        /// </summary>
-        WatCountNumberEqualTo2 = 16202,
-        /// <summary>
-        /// 16203 -- en [         3] ---- fr [         3]
-        /// </summary>
-        WatCountNumberEqualTo3 = 16203,
-        /// <summary>
-        /// 16204 -- en [         4] ---- fr [         4]
-        /// </summary>
-        WatCountNumberEqualTo4 = 16204,
-        /// <summary>
-        /// 16205 -- en [        5] ---- fr [        5]
-        /// </summary>
-        WatCountNumberEqualTo5 = 16205,
-        /// <summary>
-        /// 16206 -- en [       6] ---- fr [       6]
-        /// </summary>
-        WatCountNumberEqualTo6 = 16206,
-        /// <summary>
-        /// 16207 -- en [      7] ---- fr [      7]
-        /// </summary>
-        WatCountNumberEqualTo7 = 16207,
-        /// <summary>
-        /// 16208 -- en [      8] ---- fr [      8]
-        /// </summary>
-        WatCountNumberEqualTo8 = 16208,
-        /// <summary>
-        /// 16209 -- en [     9] ---- fr [     9]
-        /// </summary>
-        WatCountNumberEqualTo9 = 16209,
-        /// <summary>
-        /// 16210 -- en [    10] ---- fr [    10]
-        /// </summary>
-        WatCountNumberEqualTo10 = 16210,
-        /// <summary>
-        /// 16211 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        WatCountNumberBetween11and25 = 16211,
-        /// <summary>
-        /// 16212 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        WatCountNumberBetween26and40 = 16212,
-        /// <summary>
-        /// 16213 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        WatCountNumberGreaterThan40 = 16213,
-        /// <summary>
-        /// 18700 -- en [Washroom facilities] ---- fr [Toilettes]
-        /// </summary>
-        HumanSewageStart = 18700,
-        /// <summary>
-        /// 18701 -- en [Present] ---- fr [Présentes]
-        /// </summary>
-        HumanSewageWashroom = 18701,
-        /// <summary>
-        /// 18702 -- en [Absent] ---- fr [Absentes]
-        /// </summary>
-        HumanSewageWashroomAbsent = 18702,
-        /// <summary>
-        /// 16300 -- en [  Wastewater] ---- fr [Eaux usées]
-        /// </summary>
-        WaterSewageStart = 16300,
-        /// <summary>
-        /// 16301 -- en [Direct discharge] ---- fr [Décharge directe]
-        /// </summary>
-        WaterSewageDirectDischarge = 16301,
-        /// <summary>
-        /// 16302 -- en [Full retention] ---- fr [Rétention complète]
-        /// </summary>
-        WaterSepticSystemFullRention = 16302,
-        /// <summary>
-        /// 16400 -- en [Number present] ---- fr [Nombre présent]
-        /// </summary>
-        WaterNumberPresentStart = 16400,
-        /// <summary>
-        /// 16401 -- en [            1] ---- fr [            1]
-        /// </summary>
-        WatNumberPresentEqualTo1 = 16401,
-        /// <summary>
-        /// 16402 -- en [          2] ---- fr [          2]
-        /// </summary>
-        WatNumberPresentEqualTo2 = 16402,
-        /// <summary>
-        /// 16403 -- en [         3] ---- fr [         3]
-        /// </summary>
-        WatNumberPresentEqualTo3 = 16403,
-        /// <summary>
-        /// 16404 -- en [         4] ---- fr [         4]
-        /// </summary>
-        WatNumberPresentEqualTo4 = 16404,
-        /// <summary>
-        /// 16405 -- en [        5] ---- fr [        5]
-        /// </summary>
-        WatNumberPresentEqualTo5 = 16405,
-        /// <summary>
-        /// 16406 -- en [       6] ---- fr [       6]
-        /// </summary>
-        WatNumberPresentEqualTo6 = 16406,
-        /// <summary>
-        /// 16407 -- en [      7] ---- fr [      7]
-        /// </summary>
-        WatNumberPresentEqualTo7 = 16407,
-        /// <summary>
-        /// 16408 -- en [      8] ---- fr [      8]
-        /// </summary>
-        WatNumberPresentEqualTo8 = 16408,
-        /// <summary>
-        /// 16409 -- en [     9] ---- fr [     9]
-        /// </summary>
-        WatNumberPresentEqualTo9 = 16409,
-        /// <summary>
-        /// 16410 -- en [    10] ---- fr [    10]
-        /// </summary>
-        WatNumberPresentEqualTo10 = 16410,
-        /// <summary>
-        /// 16411 -- en [   11 - 25] ---- fr [   11 - 25]
-        /// </summary>
-        WatNumberPresentBetween11and25 = 16411,
-        /// <summary>
-        /// 16412 -- en [  26 - 40] ---- fr [  26 - 40]
-        /// </summary>
-        WatNumberPresentBetween26and40 = 16412,
-        /// <summary>
-        /// 16413 -- en [ > 40] ---- fr [ > 40]
-        /// </summary>
-        WatNumberPresentGreaterThan40 = 16413,
-        /// <summary>
-        /// 16500 -- en [Type of wildlife] ---- fr [Type de faune]
+        /// 16500 -- en [Marine Animals] ---- fr [Type de faune]
         /// </summary>
         WaterTypesOfMarineLifeStart = 16500,
         /// <summary>
-        /// 16501 -- en [Small marine animals] ---- fr [Petits animaux marins]
+        /// 16501 -- en [Shoreline Birds] ---- fr [Pluviers siffleurs et bécasseaux]
         /// </summary>
-        WaterTypesEqualSmallMammals = 16501,
+        WaterTypesOfMarineLifeShorelineBirds = 16501,
         /// <summary>
-        /// 16502 -- en [Large marine animals] ---- fr [Grands animaux marins]
+        /// 16502 -- en [Gulls] ---- fr [Goéland à dos noir]
         /// </summary>
-        WaterTypesEqualLargeMammals = 16502,
+        WaterTypesOfMarineLifeGulls = 16502,
         /// <summary>
-        /// 16503 -- en [Large birds] ---- fr [Grands oiseaux]
+        /// 16503 -- en [Cormorants] ---- fr [Cormorans]
         /// </summary>
-        WaterTypesEqualSeaBirds = 16503,
+        WaterTypesOfMarineLifeCormorants = 16503,
         /// <summary>
-        /// 16504 -- en [Medium birds] ---- fr [Oiseaux de taille moyenne]
+        /// 16504 -- en [Ducks and Geese] ---- fr [Marais - canards]
         /// </summary>
-        WaterTypesEqualShorelineBirds = 16504,
+        WaterTypesOfMarineLifeDucksGeese = 16504,
         /// <summary>
-        /// 19700 -- en [Type of shorebirds] ---- fr [Type d'oiseaux de rivage]
+        /// 16505 -- en [Loons] ---- fr [Huards]
         /// </summary>
-        ShorelineBirdsStart = 19700,
+        WaterTypesOfMarineLifeLoons = 16505,
         /// <summary>
-        /// 19701 -- en [Piping Plovers and Sandpipers] ---- fr [Pluviers siffleurs et bécasseaux]
+        /// 16506 -- en [Seaducks] ---- fr [Canards marins]
         /// </summary>
-        ShorelineBirdsPloversandSandpipers = 19701,
+        WaterTypesOfMarineLifeSeaducks = 16506,
         /// <summary>
-        /// 19702 -- en [Black-Backed Gull] ---- fr [Goéland à dos noir]
+        /// 16507 -- en [Other Seabirds] ---- fr [Autres]
         /// </summary>
-        ShorelineBirdsBlackBackedGulls = 19702,
+        WaterTypesOfMarineLifeOther = 16507,
         /// <summary>
-        /// 19703 -- en [Herring Gulls] ---- fr [Goéland marin]
+        /// 16508 -- en [Seal] ---- fr [Phoque gris]
         /// </summary>
-        ShorelineBirdsHerringGulls = 19703,
+        WaterTypesOfMarineLifeSeal = 16508,
         /// <summary>
-        /// 19704 -- en [Greater Yellowlegs] ---- fr [Grand chevalier]
+        /// 16509 -- en [Sea Otter] ---- fr [Loutre de mer]
         /// </summary>
-        ShorelineBirdsGreaterYellowlegs = 19704,
+        WaterTypesOfMarineLifeSeaOtter = 16509,
         /// <summary>
-        /// 19705 -- en [Surf Scoter] ---- fr [Macreuse à front blanc]
+        /// 13400 -- en [Manure] ---- fr [Préoccupation majeure]
         /// </summary>
-        ShorelineBirdsSurfScoter = 19705,
+        MajorIssueSourceStart = 13400,
         /// <summary>
-        /// 19706 -- en [Brown Pelican] ---- fr [Pélican brun]
+        /// 13401 -- en [Pile ] ---- fr [        Tas de fumier]
         /// </summary>
-        ShorelineBirdsBrownPelican = 19706,
+        MajorIssueSourceManurePile = 13401,
         /// <summary>
-        /// 19707 -- en [Others] ---- fr [Autres]
+        /// 13402 -- en [Liquidified ] ---- fr [       Étendre sur les champs]
         /// </summary>
-        ShorelineBirdsOthers = 19707,
+        MajorIssueSourceLiqSpread = 13402,
         /// <summary>
-        /// 19800 -- en [SeaBirds] ---- fr [Oiseaux marins]
+        /// 20400 -- en [Spreading Location] ---- fr [Localisation du champ]
         /// </summary>
-        SeaBirdsStart = 19800,
+        FieldLocationStart = 20400,
         /// <summary>
-        /// 19801 -- en [Cormorants] ---- fr [Cormorans]
+        /// 20401 -- en [Farm] ---- fr [Terrain de la ferme]
         /// </summary>
-        SeaBirdsCormorants = 19801,
+        FieldLocationOnFarm = 20401,
         /// <summary>
-        /// 19802 -- en [Waterfowl-ducks] ---- fr [Marais - canards]
+        /// 20402 -- en [Other] ---- fr [Autre propriété]
         /// </summary>
-        SeaBirdsDucks = 19802,
+        FieldLocationOffFarm = 20402,
         /// <summary>
-        /// 19803 -- en [Waterfowl-Geese] ---- fr [Marais - oies]
+        /// 20403 -- en [Both] ---- fr [Autre propriété]
         /// </summary>
-        SeaBirdsGeese = 19803,
+        FieldLocationBoth = 20403,
         /// <summary>
-        /// 19804 -- en [Black-Backed Gull] ---- fr [Goéland à dos noir]
+        /// 10500 -- en [Pollutant Source] ---- fr [Préoccupation majeure]
         /// </summary>
-        SeaBirdsBlackBlackGulls = 19804,
+        SourcesOfContaminantStart = 10500,
         /// <summary>
-        /// 19805 -- en [Loons] ---- fr [Huards]
+        /// 10501 -- en [Runoff] ---- fr [        Tas de fumier]
         /// </summary>
-        SeaBirdsLoons = 19805,
+        SourcesOfContaminantRunoff = 10501,
         /// <summary>
-        /// 19806 -- en [Seaducks] ---- fr [Canards marins]
+        /// 10502 -- en [Manure Runoff] ---- fr [        Tas de fumier]
         /// </summary>
-        SeaBirdsSeaducks = 19806,
+        SourcesOfContaminantRunoffFromManure = 10502,
         /// <summary>
-        /// 19807 -- en [Others] ---- fr [Autres]
+        /// 10503 -- en [Fish Processing ] ---- fr [       Étendre sur les champs]
         /// </summary>
-        SeaBirdsOther = 19807,
+        SourcesOfContaminantProcessingWater = 10503,
         /// <summary>
-        /// 19900 -- en [Types of Large Marine Mammal] ---- fr [Types de grands mammifères marins]
+        /// 10504 -- en [Fish Tank ] ---- fr [       Étendre sur les champs]
         /// </summary>
-        LargeMarineMammalStart = 19900,
+        SourcesOfContaminantTankWater = 10504,
         /// <summary>
-        /// 19901 -- en [Grey Seal] ---- fr [Phoque gris]
+        /// 10505 -- en [Washrooms] ---- fr [              Ruisellement]
         /// </summary>
-        LargeMarineMammaGreySeal = 19901,
+        SourcesOfContaminantWashrooms = 10505,
         /// <summary>
-        /// 19902 -- en [Hooded Seal] ---- fr [Phoque à capuchon]
+        /// 10506 -- en [Effluent ] ---- fr [              Ruisellement]
         /// </summary>
-        LargeMarineMammalHoodedSeal = 19902,
+        SourcesOfContaminantEffluent = 10506,
         /// <summary>
-        /// 19903 -- en [Beard Seal] ---- fr [Phoque barbu]
+        /// 10507 -- en [Animal Excrement] ---- fr [              Ruisellement]
         /// </summary>
-        LargeMarineMammalBeardSeal = 19903,
+        SourcesOfContaminantExcrement = 10507,
         /// <summary>
-        /// 19904 -- en [Stellar Sea Lion] ---- fr [Otarie de Stellar]
+        /// 11900 -- en [Wastewater Management] ---- fr [Eaux usées]
         /// </summary>
-        LargeMarineMammalStellarSeaLion = 19904,
+        SewageStart = 11900,
         /// <summary>
-        /// 19905 -- en [Atlantic Walrus] ---- fr [Morse de l'Atlantique]
+        /// 11901 -- en [                          Direct Release] ---- fr [Décharge directe]
         /// </summary>
-        LargeMarineMammalAtlanticWalrus = 19905,
+        SewageDirectDischarge = 11901,
         /// <summary>
-        /// 19906 -- en [NorthernFurSeal] ---- fr [Otarie à fourrure du Nord]
+        /// 11902 -- en [                       Conduit] ---- fr [Décharge directe]
         /// </summary>
-        LargeMarineMammalNorthernFurSeal = 19906,
+        SewageThruConduit = 11902,
         /// <summary>
-        /// 20000 -- en [Types of small marine mammal] ---- fr [Types de petits mammifères marins]
+        /// 11903 -- en [                  Septic-Leachate ] ---- fr [Aire de drainage]
         /// </summary>
-        SmallMarineanimalStart = 20000,
+        SewageSepticSystemLeachateField = 11903,
         /// <summary>
-        /// 20001 -- en [Harp Seal] ---- fr [Phoque du Groenland]
+        /// 11904 -- en [             Retention Tank] ---- fr [Rétention complète]
         /// </summary>
-        SmallMarineanimalHarpSeal = 20001,
+        SewageRetentionTank = 11904,
         /// <summary>
-        /// 20002 -- en [Harbour Seal] ---- fr [Phoque commun]
+        /// 11905 -- en [           Open Tank] ---- fr [Fosse / Réservoir]
         /// </summary>
-        SmallMarineanimalHarbourSeal = 20002,
+        SewageOpenTank = 11905,
         /// <summary>
-        /// 20003 -- en [Sea Otter] ---- fr [Loutre de mer]
+        /// 11906 -- en [         Wetland ] ---- fr [Zones humides créées]
         /// </summary>
-        SmallMarineanimalSeaOtter = 20003,
+        SewageSystemConstructedWetland = 11906,
         /// <summary>
-        /// 20100 -- en [Number present] ---- fr [Nombre présent]
+        /// 11907 -- en [      Onsite ] ---- fr [Lagune]
         /// </summary>
-        MarineAnimalPresentStart = 20100,
+        SewageOnSiteSystem = 11907,
         /// <summary>
-        /// 20101 -- en [                              < 5] ---- fr [                              < 5]
+        /// 11908 -- en [    Offsite] ---- fr [Système municipal]
         /// </summary>
-        MarineAnimalPresentLessThan5 = 20101,
+        SewageOffSiteSystem = 11908,
         /// <summary>
-        /// 20102 -- en [                           6 to 10] ---- fr [                           6 à 10]
+        /// 11909 -- en [N/A] ---- fr [Aucune structure]
         /// </summary>
-        MarineAnimalPresentBetween6and10 = 20102,
+        SepticNoInformation = 11909,
         /// <summary>
-        /// 20103 -- en [                      11 to 25] ---- fr [                      11 à 25]
-        /// </summary>
-        MarineAnimalPresentBetween11and25 = 20103,
-        /// <summary>
-        /// 20104 -- en [               26 to 100] ---- fr [               26 à 100]
-        /// </summary>
-        MarineAnimalPresentBetween26and100 = 20104,
-        /// <summary>
-        /// 20105 -- en [           > 100] ---- fr [           > 100]
-        /// </summary>
-        MarineAnimalPresentGreaterThan100 = 20105,
-        /// <summary>
-        /// 20106 -- en [         > 500] ---- fr [         > 500]
-        /// </summary>
-        MarineAnimalPresentGreaterThan500 = 20106,
-        /// <summary>
-        /// 20107 -- en [      > 1000] ---- fr [      > 1000]
-        /// </summary>
-        MarineAnimalPresentGreaterThan1000 = 20107,
-        /// <summary>
-        /// 20108 -- en [   > 10000] ---- fr [   > 10000]
-        /// </summary>
-        MarineAnimalPresentGreaterThan10000 = 20108,
-        /// <summary>
-        /// 20109 -- en [ > 20000] ---- fr [ > 20000]
-        /// </summary>
-        MarineAnimalPresentGreaterThan20000 = 20109,
-        /// <summary>
-        /// 20200 -- en [Point source] ---- fr [Source ponctuelle]
-        /// </summary>
-        MarinePointSourceStart = 20200,
-        /// <summary>
-        /// 20201 -- en [Directly to water] ---- fr [Directement vers l'eau]
-        /// </summary>
-        MarinePointSourceInputToMarine = 20201,
-        /// <summary>
-        /// 17000 -- en [Type of substrate] ---- fr [Type de substrat]
-        /// </summary>
-        ShorelineStart = 17000,
-        /// <summary>
-        /// 17001 -- en [Sandy Shoreline] ---- fr [Littoral de sable]
-        /// </summary>
-        ShorelineSandy = 17001,
-        /// <summary>
-        /// 17002 -- en [Rocky Shoreline] ---- fr [Littoral de roches]
-        /// </summary>
-        ShorelineRocky = 17002,
-        /// <summary>
-        /// 17100 -- en [Items on shoreline] ---- fr [Éléments sur le rivage]
-        /// </summary>
-        ShorelineIssueStart = 17100,
-        /// <summary>
-        /// 17101 -- en [Building] ---- fr [Édifice]
-        /// </summary>
-        ShorelineBuildings = 17101,
-        /// <summary>
-        /// 17102 -- en [Wildlife] ---- fr [Faune]
-        /// </summary>
-        ShorelineWildlife = 17102,
-        /// <summary>
-        /// 17103 -- en [Landfill] ---- fr [Site d'enfouissement]
-        /// </summary>
-        ShorelineLandFill = 17103,
-        /// <summary>
-        /// 17104 -- en [Slipway] ---- fr [Mise à l'eau]
-        /// </summary>
-        ShorelineSlipway = 17104,
-        /// <summary>
-        /// 17105 -- en [Dayuse] ---- fr [Récréatif journalier]
-        /// </summary>
-        ShorelineDayuse = 17105,
-        /// <summary>
-        /// 18000 -- en [Type of Slipway] ---- fr [Type de mise à l'eau]
-        /// </summary>
-        SlipwayStart = 18000,
-        /// <summary>
-        /// 18001 -- en [Paved slipway] ---- fr [Mise à l'eau, surface d'asphalte]
-        /// </summary>
-        SlipwayPaved = 18001,
-        /// <summary>
-        /// 18002 -- en [Natural slipway] ---- fr [Mise à l'eau, surface naturelle]
-        /// </summary>
-        SlipwayRocks = 18002,
-        /// <summary>
-        /// 19000 -- en [Shoreline] ---- fr [Rivage]
-        /// </summary>
-        SourceTypeShoreStart = 19000,
-        /// <summary>
-        /// 19001 -- en [Composition] ---- fr [Composition]
-        /// </summary>
-        SourceTypeShoreline = 19001,
-        /// <summary>
-        /// 90000 -- en [Status as a pollutant source ] ---- fr [Évaluation de la source de pollution]
+        /// 90000 -- en [Impact Status ] ---- fr [Évaluation de la source de pollution]
         /// </summary>
         StatusStart = 90000,
         /// <summary>
-        /// 90001 -- en [  Definite] ---- fr [Définitive]
+        /// 90001 -- en [            Definite] ---- fr [       Définitive]
         /// </summary>
         StatusDefinite = 90001,
         /// <summary>
-        /// 90002 -- en [   Potential] ---- fr [Potentielle]
+        /// 90002 -- en [   Potential] ---- fr [     Potentielle]
         /// </summary>
         StatusPotential = 90002,
         /// <summary>
@@ -4147,168 +1944,576 @@ namespace CSSPEnums
         /// </summary>
         StatusNonPollutionSource = 90003,
         /// <summary>
-        /// 91000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]
+        /// 25000 -- en [Location] ---- fr [Évaluation de la source de pollution]
         /// </summary>
-        RiskCStart = 91000,
+        PathWayStart = 25000,
         /// <summary>
-        /// 91001 -- en [  Low] ---- fr [Faible ]
+        /// 25001 -- en [Land] ---- fr [       Définitive]
         /// </summary>
-        RiskLow = 91001,
+        PathwayLand = 25001,
         /// <summary>
-        /// 92000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]
+        /// 25002 -- en [Water ] ---- fr [     Potentielle]
         /// </summary>
-        RiskBStart = 92000,
+        PathWayWater = 25002,
         /// <summary>
-        /// 92001 -- en [ Moderate] ---- fr [Moyen]
+        /// 14300 -- en [Drainage Path] ---- fr [Source ponctuelle]
         /// </summary>
-        RiskModerate = 92001,
+        PathwaySourceFirstStart = 14300,
         /// <summary>
-        /// 92002 -- en [High] ---- fr [Élevé]
+        /// 14301 -- en [Culvert] ---- fr [Conduit d'eau]
         /// </summary>
-        RiskHighP = 92002,
+        PathwaySourceFirstCulvert = 14301,
         /// <summary>
-        /// 93000 -- en [Risk to Pollute] ---- fr [Le risque de pollution]
+        /// 14302 -- en [Pipe] ---- fr [Tuyau]
         /// </summary>
-        RiskAStart = 93000,
+        PathwaySourceFirstPipe = 14302,
         /// <summary>
-        /// 93001 -- en [High Confirmed Visual ] ---- fr [Élevé, confirmation visuelle]
+        /// 14303 -- en [Stream] ---- fr [Cours d'eau]
         /// </summary>
-        RiskHighConfirmedVisual = 93001,
+        PathwaySourceFirstStream = 14303,
         /// <summary>
-        /// 93002 -- en [High Confirmed Water Sample] ---- fr [Élevé, confirmation par échantillon d'eau]
+        /// 14304 -- en [Ditch] ---- fr [Fossé]
         /// </summary>
-        RishHighConfirmedWater = 93002,
+        PathwaySourceFirstDitch = 14304,
         /// <summary>
-        /// 94000 -- en [Follow-up Data] ---- fr [Données du suivi]
+        /// 14305 -- en [Surface ] ---- fr [Écoulement de surface]
         /// </summary>
-        FollowupStart = 94000,
+        PathwaySourceFirstSurfaceDrainage = 14305,
         /// <summary>
-        /// 94001 -- en [Follow-up required] ---- fr [Suivi requis]
+        /// 14306 -- en [Sub-surface] ---- fr [Écoulement de surface]
         /// </summary>
-        FollowupRequired = 94001,
+        PathwaySourceFirstSubSurfaceDrainage = 14306,
         /// <summary>
-        /// 94002 -- en [Follow-up not required] ---- fr [Suivi non-requis]
+        /// 14307 -- en [Direct] ---- fr [Directement vers un cours d'eau]
         /// </summary>
-        FollowupNotRequired = 94002,
+        PathwaySourceFirstDirect = 14307,
         /// <summary>
-        /// 10200 -- en [Distance from shore (meters)] ---- fr [Distance de la côte (mètres)]
+        /// 13000 -- en [Second Drainage Path] ---- fr [Source ponctuelle]
+        /// </summary>
+        PathwaySourceSecondPipeStart = 13000,
+        /// <summary>
+        /// 13001 -- en [Stream] ---- fr [Cours d'eau]
+        /// </summary>
+        PathwaySourceSecondPipeStream = 13001,
+        /// <summary>
+        /// 13002 -- en [Ditch] ---- fr [Fossé]
+        /// </summary>
+        PathwaySourceSecondPipeDitch = 13002,
+        /// <summary>
+        /// 13003 -- en [Surface ] ---- fr [Écoulement de surface]
+        /// </summary>
+        PathwaySourceSecondPipeSurfaceDrainage = 13003,
+        /// <summary>
+        /// 13004 -- en [Sub-Surface ] ---- fr [Écoulement de surface]
+        /// </summary>
+        PathwaySourceSecondPipeSubSurfaceDrainage = 13004,
+        /// <summary>
+        /// 13005 -- en [Direct ] ---- fr [Directement vers un cours d'eau]
+        /// </summary>
+        PathwaySourceSecondPipeDirect = 13005,
+        /// <summary>
+        /// 13200 -- en [Second Drainage Path] ---- fr [Source ponctuelle]
+        /// </summary>
+        PathwaySourceSecondCulvertStart = 13200,
+        /// <summary>
+        /// 13201 -- en [Stream] ---- fr [Cours d'eau]
+        /// </summary>
+        PathwaySourceSecondCulvertStream = 13201,
+        /// <summary>
+        /// 13202 -- en [Ditch] ---- fr [Fossé]
+        /// </summary>
+        PathwaySourceSecondCulvertDitch = 13202,
+        /// <summary>
+        /// 13203 -- en [Surface ] ---- fr [Écoulement de surface]
+        /// </summary>
+        PathwaySourceSecondCulvertSurfaceDrainage = 13203,
+        /// <summary>
+        /// 13204 -- en [Sub-Surface ] ---- fr [Écoulement de surface]
+        /// </summary>
+        PathwaySourceSecondCulvertSubSurfaceDrainage = 13204,
+        /// <summary>
+        /// 13205 -- en [Direct] ---- fr [Directement vers un cours d'eau]
+        /// </summary>
+        PathwaySourceSecondCulvertDirectInput = 13205,
+        /// <summary>
+        /// 14800 -- en [Width (m)] ---- fr [Largeur (m)]
+        /// </summary>
+        WidthInMetersStart = 14800,
+        /// <summary>
+        /// 14801 -- en [            1] ---- fr [            1]
+        /// </summary>
+        WidthInMetersApprox1 = 14801,
+        /// <summary>
+        /// 14802 -- en [          2] ---- fr [          2]
+        /// </summary>
+        WidthInMetersApprox2 = 14802,
+        /// <summary>
+        /// 14803 -- en [         3] ---- fr [         3]
+        /// </summary>
+        WidthInMetersApprox3 = 14803,
+        /// <summary>
+        /// 14804 -- en [         4] ---- fr [         4]
+        /// </summary>
+        WidthInMetersApprox4 = 14804,
+        /// <summary>
+        /// 14805 -- en [        5] ---- fr [        5]
+        /// </summary>
+        WidthInMetersApprox5 = 14805,
+        /// <summary>
+        /// 14806 -- en [       6] ---- fr [       6]
+        /// </summary>
+        WidthInMetersApprox6 = 14806,
+        /// <summary>
+        /// 14807 -- en [      7] ---- fr [      7]
+        /// </summary>
+        WidthInMetersApprox7 = 14807,
+        /// <summary>
+        /// 14808 -- en [      8] ---- fr [      8]
+        /// </summary>
+        WidthInMetersApprox8 = 14808,
+        /// <summary>
+        /// 14809 -- en [     9] ---- fr [     9]
+        /// </summary>
+        WidthInMetersApprox9 = 14809,
+        /// <summary>
+        /// 14810 -- en [    10] ---- fr [    10]
+        /// </summary>
+        WidthInMetersApprox10 = 14810,
+        /// <summary>
+        /// 14811 -- en [   11 - 25] ---- fr [   11 - 25]
+        /// </summary>
+        WidthInMetersBetween11And25 = 14811,
+        /// <summary>
+        /// 14812 -- en [  26 - 40] ---- fr [  26 - 40]
+        /// </summary>
+        WidthInMetersBetween26And40 = 14812,
+        /// <summary>
+        /// 14813 -- en [ > 40] ---- fr [ > 40]
+        /// </summary>
+        WidthInMetersGreaterThan40 = 14813,
+        /// <summary>
+        /// 10200 -- en [Distance (m)] ---- fr [Distance de la côte (mètres)]
         /// </summary>
         DistanceFromShoreInMetersStart = 10200,
         /// <summary>
-        /// 10201 -- en [On shore] ---- fr [Sur la côte]
+        /// 10201 -- en [                              On shore] ---- fr [                             Sur la côte]
         /// </summary>
         DistanceFromShoreInMetersOnShore = 10201,
         /// <summary>
-        /// 10202 -- en [                      10] ---- fr [                      10]
+        /// 10202 -- en [                         5 ] ---- fr [                          5      ]
         /// </summary>
-        DistanceFromShoreInMeters10 = 10202,
+        DistanceFromShoreInMeters5 = 10202,
         /// <summary>
-        /// 10203 -- en [                     20] ---- fr [                     20]
+        /// 10203 -- en [                      10] ---- fr [                      10]
         /// </summary>
-        DistanceFromShoreInMeters20 = 10203,
+        DistanceFromShoreInMeters10 = 10203,
         /// <summary>
-        /// 10204 -- en [                    30] ---- fr [                    30]
+        /// 10204 -- en [                     20] ---- fr [                     20]
         /// </summary>
-        DistanceFromShoreInMeters30 = 10204,
+        DistanceFromShoreInMeters20 = 10204,
         /// <summary>
-        /// 10205 -- en [                40] ---- fr [                40]
+        /// 10205 -- en [                    30] ---- fr [                    30]
         /// </summary>
-        DistanceFromShoreInMeters40 = 10205,
+        DistanceFromShoreInMeters30 = 10205,
         /// <summary>
-        /// 10206 -- en [               50] ---- fr [               50]
+        /// 10206 -- en [                40] ---- fr [                40]
         /// </summary>
-        DistanceFromShoreInMeters50 = 10206,
+        DistanceFromShoreInMeters40 = 10206,
         /// <summary>
-        /// 10207 -- en [              75] ---- fr [              75]
+        /// 10207 -- en [               50] ---- fr [               50]
         /// </summary>
-        DistanceFromShoreInMeters75 = 10207,
+        DistanceFromShoreInMeters50 = 10207,
         /// <summary>
-        /// 10208 -- en [             100] ---- fr [             100]
+        /// 10208 -- en [              75] ---- fr [              75]
         /// </summary>
-        DistanceFromShoreInMeters100 = 10208,
+        DistanceFromShoreInMeters75 = 10208,
         /// <summary>
-        /// 10209 -- en [            150] ---- fr [            150]
+        /// 10209 -- en [             100] ---- fr [             100]
         /// </summary>
-        DistanceFromShoreInMeters150 = 10209,
+        DistanceFromShoreInMeters100 = 10209,
         /// <summary>
-        /// 10210 -- en [           200] ---- fr [           200]
+        /// 10210 -- en [            150] ---- fr [            150]
         /// </summary>
-        DistanceFromShoreInMeters200 = 10210,
+        DistanceFromShoreInMeters150 = 10210,
         /// <summary>
-        /// 10212 -- en [          300] ---- fr [          300]
+        /// 10212 -- en [           200] ---- fr [           200]
         /// </summary>
-        DistanceFromShoreInMeters300 = 10212,
+        DistanceFromShoreInMeters200 = 10212,
         /// <summary>
-        /// 10213 -- en [         400] ---- fr [         400]
+        /// 10213 -- en [          300] ---- fr [          300]
         /// </summary>
-        DistanceFromShoreInMeters400 = 10213,
+        DistanceFromShoreInMeters300 = 10213,
         /// <summary>
-        /// 10215 -- en [         600] ---- fr [         600]
+        /// 10215 -- en [         400] ---- fr [         400]
         /// </summary>
-        DistanceFromShoreInMeters600 = 10215,
+        DistanceFromShoreInMeters400 = 10215,
         /// <summary>
-        /// 10216 -- en [        800] ---- fr [        800]
+        /// 10216 -- en [         600] ---- fr [         600]
         /// </summary>
-        DistanceFromShoreInMeters800 = 10216,
+        DistanceFromShoreInMeters600 = 10216,
         /// <summary>
-        /// 10218 -- en [      1000] ---- fr [      1000]
+        /// 10218 -- en [        800] ---- fr [        800]
         /// </summary>
-        DistanceFromShoreInMeters1000 = 10218,
+        DistanceFromShoreInMeters800 = 10218,
         /// <summary>
-        /// 10219 -- en [   > 1000] ---- fr [   >1000]
+        /// 10219 -- en [      1000] ---- fr [      1000]
         /// </summary>
-        DistanceFromShoreInMetersGreaterThan1000 = 10219,
+        DistanceFromShoreInMeters1000 = 10219,
         /// <summary>
-        /// 23000 -- en [Is there a Riparian zone at wateredge] ---- fr [Y a-t-il une zone riveraine au bord de l'eau]
+        /// 10220 -- en [  > 1000] ---- fr [  > 1000]
+        /// </summary>
+        DistanceFromShoreInMetersGreaterThan1000 = 10220,
+        /// <summary>
+        /// 23000 -- en [Riparian Zone] ---- fr [Y a-t-il une zone riveraine au bord de l'eau]
         /// </summary>
         ShorelineRiparionZoneStart = 23000,
         /// <summary>
-        /// 23001 -- en [Riparian zone present] ---- fr [Zone riveraine présente]
+        /// 23001 -- en [          Present] ---- fr [               Zone riveraine présente]
         /// </summary>
         ShorelineRiparianZonePresent = 23001,
         /// <summary>
-        /// 23002 -- en [Riparian zone absent] ---- fr [Zone riveraine absente]
+        /// 23002 -- en [                           Absent] ---- fr [          Zone riveraine absente]
         /// </summary>
         ShorelineRiparianZoneAbsent = 23002,
         /// <summary>
-        /// 23003 -- en [Riparian zone - no information] ---- fr [Zone riveraine - aucune information]
+        /// 23003 -- en [No information] ---- fr [Zone riveraine - aucune information]
         /// </summary>
         ShorelineRiparianZoneNoInfo = 23003,
         /// <summary>
-        /// 24000 -- en [Distance from shore to growing Area (meters)] ---- fr [Distance de la côte à l'aire de croissance (m)]
+        /// 24000 -- en [Distance (m)] ---- fr [Distance de la côte à l'aire de croissance (m)]
         /// </summary>
-        DistancetoGrowingAreaStart = 24000,
+        DistanceToSaltWaterStart = 24000,
         /// <summary>
-        /// 24001 -- en [                   30] ---- fr [30]
+        /// 24001 -- en [                                5] ---- fr [                                5]
         /// </summary>
-        DistancetoGrowAreasInMeters30 = 24001,
+        DistanceToSaltWaterInMeters5 = 24001,
         /// <summary>
-        /// 24002 -- en [                 50] ---- fr [50]
+        /// 24002 -- en [                         10] ---- fr [                        10]
         /// </summary>
-        DistancetoGrowAreasInMeters50 = 24002,
+        DistanceToSaltWaterInMeters10 = 24002,
         /// <summary>
-        /// 24003 -- en [           100] ---- fr [100]
+        /// 24003 -- en [                       20] ---- fr [                       20]
         /// </summary>
-        DistancetoGrowAreasInMeters100 = 24003,
+        DistancetoSaltWaterInMeters20 = 24003,
         /// <summary>
-        /// 24004 -- en [         200] ---- fr [200]
+        /// 24004 -- en [                      30] ---- fr [                      30]
         /// </summary>
-        DistancetoGrowAreasInMeters200 = 24004,
+        DistanceToSaltWaterInMeters30 = 24004,
         /// <summary>
-        /// 24005 -- en [      400] ---- fr [400]
+        /// 24005 -- en [                 50] ---- fr [                 50]
         /// </summary>
-        DistancetoGrowAreasInMeters400 = 24005,
+        DistanceToSaltWaterInMeters50 = 24005,
         /// <summary>
-        /// 24006 -- en [     800] ---- fr [800]
+        /// 24006 -- en [              100] ---- fr [              100]
         /// </summary>
-        DistancetoGrowAreasInMeters800 = 24006,
+        DistanceToSaltWaterInMeters100 = 24006,
         /// <summary>
-        /// 24007 -- en [   1000] ---- fr [1000]
+        /// 24007 -- en [            200] ---- fr [            200]
         /// </summary>
-        DistancetoGrowAreasInMeters1000 = 24007,
+        DistanceToSaltWaterInMeters200 = 24007,
         /// <summary>
-        /// 24008 -- en [ >1000] ---- fr [>1000]
+        /// 24008 -- en [          400] ---- fr [          400]
         /// </summary>
-        DistancetoGrowAreasInMetersGreaterThan1000 = 24008,
+        DistanceToSaltWaterInMeters400 = 24008,
+        /// <summary>
+        /// 24009 -- en [        800] ---- fr [        800]
+        /// </summary>
+        DistanceToSaltWaterInMeters800 = 24009,
+        /// <summary>
+        /// 24010 -- en [     1000] ---- fr [     1000]
+        /// </summary>
+        DistanceToSaltWaterInMeters1000 = 24010,
+        /// <summary>
+        /// 24011 -- en [ > 1000] ---- fr [ > 1000]
+        /// </summary>
+        DistanceToSaltWaterInMetersGreaterThan1000 = 24011,
+        /// <summary>
+        /// 10400 -- en [Slope] ---- fr [Pente du milieu]
+        /// </summary>
+        AreaSlopeStart = 10400,
+        /// <summary>
+        /// 10401 -- en [    Low] ---- fr [   Faible]
+        /// </summary>
+        AreaSlopeLow = 10401,
+        /// <summary>
+        /// 10402 -- en [  Medium] ---- fr [  Modérée]
+        /// </summary>
+        AreaSlopeMedium = 10402,
+        /// <summary>
+        /// 10403 -- en [High] ---- fr [Forte]
+        /// </summary>
+        AreaSlopeHigh = 10403,
+        /// <summary>
+        /// 10404 -- en [N/A ] ---- fr [NA]
+        /// </summary>
+        AreaSlopeNA = 10404,
+        /// <summary>
+        /// 12000 -- en [Municipality Data] ---- fr [Infrastructure]
+        /// </summary>
+        MunicipalityDataStart = 12000,
+        /// <summary>
+        /// 21600 -- en [Number of Pipes] ---- fr [Nombre d'unités]
+        /// </summary>
+        PipeCountNumberStart = 21600,
+        /// <summary>
+        /// 21601 -- en [            1] ---- fr [            1]
+        /// </summary>
+        PipeCountNumberEqualTo1 = 21601,
+        /// <summary>
+        /// 21602 -- en [          2] ---- fr [          2]
+        /// </summary>
+        PipeCountNumberEqualTo2 = 21602,
+        /// <summary>
+        /// 21603 -- en [         3] ---- fr [         3]
+        /// </summary>
+        PipeCountNumberEqualTo3 = 21603,
+        /// <summary>
+        /// 21604 -- en [         4] ---- fr [         4]
+        /// </summary>
+        PipeCountNumberEqualTo4 = 21604,
+        /// <summary>
+        /// 21605 -- en [        5] ---- fr [        5]
+        /// </summary>
+        PipeCountNumberEqualTo5 = 21605,
+        /// <summary>
+        /// 21606 -- en [       6] ---- fr [       6]
+        /// </summary>
+        PipeCountNumberEqualTo6 = 21606,
+        /// <summary>
+        /// 21607 -- en [      7] ---- fr [      7]
+        /// </summary>
+        PipeCountNumberEqualTo7 = 21607,
+        /// <summary>
+        /// 21608 -- en [      8] ---- fr [      8]
+        /// </summary>
+        PipeCountNumberEqualTo8 = 21608,
+        /// <summary>
+        /// 21609 -- en [     9] ---- fr [     9]
+        /// </summary>
+        PipeCountNumberEqualTo9 = 21609,
+        /// <summary>
+        /// 21610 -- en [    10] ---- fr [    10]
+        /// </summary>
+        PipeCountNumberEqualTo10 = 21610,
+        /// <summary>
+        /// 14500 -- en [Diameter (cm)] ---- fr [Diamètre du tuyau ou d'un conduit d'eau en centimètres ]
+        /// </summary>
+        DiameterInCentimetersStart = 14500,
+        /// <summary>
+        /// 14501 -- en [            < 30] ---- fr [            < 30]
+        /// </summary>
+        DiameterInCentimetersLessThan30 = 14501,
+        /// <summary>
+        /// 14502 -- en [           31-50] ---- fr [           31-50]
+        /// </summary>
+        DiameterInCentimetersBetween31and50cm = 14502,
+        /// <summary>
+        /// 14503 -- en [          51-100] ---- fr [          51-100]
+        /// </summary>
+        DiameterInCentimetersBetween51and100cm = 14503,
+        /// <summary>
+        /// 14504 -- en [        101 - 200] ---- fr [        101 - 200]
+        /// </summary>
+        DiameterInCentimetersBetween101and200cm = 14504,
+        /// <summary>
+        /// 14505 -- en [       201 - 300] ---- fr [       201 - 300]
+        /// </summary>
+        DiameterInCentimetersBetween201and300cm = 14505,
+        /// <summary>
+        /// 14506 -- en [     301 - 400] ---- fr [     301 - 400]
+        /// </summary>
+        DiameterInCentimetersBetween301and400cm = 14506,
+        /// <summary>
+        /// 14507 -- en [    401-500] ---- fr [    401-500]
+        /// </summary>
+        DiameterInCentimetersBetween401and500cm = 14507,
+        /// <summary>
+        /// 14508 -- en [ > 500] ---- fr [ > 500]
+        /// </summary>
+        DiameterInCentimetersGreaterThan500cm = 14508,
+        /// <summary>
+        /// 14509 -- en [No Data] ---- fr [Information Not Available]
+        /// </summary>
+        DiameterNoInformation = 14509,
+        /// <summary>
+        /// 14900 -- en [Ditch Location] ---- fr [Fossé]
+        /// </summary>
+        DitchStart = 14900,
+        /// <summary>
+        /// 14901 -- en [Along  Road] ---- fr [Le long d'un chemin]
+        /// </summary>
+        DitchAlongRoad = 14901,
+        /// <summary>
+        /// 14902 -- en [Across Properties] ---- fr [Par le biais de terrains]
+        /// </summary>
+        DitchAcrossProperties = 14902,
+        /// <summary>
+        /// 15000 -- en [Ground Cover] ---- fr [Écoulement]
+        /// </summary>
+        DrainageStart = 15000,
+        /// <summary>
+        /// 15001 -- en [Paved ] ---- fr [Surface d'asphalte]
+        /// </summary>
+        DrainagePavedSurfaces = 15001,
+        /// <summary>
+        /// 15002 -- en [Vegetated ] ---- fr [Surface recouverte de végétation]
+        /// </summary>
+        DrainageVegetatedSurfaces = 15002,
+        /// <summary>
+        /// 15003 -- en [Bare ] ---- fr [Sol]
+        /// </summary>
+        DrainageBareSoilSurfaces = 15003,
+        /// <summary>
+        /// 14600 -- en [Discharge] ---- fr [Débit]
+        /// </summary>
+        FlowLevelStart = 14600,
+        /// <summary>
+        /// 14601 -- en [High] ---- fr [Élevé]
+        /// </summary>
+        FlowLevelHigh = 14601,
+        /// <summary>
+        /// 14602 -- en [ Medium] ---- fr [ Moyen]
+        /// </summary>
+        FlowLevelMedium = 14602,
+        /// <summary>
+        /// 14603 -- en [  Low] ---- fr [  Faible]
+        /// </summary>
+        FlowLevelLow = 14603,
+        /// <summary>
+        /// 13300 -- en [Discharge] ---- fr [Débit]
+        /// </summary>
+        PipeFlowStart = 13300,
+        /// <summary>
+        /// 13301 -- en [High] ---- fr [Élevé]
+        /// </summary>
+        PipeFlowlHigh = 13301,
+        /// <summary>
+        /// 13302 -- en [ Medium] ---- fr [ Moyen]
+        /// </summary>
+        PipeFlowMedium = 13302,
+        /// <summary>
+        /// 13303 -- en [  Low] ---- fr [  Faible]
+        /// </summary>
+        PipeFlowLow = 13303,
+        /// <summary>
+        /// 20200 -- en [Pathway] ---- fr [Source ponctuelle]
+        /// </summary>
+        PathwaySourceWaterStart = 20200,
+        /// <summary>
+        /// 20201 -- en [Direct] ---- fr [Directement vers l'eau]
+        /// </summary>
+        PathwaySourceWaterDirectToMarine = 20201,
+        /// <summary>
+        /// 20202 -- en [Pipe] ---- fr [Tuyau]
+        /// </summary>
+        PathwaySourceWaterPipe = 20202,
+        /// <summary>
+        /// 20203 -- en [Land Disposal] ---- fr [Directement vers un cours d'eau]
+        /// </summary>
+        PathwaySourceWaterLandDisposal = 20203,
+        /// <summary>
+        /// 10300 -- en [Distance (m) To Shoreline] ---- fr [Distance sur l'eau]
+        /// </summary>
+        DistanceOnWaterMetersStart = 10300,
+        /// <summary>
+        /// 10301 -- en [                                 5] ---- fr [                                 5]
+        /// </summary>
+        DistanceOnWaterMetersEqual5 = 10301,
+        /// <summary>
+        /// 10302 -- en [                          10] ---- fr [                        10]
+        /// </summary>
+        DistanceOnWaterMetersEqual10 = 10302,
+        /// <summary>
+        /// 10303 -- en [                     20] ---- fr [                     20]
+        /// </summary>
+        DistanceOnWaterMetersEqual20 = 10303,
+        /// <summary>
+        /// 10304 -- en [                    30] ---- fr [                    30]
+        /// </summary>
+        DistanceOnWaterMetersEqual30 = 10304,
+        /// <summary>
+        /// 10305 -- en [                40] ---- fr [                40]
+        /// </summary>
+        DistanceOnWaterMetersEqual40 = 10305,
+        /// <summary>
+        /// 10306 -- en [               50] ---- fr [               50]
+        /// </summary>
+        DistanceOnWaterMetersEqual50 = 10306,
+        /// <summary>
+        /// 10307 -- en [              75] ---- fr [              75]
+        /// </summary>
+        DistanceOnWaterMetersEqual75 = 10307,
+        /// <summary>
+        /// 10308 -- en [             100] ---- fr [             100]
+        /// </summary>
+        DistanceOnWaterMetersEqual100 = 10308,
+        /// <summary>
+        /// 10309 -- en [            150] ---- fr [            150]
+        /// </summary>
+        DistanceOnWaterMetersEqual150 = 10309,
+        /// <summary>
+        /// 10310 -- en [           200] ---- fr [           200]
+        /// </summary>
+        DistanceOnWaterMetersEqual200 = 10310,
+        /// <summary>
+        /// 10311 -- en [          300] ---- fr [          300]
+        /// </summary>
+        DistanceOnWaterMetersEqual300 = 10311,
+        /// <summary>
+        /// 10312 -- en [         400] ---- fr [         400]
+        /// </summary>
+        DistanceOnWaterMetersEqual400 = 10312,
+        /// <summary>
+        /// 10313 -- en [         600] ---- fr [         600]
+        /// </summary>
+        DistanceOnWaterMetersEqual600 = 10313,
+        /// <summary>
+        /// 10314 -- en [        800] ---- fr [        800]
+        /// </summary>
+        DistanceOnWaterMetersEqual800 = 10314,
+        /// <summary>
+        /// 10315 -- en [      1000] ---- fr [      1000]
+        /// </summary>
+        DistanceOnWaterMetersEqual1000 = 10315,
+        /// <summary>
+        /// 10316 -- en [  > 1000] ---- fr [  > 1000]
+        /// </summary>
+        DistanceOnWaterMetersGreaterThan1000 = 10316,
+        /// <summary>
+        /// 91000 -- en [Risk To Pollute] ---- fr [Le risque de pollution]
+        /// </summary>
+        RiskStart = 91000,
+        /// <summary>
+        /// 91001 -- en [                             Low] ---- fr [Faible ]
+        /// </summary>
+        RiskLow = 91001,
+        /// <summary>
+        /// 91002 -- en [                  Moderate] ---- fr [  Moyen]
+        /// </summary>
+        RiskModerate = 91002,
+        /// <summary>
+        /// 91003 -- en [High] ---- fr [Élevé]
+        /// </summary>
+        RiskHighP = 91003,
+        /// <summary>
+        /// 91004 -- en [High Confirmed Visual ] ---- fr [Élevé, confirmation visuelle]
+        /// </summary>
+        RiskHighConfirmedVisual = 91004,
+        /// <summary>
+        /// 91005 -- en [High Confirmed Water Sample] ---- fr [Élevé, confirmation par échantillon d'eau]
+        /// </summary>
+        RishHighConfirmedWater = 91005,
+        /// <summary>
+        /// 92000 -- en [Follow-Up] ---- fr [Données du suivi]
+        /// </summary>
+        FollowupStart = 92000,
+        /// <summary>
+        /// 92001 -- en [Required] ---- fr [Suivi requis]
+        /// </summary>
+        FollowupRequired = 92001,
+        /// <summary>
+        /// 92002 -- en [Not Required] ---- fr [Suivi non-requis]
+        /// </summary>
+        FollowupNotRequired = 92002,
     }
 }

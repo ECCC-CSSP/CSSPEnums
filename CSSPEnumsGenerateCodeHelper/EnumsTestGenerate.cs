@@ -134,9 +134,9 @@ namespace CSSPEnumsGenerateCodeHelper
             sb.AppendLine(@"            {");
             sb.AppendLine(@"                SetupTest(culture);");
             sb.AppendLine(@"");
-            sb.AppendLine(@"                List<int?> intList = new List<int?>() { (int)PolSourceObsInfoEnum.AgricultureBuilding, (int)PolSourceObsInfoEnum.AquacultureBarges };");
-            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AgricultureBuilding, intList[0]);");
-            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AquacultureBarges, intList[1]);");
+            sb.AppendLine(@"                List<int?> intList = new List<int?>() { (int)PolSourceObsInfoEnum.AgriculturalSourceCrop, (int)PolSourceObsInfoEnum.AgricultureSourcePasture };");
+            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AgriculturalSourceCrop, intList[0]);");
+            sb.AppendLine(@"                Assert.AreEqual((int)PolSourceObsInfoEnum.AgricultureSourcePasture, intList[1]);");
             sb.AppendLine(@"                string retStr = enums.EnumTypeListOK(typeof(PolSourceObsInfoEnum), intList);");
             sb.AppendLine(@"                Assert.AreEqual("""", retStr);");
             sb.AppendLine(@"");
