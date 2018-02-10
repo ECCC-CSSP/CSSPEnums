@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums.cs" />
-    <Compile Include="PolSourceObsInfoEnumGenerated.cs" />
+    <Compile Include="EnumsWithHelp.cs" />
+    <Compile Include="PolSourceObsInfoEnumGeneratedWithHelp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CSSPEnumsRes.Designer.cs">
       <AutoGen>True</AutoGen>
