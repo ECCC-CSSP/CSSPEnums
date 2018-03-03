@@ -6689,7 +6689,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.SourceHumanMarine:
                         case PolSourceObsInfoEnum.SourceAnimal:
                         case PolSourceObsInfoEnum.SourceEffluentLand:
-                        case PolSourceObsInfoEnum.SourceEffluentWater:
+                        case PolSourceObsInfoEnum.SourceEffluentMarine:
                         case PolSourceObsInfoEnum.HumanPollutionSingleStart:
                         case PolSourceObsInfoEnum.HumanPollutionSingleResidential:
                         case PolSourceObsInfoEnum.HumanPollutionSingleCottage:
@@ -6741,9 +6741,13 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo8:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo9:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo10:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween11and25:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween26and40:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberGreaterThan40:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween11and20:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween21and40:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween41and60:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween61and100:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween101and200:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween201and400:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberGreaterThan400:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo1M:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo2M:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo3M:
@@ -6754,17 +6758,21 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo8M:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo9M:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo10M:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween11and25M:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween26and40M:
-                        case PolSourceObsInfoEnum.HumanPollutionCountNumberGreaterThan40M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween11and20M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween21and40M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween41and60M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween61and100M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween101and200M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberBetween201and400M:
+                        case PolSourceObsInfoEnum.HumanPollutionCountNumberGreaterThan400M:
                         case PolSourceObsInfoEnum.HumanLocationStart:
                         case PolSourceObsInfoEnum.HumanLocationRural:
                         case PolSourceObsInfoEnum.HumanLocationUrban:
                         case PolSourceObsInfoEnum.HumanLocationForested:
                         case PolSourceObsInfoEnum.HumanLocationAgricultural:
                         case PolSourceObsInfoEnum.HumanLocationFarm:
-                        case PolSourceObsInfoEnum.HumanLocationShoreline:
-                        case PolSourceObsInfoEnum.HumanLocationWharf:
+                        case PolSourceObsInfoEnum.HumanLocationShorelineMarine:
+                        case PolSourceObsInfoEnum.HumanLocationWharfMarine:
                         case PolSourceObsInfoEnum.HumanLocationBarge:
                         case PolSourceObsInfoEnum.HumanLocationIsland:
                         case PolSourceObsInfoEnum.HumanLocationRecreationalArea:
@@ -6772,14 +6780,15 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.HumanLocationWetland:
                         case PolSourceObsInfoEnum.HumanLocationWaterCourse:
                         case PolSourceObsInfoEnum.HumanLocationFishPlant:
-                        case PolSourceObsInfoEnum.HumanLocationAquacultureSite:
-                        case PolSourceObsInfoEnum.HumanLocationAnchorageMooringSite:
-                        case PolSourceObsInfoEnum.HumanLocationDisposalAtSea:
-                        case PolSourceObsInfoEnum.HumanLocationMarinePark:
-                        case PolSourceObsInfoEnum.HumanLocationMarina:
-                        case PolSourceObsInfoEnum.HumanLocationFloatHomeCommunity:
+                        case PolSourceObsInfoEnum.HumanLocationAquacultureSiteMarine:
+                        case PolSourceObsInfoEnum.HumanLocationAnchorageMooringSiteMarine:
+                        case PolSourceObsInfoEnum.HumanLocationDisposalAtSeaMarine:
+                        case PolSourceObsInfoEnum.HumanLocationMarineParkMarine:
+                        case PolSourceObsInfoEnum.HumanLocationMarinaMarine:
+                        case PolSourceObsInfoEnum.HumanLocationFloatHomeCommunityMarine:
                         case PolSourceObsInfoEnum.HumanLocationMarinaLand:
                         case PolSourceObsInfoEnum.HumanLocationShorelineLand:
+                        case PolSourceObsInfoEnum.HumanLocationWharfLand:
                         case PolSourceObsInfoEnum.IndustrialAreaSizeStart:
                         case PolSourceObsInfoEnum.IndustrialAreaSizeMetersEquals10:
                         case PolSourceObsInfoEnum.IndustrialAreaSizeMetersEquals20:
@@ -6809,7 +6818,6 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.IndustrialEffluentAquacultureSite:
                         case PolSourceObsInfoEnum.IndustrialEffluentAnchorageMooringSite:
                         case PolSourceObsInfoEnum.IndustrialEffluentDisposalAtSea:
-                        case PolSourceObsInfoEnum.IndustrialEffluentMarinePark:
                         case PolSourceObsInfoEnum.IndustrialEffluentMarina:
                         case PolSourceObsInfoEnum.IndustrialEffluentRural:
                         case PolSourceObsInfoEnum.IndustrialEffluentShoreline:
@@ -6822,6 +6830,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.ManureManagementStart:
                         case PolSourceObsInfoEnum.ManureManagementPileSpread:
                         case PolSourceObsInfoEnum.ManureManagementLiqSpread:
+                        case PolSourceObsInfoEnum.ManureManagementBoth:
                         case PolSourceObsInfoEnum.FieldLocationStart:
                         case PolSourceObsInfoEnum.FieldLocationOnFarm:
                         case PolSourceObsInfoEnum.FieldLocationOffFarm:
@@ -6926,6 +6935,10 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.RecreationDayUseArea:
                         case PolSourceObsInfoEnum.RecreationSwimmingArea:
                         case PolSourceObsInfoEnum.RecreationGolfCourse:
+                        case PolSourceObsInfoEnum.RecreationCampgroundSewage:
+                        case PolSourceObsInfoEnum.RecreationDayUseAreaSewage:
+                        case PolSourceObsInfoEnum.RecreationSwimmingAreaSewage:
+                        case PolSourceObsInfoEnum.RecreationGolfCourseSewage:
                         case PolSourceObsInfoEnum.RECCountNumberStart:
                         case PolSourceObsInfoEnum.RECCountNumber10:
                         case PolSourceObsInfoEnum.RECCountNumber30:
@@ -6937,6 +6950,8 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.CampgroundFacilitiesStart:
                         case PolSourceObsInfoEnum.CampgroundNoDumpStn:
                         case PolSourceObsInfoEnum.CampgroundWithDumpStn:
+                        case PolSourceObsInfoEnum.CampgroundNoDumpStnSewage:
+                        case PolSourceObsInfoEnum.CampgroundWithDumpStnSewage:
                         case PolSourceObsInfoEnum.UrbanStart:
                         case PolSourceObsInfoEnum.UrbanStormWater:
                         case PolSourceObsInfoEnum.UrbanWastewaterDumpStation:
@@ -6974,6 +6989,20 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.TypesOfWildlifeBeaver:
                         case PolSourceObsInfoEnum.TypesOfWildlifeMuskrat:
                         case PolSourceObsInfoEnum.AnimalLocationStart:
+                        case PolSourceObsInfoEnum.AnimalLocationRuralDom:
+                        case PolSourceObsInfoEnum.AnimalLocationUrbanDom:
+                        case PolSourceObsInfoEnum.AnimalLocationForestedDom:
+                        case PolSourceObsInfoEnum.AnimalLocationAgriculturalDom:
+                        case PolSourceObsInfoEnum.AnimalLocationFarmDom:
+                        case PolSourceObsInfoEnum.AnimalLocationShorelineDom:
+                        case PolSourceObsInfoEnum.AnimalLocationWharfDom:
+                        case PolSourceObsInfoEnum.AnimalLocationBargeDom:
+                        case PolSourceObsInfoEnum.AnimalLocationIslandDom:
+                        case PolSourceObsInfoEnum.AnimalLocationRecreationalAreaDom:
+                        case PolSourceObsInfoEnum.AnimalLocationCottageLotDom:
+                        case PolSourceObsInfoEnum.AnimalLocationWetlandDom:
+                        case PolSourceObsInfoEnum.AnimalLocationWaterCourseDom:
+                        case PolSourceObsInfoEnum.AnimalLocationFishPlant:
                         case PolSourceObsInfoEnum.AnimalLocationRural:
                         case PolSourceObsInfoEnum.AnimalLocationUrban:
                         case PolSourceObsInfoEnum.AnimalLocationForested:
@@ -6987,7 +7016,6 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.AnimalLocationCottageLot:
                         case PolSourceObsInfoEnum.AnimalLocationWetland:
                         case PolSourceObsInfoEnum.AnimalLocationWaterCourse:
-                        case PolSourceObsInfoEnum.AnimalLocationFishPlant:
                         case PolSourceObsInfoEnum.AnimalBldgStart:
                         case PolSourceObsInfoEnum.AnimalBldgEquals1:
                         case PolSourceObsInfoEnum.AnimalBldgEquals2:
@@ -7054,18 +7082,17 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.WaterAquacultureSiteFallow:
                         case PolSourceObsInfoEnum.WatAquaCountNumberStart:
                         case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo1:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo2:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo3:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo4:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo5:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo6:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo7:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo8:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo9:
                         case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo10:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberBetween11and25:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberBetween26and40:
-                        case PolSourceObsInfoEnum.WatAquaCountNumberGreaterThan40:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo20:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo30:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo40:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo50:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo60:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo70:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo80:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo90:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberEqualTo100:
+                        case PolSourceObsInfoEnum.WatAquaCountNumberGreaterThan100:
                         case PolSourceObsInfoEnum.WaterAquacultureTypeSingleStart:
                         case PolSourceObsInfoEnum.WaterAquacultureTypeSingleCages:
                         case PolSourceObsInfoEnum.WaterAquacultureTypeSingleFloatingBags:
@@ -7101,6 +7128,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.MarineSourcesOfContaminantStart:
                         case PolSourceObsInfoEnum.MarineSourcesOfContaminantRunoff:
                         case PolSourceObsInfoEnum.MarineSourcesOfContaminantExcrement:
+                        case PolSourceObsInfoEnum.MarineSourcesOfContaminantEffluent:
                         case PolSourceObsInfoEnum.SourcesOfContaminantStart:
                         case PolSourceObsInfoEnum.SourcesOfContaminantRunoff:
                         case PolSourceObsInfoEnum.SourcesOfContaminantRunoffFromField:
@@ -7108,12 +7136,15 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.SourcesOfContaminantTankWater:
                         case PolSourceObsInfoEnum.SourcesOfContaminantSewage:
                         case PolSourceObsInfoEnum.SourcesOfContaminantEffluent:
-                        case PolSourceObsInfoEnum.SourcesOfContaminantAnimalExcrement:
+                        case PolSourceObsInfoEnum.SourcesOfContaminantDomesticExcrement:
                         case PolSourceObsInfoEnum.SourcesOfContaminantMarineWashrooms:
                         case PolSourceObsInfoEnum.SourcesOfContaminantLandMarine:
                         case PolSourceObsInfoEnum.SourcesOfContaminantSpills:
+                        case PolSourceObsInfoEnum.SourcesOfContaminantWilldExcrement:
+                        case PolSourceObsInfoEnum.SourcesOfContaminantEffluentMarine:
+                        case PolSourceObsInfoEnum.SourcesOfContaminantEffluentLocation:
                         case PolSourceObsInfoEnum.SewageStart:
-                        case PolSourceObsInfoEnum.SewageRunoff:
+                        case PolSourceObsInfoEnum.SewageRunoffLand:
                         case PolSourceObsInfoEnum.SewageThruConduit:
                         case PolSourceObsInfoEnum.SewageSepticSystemLeachateField:
                         case PolSourceObsInfoEnum.SewageRetentionTank:
@@ -7124,10 +7155,42 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.SepticNoInformation:
                         case PolSourceObsInfoEnum.SewageAnimalWasteStorage:
                         case PolSourceObsInfoEnum.SewageAnimalExcrement:
+                        case PolSourceObsInfoEnum.SewageRunoffMarine:
+                        case PolSourceObsInfoEnum.SewageThruConduitMarine:
+                        case PolSourceObsInfoEnum.SewageRetentionTankMarine:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelStart:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelHigh:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelMed:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelLow:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelHighMarine:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelMedMarine:
+                        case PolSourceObsInfoEnum.ObservationHazardousLevelLowMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonStart:
+                        case PolSourceObsInfoEnum.ObservationHazReasonVisualH:
+                        case PolSourceObsInfoEnum.ObservationHazReasonNumbersH:
+                        case PolSourceObsInfoEnum.ObservationHazReasonDiscussH:
+                        case PolSourceObsInfoEnum.ObservationHazReasonRainfallH:
+                        case PolSourceObsInfoEnum.ObservationHazReasonVisualM:
+                        case PolSourceObsInfoEnum.ObservationHazReasonNumbersM:
+                        case PolSourceObsInfoEnum.ObservationHazReasonDiscussM:
+                        case PolSourceObsInfoEnum.ObservationHazReasonRainfallM:
+                        case PolSourceObsInfoEnum.ObservationHazReasonVisualHMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonNumbersHMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonDiscussHMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonRainfallHMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonVisualMMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonNumbersMMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonDiscussMMarine:
+                        case PolSourceObsInfoEnum.ObservationHazReasonRainfallMMarine:
                         case PolSourceObsInfoEnum.PathWayStart:
-                        case PolSourceObsInfoEnum.PathwayLand:
-                        case PolSourceObsInfoEnum.PathWayMarine:
+                        case PolSourceObsInfoEnum.PathwayLandHigh:
+                        case PolSourceObsInfoEnum.PathwayLandMed:
+                        case PolSourceObsInfoEnum.PathwayLandLow:
+                        case PolSourceObsInfoEnum.PathWayMarineHigh:
+                        case PolSourceObsInfoEnum.PathWayMarineMed:
+                        case PolSourceObsInfoEnum.PathWayMarineLow:
                         case PolSourceObsInfoEnum.PathWayInActive:
+                        case PolSourceObsInfoEnum.PathWayNotDetermined:
                         case PolSourceObsInfoEnum.PathwayRouteFirstStart:
                         case PolSourceObsInfoEnum.PathwaySourceFirstCulvert:
                         case PolSourceObsInfoEnum.PathwaySourceFirstPipe:
@@ -7136,18 +7199,59 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.PathwaySourceFirstSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceFirstSubSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceFirstDirectFlow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstCulvertMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstPipeMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstStreamMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstDitchMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstSubSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstDirectFlowMed:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstCulvertLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstPipeLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstStreamLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstDitchLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstSubSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstDirectFlowLow:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstInActive:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstNotDetermined:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstMunicipalityONSITE:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstDirectMARINE:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstPipeMARINE:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstLandDisposalMARINE:
+                        case PolSourceObsInfoEnum.PathwaySourceFirstMunicipalityOFFSITE:
                         case PolSourceObsInfoEnum.PathwayRouteSecondPipeStart:
                         case PolSourceObsInfoEnum.PathwaySourceSecondPipeStream:
                         case PolSourceObsInfoEnum.PathwaySourceSecondPipeDitch:
                         case PolSourceObsInfoEnum.PathwaySourceSecondPipeSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceSecondPipeSubSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceSecondPipeDirectflow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeStreamMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeDitchMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeSubSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeDirectflowMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeStreamLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeDitchLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeSubSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondPipeDirectflowLow:
                         case PolSourceObsInfoEnum.PathwayRouteSecondCulvertStart:
                         case PolSourceObsInfoEnum.PathwaySourceSecondCulvertStream:
                         case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDitch:
                         case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSubSurfaceDrainage:
                         case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDirectFlow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertStreamMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDitchMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSubSurfaceDrainageMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDirectFlowMed:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertStreamLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDitchLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertSubSurfaceDrainageLow:
+                        case PolSourceObsInfoEnum.PathwaySourceSecondCulvertDirectFlowLow:
                         case PolSourceObsInfoEnum.WidthInMetersStart:
                         case PolSourceObsInfoEnum.WidthInMetersApprox1:
                         case PolSourceObsInfoEnum.WidthInMetersApprox2:
@@ -7162,27 +7266,68 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.WidthInMetersBetween11And25:
                         case PolSourceObsInfoEnum.WidthInMetersBetween26And40:
                         case PolSourceObsInfoEnum.WidthInMetersGreaterThan40:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox1Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox2Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox3Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox4Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox5Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox6Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox7Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox8Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox9Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox10Med:
+                        case PolSourceObsInfoEnum.WidthInMetersBetween11And25Med:
+                        case PolSourceObsInfoEnum.WidthInMetersBetween26And40Med:
+                        case PolSourceObsInfoEnum.WidthInMetersGreaterThan40Med:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox1Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox2Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox3Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox4Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox5Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox6Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox7Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox8Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox9Low:
+                        case PolSourceObsInfoEnum.WidthInMetersApprox10Low:
+                        case PolSourceObsInfoEnum.WidthInMetersBetween11And25Low:
+                        case PolSourceObsInfoEnum.WidthInMetersBetween26And40Low:
+                        case PolSourceObsInfoEnum.WidthInMetersGreaterThan40Low:
                         case PolSourceObsInfoEnum.AreaSlopeStart:
                         case PolSourceObsInfoEnum.AreaSlopeLow:
                         case PolSourceObsInfoEnum.AreaSlopeMedium:
                         case PolSourceObsInfoEnum.AreaSlopeHigh:
                         case PolSourceObsInfoEnum.AreaSlopeNA:
-                        case PolSourceObsInfoEnum.AreaSlopeLowVegetated:
-                        case PolSourceObsInfoEnum.AreaSlopeMediumVegetated:
-                        case PolSourceObsInfoEnum.AreaSlopeHighVegetated:
-                        case PolSourceObsInfoEnum.AreaSlopeNAVegetated:
+                        case PolSourceObsInfoEnum.AreaSlopeLowMed:
+                        case PolSourceObsInfoEnum.AreaSlopeMediumMed:
+                        case PolSourceObsInfoEnum.AreaSlopeHighMed:
+                        case PolSourceObsInfoEnum.AreaSlopeNAMed:
+                        case PolSourceObsInfoEnum.AreaSlopeLowLow:
+                        case PolSourceObsInfoEnum.AreaSlopeMediumLow:
+                        case PolSourceObsInfoEnum.AreaSlopeHighLow:
+                        case PolSourceObsInfoEnum.AreaSlopeNALow:
                         case PolSourceObsInfoEnum.WaterCourseAreaSlopeStart:
                         case PolSourceObsInfoEnum.WaterCourseAreaSlopeLow:
                         case PolSourceObsInfoEnum.WaterCourseAreaSlopeMedium:
                         case PolSourceObsInfoEnum.WaterCourseAreaSlopeHigh:
                         case PolSourceObsInfoEnum.WaterCourseAreaSlopeNA:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeLowMed:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeMediumMed:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeHighMed:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeNAMed:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeLowLow:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeMediumLow:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeHighLow:
+                        case PolSourceObsInfoEnum.WaterCourseAreaSlopeNALow:
                         case PolSourceObsInfoEnum.ShorelineRiparionZoneStart:
                         case PolSourceObsInfoEnum.ShorelineRiparianZonePresent:
                         case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsent:
                         case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfo:
-                        case PolSourceObsInfoEnum.ShorelineRiparianZonePresentVeg:
-                        case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsentVeg:
-                        case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoVeg:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZonePresentMed:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsentMed:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoMed:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZonePresentLow:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsentLow:
+                        case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureStart:
                         case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                         case PolSourceObsInfoEnum.FlowThroughStructurePipe:
@@ -7190,12 +7335,89 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.FlowThroughStructureBerm:
                         case PolSourceObsInfoEnum.FlowThroughStructureWetland:
                         case PolSourceObsInfoEnum.StructureInRoadNoStructure:
-                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertVeg:
-                        case PolSourceObsInfoEnum.FlowThroughStructurePipeVeg:
-                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeVeg:
-                        case PolSourceObsInfoEnum.FlowThroughStructureBermVeg:
-                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandVeg:
-                        case PolSourceObsInfoEnum.StructureInRoadNoStructureVeg:
+                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBermMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
+                        case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBermLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
+                        case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
+                        case PolSourceObsInfoEnum.FlowThroughWaterCourseStart:
+                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBermWaterCourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandWaterCourse:
+                        case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBermWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandWaterCourseMed:
+                        case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBermWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureWetlandWaterCourseLow:
+                        case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
+                        case PolSourceObsInfoEnum.WaterCourseDistStart:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetersGreaterThan1000W:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetersInfoRequiredW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetGrThan1000MedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetInfoReqMedW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetGrThan1000LowW:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetInfoReqLowW:
                         case PolSourceObsInfoEnum.PipeCountNumberStart:
                         case PolSourceObsInfoEnum.PipeCountNumberEqualTo1:
                         case PolSourceObsInfoEnum.PipeCountNumberEqualTo2:
@@ -7207,6 +7429,26 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.PipeCountNumberEqualTo8:
                         case PolSourceObsInfoEnum.PipeCountNumberEqualTo9:
                         case PolSourceObsInfoEnum.PipeCountNumberEqualTo10:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo1Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo2Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo3Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo4Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo5Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo6Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo7Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo8Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo9Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo10Med:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo1Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo2Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo3Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo4Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo5Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo6Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo7Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo8Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo9Low:
+                        case PolSourceObsInfoEnum.PipeCountNumberEqualTo10Low:
                         case PolSourceObsInfoEnum.DiameterInCentimetersStart:
                         case PolSourceObsInfoEnum.DiameterInCentimetersEqual15:
                         case PolSourceObsInfoEnum.DiameterInCentimetersEqual30:
@@ -7218,31 +7460,81 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cm:
                         case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cm:
                         case PolSourceObsInfoEnum.DiameterNoInformation:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersEqual15Med:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersEqual30Med:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween31and50cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween51and100cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween101and200cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween201and300cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween301and400cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cmMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cmMed:
+                        case PolSourceObsInfoEnum.DiameterNoInformationMed:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersEqual15Low:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersEqual30Low:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween31and50cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween51and100cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween101and200cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween201and300cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween301and400cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersBetween401and500cmLow:
+                        case PolSourceObsInfoEnum.DiameterInCentimetersGreaterThan500cmLow:
+                        case PolSourceObsInfoEnum.DiameterNoInformationLow:
                         case PolSourceObsInfoEnum.DitchStart:
                         case PolSourceObsInfoEnum.DitchAlongRoad:
                         case PolSourceObsInfoEnum.DitchAcrossProperties:
+                        case PolSourceObsInfoEnum.DitchAlongRoadMed:
+                        case PolSourceObsInfoEnum.DitchAcrossPropertiesMed:
+                        case PolSourceObsInfoEnum.DitchAlongRoadLow:
+                        case PolSourceObsInfoEnum.DitchAcrossPropertiesLow:
                         case PolSourceObsInfoEnum.DrainageStart:
                         case PolSourceObsInfoEnum.DrainagePavedSurfaces:
                         case PolSourceObsInfoEnum.DrainageVegetatedSurfaces:
                         case PolSourceObsInfoEnum.DrainageBareSoilSurfaces:
+                        case PolSourceObsInfoEnum.DrainagePavedSurfacesMed:
+                        case PolSourceObsInfoEnum.DrainageVegetatedSurfacesMed:
+                        case PolSourceObsInfoEnum.DrainageBareSoilSurfacesMed:
+                        case PolSourceObsInfoEnum.DrainagePavedSurfacesLow:
+                        case PolSourceObsInfoEnum.DrainageVegetatedSurfacesLow:
+                        case PolSourceObsInfoEnum.DrainageBareSoilSurfacesLow:
                         case PolSourceObsInfoEnum.FlowLevelStart:
                         case PolSourceObsInfoEnum.FlowLevelHi:
                         case PolSourceObsInfoEnum.FlowLevelMed:
                         case PolSourceObsInfoEnum.FlowLevelLo:
                         case PolSourceObsInfoEnum.FlowLevelRain:
-                        case PolSourceObsInfoEnum.FlowLevelHighVegetate:
-                        case PolSourceObsInfoEnum.FlowLevelMediumVegetate:
-                        case PolSourceObsInfoEnum.FlowLevelLowVegetate:
-                        case PolSourceObsInfoEnum.FlowLevelRainfallVegetate:
+                        case PolSourceObsInfoEnum.FlowLevelHighMed:
+                        case PolSourceObsInfoEnum.FlowLevelMediumMed:
+                        case PolSourceObsInfoEnum.FlowLevelLowMed:
+                        case PolSourceObsInfoEnum.FlowLevelRainfallMed:
+                        case PolSourceObsInfoEnum.FlowLevelHighLow:
+                        case PolSourceObsInfoEnum.FlowLevelMediumLow:
+                        case PolSourceObsInfoEnum.FlowLevelLowLow:
+                        case PolSourceObsInfoEnum.FlowLevelRainfallLow:
                         case PolSourceObsInfoEnum.FlowLevelHighWaterCourse:
                         case PolSourceObsInfoEnum.FlowLevelMediumWaterCourse:
                         case PolSourceObsInfoEnum.FlowLevelLowWaterCourse:
                         case PolSourceObsInfoEnum.FlowLevelRainfallWaterCourse:
+                        case PolSourceObsInfoEnum.FlowLevelHighWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowLevelMediumWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowLevelLowWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowLevelRainfallWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowLevelHighWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowLevelMediumWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowLevelLowWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowLevelRainfallWaterCourseLow:
                         case PolSourceObsInfoEnum.PipeFlowStart:
                         case PolSourceObsInfoEnum.PipeFlowlHigh:
                         case PolSourceObsInfoEnum.PipeFlowMedium:
                         case PolSourceObsInfoEnum.PipeFlowLow:
                         case PolSourceObsInfoEnum.PipeFlowNA:
+                        case PolSourceObsInfoEnum.PipeFlowlHighMed:
+                        case PolSourceObsInfoEnum.PipeFlowMediumMed:
+                        case PolSourceObsInfoEnum.PipeFlowLowMed:
+                        case PolSourceObsInfoEnum.PipeFlowNAMed:
+                        case PolSourceObsInfoEnum.PipeFlowlHighLow:
+                        case PolSourceObsInfoEnum.PipeFlowMediumLow:
+                        case PolSourceObsInfoEnum.PipeFlowLowLow:
+                        case PolSourceObsInfoEnum.PipeFlowNALow:
                         case PolSourceObsInfoEnum.DistanceToWaterInMetersStart:
                         case PolSourceObsInfoEnum.DistanceToWaterInMeters0:
                         case PolSourceObsInfoEnum.DistanceToWaterInMeters5:
@@ -7262,86 +7554,84 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.DistanceToWaterInMeters1000:
                         case PolSourceObsInfoEnum.DistanceToWaterInMetersGreaterThan1000:
                         case PolSourceObsInfoEnum.DistanceToWaterInMetersInfoRequired:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMetGrThan1000Vegetation:
-                        case PolSourceObsInfoEnum.DistanceToWaterInMetInfoReqVegetation:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetGrThan1000Med:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetInfoReqMed:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters0Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters5Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters10Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters20Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters30Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters40Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters50Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters75Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters100Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters150Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters200Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters300Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters400Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters600Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters800Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMeters1000Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetGrThan1000Low:
+                        case PolSourceObsInfoEnum.DistanceToWaterInMetInfoReqLow:
                         case PolSourceObsInfoEnum.PathwayRouteMarineStart:
-                        case PolSourceObsInfoEnum.PathwaySourceMarineDirect:
-                        case PolSourceObsInfoEnum.PathwaySourceMarinePipe:
-                        case PolSourceObsInfoEnum.PathwaySourceMarineLandDisposal:
-                        case PolSourceObsInfoEnum.MunicipalityDataStart:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelStart:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelHighIndirect:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelMedIndirect:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelLowIndirect:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelHighDirect:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelMedDirect:
+                        case PolSourceObsInfoEnum.SecondaryHazardousLevelLowDirect:
                         case PolSourceObsInfoEnum.ImpactRatingStart:
-                        case PolSourceObsInfoEnum.ImpactRatingDirect:
-                        case PolSourceObsInfoEnum.ImpactRatingindirect:
+                        case PolSourceObsInfoEnum.ImpactRatingDirectHighHaz:
+                        case PolSourceObsInfoEnum.ImpactRatingindirectHighHaz:
+                        case PolSourceObsInfoEnum.ImpactRatingDirectMedHaz:
+                        case PolSourceObsInfoEnum.ImpactRatingindirectMedHaz:
+                        case PolSourceObsInfoEnum.ImpactRatingDirectLowHaz:
+                        case PolSourceObsInfoEnum.ImpactRatingindirectLowHaz:
                         case PolSourceObsInfoEnum.ImpactRatingNone:
                         case PolSourceObsInfoEnum.StatusStart:
-                        case PolSourceObsInfoEnum.StatusDefinite:
-                        case PolSourceObsInfoEnum.StatusPotential:
+                        case PolSourceObsInfoEnum.StatusDefiniteHi:
+                        case PolSourceObsInfoEnum.StatusPotentialHi:
+                        case PolSourceObsInfoEnum.StatusDefiniteMed:
+                        case PolSourceObsInfoEnum.StatusPotentialMed:
+                        case PolSourceObsInfoEnum.StatusDefiniteLo:
+                        case PolSourceObsInfoEnum.StatusPotentialLo:
                         case PolSourceObsInfoEnum.StatusNonPollutionSource:
-                        case PolSourceObsInfoEnum.RiskAnalysesWaterDepthStart:
-                        case PolSourceObsInfoEnum.DepthDeepDefinite:
-                        case PolSourceObsInfoEnum.DepthShallowDefinite:
-                        case PolSourceObsInfoEnum.DepthDeepPotential:
-                        case PolSourceObsInfoEnum.DepthShallowPotential:
+                        case PolSourceObsInfoEnum.StatusNotDetermined:
+                        case PolSourceObsInfoEnum.DilutionAnalysesWaterDepthStart:
+                        case PolSourceObsInfoEnum.DepthDeepDef:
+                        case PolSourceObsInfoEnum.DepthShallowDef:
+                        case PolSourceObsInfoEnum.DepthDeepPot:
+                        case PolSourceObsInfoEnum.DepthShallowPot:
                         case PolSourceObsInfoEnum.DepthUnknown:
                         case PolSourceObsInfoEnum.TidalAmplitudeStart:
-                        case PolSourceObsInfoEnum.TidalLargeDeepDefinite:
-                        case PolSourceObsInfoEnum.TidalSmallDeepDefinite:
-                        case PolSourceObsInfoEnum.TidalLargeShallowDefinite:
-                        case PolSourceObsInfoEnum.TidalSmallShallowDefinite:
-                        case PolSourceObsInfoEnum.TidalLargeDeepPotential:
-                        case PolSourceObsInfoEnum.TidalSmallDeepPotential:
-                        case PolSourceObsInfoEnum.TidalLargeShallowPotential:
-                        case PolSourceObsInfoEnum.TidalSmallShallowPotential:
+                        case PolSourceObsInfoEnum.TidalLargeDeepDef:
+                        case PolSourceObsInfoEnum.TidalLargeDeepPot:
+                        case PolSourceObsInfoEnum.TidalSmallDeepDef:
+                        case PolSourceObsInfoEnum.TidalSmallDeepPot:
+                        case PolSourceObsInfoEnum.TidalLargeshallowDef:
+                        case PolSourceObsInfoEnum.TidalLargeShallowPot:
+                        case PolSourceObsInfoEnum.TidalSmallShallowDef:
+                        case PolSourceObsInfoEnum.TidalSmallShallowPot:
                         case PolSourceObsInfoEnum.TidalUnknown:
-                        case PolSourceObsInfoEnum.FetchStart:
-                        case PolSourceObsInfoEnum.ShelteredTidalLargeDeepDefinite:
-                        case PolSourceObsInfoEnum.OpenTidalLargeDeepDefinite:
-                        case PolSourceObsInfoEnum.ShelteredTidalSmallDeepDefinite:
-                        case PolSourceObsInfoEnum.OpenTidalSmallDeepDefinite:
-                        case PolSourceObsInfoEnum.ShelteredTidalLgShallowDefinite:
-                        case PolSourceObsInfoEnum.OpenTidalLgShallowDefinite:
-                        case PolSourceObsInfoEnum.ShelteredTidalSmallShallowDefinite:
-                        case PolSourceObsInfoEnum.OpenTidalSmallShallowDefinite:
-                        case PolSourceObsInfoEnum.ShelteresTidalLargeDeepPotential:
-                        case PolSourceObsInfoEnum.OpenTidalLargeDeepPotential:
-                        case PolSourceObsInfoEnum.ShelteredTidalSmallDeepPotential:
-                        case PolSourceObsInfoEnum.OpenTidalSmallDeepPotential:
-                        case PolSourceObsInfoEnum.ShelteredTidalLgShallowPotential:
-                        case PolSourceObsInfoEnum.OpenTidalLgShallowPotential:
-                        case PolSourceObsInfoEnum.ShelteredTidalSmallShallowPotential:
-                        case PolSourceObsInfoEnum.OpenTidalSmallShallowPotential:
-                        case PolSourceObsInfoEnum.ShelterUnknown:
-                        case PolSourceObsInfoEnum.EnclosedTidalLargeDeepDefinStart:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters50:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters100:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters200:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters300:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters400:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters500:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters600:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters700:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters800:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters900:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters1000:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMetGrThan1000:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.OpenTidalLargeDeepDefinStart:
+                        case PolSourceObsInfoEnum.TidalLargeDeepStart:
                         case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet50:
                         case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet100:
                         case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet200:
@@ -7355,21 +7645,20 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet1000:
                         case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetGrThan1000:
                         case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.EnclosedTidalSmallDeepDefinStart:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet50:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet100:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet200:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet300:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet400:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet500:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet600:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet700:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet800:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet900:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet1000:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMetGrThan1000:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.OpenTidalSmallDeepDefinStart:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet50P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet100P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet200P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet300P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet400P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet500P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet600P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet700P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet800P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet900P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet1000P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetGrThan1000P:
+                        case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetInfoReqP:
+                        case PolSourceObsInfoEnum.TidalSmallDeepStart:
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet50:
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet100:
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet200:
@@ -7383,21 +7672,20 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet1000:
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMetGrThan1000:
                         case PolSourceObsInfoEnum.OpenTidSmDeDistToGrAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.EnclosedTidalLgShallowDefinStart:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet50:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet100:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet200:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet300:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet400:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet500:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet600:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet700:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet800:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet900:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet1000:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrAreaInMetGrThan1000:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrAreaInMetnfoReq:
-                        case PolSourceObsInfoEnum.OpenTidalLgShallowDefinStart:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet50P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet100P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet200P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet300P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet400P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet500P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet600P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet700P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet800P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet900P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet1000P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMetGrThan1000P:
+                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrAreaInMetInfoReqP:
+                        case PolSourceObsInfoEnum.TidalLgShallowStart:
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet50:
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet100:
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet200:
@@ -7411,21 +7699,20 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet1000:
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMetGrThan1000:
                         case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.EnclosedTidalSmallShallowDefinStart:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet50:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet100:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet200:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet300:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet400:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet500:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet600:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet700:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet800:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet900:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet1000:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMetGreTh1000:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMetInfoReq:
-                        case PolSourceObsInfoEnum.OpenTidalSmallShallowDefinStart:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet50P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet100P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet200P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet300P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet400P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet500P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet600P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet700P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet800P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet900P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet1000P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMetGrThan1000P:
+                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrAreaInMetInfoReqP:
+                        case PolSourceObsInfoEnum.TidalSmallShallowStart:
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet50:
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet100:
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet200:
@@ -7439,6 +7726,19 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet1000:
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetGrTh1000:
                         case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetInfoReq:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet50P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet100P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet200P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet300P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet400P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet500P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet600P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet700P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet800P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet900P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet1000P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetGrTh1000P:
+                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetInfoReqP:
                         case PolSourceObsInfoEnum.SuggestedRiskStart:
                         case PolSourceObsInfoEnum.SuggestedRiskLow:
                         case PolSourceObsInfoEnum.SuggestedRiskModerate:
@@ -7450,121 +7750,10 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.RiskHighNotConfirmed:
                         case PolSourceObsInfoEnum.RiskHighConfirmedVisual:
                         case PolSourceObsInfoEnum.RishHighConfirmedWater:
-                        case PolSourceObsInfoEnum.ConfirmationOfHighStart:
+                        case PolSourceObsInfoEnum.RiskNotDetermined:
+                        case PolSourceObsInfoEnum.FollowUpStart:
                         case PolSourceObsInfoEnum.FollowupRequired:
                         case PolSourceObsInfoEnum.FollowupCompleted:
-                        case PolSourceObsInfoEnum.EnclosedTidalLargeDeepPotentialStart:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters50Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters100Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters200Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters300Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters400Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters500Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters600Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters700Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters800Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters900Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMeters1000Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.EncTidalLarDeDistToGrowAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.OpenTidalLargeDeepPotentialStart:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDisToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLarDeDistToGrowAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.EnclosedTidalSmallDeepPotentialStart:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrowAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.EncloTidalSmDeDistToGrAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.OpenTidalSmallDeepPotentialStart:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrowAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidSmDeDistToGrAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.EnclosedTidalLgShallowPotentialStart:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.EnclTidalLgShalDistToGrAreaInMetnfoReqPot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShallowPotentialStart:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrowAreaInMetGrThan1000Pot:
-                        case PolSourceObsInfoEnum.OpenTidalLgShalSeaDistToGrAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.EnclosedTidalSmallShallowPotentialStart:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMetGreTh1000Pot:
-                        case PolSourceObsInfoEnum.EnclTidalSmShalSeaDistToGrAreaInMetInfoReqPot:
-                        case PolSourceObsInfoEnum.OpenTidalSmallShallowPotentialStart:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet50Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet100Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet200Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet300Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet400Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet500Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet600Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet700Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet800Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet900Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrowAreaInMet1000Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetGrTh1000Pot:
-                        case PolSourceObsInfoEnum.OpTidalSmShalDistToGrAreaInMetInfoReqPot:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
