@@ -368,8 +368,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_AnalyzeMethod), [SamplingPlan] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_AnalyzeMethodDefault)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html), [SamplingPlanService] (CSSPServices.SamplingPlanService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -1583,8 +1583,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_Laboratory), [SamplingPlan] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_LaboratoryDefault)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html), [SamplingPlanService] (CSSPServices.SamplingPlanService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -3305,8 +3305,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [MWQMRun] (CSSPModels.MWQMRun.html#CSSPModels_MWQMRun_SampleMatrix), [SamplingPlan] (CSSPModels.SamplingPlan.html#CSSPModels_SamplingPlan_SampleMatrixDefault)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [MWQMRunService] (CSSPServices.MWQMRunService.html), [SamplingPlanService] (CSSPServices.SamplingPlanService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
