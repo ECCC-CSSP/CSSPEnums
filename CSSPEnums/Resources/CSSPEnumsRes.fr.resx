@@ -12,7 +12,7 @@
     
     Example:
     
-    ... ado.net/XML headers & schema ...
+    ... ado.net/XML headers and schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
@@ -3801,5 +3801,152 @@
   </data>
   <data name="EntityQueryDetailTypeEnumEntityWeb" xml:space="preserve">
     <value>Entity web (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumCreateDocumentFromParameters" xml:space="preserve">
+    <value>Créer document à partir de paramètres</value>
+  </data>
+  <data name="AppTaskCommandEnumExportToArcGIS" xml:space="preserve">
+    <value>Export to Arc GIS (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear" xml:space="preserve">
+    <value>Fill run precip by climate site priority for year (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumFindMissingPrecipForProvince" xml:space="preserve">
+    <value>Find missing precip for province (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumGetAllPrecipitationForYear" xml:space="preserve">
+    <value>Get all precipitation for year (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataCSVOfMWQMSamples" xml:space="preserve">
+    <value>Open Data CSV of MWQM Samples (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataCSVOfMWQMSites" xml:space="preserve">
+    <value>Open Data CSV of MWQM Sites (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataKMZOfMWQMSites" xml:space="preserve">
+    <value>Open Data KMZ of MWQM Sites (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataXlsxOfMWQMSamples" xml:space="preserve">
+    <value>Open Data Xlsx of MWQM Samples (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataXlsxOfMWQMSites" xml:space="preserve">
+    <value>Open Data Xlsx of MWQM Sites (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumFecalColiform" xml:space="preserve">
+    <value>Fecal Coliform (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumGemetricMean" xml:space="preserve">
+    <value>Gemetric Mean (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumMedian" xml:space="preserve">
+    <value>Median (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumP90" xml:space="preserve">
+    <value>P90 (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumPercOfP90Over260" xml:space="preserve">
+    <value>Percent of P90 &gt; 260 (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumPercOfP90Over43" xml:space="preserve">
+    <value>Percent of P90 &gt; 43 (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumSalinity" xml:space="preserve">
+    <value>Salinity (fr)</value>
+  </data>
+  <data name="ExcelExportShowDataTypeEnumTemperature" xml:space="preserve">
+    <value>Temperature (fr)</value>
+  </data>
+  <data name="FilePurposeEnumOpenData" xml:space="preserve">
+    <value>Open Data (fr)</value>
+  </data>
+  <data name="FilePurposeEnumReportGenerated" xml:space="preserve">
+    <value>Report Generated (fr)</value>
+  </data>
+  <data name="FilePurposeEnumTemplateGenerated" xml:space="preserve">
+    <value>Template Generated (fr)</value>
+  </data>
+  <data name="LaboratoryEnumAvalonLaboratoriesInc" xml:space="preserve">
+    <value>Avalon Laboratories Inc (fr)</value>
+  </data>
+  <data name="PositionEnumLeftBottom" xml:space="preserve">
+    <value>Left Bottom (fr)</value>
+  </data>
+  <data name="PositionEnumLeftTop" xml:space="preserve">
+    <value>Left Top (fr)</value>
+  </data>
+  <data name="PositionEnumRightBottom" xml:space="preserve">
+    <value>Right Bottom (fr)</value>
+  </data>
+  <data name="PositionEnumRightTop" xml:space="preserve">
+    <value>Right Top (fr)</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumMUNICIPALITY_CONTACTS" xml:space="preserve">
+    <value>MUNICIPALITY_CONTACTS</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumMUNICIPALITY_INFRASTRUCTURE_DETAIL" xml:space="preserve">
+    <value>MUNICIPALITY_INFRASTRUCTURE_DETAIL</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumMUNICIPALITY_MAP_INFRASTRUCTURE" xml:space="preserve">
+    <value>MUNICIPALITY_MAP_INFRASTRUCTURE</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_ALL" xml:space="preserve">
+    <value>SUBSECTOR_FC_SUMMARY_STAT_ALL</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_DRY" xml:space="preserve">
+    <value>SUBSECTOR_FC_SUMMARY_STAT_DRY</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_WET" xml:space="preserve">
+    <value>SUBSECTOR_FC_SUMMARY_STAT_WET</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_MWQM_SITES" xml:space="preserve">
+    <value>SUBSECTOR_MAP_ACTIVE_MWQM_SITES</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES" xml:space="preserve">
+    <value>SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES" xml:space="preserve">
+    <value>SUBSECTOR_MUNICIPALITIES</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_DATA_AVAILABILITY" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_FC_TABLE" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_FC_TABLE</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_INFORMATION" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_INFORMATION</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_SALINITY_TABLE" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_SALINITY_TABLE</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE" xml:space="preserve">
+    <value>SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES" xml:space="preserve">
+    <value>SUBSECTOR_POLLUTION_SOURCE_SITES</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE" xml:space="preserve">
+    <value>SUBSECTOR_RE_EVALUATION_COVER_PAGE</value>
+  </data>
+  <data name="SearchTagEnumfrg" xml:space="preserve">
+    <value>frg</value>
+  </data>
+  <data name="SearchTagEnumftg" xml:space="preserve">
+    <value>ftg</value>
+  </data>
+  <data name="TVTypeEnumOpenData" xml:space="preserve">
+    <value>Open Data (fr)</value>
   </data>
 </root>

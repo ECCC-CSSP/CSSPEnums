@@ -502,11 +502,38 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create document from parameters.
+        /// </summary>
+        public static string AppTaskCommandEnumCreateDocumentFromParameters {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumCreateDocumentFromParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create document from parameters.
+        /// </summary>
+        public static string AppTaskCommandEnumCreateDocumentFromParameters1 {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumCreateDocumentFromParameters1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create file from template.
         /// </summary>
         public static string AppTaskCommandEnumCreateDocumentFromTemplate {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumCreateDocumentFromTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Docx PDF.
+        /// </summary>
+        public static string AppTaskCommandEnumCreateDocxPDF {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumCreateDocxPDF", resourceCulture);
             }
         }
         
@@ -538,6 +565,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Xlsx PDF.
+        /// </summary>
+        public static string AppTaskCommandEnumCreateXlsxPDF {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumCreateXlsxPDF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export analysis to Excel.
         /// </summary>
         public static string AppTaskCommandEnumExportAnalysisToExcel {
@@ -556,11 +592,47 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export to Arc GIS.
+        /// </summary>
+        public static string AppTaskCommandEnumExportToArcGIS {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumExportToArcGIS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill run precip by climate site priority for year.
+        /// </summary>
+        public static string AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find missing precip for province.
+        /// </summary>
+        public static string AppTaskCommandEnumFindMissingPrecipForProvince {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumFindMissingPrecipForProvince", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Generate Web Tide.
         /// </summary>
         public static string AppTaskCommandEnumGenerateWebTide {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumGenerateWebTide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get all precipitation for year.
+        /// </summary>
+        public static string AppTaskCommandEnumGetAllPrecipitationForYear {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGetAllPrecipitationForYear", resourceCulture);
             }
         }
         
@@ -624,6 +696,51 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumMikeScenarioWaitingToRun {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumMikeScenarioWaitingToRun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data CSV of MWQM Samples.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataCSVOfMWQMSamples {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataCSVOfMWQMSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data CSV of MWQM Sites.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataCSVOfMWQMSites {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataCSVOfMWQMSites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data KMZ of MWQM Sites.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataKMZOfMWQMSites {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataKMZOfMWQMSites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data Xlsx of MWQM Samples.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataXlsxOfMWQMSamples {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataXlsxOfMWQMSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data Xlsx of MWQM Sites.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataXlsxOfMWQMSites {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataXlsxOfMWQMSites", resourceCulture);
             }
         }
         
@@ -1421,6 +1538,78 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fecal Coliform.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumFecalColiform {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumFecalColiform", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gemetric Mean.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumGemetricMean {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumGemetricMean", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Median.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumMedian {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumMedian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to P90.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumP90 {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumP90", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Percent of P90 &gt; 260.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumPercOfP90Over260 {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumPercOfP90Over260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Percent of P90 &gt; 43.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumPercOfP90Over43 {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumPercOfP90Over43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salinity.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumSalinity {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumSalinity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature.
+        /// </summary>
+        public static string ExcelExportShowDataTypeEnumTemperature {
+            get {
+                return ResourceManager.GetString("ExcelExportShowDataTypeEnumTemperature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FacilityType.
         /// </summary>
         public static string FacilityType {
@@ -1898,6 +2087,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Data.
+        /// </summary>
+        public static string FilePurposeEnumOpenData {
+            get {
+                return ResourceManager.GetString("FilePurposeEnumOpenData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Picture.
         /// </summary>
         public static string FilePurposeEnumPicture {
@@ -1916,11 +2114,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Report Generated.
+        /// </summary>
+        public static string FilePurposeEnumReportGenerated {
+            get {
+                return ResourceManager.GetString("FilePurposeEnumReportGenerated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Template.
         /// </summary>
         public static string FilePurposeEnumTemplate {
             get {
                 return ResourceManager.GetString("FilePurposeEnumTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Template Generated.
+        /// </summary>
+        public static string FilePurposeEnumTemplateGenerated {
+            get {
+                return ResourceManager.GetString("FilePurposeEnumTemplateGenerated", resourceCulture);
             }
         }
         
@@ -2317,6 +2533,15 @@ namespace CSSPEnums.Resources {
         public static string Laboratory {
             get {
                 return ResourceManager.GetString("Laboratory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avalon Laboratories Inc.
+        /// </summary>
+        public static string LaboratoryEnumAvalonLaboratoriesInc {
+            get {
+                return ResourceManager.GetString("LaboratoryEnumAvalonLaboratoriesInc", resourceCulture);
             }
         }
         
@@ -3046,6 +3271,42 @@ namespace CSSPEnums.Resources {
         public static string PolSourceObsInfoTypeEnumText {
             get {
                 return ResourceManager.GetString("PolSourceObsInfoTypeEnumText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Left Bottom.
+        /// </summary>
+        public static string PositionEnumLeftBottom {
+            get {
+                return ResourceManager.GetString("PositionEnumLeftBottom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Left Top.
+        /// </summary>
+        public static string PositionEnumLeftTop {
+            get {
+                return ResourceManager.GetString("PositionEnumLeftTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Right Bottom.
+        /// </summary>
+        public static string PositionEnumRightBottom {
+            get {
+                return ResourceManager.GetString("PositionEnumRightBottom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Right Top.
+        /// </summary>
+        public static string PositionEnumRightTop {
+            get {
+                return ResourceManager.GetString("PositionEnumRightTop", resourceCulture);
             }
         }
         
@@ -3946,6 +4207,186 @@ namespace CSSPEnums.Resources {
         public static string ReportFormatingNumberEnumReportFormatingNumberScientific6Decimal {
             get {
                 return ResourceManager.GetString("ReportFormatingNumberEnumReportFormatingNumberScientific6Decimal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MUNICIPALITY_CONTACTS.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumMUNICIPALITY_CONTACTS {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumMUNICIPALITY_CONTACTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MUNICIPALITY_INFRASTRUCTURE_DETAIL.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumMUNICIPALITY_INFRASTRUCTURE_DETAIL {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumMUNICIPALITY_INFRASTRUCTURE_DETAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MUNICIPALITY_MAP_INFRASTRUCTURE.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumMUNICIPALITY_MAP_INFRASTRUCTURE {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumMUNICIPALITY_MAP_INFRASTRUCTURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_FC_SUMMARY_STAT_ALL.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_ALL {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_ALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_FC_SUMMARY_STAT_DRY.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_DRY {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_DRY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_FC_SUMMARY_STAT_WET.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_WET {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_WET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MAP_ACTIVE_MWQM_SITES.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_MWQM_SITES {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_MWQM_SITES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MUNICIPALITIES.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_DATA_AVAILABILITY {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_DATA_AVAILABILITY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_FC_TABLE.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_FC_TABLE {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_FC_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_INFORMATION.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_INFORMATION {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_INFORMATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_SALINITY_TABLE.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_SALINITY_TABLE {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_SALINITY_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_POLLUTION_SOURCE_SITES.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_RE_EVALUATION_COVER_PAGE.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE", resourceCulture);
             }
         }
         
@@ -5314,6 +5755,24 @@ namespace CSSPEnums.Resources {
         public static string SearchTagEnumfr {
             get {
                 return ResourceManager.GetString("SearchTagEnumfr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to frg.
+        /// </summary>
+        public static string SearchTagEnumfrg {
+            get {
+                return ResourceManager.GetString("SearchTagEnumfrg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ftg.
+        /// </summary>
+        public static string SearchTagEnumftg {
+            get {
+                return ResourceManager.GetString("SearchTagEnumftg", resourceCulture);
             }
         }
         
@@ -6880,6 +7339,15 @@ namespace CSSPEnums.Resources {
         public static string TVTypeEnumNoDepuration {
             get {
                 return ResourceManager.GetString("TVTypeEnumNoDepuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data.
+        /// </summary>
+        public static string TVTypeEnumOpenData {
+            get {
+                return ResourceManager.GetString("TVTypeEnumOpenData", resourceCulture);
             }
         }
         

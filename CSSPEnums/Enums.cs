@@ -62,6 +62,37 @@ namespace CSSPEnums
         Register = 2,
         LoggedIn = 3,
     }
+    public enum DatabaseTypeEnum
+    {
+        Error = 0,
+        MemoryCSSPWebToolsDB = 1,
+        MemoryTestDB = 2,
+        SqlServerCSSPWebToolsDB = 3,
+        SqlServerTestDB = 4,
+    }
+    public enum EntityQueryTypeEnum
+    {
+        Error = 0,
+        AsNoTracking = 1,
+        WithTracking = 2,
+    }
+    public enum EntityQueryDetailTypeEnum
+    {
+        Error = 0,
+        EntityOnly = 1,
+        EntityWeb = 2,
+        EntityReport = 3,
+    }
+    // might be able to delete PolSourceObsInfoTypeEnum
+    public enum PolSourceObsInfoTypeEnum
+    {
+        Error = 0,
+        Description = 1,
+        Report = 2,
+        Text = 3,
+        Initial = 4,
+    }
+
     public enum AddressTypeEnum
     {
         Error = 0,
@@ -138,6 +169,18 @@ namespace CSSPEnums
         CreateWebTideDataWLAtFirstNode = 16,
         ExportEmailDistributionLists = 17,
         ExportAnalysisToExcel = 18,
+        CreateDocumentFromParameters = 19,
+        CreateDocxPDF = 20,
+        CreateXlsxPDF = 21,
+        OpenDataCSVOfMWQMSites = 22,
+        OpenDataKMZOfMWQMSites = 23,
+        OpenDataXlsxOfMWQMSites = 24,
+        OpenDataCSVOfMWQMSamples = 25,
+        OpenDataXlsxOfMWQMSamples = 26,
+        GetAllPrecipitationForYear = 27,
+        FillRunPrecipByClimateSitePriorityForYear = 28,
+        FindMissingPrecipForProvince = 29,
+        ExportToArcGIS = 30,
     }
     public enum AppTaskStatusEnum
     {
@@ -220,14 +263,6 @@ namespace CSSPEnums
         Daily = 1,
         Hourly = 2,
     }
-    public enum DatabaseTypeEnum
-    {
-        Error = 0,
-        MemoryCSSPWebToolsDB = 1,
-        MemoryTestDB = 2,
-        SqlServerCSSPWebToolsDB = 3,
-        SqlServerTestDB = 4,
-    }
     public enum DisinfectionTypeEnum
     {
         Error = 0,
@@ -247,18 +282,17 @@ namespace CSSPEnums
         Personal2 = 3,
         Work2 = 4,
     }
-    public enum EntityQueryTypeEnum
+    public enum ExcelExportShowDataTypeEnum
     {
         Error = 0,
-        AsNoTracking = 1,
-        WithTracking = 2,
-    }
-    public enum EntityQueryDetailTypeEnum
-    {
-        Error = 0,
-        EntityOnly = 1,
-        EntityWeb = 2, 
-        EntityReport = 3,
+        FecalColiform = 1,
+        Temperature = 2,
+        Salinity = 3,
+        P90 = 4,
+        GemetricMean = 5,
+        Median = 6,
+        PercOfP90Over43 = 7,
+        PercOfP90Over260 = 8,
     }
     public enum FacilityTypeEnum
     {
@@ -276,12 +310,13 @@ namespace CSSPEnums
         Information = 5,
         Image = 6,
         Picture = 7,
-        Reported = 8,
-        Generated = 9,
+        ReportGenerated = 8,
+        TemplateGenerated = 9,
         GeneratedFCForm = 10,
         Template = 11,
         Map = 12,
         Analysis = 13,
+        OpenData = 14,
     }
     public enum FileStatusEnum
     {
@@ -369,7 +404,7 @@ namespace CSSPEnums
         MaxxamAnalyticsSydney = 26,
         PEIAnalyticalLaboratory = 27,
         NLMobileLaboratory = 28,
-        PetroformaInc = 29,
+        AvalonLaboratoriesInc = 29
     }
     public enum LabSheetStatusEnum
     {
@@ -447,13 +482,13 @@ namespace CSSPEnums
         ModerateRisk = 2,
         HighRisk = 3,
     }
-    public enum PolSourceObsInfoTypeEnum
+    public enum PositionEnum
     {
         Error = 0,
-        Description = 1,
-        Report = 2,
-        Text = 3,
-        Initial = 4,
+        LeftBottom = 1,
+        RightBottom = 2,
+        LeftTop = 3,
+        RightTop = 4,
     }
     //public enum PolSourceObsInfoEnum is under file EnumsPolSourceInfoGenerated.cs
     public enum PreliminaryTreatmentTypeEnum
@@ -531,7 +566,7 @@ namespace CSSPEnums
         SpecialTableType = 43,
         MWQMSiteLatestClassification = 44,
         PolSourceIssueRisk = 45,
-        MikeScenarioSpecialResultKMLType = 46,
+        MikeScenarioSpecialResultKMLType = 46
     }
     public enum ReportFileTypeEnum
     {
@@ -575,6 +610,30 @@ namespace CSSPEnums
         ReportFormatingNumberScientific4Decimal = 12,
         ReportFormatingNumberScientific5Decimal = 13,
         ReportFormatingNumberScientific6Decimal = 14,
+    }
+    public enum ReportGenerateObjectsKeywordEnum
+    {
+        Error = 0,
+        SUBSECTOR_RE_EVALUATION_COVER_PAGE = 1,
+        SUBSECTOR_FC_SUMMARY_STAT_ALL = 2,
+        SUBSECTOR_FC_SUMMARY_STAT_WET = 3,
+        SUBSECTOR_FC_SUMMARY_STAT_DRY = 4,
+        SUBSECTOR_MAP_ACTIVE_MWQM_SITES = 5,
+        SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES = 6,
+        SUBSECTOR_MWQM_SITES = 7,
+        SUBSECTOR_POLLUTION_SOURCE_SITES = 8,
+        SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY = 9,
+        SUBSECTOR_MWQM_SITES_INFORMATION = 10,
+        SUBSECTOR_MWQM_SITES_FC_TABLE = 11,
+        SUBSECTOR_MWQM_SITES_SALINITY_TABLE = 12,
+        SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE = 13,
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR = 14,
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR = 15,
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR = 16,
+        SUBSECTOR_MUNICIPALITIES = 17,
+        MUNICIPALITY_MAP_INFRASTRUCTURE = 18,
+        MUNICIPALITY_CONTACTS = 19,
+        MUNICIPALITY_INFRASTRUCTURE_DETAIL = 20,
     }
     public enum ReportSortingEnum
     {
@@ -741,8 +800,8 @@ namespace CSSPEnums
         t = 3,
         fi = 4,
         fp = 5,
-        fr = 6,
-        fg = 7,
+        frg = 6,
+        ftg = 7,
         fpdf = 8,
         fdocx = 9,
         fxlsx = 10,
@@ -904,7 +963,7 @@ namespace CSSPEnums
         PeatSystem = 31,
         Physicochimique = 32,
         RotatingBiologicalContactor = 33,
-    }
+    } // to be remove in the future
     public enum TVAuthEnum
     {
         Error = 0,
@@ -992,7 +1051,8 @@ namespace CSSPEnums
         MikeSourceIncluded = 73,
         MikeSourceNotIncluded = 74,
         RainExceedance = 75,
-        EmailDistributionList = 76
+        EmailDistributionList = 76,
+        OpenData = 77,
     }
     public enum WebTideDataSetEnum
     {
@@ -1009,7 +1069,6 @@ namespace CSSPEnums
         flood = 10,             // Upper Bay of Fundy
         vigf8 = 11,             // Vancouver Island (Mike Foreman)
     }
-
     public class EnumIDAndText
     {
         public int? EnumID { get; set; }

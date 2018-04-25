@@ -24,7 +24,7 @@ namespace CSSPEnums
         #region Enum Functions public
         /// <summary>
         /// > [!NOTE]
-        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</para>
+        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [ExcelExportShowDataTypeEnum] (CSSPEnums.ExcelExportShowDataTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PositionEnum] (CSSPEnums.PositionEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportGenerateObjectsKeywordEnum] (CSSPEnums.ReportGenerateObjectsKeywordEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.html)</para>
         /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
         /// </summary>
         /// <param name="type">One of the allowable types (Enum)</param>
@@ -52,7 +52,7 @@ namespace CSSPEnums
         }
         /// <summary>
         /// > [!NOTE]
-        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.htm</para>
+        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [ExcelExportShowDataTypeEnum] (CSSPEnums.ExcelExportShowDataTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PositionEnum] (CSSPEnums.PositionEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportGenerateObjectsKeywordEnum] (CSSPEnums.ReportGenerateObjectsKeywordEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.htm</para>
         /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
         /// </summary>
         /// <param name="type">One of the allowable types (Enum)</param>
@@ -122,7 +122,7 @@ namespace CSSPEnums
         }
         /// <summary>
         /// > [!NOTE]
-        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.h</para>
+        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [ExcelExportShowDataTypeEnum] (CSSPEnums.ExcelExportShowDataTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PositionEnum] (CSSPEnums.PositionEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportGenerateObjectsKeywordEnum] (CSSPEnums.ReportGenerateObjectsKeywordEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum.h</para>
         /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
         /// </summary>
         /// <param name="type">One of the allowable types (Enum)</param>
@@ -161,7 +161,7 @@ namespace CSSPEnums
         }
         /// <summary>
         /// > [!NOTE]
-        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum</para>
+        /// > <para>**Allowable types** : [ActionDBTypeEnum] (CSSPEnums.ActionDBTypeEnum.html), [AddContactTypeEnum] (CSSPEnums.AddContactTypeEnum.html), [DatabaseTypeEnum] (CSSPEnums.DatabaseTypeEnum.html), [EntityQueryTypeEnum] (CSSPEnums.EntityQueryTypeEnum.html), [EntityQueryDetailTypeEnum] (CSSPEnums.EntityQueryDetailTypeEnum.html), [PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html), [AddressTypeEnum] (CSSPEnums.AddressTypeEnum.html), [AerationTypeEnum] (CSSPEnums.AerationTypeEnum.html), [AlarmSystemTypeEnum] (CSSPEnums.AlarmSystemTypeEnum.html), [AnalysisCalculationTypeEnum] (CSSPEnums.AnalysisCalculationTypeEnum.html), [AnalysisReportExportCommandEnum] (CSSPEnums.AnalysisReportExportCommandEnum.html), [AnalyzeMethodEnum] (CSSPEnums.AnalyzeMethodEnum.html), [AppTaskCommandEnum] (CSSPEnums.AppTaskCommandEnum.html), [AppTaskStatusEnum] (CSSPEnums.AppTaskStatusEnum.html), [BeaufortScaleEnum] (CSSPEnums.BeaufortScaleEnum.html), [BoxModelResultTypeEnum] (CSSPEnums.BoxModelResultTypeEnum.html), [CollectionSystemTypeEnum] (CSSPEnums.CollectionSystemTypeEnum.html), [ContactTitleEnum] (CSSPEnums.ContactTitleEnum.html), [CSSPWQInputSheetTypeEnum] (CSSPEnums.CSSPWQInputSheetTypeEnum.html), [CSSPWQInputTypeEnum] (CSSPEnums.CSSPWQInputTypeEnum.html), [DailyOrHourlyDataEnum] (CSSPEnums.DailyOrHourlyDataEnum.html), [DisinfectionTypeEnum] (CSSPEnums.DisinfectionTypeEnum.html), [EmailTypeEnum] (CSSPEnums.EmailTypeEnum.html), [ExcelExportShowDataTypeEnum] (CSSPEnums.ExcelExportShowDataTypeEnum.html), [FacilityTypeEnum] (CSSPEnums.FacilityTypeEnum.html), [FilePurposeEnum] (CSSPEnums.FilePurposeEnum.html), [FileStatusEnum] (CSSPEnums.FileStatusEnum.html), [FileTypeEnum] (CSSPEnums.FileTypeEnum.html), [InfrastructureTypeEnum] (CSSPEnums.InfrastructureTypeEnum.html), [KMZActionEnum] (CSSPEnums.KMZActionEnum.html), [LaboratoryEnum] (CSSPEnums.LaboratoryEnum.html), [LabSheetStatusEnum] (CSSPEnums.LabSheetStatusEnum.html), [LabSheetTypeEnum] (CSSPEnums.LabSheetTypeEnum.html), [LanguageEnum] (CSSPEnums.LanguageEnum.html), [LogCommandEnum] (CSSPEnums.LogCommandEnum.html), [MapInfoDrawTypeEnum] (CSSPEnums.MapInfoDrawTypeEnum.html), [MikeBoundaryConditionLevelOrVelocityEnum] (CSSPEnums.MikeBoundaryConditionLevelOrVelocityEnum.html), [MikeScenarioSpecialResultKMLTypeEnum] (CSSPEnums.MikeScenarioSpecialResultKMLTypeEnum.html), [MWQMSiteLatestClassificationEnum] (CSSPEnums.MWQMSiteLatestClassificationEnum.html), [PolSourceInactiveReasonEnum] (CSSPEnums.PolSourceInactiveReasonEnum.html), [PolSourceIssueRiskEnum] (CSSPEnums.PolSourceIssueRiskEnum.html), [PositionEnum] (CSSPEnums.PositionEnum.html), [PreliminaryTreatmentTypeEnum] (CSSPEnums.PreliminaryTreatmentTypeEnum.html), [PrimaryTreatmentTypeEnum] (CSSPEnums.PrimaryTreatmentTypeEnum.html), [ReportConditionEnum] (CSSPEnums.ReportConditionEnum.html), [ReportFieldTypeEnum] (CSSPEnums.ReportFieldTypeEnum.html), [ReportFileTypeEnum] (CSSPEnums.ReportFileTypeEnum.html), [ReportFormatingDateEnum] (CSSPEnums.ReportFormatingDateEnum.html), [ReportFormatingNumberEnum] (CSSPEnums.ReportFormatingNumberEnum.html), [ReportGenerateObjectsKeywordEnum] (CSSPEnums.ReportGenerateObjectsKeywordEnum.html), [ReportSortingEnum] (CSSPEnums.ReportSortingEnum.html), [ReportTreeNodeSubTypeEnum] (CSSPEnums.ReportTreeNodeSubTypeEnum.html), [ReportTreeNodeTypeEnum] (CSSPEnums.ReportTreeNodeTypeEnum.html), [SameDayNextDayEnum] (CSSPEnums.SameDayNextDayEnum.html), [SampleMatrixEnum] (CSSPEnums.SampleMatrixEnum.html), [SampleStatusEnum] (CSSPEnums.SampleStatusEnum.html), [SampleTypeEnum] (CSSPEnums.SampleTypeEnum.html), [SamplingPlanTypeEnum] (CSSPEnums.SamplingPlanTypeEnum.html), [ScenarioStatusEnum] (CSSPEnums.ScenarioStatusEnum.html), [SearchTagEnum] (CSSPEnums.SearchTagEnum.html), [SecondaryTreatmentTypeEnum] (CSSPEnums.SecondaryTreatmentTypeEnum.html), [SiteTypeEnum] (CSSPEnums.SiteTypeEnum.html), [SpecialTableTypeEnum] (CSSPEnums.SpecialTableTypeEnum.html), [StorageDataTypeEnum] (CSSPEnums.StorageDataTypeEnum.html), [StreetTypeEnum] (CSSPEnums.StreetTypeEnum.html), [TelTypeEnum] (CSSPEnums.TelTypeEnum.html), [TertiaryTreatmentTypeEnum] (CSSPEnums.TertiaryTreatmentTypeEnum.html), [TideDataTypeEnum] (CSSPEnums.TideDataTypeEnum.html), [TideTextEnum] (CSSPEnums.TideTextEnum.html), [TranslationStatusEnum] (CSSPEnums.TranslationStatusEnum.html), [TreatmentTypeEnum] (CSSPEnums.TreatmentTypeEnum.html), [TVAuthEnum] (CSSPEnums.TVAuthEnum.html), [TVTypeEnum] (CSSPEnums.TVTypeEnum.html), [WebTideDataSetEnum] (CSSPEnums.WebTideDataSetEnum.html), [PolSourceObsInfoEnum] (CSSPEnums.PolSourceObsInfoEnum</para>
         /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
         /// > <para>**Allowable <c>[PolSourceObsInfoTypeEnum] (CSSPEnums.PolSourceObsInfoTypeEnum.html)</c>:** Error,Description,Report,Text,Initial,</para>
         /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
@@ -194,6 +194,14 @@ namespace CSSPEnums
                     return GetEnumText_ActionDBTypeEnum((ID == null ? null : (ActionDBTypeEnum?)ID));
                 case "AddContactTypeEnum":
                     return GetEnumText_AddContactTypeEnum((ID == null ? null : (AddContactTypeEnum?)ID));
+                case "DatabaseTypeEnum":
+                    return GetEnumText_DatabaseTypeEnum((ID == null ? null : (DatabaseTypeEnum?)ID));
+                case "EntityQueryTypeEnum":
+                    return GetEnumText_EntityQueryTypeEnum((ID == null ? null : (EntityQueryTypeEnum?)ID));
+                case "EntityQueryDetailTypeEnum":
+                    return GetEnumText_EntityQueryDetailTypeEnum((ID == null ? null : (EntityQueryDetailTypeEnum?)ID));
+                case "PolSourceObsInfoTypeEnum":
+                    return GetEnumText_PolSourceObsInfoTypeEnum((ID == null ? null : (PolSourceObsInfoTypeEnum?)ID));
                 case "AddressTypeEnum":
                     return GetEnumText_AddressTypeEnum((ID == null ? null : (AddressTypeEnum?)ID));
                 case "AerationTypeEnum":
@@ -224,16 +232,12 @@ namespace CSSPEnums
                     return GetEnumText_CSSPWQInputTypeEnum((ID == null ? null : (CSSPWQInputTypeEnum?)ID));
                 case "DailyOrHourlyDataEnum":
                     return GetEnumText_DailyOrHourlyDataEnum((ID == null ? null : (DailyOrHourlyDataEnum?)ID));
-                case "DatabaseTypeEnum":
-                    return GetEnumText_DatabaseTypeEnum((ID == null ? null : (DatabaseTypeEnum?)ID));
                 case "DisinfectionTypeEnum":
                     return GetEnumText_DisinfectionTypeEnum((ID == null ? null : (DisinfectionTypeEnum?)ID));
                 case "EmailTypeEnum":
                     return GetEnumText_EmailTypeEnum((ID == null ? null : (EmailTypeEnum?)ID));
-                case "EntityQueryTypeEnum":
-                    return GetEnumText_EntityQueryTypeEnum((ID == null ? null : (EntityQueryTypeEnum?)ID));
-                case "EntityQueryDetailTypeEnum":
-                    return GetEnumText_EntityQueryDetailTypeEnum((ID == null ? null : (EntityQueryDetailTypeEnum?)ID));
+                case "ExcelExportShowDataTypeEnum":
+                    return GetEnumText_ExcelExportShowDataTypeEnum((ID == null ? null : (ExcelExportShowDataTypeEnum?)ID));
                 case "FacilityTypeEnum":
                     return GetEnumText_FacilityTypeEnum((ID == null ? null : (FacilityTypeEnum?)ID));
                 case "FilePurposeEnum":
@@ -268,8 +272,8 @@ namespace CSSPEnums
                     return GetEnumText_PolSourceInactiveReasonEnum((ID == null ? null : (PolSourceInactiveReasonEnum?)ID));
                 case "PolSourceIssueRiskEnum":
                     return GetEnumText_PolSourceIssueRiskEnum((ID == null ? null : (PolSourceIssueRiskEnum?)ID));
-                case "PolSourceObsInfoTypeEnum":
-                    return GetEnumText_PolSourceObsInfoTypeEnum((ID == null ? null : (PolSourceObsInfoTypeEnum?)ID));
+                case "PositionEnum":
+                    return GetEnumText_PositionEnum((ID == null ? null : (PositionEnum?)ID));
                 case "PreliminaryTreatmentTypeEnum":
                     return GetEnumText_PreliminaryTreatmentTypeEnum((ID == null ? null : (PreliminaryTreatmentTypeEnum?)ID));
                 case "PrimaryTreatmentTypeEnum":
@@ -284,6 +288,8 @@ namespace CSSPEnums
                     return GetEnumText_ReportFormatingDateEnum((ID == null ? null : (ReportFormatingDateEnum?)ID));
                 case "ReportFormatingNumberEnum":
                     return GetEnumText_ReportFormatingNumberEnum((ID == null ? null : (ReportFormatingNumberEnum?)ID));
+                case "ReportGenerateObjectsKeywordEnum":
+                    return GetEnumText_ReportGenerateObjectsKeywordEnum((ID == null ? null : (ReportGenerateObjectsKeywordEnum?)ID));
                 case "ReportSortingEnum":
                     return GetEnumText_ReportSortingEnum((ID == null ? null : (ReportSortingEnum?)ID));
                 case "ReportTreeNodeSubTypeEnum":
@@ -393,6 +399,84 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AddContactTypeEnumRegister;
                 case AddContactTypeEnum.LoggedIn:
                     return CSSPEnumsRes.AddContactTypeEnumLoggedIn;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_DatabaseTypeEnum(DatabaseTypeEnum? databaseType)
+        {
+            if (databaseType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (databaseType)
+            {
+                case DatabaseTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB;
+                case DatabaseTypeEnum.MemoryTestDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB;
+                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB;
+                case DatabaseTypeEnum.SqlServerTestDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_EntityQueryTypeEnum(EntityQueryTypeEnum? entityQueryType)
+        {
+            if (entityQueryType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (entityQueryType)
+            {
+                case EntityQueryTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case EntityQueryTypeEnum.AsNoTracking:
+                    return CSSPEnumsRes.EntityQueryTypeEnumAsNoTracking;
+                case EntityQueryTypeEnum.WithTracking:
+                    return CSSPEnumsRes.EntityQueryTypeEnumWithTracking;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_EntityQueryDetailTypeEnum(EntityQueryDetailTypeEnum? entityQueryDetailType)
+        {
+            if (entityQueryDetailType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (entityQueryDetailType)
+            {
+                case EntityQueryDetailTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case EntityQueryDetailTypeEnum.EntityOnly:
+                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityOnly;
+                case EntityQueryDetailTypeEnum.EntityWeb:
+                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityWeb;
+                case EntityQueryDetailTypeEnum.EntityReport:
+                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityReport;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_PolSourceObsInfoTypeEnum(PolSourceObsInfoTypeEnum? polSourceObsInfoType)
+        {
+            if (polSourceObsInfoType == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (polSourceObsInfoType)
+            {
+                case PolSourceObsInfoTypeEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case PolSourceObsInfoTypeEnum.Description:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumDescription;
+                case PolSourceObsInfoTypeEnum.Report:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumReport;
+                case PolSourceObsInfoTypeEnum.Text:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumText;
+                case PolSourceObsInfoTypeEnum.Initial:
+                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumInitial;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -582,6 +666,30 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumExportEmailDistributionLists;
                 case AppTaskCommandEnum.ExportAnalysisToExcel:
                     return CSSPEnumsRes.AppTaskCommandEnumExportAnalysisToExcel;
+                case AppTaskCommandEnum.CreateDocumentFromParameters:
+                    return CSSPEnumsRes.AppTaskCommandEnumCreateDocumentFromParameters;
+                case AppTaskCommandEnum.CreateDocxPDF:
+                    return CSSPEnumsRes.AppTaskCommandEnumCreateDocxPDF;
+                case AppTaskCommandEnum.CreateXlsxPDF:
+                    return CSSPEnumsRes.AppTaskCommandEnumCreateXlsxPDF;
+                case AppTaskCommandEnum.OpenDataCSVOfMWQMSites:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVOfMWQMSites;
+                case AppTaskCommandEnum.OpenDataKMZOfMWQMSites:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataKMZOfMWQMSites;
+                case AppTaskCommandEnum.OpenDataXlsxOfMWQMSites:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataXlsxOfMWQMSites;
+                case AppTaskCommandEnum.OpenDataCSVOfMWQMSamples:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVOfMWQMSamples;
+                case AppTaskCommandEnum.OpenDataXlsxOfMWQMSamples:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataXlsxOfMWQMSamples;
+                case AppTaskCommandEnum.GetAllPrecipitationForYear:
+                    return CSSPEnumsRes.AppTaskCommandEnumGetAllPrecipitationForYear;
+                case AppTaskCommandEnum.FillRunPrecipByClimateSitePriorityForYear:
+                    return CSSPEnumsRes.AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear;
+                case AppTaskCommandEnum.FindMissingPrecipForProvince:
+                    return CSSPEnumsRes.AppTaskCommandEnumFindMissingPrecipForProvince;
+                case AppTaskCommandEnum.ExportToArcGIS:
+                    return CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -788,27 +896,6 @@ namespace CSSPEnums
                     return CSSPEnumsRes.Empty;
             }
         }
-        private string GetEnumText_DatabaseTypeEnum(DatabaseTypeEnum? databaseType)
-        {
-            if (databaseType == null)
-                return CSSPEnumsRes.Empty;
-
-            switch (databaseType)
-            {
-                case DatabaseTypeEnum.Error:
-                    return CSSPEnumsRes.Empty;
-                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB;
-                case DatabaseTypeEnum.MemoryTestDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB;
-                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB;
-                case DatabaseTypeEnum.SqlServerTestDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB;
-                default:
-                    return CSSPEnumsRes.Empty;
-            }
-        }
         private string GetEnumText_DisinfectionTypeEnum(DisinfectionTypeEnum? disinfectionType)
         {
             if (disinfectionType == null)
@@ -857,38 +944,31 @@ namespace CSSPEnums
                     return CSSPEnumsRes.Empty;
             }
         }
-        private string GetEnumText_EntityQueryTypeEnum(EntityQueryTypeEnum? entityQueryType)
+        private string GetEnumText_ExcelExportShowDataTypeEnum(ExcelExportShowDataTypeEnum? excelExportShowDataType)
         {
-            if (entityQueryType == null)
+            if (excelExportShowDataType == null)
                 return CSSPEnumsRes.Empty;
 
-            switch (entityQueryType)
+            switch (excelExportShowDataType)
             {
-                case EntityQueryTypeEnum.Error:
+                case ExcelExportShowDataTypeEnum.Error:
                     return CSSPEnumsRes.Empty;
-                case EntityQueryTypeEnum.AsNoTracking:
-                    return CSSPEnumsRes.EntityQueryTypeEnumAsNoTracking;
-                case EntityQueryTypeEnum.WithTracking:
-                    return CSSPEnumsRes.EntityQueryTypeEnumWithTracking;
-                default:
-                    return CSSPEnumsRes.Empty;
-            }
-        }
-        private string GetEnumText_EntityQueryDetailTypeEnum(EntityQueryDetailTypeEnum? entityQueryDetailType)
-        {
-            if (entityQueryDetailType == null)
-                return CSSPEnumsRes.Empty;
-
-            switch (entityQueryDetailType)
-            {
-                case EntityQueryDetailTypeEnum.Error:
-                    return CSSPEnumsRes.Empty;
-                case EntityQueryDetailTypeEnum.EntityOnly:
-                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityOnly;
-                case EntityQueryDetailTypeEnum.EntityWeb:
-                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityWeb;
-                case EntityQueryDetailTypeEnum.EntityReport:
-                    return CSSPEnumsRes.EntityQueryDetailTypeEnumEntityReport;
+                case ExcelExportShowDataTypeEnum.FecalColiform:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumFecalColiform;
+                case ExcelExportShowDataTypeEnum.Temperature:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumTemperature;
+                case ExcelExportShowDataTypeEnum.Salinity:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumSalinity;
+                case ExcelExportShowDataTypeEnum.P90:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumP90;
+                case ExcelExportShowDataTypeEnum.GemetricMean:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumGemetricMean;
+                case ExcelExportShowDataTypeEnum.Median:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumMedian;
+                case ExcelExportShowDataTypeEnum.PercOfP90Over43:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumPercOfP90Over43;
+                case ExcelExportShowDataTypeEnum.PercOfP90Over260:
+                    return CSSPEnumsRes.ExcelExportShowDataTypeEnumPercOfP90Over260;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -933,10 +1013,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.FilePurposeEnumImage;
                 case FilePurposeEnum.Picture:
                     return CSSPEnumsRes.FilePurposeEnumPicture;
-                case FilePurposeEnum.Reported:
-                    return CSSPEnumsRes.FilePurposeEnumReported;
-                case FilePurposeEnum.Generated:
-                    return CSSPEnumsRes.FilePurposeEnumGenerated;
+                case FilePurposeEnum.ReportGenerated:
+                    return CSSPEnumsRes.FilePurposeEnumReportGenerated;
+                case FilePurposeEnum.TemplateGenerated:
+                    return CSSPEnumsRes.FilePurposeEnumTemplateGenerated;
                 case FilePurposeEnum.GeneratedFCForm:
                     return CSSPEnumsRes.FilePurposeEnumGeneratedFCForm;
                 case FilePurposeEnum.Template:
@@ -945,6 +1025,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.FilePurposeEnumMap;
                 case FilePurposeEnum.Analysis:
                     return CSSPEnumsRes.FilePurposeEnumAnalysis;
+                case FilePurposeEnum.OpenData:
+                    return CSSPEnumsRes.FilePurposeEnumOpenData;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -1144,8 +1226,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.LaboratoryEnumPEIAnalyticalLaboratory;
                 case LaboratoryEnum.NLMobileLaboratory:
                     return CSSPEnumsRes.LaboratoryEnumNLMobileLaboratory;
-                case LaboratoryEnum.PetroformaInc:
-                    return CSSPEnumsRes.LaboratoryEnumPetroformaInc;
+                case LaboratoryEnum.AvalonLaboratoriesInc:
+                    return CSSPEnumsRes.LaboratoryEnumAvalonLaboratoriesInc;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -1352,23 +1434,23 @@ namespace CSSPEnums
                     return CSSPEnumsRes.Empty;
             }
         }
-        private string GetEnumText_PolSourceObsInfoTypeEnum(PolSourceObsInfoTypeEnum? polSourceObsInfoType)
+        private string GetEnumText_PositionEnum(PositionEnum? position)
         {
-            if (polSourceObsInfoType == null)
+            if (position == null)
                 return CSSPEnumsRes.Empty;
 
-            switch (polSourceObsInfoType)
+            switch (position)
             {
-                case PolSourceObsInfoTypeEnum.Error:
+                case PositionEnum.Error:
                     return CSSPEnumsRes.Empty;
-                case PolSourceObsInfoTypeEnum.Description:
-                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumDescription;
-                case PolSourceObsInfoTypeEnum.Report:
-                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumReport;
-                case PolSourceObsInfoTypeEnum.Text:
-                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumText;
-                case PolSourceObsInfoTypeEnum.Initial:
-                    return CSSPEnumsRes.PolSourceObsInfoTypeEnumInitial;
+                case PositionEnum.LeftBottom:
+                    return CSSPEnumsRes.PositionEnumLeftBottom;
+                case PositionEnum.RightBottom:
+                    return CSSPEnumsRes.PositionEnumRightBottom;
+                case PositionEnum.LeftTop:
+                    return CSSPEnumsRes.PositionEnumLeftTop;
+                case PositionEnum.RightTop:
+                    return CSSPEnumsRes.PositionEnumRightTop;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -1644,6 +1726,59 @@ namespace CSSPEnums
                     return CSSPEnumsRes.ReportFormatingNumberEnumReportFormatingNumberScientific5Decimal;
                 case ReportFormatingNumberEnum.ReportFormatingNumberScientific6Decimal:
                     return CSSPEnumsRes.ReportFormatingNumberEnumReportFormatingNumberScientific6Decimal;
+                default:
+                    return CSSPEnumsRes.Empty;
+            }
+        }
+        private string GetEnumText_ReportGenerateObjectsKeywordEnum(ReportGenerateObjectsKeywordEnum? reportGenerateObjectsKeyword)
+        {
+            if (reportGenerateObjectsKeyword == null)
+                return CSSPEnumsRes.Empty;
+
+            switch (reportGenerateObjectsKeyword)
+            {
+                case ReportGenerateObjectsKeywordEnum.Error:
+                    return CSSPEnumsRes.Empty;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_RE_EVALUATION_COVER_PAGE:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_FC_SUMMARY_STAT_ALL:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_ALL;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_FC_SUMMARY_STAT_WET:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_WET;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_FC_SUMMARY_STAT_DRY:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_DRY;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MAP_ACTIVE_MWQM_SITES:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_MWQM_SITES;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_POLLUTION_SOURCE_SITES:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_DATA_AVAILABILITY;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_INFORMATION:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_INFORMATION;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_FC_TABLE:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_FC_TABLE;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_SALINITY_TABLE:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_SALINITY_TABLE;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR;
+                case ReportGenerateObjectsKeywordEnum.SUBSECTOR_MUNICIPALITIES:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES;
+                case ReportGenerateObjectsKeywordEnum.MUNICIPALITY_MAP_INFRASTRUCTURE:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumMUNICIPALITY_MAP_INFRASTRUCTURE;
+                case ReportGenerateObjectsKeywordEnum.MUNICIPALITY_CONTACTS:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumMUNICIPALITY_CONTACTS;
+                case ReportGenerateObjectsKeywordEnum.MUNICIPALITY_INFRASTRUCTURE_DETAIL:
+                    return CSSPEnumsRes.ReportGenerateObjectsKeywordEnumMUNICIPALITY_INFRASTRUCTURE_DETAIL;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -2026,10 +2161,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.SearchTagEnumfi;
                 case SearchTagEnum.fp:
                     return CSSPEnumsRes.SearchTagEnumfp;
-                case SearchTagEnum.fr:
-                    return CSSPEnumsRes.SearchTagEnumfr;
-                case SearchTagEnum.fg:
-                    return CSSPEnumsRes.SearchTagEnumfg;
+                case SearchTagEnum.frg:
+                    return CSSPEnumsRes.SearchTagEnumfrg;
+                case SearchTagEnum.ftg:
+                    return CSSPEnumsRes.SearchTagEnumftg;
                 case SearchTagEnum.fpdf:
                     return CSSPEnumsRes.SearchTagEnumfpdf;
                 case SearchTagEnum.fdocx:
@@ -2595,6 +2730,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.TVTypeEnumRainExceedance;
                 case TVTypeEnum.EmailDistributionList:
                     return CSSPEnumsRes.TVTypeEnumEmailDistributionList;
+                case TVTypeEnum.OpenData:
+                    return CSSPEnumsRes.TVTypeEnumOpenData;
                 default:
                     return CSSPEnumsRes.Empty;
             }

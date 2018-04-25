@@ -163,6 +163,157 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [CSSPWebToolsDBContext] (CSSPModels.CSSPWebToolsDBContext.html#CSSPModels_CSSPWebToolsDBContext_DatabaseType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPWebToolsDBContextService] (CSSPServices.CSSPWebToolsDBContextService.html)</para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum DatabaseTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         MemoryCSSPWebToolsDB = 1,
+    ///         MemoryTestDB = 2,
+    ///         SqlServerCSSPWebToolsDB = 3,
+    ///         SqlServerTestDB = 4,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum DatabaseTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [MemoryCSSPWebToolsDB] ---- fr [MemoryCSSPWebToolsDB]
+        /// </summary>
+        MemoryCSSPWebToolsDB = 1,
+        /// <summary>
+        /// 2 -- en [MemoryTestDB] ---- fr [MemoryTestDB]
+        /// </summary>
+        MemoryTestDB = 2,
+        /// <summary>
+        /// 3 -- en [SqlServerCSSPWebToolsDB] ---- fr [SqlServerCSSPWebToolsDB]
+        /// </summary>
+        SqlServerCSSPWebToolsDB = 3,
+        /// <summary>
+        /// 4 -- en [SqlServerTestDB] ---- fr [SqlServerTestDB]
+        /// </summary>
+        SqlServerTestDB = 4,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [GetParam] (CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [GetParamService] (CSSPServices.GetParamService.html)</para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum EntityQueryTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         AsNoTracking = 1,
+    ///         WithTracking = 2,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum EntityQueryTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [As no tracking] ---- fr [As no tracking (fr)]
+        /// </summary>
+        AsNoTracking = 1,
+        /// <summary>
+        /// 2 -- en [With tracking] ---- fr [With tracking (fr)]
+        /// </summary>
+        WithTracking = 2,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [GetParam] (CSSPModels.GetParam.html#CSSPModels_GetParam_EntityQueryDetailType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [GetParamService] (CSSPServices.GetParamService.html)</para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum EntityQueryDetailTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         EntityOnly = 1,
+    ///         EntityWeb = 2,
+    ///         EntityReport = 3,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum EntityQueryDetailTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Entity only] ---- fr [Entity only (fr)]
+        /// </summary>
+        EntityOnly = 1,
+        /// <summary>
+        /// 2 -- en [Entity web] ---- fr [Entity web (fr)]
+        /// </summary>
+        EntityWeb = 2,
+        /// <summary>
+        /// 3 -- en [EntityReport] ---- fr [EntityReport (fr)]
+        /// </summary>
+        EntityReport = 3,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum PolSourceObsInfoTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Description = 1,
+    ///         Report = 2,
+    ///         Text = 3,
+    ///         Initial = 4,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum PolSourceObsInfoTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Description] ---- fr [Description (fr)]
+        /// </summary>
+        Description = 1,
+        /// <summary>
+        /// 2 -- en [Report] ---- fr [Report (fr)]
+        /// </summary>
+        Report = 2,
+        /// <summary>
+        /// 3 -- en [Text] ---- fr [Text (fr)]
+        /// </summary>
+        Text = 3,
+        /// <summary>
+        /// 4 -- en [Initial] ---- fr [Initial (fr)]
+        /// </summary>
+        Initial = 4,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [Address] (CSSPModels.Address.html#CSSPModels_Address_AddressType)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AddressService] (CSSPServices.AddressService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
@@ -477,6 +628,18 @@ namespace CSSPEnums
     ///         CreateWebTideDataWLAtFirstNode = 16,
     ///         ExportEmailDistributionLists = 17,
     ///         ExportAnalysisToExcel = 18,
+    ///         CreateDocumentFromParameters = 19,
+    ///         CreateDocxPDF = 20,
+    ///         CreateXlsxPDF = 21,
+    ///         OpenDataCSVOfMWQMSites = 22,
+    ///         OpenDataKMZOfMWQMSites = 23,
+    ///         OpenDataXlsxOfMWQMSites = 24,
+    ///         OpenDataCSVOfMWQMSamples = 25,
+    ///         OpenDataXlsxOfMWQMSamples = 26,
+    ///         GetAllPrecipitationForYear = 27,
+    ///         FillRunPrecipByClimateSitePriorityForYear = 28,
+    ///         FindMissingPrecipForProvince = 29,
+    ///         ExportToArcGIS = 30,
     ///     }
     /// </code>
     /// </remarks>
@@ -558,6 +721,54 @@ namespace CSSPEnums
         /// 18 -- en [Export analysis to Excel] ---- fr [Exporter l'analyse en format Excel]
         /// </summary>
         ExportAnalysisToExcel = 18,
+        /// <summary>
+        /// 19 -- en [Create document from parameters] ---- fr [Créer document à partir de paramètres]
+        /// </summary>
+        CreateDocumentFromParameters = 19,
+        /// <summary>
+        /// 20 -- en [Create Docx PDF] ---- fr [Create Docx PDF]
+        /// </summary>
+        CreateDocxPDF = 20,
+        /// <summary>
+        /// 21 -- en [Create Xlsx PDF] ---- fr [Create Xlsx PDF]
+        /// </summary>
+        CreateXlsxPDF = 21,
+        /// <summary>
+        /// 22 -- en [Open Data CSV of MWQM Sites] ---- fr [Open Data CSV of MWQM Sites (fr)]
+        /// </summary>
+        OpenDataCSVOfMWQMSites = 22,
+        /// <summary>
+        /// 23 -- en [Open Data KMZ of MWQM Sites] ---- fr [Open Data KMZ of MWQM Sites (fr)]
+        /// </summary>
+        OpenDataKMZOfMWQMSites = 23,
+        /// <summary>
+        /// 24 -- en [Open Data Xlsx of MWQM Sites] ---- fr [Open Data Xlsx of MWQM Sites (fr)]
+        /// </summary>
+        OpenDataXlsxOfMWQMSites = 24,
+        /// <summary>
+        /// 25 -- en [Open Data CSV of MWQM Samples] ---- fr [Open Data CSV of MWQM Samples (fr)]
+        /// </summary>
+        OpenDataCSVOfMWQMSamples = 25,
+        /// <summary>
+        /// 26 -- en [Open Data Xlsx of MWQM Samples] ---- fr [Open Data Xlsx of MWQM Samples (fr)]
+        /// </summary>
+        OpenDataXlsxOfMWQMSamples = 26,
+        /// <summary>
+        /// 27 -- en [Get all precipitation for year] ---- fr [Get all precipitation for year (fr)]
+        /// </summary>
+        GetAllPrecipitationForYear = 27,
+        /// <summary>
+        /// 28 -- en [Fill run precip by climate site priority for year] ---- fr [Fill run precip by climate site priority for year (fr)]
+        /// </summary>
+        FillRunPrecipByClimateSitePriorityForYear = 28,
+        /// <summary>
+        /// 29 -- en [Find missing precip for province] ---- fr [Find missing precip for province (fr)]
+        /// </summary>
+        FindMissingPrecipForProvince = 29,
+        /// <summary>
+        /// 30 -- en [Export to Arc GIS] ---- fr [Export to Arc GIS (fr)]
+        /// </summary>
+        ExportToArcGIS = 30,
     }
     /// <summary>
     /// > [!NOTE]
@@ -979,48 +1190,6 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [CSSPWebToolsDBContext] (CSSPModels.CSSPWebToolsDBContext.html#CSSPModels_CSSPWebToolsDBContext_DatabaseType)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPWebToolsDBContextService] (CSSPServices.CSSPWebToolsDBContextService.html)</para>
-    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
-    /// </summary>
-    /// <remarks>
-    /// <code>
-    ///     public enum DatabaseTypeEnum
-    ///     {
-    ///         Error = 0,
-    ///         MemoryCSSPWebToolsDB = 1,
-    ///         MemoryTestDB = 2,
-    ///         SqlServerCSSPWebToolsDB = 3,
-    ///         SqlServerTestDB = 4,
-    ///     }
-    /// </code>
-    /// </remarks>
-    public enum DatabaseTypeEnum
-    {
-        /// <summary>
-        /// 0 -- en [Empty] ---- fr [Empty (fr)]
-        /// </summary>
-        Error = 0,
-        /// <summary>
-        /// 1 -- en [MemoryCSSPWebToolsDB] ---- fr [MemoryCSSPWebToolsDB]
-        /// </summary>
-        MemoryCSSPWebToolsDB = 1,
-        /// <summary>
-        /// 2 -- en [MemoryTestDB] ---- fr [MemoryTestDB]
-        /// </summary>
-        MemoryTestDB = 2,
-        /// <summary>
-        /// 3 -- en [SqlServerCSSPWebToolsDB] ---- fr [SqlServerCSSPWebToolsDB]
-        /// </summary>
-        SqlServerCSSPWebToolsDB = 3,
-        /// <summary>
-        /// 4 -- en [SqlServerTestDB] ---- fr [SqlServerTestDB]
-        /// </summary>
-        SqlServerTestDB = 4,
-    }
-    /// <summary>
-    /// > [!NOTE]
-    /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [Infrastructure] (CSSPModels.Infrastructure.html#CSSPModels_Infrastructure_DisinfectionType)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [InfrastructureService] (CSSPServices.InfrastructureService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
@@ -1124,63 +1293,58 @@ namespace CSSPEnums
     /// </summary>
     /// <remarks>
     /// <code>
-    ///     public enum EntityQueryTypeEnum
+    ///     public enum ExcelExportShowDataTypeEnum
     ///     {
     ///         Error = 0,
-    ///         AsNoTracking = 1,
-    ///         WithTracking = 2,
+    ///         FecalColiform = 1,
+    ///         Temperature = 2,
+    ///         Salinity = 3,
+    ///         P90 = 4,
+    ///         GemetricMean = 5,
+    ///         Median = 6,
+    ///         PercOfP90Over43 = 7,
+    ///         PercOfP90Over260 = 8,
     ///     }
     /// </code>
     /// </remarks>
-    public enum EntityQueryTypeEnum
+    public enum ExcelExportShowDataTypeEnum
     {
         /// <summary>
         /// 0 -- en [Empty] ---- fr [Empty (fr)]
         /// </summary>
         Error = 0,
         /// <summary>
-        /// 1 -- en [As no tracking] ---- fr [As no tracking (fr)]
+        /// 1 -- en [Fecal Coliform] ---- fr [Fecal Coliform (fr)]
         /// </summary>
-        AsNoTracking = 1,
+        FecalColiform = 1,
         /// <summary>
-        /// 2 -- en [With tracking] ---- fr [With tracking (fr)]
+        /// 2 -- en [Temperature] ---- fr [Temperature (fr)]
         /// </summary>
-        WithTracking = 2,
-    }
-    /// <summary>
-    /// > [!NOTE]
-    /// > 
-    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
-    /// </summary>
-    /// <remarks>
-    /// <code>
-    ///     public enum EntityQueryDetailTypeEnum
-    ///     {
-    ///         Error = 0,
-    ///         EntityOnly = 1,
-    ///         EntityWeb = 2,
-    ///         EntityReport = 3,
-    ///     }
-    /// </code>
-    /// </remarks>
-    public enum EntityQueryDetailTypeEnum
-    {
+        Temperature = 2,
         /// <summary>
-        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// 3 -- en [Salinity] ---- fr [Salinity (fr)]
         /// </summary>
-        Error = 0,
+        Salinity = 3,
         /// <summary>
-        /// 1 -- en [Entity only] ---- fr [Entity only (fr)]
+        /// 4 -- en [P90] ---- fr [P90 (fr)]
         /// </summary>
-        EntityOnly = 1,
+        P90 = 4,
         /// <summary>
-        /// 2 -- en [Entity web] ---- fr [Entity web (fr)]
+        /// 5 -- en [Gemetric Mean] ---- fr [Gemetric Mean (fr)]
         /// </summary>
-        EntityWeb = 2,
+        GemetricMean = 5,
         /// <summary>
-        /// 3 -- en [EntityReport] ---- fr [EntityReport (fr)]
+        /// 6 -- en [Median] ---- fr [Median (fr)]
         /// </summary>
-        EntityReport = 3,
+        Median = 6,
+        /// <summary>
+        /// 7 -- en [Percent of P90 > 43] ---- fr [Percent of P90 > 43 (fr)]
+        /// </summary>
+        PercOfP90Over43 = 7,
+        /// <summary>
+        /// 8 -- en [Percent of P90 > 260] ---- fr [Percent of P90 > 260 (fr)]
+        /// </summary>
+        PercOfP90Over260 = 8,
     }
     /// <summary>
     /// > [!NOTE]
@@ -1233,12 +1397,13 @@ namespace CSSPEnums
     ///         Information = 5,
     ///         Image = 6,
     ///         Picture = 7,
-    ///         Reported = 8,
-    ///         Generated = 9,
+    ///         ReportGenerated = 8,
+    ///         TemplateGenerated = 9,
     ///         GeneratedFCForm = 10,
     ///         Template = 11,
     ///         Map = 12,
     ///         Analysis = 13,
+    ///         OpenData = 14,
     ///     }
     /// </code>
     /// </remarks>
@@ -1277,13 +1442,13 @@ namespace CSSPEnums
         /// </summary>
         Picture = 7,
         /// <summary>
-        /// 8 -- en [Reported] ---- fr [Reported (fr)]
+        /// 8 -- en [Report Generated] ---- fr [Report Generated (fr)]
         /// </summary>
-        Reported = 8,
+        ReportGenerated = 8,
         /// <summary>
-        /// 9 -- en [Generated] ---- fr [Generated (fr)]
+        /// 9 -- en [Template Generated] ---- fr [Template Generated (fr)]
         /// </summary>
-        Generated = 9,
+        TemplateGenerated = 9,
         /// <summary>
         /// 10 -- en [Generated FC Form] ---- fr [Generated FC Form(fr)]
         /// </summary>
@@ -1300,6 +1465,10 @@ namespace CSSPEnums
         /// 13 -- en [Analysis] ---- fr [Analyses]
         /// </summary>
         Analysis = 13,
+        /// <summary>
+        /// 14 -- en [Open Data] ---- fr [Open Data (fr)]
+        /// </summary>
+        OpenData = 14,
     }
     /// <summary>
     /// > [!NOTE]
@@ -1620,7 +1789,7 @@ namespace CSSPEnums
     ///         MaxxamAnalyticsSydney = 26,
     ///         PEIAnalyticalLaboratory = 27,
     ///         NLMobileLaboratory = 28,
-    ///         PetroformaInc = 29,
+    ///         AvalonLaboratoriesInc = 29,
     ///     }
     /// </code>
     /// </remarks>
@@ -1743,9 +1912,9 @@ namespace CSSPEnums
         /// </summary>
         NLMobileLaboratory = 28,
         /// <summary>
-        /// 29 -- en [Petroforma Inc.] ---- fr [Petroforma Inc. (fr)]
+        /// 29 -- en [Avalon Laboratories Inc] ---- fr [Avalon Laboratories Inc (fr)]
         /// </summary>
-        PetroformaInc = 29,
+        AvalonLaboratoriesInc = 29,
     }
     /// <summary>
     /// > [!NOTE]
@@ -1829,8 +1998,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [GetParam] (CSSPModels.GetParam.html#CSSPModels_GetParam_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [GetParamService] (CSSPServices.GetParamService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -2150,38 +2319,38 @@ namespace CSSPEnums
     /// </summary>
     /// <remarks>
     /// <code>
-    ///     public enum PolSourceObsInfoTypeEnum
+    ///     public enum PositionEnum
     ///     {
     ///         Error = 0,
-    ///         Description = 1,
-    ///         Report = 2,
-    ///         Text = 3,
-    ///         Initial = 4,
+    ///         LeftBottom = 1,
+    ///         RightBottom = 2,
+    ///         LeftTop = 3,
+    ///         RightTop = 4,
     ///     }
     /// </code>
     /// </remarks>
-    public enum PolSourceObsInfoTypeEnum
+    public enum PositionEnum
     {
         /// <summary>
         /// 0 -- en [Empty] ---- fr [Empty (fr)]
         /// </summary>
         Error = 0,
         /// <summary>
-        /// 1 -- en [Description] ---- fr [Description (fr)]
+        /// 1 -- en [Left Bottom] ---- fr [Left Bottom (fr)]
         /// </summary>
-        Description = 1,
+        LeftBottom = 1,
         /// <summary>
-        /// 2 -- en [Report] ---- fr [Report (fr)]
+        /// 2 -- en [Right Bottom] ---- fr [Right Bottom (fr)]
         /// </summary>
-        Report = 2,
+        RightBottom = 2,
         /// <summary>
-        /// 3 -- en [Text] ---- fr [Text (fr)]
+        /// 3 -- en [Left Top] ---- fr [Left Top (fr)]
         /// </summary>
-        Text = 3,
+        LeftTop = 3,
         /// <summary>
-        /// 4 -- en [Initial] ---- fr [Initial (fr)]
+        /// 4 -- en [Right Top] ---- fr [Right Top (fr)]
         /// </summary>
-        Initial = 4,
+        RightTop = 4,
     }
     /// <summary>
     /// > [!NOTE]
@@ -2786,6 +2955,126 @@ namespace CSSPEnums
         /// 14 -- en [ReportFormatingNumberScientific6Decimal] ---- fr [ReportFormatingNumberScientific6Decimal]
         /// </summary>
         ReportFormatingNumberScientific6Decimal = 14,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum ReportGenerateObjectsKeywordEnum
+    ///     {
+    ///         Error = 0,
+    ///         SUBSECTOR_RE_EVALUATION_COVER_PAGE = 1,
+    ///         SUBSECTOR_FC_SUMMARY_STAT_ALL = 2,
+    ///         SUBSECTOR_FC_SUMMARY_STAT_WET = 3,
+    ///         SUBSECTOR_FC_SUMMARY_STAT_DRY = 4,
+    ///         SUBSECTOR_MAP_ACTIVE_MWQM_SITES = 5,
+    ///         SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES = 6,
+    ///         SUBSECTOR_MWQM_SITES = 7,
+    ///         SUBSECTOR_POLLUTION_SOURCE_SITES = 8,
+    ///         SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY = 9,
+    ///         SUBSECTOR_MWQM_SITES_INFORMATION = 10,
+    ///         SUBSECTOR_MWQM_SITES_FC_TABLE = 11,
+    ///         SUBSECTOR_MWQM_SITES_SALINITY_TABLE = 12,
+    ///         SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE = 13,
+    ///         SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR = 14,
+    ///         SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR = 15,
+    ///         SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR = 16,
+    ///         SUBSECTOR_MUNICIPALITIES = 17,
+    ///         MUNICIPALITY_MAP_INFRASTRUCTURE = 18,
+    ///         MUNICIPALITY_CONTACTS = 19,
+    ///         MUNICIPALITY_INFRASTRUCTURE_DETAIL = 20,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum ReportGenerateObjectsKeywordEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [SUBSECTOR_RE_EVALUATION_COVER_PAGE] ---- fr [SUBSECTOR_RE_EVALUATION_COVER_PAGE]
+        /// </summary>
+        SUBSECTOR_RE_EVALUATION_COVER_PAGE = 1,
+        /// <summary>
+        /// 2 -- en [SUBSECTOR_FC_SUMMARY_STAT_ALL] ---- fr [SUBSECTOR_FC_SUMMARY_STAT_ALL]
+        /// </summary>
+        SUBSECTOR_FC_SUMMARY_STAT_ALL = 2,
+        /// <summary>
+        /// 3 -- en [SUBSECTOR_FC_SUMMARY_STAT_WET] ---- fr [SUBSECTOR_FC_SUMMARY_STAT_WET]
+        /// </summary>
+        SUBSECTOR_FC_SUMMARY_STAT_WET = 3,
+        /// <summary>
+        /// 4 -- en [SUBSECTOR_FC_SUMMARY_STAT_DRY] ---- fr [SUBSECTOR_FC_SUMMARY_STAT_DRY]
+        /// </summary>
+        SUBSECTOR_FC_SUMMARY_STAT_DRY = 4,
+        /// <summary>
+        /// 5 -- en [SUBSECTOR_MAP_ACTIVE_MWQM_SITES] ---- fr [SUBSECTOR_MAP_ACTIVE_MWQM_SITES]
+        /// </summary>
+        SUBSECTOR_MAP_ACTIVE_MWQM_SITES = 5,
+        /// <summary>
+        /// 6 -- en [SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES] ---- fr [SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES]
+        /// </summary>
+        SUBSECTOR_MAP_ACTIVE_POL_SOURCE_SITES = 6,
+        /// <summary>
+        /// 7 -- en [SUBSECTOR_MWQM_SITES] ---- fr [SUBSECTOR_MWQM_SITES]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES = 7,
+        /// <summary>
+        /// 8 -- en [SUBSECTOR_POLLUTION_SOURCE_SITES] ---- fr [SUBSECTOR_POLLUTION_SOURCE_SITES]
+        /// </summary>
+        SUBSECTOR_POLLUTION_SOURCE_SITES = 8,
+        /// <summary>
+        /// 9 -- en [SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY] ---- fr [SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_DATA_AVAILABILITY = 9,
+        /// <summary>
+        /// 10 -- en [SUBSECTOR_MWQM_SITES_INFORMATION] ---- fr [SUBSECTOR_MWQM_SITES_INFORMATION]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_INFORMATION = 10,
+        /// <summary>
+        /// 11 -- en [SUBSECTOR_MWQM_SITES_FC_TABLE] ---- fr [SUBSECTOR_MWQM_SITES_FC_TABLE]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_FC_TABLE = 11,
+        /// <summary>
+        /// 12 -- en [SUBSECTOR_MWQM_SITES_SALINITY_TABLE] ---- fr [SUBSECTOR_MWQM_SITES_SALINITY_TABLE]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_SALINITY_TABLE = 12,
+        /// <summary>
+        /// 13 -- en [SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE] ---- fr [SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_TEMPERATURE_TABLE = 13,
+        /// <summary>
+        /// 14 -- en [SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR] ---- fr [SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_RUNS_BY_YEAR = 14,
+        /// <summary>
+        /// 15 -- en [SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR] ---- fr [SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_SAMPLES_BY_YEAR = 15,
+        /// <summary>
+        /// 16 -- en [SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR] ---- fr [SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR]
+        /// </summary>
+        SUBSECTOR_MWQM_SITES_NUMBER_OF_SITES_BY_YEAR = 16,
+        /// <summary>
+        /// 17 -- en [SUBSECTOR_MUNICIPALITIES] ---- fr [SUBSECTOR_MUNICIPALITIES]
+        /// </summary>
+        SUBSECTOR_MUNICIPALITIES = 17,
+        /// <summary>
+        /// 18 -- en [MUNICIPALITY_MAP_INFRASTRUCTURE] ---- fr [MUNICIPALITY_MAP_INFRASTRUCTURE]
+        /// </summary>
+        MUNICIPALITY_MAP_INFRASTRUCTURE = 18,
+        /// <summary>
+        /// 19 -- en [MUNICIPALITY_CONTACTS] ---- fr [MUNICIPALITY_CONTACTS]
+        /// </summary>
+        MUNICIPALITY_CONTACTS = 19,
+        /// <summary>
+        /// 20 -- en [MUNICIPALITY_INFRASTRUCTURE_DETAIL] ---- fr [MUNICIPALITY_INFRASTRUCTURE_DETAIL]
+        /// </summary>
+        MUNICIPALITY_INFRASTRUCTURE_DETAIL = 20,
     }
     /// <summary>
     /// > [!NOTE]
@@ -3599,8 +3888,8 @@ namespace CSSPEnums
     ///         t = 3,
     ///         fi = 4,
     ///         fp = 5,
-    ///         fr = 6,
-    ///         fg = 7,
+    ///         frg = 6,
+    ///         ftg = 7,
     ///         fpdf = 8,
     ///         fdocx = 9,
     ///         fxlsx = 10,
@@ -3660,13 +3949,13 @@ namespace CSSPEnums
         /// </summary>
         fp = 5,
         /// <summary>
-        /// 6 -- en [fr] ---- fr [fr]
+        /// 6 -- en [frg] ---- fr [frg]
         /// </summary>
-        fr = 6,
+        frg = 6,
         /// <summary>
-        /// 7 -- en [fg] ---- fr [fg]
+        /// 7 -- en [ftg] ---- fr [ftg]
         /// </summary>
-        fg = 7,
+        ftg = 7,
         /// <summary>
         /// 8 -- en [fpdf] ---- fr [fpdf]
         /// </summary>
@@ -4603,6 +4892,7 @@ namespace CSSPEnums
     ///         MikeSourceNotIncluded = 74,
     ///         RainExceedance = 75,
     ///         EmailDistributionList = 76,
+    ///         OpenData = 77,
     ///     }
     /// </code>
     /// </remarks>
@@ -4912,6 +5202,10 @@ namespace CSSPEnums
         /// 76 -- en [Email distribution list] ---- fr [Liste de distribution des courriels]
         /// </summary>
         EmailDistributionList = 76,
+        /// <summary>
+        /// 77 -- en [Open Data] ---- fr [Open Data (fr)]
+        /// </summary>
+        OpenData = 77,
     }
     /// <summary>
     /// > [!NOTE]
