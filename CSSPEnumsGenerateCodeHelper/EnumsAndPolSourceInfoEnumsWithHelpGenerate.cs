@@ -189,11 +189,13 @@ namespace CSSPEnumsGenerateCodeHelper
             sbPol.AppendLine(@"{");
             #endregion Top part PolSourceObsInfoEnumGenerated.cs
 
+            int EnumsCount = 0;
             foreach (DLLTypeInfo dllTypeInfoEnums in DLLTypeInfoCSSPEnumsList)
             {
                 StringBuilder sbType = new StringBuilder();
 
-                StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "]"));
+                //StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "]"));
+
                 if (dllTypeInfoEnums.IsEnum)
                 {
                     StringBuilder sbModels = new StringBuilder();
@@ -201,8 +203,11 @@ namespace CSSPEnumsGenerateCodeHelper
 
                     foreach (DLLTypeInfo dllTypeInfoModels in DLLTypeInfoCSSPModelsList)
                     {
-                        StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "] [" + dllTypeInfoModels.Name + "]"));
-
+                        EnumsCount += 1;
+                        if (EnumsCount % 100 == 0)
+                        {
+                            StatusTempEvent(new StatusEventArgs("Doing [" + dllTypeInfoEnums.Name + "] [" + dllTypeInfoModels.Name + "]"));
+                        }
                         foreach (DLLPropertyInfo dllPropertyInfo in dllTypeInfoModels.PropertyInfoList)
                         {
                             if (dllPropertyInfo.CSSPProp.PropType == dllTypeInfoEnums.Type.Name)
@@ -241,7 +246,7 @@ namespace CSSPEnumsGenerateCodeHelper
                         }
                     }
                     sbType.AppendLine(@"    ///     }");
-                    sbType.AppendLine(@"    /// </code>");                  
+                    sbType.AppendLine(@"    /// </code>");
 
                     sbType.AppendLine(@"    /// </remarks>");
                     sbType.AppendLine(@"    public enum " + dllTypeInfoEnums.Type.Name);
