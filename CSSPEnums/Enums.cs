@@ -105,6 +105,7 @@ namespace CSSPEnums
         Error = 0,
         Diffuser = 1,
         Surface = 2,
+        NotApplicable = 3,
     }
     public enum AlarmSystemTypeEnum
     {
@@ -174,13 +175,12 @@ namespace CSSPEnums
         CreateXlsxPDF = 21,
         OpenDataCSVOfMWQMSites = 22,
         OpenDataKMZOfMWQMSites = 23,
-        OpenDataXlsxOfMWQMSites = 24,
+        OpenDataXlsxOfMWQMSitesAndSamples = 24,
         OpenDataCSVOfMWQMSamples = 25,
-        OpenDataXlsxOfMWQMSamples = 26,
-        GetAllPrecipitationForYear = 27,
-        FillRunPrecipByClimateSitePriorityForYear = 28,
-        FindMissingPrecipForProvince = 29,
-        ExportToArcGIS = 30,
+        GetAllPrecipitationForYear = 26,
+        FillRunPrecipByClimateSitePriorityForYear = 27,
+        FindMissingPrecipForProvince = 28,
+        ExportToArcGIS = 29,
     }
     public enum AppTaskStatusEnum
     {
@@ -215,6 +215,15 @@ namespace CSSPEnums
         NoDecayPreDisinfection = 3,
         DecayUntreated = 4,
         DecayPreDisinfection = 5,
+    }
+    public enum ClassificationTypeEnum
+    {
+        Error = 0,
+        Approved = 1,
+        Restricted = 2,
+        Prohibited = 3,
+        ConditionallyApproved = 4,
+        ConditionallyRestricted = 5,
     }
     public enum CollectionSystemTypeEnum
     {
@@ -404,7 +413,8 @@ namespace CSSPEnums
         MaxxamAnalyticsSydney = 26,
         PEIAnalyticalLaboratory = 27,
         NLMobileLaboratory = 28,
-        AvalonLaboratoriesInc = 29
+        AvalonLaboratoriesInc = 29,
+        Maxxam = 30,
     }
     public enum LabSheetStatusEnum
     {
@@ -1053,6 +1063,13 @@ namespace CSSPEnums
         RainExceedance = 75,
         EmailDistributionList = 76,
         OpenData = 77,
+        ProvinceTools = 78,
+        Classification = 79,
+        Approved = 80,
+        Restricted = 81,
+        Prohibited = 82,
+        ConditionallyApproved = 83,
+        ConditionallyRestricted = 84,
     }
     public enum WebTideDataSetEnum
     {

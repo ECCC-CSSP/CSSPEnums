@@ -362,6 +362,7 @@ namespace CSSPEnums
     ///         Error = 0,
     ///         Diffuser = 1,
     ///         Surface = 2,
+    ///         NotApplicable = 3,
     ///     }
     /// </code>
     /// </remarks>
@@ -379,6 +380,10 @@ namespace CSSPEnums
         /// 2 -- en [Surface] ---- fr [Surface (fr)]
         /// </summary>
         Surface = 2,
+        /// <summary>
+        /// 3 -- en [Not Applicable] ---- fr [Not Applicable (fr)]
+        /// </summary>
+        NotApplicable = 3,
     }
     /// <summary>
     /// > [!NOTE]
@@ -633,13 +638,12 @@ namespace CSSPEnums
     ///         CreateXlsxPDF = 21,
     ///         OpenDataCSVOfMWQMSites = 22,
     ///         OpenDataKMZOfMWQMSites = 23,
-    ///         OpenDataXlsxOfMWQMSites = 24,
+    ///         OpenDataXlsxOfMWQMSitesAndSamples = 24,
     ///         OpenDataCSVOfMWQMSamples = 25,
-    ///         OpenDataXlsxOfMWQMSamples = 26,
-    ///         GetAllPrecipitationForYear = 27,
-    ///         FillRunPrecipByClimateSitePriorityForYear = 28,
-    ///         FindMissingPrecipForProvince = 29,
-    ///         ExportToArcGIS = 30,
+    ///         GetAllPrecipitationForYear = 26,
+    ///         FillRunPrecipByClimateSitePriorityForYear = 27,
+    ///         FindMissingPrecipForProvince = 28,
+    ///         ExportToArcGIS = 29,
     ///     }
     /// </code>
     /// </remarks>
@@ -742,33 +746,29 @@ namespace CSSPEnums
         /// </summary>
         OpenDataKMZOfMWQMSites = 23,
         /// <summary>
-        /// 24 -- en [Open Data Xlsx of MWQM Sites] ---- fr [Open Data Xlsx of MWQM Sites (fr)]
+        /// 24 -- en [Open Data Xlsx Of MWQM Sites And Samples] ---- fr [Open Data Xlsx Of MWQM Sites And Samples (fr)]
         /// </summary>
-        OpenDataXlsxOfMWQMSites = 24,
+        OpenDataXlsxOfMWQMSitesAndSamples = 24,
         /// <summary>
         /// 25 -- en [Open Data CSV of MWQM Samples] ---- fr [Open Data CSV of MWQM Samples (fr)]
         /// </summary>
         OpenDataCSVOfMWQMSamples = 25,
         /// <summary>
-        /// 26 -- en [Open Data Xlsx of MWQM Samples] ---- fr [Open Data Xlsx of MWQM Samples (fr)]
+        /// 26 -- en [Get all precipitation for year] ---- fr [Get all precipitation for year (fr)]
         /// </summary>
-        OpenDataXlsxOfMWQMSamples = 26,
+        GetAllPrecipitationForYear = 26,
         /// <summary>
-        /// 27 -- en [Get all precipitation for year] ---- fr [Get all precipitation for year (fr)]
+        /// 27 -- en [Fill run precip by climate site priority for year] ---- fr [Fill run precip by climate site priority for year (fr)]
         /// </summary>
-        GetAllPrecipitationForYear = 27,
+        FillRunPrecipByClimateSitePriorityForYear = 27,
         /// <summary>
-        /// 28 -- en [Fill run precip by climate site priority for year] ---- fr [Fill run precip by climate site priority for year (fr)]
+        /// 28 -- en [Find missing precip for province] ---- fr [Find missing precip for province (fr)]
         /// </summary>
-        FillRunPrecipByClimateSitePriorityForYear = 28,
+        FindMissingPrecipForProvince = 28,
         /// <summary>
-        /// 29 -- en [Find missing precip for province] ---- fr [Find missing precip for province (fr)]
+        /// 29 -- en [Export to Arc GIS] ---- fr [Export to Arc GIS (fr)]
         /// </summary>
-        FindMissingPrecipForProvince = 29,
-        /// <summary>
-        /// 30 -- en [Export to Arc GIS] ---- fr [Export to Arc GIS (fr)]
-        /// </summary>
-        ExportToArcGIS = 30,
+        ExportToArcGIS = 29,
     }
     /// <summary>
     /// > [!NOTE]
@@ -945,6 +945,51 @@ namespace CSSPEnums
         /// 5 -- en [DecayPreDisinfection] ---- fr [DecayPreDisinfection (fr)]
         /// </summary>
         DecayPreDisinfection = 5,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum ClassificationTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Approved = 1,
+    ///         Restricted = 2,
+    ///         Prohibited = 3,
+    ///         ConditionallyApproved = 4,
+    ///         ConditionallyRestricted = 5,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum ClassificationTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Approved] ---- fr [Agréé]
+        /// </summary>
+        Approved = 1,
+        /// <summary>
+        /// 2 -- en [Restricted] ---- fr [Restreint]
+        /// </summary>
+        Restricted = 2,
+        /// <summary>
+        /// 3 -- en [Prohibited] ---- fr [Interdit]
+        /// </summary>
+        Prohibited = 3,
+        /// <summary>
+        /// 4 -- en [Conditionally Approved] ---- fr [Agréé sous condition]
+        /// </summary>
+        ConditionallyApproved = 4,
+        /// <summary>
+        /// 5 -- en [Conditionally Restricted] ---- fr [Restreint sous condition]
+        /// </summary>
+        ConditionallyRestricted = 5,
     }
     /// <summary>
     /// > [!NOTE]
@@ -1790,6 +1835,7 @@ namespace CSSPEnums
     ///         PEIAnalyticalLaboratory = 27,
     ///         NLMobileLaboratory = 28,
     ///         AvalonLaboratoriesInc = 29,
+    ///         Maxxam = 30,
     ///     }
     /// </code>
     /// </remarks>
@@ -1915,6 +1961,10 @@ namespace CSSPEnums
         /// 29 -- en [Avalon Laboratories Inc] ---- fr [Avalon Laboratories Inc (fr)]
         /// </summary>
         AvalonLaboratoriesInc = 29,
+        /// <summary>
+        /// 30 -- en [Maxxam] ---- fr [Maxxam]
+        /// </summary>
+        Maxxam = 30,
     }
     /// <summary>
     /// > [!NOTE]
@@ -4893,6 +4943,13 @@ namespace CSSPEnums
     ///         RainExceedance = 75,
     ///         EmailDistributionList = 76,
     ///         OpenData = 77,
+    ///         ProvinceTools = 78,
+    ///         Classification = 79,
+    ///         Approved = 80,
+    ///         Restricted = 81,
+    ///         Prohibited = 82,
+    ///         ConditionallyApproved = 83,
+    ///         ConditionallyRestricted = 84,
     ///     }
     /// </code>
     /// </remarks>
@@ -5206,6 +5263,34 @@ namespace CSSPEnums
         /// 77 -- en [Open Data] ---- fr [Open Data (fr)]
         /// </summary>
         OpenData = 77,
+        /// <summary>
+        /// 78 -- en [Province Tools] ---- fr [Province Tools]
+        /// </summary>
+        ProvinceTools = 78,
+        /// <summary>
+        /// 79 -- en [Classification] ---- fr [Classification]
+        /// </summary>
+        Classification = 79,
+        /// <summary>
+        /// 80 -- en [Approved] ---- fr [Agréé]
+        /// </summary>
+        Approved = 80,
+        /// <summary>
+        /// 81 -- en [Restricted] ---- fr [Restreint]
+        /// </summary>
+        Restricted = 81,
+        /// <summary>
+        /// 82 -- en [Prohibited] ---- fr [Interdit]
+        /// </summary>
+        Prohibited = 82,
+        /// <summary>
+        /// 83 -- en [Conditionally Approved] ---- fr [Agréé sous condition]
+        /// </summary>
+        ConditionallyApproved = 83,
+        /// <summary>
+        /// 84 -- en [Conditionally Restricted] ---- fr [Restreint sous condition]
+        /// </summary>
+        ConditionallyRestricted = 84,
     }
     /// <summary>
     /// > [!NOTE]

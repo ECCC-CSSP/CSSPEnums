@@ -12,7 +12,7 @@
     
     Example:
     
-    ... ado.net/XML headers and schema ...
+    ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
@@ -2678,5 +2678,50 @@
   </data>
   <data name="TVTypeEnumOpenData" xml:space="preserve">
     <value>Open Data</value>
+  </data>
+  <data name="AerationTypeEnumNotApplicable" xml:space="preserve">
+    <value>Not Applicable</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples" xml:space="preserve">
+    <value>Open Data Xlsx Of MWQM Sites And Samples</value>
+  </data>
+  <data name="ClassificationTypeEnumApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="ClassificationTypeEnumConditionallyApproved" xml:space="preserve">
+    <value>Conditionally Approved</value>
+  </data>
+  <data name="ClassificationTypeEnumConditionallyRestricted" xml:space="preserve">
+    <value>Conditionally Restricted</value>
+  </data>
+  <data name="ClassificationTypeEnumProhibited" xml:space="preserve">
+    <value>Prohibited</value>
+  </data>
+  <data name="ClassificationTypeEnumRestricted" xml:space="preserve">
+    <value>Restricted</value>
+  </data>
+  <data name="LaboratoryEnumMaxxam" xml:space="preserve">
+    <value>Maxxam</value>
+  </data>
+  <data name="TVTypeEnumApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="TVTypeEnumClassification" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="TVTypeEnumConditionallyApproved" xml:space="preserve">
+    <value>Conditionally Approved</value>
+  </data>
+  <data name="TVTypeEnumConditionallyRestricted" xml:space="preserve">
+    <value>Conditionally Restricted</value>
+  </data>
+  <data name="TVTypeEnumProhibited" xml:space="preserve">
+    <value>Prohibited</value>
+  </data>
+  <data name="TVTypeEnumProvinceTools" xml:space="preserve">
+    <value>Province Tools</value>
+  </data>
+  <data name="TVTypeEnumRestricted" xml:space="preserve">
+    <value>Restricted</value>
   </data>
 </root>

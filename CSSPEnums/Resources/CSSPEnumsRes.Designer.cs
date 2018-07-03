@@ -205,6 +205,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Not Applicable.
+        /// </summary>
+        public static string AerationTypeEnumNotApplicable {
+            get {
+                return ResourceManager.GetString("AerationTypeEnumNotApplicable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Surface.
         /// </summary>
         public static string AerationTypeEnumSurface {
@@ -745,6 +754,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Data Xlsx Of MWQM Sites And Samples.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Setup Web Tide.
         /// </summary>
         public static string AppTaskCommandEnumSetupWebTide {
@@ -1003,6 +1021,51 @@ namespace CSSPEnums.Resources {
         public static string BoxModelResultTypeEnumNoDecayUntreated {
             get {
                 return ResourceManager.GetString("BoxModelResultTypeEnumNoDecayUntreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Approved.
+        /// </summary>
+        public static string ClassificationTypeEnumApproved {
+            get {
+                return ResourceManager.GetString("ClassificationTypeEnumApproved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditionally Approved.
+        /// </summary>
+        public static string ClassificationTypeEnumConditionallyApproved {
+            get {
+                return ResourceManager.GetString("ClassificationTypeEnumConditionallyApproved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditionally Restricted.
+        /// </summary>
+        public static string ClassificationTypeEnumConditionallyRestricted {
+            get {
+                return ResourceManager.GetString("ClassificationTypeEnumConditionallyRestricted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prohibited.
+        /// </summary>
+        public static string ClassificationTypeEnumProhibited {
+            get {
+                return ResourceManager.GetString("ClassificationTypeEnumProhibited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restricted.
+        /// </summary>
+        public static string ClassificationTypeEnumRestricted {
+            get {
+                return ResourceManager.GetString("ClassificationTypeEnumRestricted", resourceCulture);
             }
         }
         
@@ -2587,6 +2650,15 @@ namespace CSSPEnums.Resources {
         public static string LaboratoryEnumInstitutDeRechercheSurLesZonesCotieres {
             get {
                 return ResourceManager.GetString("LaboratoryEnumInstitutDeRechercheSurLesZonesCotieres", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maxxam.
+        /// </summary>
+        public static string LaboratoryEnumMaxxam {
+            get {
+                return ResourceManager.GetString("LaboratoryEnumMaxxam", resourceCulture);
             }
         }
         
@@ -6938,6 +7010,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Approved.
+        /// </summary>
+        public static string TVTypeEnumApproved {
+            get {
+                return ResourceManager.GetString("TVTypeEnumApproved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Area.
         /// </summary>
         public static string TVTypeEnumArea {
@@ -6974,6 +7055,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Classification.
+        /// </summary>
+        public static string TVTypeEnumClassification {
+            get {
+                return ResourceManager.GetString("TVTypeEnumClassification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Climate Site.
         /// </summary>
         public static string TVTypeEnumClimateSite {
@@ -6997,6 +7087,24 @@ namespace CSSPEnums.Resources {
         public static string TVTypeEnumClimateSiteInfo {
             get {
                 return ResourceManager.GetString("TVTypeEnumClimateSiteInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditionally Approved.
+        /// </summary>
+        public static string TVTypeEnumConditionallyApproved {
+            get {
+                return ResourceManager.GetString("TVTypeEnumConditionallyApproved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditionally Restricted.
+        /// </summary>
+        public static string TVTypeEnumConditionallyRestricted {
+            get {
+                return ResourceManager.GetString("TVTypeEnumConditionallyRestricted", resourceCulture);
             }
         }
         
@@ -7415,6 +7523,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Prohibited.
+        /// </summary>
+        public static string TVTypeEnumProhibited {
+            get {
+                return ResourceManager.GetString("TVTypeEnumProhibited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Province.
         /// </summary>
         public static string TVTypeEnumProvince {
@@ -7424,11 +7541,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Province Tools.
+        /// </summary>
+        public static string TVTypeEnumProvinceTools {
+            get {
+                return ResourceManager.GetString("TVTypeEnumProvinceTools", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rain exceedance.
         /// </summary>
         public static string TVTypeEnumRainExceedance {
             get {
                 return ResourceManager.GetString("TVTypeEnumRainExceedance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restricted.
+        /// </summary>
+        public static string TVTypeEnumRestricted {
+            get {
+                return ResourceManager.GetString("TVTypeEnumRestricted", resourceCulture);
             }
         }
         
