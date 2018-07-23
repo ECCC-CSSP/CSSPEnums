@@ -949,6 +949,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [Classification] (CSSPModels.Classification.html#CSSPModels_Classification_ClassificationType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ClassificationService] (CSSPServices.ClassificationService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -5368,6 +5370,58 @@ namespace CSSPEnums
         /// 11 -- en [Vancouver Island (Mike Foreman)] ---- fr [Vancouver Island (Mike Foreman) (fr)]
         /// </summary>
         vigf8 = 11,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [WhereInfo] (CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_WhereOperator)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [WhereInfoService] (CSSPServices.WhereInfoService.html)</para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum WhereOperatorEnum
+    ///     {
+    ///         Error = 0,
+    ///         Equal = 1,
+    ///         LessThan = 2,
+    ///         GreaterThan = 3,
+    ///         Contains = 4,
+    ///         StartsWith = 5,
+    ///         EndsWith = 6,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum WhereOperatorEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Equal] ---- fr [Equal (fr)]
+        /// </summary>
+        Equal = 1,
+        /// <summary>
+        /// 2 -- en [LessThan] ---- fr [LessThan (fr)]
+        /// </summary>
+        LessThan = 2,
+        /// <summary>
+        /// 3 -- en [GreaterThan] ---- fr [GreaterThan (fr)]
+        /// </summary>
+        GreaterThan = 3,
+        /// <summary>
+        /// 4 -- en [Contains] ---- fr [Contains (fr)]
+        /// </summary>
+        Contains = 4,
+        /// <summary>
+        /// 5 -- en [StartsWith] ---- fr [StartsWith (fr)]
+        /// </summary>
+        StartsWith = 5,
+        /// <summary>
+        /// 6 -- en [EndsWith] ---- fr [EndsWith (fr)]
+        /// </summary>
+        EndsWith = 6,
     }
 
     /// <summary>

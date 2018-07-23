@@ -1086,6 +1086,19 @@ namespace CSSPEnums
         flood = 10,             // Upper Bay of Fundy
         vigf8 = 11,             // Vancouver Island (Mike Foreman)
     }
+
+    #region Extra enums not in the old version
+    public enum WhereOperatorEnum
+    {
+        Error = 0,
+        Equal = 1,
+        LessThan = 2,
+        GreaterThan = 3,
+        Contains = 4,
+        StartsWith = 5,
+        EndsWith = 6,
+    }
+    #endregion Extra enums not in the old version
     public class EnumIDAndText
     {
         public int? EnumID { get; set; }

@@ -3673,9 +3673,6 @@
   <data name="WebTideDataSetEnumvigf81" xml:space="preserve">
     <value>L'ilse de Vancouver (Mike Foreman)</value>
   </data>
-  <data name="_IsRequired1" xml:space="preserve">
-    <value>{0} est nécessaire</value>
-  </data>
   <data name="DatabaseType" xml:space="preserve">
     <value>TestType</value>
   </data>
@@ -3993,5 +3990,23 @@
   </data>
   <data name="TVTypeEnumRestricted" xml:space="preserve">
     <value>Restreint</value>
+  </data>
+  <data name="WhereOperatorEnumContains" xml:space="preserve">
+    <value>Contains (fr)</value>
+  </data>
+  <data name="WhereOperatorEnumEndsWith" xml:space="preserve">
+    <value>EndsWith (fr)</value>
+  </data>
+  <data name="WhereOperatorEnumEqual" xml:space="preserve">
+    <value>Equal (fr)</value>
+  </data>
+  <data name="WhereOperatorEnumGreaterThan" xml:space="preserve">
+    <value>GreaterThan (fr)</value>
+  </data>
+  <data name="WhereOperatorEnumLessThan" xml:space="preserve">
+    <value>LessThan (fr)</value>
+  </data>
+  <data name="WhereOperatorEnumStartsWith" xml:space="preserve">
+    <value>StartsWith (fr)</value>
   </data>
 </root>

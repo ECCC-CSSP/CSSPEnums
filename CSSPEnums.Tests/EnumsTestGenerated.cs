@@ -4411,6 +4411,53 @@ namespace CSSPEnums.Tests
                 }
             }
         }
+        [TestMethod]
+        public void Enums_GetEnumText_WhereOperatorEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(WhereOperatorEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(WhereOperatorEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(WhereOperatorEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(WhereOperatorEnum), i);
+        
+                    switch ((WhereOperatorEnum)i)
+                    {
+                        case WhereOperatorEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case WhereOperatorEnum.Equal:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumEqual, retStr);
+                            break;
+                        case WhereOperatorEnum.LessThan:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumLessThan, retStr);
+                            break;
+                        case WhereOperatorEnum.GreaterThan:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumGreaterThan, retStr);
+                            break;
+                        case WhereOperatorEnum.Contains:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumContains, retStr);
+                            break;
+                        case WhereOperatorEnum.StartsWith:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumStartsWith, retStr);
+                            break;
+                        case WhereOperatorEnum.EndsWith:
+                            Assert.AreEqual(CSSPEnumsRes.WhereOperatorEnumEndsWith, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
 
         #endregion Testing Methods GetEnumText public
 
@@ -7118,6 +7165,38 @@ namespace CSSPEnums.Tests
                             break;
                         default:
                             Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "WebTideDataSetEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_WhereOperatorOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(WhereOperatorEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(WhereOperatorEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(WhereOperatorEnum), i);
+
+                    switch ((WhereOperatorEnum)i)
+                    {
+                        case WhereOperatorEnum.Error:
+                        case WhereOperatorEnum.Equal:
+                        case WhereOperatorEnum.LessThan:
+                        case WhereOperatorEnum.GreaterThan:
+                        case WhereOperatorEnum.Contains:
+                        case WhereOperatorEnum.StartsWith:
+                        case WhereOperatorEnum.EndsWith:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "WhereOperatorEnum"), retStr);
                             break;
                     }
                 }
@@ -11107,6 +11186,33 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(WebTideDataSetEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_WhereOperatorEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(WhereOperatorEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(WhereOperatorEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(WhereOperatorEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();
