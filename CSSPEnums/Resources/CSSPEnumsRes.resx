@@ -2742,4 +2742,25 @@
   <data name="WhereOperatorEnumStartsWith" xml:space="preserve">
     <value>StartsWith</value>
   </data>
+  <data name="StreetTypeEnumLane" xml:space="preserve">
+    <value>Lane</value>
+  </data>
+  <data name="PropertyTypeEnumBoolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="PropertyTypeEnumDateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="PropertyTypeEnumDouble" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="PropertyTypeEnumEnum" xml:space="preserve">
+    <value>Enum</value>
+  </data>
+  <data name="PropertyTypeEnumInt" xml:space="preserve">
+    <value>Int</value>
+  </data>
+  <data name="PropertyTypeEnumString" xml:space="preserve">
+    <value>String</value>
+  </data>
 </root>

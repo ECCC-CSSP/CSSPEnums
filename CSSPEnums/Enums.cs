@@ -516,6 +516,16 @@ namespace CSSPEnums
         ChemicalCoagulation = 3,
         Filtration = 4,
     }
+    public enum PropertyTypeEnum
+    {
+        Error = 0,
+        Int = 1,
+        Double = 2,
+        String = 3,
+        Boolean = 4,
+        DateTime = 5,
+        Enum = 6,
+    }
     public enum ReportConditionEnum
     {
         Error = 0,
@@ -889,6 +899,7 @@ namespace CSSPEnums
         Drive = 7,
         Blvd = 8,
         Route = 9,
+        Lane = 10,
     }
     public enum TelTypeEnum
     {

@@ -3464,6 +3464,60 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Boolean.
+        /// </summary>
+        public static string PropertyTypeEnumBoolean {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumBoolean", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateTime.
+        /// </summary>
+        public static string PropertyTypeEnumDateTime {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumDateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Double.
+        /// </summary>
+        public static string PropertyTypeEnumDouble {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumDouble", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enum.
+        /// </summary>
+        public static string PropertyTypeEnumEnum {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumEnum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Int.
+        /// </summary>
+        public static string PropertyTypeEnumInt {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumInt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to String.
+        /// </summary>
+        public static string PropertyTypeEnumString {
+            get {
+                return ResourceManager.GetString("PropertyTypeEnumString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ReportCondition.
         /// </summary>
         public static string ReportCondition {
@@ -6277,6 +6331,15 @@ namespace CSSPEnums.Resources {
         public static string StreetTypeEnumDrive {
             get {
                 return ResourceManager.GetString("StreetTypeEnumDrive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lane.
+        /// </summary>
+        public static string StreetTypeEnumLane {
+            get {
+                return ResourceManager.GetString("StreetTypeEnumLane", resourceCulture);
             }
         }
         

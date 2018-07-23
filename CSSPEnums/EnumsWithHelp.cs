@@ -2490,6 +2490,56 @@ namespace CSSPEnums
     /// </summary>
     /// <remarks>
     /// <code>
+    ///     public enum PropertyTypeEnum
+    ///     {
+    ///         Error = 0,
+    ///         Int = 1,
+    ///         Double = 2,
+    ///         String = 3,
+    ///         Boolean = 4,
+    ///         DateTime = 5,
+    ///         Enum = 6,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum PropertyTypeEnum
+    {
+        /// <summary>
+        /// 0 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        Error = 0,
+        /// <summary>
+        /// 1 -- en [Int] ---- fr [Int]
+        /// </summary>
+        Int = 1,
+        /// <summary>
+        /// 2 -- en [Double] ---- fr [Double]
+        /// </summary>
+        Double = 2,
+        /// <summary>
+        /// 3 -- en [String] ---- fr [String]
+        /// </summary>
+        String = 3,
+        /// <summary>
+        /// 4 -- en [Boolean] ---- fr [Boolean]
+        /// </summary>
+        Boolean = 4,
+        /// <summary>
+        /// 5 -- en [DateTime] ---- fr [DateTime]
+        /// </summary>
+        DateTime = 5,
+        /// <summary>
+        /// 6 -- en [Enum] ---- fr [Enum]
+        /// </summary>
+        Enum = 6,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
     ///     public enum ReportConditionEnum
     ///     {
     ///         Error = 0,
@@ -4327,6 +4377,7 @@ namespace CSSPEnums
     ///         Drive = 7,
     ///         Blvd = 8,
     ///         Route = 9,
+    ///         Lane = 10,
     ///     }
     /// </code>
     /// </remarks>
@@ -4372,6 +4423,10 @@ namespace CSSPEnums
         /// 9 -- en [Route] ---- fr [Route (fr)]
         /// </summary>
         Route = 9,
+        /// <summary>
+        /// 10 -- en [Lane] ---- fr [Voie]
+        /// </summary>
+        Lane = 10,
     }
     /// <summary>
     /// > [!NOTE]

@@ -2188,6 +2188,53 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_GetEnumText_PropertyTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(PropertyTypeEnum), -1);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(PropertyTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PropertyTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(PropertyTypeEnum), i);
+        
+                    switch ((PropertyTypeEnum)i)
+                    {
+                        case PropertyTypeEnum.Error:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                        case PropertyTypeEnum.Int:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumInt, retStr);
+                            break;
+                        case PropertyTypeEnum.Double:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumDouble, retStr);
+                            break;
+                        case PropertyTypeEnum.String:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumString, retStr);
+                            break;
+                        case PropertyTypeEnum.Boolean:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumBoolean, retStr);
+                            break;
+                        case PropertyTypeEnum.DateTime:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumDateTime, retStr);
+                            break;
+                        case PropertyTypeEnum.Enum:
+                            Assert.AreEqual(CSSPEnumsRes.PropertyTypeEnumEnum, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_GetEnumText_ReportConditionEnum_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -3662,6 +3709,9 @@ namespace CSSPEnums.Tests
                             break;
                         case StreetTypeEnum.Route:
                             Assert.AreEqual(CSSPEnumsRes.StreetTypeEnumRoute, retStr);
+                            break;
+                        case StreetTypeEnum.Lane:
+                            Assert.AreEqual(CSSPEnumsRes.StreetTypeEnumLane, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -5937,6 +5987,38 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_PropertyTypeOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(PropertyTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                for (int i = 0, count = Enum.GetNames(typeof(PropertyTypeEnum)).Length + 5; i < count; i++)
+                {
+                    retStr = enums.EnumTypeOK(typeof(PropertyTypeEnum), i);
+
+                    switch ((PropertyTypeEnum)i)
+                    {
+                        case PropertyTypeEnum.Error:
+                        case PropertyTypeEnum.Int:
+                        case PropertyTypeEnum.Double:
+                        case PropertyTypeEnum.String:
+                        case PropertyTypeEnum.Boolean:
+                        case PropertyTypeEnum.DateTime:
+                        case PropertyTypeEnum.Enum:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "PropertyTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_ReportConditionOK_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -6763,6 +6845,7 @@ namespace CSSPEnums.Tests
                         case StreetTypeEnum.Drive:
                         case StreetTypeEnum.Blvd:
                         case StreetTypeEnum.Route:
+                        case StreetTypeEnum.Lane:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -10376,6 +10459,33 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PrimaryTreatmentTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_PropertyTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                for (int i = 1, count = Enum.GetNames(typeof(PropertyTypeEnum)).Length; i < count; i++)
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(PropertyTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(PropertyTypeEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();
