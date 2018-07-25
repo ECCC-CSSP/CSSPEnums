@@ -26,14 +26,14 @@ namespace CSSPEnums
         #endregion Variables
 
         #region Properties
-        public LanguageEnum LanguageRequest { get; set; }
+        LanguageEnum LanguageRequest { get; set; }
         #endregion Properties
 
         #region Constructors
         public Enums(LanguageEnum LanguageRequest)
         {
             this.LanguageRequest = LanguageRequest;
-            if (this.LanguageRequest == LanguageEnum.fr)
+            if (LanguageRequest == LanguageEnum.fr)
             {
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-CA");
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-CA");

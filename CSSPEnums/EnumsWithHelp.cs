@@ -38,40 +38,40 @@ namespace CSSPEnums
         /// <summary>
         /// > [!NOTE]
         /// > <para>**Language requested for accessing text representing the enumeration**</para>
-        /// > <para>**Allowable values are LanguageRequest.en, LanguageRequest.fr**</para>
+        /// > <para>**Allowable values are [en, fr]**</para>
         /// </summary>
-        /// <param name="LanguageRequest">The language to use when getting the text of the enumerations</param>
-        public LanguageEnum LanguageRequest { get; set; }
+        /// <param name="Lang">The language to use when getting the text of the enumerations</param>
+        public string Lang { get; set; }
         #endregion Properties
 
         #region Constructors
         /// <summary>
         /// > [!NOTE]
-        /// > <para>**When using LanguageEnum.en**</para>
+        /// > <para>**When using en**</para>
         /// > <code>
         /// >   <para> CurrentCulture = new CultureInfo("en-CA");</para>
         /// >   <para> CurrentUICulture = new CultureInfo("en-CA");</para>
         /// > </code>
-        /// > <para>**When using LanguageEnum.fr**</para>
+        /// > <para>**When using fr**</para>
         /// > <code>
         /// >   <para> CurrentCulture = new CultureInfo("fr-CA");</para>
         /// >   <para> CurrentUICulture = new CultureInfo("fr-CA");</para>
         /// > </code>
         /// </summary>
-        /// <param name="LanguageRequest">The language to use when getting the text of the enumerations</param>
+        /// <param name="Lang">The language to use when getting the text of the enumerations</param>
         /// <example>
         ///     <code>
-        ///         Enums enums = new Enums(LanguageEnum.en)
+        ///         Enums enums = new Enums("en")
         ///     </code>
         ///     or
         ///     <code>
-        ///         Enums enums = new Enums(LanguageEnum.fr)</c>
+        ///         Enums enums = new Enums("fr")</c>
         ///     </code>
         /// </example>
-        public Enums(LanguageEnum LanguageRequest)
+        public Enums(string Lang)
         {
-            this.LanguageRequest = LanguageRequest;
-            if (this.LanguageRequest == LanguageEnum.fr)
+            this.Lang = Lang;
+            if (this.Lang == "fr")
             {
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-CA");
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-CA");
@@ -2050,8 +2050,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [GetParam] (CSSPModels.GetParam.html#CSSPModels_GetParam_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [GetParamService] (CSSPServices.GetParamService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -2486,6 +2486,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [WhereInfo] (CSSPModels.WhereInfo.html#CSSPModels_WhereInfo_PropertyType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [WhereInfoService] (CSSPServices.WhereInfoService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
