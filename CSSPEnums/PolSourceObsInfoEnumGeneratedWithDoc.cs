@@ -10,9 +10,9 @@
  * You then need to regenerate the 'PolSourceObsInfoEnumGenerated.cs' file 
  * using the 'PolSourceGroupingGenerateCode.proj'
  * You then need to include the 'PolSourceObsInfoEnumGenerated.cs' file in the project 
- * while exluding the 'PolSourceObsInfoEnumGeneratedWithHelp.cs' and recompile
+ * while exluding the 'PolSourceObsInfoEnumGeneratedWithDoc.cs' and recompile
  * Once compiled with changes, you will have to run the CSSPEnumsGenerateCode.proj (F5) 
- * and click on the 'Generate EnumsWithHelp.cs' button to regenerate this file.
+ * and click on the 'Generate EnumsWithDoc.cs' button to regenerate this file.
  * You can then re-include this file to the project while excluding PolSourceObsInfoEnumGenerated.cs
  * 
  */
@@ -63,6 +63,7 @@ namespace CSSPEnums
     ///         HumanPollutionSingleWarehouseM = 12618,
     ///         HumanPollutionSingleCommericalM = 12619,
     ///         HumanPollutionSingleFishPlant = 12620,
+    ///         HumanPollutionSingleBeachPatio = 12621,
     ///         HumanPollutionMultipleStart = 21000,
     ///         HumanPollutionMultipleResidences = 21001,
     ///         HumanPollutionMultipleCottages = 21002,
@@ -83,7 +84,8 @@ namespace CSSPEnums
     ///         HumanPollutionMultipleCottagesM = 21017,
     ///         HumanPollutionMultipleWarehousesM = 21018,
     ///         HumanPollutionMultipleCommericalsM = 21019,
-    ///         HumanPollutionSingleFishPlants = 21020,
+    ///         HumanPollutionMultipleFishPlants = 21020,
+    ///         HumanPollutionMultipleBeachPatios = 21021,
     ///         HumanPollutionCountNumberStart = 16900,
     ///         HumanPollutionCountNumberEqualTo1 = 16901,
     ///         HumanPollutionCountNumberEqualTo2 = 16902,
@@ -158,6 +160,7 @@ namespace CSSPEnums
     ///         OuthouseStart = 14700,
     ///         OuthouseConcreteTank = 14701,
     ///         OuthouseOnGround = 14702,
+    ///         OuthouseOnPortable = 14703,
     ///         IndustrialEffluentStart = 11200,
     ///         IndustrialEffluentForestry = 11201,
     ///         IndustrialEffluentAgricultureFarm = 11202,
@@ -181,6 +184,7 @@ namespace CSSPEnums
     ///         AgriculturesourceFeedlot = 10603,
     ///         AriculturalSourcePeatMoss = 10604,
     ///         AgricultureSourceManure = 10605,
+    ///         AgriculturalSourceBarn = 10606,
     ///         ManureManagementStart = 13400,
     ///         ManureManagementPileSpread = 13401,
     ///         ManureManagementLiqSpread = 13402,
@@ -337,6 +341,7 @@ namespace CSSPEnums
     ///         TypesOfLivestockDucks = 13708,
     ///         TypesOfLivestockMixtureSmall = 13709,
     ///         TypesOfLivestockFurFarms = 13710,
+    ///         TypesOfLivestockDogs = 13711,
     ///         TypesOfWildlifeStart = 13800,
     ///         TypesOfWildlifeCrows = 13801,
     ///         TypesOfWildlifeGulls = 13802,
@@ -476,6 +481,7 @@ namespace CSSPEnums
     ///         MarineLocationRockOutcrop = 12307,
     ///         MarineLocationAquacultureSite = 12308,
     ///         MarineLocationOffShoreline = 12309,
+    ///         MarineLocationMudflat = 12310,
     ///         WaterTypesOfMarineLifeStart = 16500,
     ///         WaterTypesOfMarineLifeShorelineBirds = 16501,
     ///         WaterTypesOfMarineLifeGulls = 16502,
@@ -693,25 +699,34 @@ namespace CSSPEnums
     ///         ShorelineRiparianZonePresentLow = 23007,
     ///         ShorelineRiparianZoneAbsentLow = 23008,
     ///         ShorelineRiparianZoneNoInfoLow = 23009,
+    ///         ShorelineRiparianGrassedZonePresent = 23010,
+    ///         ShorelineRiparianGrassedZonePresentMed = 23011,
+    ///         ShorelineRiparianGrassedZonePresentLow = 23012,
     ///         FlowThroughStructureStart = 16400,
     ///         FlowThroughStructureCulvert = 16401,
     ///         FlowThroughStructurePipe = 16402,
     ///         FlowThroughStructureBridge = 16403,
     ///         FlowThroughStructureBerm = 16404,
     ///         FlowThroughStructureWetland = 16405,
-    ///         StructureInRoadNoStructure = 16406,
+    ///         FlowThroughNoStructure = 16406,
     ///         FlowThroughStructureCulvertMed = 16407,
     ///         FlowThroughStructurePipeMed = 16408,
     ///         FlowThroughStructureBridgeMed = 16409,
     ///         FlowThroughStructureBermMed = 16410,
     ///         FlowThroughStructureWetlandMed = 16411,
-    ///         StructureInRoadNoStructureMed = 16412,
+    ///         FlowThroughNoStructureMed = 16412,
     ///         FlowThroughStructureCulvertLow = 16413,
     ///         FlowThroughStructurePipeLow = 16414,
     ///         FlowThroughStructureBridgeLow = 16415,
     ///         FlowThroughStructureBermLow = 16416,
     ///         FlowThroughStructureWetlandLow = 16417,
-    ///         StructureInRoadNoStructureLow = 16418,
+    ///         FlowThroughNoStructureLow = 16418,
+    ///         FlowThroughSaltwaterMarsh = 16419,
+    ///         FlowThroughSaltwaterMarshMed = 16420,
+    ///         FlowThroughSaltwaterMarshLow = 16421,
+    ///         FlowThroughBeaverDam = 16422,
+    ///         FlowThroughBeaverDamMed = 16423,
+    ///         FlowThroughBeaverDamLow = 16424,
     ///         FlowThroughWaterCourseStart = 11100,
     ///         FlowThroughStructureCulvertWaterCourse = 11101,
     ///         FlowThroughStructureBridgeWaterCourse = 11102,
@@ -728,6 +743,12 @@ namespace CSSPEnums
     ///         FlowThroughStructureBermWaterCourseLow = 11113,
     ///         FlowThroughStructureWetlandWaterCourseLow = 11114,
     ///         StructureInRoadNoStructureWaterCourseLow = 11115,
+    ///         FlowThroughStructureSaltMarshWatercourse = 11116,
+    ///         FlowThroughStructureSaltMarshWaterCourseMed = 11117,
+    ///         FlowThroughStructureSaltMarshWaterCourseLow = 11118,
+    ///         FlowThroughStructureBeaverDamWatercourse = 11119,
+    ///         FlowThroughStructureBeaverDamWaterCourseMed = 11120,
+    ///         FlowThroughStructureBeaverDamWaterCourseLow = 11121,
     ///         WaterCourseDistStart = 24000,
     ///         DistanceToWaterInMeters0W = 24001,
     ///         DistanceToWaterInMeters5W = 24002,
@@ -2096,6 +2117,10 @@ namespace CSSPEnums
         /// </summary>
         HumanPollutionSingleFishPlant = 12620,
         /// <summary>
+        /// 12621 -- en [                                                        Beach Patio] ---- fr [Patio de plage]
+        /// </summary>
+        HumanPollutionSingleBeachPatio = 12621,
+        /// <summary>
         /// 21000 -- en [Type of Structures ] ---- fr [Type d'édifices]
         /// </summary>
         HumanPollutionMultipleStart = 21000,
@@ -2178,7 +2203,11 @@ namespace CSSPEnums
         /// <summary>
         /// 21020 -- en [                             Fish Plants] ---- fr [Plantes de poisson,]
         /// </summary>
-        HumanPollutionSingleFishPlants = 21020,
+        HumanPollutionMultipleFishPlants = 21020,
+        /// <summary>
+        /// 21021 -- en [                                                        Beach Patios] ---- fr [Patios de plage]
+        /// </summary>
+        HumanPollutionMultipleBeachPatios = 21021,
         /// <summary>
         /// 16900 -- en [Number of Buildings or Structures related to  this Issue.] ---- fr [Nombre de bâtiments ou de structures liés à ce problème.]
         /// </summary>
@@ -2360,7 +2389,7 @@ namespace CSSPEnums
         /// </summary>
         HumanLocationIsland = 12709,
         /// <summary>
-        /// 12710 -- en [                                                  Recreational ] ---- fr [Zone récréative]
+        /// 12710 -- en [                                               Public Recreation Areas] ---- fr [Zones de loisirs publics]
         /// </summary>
         HumanLocationRecreationalArea = 12710,
         /// <summary>
@@ -2472,15 +2501,19 @@ namespace CSSPEnums
         /// </summary>
         OuthouseConcreteTank = 14701,
         /// <summary>
-        /// 14702 -- en [On-ground] ---- fr [Sur le sol]
+        /// 14702 -- en [In-ground] ---- fr [En terre]
         /// </summary>
         OuthouseOnGround = 14702,
+        /// <summary>
+        /// 14703 -- en [Portable Unit] ---- fr [Unité portative]
+        /// </summary>
+        OuthouseOnPortable = 14703,
         /// <summary>
         /// 11200 -- en [Effluent Source Location] ---- fr [Emplacement de la source d'effluent]
         /// </summary>
         IndustrialEffluentStart = 11200,
         /// <summary>
-        /// 11201 -- en [                                                    Forestry] ---- fr [Sylviculture]
+        /// 11201 -- en [                                                    Forested Landscape] ---- fr [Sylviculture]
         /// </summary>
         IndustrialEffluentForestry = 11201,
         /// <summary>
@@ -2516,7 +2549,7 @@ namespace CSSPEnums
         /// </summary>
         IndustrialEffluentUrbanRunoff = 11209,
         /// <summary>
-        /// 11210 -- en [                                             Recreational] ---- fr [Récréatif]
+        /// 11210 -- en [                                               Public Recreation Areas] ---- fr [Zones de loisirs publics]
         /// </summary>
         IndustrialEffluentRecreation = 11210,
         /// <summary>
@@ -2567,6 +2600,10 @@ namespace CSSPEnums
         /// 10605 -- en [                                      Manure Management] ---- fr [                                      Gestion du fumier]
         /// </summary>
         AgricultureSourceManure = 10605,
+        /// <summary>
+        /// 10606 -- en [                          Barn] ---- fr [Granges]
+        /// </summary>
+        AgriculturalSourceBarn = 10606,
         /// <summary>
         /// 13400 -- en [Manure Management] ---- fr [Préoccupation majeure]
         /// </summary>
@@ -3148,7 +3185,7 @@ namespace CSSPEnums
         /// </summary>
         TypesOfAnimalMarine = 10703,
         /// <summary>
-        /// 13700 -- en [Livestock] ---- fr [Type de bétail]
+        /// 13700 -- en [Domestic Animals] ---- fr [Type de bétail]
         /// </summary>
         TypesOfLivestockStart = 13700,
         /// <summary>
@@ -3191,6 +3228,10 @@ namespace CSSPEnums
         /// 13710 -- en [ Fur Farm Animals] ---- fr [plusieurs animaux de ferme]
         /// </summary>
         TypesOfLivestockFurFarms = 13710,
+        /// <summary>
+        /// 13711 -- en [                                      Dogs] ---- fr [chiens]
+        /// </summary>
+        TypesOfLivestockDogs = 13711,
         /// <summary>
         /// 13800 -- en [Wildlife] ---- fr [Type d'animaux]
         /// </summary>
@@ -3388,7 +3429,7 @@ namespace CSSPEnums
         /// </summary>
         AnimalBldgEquals10 = 16010,
         /// <summary>
-        /// 16011 -- en [                                                                      Free Roaming] ---- fr [                                        Roaming gratuit]
+        /// 16011 -- en [                                                                Free Roaming] ---- fr [                                        Roaming gratuit]
         /// </summary>
         AnimalBldgEqualsNotApplicable = 16011,
         /// <summary>
@@ -3747,6 +3788,10 @@ namespace CSSPEnums
         /// 12309 -- en [Off -Shore] ---- fr [Hors-terre]
         /// </summary>
         MarineLocationOffShoreline = 12309,
+        /// <summary>
+        /// 12310 -- en [Mudflat] ---- fr [Vasière]
+        /// </summary>
+        MarineLocationMudflat = 12310,
         /// <summary>
         /// 16500 -- en [Marine Animals] ---- fr [Type de faune]
         /// </summary>
@@ -4576,45 +4621,57 @@ namespace CSSPEnums
         /// </summary>
         WaterCourseAreaSlopeNALow = 10312,
         /// <summary>
-        /// 23000 -- en [Riparian Zone] ---- fr [Y a-t-il une zone riveraine au bord de l'eau]
+        /// 23000 -- en [Riparian or Grass Zone] ---- fr [Y a-t-il une zone riveraine au bord de l'eau]
         /// </summary>
         ShorelineRiparionZoneStart = 23000,
         /// <summary>
-        /// 23001 -- en [                                  Present | (H)] ---- fr [               Zone riveraine présente]
+        /// 23001 -- en [                                   Riparian Present | (H)] ---- fr [Présent riverain | (H)]
         /// </summary>
         ShorelineRiparianZonePresent = 23001,
         /// <summary>
-        /// 23002 -- en [                           Absent | (H)] ---- fr [          Zone riveraine absente]
+        /// 23002 -- en [                     Vegetated Zone Absent | (H)] ---- fr [                     Zone végétale absente | (H)]
         /// </summary>
         ShorelineRiparianZoneAbsent = 23002,
         /// <summary>
-        /// 23003 -- en [No Data | (H)] ---- fr [Zone riveraine - aucune information]
+        /// 23003 -- en [No Data | (H)] ---- fr [Aucune donnée | (H)]
         /// </summary>
         ShorelineRiparianZoneNoInfo = 23003,
         /// <summary>
-        /// 23004 -- en [                                           Present | (M)] ---- fr [               Zone riveraine présente]
+        /// 23004 -- en [                                    Riparian Present | (M)] ---- fr [                                    Présent riverain | (M)]
         /// </summary>
         ShorelineRiparianZonePresentMed = 23004,
         /// <summary>
-        /// 23005 -- en [                           Absent | (M)] ---- fr [          Zone riveraine absente]
+        /// 23005 -- en [                         Vegetated Zone Absent | (M)] ---- fr [                         Zone végétale absente | (M)]
         /// </summary>
         ShorelineRiparianZoneAbsentMed = 23005,
         /// <summary>
-        /// 23006 -- en [No Data | (M)] ---- fr [Zone riveraine - aucune information]
+        /// 23006 -- en [No Data | (M)] ---- fr [Aucune donnée | (M)]
         /// </summary>
         ShorelineRiparianZoneNoInfoMed = 23006,
         /// <summary>
-        /// 23007 -- en [                                         Present | (L)] ---- fr [               Zone riveraine présente]
+        /// 23007 -- en [                                      Riparian Present | (L)] ---- fr [                                      Présent riverain | (L)]
         /// </summary>
         ShorelineRiparianZonePresentLow = 23007,
         /// <summary>
-        /// 23008 -- en [                           Absent | (L)] ---- fr [          Zone riveraine absente]
+        /// 23008 -- en [                           Vegetated Zone Absent | (L)] ---- fr [                           Zone végétale absente | (L)]
         /// </summary>
         ShorelineRiparianZoneAbsentLow = 23008,
         /// <summary>
-        /// 23009 -- en [No Data | (L)] ---- fr [Zone riveraine - aucune information]
+        /// 23009 -- en [No Data | (L)] ---- fr [Aucune donnée | (L)]
         /// </summary>
         ShorelineRiparianZoneNoInfoLow = 23009,
+        /// <summary>
+        /// 23010 -- en [                           Short grass Present | (H)] ---- fr [                           Présence d'herbe courte | (H)]
+        /// </summary>
+        ShorelineRiparianGrassedZonePresent = 23010,
+        /// <summary>
+        /// 23011 -- en [                                 Short grass Present | (M)] ---- fr [                                 Présence d'herbe courte | (M)]
+        /// </summary>
+        ShorelineRiparianGrassedZonePresentMed = 23011,
+        /// <summary>
+        /// 23012 -- en [                                      Short grass Present | (L)] ---- fr [                                      Présence d'herbe courte | (L)]
+        /// </summary>
+        ShorelineRiparianGrassedZonePresentLow = 23012,
         /// <summary>
         /// 16400 -- en [Does Pathway Encounter Structure] ---- fr [Est-ce que la structure de rencontre de la voie]
         /// </summary>
@@ -4642,7 +4699,7 @@ namespace CSSPEnums
         /// <summary>
         /// 16406 -- en [                                                              Free Flowing | (H)] ---- fr [                                                              Flux libre | (H)]
         /// </summary>
-        StructureInRoadNoStructure = 16406,
+        FlowThroughNoStructure = 16406,
         /// <summary>
         /// 16407 -- en [                                                         Culvert | (M)] ---- fr [                                                         Ponceau | (M)]
         /// </summary>
@@ -4666,7 +4723,7 @@ namespace CSSPEnums
         /// <summary>
         /// 16412 -- en [                                                           Free Flowing | (M)] ---- fr [                                                           Flux libre | (M)]
         /// </summary>
-        StructureInRoadNoStructureMed = 16412,
+        FlowThroughNoStructureMed = 16412,
         /// <summary>
         /// 16413 -- en [                                                         Culvert | (L)] ---- fr [                                                         Ponceau | (L)]
         /// </summary>
@@ -4690,7 +4747,31 @@ namespace CSSPEnums
         /// <summary>
         /// 16418 -- en [                                                          Free Flowing | (L)] ---- fr [                                                          Flux libre | (L)]
         /// </summary>
-        StructureInRoadNoStructureLow = 16418,
+        FlowThroughNoStructureLow = 16418,
+        /// <summary>
+        /// 16419 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d'eau salée | (H)]
+        /// </summary>
+        FlowThroughSaltwaterMarsh = 16419,
+        /// <summary>
+        /// 16420 -- en [                                            Saltwater Marsh | (M)] ---- fr [Marais d'eau salée | (M)]
+        /// </summary>
+        FlowThroughSaltwaterMarshMed = 16420,
+        /// <summary>
+        /// 16421 -- en [                                            Saltwater Marsh | (L)] ---- fr [Marais d'eau salée | (L)]
+        /// </summary>
+        FlowThroughSaltwaterMarshLow = 16421,
+        /// <summary>
+        /// 16422 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]
+        /// </summary>
+        FlowThroughBeaverDam = 16422,
+        /// <summary>
+        /// 16423 -- en [                             Beaver Dam | (M)] ---- fr [Barrage de castor | (M)]
+        /// </summary>
+        FlowThroughBeaverDamMed = 16423,
+        /// <summary>
+        /// 16424 -- en [                                      Beaver Dam | (L)] ---- fr [Barrage de castor | (L)]
+        /// </summary>
+        FlowThroughBeaverDamLow = 16424,
         /// <summary>
         /// 11100 -- en [Does Water Course Encounter Structure ] ---- fr [Est-ce que la structure de rencontre de cours d'eau]
         /// </summary>
@@ -4755,6 +4836,30 @@ namespace CSSPEnums
         /// 11115 -- en [                                                            Free Flowing | (L)] ---- fr [                                                            Flux libre | (L)]
         /// </summary>
         StructureInRoadNoStructureWaterCourseLow = 11115,
+        /// <summary>
+        /// 11116 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d'eau salée | (H)]
+        /// </summary>
+        FlowThroughStructureSaltMarshWatercourse = 11116,
+        /// <summary>
+        /// 11117 -- en [                                            Saltwater Marsh | (M)] ---- fr [Marais d'eau salée | (M)]
+        /// </summary>
+        FlowThroughStructureSaltMarshWaterCourseMed = 11117,
+        /// <summary>
+        /// 11118 -- en [                                            Saltwater Marsh | (L)] ---- fr [Marais d'eau salée | (L)]
+        /// </summary>
+        FlowThroughStructureSaltMarshWaterCourseLow = 11118,
+        /// <summary>
+        /// 11119 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]
+        /// </summary>
+        FlowThroughStructureBeaverDamWatercourse = 11119,
+        /// <summary>
+        /// 11120 -- en [                             Beaver Dam | (M)] ---- fr [Barrage de castor | (M)]
+        /// </summary>
+        FlowThroughStructureBeaverDamWaterCourseMed = 11120,
+        /// <summary>
+        /// 11121 -- en [                                      Beaver Dam | (L)] ---- fr [Barrage de castor | (L)]
+        /// </summary>
+        FlowThroughStructureBeaverDamWaterCourseLow = 11121,
         /// <summary>
         /// 24000 -- en [PathWay Distance To tidal Water (m) ] ---- fr [Distance de la côte (mètres)]
         /// </summary>
@@ -6284,23 +6389,26 @@ namespace CSSPEnums
         /// </summary>
         FecalCountNumberApproxTo1700k = 18333,
         /// <summary>
-        /// 18500 -- en [Calculated Volume (m3) of Water Needed to Dilute a Fecal Loadings to 14 MPN] ---- fr []
+        /// 18500 -- en [Calculated Volume (m3) of Water Needed to Dilute a Fecal Loadings to 14 MPN] ---- fr [
+Volume calculé (m3) d'eau nécessaire pour diluer une charge fécale à 14 MPN
+
+]
         /// </summary>
         CubicMeterToDiluteToMPN14Start = 18500,
         /// <summary>
-        /// 18501 -- en [2 ] ---- fr [2 ]
+        /// 18501 -- en [2 | low volumne] ---- fr [2 ]
         /// </summary>
         CubicMeterToDiluteToMPN14Starta = 18501,
         /// <summary>
-        /// 18502 -- en [4] ---- fr [4]
+        /// 18502 -- en [4 | Low volumne] ---- fr [4]
         /// </summary>
         CubicMeterToDiluteToMPN14Startb = 18502,
         /// <summary>
-        /// 18503 -- en [6] ---- fr [6]
+        /// 18503 -- en [6 | low volume] ---- fr [6]
         /// </summary>
         CubicMeterToDiluteToMPN14Startc = 18503,
         /// <summary>
-        /// 18504 -- en [7] ---- fr [7]
+        /// 18504 -- en [7 | Low volume] ---- fr [7]
         /// </summary>
         CubicMeterToDiluteToMPN14Startd = 18504,
         /// <summary>

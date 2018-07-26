@@ -7329,6 +7329,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.HumanPollutionSingleWarehouseM:
                         case PolSourceObsInfoEnum.HumanPollutionSingleCommericalM:
                         case PolSourceObsInfoEnum.HumanPollutionSingleFishPlant:
+                        case PolSourceObsInfoEnum.HumanPollutionSingleBeachPatio:
                         case PolSourceObsInfoEnum.HumanPollutionMultipleStart:
                         case PolSourceObsInfoEnum.HumanPollutionMultipleResidences:
                         case PolSourceObsInfoEnum.HumanPollutionMultipleCottages:
@@ -7349,7 +7350,8 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.HumanPollutionMultipleCottagesM:
                         case PolSourceObsInfoEnum.HumanPollutionMultipleWarehousesM:
                         case PolSourceObsInfoEnum.HumanPollutionMultipleCommericalsM:
-                        case PolSourceObsInfoEnum.HumanPollutionSingleFishPlants:
+                        case PolSourceObsInfoEnum.HumanPollutionMultipleFishPlants:
+                        case PolSourceObsInfoEnum.HumanPollutionMultipleBeachPatios:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberStart:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo1:
                         case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo2:
@@ -7424,6 +7426,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.OuthouseStart:
                         case PolSourceObsInfoEnum.OuthouseConcreteTank:
                         case PolSourceObsInfoEnum.OuthouseOnGround:
+                        case PolSourceObsInfoEnum.OuthouseOnPortable:
                         case PolSourceObsInfoEnum.IndustrialEffluentStart:
                         case PolSourceObsInfoEnum.IndustrialEffluentForestry:
                         case PolSourceObsInfoEnum.IndustrialEffluentAgricultureFarm:
@@ -7447,6 +7450,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.AgriculturesourceFeedlot:
                         case PolSourceObsInfoEnum.AriculturalSourcePeatMoss:
                         case PolSourceObsInfoEnum.AgricultureSourceManure:
+                        case PolSourceObsInfoEnum.AgriculturalSourceBarn:
                         case PolSourceObsInfoEnum.ManureManagementStart:
                         case PolSourceObsInfoEnum.ManureManagementPileSpread:
                         case PolSourceObsInfoEnum.ManureManagementLiqSpread:
@@ -7603,6 +7607,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.TypesOfLivestockDucks:
                         case PolSourceObsInfoEnum.TypesOfLivestockMixtureSmall:
                         case PolSourceObsInfoEnum.TypesOfLivestockFurFarms:
+                        case PolSourceObsInfoEnum.TypesOfLivestockDogs:
                         case PolSourceObsInfoEnum.TypesOfWildlifeStart:
                         case PolSourceObsInfoEnum.TypesOfWildlifeCrows:
                         case PolSourceObsInfoEnum.TypesOfWildlifeGulls:
@@ -7742,6 +7747,7 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.MarineLocationRockOutcrop:
                         case PolSourceObsInfoEnum.MarineLocationAquacultureSite:
                         case PolSourceObsInfoEnum.MarineLocationOffShoreline:
+                        case PolSourceObsInfoEnum.MarineLocationMudflat:
                         case PolSourceObsInfoEnum.WaterTypesOfMarineLifeStart:
                         case PolSourceObsInfoEnum.WaterTypesOfMarineLifeShorelineBirds:
                         case PolSourceObsInfoEnum.WaterTypesOfMarineLifeGulls:
@@ -7959,25 +7965,34 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.ShorelineRiparianZonePresentLow:
                         case PolSourceObsInfoEnum.ShorelineRiparianZoneAbsentLow:
                         case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
+                        case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresent:
+                        case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentMed:
+                        case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureStart:
                         case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                         case PolSourceObsInfoEnum.FlowThroughStructurePipe:
                         case PolSourceObsInfoEnum.FlowThroughStructureBridge:
                         case PolSourceObsInfoEnum.FlowThroughStructureBerm:
                         case PolSourceObsInfoEnum.FlowThroughStructureWetland:
-                        case PolSourceObsInfoEnum.StructureInRoadNoStructure:
+                        case PolSourceObsInfoEnum.FlowThroughNoStructure:
                         case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
                         case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
                         case PolSourceObsInfoEnum.FlowThroughStructureBridgeMed:
                         case PolSourceObsInfoEnum.FlowThroughStructureBermMed:
                         case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
-                        case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
+                        case PolSourceObsInfoEnum.FlowThroughNoStructureMed:
                         case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
                         case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureBridgeLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureBermLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
-                        case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
+                        case PolSourceObsInfoEnum.FlowThroughNoStructureLow:
+                        case PolSourceObsInfoEnum.FlowThroughSaltwaterMarsh:
+                        case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshMed:
+                        case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshLow:
+                        case PolSourceObsInfoEnum.FlowThroughBeaverDam:
+                        case PolSourceObsInfoEnum.FlowThroughBeaverDamMed:
+                        case PolSourceObsInfoEnum.FlowThroughBeaverDamLow:
                         case PolSourceObsInfoEnum.FlowThroughWaterCourseStart:
                         case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
                         case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
@@ -7994,6 +8009,12 @@ namespace CSSPEnums.Tests
                         case PolSourceObsInfoEnum.FlowThroughStructureBermWaterCourseLow:
                         case PolSourceObsInfoEnum.FlowThroughStructureWetlandWaterCourseLow:
                         case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWatercourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseLow:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWatercourse:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseMed:
+                        case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseLow:
                         case PolSourceObsInfoEnum.WaterCourseDistStart:
                         case PolSourceObsInfoEnum.DistanceToWaterInMeters0W:
                         case PolSourceObsInfoEnum.DistanceToWaterInMeters5W:

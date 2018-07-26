@@ -304,6 +304,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleCommericalM;
                 case PolSourceObsInfoEnum.HumanPollutionSingleFishPlant:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlant;
+                case PolSourceObsInfoEnum.HumanPollutionSingleBeachPatio:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleBeachPatio;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleResidences:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleResidences;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCottages:
@@ -342,8 +344,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleWarehousesM;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCommericalsM:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleCommericalsM;
-                case PolSourceObsInfoEnum.HumanPollutionSingleFishPlants:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlants;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleFishPlants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleFishPlants;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleBeachPatios:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleBeachPatios;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionCountNumberEqualTo1;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo2:
@@ -484,6 +488,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseConcreteTank;
                 case PolSourceObsInfoEnum.OuthouseOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnGround;
+                case PolSourceObsInfoEnum.OuthouseOnPortable:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnPortable;
                 case PolSourceObsInfoEnum.IndustrialEffluentForestry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustrialEffluentForestry;
                 case PolSourceObsInfoEnum.IndustrialEffluentAgricultureFarm:
@@ -526,6 +532,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAriculturalSourcePeatMoss;
                 case PolSourceObsInfoEnum.AgricultureSourceManure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureSourceManure;
+                case PolSourceObsInfoEnum.AgriculturalSourceBarn:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgriculturalSourceBarn;
                 case PolSourceObsInfoEnum.ManureManagementPileSpread:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureManagementPileSpread;
                 case PolSourceObsInfoEnum.ManureManagementLiqSpread:
@@ -790,6 +798,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockMixtureSmall;
                 case PolSourceObsInfoEnum.TypesOfLivestockFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockFurFarms;
+                case PolSourceObsInfoEnum.TypesOfLivestockDogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockDogs;
                 case PolSourceObsInfoEnum.TypesOfWildlifeCrows:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeCrows;
                 case PolSourceObsInfoEnum.TypesOfWildlifeGulls:
@@ -1040,6 +1050,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationAquacultureSite;
                 case PolSourceObsInfoEnum.MarineLocationOffShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationOffShoreline;
+                case PolSourceObsInfoEnum.MarineLocationMudflat:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationMudflat;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeShorelineBirds:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeShorelineBirds;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeGulls:
@@ -1446,6 +1458,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentLow;
                 case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoLow;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresent;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentMed;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentLow;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvert;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipe:
@@ -1456,8 +1474,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBerm;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetland:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetland;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructure:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructure;
+                case PolSourceObsInfoEnum.FlowThroughNoStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructure;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertMed;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
@@ -1468,8 +1486,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermMed;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandMed;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureMed;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureMed;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertLow;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
@@ -1480,8 +1498,20 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermLow;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandLow;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureLow;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureLow;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarsh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarsh;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshMed;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshLow;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDam:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDam;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamMed;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamLow;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertWaterCourse;
                 case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
@@ -1512,6 +1542,18 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandWaterCourseLow;
                 case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureWaterCourseLow;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWatercourse;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseMed;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseLow;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWatercourse;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseMed;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseLow;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters0W:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceToWaterInMeters0W;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters5W:
@@ -4214,6 +4256,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleCommericalMReport;
                 case PolSourceObsInfoEnum.HumanPollutionSingleFishPlant:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantReport;
+                case PolSourceObsInfoEnum.HumanPollutionSingleBeachPatio:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleBeachPatioReport;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleResidences:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleResidencesReport;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCottages:
@@ -4252,8 +4296,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleWarehousesMReport;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCommericalsM:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleCommericalsMReport;
-                case PolSourceObsInfoEnum.HumanPollutionSingleFishPlants:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantsReport;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleFishPlants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleFishPlantsReport;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleBeachPatios:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleBeachPatiosReport;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionCountNumberEqualTo1Report;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo2:
@@ -4394,6 +4440,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseConcreteTankReport;
                 case PolSourceObsInfoEnum.OuthouseOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnGroundReport;
+                case PolSourceObsInfoEnum.OuthouseOnPortable:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnPortableReport;
                 case PolSourceObsInfoEnum.IndustrialEffluentForestry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustrialEffluentForestryReport;
                 case PolSourceObsInfoEnum.IndustrialEffluentAgricultureFarm:
@@ -4436,6 +4484,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAriculturalSourcePeatMossReport;
                 case PolSourceObsInfoEnum.AgricultureSourceManure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureSourceManureReport;
+                case PolSourceObsInfoEnum.AgriculturalSourceBarn:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgriculturalSourceBarnReport;
                 case PolSourceObsInfoEnum.ManureManagementPileSpread:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureManagementPileSpreadReport;
                 case PolSourceObsInfoEnum.ManureManagementLiqSpread:
@@ -4700,6 +4750,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockMixtureSmallReport;
                 case PolSourceObsInfoEnum.TypesOfLivestockFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockFurFarmsReport;
+                case PolSourceObsInfoEnum.TypesOfLivestockDogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockDogsReport;
                 case PolSourceObsInfoEnum.TypesOfWildlifeCrows:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeCrowsReport;
                 case PolSourceObsInfoEnum.TypesOfWildlifeGulls:
@@ -4950,6 +5002,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationAquacultureSiteReport;
                 case PolSourceObsInfoEnum.MarineLocationOffShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationOffShorelineReport;
+                case PolSourceObsInfoEnum.MarineLocationMudflat:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationMudflatReport;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeShorelineBirds:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeShorelineBirdsReport;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeGulls:
@@ -5356,6 +5410,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentLowReport;
                 case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoLowReport;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentReport;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentMedReport;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentLowReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertReport;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipe:
@@ -5366,8 +5426,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetland:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandReport;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructure:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureReport;
+                case PolSourceObsInfoEnum.FlowThroughNoStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertMedReport;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
@@ -5378,8 +5438,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermMedReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandMedReport;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureMedReport;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureMedReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertLowReport;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
@@ -5390,8 +5450,20 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermLowReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandLowReport;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureLowReport;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureLowReport;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarsh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshReport;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshMedReport;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshLowReport;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDam:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamReport;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamMedReport;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamLowReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertWaterCourseReport;
                 case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
@@ -5422,6 +5494,18 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandWaterCourseLowReport;
                 case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureWaterCourseLowReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWatercourseReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseMedReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseLowReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWatercourseReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseMedReport;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseLowReport;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters0W:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceToWaterInMeters0WReport;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters5W:
@@ -7877,6 +7961,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleCommericalMText;
                 case PolSourceObsInfoEnum.HumanPollutionSingleFishPlant:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantText;
+                case PolSourceObsInfoEnum.HumanPollutionSingleBeachPatio:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleBeachPatioText;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleResidences:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleResidencesText;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCottages:
@@ -7915,8 +8001,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleWarehousesMText;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCommericalsM:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleCommericalsMText;
-                case PolSourceObsInfoEnum.HumanPollutionSingleFishPlants:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantsText;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleFishPlants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleFishPlantsText;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleBeachPatios:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleBeachPatiosText;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo1:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionCountNumberEqualTo1Text;
                 case PolSourceObsInfoEnum.HumanPollutionCountNumberEqualTo2:
@@ -8057,6 +8145,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseConcreteTankText;
                 case PolSourceObsInfoEnum.OuthouseOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnGroundText;
+                case PolSourceObsInfoEnum.OuthouseOnPortable:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnPortableText;
                 case PolSourceObsInfoEnum.IndustrialEffluentForestry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustrialEffluentForestryText;
                 case PolSourceObsInfoEnum.IndustrialEffluentAgricultureFarm:
@@ -8099,6 +8189,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAriculturalSourcePeatMossText;
                 case PolSourceObsInfoEnum.AgricultureSourceManure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureSourceManureText;
+                case PolSourceObsInfoEnum.AgriculturalSourceBarn:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgriculturalSourceBarnText;
                 case PolSourceObsInfoEnum.ManureManagementPileSpread:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureManagementPileSpreadText;
                 case PolSourceObsInfoEnum.ManureManagementLiqSpread:
@@ -8363,6 +8455,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockMixtureSmallText;
                 case PolSourceObsInfoEnum.TypesOfLivestockFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockFurFarmsText;
+                case PolSourceObsInfoEnum.TypesOfLivestockDogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockDogsText;
                 case PolSourceObsInfoEnum.TypesOfWildlifeCrows:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeCrowsText;
                 case PolSourceObsInfoEnum.TypesOfWildlifeGulls:
@@ -8613,6 +8707,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationAquacultureSiteText;
                 case PolSourceObsInfoEnum.MarineLocationOffShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationOffShorelineText;
+                case PolSourceObsInfoEnum.MarineLocationMudflat:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationMudflatText;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeShorelineBirds:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeShorelineBirdsText;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeGulls:
@@ -9019,6 +9115,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentLowText;
                 case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoLowText;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentText;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentMedText;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentLowText;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertText;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipe:
@@ -9029,8 +9131,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermText;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetland:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandText;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructure:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureText;
+                case PolSourceObsInfoEnum.FlowThroughNoStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureText;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertMedText;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
@@ -9041,8 +9143,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermMedText;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandMedText;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureMedText;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureMedText;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertLowText;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
@@ -9053,8 +9155,20 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermLowText;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandLowText;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureLowText;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureLowText;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarsh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshText;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshMedText;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshLowText;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDam:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamText;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamMedText;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamLowText;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertWaterCourseText;
                 case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
@@ -9085,6 +9199,18 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandWaterCourseLowText;
                 case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureWaterCourseLowText;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWatercourseText;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseMedText;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseLowText;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWatercourseText;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseMedText;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseLowText;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters10W:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceToWaterInMeters10WText;
                 case PolSourceObsInfoEnum.DistanceToWaterInMeters75W:
@@ -11060,6 +11186,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleCommericalMInit;
                 case PolSourceObsInfoEnum.HumanPollutionSingleFishPlant:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantInit;
+                case PolSourceObsInfoEnum.HumanPollutionSingleBeachPatio:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleBeachPatioInit;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleResidences:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleResidencesInit;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCottages:
@@ -11098,8 +11226,10 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleWarehousesMInit;
                 case PolSourceObsInfoEnum.HumanPollutionMultipleCommericalsM:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleCommericalsMInit;
-                case PolSourceObsInfoEnum.HumanPollutionSingleFishPlants:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionSingleFishPlantsInit;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleFishPlants:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleFishPlantsInit;
+                case PolSourceObsInfoEnum.HumanPollutionMultipleBeachPatios:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanPollutionMultipleBeachPatiosInit;
                 case PolSourceObsInfoEnum.HumanLocationRural:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumHumanLocationRuralInit;
                 case PolSourceObsInfoEnum.HumanLocationUrban:
@@ -11150,6 +11280,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseConcreteTankInit;
                 case PolSourceObsInfoEnum.OuthouseOnGround:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnGroundInit;
+                case PolSourceObsInfoEnum.OuthouseOnPortable:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumOuthouseOnPortableInit;
                 case PolSourceObsInfoEnum.IndustrialEffluentForestry:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumIndustrialEffluentForestryInit;
                 case PolSourceObsInfoEnum.IndustrialEffluentAgricultureFarm:
@@ -11192,6 +11324,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAriculturalSourcePeatMossInit;
                 case PolSourceObsInfoEnum.AgricultureSourceManure:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgricultureSourceManureInit;
+                case PolSourceObsInfoEnum.AgriculturalSourceBarn:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumAgriculturalSourceBarnInit;
                 case PolSourceObsInfoEnum.ManureManagementPileSpread:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumManureManagementPileSpreadInit;
                 case PolSourceObsInfoEnum.ManureManagementLiqSpread:
@@ -11362,6 +11496,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockMixtureSmallInit;
                 case PolSourceObsInfoEnum.TypesOfLivestockFurFarms:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockFurFarmsInit;
+                case PolSourceObsInfoEnum.TypesOfLivestockDogs:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfLivestockDogsInit;
                 case PolSourceObsInfoEnum.TypesOfWildlifeCrows:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumTypesOfWildlifeCrowsInit;
                 case PolSourceObsInfoEnum.TypesOfWildlifeGulls:
@@ -11506,6 +11642,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationAquacultureSiteInit;
                 case PolSourceObsInfoEnum.MarineLocationOffShoreline:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationOffShorelineInit;
+                case PolSourceObsInfoEnum.MarineLocationMudflat:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumMarineLocationMudflatInit;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeShorelineBirds:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumWaterTypesOfMarineLifeShorelineBirdsInit;
                 case PolSourceObsInfoEnum.WaterTypesOfMarineLifeGulls:
@@ -11834,6 +11972,12 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneAbsentLowInit;
                 case PolSourceObsInfoEnum.ShorelineRiparianZoneNoInfoLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianZoneNoInfoLowInit;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresent:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentInit;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentMedInit;
+                case PolSourceObsInfoEnum.ShorelineRiparianGrassedZonePresentLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumShorelineRiparianGrassedZonePresentLowInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvert:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertInit;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipe:
@@ -11844,8 +11988,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetland:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandInit;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructure:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureInit;
+                case PolSourceObsInfoEnum.FlowThroughNoStructure:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertMedInit;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeMed:
@@ -11856,8 +12000,8 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermMedInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandMed:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandMedInit;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureMed:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureMedInit;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureMedInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertLowInit;
                 case PolSourceObsInfoEnum.FlowThroughStructurePipeLow:
@@ -11868,8 +12012,20 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBermLowInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureWetlandLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandLowInit;
-                case PolSourceObsInfoEnum.StructureInRoadNoStructureLow:
-                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureLowInit;
+                case PolSourceObsInfoEnum.FlowThroughNoStructureLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughNoStructureLowInit;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarsh:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshInit;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshMedInit;
+                case PolSourceObsInfoEnum.FlowThroughSaltwaterMarshLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughSaltwaterMarshLowInit;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDam:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamInit;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamMedInit;
+                case PolSourceObsInfoEnum.FlowThroughBeaverDamLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughBeaverDamLowInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureCulvertWaterCourse:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureCulvertWaterCourseInit;
                 case PolSourceObsInfoEnum.FlowThroughStructureBridgeWaterCourse:
@@ -11900,6 +12056,18 @@ namespace CSSPEnums
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureWetlandWaterCourseLowInit;
                 case PolSourceObsInfoEnum.StructureInRoadNoStructureWaterCourseLow:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumStructureInRoadNoStructureWaterCourseLowInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWatercourseInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseMedInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureSaltMarshWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureSaltMarshWaterCourseLowInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWatercourse:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWatercourseInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseMed:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseMedInit;
+                case PolSourceObsInfoEnum.FlowThroughStructureBeaverDamWaterCourseLow:
+                    return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumFlowThroughStructureBeaverDamWaterCourseLowInit;
                 case PolSourceObsInfoEnum.DitchAlongRoad:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDitchAlongRoadInit;
                 case PolSourceObsInfoEnum.DitchAcrossProperties:
