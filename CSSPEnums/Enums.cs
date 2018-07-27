@@ -1,21 +1,17 @@
 ﻿/*
  * This document is manually edited. 
- * It's the only document in CSSPEnums.proj the coder actually edit. 
+ * It's the only .cs document in CSSPEnums.proj the coder actually edits. 
  * Every other document is automatically generated.
+ * 
+ * You also need to edit the CSSPEnumsRes.resx and the CSSPEnumsRes.fr.resx
  * 
  * When changing the document it should be re-included in the project
  * while excluding EnumsWithHelp.cs before recompiling.
  * 
  * Last edited by Charles LeBlanc. 
  */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Globalization;
 using System.Threading;
-using System.Net;
 
 namespace CSSPEnums
 {

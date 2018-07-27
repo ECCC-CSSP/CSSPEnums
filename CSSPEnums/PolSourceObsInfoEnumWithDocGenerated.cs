@@ -10,17 +10,12 @@
  * You then need to regenerate the 'PolSourceObsInfoEnumGenerated.cs' file 
  * using the 'PolSourceGroupingGenerateCode.proj'
  * You then need to include the 'PolSourceObsInfoEnumGenerated.cs' file in the project 
- * while exluding the 'PolSourceObsInfoEnumGeneratedWithDoc.cs' and recompile
+ * while exluding the 'PolSourceObsInfoEnumWithDocGenerated.cs' and recompile
  * Once compiled with changes, you will have to run the CSSPEnumsGenerateCode.proj (F5) 
  * and click on the 'Generate EnumsWithDoc.cs' button to regenerate this file.
  * You can then re-include this file to the project while excluding PolSourceObsInfoEnumGenerated.cs
  * 
  */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSSPEnums
 {
