@@ -1,12 +1,16 @@
 ﻿/*
  * This document is manually edited. 
  * It's the only .cs document in CSSPEnums.proj the coder actually edits. 
- * Every other document is automatically generated.
+ * Every other document is automatically generated using the CSSPCodeWriter.
  * 
  * You also need to edit the CSSPEnumsRes.resx and the CSSPEnumsRes.fr.resx
  * 
- * When changing the document it should be re-included in the project
- * while excluding EnumsWithHelp.cs before recompiling.
+ * To produce documentation you need to include in project the EnumsWithDocGenerated.cs file
+ * while excluding from project the Enums.cs file before recompiling. You then use the CSSPDoc project
+ * and compile to generate the documentation in the form of a web site.
+ * 
+ * The same should be done for PolSourceObsInfoEnumWithDocGenerated.cs (to include in project) and 
+ * PolSourceObsInfoEnumGenerated.cs (to exclude from project).
  * 
  * Last edited by Charles LeBlanc. 
  */
@@ -45,7 +49,6 @@ namespace CSSPEnums
     }
     public enum ActionDBTypeEnum
     {
-        Error = 0,
         Create = 1,
         Read = 2,
         Update = 3,
@@ -53,14 +56,12 @@ namespace CSSPEnums
     }
     public enum AddContactTypeEnum
     {
-        Error = 0,
         First = 1,
         Register = 2,
         LoggedIn = 3,
     }
     public enum DatabaseTypeEnum
     {
-        Error = 0,
         MemoryCSSPWebToolsDB = 1,
         MemoryTestDB = 2,
         SqlServerCSSPWebToolsDB = 3,
@@ -68,13 +69,11 @@ namespace CSSPEnums
     }
     public enum EntityQueryTypeEnum
     {
-        Error = 0,
         AsNoTracking = 1,
         WithTracking = 2,
     }
     public enum EntityQueryDetailTypeEnum
     {
-        Error = 0,
         EntityOnly = 1,
         EntityWeb = 2,
         EntityReport = 3,
@@ -82,7 +81,6 @@ namespace CSSPEnums
     // might be able to delete PolSourceObsInfoTypeEnum
     public enum PolSourceObsInfoTypeEnum
     {
-        Error = 0,
         Description = 1,
         Report = 2,
         Text = 3,
@@ -91,21 +89,18 @@ namespace CSSPEnums
 
     public enum AddressTypeEnum
     {
-        Error = 0,
         Mailing = 1,
         Shipping = 2,
         Civic = 3,
     }
     public enum AerationTypeEnum
     {
-        Error = 0,
         Diffuser = 1,
         Surface = 2,
         NotApplicable = 3,
     }
     public enum AlarmSystemTypeEnum
     {
-        Error = 0,
         SCADA = 1,
         None = 2,
         OnlyVisualLight = 3,
@@ -114,7 +109,6 @@ namespace CSSPEnums
     }
     public enum AnalysisCalculationTypeEnum
     {
-        Error = 0,
         AllAllAll = 1,
         WetAllAll = 2,
         DryAllAll = 3,
@@ -125,13 +119,11 @@ namespace CSSPEnums
     }
     public enum AnalysisReportExportCommandEnum
     {
-        Error = 0,
         Report = 1,
         Excel = 2,
     }
     public enum AnalyzeMethodEnum
     {
-        Error = 0,
         MF = 1,
         ZZ_510Q = 2,
         ZZ_509Q = 3,
@@ -147,7 +139,6 @@ namespace CSSPEnums
     }
     public enum AppTaskCommandEnum
     {
-        Error = 0,
         GenerateWebTide = 1,
         MikeScenarioAskToRun = 2,
         MikeScenarioImport = 3,
@@ -180,15 +171,13 @@ namespace CSSPEnums
     }
     public enum AppTaskStatusEnum
     {
-        Error = 0,
-        Created = 1,
+         Created = 1,
         Running = 2,
         Completed = 3,
         Cancelled = 4,
     }
     public enum BeaufortScaleEnum
     {
-        Error = -1,
         Calm = 0,
         LightAir = 1,
         LightBreeze = 2,
@@ -205,7 +194,6 @@ namespace CSSPEnums
     }
     public enum BoxModelResultTypeEnum
     {
-        Error = 0,
         Dilution = 1,
         NoDecayUntreated = 2,
         NoDecayPreDisinfection = 3,
@@ -214,7 +202,6 @@ namespace CSSPEnums
     }
     public enum ClassificationTypeEnum
     {
-        Error = 0,
         Approved = 1,
         Restricted = 2,
         Prohibited = 3,
@@ -223,7 +210,6 @@ namespace CSSPEnums
     }
     public enum CollectionSystemTypeEnum
     {
-        Error = 0,
         CompletelySeparated = 1,
         CompletelyCombined = 2,
         Combined90Separated10 = 3,
@@ -238,7 +224,6 @@ namespace CSSPEnums
     }
     public enum ContactTitleEnum
     {
-        Error = 0,
         DirectorGeneral = 1,
         DirectorPublicWorks = 2,
         Superintendent = 3,
@@ -251,26 +236,22 @@ namespace CSSPEnums
     }
     public enum CSSPWQInputSheetTypeEnum
     {
-        Error = 0,
         A1 = 1,
         LTB = 2,
         EC = 3,
     }
     public enum CSSPWQInputTypeEnum
     {
-        Error = 0,
         Subsector = 1,
         Municipality = 2,
     }
     public enum DailyOrHourlyDataEnum
     {
-        Error = 0,
         Daily = 1,
         Hourly = 2,
     }
     public enum DisinfectionTypeEnum
     {
-        Error = 0,
         None = 1,
         UV = 2,
         ChlorinationNoDechlorination = 3,
@@ -281,7 +262,6 @@ namespace CSSPEnums
     }
     public enum EmailTypeEnum
     {
-        Error = 0,
         Personal = 1,
         Work = 2,
         Personal2 = 3,
@@ -289,7 +269,6 @@ namespace CSSPEnums
     }
     public enum ExcelExportShowDataTypeEnum
     {
-        Error = 0,
         FecalColiform = 1,
         Temperature = 2,
         Salinity = 3,
@@ -301,13 +280,11 @@ namespace CSSPEnums
     }
     public enum FacilityTypeEnum
     {
-        Error = 0,
         Lagoon = 1,
         Plant = 2,
     }
     public enum FilePurposeEnum
     {
-        Error = 0,
         MikeInput = 1,
         MikeInputMDF = 2,
         MikeResultDFSU = 3,
@@ -325,7 +302,6 @@ namespace CSSPEnums
     }
     public enum FileStatusEnum
     {
-        Error = 0,
         Changed = 1,
         Sent = 2,
         Accepted = 3,
@@ -334,7 +310,6 @@ namespace CSSPEnums
     }
     public enum FileTypeEnum
     {
-        Error = 0,
         DFS0 = 1,
         DFS1 = 2,
         DFSU = 3,
@@ -359,7 +334,6 @@ namespace CSSPEnums
     }
     public enum InfrastructureTypeEnum
     {
-        Error = 0,
         WWTP = 1,
         LiftStation = 2,
         Other = 3,
@@ -368,7 +342,6 @@ namespace CSSPEnums
     }
     public enum KMZActionEnum
     {
-        Error = 0,
         DoNothing = 1,
         GenerateKMZContourAnimation = 2,
         GenerateKMZContourLimit = 3,
@@ -380,7 +353,6 @@ namespace CSSPEnums
     }
     public enum LaboratoryEnum
     {
-        Error = 0,
         ZZ_0 = 1,
         ZZ_1 = 2,
         ZZ_2 = 3,
@@ -414,7 +386,6 @@ namespace CSSPEnums
     }
     public enum LabSheetStatusEnum
     {
-        Error = 0,
         Created = 1,
         Transferred = 2,
         Accepted = 3,
@@ -422,14 +393,12 @@ namespace CSSPEnums
     }
     public enum LabSheetTypeEnum
     {
-        Error = 0,
         A1 = 1,
         LTB = 2,
         EC = 3,
     }
     public enum LanguageEnum
     {
-        Error = 0,
         en = 1,
         fr = 2,
         enAndfr = 3,
@@ -437,27 +406,23 @@ namespace CSSPEnums
     }
     public enum LogCommandEnum
     {
-        Error = 0,
         Add = 1,
         Change = 2,
         Delete = 3,
     }
     public enum MapInfoDrawTypeEnum
     {
-        Error = 0,
         Point = 1,
         Polyline = 2,
         Polygon = 3,
     }
     public enum MikeBoundaryConditionLevelOrVelocityEnum
     {
-        Error = 0,
         Level = 1,
         Velocity = 2,
     }
     public enum MikeScenarioSpecialResultKMLTypeEnum
     {
-        Error = 0,
         Mesh = 1,
         StudyArea = 2,
         BoundaryConditions = 3,
@@ -466,7 +431,6 @@ namespace CSSPEnums
     }
     public enum MWQMSiteLatestClassificationEnum
     {
-        Error = 0,
         Approved = 1,
         ConditionallyApproved = 2,
         Restricted = 3,
@@ -476,21 +440,18 @@ namespace CSSPEnums
     }
     public enum PolSourceInactiveReasonEnum
     {
-        Error = 0,
         Abandoned = 1,
         Closed = 2,
         Removed = 3,
     }
     public enum PolSourceIssueRiskEnum
     {
-        Error = 0,
         LowRisk = 1,
         ModerateRisk = 2,
         HighRisk = 3,
     }
     public enum PositionEnum
     {
-        Error = 0,
         LeftBottom = 1,
         RightBottom = 2,
         LeftTop = 3,
@@ -499,14 +460,12 @@ namespace CSSPEnums
     //public enum PolSourceObsInfoEnum is under file EnumsPolSourceInfoGenerated.cs
     public enum PreliminaryTreatmentTypeEnum
     {
-        Error = 0,
         NotApplicable = 1,
         BarScreen = 2,
         Grinder = 3,
     }
     public enum PrimaryTreatmentTypeEnum
     {
-        Error = 0,
         NotApplicable = 1,
         Sedimentation = 2,
         ChemicalCoagulation = 3,
@@ -514,7 +473,6 @@ namespace CSSPEnums
     }
     public enum PropertyTypeEnum
     {
-        Error = 0,
         Int = 1,
         Double = 2,
         String = 3,
@@ -524,7 +482,6 @@ namespace CSSPEnums
     }
     public enum ReportConditionEnum
     {
-        Error = 0,
         ReportConditionTrue = 1,
         ReportConditionFalse = 2,
         ReportConditionContain = 3,
@@ -536,7 +493,6 @@ namespace CSSPEnums
     }
     public enum ReportFieldTypeEnum
     {
-        Error = 0,
         NumberWhole = 1,
         NumberWithDecimal = 2,
         DateAndTime = 3,
@@ -586,7 +542,6 @@ namespace CSSPEnums
     }
     public enum ReportFileTypeEnum
     {
-        Error = 0,
         CSV = 1,
         Word = 2,
         Excel = 3,
@@ -594,7 +549,6 @@ namespace CSSPEnums
     }
     public enum ReportFormatingDateEnum
     {
-        Error = 0,
         ReportFormatingDateYearOnly = 1,
         ReportFormatingDateMonthDecimalOnly = 2,
         ReportFormatingDateMonthShortTextOnly = 3,
@@ -611,7 +565,6 @@ namespace CSSPEnums
     }
     public enum ReportFormatingNumberEnum
     {
-        Error = 0,
         ReportFormatingNumber0Decimal = 1,
         ReportFormatingNumber1Decimal = 2,
         ReportFormatingNumber2Decimal = 3,
@@ -629,7 +582,6 @@ namespace CSSPEnums
     }
     public enum ReportGenerateObjectsKeywordEnum
     {
-        Error = 0,
         SUBSECTOR_RE_EVALUATION_COVER_PAGE = 1,
         SUBSECTOR_FC_SUMMARY_STAT_ALL = 2,
         SUBSECTOR_FC_SUMMARY_STAT_WET = 3,
@@ -653,13 +605,11 @@ namespace CSSPEnums
     }
     public enum ReportSortingEnum
     {
-        Error = 0,
         ReportSortingAscending = 1,
         ReportSortingDescending = 2,
     }
     public enum ReportTreeNodeSubTypeEnum
     {
-        Error = 0,
         TableSelectable = 1,
         Field = 2,
         FieldsHolder = 3,
@@ -667,7 +617,6 @@ namespace CSSPEnums
     }
     public enum ReportTreeNodeTypeEnum
     {
-        Error = 0,
         ReportRootType = 1,
         ReportCountryType = 2,
         ReportProvinceType = 3,
@@ -750,13 +699,11 @@ namespace CSSPEnums
     }
     public enum SameDayNextDayEnum
     {
-        Error = 0,
         SameDay = 1,
         NextDay = 2,
     }
     public enum SampleMatrixEnum
     {
-        Error = 0,
         W = 1,
         S = 2,
         B = 3,
@@ -767,7 +714,6 @@ namespace CSSPEnums
     }
     public enum SampleStatusEnum
     {
-        Error = 0,
         Active = 1,
         Archived = 2,
         SampleStatus3 = 3,
@@ -776,7 +722,6 @@ namespace CSSPEnums
     }
     public enum SampleTypeEnum
     {
-        Error = 0,
         DailyDuplicate = 101,
         Infrastructure = 102,
         IntertechDuplicate = 103,
@@ -791,13 +736,11 @@ namespace CSSPEnums
     }
     public enum SamplingPlanTypeEnum
     {
-        Error = 0,
         Subsector = 1,
         Municipality = 2,
     }
     public enum ScenarioStatusEnum
     {
-        Error = 0,
         Normal = 1,
         Copying = 2,
         Copied = 3,
@@ -810,7 +753,6 @@ namespace CSSPEnums
     }
     public enum SearchTagEnum
     {
-        Error = 0,
         c = 1,
         e = 2,
         t = 3,
@@ -850,7 +792,6 @@ namespace CSSPEnums
     }
     public enum SecondaryTreatmentTypeEnum
     {
-        Error = 0,
         NotApplicable = 1,
         RotatingBiologicalContactor = 2,
         TricklingFilters = 3,
@@ -859,14 +800,12 @@ namespace CSSPEnums
     }
     public enum SiteTypeEnum
     {
-        Error = 0,
         Climate = 1,
         Hydrometric = 2,
         Tide = 3,
     }
     public enum SpecialTableTypeEnum
     {
-        Error = 0,
         FCDensitiesTable = 1,
         SalinityTable = 2,
         TemperatureTable = 3,
@@ -878,14 +817,12 @@ namespace CSSPEnums
     }
     public enum StorageDataTypeEnum
     {
-        Error = 0,
         Archived = 1,
         Forcasted = 2,
         Observed = 3,
     }
     public enum StreetTypeEnum
     {
-        Error = 0,
         Street = 1,
         Road = 2,
         Avenue = 3,
@@ -899,7 +836,6 @@ namespace CSSPEnums
     }
     public enum TelTypeEnum
     {
-        Error = 0,
         Personal = 1,
         Work = 2,
         Mobile = 3,
@@ -909,7 +845,6 @@ namespace CSSPEnums
     }
     public enum TertiaryTreatmentTypeEnum
     {
-        Error = 0,
         NotApplicable = 1,
         Adsorption = 2,
         Flocculation = 3,
@@ -920,13 +855,11 @@ namespace CSSPEnums
     }
     public enum TideDataTypeEnum
     {
-        Error = 0,
         Min15 = 1,
         Min60 = 2,
     }
     public enum TideTextEnum
     {
-        Error = 0,
         LowTide = 1,
         LowTideFalling = 2,
         LowTideRising = 3,
@@ -939,14 +872,12 @@ namespace CSSPEnums
     }
     public enum TranslationStatusEnum
     {
-        Error = 0,
         NotTranslated = 1,
         ElectronicallyTranslated = 2,
         Translated = 3,
     }
     public enum TreatmentTypeEnum
     {
-        Error = 0,
         ActivatedSludge = 1,
         ActivatedSludgeWithBiofilter = 2,
         LagoonNoAeration1Cell = 3,
@@ -983,7 +914,6 @@ namespace CSSPEnums
     } // to be remove in the future
     public enum TVAuthEnum
     {
-        Error = 0,
         NoAccess = 1,
         Read = 2,
         Write = 3,
@@ -993,7 +923,6 @@ namespace CSSPEnums
     }
     public enum TVTypeEnum
     {
-        Error = 0,
         Root = 1,
         Address = 2,
         Area = 3,
@@ -1080,7 +1009,6 @@ namespace CSSPEnums
     }
     public enum WebTideDataSetEnum
     {
-        Error = 0,
         arctic9 = 1,            // Arctic
         brador = 2,             // Brador
         HRglobal = 3,           // Global (LEGOS France)
@@ -1097,7 +1025,6 @@ namespace CSSPEnums
     #region Extra enums not in the old version
     public enum WhereOperatorEnum
     {
-        Error = 0,
         Equal = 1,
         LessThan = 2,
         GreaterThan = 3,

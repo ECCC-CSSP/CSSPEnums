@@ -30,7 +30,6 @@ namespace CSSPEnums
     /// <code>
     ///     public enum PolSourceObsInfoEnum
     ///     {
-    ///         Error = 0,
     ///         SourceStart = 10100,
     ///         SourceHumanLand = 10101,
     ///         SourceHumanMarine = 10102,
@@ -195,9 +194,14 @@ namespace CSSPEnums
     ///         FeedlotActive = 10901,
     ///         FeedlotNotActive = 10902,
     ///         FisheriesSourceStart = 11300,
-    ///         FisheriesSourceShellfish = 11301,
-    ///         FisheriesSourceFinfish = 11302,
-    ///         FisheriesSourceLobster = 11303,
+    ///         FisheriesSourceShellfishProcessing = 11301,
+    ///         FisheriesSourceFinfishProcessing = 11302,
+    ///         FisheriesSourceBaitFishProcessing = 11303,
+    ///         FisheriesSourceLobsterProcessing = 11304,
+    ///         FisheriesSourceLobsterAndBaitfishProcessing = 11305,
+    ///         FisheriesSourceShellfishLive = 11306,
+    ///         FisheriesSourceFinfishLive = 11307,
+    ///         FisheriesSourceLobsterLive = 11308,
     ///         FishOperationStart = 21700,
     ///         FishOperationProcessing = 21701,
     ///         FishOperationHoldingTanks = 21702,
@@ -292,10 +296,11 @@ namespace CSSPEnums
     ///         RecreationDayUseArea = 11702,
     ///         RecreationSwimmingArea = 11703,
     ///         RecreationGolfCourse = 11704,
-    ///         RecreationCampgroundSewage = 11705,
-    ///         RecreationDayUseAreaSewage = 11706,
-    ///         RecreationSwimmingAreaSewage = 11707,
-    ///         RecreationGolfCourseSewage = 11708,
+    ///         RecreationFishing = 11705,
+    ///         RecreationCampgroundSewage = 11706,
+    ///         RecreationDayUseAreaSewage = 11707,
+    ///         RecreationSwimmingAreaSewage = 11708,
+    ///         RecreationGolfCourseSewage = 11709,
     ///         RECCountNumberStart = 17900,
     ///         RECCountNumber10 = 17901,
     ///         RECCountNumber30 = 17902,
@@ -441,17 +446,27 @@ namespace CSSPEnums
     ///         WaterAquacultureSiteFallow = 18902,
     ///         WatAquaCountNumberStart = 18400,
     ///         WatAquaCountNumberEqualTo1 = 18401,
-    ///         WatAquaCountNumberEqualTo10 = 18402,
-    ///         WatAquaCountNumberEqualTo20 = 18403,
-    ///         WatAquaCountNumberEqualTo30 = 18404,
-    ///         WatAquaCountNumberEqualTo40 = 18405,
-    ///         WatAquaCountNumberEqualTo50 = 18406,
-    ///         WatAquaCountNumberEqualTo60 = 18407,
-    ///         WatAquaCountNumberEqualTo70 = 18408,
-    ///         WatAquaCountNumberEqualTo80 = 18409,
-    ///         WatAquaCountNumberEqualTo90 = 18410,
-    ///         WatAquaCountNumberEqualTo100 = 18411,
-    ///         WatAquaCountNumberGreaterThan100 = 18412,
+    ///         WatAquaCountNumberEqualTo2 = 18402,
+    ///         WatAquaCountNumberEqualTo3 = 18403,
+    ///         WatAquaCountNumberEqualTo4 = 18404,
+    ///         WatAquaCountNumberEqualTo5 = 18405,
+    ///         WatAquaCountNumberEqualTo6 = 18406,
+    ///         WatAquaCountNumberEqualTo7 = 18407,
+    ///         WatAquaCountNumberEqualTo8 = 18408,
+    ///         WatAquaCountNumberEqualTo9 = 18409,
+    ///         WatAquaCountNumberEqualTo10 = 18410,
+    ///         WatAquaCountNumberEqualTo15 = 18411,
+    ///         WatAquaCountNumberEqualTo20 = 18412,
+    ///         WatAquaCountNumberEqualTo25 = 18413,
+    ///         WatAquaCountNumberEqualTo30 = 18414,
+    ///         WatAquaCountNumberEqualTo40 = 18415,
+    ///         WatAquaCountNumberEqualTo50 = 18416,
+    ///         WatAquaCountNumberEqualTo60 = 18417,
+    ///         WatAquaCountNumberEqualTo70 = 18418,
+    ///         WatAquaCountNumberEqualTo80 = 18419,
+    ///         WatAquaCountNumberEqualTo90 = 18420,
+    ///         WatAquaCountNumberEqualTo100 = 18421,
+    ///         WatAquaCountNumberGreaterThan100 = 18422,
     ///         WaterAquacultureTypeSingleStart = 15400,
     ///         WaterAquacultureTypeSingleCage = 15401,
     ///         WaterAquacultureTypeSingleFloatingBag = 15402,
@@ -586,6 +601,9 @@ namespace CSSPEnums
     ///         PathwaySourceFirstLandDisposalMARINE = 14327,
     ///         PathwaySourceFirstMunicipalityOFFSITE = 14328,
     ///         PathwaySourceFirstMixesMARINE = 14329,
+    ///         PathwaySourceFirstPondLake = 14330,
+    ///         PathwaySourceFirstPondLakeMED = 14331,
+    ///         PathwaySourceFirstPondLakeLOW = 14332,
     ///         PathwayRouteSecondPipeStart = 13000,
     ///         PathwaySourceSecondPipeStream = 13001,
     ///         PathwaySourceSecondPipeDitch = 13002,
@@ -2000,10 +2018,6 @@ namespace CSSPEnums
     public enum PolSourceObsInfoEnum
     {
         /// <summary>
-        /// 0 -- en [Empty] ---- fr [Empty (fr)]
-        /// </summary>
-        Error = 0,
-        /// <summary>
         /// 10100 -- en [Source Selection:  The Issue Above is Best Described as One of the Following:] ---- fr [Sélection de la source: Le problème ci-dessus est décrit comme l'un des suivants]
         /// </summary>
         SourceStart = 10100,
@@ -2660,27 +2674,47 @@ namespace CSSPEnums
         /// </summary>
         FisheriesSourceStart = 11300,
         /// <summary>
-        /// 11301 -- en [                            Shellfish] ---- fr [Mollusques]
+        /// 11301 -- en [                                            Shellfish |process] ---- fr [Mollusques]
         /// </summary>
-        FisheriesSourceShellfish = 11301,
+        FisheriesSourceShellfishProcessing = 11301,
         /// <summary>
-        /// 11302 -- en [Finfish] ---- fr [Poissons]
+        /// 11302 -- en [                                      Finfish | process] ---- fr [Poissons]
         /// </summary>
-        FisheriesSourceFinfish = 11302,
+        FisheriesSourceFinfishProcessing = 11302,
         /// <summary>
-        /// 11303 -- en [                Lobster] ---- fr [Homard]
+        /// 11303 -- en [                             Bait Fish | process] ---- fr [Poisson-appât]
         /// </summary>
-        FisheriesSourceLobster = 11303,
+        FisheriesSourceBaitFishProcessing = 11303,
+        /// <summary>
+        /// 11304 -- en [                        Lobster | process] ---- fr [Homard]
+        /// </summary>
+        FisheriesSourceLobsterProcessing = 11304,
+        /// <summary>
+        /// 11305 -- en [                Lobster and Finfish | process] ---- fr [Homard et Poissons]
+        /// </summary>
+        FisheriesSourceLobsterAndBaitfishProcessing = 11305,
+        /// <summary>
+        /// 11306 -- en [                            Shellfish | live] ---- fr [Mollusques]
+        /// </summary>
+        FisheriesSourceShellfishLive = 11306,
+        /// <summary>
+        /// 11307 -- en [Finfish | live] ---- fr [Poissons]
+        /// </summary>
+        FisheriesSourceFinfishLive = 11307,
+        /// <summary>
+        /// 11308 -- en [                Lobster | live] ---- fr [Homard]
+        /// </summary>
+        FisheriesSourceLobsterLive = 11308,
         /// <summary>
         /// 21700 -- en [Processing Type] ---- fr [La transformation]
         /// </summary>
         FishOperationStart = 21700,
         /// <summary>
-        /// 21701 -- en [                                 Processed-Packaged] ---- fr [Produit transformé et empaqueté]
+        /// 21701 -- en [                                 Processing] ---- fr [Produit transformé et empaqueté]
         /// </summary>
         FishOperationProcessing = 21701,
         /// <summary>
-        /// 21702 -- en [Providing Water Only] ---- fr [Fournir de l'eau seulement]
+        /// 21702 -- en [Supplying Saltwater To Tanks] ---- fr [Fournir de l'eau seulement]
         /// </summary>
         FishOperationHoldingTanks = 21702,
         /// <summary>
@@ -2688,7 +2722,7 @@ namespace CSSPEnums
         /// </summary>
         FishOperationPackaging = 21703,
         /// <summary>
-        /// 21704 -- en [ Growing and Feeding] ---- fr [Cultiver et nourrir]
+        /// 21704 -- en [Farming] ---- fr [Cultiver et nourrir]
         /// </summary>
         FishOperationRearing = 21704,
         /// <summary>
@@ -2760,7 +2794,7 @@ namespace CSSPEnums
         /// </summary>
         FishBuildingTypeMultipleWarehouse = 12907,
         /// <summary>
-        /// 17400 -- en [Number of Buildings] ---- fr [Nombre d'unités]
+        /// 17400 -- en [Number of Structures] ---- fr [Nombre d'unités]
         /// </summary>
         FISCountNumberStart = 17400,
         /// <summary>
@@ -3048,21 +3082,25 @@ namespace CSSPEnums
         /// </summary>
         RecreationGolfCourse = 11704,
         /// <summary>
-        /// 11705 -- en [Campground | S] ---- fr [Terrain de camping]
+        /// 11705 -- en [Fishing] ---- fr [Pêche]
         /// </summary>
-        RecreationCampgroundSewage = 11705,
+        RecreationFishing = 11705,
         /// <summary>
-        /// 11706 -- en [Day use Building - Area | S] ---- fr [Aire d'utilisation journalière]
+        /// 11706 -- en [Campground | S] ---- fr [Terrain de camping]
         /// </summary>
-        RecreationDayUseAreaSewage = 11706,
+        RecreationCampgroundSewage = 11706,
         /// <summary>
-        /// 11707 -- en [Swimming area | S] ---- fr [Zone de baignade]
+        /// 11707 -- en [Day use Building - Area | S] ---- fr [Aire d'utilisation journalière]
         /// </summary>
-        RecreationSwimmingAreaSewage = 11707,
+        RecreationDayUseAreaSewage = 11707,
         /// <summary>
-        /// 11708 -- en [Golf Course | S] ---- fr [Terrain de golf]
+        /// 11708 -- en [Swimming area | S] ---- fr [Zone de baignade]
         /// </summary>
-        RecreationGolfCourseSewage = 11708,
+        RecreationSwimmingAreaSewage = 11708,
+        /// <summary>
+        /// 11709 -- en [Golf Course | S] ---- fr [Terrain de golf]
+        /// </summary>
+        RecreationGolfCourseSewage = 11709,
         /// <summary>
         /// 17900 -- en [Number of Sites] ---- fr [Nombre d'unités]
         /// </summary>
@@ -3640,53 +3678,93 @@ namespace CSSPEnums
         /// </summary>
         WatAquaCountNumberStart = 18400,
         /// <summary>
-        /// 18401 -- en [                                            1] ---- fr [                                            1]
+        /// 18401 -- en [                                                                 1] ---- fr [                                                                 1]
         /// </summary>
         WatAquaCountNumberEqualTo1 = 18401,
         /// <summary>
-        /// 18402 -- en [                                      10] ---- fr [                                      10]
+        /// 18402 -- en [                                                             2] ---- fr [                                                             2]
         /// </summary>
-        WatAquaCountNumberEqualTo10 = 18402,
+        WatAquaCountNumberEqualTo2 = 18402,
         /// <summary>
-        /// 18403 -- en [                                   20] ---- fr [                                   20]
+        /// 18403 -- en [                                                          3] ---- fr [                                                          3]
         /// </summary>
-        WatAquaCountNumberEqualTo20 = 18403,
+        WatAquaCountNumberEqualTo3 = 18403,
         /// <summary>
-        /// 18404 -- en [                               30] ---- fr [                               30]
+        /// 18404 -- en [                                                       4] ---- fr [                                                       4]
         /// </summary>
-        WatAquaCountNumberEqualTo30 = 18404,
+        WatAquaCountNumberEqualTo4 = 18404,
         /// <summary>
-        /// 18405 -- en [                            40] ---- fr [                            40]
+        /// 18405 -- en [                                                    5] ---- fr [                                                    5]
         /// </summary>
-        WatAquaCountNumberEqualTo40 = 18405,
+        WatAquaCountNumberEqualTo5 = 18405,
         /// <summary>
-        /// 18406 -- en [                        50] ---- fr [                        50]
+        /// 18406 -- en [                                                  6] ---- fr [                                                  6]
         /// </summary>
-        WatAquaCountNumberEqualTo50 = 18406,
+        WatAquaCountNumberEqualTo6 = 18406,
         /// <summary>
-        /// 18407 -- en [                     60] ---- fr [                     60]
+        /// 18407 -- en [                                                 7] ---- fr [                                                 7]
         /// </summary>
-        WatAquaCountNumberEqualTo60 = 18407,
+        WatAquaCountNumberEqualTo7 = 18407,
         /// <summary>
-        /// 18408 -- en [                   70] ---- fr [                   70]
+        /// 18408 -- en [                                               8] ---- fr [                                               8]
         /// </summary>
-        WatAquaCountNumberEqualTo70 = 18408,
+        WatAquaCountNumberEqualTo8 = 18408,
         /// <summary>
-        /// 18409 -- en [                  80] ---- fr [                  80]
+        /// 18409 -- en [                                             9] ---- fr [                                             9]
         /// </summary>
-        WatAquaCountNumberEqualTo80 = 18409,
+        WatAquaCountNumberEqualTo9 = 18409,
         /// <summary>
-        /// 18410 -- en [                90] ---- fr [                90]
+        /// 18410 -- en [                                        10] ---- fr [                                        10]
         /// </summary>
-        WatAquaCountNumberEqualTo90 = 18410,
+        WatAquaCountNumberEqualTo10 = 18410,
         /// <summary>
-        /// 18411 -- en [            100] ---- fr [            100]
+        /// 18411 -- en [                                      15] ---- fr [                                      15]
         /// </summary>
-        WatAquaCountNumberEqualTo100 = 18411,
+        WatAquaCountNumberEqualTo15 = 18411,
         /// <summary>
-        /// 18412 -- en [ > 100] ---- fr [ > 100]
+        /// 18412 -- en [                                     20] ---- fr [                                     20]
         /// </summary>
-        WatAquaCountNumberGreaterThan100 = 18412,
+        WatAquaCountNumberEqualTo20 = 18412,
+        /// <summary>
+        /// 18413 -- en [                                  25] ---- fr [                                  25]
+        /// </summary>
+        WatAquaCountNumberEqualTo25 = 18413,
+        /// <summary>
+        /// 18414 -- en [                               30] ---- fr [                               30]
+        /// </summary>
+        WatAquaCountNumberEqualTo30 = 18414,
+        /// <summary>
+        /// 18415 -- en [                            40] ---- fr [                            40]
+        /// </summary>
+        WatAquaCountNumberEqualTo40 = 18415,
+        /// <summary>
+        /// 18416 -- en [                        50] ---- fr [                        50]
+        /// </summary>
+        WatAquaCountNumberEqualTo50 = 18416,
+        /// <summary>
+        /// 18417 -- en [                     60] ---- fr [                     60]
+        /// </summary>
+        WatAquaCountNumberEqualTo60 = 18417,
+        /// <summary>
+        /// 18418 -- en [                   70] ---- fr [                   70]
+        /// </summary>
+        WatAquaCountNumberEqualTo70 = 18418,
+        /// <summary>
+        /// 18419 -- en [                  80] ---- fr [                  80]
+        /// </summary>
+        WatAquaCountNumberEqualTo80 = 18419,
+        /// <summary>
+        /// 18420 -- en [                90] ---- fr [                90]
+        /// </summary>
+        WatAquaCountNumberEqualTo90 = 18420,
+        /// <summary>
+        /// 18421 -- en [            100] ---- fr [            100]
+        /// </summary>
+        WatAquaCountNumberEqualTo100 = 18421,
+        /// <summary>
+        /// 18422 -- en [ > 100] ---- fr [ > 100]
+        /// </summary>
+        WatAquaCountNumberGreaterThan100 = 18422,
         /// <summary>
         /// 15400 -- en [Aquaculture Type] ---- fr [Type d'aquaculture  ]
         /// </summary>
@@ -3868,7 +3946,7 @@ namespace CSSPEnums
         /// </summary>
         SourcesOfContaminantProcessingWater = 10503,
         /// <summary>
-        /// 10504 -- en [          Tank Water] ---- fr [Eau de réservoir]
+        /// 10504 -- en [Saltwater from Tanks] ---- fr [Eau de réservoir]
         /// </summary>
         SourcesOfContaminantTankWater = 10504,
         /// <summary>
@@ -4224,6 +4302,18 @@ namespace CSSPEnums
         /// </summary>
         PathwaySourceFirstMixesMARINE = 14329,
         /// <summary>
+        /// 14330 -- en [                                    Pond or Lake |  | (H)] ---- fr [                                   Étang ou lac | (H)]
+        /// </summary>
+        PathwaySourceFirstPondLake = 14330,
+        /// <summary>
+        /// 14331 -- en [                                     Pond or Lake |  | (M)] ---- fr [                      Étang ou lac | (M)]
+        /// </summary>
+        PathwaySourceFirstPondLakeMED = 14331,
+        /// <summary>
+        /// 14332 -- en [                                      Pond or Lake |  | (L)] ---- fr [                         Étang ou lac | (L)]
+        /// </summary>
+        PathwaySourceFirstPondLakeLOW = 14332,
+        /// <summary>
         /// 13000 -- en [Where Does Discharge Of Pipe Flow] ---- fr [D'où vient le débit du tuyau]
         /// </summary>
         PathwayRouteSecondPipeStart = 13000,
@@ -4352,7 +4442,7 @@ namespace CSSPEnums
         /// </summary>
         PathwaySourceSecondCulvertDirectFlowLow = 13215,
         /// <summary>
-        /// 14800 -- en [Stream Width (m)] ---- fr [Largeur du ruisseau (m)]
+        /// 14800 -- en [Width (m)] ---- fr [Largeur (m)]
         /// </summary>
         WidthInMetersStart = 14800,
         /// <summary>
@@ -6384,10 +6474,7 @@ namespace CSSPEnums
         /// </summary>
         FecalCountNumberApproxTo1700k = 18333,
         /// <summary>
-        /// 18500 -- en [Calculated Volume (m3) of Water Needed to Dilute a Fecal Loadings to 14 MPN] ---- fr [
-Volume calculé (m3) d'eau nécessaire pour diluer une charge fécale à 14 MPN
-
-]
+        /// 18500 -- en [Calculated Volume (m3) of Water Needed to Dilute a Fecal Loadings to 14 MPN] ---- fr [Volume calculé (m3) d'eau nécessaire pour diluer une charge fécale à 14 MPN]
         /// </summary>
         CubicMeterToDiluteToMPN14Start = 18500,
         /// <summary>
