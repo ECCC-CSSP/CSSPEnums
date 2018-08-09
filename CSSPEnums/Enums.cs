@@ -72,12 +72,6 @@ namespace CSSPEnums
         AsNoTracking = 1,
         WithTracking = 2,
     }
-    public enum EntityQueryDetailTypeEnum
-    {
-        EntityOnly = 1,
-        EntityWeb = 2,
-        EntityReport = 3,
-    }
     // might be able to delete PolSourceObsInfoTypeEnum
     public enum PolSourceObsInfoTypeEnum
     {
