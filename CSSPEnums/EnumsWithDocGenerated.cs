@@ -543,6 +543,13 @@ namespace CSSPEnums
     ///         FillRunPrecipByClimateSitePriorityForYear = 27,
     ///         FindMissingPrecipForProvince = 28,
     ///         ExportToArcGIS = 29,
+    ///         GenerateClassificationForCSSPWebToolsVisualization = 30,
+    ///         GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+    ///         OpenDataCSVNationalOfMWQMSites = 32,
+    ///         OpenDataCSVNationalOfMWQMSamples = 33,
+    ///         ProvinceToolsCreateClassificationInputsKML = 34,
+    ///         ProvinceToolsCreateGroupingInputsKML = 35,
+    ///         ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML = 36,
     ///     }
     /// </code>
     /// </remarks>
@@ -664,6 +671,34 @@ namespace CSSPEnums
         /// 29 -- en [Export to Arc GIS] ---- fr [Export to Arc GIS (fr)]
         /// </summary>
         ExportToArcGIS = 29,
+        /// <summary>
+        /// 30 -- en [Generate classification for CSSPWebTools visualization] ---- fr [Generate classification for CSSPWebTools visualization (fr)]
+        /// </summary>
+        GenerateClassificationForCSSPWebToolsVisualization = 30,
+        /// <summary>
+        /// 31 -- en [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization] ---- fr [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization (fr)]
+        /// </summary>
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+        /// <summary>
+        /// 32 -- en [Open Data CSV national of MWQM Sites] ---- fr [Open Data CSV national of MWQM Sites (fr)]
+        /// </summary>
+        OpenDataCSVNationalOfMWQMSites = 32,
+        /// <summary>
+        /// 33 -- en [Open Data CSV national of MWQM Samples] ---- fr [Open Data CSV national of MWQM Samples (fr)]
+        /// </summary>
+        OpenDataCSVNationalOfMWQMSamples = 33,
+        /// <summary>
+        /// 34 -- en [Province tools create classification inputs KML] ---- fr [Province tools create classification inputs KML (fr)]
+        /// </summary>
+        ProvinceToolsCreateClassificationInputsKML = 34,
+        /// <summary>
+        /// 35 -- en [Province tools create grouping inputs KML] ---- fr [Province tools create grouping inputs KML (fr)]
+        /// </summary>
+        ProvinceToolsCreateGroupingInputsKML = 35,
+        /// <summary>
+        /// 36 -- en [Province tools create MWQM Sites and Pollution Source Sites KML] ---- fr [Province tools create MWQM Sites and Pollution Source Sites KML]
+        /// </summary>
+        ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML = 36,
     }
     /// <summary>
     /// > [!NOTE]
@@ -4507,8 +4542,8 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [ContactPreference] (CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [ContactPreference_A] (CSSPModels.ContactPreference_A.html#CSSPModels_ContactPreference_A_TVType), [ContactPreference_B] (CSSPModels.ContactPreference_B.html#CSSPModels_ContactPreference_B_TVType), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [DocTemplate_A] (CSSPModels.DocTemplate_A.html#CSSPModels_DocTemplate_A_TVType), [DocTemplate_B] (CSSPModels.DocTemplate_B.html#CSSPModels_DocTemplate_B_TVType), [MapInfo] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [MapInfo_A] (CSSPModels.MapInfo_A.html#CSSPModels_MapInfo_A_TVType), [MapInfo_B] (CSSPModels.MapInfo_B.html#CSSPModels_MapInfo_B_TVType), [MikeBoundaryCondition] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [MikeBoundaryCondition_A] (CSSPModels.MikeBoundaryCondition_A.html#CSSPModels_MikeBoundaryCondition_A_TVType), [MikeBoundaryCondition_B] (CSSPModels.MikeBoundaryCondition_B.html#CSSPModels_MikeBoundaryCondition_B_TVType), [ReportType] (CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [ReportType_A] (CSSPModels.ReportType_A.html#CSSPModels_ReportType_A_TVType), [ReportType_B] (CSSPModels.ReportType_B.html#CSSPModels_ReportType_B_TVType), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [TVFile_A] (CSSPModels.TVFile_A.html#CSSPModels_TVFile_A_TemplateTVType), [TVFile_B] (CSSPModels.TVFile_B.html#CSSPModels_TVFile_B_TemplateTVType), [TVItem] (CSSPModels.TVItem.html#CSSPModels_TVItem_TVType), [TVItem_A] (CSSPModels.TVItem_A.html#CSSPModels_TVItem_A_TVType), [TVItem_B] (CSSPModels.TVItem_B.html#CSSPModels_TVItem_B_TVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [TVItemLink_A] (CSSPModels.TVItemLink_A.html#CSSPModels_TVItemLink_A_FromTVType), [TVItemLink_A] (CSSPModels.TVItemLink_A.html#CSSPModels_TVItemLink_A_ToTVType), [TVItemLink_B] (CSSPModels.TVItemLink_B.html#CSSPModels_TVItemLink_B_FromTVType), [TVItemLink_B] (CSSPModels.TVItemLink_B.html#CSSPModels_TVItemLink_B_ToTVType), [TVItemStat] (CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [TVItemStat_A] (CSSPModels.TVItemStat_A.html#CSSPModels_TVItemStat_A_TVType), [TVItemStat_B] (CSSPModels.TVItemStat_B.html#CSSPModels_TVItemStat_B_TVType), [TVTypeUserAuthorization] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVTypeUserAuthorization_A] (CSSPModels.TVTypeUserAuthorization_A.html#CSSPModels_TVTypeUserAuthorization_A_TVType), [TVTypeUserAuthorization_B] (CSSPModels.TVTypeUserAuthorization_B.html#CSSPModels_TVTypeUserAuthorization_B_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService] (CSSPServices.ContactPreferenceService.html), [ContactPreference_AService] (CSSPServices.ContactPreference_AService.html), [ContactPreference_BService] (CSSPServices.ContactPreference_BService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [DocTemplate_AService] (CSSPServices.DocTemplate_AService.html), [DocTemplate_BService] (CSSPServices.DocTemplate_BService.html), [MapInfoService] (CSSPServices.MapInfoService.html), [MapInfo_AService] (CSSPServices.MapInfo_AService.html), [MapInfo_BService] (CSSPServices.MapInfo_BService.html), [MikeBoundaryConditionService] (CSSPServices.MikeBoundaryConditionService.html), [MikeBoundaryCondition_AService] (CSSPServices.MikeBoundaryCondition_AService.html), [MikeBoundaryCondition_BService] (CSSPServices.MikeBoundaryCondition_BService.html), [ReportTypeService] (CSSPServices.ReportTypeService.html), [ReportType_AService] (CSSPServices.ReportType_AService.html), [ReportType_BService] (CSSPServices.ReportType_BService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFile_AService] (CSSPServices.TVFile_AService.html), [TVFile_BService] (CSSPServices.TVFile_BService.html), [TVItemService] (CSSPServices.TVItemService.html), [TVItem_AService] (CSSPServices.TVItem_AService.html), [TVItem_BService] (CSSPServices.TVItem_BService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLink_AService] (CSSPServices.TVItemLink_AService.html), [TVItemLink_AService] (CSSPServices.TVItemLink_AService.html), [TVItemLink_BService] (CSSPServices.TVItemLink_BService.html), [TVItemLink_BService] (CSSPServices.TVItemLink_BService.html), [TVItemStatService] (CSSPServices.TVItemStatService.html), [TVItemStat_AService] (CSSPServices.TVItemStat_AService.html), [TVItemStat_BService] (CSSPServices.TVItemStat_BService.html), [TVTypeUserAuthorizationService] (CSSPServices.TVTypeUserAuthorizationService.html), [TVTypeUserAuthorization_AService] (CSSPServices.TVTypeUserAuthorization_AService.html), [TVTypeUserAuthorization_BService] (CSSPServices.TVTypeUserAuthorization_BService.html), [TVLocationService] (CSSPServices.TVLocationService.html), [TVLocationService] (CSSPServices.TVLocationService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [ContactPreference] (CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [ContactPreference_A] (CSSPModels.ContactPreference_A.html#CSSPModels_ContactPreference_A_TVType), [ContactPreference_B] (CSSPModels.ContactPreference_B.html#CSSPModels_ContactPreference_B_TVType), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [DocTemplate_A] (CSSPModels.DocTemplate_A.html#CSSPModels_DocTemplate_A_TVType), [DocTemplate_B] (CSSPModels.DocTemplate_B.html#CSSPModels_DocTemplate_B_TVType), [MapInfo] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [MapInfo_A] (CSSPModels.MapInfo_A.html#CSSPModels_MapInfo_A_TVType), [MapInfo_B] (CSSPModels.MapInfo_B.html#CSSPModels_MapInfo_B_TVType), [MikeBoundaryCondition] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [MikeBoundaryCondition_A] (CSSPModels.MikeBoundaryCondition_A.html#CSSPModels_MikeBoundaryCondition_A_TVType), [MikeBoundaryCondition_B] (CSSPModels.MikeBoundaryCondition_B.html#CSSPModels_MikeBoundaryCondition_B_TVType), [MWQMSitePolSourceSite] (CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVType), [MWQMSitePolSourceSite_A] (CSSPModels.MWQMSitePolSourceSite_A.html#CSSPModels_MWQMSitePolSourceSite_A_TVType), [MWQMSitePolSourceSite_B] (CSSPModels.MWQMSitePolSourceSite_B.html#CSSPModels_MWQMSitePolSourceSite_B_TVType), [ReportType] (CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [ReportType_A] (CSSPModels.ReportType_A.html#CSSPModels_ReportType_A_TVType), [ReportType_B] (CSSPModels.ReportType_B.html#CSSPModels_ReportType_B_TVType), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [TVFile_A] (CSSPModels.TVFile_A.html#CSSPModels_TVFile_A_TemplateTVType), [TVFile_B] (CSSPModels.TVFile_B.html#CSSPModels_TVFile_B_TemplateTVType), [TVItem] (CSSPModels.TVItem.html#CSSPModels_TVItem_TVType), [TVItem_A] (CSSPModels.TVItem_A.html#CSSPModels_TVItem_A_TVType), [TVItem_B] (CSSPModels.TVItem_B.html#CSSPModels_TVItem_B_TVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [TVItemLink_A] (CSSPModels.TVItemLink_A.html#CSSPModels_TVItemLink_A_FromTVType), [TVItemLink_A] (CSSPModels.TVItemLink_A.html#CSSPModels_TVItemLink_A_ToTVType), [TVItemLink_B] (CSSPModels.TVItemLink_B.html#CSSPModels_TVItemLink_B_FromTVType), [TVItemLink_B] (CSSPModels.TVItemLink_B.html#CSSPModels_TVItemLink_B_ToTVType), [TVItemStat] (CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [TVItemStat_A] (CSSPModels.TVItemStat_A.html#CSSPModels_TVItemStat_A_TVType), [TVItemStat_B] (CSSPModels.TVItemStat_B.html#CSSPModels_TVItemStat_B_TVType), [TVTypeUserAuthorization] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVTypeUserAuthorization_A] (CSSPModels.TVTypeUserAuthorization_A.html#CSSPModels_TVTypeUserAuthorization_A_TVType), [TVTypeUserAuthorization_B] (CSSPModels.TVTypeUserAuthorization_B.html#CSSPModels_TVTypeUserAuthorization_B_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService] (CSSPServices.ContactPreferenceService.html), [ContactPreference_AService] (CSSPServices.ContactPreference_AService.html), [ContactPreference_BService] (CSSPServices.ContactPreference_BService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [DocTemplate_AService] (CSSPServices.DocTemplate_AService.html), [DocTemplate_BService] (CSSPServices.DocTemplate_BService.html), [MapInfoService] (CSSPServices.MapInfoService.html), [MapInfo_AService] (CSSPServices.MapInfo_AService.html), [MapInfo_BService] (CSSPServices.MapInfo_BService.html), [MikeBoundaryConditionService] (CSSPServices.MikeBoundaryConditionService.html), [MikeBoundaryCondition_AService] (CSSPServices.MikeBoundaryCondition_AService.html), [MikeBoundaryCondition_BService] (CSSPServices.MikeBoundaryCondition_BService.html), [MWQMSitePolSourceSiteService] (CSSPServices.MWQMSitePolSourceSiteService.html), [MWQMSitePolSourceSite_AService] (CSSPServices.MWQMSitePolSourceSite_AService.html), [MWQMSitePolSourceSite_BService] (CSSPServices.MWQMSitePolSourceSite_BService.html), [ReportTypeService] (CSSPServices.ReportTypeService.html), [ReportType_AService] (CSSPServices.ReportType_AService.html), [ReportType_BService] (CSSPServices.ReportType_BService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFile_AService] (CSSPServices.TVFile_AService.html), [TVFile_BService] (CSSPServices.TVFile_BService.html), [TVItemService] (CSSPServices.TVItemService.html), [TVItem_AService] (CSSPServices.TVItem_AService.html), [TVItem_BService] (CSSPServices.TVItem_BService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLink_AService] (CSSPServices.TVItemLink_AService.html), [TVItemLink_AService] (CSSPServices.TVItemLink_AService.html), [TVItemLink_BService] (CSSPServices.TVItemLink_BService.html), [TVItemLink_BService] (CSSPServices.TVItemLink_BService.html), [TVItemStatService] (CSSPServices.TVItemStatService.html), [TVItemStat_AService] (CSSPServices.TVItemStat_AService.html), [TVItemStat_BService] (CSSPServices.TVItemStat_BService.html), [TVTypeUserAuthorizationService] (CSSPServices.TVTypeUserAuthorizationService.html), [TVTypeUserAuthorization_AService] (CSSPServices.TVTypeUserAuthorization_AService.html), [TVTypeUserAuthorization_BService] (CSSPServices.TVTypeUserAuthorization_BService.html), [TVLocationService] (CSSPServices.TVLocationService.html), [TVLocationService] (CSSPServices.TVLocationService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -4598,6 +4633,8 @@ namespace CSSPEnums
     ///         Prohibited = 82,
     ///         ConditionallyApproved = 83,
     ///         ConditionallyRestricted = 84,
+    ///         OpenDataNational = 85,
+    ///         PolSourceSiteMikeScenario = 86,
     ///     }
     /// </code>
     /// </remarks>
@@ -4935,6 +4972,14 @@ namespace CSSPEnums
         /// 84 -- en [Conditionally Restricted] ---- fr [Restreint sous condition]
         /// </summary>
         ConditionallyRestricted = 84,
+        /// <summary>
+        /// 85 -- en [Open Data national] ---- fr [Open Data national (fr)]
+        /// </summary>
+        OpenDataNational = 85,
+        /// <summary>
+        /// 86 -- en [Pollution source site Mike Scenario] ---- fr [Pollution source site Mike Scenario (fr)]
+        /// </summary>
+        PolSourceSiteMikeScenario = 86,
     }
     /// <summary>
     /// > [!NOTE]

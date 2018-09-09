@@ -2763,4 +2763,31 @@
   <data name="PropertyTypeEnumString" xml:space="preserve">
     <value>String</value>
   </data>
+  <data name="AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization" xml:space="preserve">
+    <value>Generate classification for CSSPWebTools visualization</value>
+  </data>
+  <data name="AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization" xml:space="preserve">
+    <value>Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples" xml:space="preserve">
+    <value>Open Data CSV national of MWQM Samples</value>
+  </data>
+  <data name="AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites" xml:space="preserve">
+    <value>Open Data CSV national of MWQM Sites</value>
+  </data>
+  <data name="AppTaskCommandEnumProvinceToolsCreateClassificationInputsKML" xml:space="preserve">
+    <value>Province tools create classification inputs KML</value>
+  </data>
+  <data name="AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML" xml:space="preserve">
+    <value>Province tools create grouping inputs KML</value>
+  </data>
+  <data name="AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML" xml:space="preserve">
+    <value>Province tools create MWQM Sites and Pollution Source Sites KML</value>
+  </data>
+  <data name="TVTypeEnumOpenDataNational" xml:space="preserve">
+    <value>Open Data national</value>
+  </data>
+  <data name="TVTypeEnumPolSourceSiteMikeScenario" xml:space="preserve">
+    <value>Pollution source site Mike Scenario</value>
+  </data>
 </root>

@@ -628,6 +628,25 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generate classification for CSSPWebTools visualization.
+        /// </summary>
+        public static string AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization.
+        /// </summary>
+        public static string AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVi" +
+                        "sualization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Generate Web Tide.
         /// </summary>
         public static string AppTaskCommandEnumGenerateWebTide {
@@ -709,6 +728,24 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Data CSV national of MWQM Samples.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Data CSV national of MWQM Sites.
+        /// </summary>
+        public static string AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open Data CSV of MWQM Samples.
         /// </summary>
         public static string AppTaskCommandEnumOpenDataCSVOfMWQMSamples {
@@ -759,6 +796,33 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Province tools create classification inputs KML.
+        /// </summary>
+        public static string AppTaskCommandEnumProvinceToolsCreateClassificationInputsKML {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumProvinceToolsCreateClassificationInputsKML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Province tools create grouping inputs KML.
+        /// </summary>
+        public static string AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Province tools create MWQM Sites and Pollution Source Sites KML.
+        /// </summary>
+        public static string AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML", resourceCulture);
             }
         }
         
@@ -7523,6 +7587,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Data national.
+        /// </summary>
+        public static string TVTypeEnumOpenDataNational {
+            get {
+                return ResourceManager.GetString("TVTypeEnumOpenDataNational", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Other Infrastructure.
         /// </summary>
         public static string TVTypeEnumOtherInfrastructure {
@@ -7564,6 +7637,15 @@ namespace CSSPEnums.Resources {
         public static string TVTypeEnumPolSourceSiteInfo {
             get {
                 return ResourceManager.GetString("TVTypeEnumPolSourceSiteInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pollution source site Mike Scenario.
+        /// </summary>
+        public static string TVTypeEnumPolSourceSiteMikeScenario {
+            get {
+                return ResourceManager.GetString("TVTypeEnumPolSourceSiteMikeScenario", resourceCulture);
             }
         }
         

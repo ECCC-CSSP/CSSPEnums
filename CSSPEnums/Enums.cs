@@ -162,10 +162,17 @@ namespace CSSPEnums
         FillRunPrecipByClimateSitePriorityForYear = 27,
         FindMissingPrecipForProvince = 28,
         ExportToArcGIS = 29,
+        GenerateClassificationForCSSPWebToolsVisualization = 30,
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+        OpenDataCSVNationalOfMWQMSites = 32,
+        OpenDataCSVNationalOfMWQMSamples = 33,
+        ProvinceToolsCreateClassificationInputsKML = 34,
+        ProvinceToolsCreateGroupingInputsKML = 35,
+        ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML = 36,
     }
     public enum AppTaskStatusEnum
     {
-         Created = 1,
+        Created = 1,
         Running = 2,
         Completed = 3,
         Cancelled = 4,
@@ -1000,6 +1007,8 @@ namespace CSSPEnums
         Prohibited = 82,
         ConditionallyApproved = 83,
         ConditionallyRestricted = 84,
+        OpenDataNational = 85,
+        PolSourceSiteMikeScenario = 86,
     }
     public enum WebTideDataSetEnum
     {

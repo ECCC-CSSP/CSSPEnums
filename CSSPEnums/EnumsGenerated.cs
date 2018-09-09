@@ -583,6 +583,20 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingPrecipForProvince;
                 case AppTaskCommandEnum.ExportToArcGIS:
                     return CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS;
+                case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization;
+                case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization;
+                case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites;
+                case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
+                    return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples;
+                case AppTaskCommandEnum.ProvinceToolsCreateClassificationInputsKML:
+                    return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateClassificationInputsKML;
+                case AppTaskCommandEnum.ProvinceToolsCreateGroupingInputsKML:
+                    return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML;
+                case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
+                    return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -2567,6 +2581,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.TVTypeEnumConditionallyApproved;
                 case TVTypeEnum.ConditionallyRestricted:
                     return CSSPEnumsRes.TVTypeEnumConditionallyRestricted;
+                case TVTypeEnum.OpenDataNational:
+                    return CSSPEnumsRes.TVTypeEnumOpenDataNational;
+                case TVTypeEnum.PolSourceSiteMikeScenario:
+                    return CSSPEnumsRes.TVTypeEnumPolSourceSiteMikeScenario;
                 default:
                     return CSSPEnumsRes.Empty;
             }

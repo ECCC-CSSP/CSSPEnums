@@ -594,6 +594,27 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.ExportToArcGIS:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS, retStr);
                             break;
+                        case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization, retStr);
+                            break;
+                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization, retStr);
+                            break;
+                        case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites, retStr);
+                            break;
+                        case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples, retStr);
+                            break;
+                        case AppTaskCommandEnum.ProvinceToolsCreateClassificationInputsKML:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateClassificationInputsKML, retStr);
+                            break;
+                        case AppTaskCommandEnum.ProvinceToolsCreateGroupingInputsKML:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML, retStr);
+                            break;
+                        case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4345,6 +4366,12 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.ConditionallyRestricted:
                             Assert.AreEqual(CSSPEnumsRes.TVTypeEnumConditionallyRestricted, retStr);
                             break;
+                        case TVTypeEnum.OpenDataNational:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumOpenDataNational, retStr);
+                            break;
+                        case TVTypeEnum.PolSourceSiteMikeScenario:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumPolSourceSiteMikeScenario, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4924,6 +4951,13 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.FillRunPrecipByClimateSitePriorityForYear:
                         case AppTaskCommandEnum.FindMissingPrecipForProvince:
                         case AppTaskCommandEnum.ExportToArcGIS:
+                        case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
+                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
+                        case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
+                        case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
+                        case AppTaskCommandEnum.ProvinceToolsCreateClassificationInputsKML:
+                        case AppTaskCommandEnum.ProvinceToolsCreateGroupingInputsKML:
+                        case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -7497,6 +7531,8 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.Prohibited:
                         case TVTypeEnum.ConditionallyApproved:
                         case TVTypeEnum.ConditionallyRestricted:
+                        case TVTypeEnum.OpenDataNational:
+                        case TVTypeEnum.PolSourceSiteMikeScenario:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
