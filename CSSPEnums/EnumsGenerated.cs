@@ -597,6 +597,20 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateGroupingInputsKML;
                 case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
                     return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML;
+                case AppTaskCommandEnum.UpdateHydrometricSiteInformation:
+                    return CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteInformation;
+                case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate:
+                    return CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate;
+                case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate:
+                    return CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate;
+                case AppTaskCommandEnum.GetHydrometricSitesDataForRunsOfYear:
+                    return CSSPEnumsRes.AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear;
+                case AppTaskCommandEnum.GetAllDischargesForYear:
+                    return CSSPEnumsRes.AppTaskCommandEnumGetAllDischargesForYear;
+                case AppTaskCommandEnum.FillRunDischargesByHydrometricSitePriorityForYear:
+                    return CSSPEnumsRes.AppTaskCommandEnumFillRunDischargesByHydrometricSitePriorityForYear;
+                case AppTaskCommandEnum.FindMissingDischargesForProvince:
+                    return CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince;
                 default:
                     return CSSPEnumsRes.Empty;
             }

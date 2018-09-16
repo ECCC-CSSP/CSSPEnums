@@ -169,6 +169,13 @@ namespace CSSPEnums
         ProvinceToolsCreateClassificationInputsKML = 34,
         ProvinceToolsCreateGroupingInputsKML = 35,
         ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML = 36,
+        UpdateHydrometricSiteInformation = 37,
+        UpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate = 38,
+        UpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate = 39,
+        GetHydrometricSitesDataForRunsOfYear = 40,
+        GetAllDischargesForYear = 41,
+        FillRunDischargesByHydrometricSitePriorityForYear = 42,
+        FindMissingDischargesForProvince = 43,
     }
     public enum AppTaskStatusEnum
     {

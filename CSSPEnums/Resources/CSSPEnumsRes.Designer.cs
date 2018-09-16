@@ -610,11 +610,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fill Run Discharges By Hydrometric Site Priority For Year.
+        /// </summary>
+        public static string AppTaskCommandEnumFillRunDischargesByHydrometricSitePriorityForYear {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumFillRunDischargesByHydrometricSitePriorityForYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fill run precip by climate site priority for year.
         /// </summary>
         public static string AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumFillRunPrecipByClimateSitePriorityForYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find Missing Discharges For Province.
+        /// </summary>
+        public static string AppTaskCommandEnumFindMissingDischargesForProvince {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumFindMissingDischargesForProvince", resourceCulture);
             }
         }
         
@@ -656,6 +674,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Get All Discharges For Year.
+        /// </summary>
+        public static string AppTaskCommandEnumGetAllDischargesForYear {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGetAllDischargesForYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get all precipitation for year.
         /// </summary>
         public static string AppTaskCommandEnumGetAllPrecipitationForYear {
@@ -670,6 +697,15 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumGetClimateSitesDataForRunsOfYear {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumGetClimateSitesDataForRunsOfYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Hydrometric Sites Data For Runs Of Year.
+        /// </summary>
+        public static string AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear", resourceCulture);
             }
         }
         
@@ -860,6 +896,34 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumUpdateClimateSiteInformation {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumUpdateClimateSiteInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Hydrometric Site Daily And Hourly For Subsector From Start Date To End Date.
+        /// </summary>
+        public static string AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToE" +
+                        "ndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Hydrometric Site Daily And Hourly From Start Date To End Date.
+        /// </summary>
+        public static string AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Hydrometric Site Information.
+        /// </summary>
+        public static string AppTaskCommandEnumUpdateHydrometricSiteInformation {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumUpdateHydrometricSiteInformation", resourceCulture);
             }
         }
         

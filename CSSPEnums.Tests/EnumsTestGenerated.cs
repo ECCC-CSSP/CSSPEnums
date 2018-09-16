@@ -615,6 +615,27 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumProvinceToolsCreateMWQMSitesAndPolSourceSitesKML, retStr);
                             break;
+                        case AppTaskCommandEnum.UpdateHydrometricSiteInformation:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteInformation, retStr);
+                            break;
+                        case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate, retStr);
+                            break;
+                        case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumUpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate, retStr);
+                            break;
+                        case AppTaskCommandEnum.GetHydrometricSitesDataForRunsOfYear:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear, retStr);
+                            break;
+                        case AppTaskCommandEnum.GetAllDischargesForYear:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGetAllDischargesForYear, retStr);
+                            break;
+                        case AppTaskCommandEnum.FillRunDischargesByHydrometricSitePriorityForYear:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumFillRunDischargesByHydrometricSitePriorityForYear, retStr);
+                            break;
+                        case AppTaskCommandEnum.FindMissingDischargesForProvince:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4958,6 +4979,13 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.ProvinceToolsCreateClassificationInputsKML:
                         case AppTaskCommandEnum.ProvinceToolsCreateGroupingInputsKML:
                         case AppTaskCommandEnum.ProvinceToolsCreateMWQMSitesAndPolSourceSitesKML:
+                        case AppTaskCommandEnum.UpdateHydrometricSiteInformation:
+                        case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyFromStartDateToEndDate:
+                        case AppTaskCommandEnum.UpdateHydrometricSiteDailyAndHourlyForSubsectorFromStartDateToEndDate:
+                        case AppTaskCommandEnum.GetHydrometricSitesDataForRunsOfYear:
+                        case AppTaskCommandEnum.GetAllDischargesForYear:
+                        case AppTaskCommandEnum.FillRunDischargesByHydrometricSitePriorityForYear:
+                        case AppTaskCommandEnum.FindMissingDischargesForProvince:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
