@@ -62,9 +62,9 @@ namespace CSSPEnums
     }
     public enum DatabaseTypeEnum
     {
-        MemoryCSSPWebToolsDB = 1,
+        MemoryCSSPDB = 1,
         MemoryTestDB = 2,
-        SqlServerCSSPWebToolsDB = 3,
+        SqlServerCSSPDB = 3,
         SqlServerTestDB = 4,
     }
     public enum EntityQueryTypeEnum
@@ -162,8 +162,8 @@ namespace CSSPEnums
         FillRunPrecipByClimateSitePriorityForYear = 27,
         FindMissingPrecipForProvince = 28,
         ExportToArcGIS = 29,
-        GenerateClassificationForCSSPWebToolsVisualization = 30,
-        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+        GenerateClassificationForCSSPVisualization = 30,
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
         OpenDataCSVNationalOfMWQMSites = 32,
         OpenDataCSVNationalOfMWQMSamples = 33,
         ProvinceToolsCreateClassificationInputsKML = 34,
@@ -176,6 +176,7 @@ namespace CSSPEnums
         GetAllDischargesForYear = 41,
         FillRunDischargesByHydrometricSitePriorityForYear = 42,
         FindMissingDischargesForProvince = 43,
+        LoadHydrometricDataValue = 44,
     }
     public enum AppTaskStatusEnum
     {
@@ -919,7 +920,7 @@ namespace CSSPEnums
         PeatSystem = 31,
         Physicochimique = 32,
         RotatingBiologicalContactor = 33,
-    } // to be remove in the future
+    }
     public enum TVAuthEnum
     {
         NoAccess = 1,

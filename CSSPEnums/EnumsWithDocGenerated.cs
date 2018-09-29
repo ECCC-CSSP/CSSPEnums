@@ -147,17 +147,17 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [CSSPWebToolsDBContext] (CSSPModels.CSSPWebToolsDBContext.html#CSSPModels_CSSPWebToolsDBContext_DatabaseType)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPWebToolsDBContextService] (CSSPServices.CSSPWebToolsDBContextService.html)</para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [CSSPDBContext] (CSSPModels.CSSPDBContext.html#CSSPModels_CSSPDBContext_DatabaseType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [CSSPDBContextService] (CSSPServices.CSSPDBContextService.html)</para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
     /// <code>
     ///     public enum DatabaseTypeEnum
     ///     {
-    ///         MemoryCSSPWebToolsDB = 1,
+    ///         MemoryCSSPDB = 1,
     ///         MemoryTestDB = 2,
-    ///         SqlServerCSSPWebToolsDB = 3,
+    ///         SqlServerCSSPDB = 3,
     ///         SqlServerTestDB = 4,
     ///     }
     /// </code>
@@ -165,17 +165,17 @@ namespace CSSPEnums
     public enum DatabaseTypeEnum
     {
         /// <summary>
-        /// 1 -- en [MemoryCSSPWebToolsDB] ---- fr [MemoryCSSPWebToolsDB]
+        /// 1 -- en [MemoryCSSPDB] ---- fr [MemoryCSSPDB]
         /// </summary>
-        MemoryCSSPWebToolsDB = 1,
+        MemoryCSSPDB = 1,
         /// <summary>
         /// 2 -- en [MemoryTestDB] ---- fr [MemoryTestDB]
         /// </summary>
         MemoryTestDB = 2,
         /// <summary>
-        /// 3 -- en [SqlServerCSSPWebToolsDB] ---- fr [SqlServerCSSPWebToolsDB]
+        /// 3 -- en [SqlServerCSSPDB] ---- fr [SqlServerCSSPDB]
         /// </summary>
-        SqlServerCSSPWebToolsDB = 3,
+        SqlServerCSSPDB = 3,
         /// <summary>
         /// 4 -- en [SqlServerTestDB] ---- fr [SqlServerTestDB]
         /// </summary>
@@ -543,8 +543,8 @@ namespace CSSPEnums
     ///         FillRunPrecipByClimateSitePriorityForYear = 27,
     ///         FindMissingPrecipForProvince = 28,
     ///         ExportToArcGIS = 29,
-    ///         GenerateClassificationForCSSPWebToolsVisualization = 30,
-    ///         GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+    ///         GenerateClassificationForCSSPVisualization = 30,
+    ///         GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
     ///         OpenDataCSVNationalOfMWQMSites = 32,
     ///         OpenDataCSVNationalOfMWQMSamples = 33,
     ///         ProvinceToolsCreateClassificationInputsKML = 34,
@@ -557,6 +557,7 @@ namespace CSSPEnums
     ///         GetAllDischargesForYear = 41,
     ///         FillRunDischargesByHydrometricSitePriorityForYear = 42,
     ///         FindMissingDischargesForProvince = 43,
+    ///         LoadHydrometricDataValue = 44,
     ///     }
     /// </code>
     /// </remarks>
@@ -679,13 +680,13 @@ namespace CSSPEnums
         /// </summary>
         ExportToArcGIS = 29,
         /// <summary>
-        /// 30 -- en [Generate classification for CSSPWebTools visualization] ---- fr [Generate classification for CSSPWebTools visualization (fr)]
+        /// 30 -- en [Generate classification for CSSP visualization] ---- fr [Generate classification for CSSP visualization (fr)]
         /// </summary>
-        GenerateClassificationForCSSPWebToolsVisualization = 30,
+        GenerateClassificationForCSSPVisualization = 30,
         /// <summary>
-        /// 31 -- en [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization] ---- fr [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization (fr)]
+        /// 31 -- en [Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization] ---- fr [Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization (fr)]
         /// </summary>
-        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
         /// <summary>
         /// 32 -- en [Open Data CSV national of MWQM Sites] ---- fr [Open Data CSV national of MWQM Sites (fr)]
         /// </summary>
@@ -734,6 +735,10 @@ namespace CSSPEnums
         /// 43 -- en [Find Missing Discharges For Province] ---- fr [Find Missing Discharges For Province (fr)]
         /// </summary>
         FindMissingDischargesForProvince = 43,
+        /// <summary>
+        /// 44 -- en [Load hydrometric data value] ---- fr [Load hydrometric data value (fr)]
+        /// </summary>
+        LoadHydrometricDataValue = 44,
     }
     /// <summary>
     /// > [!NOTE]

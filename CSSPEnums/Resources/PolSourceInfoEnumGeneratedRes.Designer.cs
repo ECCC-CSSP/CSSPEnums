@@ -45223,7 +45223,7 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This observation is documented in the &apos;Municipality Tab&apos; of Webtools..
+        ///   Looks up a localized string similar to This observation is documented in the &apos;Municipality Tab&apos; of ..
         /// </summary>
         public static string PolSourceInfoEnumPathwaySourceFirstMunicipalityOFFSITEReport {
             get {
@@ -45268,7 +45268,7 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This observation is documented in the &apos;Municipality Tab&apos; of Webtools..
+        ///   Looks up a localized string similar to This observation is documented in the &apos;Municipality Tab&apos; of ..
         /// </summary>
         public static string PolSourceInfoEnumPathwaySourceFirstMunicipalityONSITEReport {
             get {

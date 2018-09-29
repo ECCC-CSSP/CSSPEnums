@@ -646,20 +646,20 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate classification for CSSPWebTools visualization.
+        ///   Looks up a localized string similar to Generate classification for CSSP visualization.
         /// </summary>
-        public static string AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization {
+        public static string AppTaskCommandEnumGenerateClassificationForCSSPVisualization {
             get {
-                return ResourceManager.GetString("AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization", resourceCulture);
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateClassificationForCSSPVisualization", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization.
+        ///   Looks up a localized string similar to Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization.
         /// </summary>
-        public static string AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization {
+        public static string AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization {
             get {
-                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVi" +
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVi" +
                         "sualization", resourceCulture);
             }
         }
@@ -706,6 +706,15 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumGetHydrometricSitesDataForRunsOfYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load hydrometric data value.
+        /// </summary>
+        public static string AppTaskCommandEnumLoadHydrometricDataValue {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumLoadHydrometricDataValue", resourceCulture);
             }
         }
         
@@ -1513,11 +1522,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MemoryCSSPWebToolsDB.
+        ///   Looks up a localized string similar to MemoryCSSPDB.
         /// </summary>
-        public static string DatabaseTypeEnumMemoryCSSPWebToolsDB {
+        public static string DatabaseTypeEnumMemoryCSSPDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumMemoryCSSPWebToolsDB", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumMemoryCSSPDB", resourceCulture);
             }
         }
         
@@ -1531,11 +1540,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SqlServerCSSPWebToolsDB.
+        ///   Looks up a localized string similar to SqlServerCSSPDB.
         /// </summary>
-        public static string DatabaseTypeEnumSqlServerCSSPWebToolsDB {
+        public static string DatabaseTypeEnumSqlServerCSSPDB {
             get {
-                return ResourceManager.GetString("DatabaseTypeEnumSqlServerCSSPWebToolsDB", resourceCulture);
+                return ResourceManager.GetString("DatabaseTypeEnumSqlServerCSSPDB", resourceCulture);
             }
         }
         

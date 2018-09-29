@@ -120,14 +120,14 @@ namespace CSSPEnums.Tests
         
                     switch ((DatabaseTypeEnum)i)
                     {
-                        case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB, retStr);
+                        case DatabaseTypeEnum.MemoryCSSPDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPDB, retStr);
                             break;
                         case DatabaseTypeEnum.MemoryTestDB:
                             Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB, retStr);
                             break;
-                        case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
-                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB, retStr);
+                        case DatabaseTypeEnum.SqlServerCSSPDB:
+                            Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPDB, retStr);
                             break;
                         case DatabaseTypeEnum.SqlServerTestDB:
                             Assert.AreEqual(CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB, retStr);
@@ -594,11 +594,11 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.ExportToArcGIS:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS, retStr);
                             break;
-                        case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
-                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization, retStr);
+                        case AppTaskCommandEnum.GenerateClassificationForCSSPVisualization:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPVisualization, retStr);
                             break;
-                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
-                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization, retStr);
+                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization, retStr);
                             break;
                         case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites, retStr);
@@ -635,6 +635,9 @@ namespace CSSPEnums.Tests
                             break;
                         case AppTaskCommandEnum.FindMissingDischargesForProvince:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince, retStr);
+                            break;
+                        case AppTaskCommandEnum.LoadHydrometricDataValue:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumLoadHydrometricDataValue, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -4622,9 +4625,9 @@ namespace CSSPEnums.Tests
 
                     switch ((DatabaseTypeEnum)i)
                     {
-                        case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
+                        case DatabaseTypeEnum.MemoryCSSPDB:
                         case DatabaseTypeEnum.MemoryTestDB:
-                        case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
+                        case DatabaseTypeEnum.SqlServerCSSPDB:
                         case DatabaseTypeEnum.SqlServerTestDB:
                             Assert.AreEqual("", retStr);
                             break;
@@ -4972,8 +4975,8 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.FillRunPrecipByClimateSitePriorityForYear:
                         case AppTaskCommandEnum.FindMissingPrecipForProvince:
                         case AppTaskCommandEnum.ExportToArcGIS:
-                        case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
-                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
+                        case AppTaskCommandEnum.GenerateClassificationForCSSPVisualization:
+                        case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization:
                         case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
                         case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
                         case AppTaskCommandEnum.ProvinceToolsCreateClassificationInputsKML:
@@ -4986,6 +4989,7 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.GetAllDischargesForYear:
                         case AppTaskCommandEnum.FillRunDischargesByHydrometricSitePriorityForYear:
                         case AppTaskCommandEnum.FindMissingDischargesForProvince:
+                        case AppTaskCommandEnum.LoadHydrometricDataValue:
                             Assert.AreEqual("", retStr);
                             break;
                         default:

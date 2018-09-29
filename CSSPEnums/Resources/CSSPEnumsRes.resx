@@ -2427,14 +2427,14 @@
   <data name="ActionDBTypeEnumUpdate" xml:space="preserve">
     <value>Update</value>
   </data>
-  <data name="DatabaseTypeEnumMemoryCSSPWebToolsDB" xml:space="preserve">
-    <value>MemoryCSSPWebToolsDB</value>
+  <data name="DatabaseTypeEnumMemoryCSSPDB" xml:space="preserve">
+    <value>MemoryCSSPDB</value>
   </data>
   <data name="DatabaseTypeEnumMemoryTestDB" xml:space="preserve">
     <value>MemoryTestDB</value>
   </data>
-  <data name="DatabaseTypeEnumSqlServerCSSPWebToolsDB" xml:space="preserve">
-    <value>SqlServerCSSPWebToolsDB</value>
+  <data name="DatabaseTypeEnumSqlServerCSSPDB" xml:space="preserve">
+    <value>SqlServerCSSPDB</value>
   </data>
   <data name="DatabaseTypeEnumSqlServerTestDB" xml:space="preserve">
     <value>SqlServerTestDB</value>
@@ -2763,11 +2763,11 @@
   <data name="PropertyTypeEnumString" xml:space="preserve">
     <value>String</value>
   </data>
-  <data name="AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization" xml:space="preserve">
-    <value>Generate classification for CSSPWebTools visualization</value>
+  <data name="AppTaskCommandEnumGenerateClassificationForCSSPVisualization" xml:space="preserve">
+    <value>Generate classification for CSSP visualization</value>
   </data>
-  <data name="AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization" xml:space="preserve">
-    <value>Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization</value>
+  <data name="AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization" xml:space="preserve">
+    <value>Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization</value>
   </data>
   <data name="AppTaskCommandEnumOpenDataCSVNationalOfMWQMSamples" xml:space="preserve">
     <value>Open Data CSV national of MWQM Samples</value>
@@ -2810,5 +2810,8 @@
   </data>
   <data name="AppTaskCommandEnumUpdateHydrometricSiteInformation" xml:space="preserve">
     <value>Update Hydrometric Site Information</value>
+  </data>
+  <data name="AppTaskCommandEnumLoadHydrometricDataValue" xml:space="preserve">
+    <value>Load hydrometric data value</value>
   </data>
 </root>

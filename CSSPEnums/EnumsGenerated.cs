@@ -342,12 +342,12 @@ namespace CSSPEnums
 
             switch (databaseType)
             {
-                case DatabaseTypeEnum.MemoryCSSPWebToolsDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPWebToolsDB;
+                case DatabaseTypeEnum.MemoryCSSPDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumMemoryCSSPDB;
                 case DatabaseTypeEnum.MemoryTestDB:
                     return CSSPEnumsRes.DatabaseTypeEnumMemoryTestDB;
-                case DatabaseTypeEnum.SqlServerCSSPWebToolsDB:
-                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPWebToolsDB;
+                case DatabaseTypeEnum.SqlServerCSSPDB:
+                    return CSSPEnumsRes.DatabaseTypeEnumSqlServerCSSPDB;
                 case DatabaseTypeEnum.SqlServerTestDB:
                     return CSSPEnumsRes.DatabaseTypeEnumSqlServerTestDB;
                 default:
@@ -583,10 +583,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingPrecipForProvince;
                 case AppTaskCommandEnum.ExportToArcGIS:
                     return CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS;
-                case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
-                    return CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization;
-                case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
-                    return CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization;
+                case AppTaskCommandEnum.GenerateClassificationForCSSPVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPVisualization;
+                case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization;
                 case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
                     return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites;
                 case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
@@ -611,6 +611,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFillRunDischargesByHydrometricSitePriorityForYear;
                 case AppTaskCommandEnum.FindMissingDischargesForProvince:
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince;
+                case AppTaskCommandEnum.LoadHydrometricDataValue:
+                    return CSSPEnumsRes.AppTaskCommandEnumLoadHydrometricDataValue;
                 default:
                     return CSSPEnumsRes.Empty;
             }
