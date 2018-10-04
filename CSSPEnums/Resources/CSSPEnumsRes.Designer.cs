@@ -659,8 +659,8 @@ namespace CSSPEnums.Resources {
         /// </summary>
         public static string AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization {
             get {
-                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVi" +
-                        "sualization", resourceCulture);
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualizat" +
+                        "ion", resourceCulture);
             }
         }
         
