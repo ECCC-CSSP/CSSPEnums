@@ -177,6 +177,7 @@ namespace CSSPEnums
         FillRunDischargesByHydrometricSitePriorityForYear = 42,
         FindMissingDischargesForProvince = 43,
         LoadHydrometricDataValue = 44,
+        GenerateKMLFileClassificationForCSSPVisualization = 45,
     }
     public enum AppTaskStatusEnum
     {

@@ -611,6 +611,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince;
                 case AppTaskCommandEnum.LoadHydrometricDataValue:
                     return CSSPEnumsRes.AppTaskCommandEnumLoadHydrometricDataValue;
+                case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization;
                 default:
                     return CSSPEnumsRes.Empty;
             }

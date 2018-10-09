@@ -2814,4 +2814,7 @@
   <data name="AppTaskCommandEnumLoadHydrometricDataValue" xml:space="preserve">
     <value>Load hydrometric data value</value>
   </data>
+  <data name="AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization" xml:space="preserve">
+    <value>Generate KML file classification for CSSP visualization</value>
+  </data>
 </root>
