@@ -22,7 +22,7 @@ namespace CSSPEnums
     /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [PolSourceObsInfoChild] (CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfo), [PolSourceObsInfoChild] (CSSPModels.PolSourceObsInfoChild.html#CSSPModels_PolSourceObsInfoChild_PolSourceObsInfoChildStart)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [PolSourceObsInfoChildService] (CSSPServices.PolSourceObsInfoChildService.html), [PolSourceObsInfoChildService] (CSSPServices.PolSourceObsInfoChildService.html)</para>
-    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [CSSPWebAPI.Controllers.PolSourceObsInfoChildController] (CSSPWebAPI.Controllers.PolSourceObsInfoChildController.html), [CSSPWebAPI.Controllers.PolSourceObsInChildController] (CSSPWebAPI.Controllers.PolSourceObsInfoChildController.html), </para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [PolSourceObsInfoChildController] (CSSPWebAPI.Controllers.PolSourceObsInfoChildController.html), [PolSourceObsInfoChildController] (CSSPWebAPI.Controllers.PolurceObsInfoChildController.html), </para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>

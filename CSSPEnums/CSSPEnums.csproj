@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
     <Compile Include="EnumsGenerated.cs" />
     <Compile Include="EnumsPolSourceInfoGenerated.cs" />
-    <Compile Include="EnumsWithDocGenerated.cs" />
-    <Compile Include="PolSourceObsInfoEnumWithDocGenerated.cs" />
+    <Compile Include="PolSourceObsInfoEnumGenerated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\CSSPEnumsRes.fr.Designer.cs">
       <AutoGen>True</AutoGen>
