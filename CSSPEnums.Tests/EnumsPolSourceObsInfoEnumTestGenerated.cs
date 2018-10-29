@@ -13540,9 +13540,9 @@ namespace CSSPEnums.Tests
                 }
 
             retStr = enums.GetResValueForTypeAndID(typeof(PolSourceObsInfoEnum), 1000000, null);
-            Assert.AreEqual(CSSPEnumsRes.Error.ToString(), retStr);
+            Assert.AreEqual(CSSPEnumsRes.CSSPError.ToString(), retStr);
             retStrDesc = enums.GetResValueForTypeAndID(typeof(PolSourceObsInfoEnum), 1000000, PolSourceObsInfoTypeEnum.Description);
-            Assert.AreEqual(CSSPEnumsRes.Error.ToString(), retStrDesc);
+            Assert.AreEqual(CSSPEnumsRes.CSSPError.ToString(), retStrDesc);
             retStrReport = enums.GetResValueForTypeAndID(typeof(PolSourceObsInfoEnum), 1000000, PolSourceObsInfoTypeEnum.Report);
             Assert.AreEqual("", retStrReport);
             retStrText = enums.GetResValueForTypeAndID(typeof(PolSourceObsInfoEnum), 1000000, PolSourceObsInfoTypeEnum.Text);

@@ -640,6 +640,9 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPVisualization:
                             Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization, retStr);
                             break;
+                        case AppTaskCommandEnum.ProvinceToolsGenerateStats:
+                            Assert.AreEqual(CSSPEnumsRes.AppTaskCommandEnumProvinceToolsGenerateStats, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4992,6 +4995,7 @@ namespace CSSPEnums.Tests
                         case AppTaskCommandEnum.FindMissingDischargesForProvince:
                         case AppTaskCommandEnum.LoadHydrometricDataValue:
                         case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPVisualization:
+                        case AppTaskCommandEnum.ProvinceToolsGenerateStats:
                             Assert.AreEqual("", retStr);
                             break;
                         default:

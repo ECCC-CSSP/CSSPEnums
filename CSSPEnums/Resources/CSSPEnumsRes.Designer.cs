@@ -881,6 +881,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Province Tools Generate Stats.
+        /// </summary>
+        public static string AppTaskCommandEnumProvinceToolsGenerateStats {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumProvinceToolsGenerateStats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Setup Web Tide.
         /// </summary>
         public static string AppTaskCommandEnumSetupWebTide {
@@ -1432,6 +1441,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string CSSPError {
+            get {
+                return ResourceManager.GetString("CSSPError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CSSPWQInputSheetType.
         /// </summary>
         public static string CSSPWQInputSheetType {
@@ -1734,15 +1752,6 @@ namespace CSSPEnums.Resources {
         public static string EntityQueryTypeEnumWithTracking {
             get {
                 return ResourceManager.GetString("EntityQueryTypeEnumWithTracking", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Error.
-        /// </summary>
-        public static string Error {
-            get {
-                return ResourceManager.GetString("Error", resourceCulture);
             }
         }
         

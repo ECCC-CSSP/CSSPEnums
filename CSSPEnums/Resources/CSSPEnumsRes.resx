@@ -471,7 +471,7 @@
   <data name="Empty" xml:space="preserve">
     <value>Empty</value>
   </data>
-  <data name="Error" xml:space="preserve">
+  <data name="CSSPError" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="FacilityType" xml:space="preserve">
@@ -2816,5 +2816,8 @@
   </data>
   <data name="AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization" xml:space="preserve">
     <value>Generate KML file classification for CSSP visualization</value>
+  </data>
+  <data name="AppTaskCommandEnumProvinceToolsGenerateStats" xml:space="preserve">
+    <value>Province Tools Generate Stats</value>
   </data>
 </root>

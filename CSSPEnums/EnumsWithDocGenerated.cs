@@ -565,6 +565,7 @@ namespace CSSPEnums
     ///         FindMissingDischargesForProvince = 43,
     ///         LoadHydrometricDataValue = 44,
     ///         GenerateKMLFileClassificationForCSSPVisualization = 45,
+    ///         ProvinceToolsGenerateStats = 46,
     ///     }
     /// </code>
     /// </remarks>
@@ -750,6 +751,10 @@ namespace CSSPEnums
         /// 45 -- en [Generate KML file classification for CSSP visualization] ---- fr [Generate KML file classification for CSSP visualization (fr)]
         /// </summary>
         GenerateKMLFileClassificationForCSSPVisualization = 45,
+        /// <summary>
+        /// 46 -- en [Province Tools Generate Stats] ---- fr [Province Tools Generate Stats (fr)]
+        /// </summary>
+        ProvinceToolsGenerateStats = 46,
     }
     /// <summary>
     /// > [!NOTE]

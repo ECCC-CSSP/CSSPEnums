@@ -3983,7 +3983,7 @@ namespace CSSPEnums
                 case PolSourceObsInfoEnum.DistanceToShoreInMetersGreaterThan1000WDisposal:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceToShoreInMetersGreaterThan1000WDisposal;
                 default:
-                    return CSSPEnumsRes.Error;
+                    return CSSPEnumsRes.CSSPError;
             }
         }
         private string GetEnumText_PolSourceObsInfoDescEnum(PolSourceObsInfoEnum? polSourceInfo)
@@ -4218,7 +4218,7 @@ namespace CSSPEnums
                 case PolSourceObsInfoEnum.DistanceToShoreStart:
                     return PolSourceInfoEnumGeneratedRes.PolSourceInfoEnumDistanceToShoreStartDesc;
                 default:
-                    return CSSPEnumsRes.Error;
+                    return CSSPEnumsRes.CSSPError;
             }
         }
         private string GetEnumText_PolSourceObsInfoReportEnum(PolSourceObsInfoEnum? polSourceInfo)

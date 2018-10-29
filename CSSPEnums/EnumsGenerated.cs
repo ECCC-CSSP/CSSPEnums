@@ -23,7 +23,7 @@ namespace CSSPEnums
         /// </summary>
         /// <param name="type">One of the allowable types (Enum)</param>
         /// <param name="intList">List of nullable IDs representing the enumeration values (int?)</param>
-        /// <returns>Returns empty string if OK... otherwise will return the error message</returns>
+        /// <returns>Returns empty string if OK... otherwise will return the CSSPError message</returns>
         public string EnumTypeListOK(Type type, List<int?> intList)
         {
             string retStr = "";
@@ -51,7 +51,7 @@ namespace CSSPEnums
         /// </summary>
         /// <param name="type">One of the allowable types (Enum)</param>
         /// <param name="intList">List of nullable IDs representing the enumeration values (int?)</param>
-        /// <returns>Returns empty string if OK... otherwise will return the error message</returns>
+        /// <returns>Returns empty string if OK... otherwise will return the CSSPError message</returns>
         public string EnumTypeOK(Type type, int? ID)
         {
             if (ID == null)
@@ -613,6 +613,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumLoadHydrometricDataValue;
                 case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPVisualization:
                     return CSSPEnumsRes.AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization;
+                case AppTaskCommandEnum.ProvinceToolsGenerateStats:
+                    return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsGenerateStats;
                 default:
                     return CSSPEnumsRes.Empty;
             }
