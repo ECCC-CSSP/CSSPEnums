@@ -162,8 +162,8 @@ namespace CSSPEnums
         FillRunPrecipByClimateSitePriorityForYear = 27,
         FindMissingPrecipForProvince = 28,
         ExportToArcGIS = 29,
-        GenerateClassificationForCSSPVisualization = 30,
-        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
+        GenerateClassificationForCSSPWebToolsVisualization = 30,
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
         OpenDataCSVNationalOfMWQMSites = 32,
         OpenDataCSVNationalOfMWQMSamples = 33,
         ProvinceToolsCreateClassificationInputsKML = 34,
@@ -177,8 +177,9 @@ namespace CSSPEnums
         FillRunDischargesByHydrometricSitePriorityForYear = 42,
         FindMissingDischargesForProvince = 43,
         LoadHydrometricDataValue = 44,
-        GenerateKMLFileClassificationForCSSPVisualization = 45,
+        GenerateKMLFileClassificationForCSSPWebToolsVisualization = 45,
         ProvinceToolsGenerateStats = 46,
+        MikeScenarioPrepareResults = 47,
     }
     public enum AppTaskStatusEnum
     {

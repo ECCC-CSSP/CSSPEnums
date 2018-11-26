@@ -241,6 +241,7 @@ namespace CSSPEnums
     ///         ShorelineSourceWharf = 11401,
     ///         ShorelineSourceSeaWall = 11402,
     ///         ShorelineSourceBoatRamp = 11403,
+    ///         ShorelineSourceBoatHouse = 11404,
     ///         SlipwayStart = 18000,
     ///         SlipwayPaved = 18001,
     ///         SlipwayRocks = 18002,
@@ -268,14 +269,17 @@ namespace CSSPEnums
     ///         WharfTransportationSingleStart = 20700,
     ///         WharfTransportationCommericalSingle = 20701,
     ///         WharfTransportationFerrySingle = 20702,
-    ///         WharfTransportationBoatSingle = 20703,
+    ///         WharfTransportationFishingBoatSingle = 20703,
     ///         WharfTransportationBargeSingle = 20704,
+    ///         WharfTransportationRecreationActivitySingle = 20705,
+    ///         WharfTransportationPleasureBoatSingle = 20706,
     ///         WharfTransportationStart = 11600,
     ///         WharfTransportationCommerical = 11601,
     ///         WharfTransportationFerry = 11602,
-    ///         WharfTransportationPleasureCraft = 11603,
+    ///         WharfTransportationFishingBoats = 11603,
     ///         WharfTransportationBarges = 11604,
-    ///         WharfTransportationRecreation = 11605,
+    ///         WharfTransportationRecreationActivities = 11605,
+    ///         WharfTransportationPleasureBoats = 11606,
     ///         MarWhfCountNumberStart = 17500,
     ///         MarWhfCountNumberEqualTo1 = 17501,
     ///         MarWhfCountNumberEqualTo2 = 17502,
@@ -379,6 +383,8 @@ namespace CSSPEnums
     ///         AnimalLocationCottageLot = 12825,
     ///         AnimalLocationWetland = 12826,
     ///         AnimalLocationWaterCourse = 12827,
+    ///         AnimalLocationPondLakeDom = 12828,
+    ///         AnimalLocationPondLake = 12829,
     ///         AnimalBldgStart = 16000,
     ///         AnimalBldgEquals1 = 16001,
     ///         AnimalBldgEquals2 = 16002,
@@ -561,6 +567,10 @@ namespace CSSPEnums
     ///         ObservationHazReasonNumbersMMarine = 14414,
     ///         ObservationHazReasonDiscussMMarine = 14415,
     ///         ObservationHazReasonRainfallMMarine = 14416,
+    ///         ObservationHazReasonHistoricDataH = 14417,
+    ///         ObservationHazReasonHIstoricDataM = 14418,
+    ///         ObservationHazReasonHistoricDataHMarine = 14419,
+    ///         ObservationHazReasonHistoricDataMMarine = 14420,
     ///         PathWayStart = 25000,
     ///         PathwayLandHigh = 25001,
     ///         PathwayLandMed = 25002,
@@ -689,10 +699,10 @@ namespace CSSPEnums
     ///         AreaSlopeHighLow = 10411,
     ///         AreaSlopeNALow = 10412,
     ///         WaterCourseAreaSlopeStart = 10300,
-    ///         WaterCourseAreaSlopeLow = 10301,
-    ///         WaterCourseAreaSlopeMedium = 10302,
-    ///         WaterCourseAreaSlopeHigh = 10303,
-    ///         WaterCourseAreaSlopeNA = 10304,
+    ///         WaterCourseAreaSlopeLowHigh = 10301,
+    ///         WaterCourseAreaSlopeMediumHigh = 10302,
+    ///         WaterCourseAreaSlopeHighHigh = 10303,
+    ///         WaterCourseAreaSlopeNAHigh = 10304,
     ///         WaterCourseAreaSlopeLowMed = 10305,
     ///         WaterCourseAreaSlopeMediumMed = 10306,
     ///         WaterCourseAreaSlopeHighMed = 10307,
@@ -702,25 +712,25 @@ namespace CSSPEnums
     ///         WaterCourseAreaSlopeHighLow = 10311,
     ///         WaterCourseAreaSlopeNALow = 10312,
     ///         ShorelineRiparionZoneStart = 23000,
-    ///         ShorelineRiparianZonePresent = 23001,
-    ///         ShorelineRiparianZoneAbsent = 23002,
-    ///         ShorelineRiparianZoneNoInfo = 23003,
+    ///         ShorelineRiparianZonePresentHigh = 23001,
+    ///         ShorelineRiparianZoneAbsentHigh = 23002,
+    ///         ShorelineRiparianZoneNoInfoHigh = 23003,
     ///         ShorelineRiparianZonePresentMed = 23004,
     ///         ShorelineRiparianZoneAbsentMed = 23005,
     ///         ShorelineRiparianZoneNoInfoMed = 23006,
     ///         ShorelineRiparianZonePresentLow = 23007,
     ///         ShorelineRiparianZoneAbsentLow = 23008,
     ///         ShorelineRiparianZoneNoInfoLow = 23009,
-    ///         ShorelineRiparianGrassedZonePresent = 23010,
+    ///         ShorelineRiparianGrassedZonePresentHigh = 23010,
     ///         ShorelineRiparianGrassedZonePresentMed = 23011,
     ///         ShorelineRiparianGrassedZonePresentLow = 23012,
     ///         FlowThroughStructureStart = 16400,
-    ///         FlowThroughStructureCulvert = 16401,
-    ///         FlowThroughStructurePipe = 16402,
-    ///         FlowThroughStructureBridge = 16403,
-    ///         FlowThroughStructureBerm = 16404,
-    ///         FlowThroughStructureWetland = 16405,
-    ///         FlowThroughNoStructure = 16406,
+    ///         FlowThroughStructureCulvertHigh = 16401,
+    ///         FlowThroughStructurePipeHigh = 16402,
+    ///         FlowThroughStructureBridgeHigh = 16403,
+    ///         FlowThroughStructureBermHigh = 16404,
+    ///         FlowThroughStructureWetlandHigh = 16405,
+    ///         FlowThroughNoStructureHigh = 16406,
     ///         FlowThroughStructureCulvertMed = 16407,
     ///         FlowThroughStructurePipeMed = 16408,
     ///         FlowThroughStructureBridgeMed = 16409,
@@ -733,18 +743,18 @@ namespace CSSPEnums
     ///         FlowThroughStructureBermLow = 16416,
     ///         FlowThroughStructureWetlandLow = 16417,
     ///         FlowThroughNoStructureLow = 16418,
-    ///         FlowThroughSaltwaterMarsh = 16419,
+    ///         FlowThroughSaltwaterMarshHigh = 16419,
     ///         FlowThroughSaltwaterMarshMed = 16420,
     ///         FlowThroughSaltwaterMarshLow = 16421,
-    ///         FlowThroughBeaverDam = 16422,
+    ///         FlowThroughBeaverDamHigh = 16422,
     ///         FlowThroughBeaverDamMed = 16423,
     ///         FlowThroughBeaverDamLow = 16424,
     ///         FlowThroughWaterCourseStart = 11100,
-    ///         FlowThroughStructureCulvertWaterCourse = 11101,
-    ///         FlowThroughStructureBridgeWaterCourse = 11102,
-    ///         FlowThroughStructureBermWaterCourse = 11103,
-    ///         FlowThroughStructureWetlandWaterCourse = 11104,
-    ///         StructureInRoadNoStructureWaterCourse = 11105,
+    ///         FlowThroughStructureCulvertWaterCourseHigh = 11101,
+    ///         FlowThroughStructureBridgeWaterCourseHigh = 11102,
+    ///         FlowThroughStructureBermWaterCourseHigh = 11103,
+    ///         FlowThroughStructureWetlandWaterCourseHigh = 11104,
+    ///         StructureInRoadNoStructureWaterCourseHigh = 11105,
     ///         FlowThroughStructureCulvertWaterCourseMed = 11106,
     ///         FlowThroughStructureBridgeWaterCourseMed = 11107,
     ///         FlowThroughStructureBermWaterCourseMed = 11108,
@@ -755,31 +765,31 @@ namespace CSSPEnums
     ///         FlowThroughStructureBermWaterCourseLow = 11113,
     ///         FlowThroughStructureWetlandWaterCourseLow = 11114,
     ///         StructureInRoadNoStructureWaterCourseLow = 11115,
-    ///         FlowThroughStructureSaltMarshWatercourse = 11116,
+    ///         FlowThroughStructureSaltMarshWatercourseHigh = 11116,
     ///         FlowThroughStructureSaltMarshWaterCourseMed = 11117,
     ///         FlowThroughStructureSaltMarshWaterCourseLow = 11118,
-    ///         FlowThroughStructureBeaverDamWatercourse = 11119,
+    ///         FlowThroughStructureBeaverDamWatercourseHigh = 11119,
     ///         FlowThroughStructureBeaverDamWaterCourseMed = 11120,
     ///         FlowThroughStructureBeaverDamWaterCourseLow = 11121,
     ///         WaterCourseDistStart = 24000,
-    ///         DistanceToWaterInMeters0W = 24001,
-    ///         DistanceToWaterInMeters5W = 24002,
-    ///         DistanceToWaterInMeters10W = 24003,
-    ///         DistanceToWaterInMeters20W = 24004,
-    ///         DistanceToWaterInMeters30W = 24005,
-    ///         DistanceToWaterInMeters40W = 24006,
-    ///         DistanceToWaterInMeters50W = 24007,
-    ///         DistanceToWaterInMeters75W = 24008,
-    ///         DistanceToWaterInMeters100W = 24009,
-    ///         DistanceToWaterInMeters150W = 24010,
-    ///         DistanceToWaterInMeters200W = 24011,
-    ///         DistanceToWaterInMeters300W = 24012,
-    ///         DistanceToWaterInMeters400W = 24013,
-    ///         DistanceToWaterInMeters600W = 24014,
-    ///         DistanceToWaterInMeters800W = 24015,
-    ///         DistanceToWaterInMeters1000W = 24016,
-    ///         DistanceToWaterInMetersGreaterThan1000W = 24017,
-    ///         DistanceToWaterInMetersInfoRequiredW = 24018,
+    ///         DistanceToWaterInMeters0HighW = 24001,
+    ///         DistanceToWaterInMeters5HighW = 24002,
+    ///         DistanceToWaterInMeters10HighW = 24003,
+    ///         DistanceToWaterInMeters20HighW = 24004,
+    ///         DistanceToWaterInMeters30HighW = 24005,
+    ///         DistanceToWaterInMeters40HighW = 24006,
+    ///         DistanceToWaterInMeters50HighW = 24007,
+    ///         DistanceToWaterInMeters75HighW = 24008,
+    ///         DistanceToWaterInMeters100HighW = 24009,
+    ///         DistanceToWaterInMeters150HighW = 24010,
+    ///         DistanceToWaterInMeters200HighW = 24011,
+    ///         DistanceToWaterInMeters300HighW = 24012,
+    ///         DistanceToWaterInMeters400HighW = 24013,
+    ///         DistanceToWaterInMeters600HighW = 24014,
+    ///         DistanceToWaterInMeters800HighW = 24015,
+    ///         DistanceToWaterInMeters1000HighW = 24016,
+    ///         DistanceToWaterInMetersGreaterThan1000HighW = 24017,
+    ///         DistanceToWaterInMetersInfoRequiredHighW = 24018,
     ///         DistanceToWaterInMeters0MedW = 24019,
     ///         DistanceToWaterInMeters5MedW = 24020,
     ///         DistanceToWaterInMeters10MedW = 24021,
@@ -817,16 +827,16 @@ namespace CSSPEnums
     ///         DistanceToWaterInMetGrThan1000LowW = 24053,
     ///         DistanceToWaterInMetInfoReqLowW = 24054,
     ///         PipeCountNumberStart = 21600,
-    ///         PipeCountNumberEqualTo1 = 21601,
-    ///         PipeCountNumberEqualTo2 = 21602,
-    ///         PipeCountNumberEqualTo3 = 21603,
-    ///         PipeCountNumberEqualTo4 = 21604,
-    ///         PipeCountNumberEqualTo5 = 21605,
-    ///         PipeCountNumberEqualTo6 = 21606,
-    ///         PipeCountNumberEqualTo7 = 21607,
-    ///         PipeCountNumberEqualTo8 = 21608,
-    ///         PipeCountNumberEqualTo9 = 21609,
-    ///         PipeCountNumberEqualTo10 = 21610,
+    ///         PipeCountNumberEqualTo1High = 21601,
+    ///         PipeCountNumberEqualTo2High = 21602,
+    ///         PipeCountNumberEqualTo3High = 21603,
+    ///         PipeCountNumberEqualTo4High = 21604,
+    ///         PipeCountNumberEqualTo5High = 21605,
+    ///         PipeCountNumberEqualTo6High = 21606,
+    ///         PipeCountNumberEqualTo7High = 21607,
+    ///         PipeCountNumberEqualTo8High = 21608,
+    ///         PipeCountNumberEqualTo9High = 21609,
+    ///         PipeCountNumberEqualTo10High = 21610,
     ///         PipeCountNumberEqualTo1Med = 21611,
     ///         PipeCountNumberEqualTo2Med = 21612,
     ///         PipeCountNumberEqualTo3Med = 21613,
@@ -849,16 +859,16 @@ namespace CSSPEnums
     ///         PipeCountNumberEqualTo10Low = 21630,
     ///         PipeCountNumbeNoInformation = 21631,
     ///         DiameterInCentimetersStart = 14500,
-    ///         DiameterInCentimetersEqual15 = 14501,
-    ///         DiameterInCentimetersEqual30 = 14502,
-    ///         DiameterInCentimetersBetween31and50cm = 14503,
-    ///         DiameterInCentimetersBetween51and100cm = 14504,
-    ///         DiameterInCentimetersBetween101and200cm = 14505,
-    ///         DiameterInCentimetersBetween201and300cm = 14506,
-    ///         DiameterInCentimetersBetween301and400cm = 14507,
-    ///         DiameterInCentimetersBetween401and500cm = 14508,
-    ///         DiameterInCentimetersGreaterThan500cm = 14509,
-    ///         DiameterNoInformation = 14510,
+    ///         DiameterInCentimetersEqual15High = 14501,
+    ///         DiameterInCentimetersEqual30High = 14502,
+    ///         DiameterInCentimetersBetween31and50cmHigh = 14503,
+    ///         DiameterInCentimetersBetween51and100cmHigh = 14504,
+    ///         DiameterInCentimetersBetween101and200cmHigh = 14505,
+    ///         DiameterInCentimetersBetween201and300cmHigh = 14506,
+    ///         DiameterInCentimetersBetween301and400cmHigh = 14507,
+    ///         DiameterInCentimetersBetween401and500cmHigh = 14508,
+    ///         DiameterInCentimetersGreaterThan500cmHigh = 14509,
+    ///         DiameterNoInformationHigh = 14510,
     ///         DiameterInCentimetersEqual15Med = 14511,
     ///         DiameterInCentimetersEqual30Med = 14512,
     ///         DiameterInCentimetersBetween31and50cmMed = 14513,
@@ -880,16 +890,16 @@ namespace CSSPEnums
     ///         DiameterInCentimetersGreaterThan500cmLow = 14529,
     ///         DiameterNoInformationLow = 14530,
     ///         DitchStart = 14900,
-    ///         DitchAlongRoad = 14901,
-    ///         DitchAcrossProperties = 14902,
+    ///         DitchAlongRoadHigh = 14901,
+    ///         DitchAcrossPropertiesHigh = 14902,
     ///         DitchAlongRoadMed = 14903,
     ///         DitchAcrossPropertiesMed = 14904,
     ///         DitchAlongRoadLow = 14905,
     ///         DitchAcrossPropertiesLow = 14906,
     ///         DrainageStart = 15000,
-    ///         DrainagePavedSurfaces = 15001,
-    ///         DrainageVegetatedSurfaces = 15002,
-    ///         DrainageBareSoilSurfaces = 15003,
+    ///         DrainagePavedSurfacesHigh = 15001,
+    ///         DrainageVegetatedSurfacesHigh = 15002,
+    ///         DrainageBareSoilSurfacesHigh = 15003,
     ///         DrainagePavedSurfacesMed = 15004,
     ///         DrainageVegetatedSurfacesMed = 15005,
     ///         DrainageBareSoilSurfacesMed = 15006,
@@ -897,10 +907,10 @@ namespace CSSPEnums
     ///         DrainageVegetatedSurfacesLow = 15008,
     ///         DrainageBareSoilSurfacesLow = 15009,
     ///         FlowLevelStart = 14600,
-    ///         FlowLevelHi = 14601,
-    ///         FlowLevelMed = 14602,
-    ///         FlowLevelLo = 14603,
-    ///         FlowLevelRain = 14604,
+    ///         FlowLevelHiHigh = 14601,
+    ///         FlowLevelMedHigh = 14602,
+    ///         FlowLevelLoHigh = 14603,
+    ///         FlowLevelRainHigh = 14604,
     ///         FlowLevelHighMed = 14605,
     ///         FlowLevelMediumMed = 14606,
     ///         FlowLevelLowMed = 14607,
@@ -909,10 +919,10 @@ namespace CSSPEnums
     ///         FlowLevelMediumLow = 14610,
     ///         FlowLevelLowLow = 14611,
     ///         FlowLevelRainfallLow = 14612,
-    ///         FlowLevelHighWaterCourse = 14613,
-    ///         FlowLevelMediumWaterCourse = 14614,
-    ///         FlowLevelLowWaterCourse = 14615,
-    ///         FlowLevelRainfallWaterCourse = 14616,
+    ///         FlowLevelHighWaterCourseHigh = 14613,
+    ///         FlowLevelMediumWaterCourseHigh = 14614,
+    ///         FlowLevelLowWaterCourseHigh = 14615,
+    ///         FlowLevelRainfallWaterCourseHigh = 14616,
     ///         FlowLevelHighWaterCourseMed = 14617,
     ///         FlowLevelMediumWaterCourseMed = 14618,
     ///         FlowLevelLowWaterCourseMed = 14619,
@@ -922,11 +932,11 @@ namespace CSSPEnums
     ///         FlowLevelLowWaterCourseLow = 14623,
     ///         FlowLevelRainfallWaterCourseLow = 14624,
     ///         PipeFlowStart = 13300,
-    ///         PipeFlowlHigh = 13301,
-    ///         PipeFlowMedium = 13302,
-    ///         PipeFlowLow = 13303,
-    ///         PipeFlowRainfall = 13304,
-    ///         PipeFlowNA = 13305,
+    ///         PipeFlowlHighHigh = 13301,
+    ///         PipeFlowMediumHigh = 13302,
+    ///         PipeFlowLowHigh = 13303,
+    ///         PipeFlowRainfallHigh = 13304,
+    ///         PipeFlowNAHigh = 13305,
     ///         PipeFlowlHighMed = 13306,
     ///         PipeFlowMediumMed = 13307,
     ///         PipeFlowLowMed = 13308,
@@ -938,24 +948,24 @@ namespace CSSPEnums
     ///         PipeFlowRainfallLow = 13314,
     ///         PipeFlowNALow = 13315,
     ///         DistanceToWaterInMetersStart = 10200,
-    ///         DistanceToWaterInMeters0 = 10201,
-    ///         DistanceToWaterInMeters5 = 10202,
-    ///         DistanceToWaterInMeters10 = 10203,
-    ///         DistanceToWaterInMeters20 = 10204,
-    ///         DistanceToWaterInMeters30 = 10205,
-    ///         DistanceToWaterInMeters40 = 10206,
-    ///         DistanceToWaterInMeters50 = 10207,
-    ///         DistanceToWaterInMeters75 = 10208,
-    ///         DistanceToWaterInMeters100 = 10209,
-    ///         DistanceToWaterInMeters150 = 10210,
-    ///         DistanceToWaterInMeters200 = 10211,
-    ///         DistanceToWaterInMeters300 = 10212,
-    ///         DistanceToWaterInMeters400 = 10213,
-    ///         DistanceToWaterInMeters600 = 10214,
-    ///         DistanceToWaterInMeters800 = 10215,
-    ///         DistanceToWaterInMeters1000 = 10216,
-    ///         DistanceToWaterInMetersGreaterThan1000 = 10217,
-    ///         DistanceToWaterInMetersInfoRequired = 10218,
+    ///         DistanceToWaterInMeters0High = 10201,
+    ///         DistanceToWaterInMeters5High = 10202,
+    ///         DistanceToWaterInMeters10High = 10203,
+    ///         DistanceToWaterInMeters20High = 10204,
+    ///         DistanceToWaterInMeters30High = 10205,
+    ///         DistanceToWaterInMeters40High = 10206,
+    ///         DistanceToWaterInMeters50High = 10207,
+    ///         DistanceToWaterInMeters75High = 10208,
+    ///         DistanceToWaterInMeters100High = 10209,
+    ///         DistanceToWaterInMeters150High = 10210,
+    ///         DistanceToWaterInMeters200High = 10211,
+    ///         DistanceToWaterInMeters300High = 10212,
+    ///         DistanceToWaterInMeters400High = 10213,
+    ///         DistanceToWaterInMeters600High = 10214,
+    ///         DistanceToWaterInMeters800High = 10215,
+    ///         DistanceToWaterInMeters1000High = 10216,
+    ///         DistanceToWaterInMetersGreaterThan1000High = 10217,
+    ///         DistanceToWaterInMetersInfoRequiredHigh = 10218,
     ///         DistanceToWaterInMeters0Med = 10219,
     ///         DistanceToWaterInMeters5Med = 10220,
     ///         DistanceToWaterInMeters10Med = 10221,
@@ -2093,31 +2103,31 @@ namespace CSSPEnums
         /// </summary>
         HumanPollutionSinglehotelMotel = 12612,
         /// <summary>
-        /// 12613 -- en [                                                               Boat] ---- fr [Boat,]
+        /// 12613 -- en [                                                               Boat | (M)] ---- fr [Boat,]
         /// </summary>
         HumanPollutionSingleBoatM = 12613,
         /// <summary>
-        /// 12614 -- en [                                                          Barge] ---- fr [Barge,]
+        /// 12614 -- en [                                                          Barge | (M)] ---- fr [Barge,]
         /// </summary>
         HumanPollutionSingleBargeM = 12614,
         /// <summary>
-        /// 12615 -- en [                                          Hotel-Motel] ---- fr [Hotel or Motel,]
+        /// 12615 -- en [                                          Hotel-Motel | (M)] ---- fr [Hotel or Motel,]
         /// </summary>
         HumanPollutionSinglehotelMotelM = 12615,
         /// <summary>
-        /// 12616 -- en [                                                   Residential ] ---- fr [Résidentiel]
+        /// 12616 -- en [                                                   Residential  | (M)] ---- fr [Résidentiel]
         /// </summary>
         HumanPollutionSingleResidentialM = 12616,
         /// <summary>
-        /// 12617 -- en [                             Cottage] ---- fr [Cottage,]
+        /// 12617 -- en [                             Cottage | (M)] ---- fr [Cottage,]
         /// </summary>
         HumanPollutionSingleCottageM = 12617,
         /// <summary>
-        /// 12618 -- en [                   Warehouse] ---- fr [Entrepôt]
+        /// 12618 -- en [                   Warehouse | (M)] ---- fr [Entrepôt]
         /// </summary>
         HumanPollutionSingleWarehouseM = 12618,
         /// <summary>
-        /// 12619 -- en [         Commercial] ---- fr [Commercial-affaires, ]
+        /// 12619 -- en [         Commercial | (M)] ---- fr [Commercial-affaires, ]
         /// </summary>
         HumanPollutionSingleCommericalM = 12619,
         /// <summary>
@@ -2181,31 +2191,31 @@ namespace CSSPEnums
         /// </summary>
         HumanPollutionMultipleHotelsMotels = 21012,
         /// <summary>
-        /// 21013 -- en [                                                               Boats] ---- fr [Boats]
+        /// 21013 -- en [                                                               Boats | (M)] ---- fr [Boats]
         /// </summary>
         HumanPollutionMultipleBoatsM = 21013,
         /// <summary>
-        /// 21014 -- en [                                                          Barges] ---- fr [Barges]
+        /// 21014 -- en [                                                          Barges | (M)] ---- fr [Barges]
         /// </summary>
         HumanPollutionMultipleBargesM = 21014,
         /// <summary>
-        /// 21015 -- en [                                          Hotel-Motels] ---- fr [Hotels or Motels,]
+        /// 21015 -- en [                                          Hotel-Motels | (M)] ---- fr [Hotels or Motels,]
         /// </summary>
         HumanPollutionMultipleHotelsMotelsM = 21015,
         /// <summary>
-        /// 21016 -- en [                                                   Residences] ---- fr [Résidentiel]
+        /// 21016 -- en [                                                   Residences | (M)] ---- fr [Résidentiel]
         /// </summary>
         HumanPollutionMultipleResidencesM = 21016,
         /// <summary>
-        /// 21017 -- en [                             Cottages] ---- fr [Cottages, ]
+        /// 21017 -- en [                             Cottages | (M)] ---- fr [Cottages, ]
         /// </summary>
         HumanPollutionMultipleCottagesM = 21017,
         /// <summary>
-        /// 21018 -- en [                   Warehouses] ---- fr [Entrepôts]
+        /// 21018 -- en [                   Warehouses | (M)] ---- fr [Entrepôts]
         /// </summary>
         HumanPollutionMultipleWarehousesM = 21018,
         /// <summary>
-        /// 21019 -- en [         Commercial] ---- fr [Commercial-affaires]
+        /// 21019 -- en [         Commercial | (M)] ---- fr [Commercial-affaires]
         /// </summary>
         HumanPollutionMultipleCommericalsM = 21019,
         /// <summary>
@@ -2289,71 +2299,71 @@ namespace CSSPEnums
         /// </summary>
         HumanPollutionCountNumberGreaterThan400 = 16917,
         /// <summary>
-        /// 16918 -- en [                                                            1] ---- fr [                                                            1]
+        /// 16918 -- en [                                                            1 | (M)] ---- fr [                                                            1]
         /// </summary>
         HumanPollutionCountNumberEqualTo1M = 16918,
         /// <summary>
-        /// 16919 -- en [                                                        2] ---- fr [                                                        2]
+        /// 16919 -- en [                                                        2 | (M)] ---- fr [                                                        2]
         /// </summary>
         HumanPollutionCountNumberEqualTo2M = 16919,
         /// <summary>
-        /// 16920 -- en [                                                     3] ---- fr [                                                     3]
+        /// 16920 -- en [                                                     3 | (M)] ---- fr [                                                     3]
         /// </summary>
         HumanPollutionCountNumberEqualTo3M = 16920,
         /// <summary>
-        /// 16921 -- en [                                                 4] ---- fr [                                                 4]
+        /// 16921 -- en [                                                 4 | (M)] ---- fr [                                                 4]
         /// </summary>
         HumanPollutionCountNumberEqualTo4M = 16921,
         /// <summary>
-        /// 16922 -- en [                                            5] ---- fr [                                            5]
+        /// 16922 -- en [                                            5 | (M)] ---- fr [                                            5]
         /// </summary>
         HumanPollutionCountNumberEqualTo5M = 16922,
         /// <summary>
-        /// 16923 -- en [                                         6] ---- fr [                                         6]
+        /// 16923 -- en [                                         6 | (M)] ---- fr [                                         6]
         /// </summary>
         HumanPollutionCountNumberEqualTo6M = 16923,
         /// <summary>
-        /// 16924 -- en [                                     7] ---- fr [                                     7]
+        /// 16924 -- en [                                     7 | (M)] ---- fr [                                     7]
         /// </summary>
         HumanPollutionCountNumberEqualTo7M = 16924,
         /// <summary>
-        /// 16925 -- en [                                  8] ---- fr [                                  8]
+        /// 16925 -- en [                                  8 | (M)] ---- fr [                                  8]
         /// </summary>
         HumanPollutionCountNumberEqualTo8M = 16925,
         /// <summary>
-        /// 16926 -- en [                               9] ---- fr [                               9]
+        /// 16926 -- en [                               9 | (M)] ---- fr [                               9]
         /// </summary>
         HumanPollutionCountNumberEqualTo9M = 16926,
         /// <summary>
-        /// 16927 -- en [                           10] ---- fr [                           10]
+        /// 16927 -- en [                           10 | (M)] ---- fr [                           10]
         /// </summary>
         HumanPollutionCountNumberEqualTo10M = 16927,
         /// <summary>
-        /// 16928 -- en [                     11 - 20] ---- fr [                     11 - 20]
+        /// 16928 -- en [                     11 - 20 | (M)] ---- fr [                     11 - 20]
         /// </summary>
         HumanPollutionCountNumberBetween11and20M = 16928,
         /// <summary>
-        /// 16929 -- en [                  21 - 40] ---- fr [                  21 - 40]
+        /// 16929 -- en [                  21 - 40 | (M)] ---- fr [                  21 - 40]
         /// </summary>
         HumanPollutionCountNumberBetween21and40M = 16929,
         /// <summary>
-        /// 16930 -- en [               41 - 60] ---- fr [               41 - 60]
+        /// 16930 -- en [               41 - 60 | (M)] ---- fr [               41 - 60]
         /// </summary>
         HumanPollutionCountNumberBetween41and60M = 16930,
         /// <summary>
-        /// 16931 -- en [            61 - 100] ---- fr [            61 - 100]
+        /// 16931 -- en [            61 - 100 | (M)] ---- fr [            61 - 100]
         /// </summary>
         HumanPollutionCountNumberBetween61and100M = 16931,
         /// <summary>
-        /// 16932 -- en [         101 - 200] ---- fr [         101 - 200]
+        /// 16932 -- en [         101 - 200 | (M)] ---- fr [         101 - 200]
         /// </summary>
         HumanPollutionCountNumberBetween101and200M = 16932,
         /// <summary>
-        /// 16933 -- en [        201 - 400] ---- fr [        201 - 400]
+        /// 16933 -- en [        201 - 400 | (M)] ---- fr [        201 - 400]
         /// </summary>
         HumanPollutionCountNumberBetween201and400M = 16933,
         /// <summary>
-        /// 16934 -- en [ > 400] ---- fr [ > 400]
+        /// 16934 -- en [ > 400 | (M)] ---- fr [ > 400]
         /// </summary>
         HumanPollutionCountNumberGreaterThan400M = 16934,
         /// <summary>
@@ -2381,11 +2391,11 @@ namespace CSSPEnums
         /// </summary>
         HumanLocationFarm = 12705,
         /// <summary>
-        /// 12706 -- en [                                        Shoreline] ---- fr [Littoral]
+        /// 12706 -- en [                                        Shoreline | (M)] ---- fr [Littoral]
         /// </summary>
         HumanLocationShorelineMarine = 12706,
         /// <summary>
-        /// 12707 -- en [                                     Wharf] ---- fr [Quai]
+        /// 12707 -- en [                                     Wharf | (M)] ---- fr [Quai]
         /// </summary>
         HumanLocationWharfMarine = 12707,
         /// <summary>
@@ -2417,27 +2427,27 @@ namespace CSSPEnums
         /// </summary>
         HumanLocationFishPlant = 12714,
         /// <summary>
-        /// 12715 -- en [               Aquaculture] ---- fr [Site de l'aquaculture]
+        /// 12715 -- en [               Aquaculture | (M)] ---- fr [Site de l'aquaculture]
         /// </summary>
         HumanLocationAquacultureSiteMarine = 12715,
         /// <summary>
-        /// 12716 -- en [            Anchorage ] ---- fr [Site de mouillage ou d'amarrage]
+        /// 12716 -- en [            Anchorage  | (M)] ---- fr [Site de mouillage ou d'amarrage]
         /// </summary>
         HumanLocationAnchorageMooringSiteMarine = 12716,
         /// <summary>
-        /// 12717 -- en [         Disposal at Sea] ---- fr [Décharge en haute mer]
+        /// 12717 -- en [         Disposal at Sea | (M)] ---- fr [Décharge en haute mer]
         /// </summary>
         HumanLocationDisposalAtSeaMarine = 12717,
         /// <summary>
-        /// 12718 -- en [       Marine Park] ---- fr [Parc marin]
+        /// 12718 -- en [       Marine Park | (M)] ---- fr [Parc marin]
         /// </summary>
         HumanLocationMarineParkMarine = 12718,
         /// <summary>
-        /// 12719 -- en [     Marina] ---- fr [Marina.]
+        /// 12719 -- en [     Marina | (M)] ---- fr [Marina.]
         /// </summary>
         HumanLocationMarinaMarine = 12719,
         /// <summary>
-        /// 12720 -- en [   Float Home Community] ---- fr [une communauté flottante.]
+        /// 12720 -- en [   Float Home Community | (M)] ---- fr [une communauté flottante.]
         /// </summary>
         HumanLocationFloatHomeCommunityMarine = 12720,
         /// <summary>
@@ -2561,15 +2571,15 @@ namespace CSSPEnums
         /// </summary>
         IndustrialEffluentRecreation = 11210,
         /// <summary>
-        /// 11211 -- en [               Aquaculture] ---- fr [Site de l'aquaculture]
+        /// 11211 -- en [               Aquaculture | (M)] ---- fr [Site de l'aquaculture]
         /// </summary>
         IndustrialEffluentAquacultureSite = 11211,
         /// <summary>
-        /// 11212 -- en [     Anchorage Site] ---- fr [Site de mouillage ou d'amarrage]
+        /// 11212 -- en [     Anchorage Site | (M)] ---- fr [Site de mouillage ou d'amarrage]
         /// </summary>
         IndustrialEffluentAnchorageMooringSite = 11212,
         /// <summary>
-        /// 11213 -- en [        Dredge Disposal Site] ---- fr [Décharge en haute mer]
+        /// 11213 -- en [        Dredge Disposal Site | (M)] ---- fr [Décharge en haute mer]
         /// </summary>
         IndustrialEffluentDisposalAtSea = 11213,
         /// <summary>
@@ -2861,9 +2871,13 @@ namespace CSSPEnums
         /// </summary>
         ShorelineSourceSeaWall = 11402,
         /// <summary>
-        /// 11403 -- en [              Boat Ramp] ---- fr [                 Mise à l'eau]
+        /// 11403 -- en [          Boat Ramp] ---- fr [                 Mise à l'eau]
         /// </summary>
         ShorelineSourceBoatRamp = 11403,
+        /// <summary>
+        /// 11404 -- en [              Boat House] ---- fr [Bateau maison]
+        /// </summary>
+        ShorelineSourceBoatHouse = 11404,
         /// <summary>
         /// 18000 -- en [Slipway Material] ---- fr [Type de mise à l'eau]
         /// </summary>
@@ -2965,45 +2979,57 @@ namespace CSSPEnums
         /// </summary>
         WharfTransportationSingleStart = 20700,
         /// <summary>
-        /// 20701 -- en [Ship] ---- fr [Navire]
+        /// 20701 -- en [                               Ship] ---- fr [Navire]
         /// </summary>
         WharfTransportationCommericalSingle = 20701,
         /// <summary>
-        /// 20702 -- en [          Ferry] ---- fr [Traversier]
+        /// 20702 -- en [                            Ferry] ---- fr [                            Traversier]
         /// </summary>
         WharfTransportationFerrySingle = 20702,
         /// <summary>
-        /// 20703 -- en [                                    Boat] ---- fr [Embarcation de plaisance]
+        /// 20703 -- en [ Fishing  Boat] ---- fr [ Bateau de pêche]
         /// </summary>
-        WharfTransportationBoatSingle = 20703,
+        WharfTransportationFishingBoatSingle = 20703,
         /// <summary>
-        /// 20704 -- en [                        Barge] ---- fr [Embarcation de plaisance]
+        /// 20704 -- en [              Barge] ---- fr [              Barge]
         /// </summary>
         WharfTransportationBargeSingle = 20704,
+        /// <summary>
+        /// 20705 -- en [                      Recreation] ---- fr [                      des loisirs]
+        /// </summary>
+        WharfTransportationRecreationActivitySingle = 20705,
+        /// <summary>
+        /// 20706 -- en [        Pleasure Boat] ---- fr [        Bateau de plaisance]
+        /// </summary>
+        WharfTransportationPleasureBoatSingle = 20706,
         /// <summary>
         /// 11600 -- en [Vessel Types] ---- fr [Type de bateau]
         /// </summary>
         WharfTransportationStart = 11600,
         /// <summary>
-        /// 11601 -- en [Ships] ---- fr [Navires]
+        /// 11601 -- en [                                      Ships] ---- fr [Navires]
         /// </summary>
         WharfTransportationCommerical = 11601,
         /// <summary>
-        /// 11602 -- en [             Ferries] ---- fr [             Ferries]
+        /// 11602 -- en [                                    Ferries] ---- fr [                                    Ferries]
         /// </summary>
         WharfTransportationFerry = 11602,
         /// <summary>
-        /// 11603 -- en [                                                         Boats] ---- fr [                                                         Bateaux]
+        /// 11603 -- en [    Fishing Boats] ---- fr [    Bateaux de pêche]
         /// </summary>
-        WharfTransportationPleasureCraft = 11603,
+        WharfTransportationFishingBoats = 11603,
         /// <summary>
-        /// 11604 -- en [                                               Barges] ---- fr [                                               Barges]
+        /// 11604 -- en [              Barges] ---- fr [              Barges]
         /// </summary>
         WharfTransportationBarges = 11604,
         /// <summary>
-        /// 11605 -- en [                                          Recreation] ---- fr [                                          des loisirs]
+        /// 11605 -- en [                    Recreation] ---- fr [                    des loisirs]
         /// </summary>
-        WharfTransportationRecreation = 11605,
+        WharfTransportationRecreationActivities = 11605,
+        /// <summary>
+        /// 11606 -- en [           Pleasure Boats] ---- fr [           Bateaux de plaisance]
+        /// </summary>
+        WharfTransportationPleasureBoats = 11606,
         /// <summary>
         /// 17500 -- en [Number of Wharves] ---- fr [Nombre d'unités]
         /// </summary>
@@ -3309,113 +3335,121 @@ namespace CSSPEnums
         /// </summary>
         AnimalLocationStart = 12800,
         /// <summary>
-        /// 12801 -- en [                                       Rural] ---- fr [Rural]
+        /// 12801 -- en [                                       Rural | D] ---- fr [Rural]
         /// </summary>
         AnimalLocationRuralDom = 12801,
         /// <summary>
-        /// 12802 -- en [                                    Urban] ---- fr [                                    Urbain]
+        /// 12802 -- en [                                    Urban | D] ---- fr [                                    Urbain]
         /// </summary>
         AnimalLocationUrbanDom = 12802,
         /// <summary>
-        /// 12803 -- en [                       Forested] ---- fr [                       Boisé]
+        /// 12803 -- en [                       Forested | D] ---- fr [                       Boisé]
         /// </summary>
         AnimalLocationForestedDom = 12803,
         /// <summary>
-        /// 12804 -- en [                    Agricultural] ---- fr [                    Agricole]
+        /// 12804 -- en [                    Agricultural | D] ---- fr [                    Agricole]
         /// </summary>
         AnimalLocationAgriculturalDom = 12804,
         /// <summary>
-        /// 12805 -- en [                 Farm] ---- fr [                 Ferme]
+        /// 12805 -- en [                 Farm | D] ---- fr [                 Ferme]
         /// </summary>
         AnimalLocationFarmDom = 12805,
         /// <summary>
-        /// 12806 -- en [             Shoreline] ---- fr [             Littoral]
+        /// 12806 -- en [             Shoreline | D] ---- fr [             Littoral]
         /// </summary>
         AnimalLocationShorelineDom = 12806,
         /// <summary>
-        /// 12807 -- en [          Wharf] ---- fr [          Quai]
+        /// 12807 -- en [          Wharf | D] ---- fr [          Quai]
         /// </summary>
         AnimalLocationWharfDom = 12807,
         /// <summary>
-        /// 12808 -- en [      Barge] ---- fr [      Barge]
+        /// 12808 -- en [      Barge | D] ---- fr [      Barge]
         /// </summary>
         AnimalLocationBargeDom = 12808,
         /// <summary>
-        /// 12809 -- en [   Island] ---- fr [   Île]
+        /// 12809 -- en [   Island | D] ---- fr [   Île]
         /// </summary>
         AnimalLocationIslandDom = 12809,
         /// <summary>
-        /// 12810 -- en [                             Recreational ] ---- fr [                             Récréatif]
+        /// 12810 -- en [                             Recreational  | D] ---- fr [                             Récréatif]
         /// </summary>
         AnimalLocationRecreationalAreaDom = 12810,
         /// <summary>
-        /// 12811 -- en [                        Cottage-Trailer] ---- fr [                        Cottage-Trailer]
+        /// 12811 -- en [                        Cottage-Trailer | D] ---- fr [                        Cottage-Trailer]
         /// </summary>
         AnimalLocationCottageLotDom = 12811,
         /// <summary>
-        /// 12812 -- en [ Wetland] ---- fr [ Terre humide]
+        /// 12812 -- en [ Wetland | D] ---- fr [ Terre humide]
         /// </summary>
         AnimalLocationWetlandDom = 12812,
         /// <summary>
-        /// 12813 -- en [       Stream ] ---- fr [       Courant]
+        /// 12813 -- en [       Stream  | D] ---- fr [       Courant]
         /// </summary>
         AnimalLocationWaterCourseDom = 12813,
         /// <summary>
-        /// 12814 -- en [Fish Plant] ---- fr [Plante de poisson]
+        /// 12814 -- en [Fish Plant | D] ---- fr [Plante de poisson]
         /// </summary>
         AnimalLocationFishPlant = 12814,
         /// <summary>
-        /// 12815 -- en [                                       Rural] ---- fr [                                       Rural]
+        /// 12815 -- en [                                       Rural | W] ---- fr [                                       Rural]
         /// </summary>
         AnimalLocationRural = 12815,
         /// <summary>
-        /// 12816 -- en [                                    Urban] ---- fr [                                    Urbain]
+        /// 12816 -- en [                                    Urban | W] ---- fr [                                    Urbain]
         /// </summary>
         AnimalLocationUrban = 12816,
         /// <summary>
-        /// 12817 -- en [                       Forested] ---- fr [                       Boisé]
+        /// 12817 -- en [                       Forested | W] ---- fr [                       Boisé]
         /// </summary>
         AnimalLocationForested = 12817,
         /// <summary>
-        /// 12818 -- en [                    Agricultural] ---- fr [                    Agricole]
+        /// 12818 -- en [                    Agricultural | W] ---- fr [                    Agricole]
         /// </summary>
         AnimalLocationAgricultural = 12818,
         /// <summary>
-        /// 12819 -- en [                 Farm] ---- fr [                 Ferme]
+        /// 12819 -- en [                 Farm | W] ---- fr [                 Ferme]
         /// </summary>
         AnimalLocationFarm = 12819,
         /// <summary>
-        /// 12820 -- en [             Shoreline] ---- fr [             Littoral]
+        /// 12820 -- en [             Shoreline | W] ---- fr [             Littoral]
         /// </summary>
         AnimalLocationShoreline = 12820,
         /// <summary>
-        /// 12821 -- en [          Wharf] ---- fr [          Quai]
+        /// 12821 -- en [          Wharf | W] ---- fr [          Quai]
         /// </summary>
         AnimalLocationWharf = 12821,
         /// <summary>
-        /// 12822 -- en [      Barge] ---- fr [      Barge]
+        /// 12822 -- en [      Barge | W] ---- fr [      Barge]
         /// </summary>
         AnimalLocationBarge = 12822,
         /// <summary>
-        /// 12823 -- en [   Island] ---- fr [   Île]
+        /// 12823 -- en [   Island | W] ---- fr [   Île]
         /// </summary>
         AnimalLocationIsland = 12823,
         /// <summary>
-        /// 12824 -- en [                             Recreational ] ---- fr [                             Récréatif]
+        /// 12824 -- en [                             Recreational  | W] ---- fr [                             Récréatif]
         /// </summary>
         AnimalLocationRecreationalArea = 12824,
         /// <summary>
-        /// 12825 -- en [                        Cottage-Trailer] ---- fr [                        Cottage-Trailer]
+        /// 12825 -- en [                        Cottage-Trailer | W] ---- fr [                        Cottage-Trailer]
         /// </summary>
         AnimalLocationCottageLot = 12825,
         /// <summary>
-        /// 12826 -- en [ Wetland] ---- fr [ Terre humide]
+        /// 12826 -- en [ Wetland | W] ---- fr [ Terre humide]
         /// </summary>
         AnimalLocationWetland = 12826,
         /// <summary>
-        /// 12827 -- en [       Stream ] ---- fr [       Courant]
+        /// 12827 -- en [       Stream  | W] ---- fr [       Courant]
         /// </summary>
         AnimalLocationWaterCourse = 12827,
+        /// <summary>
+        /// 12828 -- en [                                    Pond or Lake  | D] ---- fr [                                   Étang ou lac | (H)]
+        /// </summary>
+        AnimalLocationPondLakeDom = 12828,
+        /// <summary>
+        /// 12829 -- en [                                    Pond or Lake |  W] ---- fr [                                   Étang ou lac | (H)]
+        /// </summary>
+        AnimalLocationPondLake = 12829,
         /// <summary>
         /// 16000 -- en [Number of Structures to Hold Animals] ---- fr [Nombre de structures pour retenir les animaux]
         /// </summary>
@@ -3925,7 +3959,7 @@ namespace CSSPEnums
         /// </summary>
         MarineSourcesOfContaminantEffluentMultiple = 12404,
         /// <summary>
-        /// 12405 -- en [                                                     Mixes into Water | Marine] ---- fr [                                                     Mélange dans l'eau | Marin]
+        /// 12405 -- en [                                                 Mixes into Water | Marine] ---- fr [                                                     Mélange dans l'eau | Marin]
         /// </summary>
         MarineSourcesOfContaminanMixedMarine = 12405,
         /// <summary>
@@ -4041,11 +4075,11 @@ namespace CSSPEnums
         /// </summary>
         SewageThruConduitMarine = 11913,
         /// <summary>
-        /// 11914 -- en [                                            Retention Septic Tank | Marine] ---- fr [                                            Fosse septique de rétention | Marin]
+        /// 11914 -- en [                                   Retention Septic Tank | Marine] ---- fr [                                            Fosse septique de rétention | Marin]
         /// </summary>
         SewageRetentionTankMarine = 11914,
         /// <summary>
-        /// 11915 -- en [                                                     Mixes into Water | Marine] ---- fr [                                                     Mélange dans l'eau | Marin]
+        /// 11915 -- en [                                               Mixes into Water | Marine] ---- fr [                                                     Mélange dans l'eau | Marin]
         /// </summary>
         SewageMixedMarine = 11915,
         /// <summary>
@@ -4144,6 +4178,22 @@ namespace CSSPEnums
         /// 14416 -- en [Rainfall Reaction | MM] ---- fr [Réaction aux précipitations | MM]
         /// </summary>
         ObservationHazReasonRainfallMMarine = 14416,
+        /// <summary>
+        /// 14417 -- en [Historic Data | H] ---- fr [Données historiques |H]
+        /// </summary>
+        ObservationHazReasonHistoricDataH = 14417,
+        /// <summary>
+        /// 14418 -- en [Historic Data | M] ---- fr [Données historiques |MM]
+        /// </summary>
+        ObservationHazReasonHIstoricDataM = 14418,
+        /// <summary>
+        /// 14419 -- en [Historic Data | HM] ---- fr [Données historiques |HM]
+        /// </summary>
+        ObservationHazReasonHistoricDataHMarine = 14419,
+        /// <summary>
+        /// 14420 -- en [Historic Data | MM] ---- fr [Données historiques |MM]
+        /// </summary>
+        ObservationHazReasonHistoricDataMMarine = 14420,
         /// <summary>
         /// 25000 -- en [START PATHWAY ANALYSES] ---- fr [COMMENCER DES ANALYSES DE VOIE]
         /// </summary>
@@ -4313,7 +4363,7 @@ namespace CSSPEnums
         /// </summary>
         PathwaySourceFirstPondLakeLOW = 14332,
         /// <summary>
-        /// 13000 -- en [Where Does Discharge Of Pipe Flow] ---- fr [D'où vient le débit du tuyau]
+        /// 13000 -- en [Where Does Discharge Flow] ---- fr [D'où vient le débit du tuyau]
         /// </summary>
         PathwayRouteSecondPipeStart = 13000,
         /// <summary>
@@ -4377,7 +4427,7 @@ namespace CSSPEnums
         /// </summary>
         PathwaySourceSecondPipeDirectflowLow = 13015,
         /// <summary>
-        /// 13200 -- en [Where Does Discharge of Culvert Flow] ---- fr [Où se décharge le débit du ponceau]
+        /// 13200 -- en [Where Does Discharge Flow] ---- fr [Où se décharge le débit du ponceau]
         /// </summary>
         PathwayRouteSecondCulvertStart = 13200,
         /// <summary>
@@ -4497,107 +4547,107 @@ namespace CSSPEnums
         /// </summary>
         WidthInMetersGreaterThan40 = 14813,
         /// <summary>
-        /// 14814 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]
+        /// 14814 -- en [                                                          1 | (M)] ---- fr [                                                          1 | (H)]
         /// </summary>
         WidthInMetersApprox1Med = 14814,
         /// <summary>
-        /// 14815 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]
+        /// 14815 -- en [                                                      2 |  (M)] ---- fr [                                                      2 | (H)]
         /// </summary>
         WidthInMetersApprox2Med = 14815,
         /// <summary>
-        /// 14816 -- en [                                                  3 | (H)] ---- fr [                                                  3 | (H)]
+        /// 14816 -- en [                                                  3 |  (M)] ---- fr [                                                  3 | (H)]
         /// </summary>
         WidthInMetersApprox3Med = 14816,
         /// <summary>
-        /// 14817 -- en [                                             4 | (H)] ---- fr [                                             4 | (H)]
+        /// 14817 -- en [                                             4 |  (M)] ---- fr [                                             4 | (H)]
         /// </summary>
         WidthInMetersApprox4Med = 14817,
         /// <summary>
-        /// 14818 -- en [                                         5 | (H)] ---- fr [                                         5 | (H)]
+        /// 14818 -- en [                                         5 |  (M)] ---- fr [                                         5 | (H)]
         /// </summary>
         WidthInMetersApprox5Med = 14818,
         /// <summary>
-        /// 14819 -- en [                                      6 | (H)] ---- fr [                                      6 | (H)]
+        /// 14819 -- en [                                      6 |  (M)] ---- fr [                                      6 | (H)]
         /// </summary>
         WidthInMetersApprox6Med = 14819,
         /// <summary>
-        /// 14820 -- en [                                   7 | (H)] ---- fr [                                   7 | (H)]
+        /// 14820 -- en [                                   7 |  (M)] ---- fr [                                   7 | (H)]
         /// </summary>
         WidthInMetersApprox7Med = 14820,
         /// <summary>
-        /// 14821 -- en [                                8 | (H)] ---- fr [                                8 | (H)]
+        /// 14821 -- en [                                8 |  (M)] ---- fr [                                8 | (H)]
         /// </summary>
         WidthInMetersApprox8Med = 14821,
         /// <summary>
-        /// 14822 -- en [                           9 | (H)] ---- fr [                           9 | (H)]
+        /// 14822 -- en [                           9 |  (M)] ---- fr [                           9 | (H)]
         /// </summary>
         WidthInMetersApprox9Med = 14822,
         /// <summary>
-        /// 14823 -- en [                     10 | (H)] ---- fr [                     10 | (H)]
+        /// 14823 -- en [                     10 |  (M)] ---- fr [                     10 | (H)]
         /// </summary>
         WidthInMetersApprox10Med = 14823,
         /// <summary>
-        /// 14824 -- en [                11 - 25 | (H)] ---- fr [                11 - 25 | (H)]
+        /// 14824 -- en [                11 - 25 |  (M)] ---- fr [                11 - 25 | (H)]
         /// </summary>
         WidthInMetersBetween11And25Med = 14824,
         /// <summary>
-        /// 14825 -- en [            26 - 40 | (H)] ---- fr [            26 - 40 | (H)]
+        /// 14825 -- en [            26 - 40 |  (M)] ---- fr [            26 - 40 | (H)]
         /// </summary>
         WidthInMetersBetween26And40Med = 14825,
         /// <summary>
-        /// 14826 -- en [        > 40 | (H)] ---- fr [        > 40 | (H)]
+        /// 14826 -- en [        > 40 |  (M)] ---- fr [        > 40 | (H)]
         /// </summary>
         WidthInMetersGreaterThan40Med = 14826,
         /// <summary>
-        /// 14827 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]
+        /// 14827 -- en [                                                          1 | (L)] ---- fr [                                                          1 | (H)]
         /// </summary>
         WidthInMetersApprox1Low = 14827,
         /// <summary>
-        /// 14828 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]
+        /// 14828 -- en [                                                      2 | (L)] ---- fr [                                                      2 | (H)]
         /// </summary>
         WidthInMetersApprox2Low = 14828,
         /// <summary>
-        /// 14829 -- en [                                                  3 | (H)] ---- fr [                                                  3 | (H)]
+        /// 14829 -- en [                                                  3 | (L)] ---- fr [                                                  3 | (H)]
         /// </summary>
         WidthInMetersApprox3Low = 14829,
         /// <summary>
-        /// 14830 -- en [                                             4 | (H)] ---- fr [                                             4 | (H)]
+        /// 14830 -- en [                                             4 | (L)] ---- fr [                                             4 | (H)]
         /// </summary>
         WidthInMetersApprox4Low = 14830,
         /// <summary>
-        /// 14831 -- en [                                         5 | (H)] ---- fr [                                         5 | (H)]
+        /// 14831 -- en [                                         5 | (L)] ---- fr [                                         5 | (H)]
         /// </summary>
         WidthInMetersApprox5Low = 14831,
         /// <summary>
-        /// 14832 -- en [                                      6 | (H)] ---- fr [                                      6 | (H)]
+        /// 14832 -- en [                                      6 | (L)] ---- fr [                                      6 | (H)]
         /// </summary>
         WidthInMetersApprox6Low = 14832,
         /// <summary>
-        /// 14833 -- en [                                   7 | (H)] ---- fr [                                   7 | (H)]
+        /// 14833 -- en [                                   7 | (L)] ---- fr [                                   7 | (H)]
         /// </summary>
         WidthInMetersApprox7Low = 14833,
         /// <summary>
-        /// 14834 -- en [                                8 | (H)] ---- fr [                                8 | (H)]
+        /// 14834 -- en [                                8 | (L)] ---- fr [                                8 | (H)]
         /// </summary>
         WidthInMetersApprox8Low = 14834,
         /// <summary>
-        /// 14835 -- en [                           9 | (H)] ---- fr [                           9 | (H)]
+        /// 14835 -- en [                           9 | (L)] ---- fr [                           9 | (H)]
         /// </summary>
         WidthInMetersApprox9Low = 14835,
         /// <summary>
-        /// 14836 -- en [                     10 | (H)] ---- fr [                     10 | (H)]
+        /// 14836 -- en [                     10 | (L)] ---- fr [                     10 | (H)]
         /// </summary>
         WidthInMetersApprox10Low = 14836,
         /// <summary>
-        /// 14837 -- en [                11 - 25 | (H)] ---- fr [                11 - 25 | (H)]
+        /// 14837 -- en [                11 - 25 | (L)] ---- fr [                11 - 25 | (H)]
         /// </summary>
         WidthInMetersBetween11And25Low = 14837,
         /// <summary>
-        /// 14838 -- en [            26 - 40 | (H)] ---- fr [            26 - 40 | (H)]
+        /// 14838 -- en [            26 - 40 | (L)] ---- fr [            26 - 40 | (H)]
         /// </summary>
         WidthInMetersBetween26And40Low = 14838,
         /// <summary>
-        /// 14839 -- en [        > 40 | (H)] ---- fr [        > 40 | (H)]
+        /// 14839 -- en [        > 40 | (L)] ---- fr [        > 40 | (H)]
         /// </summary>
         WidthInMetersGreaterThan40Low = 14839,
         /// <summary>
@@ -4659,19 +4709,19 @@ namespace CSSPEnums
         /// <summary>
         /// 10301 -- en [            Low | (H)] ---- fr [Faible | (H)]
         /// </summary>
-        WaterCourseAreaSlopeLow = 10301,
+        WaterCourseAreaSlopeLowHigh = 10301,
         /// <summary>
         /// 10302 -- en [         Medium | (H)] ---- fr [          Moyen | (H)]
         /// </summary>
-        WaterCourseAreaSlopeMedium = 10302,
+        WaterCourseAreaSlopeMediumHigh = 10302,
         /// <summary>
         /// 10303 -- en [    High | (H)] ---- fr [       Haut | (H)]
         /// </summary>
-        WaterCourseAreaSlopeHigh = 10303,
+        WaterCourseAreaSlopeHighHigh = 10303,
         /// <summary>
         /// 10304 -- en [No Data | (H)] ---- fr [ Aucune donnée | (H)]
         /// </summary>
-        WaterCourseAreaSlopeNA = 10304,
+        WaterCourseAreaSlopeNAHigh = 10304,
         /// <summary>
         /// 10305 -- en [            Low | (M)] ---- fr [             Faible | (M)]
         /// </summary>
@@ -4711,15 +4761,15 @@ namespace CSSPEnums
         /// <summary>
         /// 23001 -- en [                                   Riparian Present | (H)] ---- fr [Présent riverain | (H)]
         /// </summary>
-        ShorelineRiparianZonePresent = 23001,
+        ShorelineRiparianZonePresentHigh = 23001,
         /// <summary>
         /// 23002 -- en [                     Vegetated Zone Absent | (H)] ---- fr [                     Zone végétale absente | (H)]
         /// </summary>
-        ShorelineRiparianZoneAbsent = 23002,
+        ShorelineRiparianZoneAbsentHigh = 23002,
         /// <summary>
         /// 23003 -- en [No Data | (H)] ---- fr [Aucune donnée | (H)]
         /// </summary>
-        ShorelineRiparianZoneNoInfo = 23003,
+        ShorelineRiparianZoneNoInfoHigh = 23003,
         /// <summary>
         /// 23004 -- en [                                    Riparian Present | (M)] ---- fr [                                    Présent riverain | (M)]
         /// </summary>
@@ -4747,7 +4797,7 @@ namespace CSSPEnums
         /// <summary>
         /// 23010 -- en [                           Short grass Present | (H)] ---- fr [                           Présence d'herbe courte | (H)]
         /// </summary>
-        ShorelineRiparianGrassedZonePresent = 23010,
+        ShorelineRiparianGrassedZonePresentHigh = 23010,
         /// <summary>
         /// 23011 -- en [                                 Short grass Present | (M)] ---- fr [                                 Présence d'herbe courte | (M)]
         /// </summary>
@@ -4763,27 +4813,27 @@ namespace CSSPEnums
         /// <summary>
         /// 16401 -- en [                                                       Culvert | (H)] ---- fr [Ponceau | (H)]
         /// </summary>
-        FlowThroughStructureCulvert = 16401,
+        FlowThroughStructureCulvertHigh = 16401,
         /// <summary>
         /// 16402 -- en [                                                Pipe | (H)] ---- fr [                                                Pipe | (H)]
         /// </summary>
-        FlowThroughStructurePipe = 16402,
+        FlowThroughStructurePipeHigh = 16402,
         /// <summary>
         /// 16403 -- en [                                                   Bridge | (H)] ---- fr [                                                   Pont | (H)]
         /// </summary>
-        FlowThroughStructureBridge = 16403,
+        FlowThroughStructureBridgeHigh = 16403,
         /// <summary>
         /// 16404 -- en [                    Berm | (H)] ---- fr [                    Berm | (H)]
         /// </summary>
-        FlowThroughStructureBerm = 16404,
+        FlowThroughStructureBermHigh = 16404,
         /// <summary>
         /// 16405 -- en [                                            Wetland | (H)] ---- fr [                                            Zone humide | (H)]
         /// </summary>
-        FlowThroughStructureWetland = 16405,
+        FlowThroughStructureWetlandHigh = 16405,
         /// <summary>
         /// 16406 -- en [                                                              Free Flowing | (H)] ---- fr [                                                              Flux libre | (H)]
         /// </summary>
-        FlowThroughNoStructure = 16406,
+        FlowThroughNoStructureHigh = 16406,
         /// <summary>
         /// 16407 -- en [                                                         Culvert | (M)] ---- fr [                                                         Ponceau | (M)]
         /// </summary>
@@ -4835,7 +4885,7 @@ namespace CSSPEnums
         /// <summary>
         /// 16419 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d'eau salée | (H)]
         /// </summary>
-        FlowThroughSaltwaterMarsh = 16419,
+        FlowThroughSaltwaterMarshHigh = 16419,
         /// <summary>
         /// 16420 -- en [                                            Saltwater Marsh | (M)] ---- fr [Marais d'eau salée | (M)]
         /// </summary>
@@ -4847,7 +4897,7 @@ namespace CSSPEnums
         /// <summary>
         /// 16422 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]
         /// </summary>
-        FlowThroughBeaverDam = 16422,
+        FlowThroughBeaverDamHigh = 16422,
         /// <summary>
         /// 16423 -- en [                             Beaver Dam | (M)] ---- fr [Barrage de castor | (M)]
         /// </summary>
@@ -4863,23 +4913,23 @@ namespace CSSPEnums
         /// <summary>
         /// 11101 -- en [                                                       Culvert | (H)] ---- fr [                                                       Ponceau | (H)]
         /// </summary>
-        FlowThroughStructureCulvertWaterCourse = 11101,
+        FlowThroughStructureCulvertWaterCourseHigh = 11101,
         /// <summary>
         /// 11102 -- en [                                                   Bridge | (H)] ---- fr [                                                   Pont | (H)]
         /// </summary>
-        FlowThroughStructureBridgeWaterCourse = 11102,
+        FlowThroughStructureBridgeWaterCourseHigh = 11102,
         /// <summary>
         /// 11103 -- en [                    Berm | (H)] ---- fr [                    Berm | (H)]
         /// </summary>
-        FlowThroughStructureBermWaterCourse = 11103,
+        FlowThroughStructureBermWaterCourseHigh = 11103,
         /// <summary>
         /// 11104 -- en [                                            Wetland | (H)] ---- fr [                                            Zone humide | (H)]
         /// </summary>
-        FlowThroughStructureWetlandWaterCourse = 11104,
+        FlowThroughStructureWetlandWaterCourseHigh = 11104,
         /// <summary>
         /// 11105 -- en [                                                            Free Flowing | (H)] ---- fr [                                                            Flux libre | (H)]
         /// </summary>
-        StructureInRoadNoStructureWaterCourse = 11105,
+        StructureInRoadNoStructureWaterCourseHigh = 11105,
         /// <summary>
         /// 11106 -- en [                                                       Culvert | (M)] ---- fr [                                                       Ponceau | (M)]
         /// </summary>
@@ -4923,7 +4973,7 @@ namespace CSSPEnums
         /// <summary>
         /// 11116 -- en [                                            Saltwater Marshs | (H)] ---- fr [Marais d'eau salée | (H)]
         /// </summary>
-        FlowThroughStructureSaltMarshWatercourse = 11116,
+        FlowThroughStructureSaltMarshWatercourseHigh = 11116,
         /// <summary>
         /// 11117 -- en [                                            Saltwater Marsh | (M)] ---- fr [Marais d'eau salée | (M)]
         /// </summary>
@@ -4935,7 +4985,7 @@ namespace CSSPEnums
         /// <summary>
         /// 11119 -- en [                                            Beaver Dam | (H)] ---- fr [Barrage de castor | (H)]
         /// </summary>
-        FlowThroughStructureBeaverDamWatercourse = 11119,
+        FlowThroughStructureBeaverDamWatercourseHigh = 11119,
         /// <summary>
         /// 11120 -- en [                             Beaver Dam | (M)] ---- fr [Barrage de castor | (M)]
         /// </summary>
@@ -4951,141 +5001,141 @@ namespace CSSPEnums
         /// <summary>
         /// 24001 -- en [                                                              0 | (H)] ---- fr [                                                              Sur la côte]
         /// </summary>
-        DistanceToWaterInMeters0W = 24001,
+        DistanceToWaterInMeters0HighW = 24001,
         /// <summary>
         /// 24002 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]
         /// </summary>
-        DistanceToWaterInMeters5W = 24002,
+        DistanceToWaterInMeters5HighW = 24002,
         /// <summary>
         /// 24003 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]
         /// </summary>
-        DistanceToWaterInMeters10W = 24003,
+        DistanceToWaterInMeters10HighW = 24003,
         /// <summary>
         /// 24004 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]
         /// </summary>
-        DistanceToWaterInMeters20W = 24004,
+        DistanceToWaterInMeters20HighW = 24004,
         /// <summary>
         /// 24005 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]
         /// </summary>
-        DistanceToWaterInMeters30W = 24005,
+        DistanceToWaterInMeters30HighW = 24005,
         /// <summary>
         /// 24006 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]
         /// </summary>
-        DistanceToWaterInMeters40W = 24006,
+        DistanceToWaterInMeters40HighW = 24006,
         /// <summary>
         /// 24007 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]
         /// </summary>
-        DistanceToWaterInMeters50W = 24007,
+        DistanceToWaterInMeters50HighW = 24007,
         /// <summary>
         /// 24008 -- en [                             75 | (H)] ---- fr [                             75 | (H)]
         /// </summary>
-        DistanceToWaterInMeters75W = 24008,
+        DistanceToWaterInMeters75HighW = 24008,
         /// <summary>
         /// 24009 -- en [                         100 | (H)] ---- fr [                         100 | (H)]
         /// </summary>
-        DistanceToWaterInMeters100W = 24009,
+        DistanceToWaterInMeters100HighW = 24009,
         /// <summary>
         /// 24010 -- en [                      150 | (H)] ---- fr [                      150 | (H)]
         /// </summary>
-        DistanceToWaterInMeters150W = 24010,
+        DistanceToWaterInMeters150HighW = 24010,
         /// <summary>
         /// 24011 -- en [                    200 | (H)] ---- fr [                    200 | (H)]
         /// </summary>
-        DistanceToWaterInMeters200W = 24011,
+        DistanceToWaterInMeters200HighW = 24011,
         /// <summary>
         /// 24012 -- en [                 300 | (H)] ---- fr [                 300 | (H)]
         /// </summary>
-        DistanceToWaterInMeters300W = 24012,
+        DistanceToWaterInMeters300HighW = 24012,
         /// <summary>
         /// 24013 -- en [              400 | (H)] ---- fr [              400 | (H)]
         /// </summary>
-        DistanceToWaterInMeters400W = 24013,
+        DistanceToWaterInMeters400HighW = 24013,
         /// <summary>
         /// 24014 -- en [            600 | (H)] ---- fr [            600 | (H)]
         /// </summary>
-        DistanceToWaterInMeters600W = 24014,
+        DistanceToWaterInMeters600HighW = 24014,
         /// <summary>
         /// 24015 -- en [          800 | (H)] ---- fr [          800 | (H)]
         /// </summary>
-        DistanceToWaterInMeters800W = 24015,
+        DistanceToWaterInMeters800HighW = 24015,
         /// <summary>
         /// 24016 -- en [      1000 | (H)] ---- fr [      1000 | (H)]
         /// </summary>
-        DistanceToWaterInMeters1000W = 24016,
+        DistanceToWaterInMeters1000HighW = 24016,
         /// <summary>
         /// 24017 -- en [  > 1000 | (H)] ---- fr [  > 1000 | (H)]
         /// </summary>
-        DistanceToWaterInMetersGreaterThan1000W = 24017,
+        DistanceToWaterInMetersGreaterThan1000HighW = 24017,
         /// <summary>
         /// 24018 -- en [INFO REQUIRED | (H)] ---- fr [INFO REQUIS ]
         /// </summary>
-        DistanceToWaterInMetersInfoRequiredW = 24018,
+        DistanceToWaterInMetersInfoRequiredHighW = 24018,
         /// <summary>
-        /// 24019 -- en [                                                              0 | (H)] ---- fr [                                                          Sur la côte]
+        /// 24019 -- en [                                                              0 | (M)] ---- fr [                                                          Sur la côte]
         /// </summary>
         DistanceToWaterInMeters0MedW = 24019,
         /// <summary>
-        /// 24020 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]
+        /// 24020 -- en [                                                         5  | (M)] ---- fr [                                                         5  | (H)]
         /// </summary>
         DistanceToWaterInMeters5MedW = 24020,
         /// <summary>
-        /// 24021 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]
+        /// 24021 -- en [                                                    10 | (M)] ---- fr [                                                    10 | (H)]
         /// </summary>
         DistanceToWaterInMeters10MedW = 24021,
         /// <summary>
-        /// 24022 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]
+        /// 24022 -- en [                                                 20 | (M)] ---- fr [                                                 20 | (H)]
         /// </summary>
         DistanceToWaterInMeters20MedW = 24022,
         /// <summary>
-        /// 24023 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]
+        /// 24023 -- en [                                            30| (M)] ---- fr [                                            30 | (H)]
         /// </summary>
         DistanceToWaterInMeters30MedW = 24023,
         /// <summary>
-        /// 24024 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]
+        /// 24024 -- en [                                      40| (M)] ---- fr [                                      40 | (H)]
         /// </summary>
         DistanceToWaterInMeters40MedW = 24024,
         /// <summary>
-        /// 24025 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]
+        /// 24025 -- en [                                 50 | (M)] ---- fr [                                 50 | (H)]
         /// </summary>
         DistanceToWaterInMeters50MedW = 24025,
         /// <summary>
-        /// 24026 -- en [                             75 | (H)] ---- fr [                             75 | (H)]
+        /// 24026 -- en [                             75 | (M)] ---- fr [                             75 | (H)]
         /// </summary>
         DistanceToWaterInMeters75MedW = 24026,
         /// <summary>
-        /// 24027 -- en [                         100 | (H)] ---- fr [                         100 | (H)]
+        /// 24027 -- en [                         100| (M)] ---- fr [                         100 | (H)]
         /// </summary>
         DistanceToWaterInMeters100MedW = 24027,
         /// <summary>
-        /// 24028 -- en [                      150 | (H)] ---- fr [                      150 | (H)]
+        /// 24028 -- en [                      150| (M)] ---- fr [                      150 | (H)]
         /// </summary>
         DistanceToWaterInMeters150MedW = 24028,
         /// <summary>
-        /// 24029 -- en [                    200 | (H)] ---- fr [                    200 | (H)]
+        /// 24029 -- en [                    200| (M)] ---- fr [                    200 | (H)]
         /// </summary>
         DistanceToWaterInMeters200MedW = 24029,
         /// <summary>
-        /// 24030 -- en [                 300 | (H)] ---- fr [                 300 | (H)]
+        /// 24030 -- en [                 300 | (M)] ---- fr [                 300 | (H)]
         /// </summary>
         DistanceToWaterInMeters300MedW = 24030,
         /// <summary>
-        /// 24031 -- en [              400 | (H)] ---- fr [              400 | (H)]
+        /// 24031 -- en [              400 | (M)] ---- fr [              400 | (H)]
         /// </summary>
         DistanceToWaterInMeters400MedW = 24031,
         /// <summary>
-        /// 24032 -- en [            600 | (H)] ---- fr [            600 | (H)]
+        /// 24032 -- en [            600 | (M)] ---- fr [            600 | (H)]
         /// </summary>
         DistanceToWaterInMeters600MedW = 24032,
         /// <summary>
-        /// 24033 -- en [          800 | (H)] ---- fr [          800 | (H)]
+        /// 24033 -- en [          800 | (M)] ---- fr [          800 | (H)]
         /// </summary>
         DistanceToWaterInMeters800MedW = 24033,
         /// <summary>
-        /// 24034 -- en [      1000 | (H)] ---- fr [      1000 | (H)]
+        /// 24034 -- en [      1000 | (M)] ---- fr [      1000 | (H)]
         /// </summary>
         DistanceToWaterInMeters1000MedW = 24034,
         /// <summary>
-        /// 24035 -- en [  > 1000 | (H)] ---- fr [  > 1000 | (H)]
+        /// 24035 -- en [  > 1000 | (M)] ---- fr [  > 1000 | (H)]
         /// </summary>
         DistanceToWaterInMetGrThan1000MedW = 24035,
         /// <summary>
@@ -5093,71 +5143,71 @@ namespace CSSPEnums
         /// </summary>
         DistanceToWaterInMetInfoReqMedW = 24036,
         /// <summary>
-        /// 24037 -- en [                                                              0 | (H)] ---- fr [                                                          Sur la côte]
+        /// 24037 -- en [                                                              0 | (L)] ---- fr [                                                          Sur la côte]
         /// </summary>
         DistanceToWaterInMeters0LowW = 24037,
         /// <summary>
-        /// 24038 -- en [                                                         5  | (H)] ---- fr [                                                         5  | (H)]
+        /// 24038 -- en [                                                         5  | (L)] ---- fr [                                                         5  | (H)]
         /// </summary>
         DistanceToWaterInMeters5LowW = 24038,
         /// <summary>
-        /// 24039 -- en [                                                    10 | (H)] ---- fr [                                                    10 | (H)]
+        /// 24039 -- en [                                                    10 | (L)] ---- fr [                                                    10 | (H)]
         /// </summary>
         DistanceToWaterInMeters10LowW = 24039,
         /// <summary>
-        /// 24040 -- en [                                                 20 | (H)] ---- fr [                                                 20 | (H)]
+        /// 24040 -- en [                                                 20 | (L)] ---- fr [                                                 20 | (H)]
         /// </summary>
         DistanceToWaterInMeters20LowW = 24040,
         /// <summary>
-        /// 24041 -- en [                                            30 | (H)] ---- fr [                                            30 | (H)]
+        /// 24041 -- en [                                            30 | (L)] ---- fr [                                            30 | (H)]
         /// </summary>
         DistanceToWaterInMeters30LowW = 24041,
         /// <summary>
-        /// 24042 -- en [                                      40 | (H)] ---- fr [                                      40 | (H)]
+        /// 24042 -- en [                                      40 | (L)] ---- fr [                                      40 | (H)]
         /// </summary>
         DistanceToWaterInMeters40LowW = 24042,
         /// <summary>
-        /// 24043 -- en [                                 50 | (H)] ---- fr [                                 50 | (H)]
+        /// 24043 -- en [                                 50 |  (L)] ---- fr [                                 50 | (H)]
         /// </summary>
         DistanceToWaterInMeters50LowW = 24043,
         /// <summary>
-        /// 24044 -- en [                             75 | (H)] ---- fr [                             75 | (H)]
+        /// 24044 -- en [                             75 |  (L)] ---- fr [                             75 | (H)]
         /// </summary>
         DistanceToWaterInMeters75LowW = 24044,
         /// <summary>
-        /// 24045 -- en [                         100 | (H)] ---- fr [                         100 | (H)]
+        /// 24045 -- en [                         100 | (L)] ---- fr [                         100 | (H)]
         /// </summary>
         DistanceToWaterInMeters100LowW = 24045,
         /// <summary>
-        /// 24046 -- en [                      150 | (H)] ---- fr [                      150 | (H)]
+        /// 24046 -- en [                      150 | (L)] ---- fr [                      150 | (H)]
         /// </summary>
         DistanceToWaterInMeters150LowW = 24046,
         /// <summary>
-        /// 24047 -- en [                    200 | (H)] ---- fr [                    200 | (H)]
+        /// 24047 -- en [                    200 | (L)] ---- fr [                    200 | (H)]
         /// </summary>
         DistanceToWaterInMeters200LowW = 24047,
         /// <summary>
-        /// 24048 -- en [                 300 | (H)] ---- fr [                 300 | (H)]
+        /// 24048 -- en [                 300 | (L)] ---- fr [                 300 | (H)]
         /// </summary>
         DistanceToWaterInMeters300LowW = 24048,
         /// <summary>
-        /// 24049 -- en [              400 | (H)] ---- fr [              400 | (H)]
+        /// 24049 -- en [              400 | (L)] ---- fr [              400 | (H)]
         /// </summary>
         DistanceToWaterInMeters400LowW = 24049,
         /// <summary>
-        /// 24050 -- en [            600 | (H)] ---- fr [            600 | (H)]
+        /// 24050 -- en [            600 | (L)] ---- fr [            600 | (H)]
         /// </summary>
         DistanceToWaterInMeters600LowW = 24050,
         /// <summary>
-        /// 24051 -- en [          800 | (H)] ---- fr [          800 | (H)]
+        /// 24051 -- en [          800 | (L)] ---- fr [          800 | (H)]
         /// </summary>
         DistanceToWaterInMeters800LowW = 24051,
         /// <summary>
-        /// 24052 -- en [      1000 | (H)] ---- fr [      1000 | (H)]
+        /// 24052 -- en [      1000 | (L)] ---- fr [      1000 | (H)]
         /// </summary>
         DistanceToWaterInMeters1000LowW = 24052,
         /// <summary>
-        /// 24053 -- en [  > 1000 | (H)] ---- fr [  > 1000 | (H)]
+        /// 24053 -- en [  > 1000 | (L)] ---- fr [  > 1000 | (H)]
         /// </summary>
         DistanceToWaterInMetGrThan1000LowW = 24053,
         /// <summary>
@@ -5171,43 +5221,43 @@ namespace CSSPEnums
         /// <summary>
         /// 21601 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo1 = 21601,
+        PipeCountNumberEqualTo1High = 21601,
         /// <summary>
         /// 21602 -- en [                                                      2 | (H)] ---- fr [                                                      2 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo2 = 21602,
+        PipeCountNumberEqualTo2High = 21602,
         /// <summary>
         /// 21603 -- en [                                                   3 | (H)] ---- fr [                                                   3 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo3 = 21603,
+        PipeCountNumberEqualTo3High = 21603,
         /// <summary>
         /// 21604 -- en [                                              4 | (H)] ---- fr [                                              4 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo4 = 21604,
+        PipeCountNumberEqualTo4High = 21604,
         /// <summary>
         /// 21605 -- en [                                        5 | (H)] ---- fr [                                        5 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo5 = 21605,
+        PipeCountNumberEqualTo5High = 21605,
         /// <summary>
         /// 21606 -- en [                                    6 | (H)] ---- fr [                                    6 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo6 = 21606,
+        PipeCountNumberEqualTo6High = 21606,
         /// <summary>
         /// 21607 -- en [                                  7 | (H)] ---- fr [                                  7 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo7 = 21607,
+        PipeCountNumberEqualTo7High = 21607,
         /// <summary>
         /// 21608 -- en [                             8 | (H)] ---- fr [                             8 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo8 = 21608,
+        PipeCountNumberEqualTo8High = 21608,
         /// <summary>
         /// 21609 -- en [                         9 | (H)] ---- fr [                         9 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo9 = 21609,
+        PipeCountNumberEqualTo9High = 21609,
         /// <summary>
         /// 21610 -- en [                    10 | (H)] ---- fr [                    10 | (H)]
         /// </summary>
-        PipeCountNumberEqualTo10 = 21610,
+        PipeCountNumberEqualTo10High = 21610,
         /// <summary>
         /// 21611 -- en [                                                          1 | (H)] ---- fr [                                                          1 | (H)]
         /// </summary>
@@ -5299,43 +5349,43 @@ namespace CSSPEnums
         /// <summary>
         /// 14501 -- en [                                                        15 | (H)] ---- fr [                                                        15 | (H)]
         /// </summary>
-        DiameterInCentimetersEqual15 = 14501,
+        DiameterInCentimetersEqual15High = 14501,
         /// <summary>
         /// 14502 -- en [                                                    30 | (H)] ---- fr [                                                    30 | (H)]
         /// </summary>
-        DiameterInCentimetersEqual30 = 14502,
+        DiameterInCentimetersEqual30High = 14502,
         /// <summary>
         /// 14503 -- en [                                              31-50 | (H)] ---- fr [                                              31-50 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween31and50cm = 14503,
+        DiameterInCentimetersBetween31and50cmHigh = 14503,
         /// <summary>
         /// 14504 -- en [                                         51-100 | (H)] ---- fr [                                         51-100 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween51and100cm = 14504,
+        DiameterInCentimetersBetween51and100cmHigh = 14504,
         /// <summary>
         /// 14505 -- en [                                      101 - 200 | (H)] ---- fr [                                      101 - 200 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween101and200cm = 14505,
+        DiameterInCentimetersBetween101and200cmHigh = 14505,
         /// <summary>
         /// 14506 -- en [                                201 - 300 | (H)] ---- fr [                                201 - 300 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween201and300cm = 14506,
+        DiameterInCentimetersBetween201and300cmHigh = 14506,
         /// <summary>
         /// 14507 -- en [                           301 - 400 | (H)] ---- fr [                           301 - 400 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween301and400cm = 14507,
+        DiameterInCentimetersBetween301and400cmHigh = 14507,
         /// <summary>
         /// 14508 -- en [                           401-500 | (H)] ---- fr [                           401-500 | (H)]
         /// </summary>
-        DiameterInCentimetersBetween401and500cm = 14508,
+        DiameterInCentimetersBetween401and500cmHigh = 14508,
         /// <summary>
         /// 14509 -- en [             > 500 | (H)] ---- fr [             > 500 | (H)]
         /// </summary>
-        DiameterInCentimetersGreaterThan500cm = 14509,
+        DiameterInCentimetersGreaterThan500cmHigh = 14509,
         /// <summary>
         /// 14510 -- en [No Data | (H)] ---- fr [Pas de données | (H)]
         /// </summary>
-        DiameterNoInformation = 14510,
+        DiameterNoInformationHigh = 14510,
         /// <summary>
         /// 14511 -- en [                                                        15 | (M)] ---- fr [                                                        15 | (M)]
         /// </summary>
@@ -5423,11 +5473,11 @@ namespace CSSPEnums
         /// <summary>
         /// 14901 -- en [Along  Road | (H)] ---- fr [Le long d'un chemin]
         /// </summary>
-        DitchAlongRoad = 14901,
+        DitchAlongRoadHigh = 14901,
         /// <summary>
         /// 14902 -- en [Across Properties | (H)] ---- fr [Par le biais de terrains]
         /// </summary>
-        DitchAcrossProperties = 14902,
+        DitchAcrossPropertiesHigh = 14902,
         /// <summary>
         /// 14903 -- en [Along  Road | (M)] ---- fr [Le long d'un chemin]
         /// </summary>
@@ -5451,15 +5501,15 @@ namespace CSSPEnums
         /// <summary>
         /// 15001 -- en [Paved | (H)] ---- fr [Surface d'asphalte]
         /// </summary>
-        DrainagePavedSurfaces = 15001,
+        DrainagePavedSurfacesHigh = 15001,
         /// <summary>
         /// 15002 -- en [                      Vegetated | (H)] ---- fr [Surface recouverte de végétation]
         /// </summary>
-        DrainageVegetatedSurfaces = 15002,
+        DrainageVegetatedSurfacesHigh = 15002,
         /// <summary>
         /// 15003 -- en [            Bare | (H)] ---- fr [Sol]
         /// </summary>
-        DrainageBareSoilSurfaces = 15003,
+        DrainageBareSoilSurfacesHigh = 15003,
         /// <summary>
         /// 15004 -- en [Paved | (M)] ---- fr [Surface d'asphalte]
         /// </summary>
@@ -5491,19 +5541,19 @@ namespace CSSPEnums
         /// <summary>
         /// 14601 -- en [                             Hi | (H)] ---- fr [Salut | (H)]
         /// </summary>
-        FlowLevelHi = 14601,
+        FlowLevelHiHigh = 14601,
         /// <summary>
         /// 14602 -- en [                                 Med | (H)] ---- fr [                                 Med | (H)]
         /// </summary>
-        FlowLevelMed = 14602,
+        FlowLevelMedHigh = 14602,
         /// <summary>
         /// 14603 -- en [                                             Lo | (H)] ---- fr [                                             Lo | (H)]
         /// </summary>
-        FlowLevelLo = 14603,
+        FlowLevelLoHigh = 14603,
         /// <summary>
         /// 14604 -- en [ Rain | (H)] ---- fr [ Pluie | (H)]
         /// </summary>
-        FlowLevelRain = 14604,
+        FlowLevelRainHigh = 14604,
         /// <summary>
         /// 14605 -- en [                              High | (M)] ---- fr [                              Haut | (M)]
         /// </summary>
@@ -5539,19 +5589,19 @@ namespace CSSPEnums
         /// <summary>
         /// 14613 -- en [                                      High | (H)] ---- fr [                                      Haut | (H)]
         /// </summary>
-        FlowLevelHighWaterCourse = 14613,
+        FlowLevelHighWaterCourseHigh = 14613,
         /// <summary>
         /// 14614 -- en [                                        Medium | (H)] ---- fr [                                        Moyen | (H)]
         /// </summary>
-        FlowLevelMediumWaterCourse = 14614,
+        FlowLevelMediumWaterCourseHigh = 14614,
         /// <summary>
         /// 14615 -- en [                                              Low | (H)] ---- fr [                                              Faible | (H)]
         /// </summary>
-        FlowLevelLowWaterCourse = 14615,
+        FlowLevelLowWaterCourseHigh = 14615,
         /// <summary>
         /// 14616 -- en [ Rainfall | (H)] ---- fr [ Pluie (H)]
         /// </summary>
-        FlowLevelRainfallWaterCourse = 14616,
+        FlowLevelRainfallWaterCourseHigh = 14616,
         /// <summary>
         /// 14617 -- en [                                      High | (M)] ---- fr [                                      Haut | (M)]
         /// </summary>
@@ -5591,23 +5641,23 @@ namespace CSSPEnums
         /// <summary>
         /// 13301 -- en [                       High | (H)] ---- fr [Haut | (H)]
         /// </summary>
-        PipeFlowlHigh = 13301,
+        PipeFlowlHighHigh = 13301,
         /// <summary>
         /// 13302 -- en [                            Medium | (H)] ---- fr [                            Moyen | (H)]
         /// </summary>
-        PipeFlowMedium = 13302,
+        PipeFlowMediumHigh = 13302,
         /// <summary>
         /// 13303 -- en [                                       Low | (H)] ---- fr [                                       Faible | (H)]
         /// </summary>
-        PipeFlowLow = 13303,
+        PipeFlowLowHigh = 13303,
         /// <summary>
         /// 13304 -- en [               Rainfall | (H)] ---- fr [               Pluie (H)]
         /// </summary>
-        PipeFlowRainfall = 13304,
+        PipeFlowRainfallHigh = 13304,
         /// <summary>
         /// 13305 -- en [No Data | (H)] ---- fr [Aucune donnée | (H)]
         /// </summary>
-        PipeFlowNA = 13305,
+        PipeFlowNAHigh = 13305,
         /// <summary>
         /// 13306 -- en [                       High | (M)] ---- fr [                       Haut | (M)]
         /// </summary>
@@ -5655,75 +5705,75 @@ namespace CSSPEnums
         /// <summary>
         /// 10201 -- en [                                                                     0 | (H)] ---- fr [                             Sur la côte]
         /// </summary>
-        DistanceToWaterInMeters0 = 10201,
+        DistanceToWaterInMeters0High = 10201,
         /// <summary>
         /// 10202 -- en [                                                                 5 | (H)] ---- fr [                                                                 5 | (H)]
         /// </summary>
-        DistanceToWaterInMeters5 = 10202,
+        DistanceToWaterInMeters5High = 10202,
         /// <summary>
         /// 10203 -- en [                                                           10 | (H)] ---- fr [                                                           10 | (H)]
         /// </summary>
-        DistanceToWaterInMeters10 = 10203,
+        DistanceToWaterInMeters10High = 10203,
         /// <summary>
         /// 10204 -- en [                                                        20 | (H)] ---- fr [                                                        20 | (H)]
         /// </summary>
-        DistanceToWaterInMeters20 = 10204,
+        DistanceToWaterInMeters20High = 10204,
         /// <summary>
         /// 10205 -- en [                                                     30 | (H)] ---- fr [                                                     30 | (H)]
         /// </summary>
-        DistanceToWaterInMeters30 = 10205,
+        DistanceToWaterInMeters30High = 10205,
         /// <summary>
         /// 10206 -- en [                                                  40 | (H)] ---- fr [                                                  40 | (H)]
         /// </summary>
-        DistanceToWaterInMeters40 = 10206,
+        DistanceToWaterInMeters40High = 10206,
         /// <summary>
         /// 10207 -- en [                                              50 | (H)] ---- fr [                                              50 | (H)]
         /// </summary>
-        DistanceToWaterInMeters50 = 10207,
+        DistanceToWaterInMeters50High = 10207,
         /// <summary>
         /// 10208 -- en [                                           75 | (H)] ---- fr [                                           75 | (H)]
         /// </summary>
-        DistanceToWaterInMeters75 = 10208,
+        DistanceToWaterInMeters75High = 10208,
         /// <summary>
         /// 10209 -- en [                                       100 | (H)] ---- fr [                                       100 | (H)]
         /// </summary>
-        DistanceToWaterInMeters100 = 10209,
+        DistanceToWaterInMeters100High = 10209,
         /// <summary>
         /// 10210 -- en [                                    150 | (H)] ---- fr [                                    150 | (H)]
         /// </summary>
-        DistanceToWaterInMeters150 = 10210,
+        DistanceToWaterInMeters150High = 10210,
         /// <summary>
         /// 10211 -- en [                                 200 | (H)] ---- fr [                                 200 | (H)]
         /// </summary>
-        DistanceToWaterInMeters200 = 10211,
+        DistanceToWaterInMeters200High = 10211,
         /// <summary>
         /// 10212 -- en [                             300 | (H)] ---- fr [                             300 | (H)]
         /// </summary>
-        DistanceToWaterInMeters300 = 10212,
+        DistanceToWaterInMeters300High = 10212,
         /// <summary>
         /// 10213 -- en [                          400 | (H)] ---- fr [                          400 | (H)]
         /// </summary>
-        DistanceToWaterInMeters400 = 10213,
+        DistanceToWaterInMeters400High = 10213,
         /// <summary>
         /// 10214 -- en [                       600 | (H)] ---- fr [                       600 | (H)]
         /// </summary>
-        DistanceToWaterInMeters600 = 10214,
+        DistanceToWaterInMeters600High = 10214,
         /// <summary>
         /// 10215 -- en [                   800 | (H)] ---- fr [                   800 | (H)]
         /// </summary>
-        DistanceToWaterInMeters800 = 10215,
+        DistanceToWaterInMeters800High = 10215,
         /// <summary>
         /// 10216 -- en [              1000 | (H)] ---- fr [              1000 | (H)]
         /// </summary>
-        DistanceToWaterInMeters1000 = 10216,
+        DistanceToWaterInMeters1000High = 10216,
         /// <summary>
         /// 10217 -- en [         > 1000 | (H)] ---- fr [         > 1000 | (H)]
         /// </summary>
-        DistanceToWaterInMetersGreaterThan1000 = 10217,
+        DistanceToWaterInMetersGreaterThan1000High = 10217,
         /// <summary>
         /// 10218 -- en [INFO REQUIRED | (H)] ---- fr [INFO REQUIS]
         /// </summary>
-        DistanceToWaterInMetersInfoRequired = 10218,
+        DistanceToWaterInMetersInfoRequiredHigh = 10218,
         /// <summary>
         /// 10219 -- en [                                                                   0 | (M)] ---- fr [                             Sur la côte]
         /// </summary>
@@ -6001,7 +6051,7 @@ namespace CSSPEnums
         /// </summary>
         ConductDilutionAnalysesIndirectMedNo = 15308,
         /// <summary>
-        /// 15800 -- en [Calculated Risk Of Comtamination In Area of Concern] ---- fr [Risque calculé de contamination dans le secteur préoccupant]
+        /// 15800 -- en [Calculated Risk Of Contamination In Area of Concern] ---- fr [Risque calculé de contamination dans le secteur préoccupant]
         /// </summary>
         SuggestedRiskStart = 15800,
         /// <summary>

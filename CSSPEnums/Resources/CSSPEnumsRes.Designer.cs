@@ -655,11 +655,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generate classification for CSSPWebTools visualization.
+        /// </summary>
+        public static string AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Generate KML file classification for CSSP visualization.
         /// </summary>
         public static string AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generate KML file classification for CSSPWebTools visualization.
+        /// </summary>
+        public static string AppTaskCommandEnumGenerateKMLFileClassificationForCSSPWebToolsVisualization {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateKMLFileClassificationForCSSPWebToolsVisualization", resourceCulture);
             }
         }
         
@@ -670,6 +688,16 @@ namespace CSSPEnums.Resources {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualizat" +
                         "ion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization.
+        /// </summary>
+        public static string AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVi" +
+                        "sualization", resourceCulture);
             }
         }
         
@@ -751,6 +779,15 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumMikeScenarioOtherFileImport {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumMikeScenarioOtherFileImport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MIKE Scenario Prepare Results.
+        /// </summary>
+        public static string AppTaskCommandEnumMikeScenarioPrepareResults {
+            get {
+                return ResourceManager.GetString("AppTaskCommandEnumMikeScenarioPrepareResults", resourceCulture);
             }
         }
         

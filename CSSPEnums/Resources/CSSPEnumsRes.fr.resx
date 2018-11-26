@@ -4084,4 +4084,16 @@
   <data name="AppTaskCommandEnumProvinceToolsGenerateStats" xml:space="preserve">
     <value>Province Tools Generate Stats (fr)</value>
   </data>
+  <data name="AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization" xml:space="preserve">
+    <value>Generate classification for CSSPWebTools visualization (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumGenerateKMLFileClassificationForCSSPWebToolsVisualization" xml:space="preserve">
+    <value>Generate KML file classification for CSSPWebTools visualization (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization" xml:space="preserve">
+    <value>Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization (fr)</value>
+  </data>
+  <data name="AppTaskCommandEnumMikeScenarioPrepareResults" xml:space="preserve">
+    <value>MIKE Scenario Prepare Results (fr)</value>
+  </data>
 </root>

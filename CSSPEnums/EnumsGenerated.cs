@@ -581,10 +581,10 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingPrecipForProvince;
                 case AppTaskCommandEnum.ExportToArcGIS:
                     return CSSPEnumsRes.AppTaskCommandEnumExportToArcGIS;
-                case AppTaskCommandEnum.GenerateClassificationForCSSPVisualization:
-                    return CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPVisualization;
-                case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization:
-                    return CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization;
+                case AppTaskCommandEnum.GenerateClassificationForCSSPWebToolsVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateClassificationForCSSPWebToolsVisualization;
+                case AppTaskCommandEnum.GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization;
                 case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSites:
                     return CSSPEnumsRes.AppTaskCommandEnumOpenDataCSVNationalOfMWQMSites;
                 case AppTaskCommandEnum.OpenDataCSVNationalOfMWQMSamples:
@@ -611,10 +611,12 @@ namespace CSSPEnums
                     return CSSPEnumsRes.AppTaskCommandEnumFindMissingDischargesForProvince;
                 case AppTaskCommandEnum.LoadHydrometricDataValue:
                     return CSSPEnumsRes.AppTaskCommandEnumLoadHydrometricDataValue;
-                case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPVisualization:
-                    return CSSPEnumsRes.AppTaskCommandEnumGenerateKMLFileClassificationForCSSPVisualization;
+                case AppTaskCommandEnum.GenerateKMLFileClassificationForCSSPWebToolsVisualization:
+                    return CSSPEnumsRes.AppTaskCommandEnumGenerateKMLFileClassificationForCSSPWebToolsVisualization;
                 case AppTaskCommandEnum.ProvinceToolsGenerateStats:
                     return CSSPEnumsRes.AppTaskCommandEnumProvinceToolsGenerateStats;
+                case AppTaskCommandEnum.MikeScenarioPrepareResults:
+                    return CSSPEnumsRes.AppTaskCommandEnumMikeScenarioPrepareResults;
                 default:
                     return CSSPEnumsRes.Empty;
             }

@@ -549,8 +549,8 @@ namespace CSSPEnums
     ///         FillRunPrecipByClimateSitePriorityForYear = 27,
     ///         FindMissingPrecipForProvince = 28,
     ///         ExportToArcGIS = 29,
-    ///         GenerateClassificationForCSSPVisualization = 30,
-    ///         GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
+    ///         GenerateClassificationForCSSPWebToolsVisualization = 30,
+    ///         GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
     ///         OpenDataCSVNationalOfMWQMSites = 32,
     ///         OpenDataCSVNationalOfMWQMSamples = 33,
     ///         ProvinceToolsCreateClassificationInputsKML = 34,
@@ -564,8 +564,9 @@ namespace CSSPEnums
     ///         FillRunDischargesByHydrometricSitePriorityForYear = 42,
     ///         FindMissingDischargesForProvince = 43,
     ///         LoadHydrometricDataValue = 44,
-    ///         GenerateKMLFileClassificationForCSSPVisualization = 45,
+    ///         GenerateKMLFileClassificationForCSSPWebToolsVisualization = 45,
     ///         ProvinceToolsGenerateStats = 46,
+    ///         MikeScenarioPrepareResults = 47,
     ///     }
     /// </code>
     /// </remarks>
@@ -688,13 +689,13 @@ namespace CSSPEnums
         /// </summary>
         ExportToArcGIS = 29,
         /// <summary>
-        /// 30 -- en [Generate classification for CSSP visualization] ---- fr [Generate classification for CSSP visualization (fr)]
+        /// 30 -- en [Generate classification for CSSPWebTools visualization] ---- fr [Generate classification for CSSPWebTools visualization (fr)]
         /// </summary>
-        GenerateClassificationForCSSPVisualization = 30,
+        GenerateClassificationForCSSPWebToolsVisualization = 30,
         /// <summary>
-        /// 31 -- en [Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization] ---- fr [Generate links between MWQM Sites and Pollution Source Sites for CSSP visualization (fr)]
+        /// 31 -- en [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization] ---- fr [Generate links between MWQM Sites and Pollution Source Sites for CSSPWebTools visualization (fr)]
         /// </summary>
-        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPVisualization = 31,
+        GenerateLinksBetweenMWQMSitesAndPolSourceSitesForCSSPWebToolsVisualization = 31,
         /// <summary>
         /// 32 -- en [Open Data CSV national of MWQM Sites] ---- fr [Open Data CSV national of MWQM Sites (fr)]
         /// </summary>
@@ -748,13 +749,17 @@ namespace CSSPEnums
         /// </summary>
         LoadHydrometricDataValue = 44,
         /// <summary>
-        /// 45 -- en [Generate KML file classification for CSSP visualization] ---- fr [Generate KML file classification for CSSP visualization (fr)]
+        /// 45 -- en [Generate KML file classification for CSSPWebTools visualization] ---- fr [Generate KML file classification for CSSPWebTools visualization (fr)]
         /// </summary>
-        GenerateKMLFileClassificationForCSSPVisualization = 45,
+        GenerateKMLFileClassificationForCSSPWebToolsVisualization = 45,
         /// <summary>
         /// 46 -- en [Province Tools Generate Stats] ---- fr [Province Tools Generate Stats (fr)]
         /// </summary>
         ProvinceToolsGenerateStats = 46,
+        /// <summary>
+        /// 47 -- en [MIKE Scenario Prepare Results] ---- fr [MIKE Scenario Prepare Results (fr)]
+        /// </summary>
+        MikeScenarioPrepareResults = 47,
     }
     /// <summary>
     /// > [!NOTE]
