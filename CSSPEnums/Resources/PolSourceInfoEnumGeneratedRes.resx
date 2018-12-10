@@ -3763,7 +3763,7 @@
   <value></value>
 </data>
 <data name="PolSourceInfoEnumWharfRecreationalReport" xml:space="preserve">
-  <value>used for recreational purposes.  </value>
+  <value>used for recreational purposes.  At this site there </value>
 </data>
 <data name="PolSourceInfoEnumWharfRecreationalText" xml:space="preserve">
   <value>Private, </value>
@@ -4003,7 +4003,7 @@
   <value>11601,11602,11603,11604</value>
 </data>
 <data name="PolSourceInfoEnumVesselCountNotApplicableReport" xml:space="preserve">
-  <value>Activities include a floating board-walk or a platform used for relaxation and  </value>
+  <value>are no boat and activities include a floating board-walk or a platform used for relaxation and  </value>
 </data>
 <data name="PolSourceInfoEnumVesselCountNotApplicableText" xml:space="preserve">
   <value>Not Observed,</value>

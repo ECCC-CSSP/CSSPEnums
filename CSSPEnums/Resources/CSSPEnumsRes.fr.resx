@@ -4096,4 +4096,34 @@
   <data name="AppTaskCommandEnumMikeScenarioPrepareResults" xml:space="preserve">
     <value>MIKE Scenario Prepare Results (fr)</value>
   </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_CSSP_LOGO" xml:space="preserve">
+    <value>SUBSECTOR_CSSP_LOGO</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_CURRENT_CLASSIFICATION_AND_SAMPLING_LOCATION_MAP" xml:space="preserve">
+    <value>SUBSECTOR_CURRENT_CLASSIFICATION_AND_SAMPLING_LOCATION_MAP</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_ECCC_AND_SWCP_LOGO" xml:space="preserve">
+    <value>SUBSECTOR_ECCC_AND_SWCP_LOGO</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_LOCATION_OF_SURVEY_AREA_MAP" xml:space="preserve">
+    <value>SUBSECTOR_LOCATION_OF_SURVEY_AREA_MAP</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_CONTACTS" xml:space="preserve">
+    <value>SUBSECTOR_MUNICIPALITY_CONTACTS</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_DETAIL" xml:space="preserve">
+    <value>SUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_DETAIL</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_MAP" xml:space="preserve">
+    <value>SUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_MAP</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_LOCATIONS_MAP" xml:space="preserve">
+    <value>SUBSECTOR_POLLUTION_SOURCE_LOCATIONS_MAP</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES_COMPACT" xml:space="preserve">
+    <value>SUBSECTOR_POLLUTION_SOURCE_SITES_COMPACT</value>
+  </data>
+  <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP" xml:space="preserve">
+    <value>SUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP</value>
+  </data>
 </root>

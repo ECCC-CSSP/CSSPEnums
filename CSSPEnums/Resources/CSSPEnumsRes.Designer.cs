@@ -4556,6 +4556,34 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_CSSP_LOGO.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_CSSP_LOGO {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_CSSP_LOGO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_CURRENT_CLASSIFICATION_AND_SAMPLING_LOCATION_MAP.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_CURRENT_CLASSIFICATION_AND_SAMPLING_LOCATION_MAP {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_CURRENT_CLASSIFICATION_AND_SAMPLING_LOC" +
+                        "ATION_MAP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_ECCC_AND_SWCP_LOGO.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_ECCC_AND_SWCP_LOGO {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_ECCC_AND_SWCP_LOGO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SUBSECTOR_FC_SUMMARY_STAT_ALL.
         /// </summary>
         public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_FC_SUMMARY_STAT_ALL {
@@ -4583,6 +4611,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_LOCATION_OF_SURVEY_AREA_MAP.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_LOCATION_OF_SURVEY_AREA_MAP {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_LOCATION_OF_SURVEY_AREA_MAP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SUBSECTOR_MAP_ACTIVE_MWQM_SITES.
         /// </summary>
         public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MAP_ACTIVE_MWQM_SITES {
@@ -4606,6 +4643,33 @@ namespace CSSPEnums.Resources {
         public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES {
             get {
                 return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MUNICIPALITY_CONTACTS.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_CONTACTS {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_CONTACTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_DETAIL.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_DETAIL {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_DETAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_MAP.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_MAP {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_MUNICIPALITY_INFRASTRUCTURE_MAP", resourceCulture);
             }
         }
         
@@ -4691,6 +4755,15 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_POLLUTION_SOURCE_LOCATIONS_MAP.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_LOCATIONS_MAP {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_LOCATIONS_MAP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SUBSECTOR_POLLUTION_SOURCE_SITES.
         /// </summary>
         public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES {
@@ -4700,11 +4773,29 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_POLLUTION_SOURCE_SITES_COMPACT.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES_COMPACT {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_POLLUTION_SOURCE_SITES_COMPACT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SUBSECTOR_RE_EVALUATION_COVER_PAGE.
         /// </summary>
         public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE {
             get {
                 return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_RE_EVALUATION_COVER_PAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP.
+        /// </summary>
+        public static string ReportGenerateObjectsKeywordEnumSUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP {
+            get {
+                return ResourceManager.GetString("ReportGenerateObjectsKeywordEnumSUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP", resourceCulture);
             }
         }
         
