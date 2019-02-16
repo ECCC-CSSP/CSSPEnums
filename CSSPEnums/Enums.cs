@@ -89,9 +89,8 @@ namespace CSSPEnums
     }
     public enum AerationTypeEnum
     {
-        Diffuser = 1,
-        Surface = 2,
-        NotApplicable = 3,
+        MechanicalAirLines = 1,
+        MechanicalSurfaceMixers = 2,
     }
     public enum AlarmSystemTypeEnum
     {
@@ -272,6 +271,11 @@ namespace CSSPEnums
         ChlorinationNoDechlorinationSeasonal = 6,
         ChlorinationWithDechlorinationSeasonal = 7,
     }
+    public enum DrogueTypeEnum
+    {
+        SmallDrogue = 1,
+        LargeDrogue = 2,
+    }
     public enum EmailTypeEnum
     {
         Personal = 1,
@@ -349,7 +353,7 @@ namespace CSSPEnums
         WWTP = 1,
         LiftStation = 2,
         Other = 3,
-        SeeOther = 4,
+        SeeOtherMunicipality = 4,
         LineOverflow = 5,
     }
     public enum KMZActionEnum
@@ -812,6 +816,16 @@ namespace CSSPEnums
         TricklingFilters = 3,
         SequencingBatchReator = 4,
         OxidationDitch = 5,
+        ExtendedAeration = 6,
+        ContactStabilization = 7,
+        PhysicalChemicalProcesses = 8,
+        //MechanicalMixer = 9,
+        MovingBedBioReactor = 10,
+        BiologicalAearatedFilters = 11,
+        AeratedSubmergedBioFilmReactor = 12,
+        IntegratedFixedFilmActivatedSludge = 13,
+        ActivatedSludge = 14,
+        ExtendedActivatedSludge = 15,
     }
     public enum SiteTypeEnum
     {
@@ -977,7 +991,7 @@ namespace CSSPEnums
         MeshNode = 38,
         WebTideNode = 39,
         SamplingPlan = 40,
-        SeeOther = 41,
+        SeeOtherMunicipality = 41,
         LineOverflow = 42,
         BoxModelInputs = 43,
         BoxModelResults = 44,
@@ -1023,6 +1037,7 @@ namespace CSSPEnums
         ConditionallyRestricted = 84,
         OpenDataNational = 85,
         PolSourceSiteMikeScenario = 86,
+        SubsectorTools = 87,
     }
     public enum WebTideDataSetEnum
     {

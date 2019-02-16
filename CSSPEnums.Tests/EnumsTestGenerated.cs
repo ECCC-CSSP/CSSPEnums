@@ -273,14 +273,11 @@ namespace CSSPEnums.Tests
         
                     switch ((AerationTypeEnum)i)
                     {
-                        case AerationTypeEnum.Diffuser:
-                            Assert.AreEqual(CSSPEnumsRes.AerationTypeEnumDiffuser, retStr);
+                        case AerationTypeEnum.MechanicalAirLines:
+                            Assert.AreEqual(CSSPEnumsRes.AerationTypeEnumMechanicalAirLines, retStr);
                             break;
-                        case AerationTypeEnum.Surface:
-                            Assert.AreEqual(CSSPEnumsRes.AerationTypeEnumSurface, retStr);
-                            break;
-                        case AerationTypeEnum.NotApplicable:
-                            Assert.AreEqual(CSSPEnumsRes.AerationTypeEnumNotApplicable, retStr);
+                        case AerationTypeEnum.MechanicalSurfaceMixers:
+                            Assert.AreEqual(CSSPEnumsRes.AerationTypeEnumMechanicalSurfaceMixers, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -1127,6 +1124,41 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_GetEnumText_DrogueTypeEnum_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.GetResValueForTypeAndID(typeof(DrogueTypeEnum), -100);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(DrogueTypeEnum), 10000000);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                retStr = enums.GetResValueForTypeAndID(typeof(DrogueTypeEnum), null);
+                Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+
+                foreach (int i in Enum.GetValues(typeof(DrogueTypeEnum)))
+                {
+                    retStr = enums.GetResValueForTypeAndID(typeof(DrogueTypeEnum), i);
+        
+                    switch ((DrogueTypeEnum)i)
+                    {
+                        case DrogueTypeEnum.SmallDrogue:
+                            Assert.AreEqual(CSSPEnumsRes.DrogueTypeEnumSmallDrogue, retStr);
+                            break;
+                        case DrogueTypeEnum.LargeDrogue:
+                            Assert.AreEqual(CSSPEnumsRes.DrogueTypeEnumLargeDrogue, retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_GetEnumText_EmailTypeEnum_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -1493,8 +1525,8 @@ namespace CSSPEnums.Tests
                         case InfrastructureTypeEnum.Other:
                             Assert.AreEqual(CSSPEnumsRes.InfrastructureTypeEnumOther, retStr);
                             break;
-                        case InfrastructureTypeEnum.SeeOther:
-                            Assert.AreEqual(CSSPEnumsRes.InfrastructureTypeEnumSeeOther, retStr);
+                        case InfrastructureTypeEnum.SeeOtherMunicipality:
+                            Assert.AreEqual(CSSPEnumsRes.InfrastructureTypeEnumSeeOtherMunicipality, retStr);
                             break;
                         case InfrastructureTypeEnum.LineOverflow:
                             Assert.AreEqual(CSSPEnumsRes.InfrastructureTypeEnumLineOverflow, retStr);
@@ -3539,6 +3571,33 @@ namespace CSSPEnums.Tests
                         case SecondaryTreatmentTypeEnum.OxidationDitch:
                             Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumOxidationDitch, retStr);
                             break;
+                        case SecondaryTreatmentTypeEnum.ExtendedAeration:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumExtendedAeration, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.ContactStabilization:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumContactStabilization, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.PhysicalChemicalProcesses:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumPhysicalChemicalProcesses, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.MovingBedBioReactor:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumMovingBedBioReactor, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.BiologicalAearatedFilters:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumBiologicalAearatedFilters, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.AeratedSubmergedBioFilmReactor:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumAeratedSubmergedBioFilmReactor, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.IntegratedFixedFilmActivatedSludge:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumIntegratedFixedFilmActivatedSludge, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.ActivatedSludge:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumActivatedSludge, retStr);
+                            break;
+                        case SecondaryTreatmentTypeEnum.ExtendedActivatedSludge:
+                            Assert.AreEqual(CSSPEnumsRes.SecondaryTreatmentTypeEnumExtendedActivatedSludge, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -4274,8 +4333,8 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.SamplingPlan:
                             Assert.AreEqual(CSSPEnumsRes.TVTypeEnumSamplingPlan, retStr);
                             break;
-                        case TVTypeEnum.SeeOther:
-                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumSeeOther, retStr);
+                        case TVTypeEnum.SeeOtherMunicipality:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumSeeOtherMunicipality, retStr);
                             break;
                         case TVTypeEnum.LineOverflow:
                             Assert.AreEqual(CSSPEnumsRes.TVTypeEnumLineOverflow, retStr);
@@ -4411,6 +4470,9 @@ namespace CSSPEnums.Tests
                             break;
                         case TVTypeEnum.PolSourceSiteMikeScenario:
                             Assert.AreEqual(CSSPEnumsRes.TVTypeEnumPolSourceSiteMikeScenario, retStr);
+                            break;
+                        case TVTypeEnum.SubsectorTools:
+                            Assert.AreEqual(CSSPEnumsRes.TVTypeEnumSubsectorTools, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -4778,9 +4840,8 @@ namespace CSSPEnums.Tests
 
                     switch ((AerationTypeEnum)i)
                     {
-                        case AerationTypeEnum.Diffuser:
-                        case AerationTypeEnum.Surface:
-                        case AerationTypeEnum.NotApplicable:
+                        case AerationTypeEnum.MechanicalAirLines:
+                        case AerationTypeEnum.MechanicalSurfaceMixers:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -5390,6 +5451,39 @@ namespace CSSPEnums.Tests
             }
         }
         [TestMethod]
+        public void Enums_DrogueTypeOK_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                string retStr = enums.EnumTypeOK(typeof(DrogueTypeEnum), null);
+                Assert.AreEqual("", retStr);
+
+                retStr = enums.EnumTypeOK(typeof(DrogueTypeEnum), -100);
+                Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DrogueTypeEnum"), retStr);
+
+                retStr = enums.EnumTypeOK(typeof(DrogueTypeEnum), 10000000);
+                Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DrogueTypeEnum"), retStr);
+
+                foreach (int i in Enum.GetValues(typeof(DrogueTypeEnum)))
+                {
+                    retStr = enums.EnumTypeOK(typeof(DrogueTypeEnum), i);
+
+                    switch ((DrogueTypeEnum)i)
+                    {
+                        case DrogueTypeEnum.SmallDrogue:
+                        case DrogueTypeEnum.LargeDrogue:
+                            Assert.AreEqual("", retStr);
+                            break;
+                        default:
+                            Assert.AreEqual(string.Format(CSSPEnumsRes._IsRequired, "DrogueTypeEnum"), retStr);
+                            break;
+                    }
+                }
+            }
+        }
+        [TestMethod]
         public void Enums_EmailTypeOK_Test()
         {
             foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
@@ -5654,7 +5748,7 @@ namespace CSSPEnums.Tests
                         case InfrastructureTypeEnum.WWTP:
                         case InfrastructureTypeEnum.LiftStation:
                         case InfrastructureTypeEnum.Other:
-                        case InfrastructureTypeEnum.SeeOther:
+                        case InfrastructureTypeEnum.SeeOtherMunicipality:
                         case InfrastructureTypeEnum.LineOverflow:
                             Assert.AreEqual("", retStr);
                             break;
@@ -7040,6 +7134,15 @@ namespace CSSPEnums.Tests
                         case SecondaryTreatmentTypeEnum.TricklingFilters:
                         case SecondaryTreatmentTypeEnum.SequencingBatchReator:
                         case SecondaryTreatmentTypeEnum.OxidationDitch:
+                        case SecondaryTreatmentTypeEnum.ExtendedAeration:
+                        case SecondaryTreatmentTypeEnum.ContactStabilization:
+                        case SecondaryTreatmentTypeEnum.PhysicalChemicalProcesses:
+                        case SecondaryTreatmentTypeEnum.MovingBedBioReactor:
+                        case SecondaryTreatmentTypeEnum.BiologicalAearatedFilters:
+                        case SecondaryTreatmentTypeEnum.AeratedSubmergedBioFilmReactor:
+                        case SecondaryTreatmentTypeEnum.IntegratedFixedFilmActivatedSludge:
+                        case SecondaryTreatmentTypeEnum.ActivatedSludge:
+                        case SecondaryTreatmentTypeEnum.ExtendedActivatedSludge:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -7541,7 +7644,7 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.MeshNode:
                         case TVTypeEnum.WebTideNode:
                         case TVTypeEnum.SamplingPlan:
-                        case TVTypeEnum.SeeOther:
+                        case TVTypeEnum.SeeOtherMunicipality:
                         case TVTypeEnum.LineOverflow:
                         case TVTypeEnum.BoxModelInputs:
                         case TVTypeEnum.BoxModelResults:
@@ -7587,6 +7690,7 @@ namespace CSSPEnums.Tests
                         case TVTypeEnum.ConditionallyRestricted:
                         case TVTypeEnum.OpenDataNational:
                         case TVTypeEnum.PolSourceSiteMikeScenario:
+                        case TVTypeEnum.SubsectorTools:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -10283,6 +10387,33 @@ namespace CSSPEnums.Tests
                 enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
 
                 List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(DisinfectionTypeEnum));
+                Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
+
+                EnumIDAndText enumTextOrdered = new EnumIDAndText();
+                Assert.IsNotNull(enumTextOrdered);
+
+                for (int i = 0, count = enumTextOrderedList.Count; i < count; i++)
+                {
+                    Assert.AreEqual(enumTextOrderedList[i].EnumText, enumTextOrderedList2[i].EnumText);
+                    Assert.AreEqual(enumTextOrderedList[i].EnumID, enumTextOrderedList2[i].EnumID);
+                }
+            }
+        }
+        [TestMethod]
+        public void Enums_DrogueTypeEnumTextOrdered_Test()
+        {
+            foreach (CultureInfo culture in new List<CultureInfo>() { new CultureInfo("en-CA"), new CultureInfo("fr-CA") })
+            {
+                SetupTest(culture);
+
+                List<EnumIDAndText> enumTextOrderedList = new List<EnumIDAndText>();
+                foreach (int i in Enum.GetValues(typeof(DrogueTypeEnum)))
+                {
+                    enumTextOrderedList.Add(new EnumIDAndText() { EnumID = i, EnumText = enums.GetResValueForTypeAndID(typeof(DrogueTypeEnum), i) });
+                }
+                enumTextOrderedList = enumTextOrderedList.OrderBy(c => c.EnumText).ToList();
+
+                List<EnumIDAndText> enumTextOrderedList2 = enums.GetEnumTextOrderedList(typeof(DrogueTypeEnum));
                 Assert.AreEqual(enumTextOrderedList.Count, enumTextOrderedList2.Count);
 
                 EnumIDAndText enumTextOrdered = new EnumIDAndText();

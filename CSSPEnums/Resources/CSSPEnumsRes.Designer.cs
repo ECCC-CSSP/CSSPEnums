@@ -196,29 +196,20 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Diffuser.
+        ///   Looks up a localized string similar to Mechanical Air Lines.
         /// </summary>
-        public static string AerationTypeEnumDiffuser {
+        public static string AerationTypeEnumMechanicalAirLines {
             get {
-                return ResourceManager.GetString("AerationTypeEnumDiffuser", resourceCulture);
+                return ResourceManager.GetString("AerationTypeEnumMechanicalAirLines", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Not Applicable.
+        ///   Looks up a localized string similar to Mechanical Surface Mixers.
         /// </summary>
-        public static string AerationTypeEnumNotApplicable {
+        public static string AerationTypeEnumMechanicalSurfaceMixers {
             get {
-                return ResourceManager.GetString("AerationTypeEnumNotApplicable", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Surface.
-        /// </summary>
-        public static string AerationTypeEnumSurface {
-            get {
-                return ResourceManager.GetString("AerationTypeEnumSurface", resourceCulture);
+                return ResourceManager.GetString("AerationTypeEnumMechanicalSurfaceMixers", resourceCulture);
             }
         }
         
@@ -516,15 +507,6 @@ namespace CSSPEnums.Resources {
         public static string AppTaskCommandEnumCreateDocumentFromParameters {
             get {
                 return ResourceManager.GetString("AppTaskCommandEnumCreateDocumentFromParameters", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Create document from parameters.
-        /// </summary>
-        public static string AppTaskCommandEnumCreateDocumentFromParameters1 {
-            get {
-                return ResourceManager.GetString("AppTaskCommandEnumCreateDocumentFromParameters1", resourceCulture);
             }
         }
         
@@ -1694,6 +1676,24 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Large drogue.
+        /// </summary>
+        public static string DrogueTypeEnumLargeDrogue {
+            get {
+                return ResourceManager.GetString("DrogueTypeEnumLargeDrogue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Small drogue.
+        /// </summary>
+        public static string DrogueTypeEnumSmallDrogue {
+            get {
+                return ResourceManager.GetString("DrogueTypeEnumSmallDrogue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EmailType.
         /// </summary>
         public static string EmailType {
@@ -2684,11 +2684,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to See other.
+        ///   Looks up a localized string similar to See other municipality.
         /// </summary>
-        public static string InfrastructureTypeEnumSeeOther {
+        public static string InfrastructureTypeEnumSeeOtherMunicipality {
             get {
-                return ResourceManager.GetString("InfrastructureTypeEnumSeeOther", resourceCulture);
+                return ResourceManager.GetString("InfrastructureTypeEnumSeeOtherMunicipality", resourceCulture);
             }
         }
         
@@ -6348,6 +6348,78 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Activated sludge.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumActivatedSludge {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumActivatedSludge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aerated submerged bio film reactor.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumAeratedSubmergedBioFilmReactor {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumAeratedSubmergedBioFilmReactor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Biological aearated filters.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumBiologicalAearatedFilters {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumBiologicalAearatedFilters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact stabilization.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumContactStabilization {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumContactStabilization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extended activated sludge.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumExtendedActivatedSludge {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumExtendedActivatedSludge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extended aeration.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumExtendedAeration {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumExtendedAeration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Integrated fixed film activated sludge.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumIntegratedFixedFilmActivatedSludge {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumIntegratedFixedFilmActivatedSludge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moving bed bio reactor.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumMovingBedBioReactor {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumMovingBedBioReactor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Not applicable.
         /// </summary>
         public static string SecondaryTreatmentTypeEnumNotApplicable {
@@ -6362,6 +6434,15 @@ namespace CSSPEnums.Resources {
         public static string SecondaryTreatmentTypeEnumOxidationDitch {
             get {
                 return ResourceManager.GetString("SecondaryTreatmentTypeEnumOxidationDitch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Physical chemical processes.
+        /// </summary>
+        public static string SecondaryTreatmentTypeEnumPhysicalChemicalProcesses {
+            get {
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumPhysicalChemicalProcesses", resourceCulture);
             }
         }
         
@@ -7986,11 +8067,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to See other.
+        ///   Looks up a localized string similar to See other municipality.
         /// </summary>
-        public static string TVTypeEnumSeeOther {
+        public static string TVTypeEnumSeeOtherMunicipality {
             get {
-                return ResourceManager.GetString("TVTypeEnumSeeOther", resourceCulture);
+                return ResourceManager.GetString("TVTypeEnumSeeOtherMunicipality", resourceCulture);
             }
         }
         
@@ -8009,6 +8090,15 @@ namespace CSSPEnums.Resources {
         public static string TVTypeEnumSubsector {
             get {
                 return ResourceManager.GetString("TVTypeEnumSubsector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subsector tools.
+        /// </summary>
+        public static string TVTypeEnumSubsectorTools {
+            get {
+                return ResourceManager.GetString("TVTypeEnumSubsectorTools", resourceCulture);
             }
         }
         

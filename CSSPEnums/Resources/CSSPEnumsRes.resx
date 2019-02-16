@@ -132,12 +132,6 @@
   <data name="AerationType" xml:space="preserve">
     <value>AerationType</value>
   </data>
-  <data name="AerationTypeEnumDiffuser" xml:space="preserve">
-    <value>Diffuser</value>
-  </data>
-  <data name="AerationTypeEnumSurface" xml:space="preserve">
-    <value>Surface</value>
-  </data>
   <data name="AlarmSystemType" xml:space="preserve">
     <value>AlarmSystemType</value>
   </data>
@@ -735,8 +729,8 @@
   <data name="InfrastructureTypeEnumOther" xml:space="preserve">
     <value>Other</value>
   </data>
-  <data name="InfrastructureTypeEnumSeeOther" xml:space="preserve">
-    <value>See other</value>
+  <data name="InfrastructureTypeEnumSeeOtherMunicipality" xml:space="preserve">
+    <value>See other municipality</value>
   </data>
   <data name="InfrastructureTypeEnumWWTP" xml:space="preserve">
     <value>WWTP</value>
@@ -2319,8 +2313,8 @@
   <data name="TVTypeEnumSector" xml:space="preserve">
     <value>Sector</value>
   </data>
-  <data name="TVTypeEnumSeeOther" xml:space="preserve">
-    <value>See other</value>
+  <data name="TVTypeEnumSeeOtherMunicipality" xml:space="preserve">
+    <value>See other municipality</value>
   </data>
   <data name="TVTypeEnumSpill" xml:space="preserve">
     <value>Spill</value>
@@ -2532,9 +2526,6 @@
   <data name="AppTaskCommandEnumCreateXlsxPDF" xml:space="preserve">
     <value>Create Xlsx PDF</value>
   </data>
-  <data name="AppTaskCommandEnumCreateDocumentFromParameters1" xml:space="preserve">
-    <value>Create document from parameters</value>
-  </data>
   <data name="AppTaskCommandEnumExportToArcGIS" xml:space="preserve">
     <value>Export to Arc GIS</value>
   </data>
@@ -2678,9 +2669,6 @@
   </data>
   <data name="TVTypeEnumOpenData" xml:space="preserve">
     <value>Open Data</value>
-  </data>
-  <data name="AerationTypeEnumNotApplicable" xml:space="preserve">
-    <value>Not Applicable</value>
   </data>
   <data name="AppTaskCommandEnumOpenDataXlsxOfMWQMSitesAndSamples" xml:space="preserve">
     <value>Open Data Xlsx Of MWQM Sites And Samples</value>
@@ -2861,5 +2849,47 @@
   </data>
   <data name="ReportGenerateObjectsKeywordEnumSUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP" xml:space="preserve">
     <value>SUBSECTOR_RECOMMENDED_CLASSIFICATION_MAP</value>
+  </data>
+  <data name="AerationTypeEnumMechanicalAirLines" xml:space="preserve">
+    <value>Mechanical Air Lines</value>
+  </data>
+  <data name="AerationTypeEnumMechanicalSurfaceMixers" xml:space="preserve">
+    <value>Mechanical Surface Mixers</value>
+  </data>
+  <data name="DrogueTypeEnumLargeDrogue" xml:space="preserve">
+    <value>Large drogue</value>
+  </data>
+  <data name="DrogueTypeEnumSmallDrogue" xml:space="preserve">
+    <value>Small drogue</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumActivatedSludge" xml:space="preserve">
+    <value>Activated sludge</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumAeratedSubmergedBioFilmReactor" xml:space="preserve">
+    <value>Aerated submerged bio film reactor</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumBiologicalAearatedFilters" xml:space="preserve">
+    <value>Biological aearated filters</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumContactStabilization" xml:space="preserve">
+    <value>Contact stabilization</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumExtendedActivatedSludge" xml:space="preserve">
+    <value>Extended activated sludge</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumExtendedAeration" xml:space="preserve">
+    <value>Extended aeration</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumIntegratedFixedFilmActivatedSludge" xml:space="preserve">
+    <value>Integrated fixed film activated sludge</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumMovingBedBioReactor" xml:space="preserve">
+    <value>Moving bed bio reactor</value>
+  </data>
+  <data name="SecondaryTreatmentTypeEnumPhysicalChemicalProcesses" xml:space="preserve">
+    <value>Physical chemical processes</value>
+  </data>
+  <data name="TVTypeEnumSubsectorTools" xml:space="preserve">
+    <value>Subsector tools</value>
   </data>
 </root>
