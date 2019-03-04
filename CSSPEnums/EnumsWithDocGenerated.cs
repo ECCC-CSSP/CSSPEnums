@@ -285,26 +285,21 @@ namespace CSSPEnums
     /// <code>
     ///     public enum AerationTypeEnum
     ///     {
-    ///         Diffuser = 1,
-    ///         Surface = 2,
-    ///         NotApplicable = 3,
+    ///         MechanicalAirLines = 1,
+    ///         MechanicalSurfaceMixers = 2,
     ///     }
     /// </code>
     /// </remarks>
     public enum AerationTypeEnum
     {
         /// <summary>
-        /// 1 -- en [Diffuser] ---- fr [Diffuser (fr)]
+        /// 1 -- en [Mechanical Air Lines] ---- fr [Ligne d'air méchanique]
         /// </summary>
-        Diffuser = 1,
+        MechanicalAirLines = 1,
         /// <summary>
-        /// 2 -- en [Surface] ---- fr [Surface (fr)]
+        /// 2 -- en [Mechanical Surface Mixers] ---- fr [Mélangeurs de surface mécaniques]
         /// </summary>
-        Surface = 2,
-        /// <summary>
-        /// 3 -- en [Not Applicable] ---- fr [Not Applicable (fr)]
-        /// </summary>
-        NotApplicable = 3,
+        MechanicalSurfaceMixers = 2,
     }
     /// <summary>
     /// > [!NOTE]
@@ -374,7 +369,7 @@ namespace CSSPEnums
     public enum AnalysisCalculationTypeEnum
     {
         /// <summary>
-        /// 1 -- en [All - All - All] ---- fr [All - All - All (fr)]
+        /// 1 -- en [All - All - All] ---- fr [All - All - All]
         /// </summary>
         AllAllAll = 1,
         /// <summary>
@@ -1243,6 +1238,34 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [DrogueRun] (CSSPModels.DrogueRun.html#CSSPModels_DrogueRun_DrogueType), [DrogueRunExtraA] (CSSPModels.DrogueRunExtraA.html#CSSPModels_DrogueRunExtraA_DrogueType), [DrogueRunExtraB] (CSSPModels.DrogueRunExtraB.html#CSSPModels_DrogueRunExtraB_DrogueType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [DrogueRunService] (CSSPServices.DrogueRunService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [DrogueRunController] (CSSPWebAPI.Controllers.DrogueRController.html), </para>
+    /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
+    /// </summary>
+    /// <remarks>
+    /// <code>
+    ///     public enum DrogueTypeEnum
+    ///     {
+    ///         SmallDrogue = 1,
+    ///         LargeDrogue = 2,
+    ///     }
+    /// </code>
+    /// </remarks>
+    public enum DrogueTypeEnum
+    {
+        /// <summary>
+        /// 1 -- en [Small drogue] ---- fr [Small drogue (fr)]
+        /// </summary>
+        SmallDrogue = 1,
+        /// <summary>
+        /// 2 -- en [Large drogue] ---- fr [Large drogue (fr)]
+        /// </summary>
+        LargeDrogue = 2,
+    }
+    /// <summary>
+    /// > [!NOTE]
+    /// > 
     /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [Email] (CSSPModels.Email.html#CSSPModels_Email_EmailType), [EmailExtraA] (CSSPModels.EmailExtraA.html#CSSPModels_EmailExtraA_EmailType), [EmailExtraB] (CSSPModels.EmailExtraB.html#CSSPModels_EmailExtraB_EmailType)</para>
     /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [EmailService] (CSSPServices.EmailService.html)</para>
     /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [EmailController] (CSSPWebAPI.Controllers.EmaController.html), </para>
@@ -1627,7 +1650,7 @@ namespace CSSPEnums
     ///         WWTP = 1,
     ///         LiftStation = 2,
     ///         Other = 3,
-    ///         SeeOther = 4,
+    ///         SeeOtherMunicipality = 4,
     ///         LineOverflow = 5,
     ///     }
     /// </code>
@@ -1647,9 +1670,9 @@ namespace CSSPEnums
         /// </summary>
         Other = 3,
         /// <summary>
-        /// 4 -- en [See other] ---- fr [See other (fr)]
+        /// 4 -- en [See other municipality] ---- fr [See other municipality (fr)]
         /// </summary>
-        SeeOther = 4,
+        SeeOtherMunicipality = 4,
         /// <summary>
         /// 5 -- en [Line overflow] ---- fr [Line overflow (fr)]
         /// </summary>
@@ -1952,9 +1975,9 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskExtraA] (CSSPModels.AppTaskExtraA.html#CSSPModels_AppTaskExtraA_Language), [AppTaskExtraB] (CSSPModels.AppTaskExtraB.html#CSSPModels_AppTaskExtraB_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [AppTaskLanguageExtraA] (CSSPModels.AppTaskLanguageExtraA.html#CSSPModels_AppTaskLanguageExtraA_Language), [AppTaskLanguageExtraB] (CSSPModels.AppTaskLanguageExtraB.html#CSSPModels_AppTaskLanguageExtraB_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [BoxModelLanguageExtraA] (CSSPModels.BoxModelLanguageExtraA.html#CSSPModels_BoxModelLanguageExtraA_Language), [BoxModelLanguageExtraB] (CSSPModels.BoxModelLanguageExtraB.html#CSSPModels_BoxModelLanguageExtraB_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [DocTemplateExtraA] (CSSPModels.DocTemplateExtraA.html#CSSPModels_DocTemplateExtraA_Language), [DocTemplateExtraB] (CSSPModels.DocTemplateExtraB.html#CSSPModels_DocTemplateExtraB_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListContactLanguageExtraA] (CSSPModels.EmailDistributionListContactLanguageExtraA.html#CSSPModels_EmailDistributionListContactLanguageExtraA_Language), [EmailDistributionListContactLanguageExtraB] (CSSPModels.EmailDistributionListContactLanguageExtraB.html#CSSPModels_EmailDistributionListContactLanguageExtraB_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [EmailDistributionListLanguageExtraA] (CSSPModels.EmailDistributionListLanguageExtraA.html#CSSPModels_EmailDistributionListLanguageExtraA_Language), [EmailDistributionListLanguageExtraB] (CSSPModels.EmailDistributionListLanguageExtraB.html#CSSPModels_EmailDistributionListLanguageExtraB_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [InfrastructureLanguageExtraA] (CSSPModels.InfrastructureLanguageExtraA.html#CSSPModels_InfrastructureLanguageExtraA_Language), [InfrastructureLanguageExtraB] (CSSPModels.InfrastructureLanguageExtraB.html#CSSPModels_InfrastructureLanguageExtraB_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMRunLanguageExtraA] (CSSPModels.MWQMRunLanguageExtraA.html#CSSPModels_MWQMRunLanguageExtraA_Language), [MWQMRunLanguageExtraB] (CSSPModels.MWQMRunLanguageExtraB.html#CSSPModels_MWQMRunLanguageExtraB_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSampleLanguageExtraA] (CSSPModels.MWQMSampleLanguageExtraA.html#CSSPModels_MWQMSampleLanguageExtraA_Language), [MWQMSampleLanguageExtraB] (CSSPModels.MWQMSampleLanguageExtraB.html#CSSPModels_MWQMSampleLanguageExtraB_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [MWQMSubsectorLanguageExtraA] (CSSPModels.MWQMSubsectorLanguageExtraA.html#CSSPModels_MWQMSubsectorLanguageExtraA_Language), [MWQMSubsectorLanguageExtraB] (CSSPModels.MWQMSubsectorLanguageExtraB.html#CSSPModels_MWQMSubsectorLanguageExtraB_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportSectionLanguageExtraA] (CSSPModels.ReportSectionLanguageExtraA.html#CSSPModels_ReportSectionLanguageExtraA_Language), [ReportSectionLanguageExtraB] (CSSPModels.ReportSectionLanguageExtraB.html#CSSPModels_ReportSectionLanguageExtraB_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [ReportTypeLanguageExtraA] (CSSPModels.ReportTypeLanguageExtraA.html#CSSPModels_ReportTypeLanguageExtraA_Language), [ReportTypeLanguageExtraB] (CSSPModels.ReportTypeLanguageExtraB.html#CSSPModels_ReportTypeLanguageExtraB_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [SpillLanguageExtraA] (CSSPModels.SpillLanguageExtraA.html#CSSPModels_SpillLanguageExtraA_Language), [SpillLanguageExtraB] (CSSPModels.SpillLanguageExtraB.html#CSSPModels_SpillLanguageExtraB_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileExtraA] (CSSPModels.TVFileExtraA.html#CSSPModels_TVFileExtraA_Language), [TVFileExtraB] (CSSPModels.TVFileExtraB.html#CSSPModels_TVFileExtraB_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVFileLanguageExtraA] (CSSPModels.TVFileLanguageExtraA.html#CSSPModels_TVFileLanguageExtraA_Language), [TVFileLanguageExtraB] (CSSPModels.TVFileLanguageExtraB.html#CSSPModels_TVFileLanguageExtraB_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [TVItemLanguageExtraA] (CSSPModels.TVItemLanguageExtraA.html#CSSPModels_TVItemLanguageExtraA_Language), [TVItemLanguageExtraB] (CSSPModels.TVItemLanguageExtraB.html#CSSPModels_TVItemLanguageExtraB_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [VPScenarioLanguageExtraA] (CSSPModels.VPScenarioLanguageExtraA.html#CSSPModels_VPScenarioLanguageExtraA_Language), [VPScenarioLanguageExtraB] (CSSPModels.VPScenarioLanguageExtraB.html#CSSPModels_VPScenarioLanguageExtraB_Language), [Query] (CSSPModels.Query.html#CSSPModels_Query_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [QueryService] (CSSPServices.QueryService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
-    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskController] (CSSPWebAPI.Controllers.AppTaskController.html), [AppTaskLanguageController] (CSSPWebAPI.Controllers.AppTaskLanguageController.html), [BoxModelLanguageController] (CSSPWebAPI.Controllers.BoxModelLanguageController.html), [DocTemplateController] (CSSPWebAPI.Controllers.DocTemplateController.html), [EmailDistributionListContactLanguageController] (CSSPWebAPI.Controllers.EmailDistributionListContactLanguageController.html), [EmailDistributionListLanguageController] (CSSPWebAPI.Controllers.EmailDistributionListLanguageController.html), [InfrastructureLanguageController] (CSSPWebAPI.Controllers.InfrastructureLanguageController.html), [MWQMRunLanguageController] (CSSPWebAPI.Controllers.MWQMRunLanguageController.html), [MWQMSampleLanguageController] (CSSPWebAPI.Controllers.MWQMSampleLanguageController.html), [MWQMSubsectorLanguageController] (CSSPWebAPI.Controllers.MWQMSubsectorLanguageController.html), [ReportSectionLanguageController] (CSSPWebAPI.Controllers.ReportSectionLanguageController.html), [ReportTypeLanguageController] (CSSPWebAPI.Controllers.ReportTypeLanguageController.html), [SpillLanguageController] (CSSPWebAPI.Controllers.SpillLanguageController.html), [TVFileController] (CSSPWebAPI.Controllers.TVFileController.html), [TVFileLanguageController] (CSSPWebAPI.Controllers.TVFileLanguageController.html), [TVItemLanguagontroller] (CSSPWebAPI.Controllers.TVItemLanguageController.html), [VPScenarioLanguageController] (CSSPWebAPI.Controllers.VPScenarioLanguageController.html), [QueryController] (CSSPWebAPI.Controllers.QueryController.html), [TVTextLanguageController] (CSSPWebAPI.Controllers.TVTextLanguageController.html), </para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [AppTask] (CSSPModels.AppTask.html#CSSPModels_AppTask_Language), [AppTaskExtraA] (CSSPModels.AppTaskExtraA.html#CSSPModels_AppTaskExtraA_Language), [AppTaskExtraB] (CSSPModels.AppTaskExtraB.html#CSSPModels_AppTaskExtraB_Language), [AppTaskLanguage] (CSSPModels.AppTaskLanguage.html#CSSPModels_AppTaskLanguage_Language), [AppTaskLanguageExtraA] (CSSPModels.AppTaskLanguageExtraA.html#CSSPModels_AppTaskLanguageExtraA_Language), [AppTaskLanguageExtraB] (CSSPModels.AppTaskLanguageExtraB.html#CSSPModels_AppTaskLanguageExtraB_Language), [BoxModelLanguage] (CSSPModels.BoxModelLanguage.html#CSSPModels_BoxModelLanguage_Language), [BoxModelLanguageExtraA] (CSSPModels.BoxModelLanguageExtraA.html#CSSPModels_BoxModelLanguageExtraA_Language), [BoxModelLanguageExtraB] (CSSPModels.BoxModelLanguageExtraB.html#CSSPModels_BoxModelLanguageExtraB_Language), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_Language), [DocTemplateExtraA] (CSSPModels.DocTemplateExtraA.html#CSSPModels_DocTemplateExtraA_Language), [DocTemplateExtraB] (CSSPModels.DocTemplateExtraB.html#CSSPModels_DocTemplateExtraB_Language), [HelpDoc] (CSSPModels.HelpDoc.html#CSSPModels_HelpDoc_Language), [HelpDocExtraA] (CSSPModels.HelpDocExtraA.html#CSSPModels_HelpDocExtraA_Language), [HelpDocExtraB] (CSSPModels.HelpDocExtraB.html#CSSPModels_HelpDocExtraB_Language), [EmailDistributionListContactLanguage] (CSSPModels.EmailDistributionListContactLanguage.html#CSSPModels_EmailDistributionListContactLanguage_Language), [EmailDistributionListContactLanguageExtraA] (CSSPModels.EmailDistributionListContactLanguageExtraA.html#CSSPModels_EmailDistributionListContactLanguageExtraA_Language), [EmailDistributionListContactLanguageExtraB] (CSSPModels.EmailDistributionListContactLanguageExtraB.html#CSSPModels_EmailDistributionListContactLanguageExtraB_Language), [EmailDistributionListLanguage] (CSSPModels.EmailDistributionListLanguage.html#CSSPModels_EmailDistributionListLanguage_Language), [EmailDistributionListLanguageExtraA] (CSSPModels.EmailDistributionListLanguageExtraA.html#CSSPModels_EmailDistributionListLanguageExtraA_Language), [EmailDistributionListLanguageExtraB] (CSSPModels.EmailDistributionListLanguageExtraB.html#CSSPModels_EmailDistributionListLanguageExtraB_Language), [InfrastructureLanguage] (CSSPModels.InfrastructureLanguage.html#CSSPModels_InfrastructureLanguage_Language), [InfrastructureLanguageExtraA] (CSSPModels.InfrastructureLanguageExtraA.html#CSSPModels_InfrastructureLanguageExtraA_Language), [InfrastructureLanguageExtraB] (CSSPModels.InfrastructureLanguageExtraB.html#CSSPModels_InfrastructureLanguageExtraB_Language), [MWQMRunLanguage] (CSSPModels.MWQMRunLanguage.html#CSSPModels_MWQMRunLanguage_Language), [MWQMRunLanguageExtraA] (CSSPModels.MWQMRunLanguageExtraA.html#CSSPModels_MWQMRunLanguageExtraA_Language), [MWQMRunLanguageExtraB] (CSSPModels.MWQMRunLanguageExtraB.html#CSSPModels_MWQMRunLanguageExtraB_Language), [MWQMSampleLanguage] (CSSPModels.MWQMSampleLanguage.html#CSSPModels_MWQMSampleLanguage_Language), [MWQMSampleLanguageExtraA] (CSSPModels.MWQMSampleLanguageExtraA.html#CSSPModels_MWQMSampleLanguageExtraA_Language), [MWQMSampleLanguageExtraB] (CSSPModels.MWQMSampleLanguageExtraB.html#CSSPModels_MWQMSampleLanguageExtraB_Language), [MWQMSubsectorLanguage] (CSSPModels.MWQMSubsectorLanguage.html#CSSPModels_MWQMSubsectorLanguage_Language), [MWQMSubsectorLanguageExtraA] (CSSPModels.MWQMSubsectorLanguageExtraA.html#CSSPModels_MWQMSubsectorLanguageExtraA_Language), [MWQMSubsectorLanguageExtraB] (CSSPModels.MWQMSubsectorLanguageExtraB.html#CSSPModels_MWQMSubsectorLanguageExtraB_Language), [ReportSectionLanguage] (CSSPModels.ReportSectionLanguage.html#CSSPModels_ReportSectionLanguage_Language), [ReportSectionLanguageExtraA] (CSSPModels.ReportSectionLanguageExtraA.html#CSSPModels_ReportSectionLanguageExtraA_Language), [ReportSectionLanguageExtraB] (CSSPModels.ReportSectionLanguageExtraB.html#CSSPModels_ReportSectionLanguageExtraB_Language), [ReportTypeLanguage] (CSSPModels.ReportTypeLanguage.html#CSSPModels_ReportTypeLanguage_Language), [ReportTypeLanguageExtraA] (CSSPModels.ReportTypeLanguageExtraA.html#CSSPModels_ReportTypeLanguageExtraA_Language), [ReportTypeLanguageExtraB] (CSSPModels.ReportTypeLanguageExtraB.html#CSSPModels_ReportTypeLanguageExtraB_Language), [SpillLanguage] (CSSPModels.SpillLanguage.html#CSSPModels_SpillLanguage_Language), [SpillLanguageExtraA] (CSSPModels.SpillLanguageExtraA.html#CSSPModels_SpillLanguageExtraA_Language), [SpillLanguageExtraB] (CSSPModels.SpillLanguageExtraB.html#CSSPModels_SpillLanguageExtraB_Language), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_Language), [TVFileExtraA] (CSSPModels.TVFileExtraA.html#CSSPModels_TVFileExtraA_Language), [TVFileExtraB] (CSSPModels.TVFileExtraB.html#CSSPModels_TVFileExtraB_Language), [TVFileLanguage] (CSSPModels.TVFileLanguage.html#CSSPModels_TVFileLanguage_Language), [TVFileLanguageExtraA] (CSSPModels.TVFileLanguageExtraA.html#CSSPModels_TVFileLanguageExtraA_Language), [TVFileLanguageExtraB] (CSSPModels.TVFileLanguageExtraB.html#CSSPModels_TVFileLanguageExtraB_Language), [TVItemLanguage] (CSSPModels.TVItemLanguage.html#CSSPModels_TVItemLanguage_Language), [TVItemLanguageExtraA] (CSSPModels.TVItemLanguageExtraA.html#CSSPModels_TVItemLanguageExtraA_Language), [TVItemLanguageExtraB] (CSSPModels.TVItemLanguageExtraB.html#CSSPModels_TVItemLanguageExtraB_Language), [VPScenarioLanguage] (CSSPModels.VPScenarioLanguage.html#CSSPModels_VPScenarioLanguage_Language), [VPScenarioLanguageExtraA] (CSSPModels.VPScenarioLanguageExtraA.html#CSSPModels_VPScenarioLanguageExtraA_Language), [VPScenarioLanguageExtraB] (CSSPModels.VPScenarioLanguageExtraB.html#CSSPModels_VPScenarioLanguageExtraB_Language), [Query] (CSSPModels.Query.html#CSSPModels_Query_Language), [TVTextLanguage] (CSSPModels.TVTextLanguage.html#CSSPModels_TVTextLanguage_Language)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [AppTaskService] (CSSPServices.AppTaskService.html), [AppTaskLanguageService] (CSSPServices.AppTaskLanguageService.html), [BoxModelLanguageService] (CSSPServices.BoxModelLanguageService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [HelpDocService] (CSSPServices.HelpDocService.html), [EmailDistributionListContactLanguageService] (CSSPServices.EmailDistributionListContactLanguageService.html), [EmailDistributionListLanguageService] (CSSPServices.EmailDistributionListLanguageService.html), [InfrastructureLanguageService] (CSSPServices.InfrastructureLanguageService.html), [MWQMRunLanguageService] (CSSPServices.MWQMRunLanguageService.html), [MWQMSampleLanguageService] (CSSPServices.MWQMSampleLanguageService.html), [MWQMSubsectorLanguageService] (CSSPServices.MWQMSubsectorLanguageService.html), [ReportSectionLanguageService] (CSSPServices.ReportSectionLanguageService.html), [ReportTypeLanguageService] (CSSPServices.ReportTypeLanguageService.html), [SpillLanguageService] (CSSPServices.SpillLanguageService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVFileLanguageService] (CSSPServices.TVFileLanguageService.html), [TVItemLanguageService] (CSSPServices.TVItemLanguageService.html), [VPScenarioLanguageService] (CSSPServices.VPScenarioLanguageService.html), [QueryService] (CSSPServices.QueryService.html), [TVTextLanguageService] (CSSPServices.TVTextLanguageService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [AppTaskController] (CSSPWebAPI.Controllers.AppTaskController.html), [AppTaskLanguageController] (CSSPWebAPI.Controllers.AppTaskLanguageController.html), [BoxModelLanguageController] (CSSPWebAPI.Controllers.BoxModelLanguageController.html), [DocTemplateController] (CSSPWebAPI.Controllers.DocTemplateController.html), [HelpDocController] (CSSPWebAPI.Controllers.HelpDocController.html), [EmailDistributionListContactLanguageController] (CSSPWebAPI.Controllers.EmailDistributionListContactLanguageController.html), [EmailDistributionListLanguageController] (CSSPWebAPI.Controllers.EmailDistributionListLanguageController.html), [InfrastructureLanguageController] (CSSPWebAPI.Controllers.InfrastructureLanguageController.html), [MWQMRunLanguageController] (CSSPWebAPI.Controllers.MWQMRunLanguageController.html), [MWQMSampleLanguageController] (CSSPWebAPI.Controllers.MWQMSampleLanguageController.html), [MWQMSubsectorLanguageController] (CSSPWebAPI.Controllers.MWQMSubsectorLanguageController.html), [ReportSectionLanguageController] (CSSPWebAPI.Controllers.ReportSectionLanguageController.html), [ReportTypeLanguageController] (CSSPWebAPI.Controllers.ReportTypeLanguageController.html), [SpillLanguageController] (CSSPWebAPI.Controllers.SpillLanguageController.html), [TVFileController] (CSSPWebAPI.Controllers.TVFileController.html), [TVFileLanguageController] (CSSPWebAPI.Controllers.TVFileLanguageController.html)[TVItemLanguageController] (CSSPWebAPI.Controllers.TVItemLanguageController.html), [VPScenarioLanguageController] (CSSPWebAPI.Controllers.VPScenarioLanguageController.html), [QueryController] (CSSPWebAPI.Controllers.QueryController.html), [TVTextLanguageController] (CSSPWebAPI.Controllers.TVTextLanguageController.html), </para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -2282,6 +2305,7 @@ namespace CSSPEnums
     ///         NotApplicable = 1,
     ///         BarScreen = 2,
     ///         Grinder = 3,
+    ///         MechanicalScreening = 4,
     ///     }
     /// </code>
     /// </remarks>
@@ -2299,6 +2323,10 @@ namespace CSSPEnums
         /// 3 -- en [Grinder] ---- fr [Grinder (fr)]
         /// </summary>
         Grinder = 3,
+        /// <summary>
+        /// 4 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        MechanicalScreening = 4,
     }
     /// <summary>
     /// > [!NOTE]
@@ -2316,6 +2344,7 @@ namespace CSSPEnums
     ///         Sedimentation = 2,
     ///         ChemicalCoagulation = 3,
     ///         Filtration = 4,
+    ///         PrimaryClarification = 5,
     ///     }
     /// </code>
     /// </remarks>
@@ -2337,6 +2366,10 @@ namespace CSSPEnums
         /// 4 -- en [Filtration] ---- fr [Filtration (fr)]
         /// </summary>
         Filtration = 4,
+        /// <summary>
+        /// 5 -- en [Empty] ---- fr [Empty (fr)]
+        /// </summary>
+        PrimaryClarification = 5,
     }
     /// <summary>
     /// > [!NOTE]
@@ -3986,6 +4019,15 @@ namespace CSSPEnums
     ///         TricklingFilters = 3,
     ///         SequencingBatchReator = 4,
     ///         OxidationDitch = 5,
+    ///         ExtendedAeration = 6,
+    ///         ContactStabilization = 7,
+    ///         PhysicalChemicalProcesses = 8,
+    ///         MovingBedBioReactor = 10,
+    ///         BiologicalAearatedFilters = 11,
+    ///         AeratedSubmergedBioFilmReactor = 12,
+    ///         IntegratedFixedFilmActivatedSludge = 13,
+    ///         ActivatedSludge = 14,
+    ///         ExtendedActivatedSludge = 15,
     ///     }
     /// </code>
     /// </remarks>
@@ -4011,13 +4053,46 @@ namespace CSSPEnums
         /// 5 -- en [Oxidation Ditch] ---- fr [Oxidation Ditch (fr)]
         /// </summary>
         OxidationDitch = 5,
+        /// <summary>
+        /// 6 -- en [Extended aeration] ---- fr [Extended aeration (fr)]
+        /// </summary>
+        ExtendedAeration = 6,
+        /// <summary>
+        /// 7 -- en [Contact stabilization] ---- fr [Contact stabilization (fr)]
+        /// </summary>
+        ContactStabilization = 7,
+        /// <summary>
+        /// 8 -- en [Physical chemical processes] ---- fr [Physical chemical processes (fr)]
+        /// </summary>
+        PhysicalChemicalProcesses = 8,
+        /// <summary>
+        /// 10 -- en [Moving bed bio reactor] ---- fr [Moving bed bio reactor (fr)]
+        /// </summary>
+        MovingBedBioReactor = 10,
+        /// <summary>
+        /// 11 -- en [Biological aearated filters] ---- fr [Biological aearated filters (fr)]
+        /// </summary>
+        BiologicalAearatedFilters = 11,
+        /// <summary>
+        /// 12 -- en [Aerated submerged bio film reactor] ---- fr [Aerated submerged bio film reactor (fr)]
+        /// </summary>
+        AeratedSubmergedBioFilmReactor = 12,
+        /// <summary>
+        /// 13 -- en [Integrated fixed film activated sludge] ---- fr [Integrated fixed film activated sludge (fr)]
+        /// </summary>
+        IntegratedFixedFilmActivatedSludge = 13,
+        /// <summary>
+        /// 14 -- en [Activated sludge] ---- fr [Activated sludge (fr)]
+        /// </summary>
+        ActivatedSludge = 14,
+        /// <summary>
+        /// 15 -- en [Extended activated sludge] ---- fr [Extended activated sludge (fr)]
+        /// </summary>
+        ExtendedActivatedSludge = 15,
     }
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [UseOfSite] (CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_SiteType), [UseOfSiteExtraA] (CSSPModels.UseOfSiteExtraA.html#CSSPModels_UseOfSiteExtraA_SiteType), [UseOfSiteExtraB] (CSSPModels.UseOfSiteExtraB.html#CSSPModels_UseOfSiteExtraB_SiteType)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [UseOfSiteService] (CSSPServices.UseOfSiteService.html)</para>
-    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [UseOfSiteController] (CSSPWebAPI.Controllers.UseOfSiController.html), </para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -4660,9 +4735,9 @@ namespace CSSPEnums
     /// <summary>
     /// > [!NOTE]
     /// > 
-    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [ContactPreference] (CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [ContactPreferenceExtraA] (CSSPModels.ContactPreferenceExtraA.html#CSSPModels_ContactPreferenceExtraA_TVType), [ContactPreferenceExtraB] (CSSPModels.ContactPreferenceExtraB.html#CSSPModels_ContactPreferenceExtraB_TVType), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [DocTemplateExtraA] (CSSPModels.DocTemplateExtraA.html#CSSPModels_DocTemplateExtraA_TVType), [DocTemplateExtraB] (CSSPModels.DocTemplateExtraB.html#CSSPModels_DocTemplateExtraB_TVType), [MapInfo] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [MapInfoExtraA] (CSSPModels.MapInfoExtraA.html#CSSPModels_MapInfoExtraA_TVType), [MapInfoExtraB] (CSSPModels.MapInfoExtraB.html#CSSPModels_MapInfoExtraB_TVType), [MikeBoundaryCondition] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [MikeBoundaryConditionExtraA] (CSSPModels.MikeBoundaryConditionExtraA.html#CSSPModels_MikeBoundaryConditionExtraA_TVType), [MikeBoundaryConditionExtraB] (CSSPModels.MikeBoundaryConditionExtraB.html#CSSPModels_MikeBoundaryConditionExtraB_TVType), [MWQMSitePolSourceSite] (CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVType), [MWQMSitePolSourceSiteExtraA] (CSSPModels.MWQMSitePolSourceSiteExtraA.html#CSSPModels_MWQMSitePolSourceSiteExtraA_TVType), [MWQMSitePolSourceSiteExtraB] (CSSPModels.MWQMSitePolSourceSiteExtraB.html#CSSPModels_MWQMSitePolSourceSiteExtraB_TVType), [ReportType] (CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [ReportTypeExtraA] (CSSPModels.ReportTypeExtraA.html#CSSPModels_ReportTypeExtraA_TVType), [ReportTypeExtraB] (CSSPModels.ReportTypeExtraB.html#CSSPModels_ReportTypeExtraB_TVType), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [TVFileExtraA] (CSSPModels.TVFileExtraA.html#CSSPModels_TVFileExtraA_TemplateTVType), [TVFileExtraB] (CSSPModels.TVFileExtraB.html#CSSPModels_TVFileExtraB_TemplateTVType), [TVItem] (CSSPModels.TVItem.html#CSSPModels_TVItem_TVType), [TVItemExtraA] (CSSPModels.TVItemExtraA.html#CSSPModels_TVItemExtraA_TVType), [TVItemExtraB] (CSSPModels.TVItemExtraB.html#CSSPModels_TVItemExtraB_TVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [TVItemLinkExtraA] (CSSPModels.TVItemLinkExtraA.html#CSSPModels_TVItemLinkExtraA_FromTVType), [TVItemLinkExtraA] (CSSPModels.TVItemLinkExtraA.html#CSSPModels_TVItemLinkExtraA_ToTVType), [TVItemLinkExtraB] (CSSPModels.TVItemLinkExtraB.html#CSSPModels_TVItemLinkExtraB_FromTVType), [TVItemLinkExtraB] (CSSPModels.TVItemLinkExtraB.html#CSSPModels_TVItemLinkExtraB_ToTVType), [TVItemStat] (CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [TVItemStatExtraA] (CSSPModels.TVItemStatExtraA.html#CSSPModels_TVItemStatExtraA_TVType), [TVItemStatExtraB] (CSSPModels.TVItemStatExtraB.html#CSSPModels_TVItemStatExtraB_TVType), [TVTypeUserAuthorization] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVTypeUserAuthorizationExtraA] (CSSPModels.TVTypeUserAuthorizationExtraA.html#CSSPModels_TVTypeUserAuthorizationExtraA_TVType), [TVTypeUserAuthorizationExtraB] (CSSPModels.TVTypeUserAuthorizationExtraB.html#CSSPModels_TVTypeUserAuthorizationExtraB_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType)</para>
-    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService] (CSSPServices.ContactPreferenceService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [MapInfoService] (CSSPServices.MapInfoService.html), [MikeBoundaryConditionService] (CSSPServices.MikeBoundaryConditionService.html), [MWQMSitePolSourceSiteService] (CSSPServices.MWQMSitePolSourceSiteService.html), [ReportTypeService] (CSSPServices.ReportTypeService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVItemService] (CSSPServices.TVItemService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemStatService] (CSSPServices.TVItemStatService.html), [TVTypeUserAuthorizationService] (CSSPServices.TVTypeUserAuthorizationService.html), [TVLocationService] (CSSPServices.TVLocationService.html), [TVLocationService] (CSSPServices.TVLocationService.html)</para>
-    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactPreferenceController] (CSSPWebAPI.Controllers.ContactPreferenceController.html), [DocTemplateController] (CSSPWebAPI.Controllers.DocTemplateController.html), [MapInfoController] (CSSPWebAPI.Controllers.MapInfoController.html), [MikeBoundaryConditionController] (CSSPWebAPI.Controllers.MikeBoundaryConditionController.html), [MWQMSitePolSourceSiteController] (CSSPWebAPI.Controllers.MWQMSitePolSourceSiteController.html), [ReportTypeController] (CSSPWebAPI.Controllers.ReportTypeController.html), [TVFileController] (CSSPWebAPI.Controllers.TVFileController.html), [TVItemController] (CSSPWebAPI.Controllers.TVItemController.html), [TVItemLinkController] (CSSPWebAPI.Controllers.TVItemLinkController.html), [TVItemLinkController] (CSSPWebAPI.Controllers.TVItemLinkController.html), [TVItemStatController] (CSSPWebAPI.Controllers.TVItemStatController.html), [TVTypeUserAuthorizatioontroller] (CSSPWebAPI.Controllers.TVTypeUserAuthorizationController.html), [TVLocationController] (CSSPWebAPI.Controllers.TVLocationController.html), [TVLocationController] (CSSPWebAPI.Controllers.TVLocationController.html), </para>
+    /// > <para>**Used by [CSSPModels](CSSPModels.html)** : [ContactPreference] (CSSPModels.ContactPreference.html#CSSPModels_ContactPreference_TVType), [ContactPreferenceExtraA] (CSSPModels.ContactPreferenceExtraA.html#CSSPModels_ContactPreferenceExtraA_TVType), [ContactPreferenceExtraB] (CSSPModels.ContactPreferenceExtraB.html#CSSPModels_ContactPreferenceExtraB_TVType), [DocTemplate] (CSSPModels.DocTemplate.html#CSSPModels_DocTemplate_TVType), [DocTemplateExtraA] (CSSPModels.DocTemplateExtraA.html#CSSPModels_DocTemplateExtraA_TVType), [DocTemplateExtraB] (CSSPModels.DocTemplateExtraB.html#CSSPModels_DocTemplateExtraB_TVType), [MapInfo] (CSSPModels.MapInfo.html#CSSPModels_MapInfo_TVType), [MapInfoExtraA] (CSSPModels.MapInfoExtraA.html#CSSPModels_MapInfoExtraA_TVType), [MapInfoExtraB] (CSSPModels.MapInfoExtraB.html#CSSPModels_MapInfoExtraB_TVType), [MikeBoundaryCondition] (CSSPModels.MikeBoundaryCondition.html#CSSPModels_MikeBoundaryCondition_TVType), [MikeBoundaryConditionExtraA] (CSSPModels.MikeBoundaryConditionExtraA.html#CSSPModels_MikeBoundaryConditionExtraA_TVType), [MikeBoundaryConditionExtraB] (CSSPModels.MikeBoundaryConditionExtraB.html#CSSPModels_MikeBoundaryConditionExtraB_TVType), [MWQMSitePolSourceSite] (CSSPModels.MWQMSitePolSourceSite.html#CSSPModels_MWQMSitePolSourceSite_TVType), [MWQMSitePolSourceSiteExtraA] (CSSPModels.MWQMSitePolSourceSiteExtraA.html#CSSPModels_MWQMSitePolSourceSiteExtraA_TVType), [MWQMSitePolSourceSiteExtraB] (CSSPModels.MWQMSitePolSourceSiteExtraB.html#CSSPModels_MWQMSitePolSourceSiteExtraB_TVType), [ReportType] (CSSPModels.ReportType.html#CSSPModels_ReportType_TVType), [ReportTypeExtraA] (CSSPModels.ReportTypeExtraA.html#CSSPModels_ReportTypeExtraA_TVType), [ReportTypeExtraB] (CSSPModels.ReportTypeExtraB.html#CSSPModels_ReportTypeExtraB_TVType), [TVFile] (CSSPModels.TVFile.html#CSSPModels_TVFile_TemplateTVType), [TVFileExtraA] (CSSPModels.TVFileExtraA.html#CSSPModels_TVFileExtraA_TemplateTVType), [TVFileExtraB] (CSSPModels.TVFileExtraB.html#CSSPModels_TVFileExtraB_TemplateTVType), [TVItem] (CSSPModels.TVItem.html#CSSPModels_TVItem_TVType), [TVItemExtraA] (CSSPModels.TVItemExtraA.html#CSSPModels_TVItemExtraA_TVType), [TVItemExtraB] (CSSPModels.TVItemExtraB.html#CSSPModels_TVItemExtraB_TVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_FromTVType), [TVItemLink] (CSSPModels.TVItemLink.html#CSSPModels_TVItemLink_ToTVType), [TVItemLinkExtraA] (CSSPModels.TVItemLinkExtraA.html#CSSPModels_TVItemLinkExtraA_FromTVType), [TVItemLinkExtraA] (CSSPModels.TVItemLinkExtraA.html#CSSPModels_TVItemLinkExtraA_ToTVType), [TVItemLinkExtraB] (CSSPModels.TVItemLinkExtraB.html#CSSPModels_TVItemLinkExtraB_FromTVType), [TVItemLinkExtraB] (CSSPModels.TVItemLinkExtraB.html#CSSPModels_TVItemLinkExtraB_ToTVType), [TVItemStat] (CSSPModels.TVItemStat.html#CSSPModels_TVItemStat_TVType), [TVItemStatExtraA] (CSSPModels.TVItemStatExtraA.html#CSSPModels_TVItemStatExtraA_TVType), [TVItemStatExtraB] (CSSPModels.TVItemStatExtraB.html#CSSPModels_TVItemStatExtraB_TVType), [TVTypeUserAuthorization] (CSSPModels.TVTypeUserAuthorization.html#CSSPModels_TVTypeUserAuthorization_TVType), [TVTypeUserAuthorizationExtraA] (CSSPModels.TVTypeUserAuthorizationExtraA.html#CSSPModels_TVTypeUserAuthorizationExtraA_TVType), [TVTypeUserAuthorizationExtraB] (CSSPModels.TVTypeUserAuthorizationExtraB.html#CSSPModels_TVTypeUserAuthorizationExtraB_TVType), [UseOfSite] (CSSPModels.UseOfSite.html#CSSPModels_UseOfSite_TVType), [UseOfSiteExtraA] (CSSPModels.UseOfSiteExtraA.html#CSSPModels_UseOfSiteExtraA_TVType), [UseOfSiteExtraB] (CSSPModels.UseOfSiteExtraB.html#CSSPModels_UseOfSiteExtraB_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_TVType), [TVLocation] (CSSPModels.TVLocation.html#CSSPModels_TVLocation_SubTVType)</para>
+    /// > <para>**Used by [CSSPServices](CSSPServices.html)** : [ContactPreferenceService] (CSSPServices.ContactPreferenceService.html), [DocTemplateService] (CSSPServices.DocTemplateService.html), [MapInfoService] (CSSPServices.MapInfoService.html), [MikeBoundaryConditionService] (CSSPServices.MikeBoundaryConditionService.html), [MWQMSitePolSourceSiteService] (CSSPServices.MWQMSitePolSourceSiteService.html), [ReportTypeService] (CSSPServices.ReportTypeService.html), [TVFileService] (CSSPServices.TVFileService.html), [TVItemService] (CSSPServices.TVItemService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemLinkService] (CSSPServices.TVItemLinkService.html), [TVItemStatService] (CSSPServices.TVItemStatService.html), [TVTypeUserAuthorizationService] (CSSPServices.TVTypeUserAuthorizationService.html), [UseOfSiteService] (CSSPServices.UseOfSiteService.html), [TVLocationService] (CSSPServices.TVLocationService.html), [TVLocationService] (CSSPServices.TVLocationService.html)</para>
+    /// > <para>**Used by [CSSPWebAPI.Controllers](CSSPWebAPI.Controllers.html)** : [ContactPreferenceController] (CSSPWebAPI.Controllers.ContactPreferenceController.html), [DocTemplateController] (CSSPWebAPI.Controllers.DocTemplateController.html), [MapInfoController] (CSSPWebAPI.Controllers.MapInfoController.html), [MikeBoundaryConditionController] (CSSPWebAPI.Controllers.MikeBoundaryConditionController.html), [MWQMSitePolSourceSiteController] (CSSPWebAPI.Controllers.MWQMSitePolSourceSiteController.html), [ReportTypeController] (CSSPWebAPI.Controllers.ReportTypeController.html), [TVFileController] (CSSPWebAPI.Controllers.TVFileController.html), [TVItemController] (CSSPWebAPI.Controllers.TVItemController.html), [TVItemLinkController] (CSSPWebAPI.Controllers.TVItemLinkController.html), [TVItemLinkController] (CSSPWebAPI.Controllers.TVItemLinkController.html), [TVItemStatController] (CSSPWebAPI.Controllers.TVItemStatController.html), [TVTypeUserAuthorizationController] (CSSPWebAPI.Controllers.TVTypeUserAuthorizatnController.html), [UseOfSiteController] (CSSPWebAPI.Controllers.UseOfSiteController.html), [TVLocationController] (CSSPWebAPI.Controllers.TVLocationController.html), [TVLocationController] (CSSPWebAPI.Controllers.TVLocationController.html), </para>
     /// > <para>**Return to [CSSPEnums](CSSPEnums.html)**</para>
     /// </summary>
     /// <remarks>
@@ -4708,7 +4783,7 @@ namespace CSSPEnums
     ///         MeshNode = 38,
     ///         WebTideNode = 39,
     ///         SamplingPlan = 40,
-    ///         SeeOther = 41,
+    ///         SeeOtherMunicipality = 41,
     ///         LineOverflow = 42,
     ///         BoxModelInputs = 43,
     ///         BoxModelResults = 44,
@@ -4754,6 +4829,7 @@ namespace CSSPEnums
     ///         ConditionallyRestricted = 84,
     ///         OpenDataNational = 85,
     ///         PolSourceSiteMikeScenario = 86,
+    ///         SubsectorTools = 87,
     ///     }
     /// </code>
     /// </remarks>
@@ -4916,9 +4992,9 @@ namespace CSSPEnums
         /// </summary>
         SamplingPlan = 40,
         /// <summary>
-        /// 41 -- en [See other] ---- fr [See other (fr)]
+        /// 41 -- en [See other municipality] ---- fr [Voir autre municipalité]
         /// </summary>
-        SeeOther = 41,
+        SeeOtherMunicipality = 41,
         /// <summary>
         /// 42 -- en [Line overflow] ---- fr [Line overflow (fr)]
         /// </summary>
@@ -5099,6 +5175,10 @@ namespace CSSPEnums
         /// 86 -- en [Pollution source site Mike Scenario] ---- fr [Pollution source site Mike Scenario (fr)]
         /// </summary>
         PolSourceSiteMikeScenario = 86,
+        /// <summary>
+        /// 87 -- en [Subsector tools] ---- fr [Subsector tools (fr)]
+        /// </summary>
+        SubsectorTools = 87,
     }
     /// <summary>
     /// > [!NOTE]

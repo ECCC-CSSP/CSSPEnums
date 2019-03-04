@@ -2180,6 +2180,9 @@ namespace CSSPEnums.Tests
                         case PreliminaryTreatmentTypeEnum.Grinder:
                             Assert.AreEqual(CSSPEnumsRes.PreliminaryTreatmentTypeEnumGrinder, retStr);
                             break;
+                        case PreliminaryTreatmentTypeEnum.MechanicalScreening:
+                            Assert.AreEqual(CSSPEnumsRes.PreliminaryTreatmentTypeEnumMechanicalScreening, retStr);
+                            break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
                             break;
@@ -2220,6 +2223,9 @@ namespace CSSPEnums.Tests
                             break;
                         case PrimaryTreatmentTypeEnum.Filtration:
                             Assert.AreEqual(CSSPEnumsRes.PrimaryTreatmentTypeEnumFiltration, retStr);
+                            break;
+                        case PrimaryTreatmentTypeEnum.PrimaryClarification:
+                            Assert.AreEqual(CSSPEnumsRes.PrimaryTreatmentTypeEnumPrimaryClarification, retStr);
                             break;
                         default:
                             Assert.AreEqual(CSSPEnumsRes.Empty, retStr);
@@ -6265,6 +6271,7 @@ namespace CSSPEnums.Tests
                         case PreliminaryTreatmentTypeEnum.NotApplicable:
                         case PreliminaryTreatmentTypeEnum.BarScreen:
                         case PreliminaryTreatmentTypeEnum.Grinder:
+                        case PreliminaryTreatmentTypeEnum.MechanicalScreening:
                             Assert.AreEqual("", retStr);
                             break;
                         default:
@@ -6300,6 +6307,7 @@ namespace CSSPEnums.Tests
                         case PrimaryTreatmentTypeEnum.Sedimentation:
                         case PrimaryTreatmentTypeEnum.ChemicalCoagulation:
                         case PrimaryTreatmentTypeEnum.Filtration:
+                        case PrimaryTreatmentTypeEnum.PrimaryClarification:
                             Assert.AreEqual("", retStr);
                             break;
                         default:

@@ -1375,6 +1375,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.PreliminaryTreatmentTypeEnumBarScreen;
                 case PreliminaryTreatmentTypeEnum.Grinder:
                     return CSSPEnumsRes.PreliminaryTreatmentTypeEnumGrinder;
+                case PreliminaryTreatmentTypeEnum.MechanicalScreening:
+                    return CSSPEnumsRes.PreliminaryTreatmentTypeEnumMechanicalScreening;
                 default:
                     return CSSPEnumsRes.Empty;
             }
@@ -1394,6 +1396,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.PrimaryTreatmentTypeEnumChemicalCoagulation;
                 case PrimaryTreatmentTypeEnum.Filtration:
                     return CSSPEnumsRes.PrimaryTreatmentTypeEnumFiltration;
+                case PrimaryTreatmentTypeEnum.PrimaryClarification:
+                    return CSSPEnumsRes.PrimaryTreatmentTypeEnumPrimaryClarification;
                 default:
                     return CSSPEnumsRes.Empty;
             }

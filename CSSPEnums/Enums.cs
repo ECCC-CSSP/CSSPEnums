@@ -479,6 +479,7 @@ namespace CSSPEnums
         NotApplicable = 1,
         BarScreen = 2,
         Grinder = 3,
+        MechanicalScreening = 4,
     }
     public enum PrimaryTreatmentTypeEnum
     {
@@ -486,6 +487,7 @@ namespace CSSPEnums
         Sedimentation = 2,
         ChemicalCoagulation = 3,
         Filtration = 4,
+        PrimaryClarification = 5,
     }
     public enum PropertyTypeEnum
     {

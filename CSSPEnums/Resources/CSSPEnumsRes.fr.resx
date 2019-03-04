@@ -2418,4 +2418,10 @@
   <data name="TVTypeEnumSubsectorTools" xml:space="preserve">
     <value>Subsector tools (fr)</value>
   </data>
+  <data name="PreliminaryTreatmentTypeEnumMechanicalScreening" xml:space="preserve">
+    <value>Mechanical screening (fr)</value>
+  </data>
+  <data name="PrimaryTreatmentTypeEnumPrimaryClarification" xml:space="preserve">
+    <value>Primary clarification (fr)</value>
+  </data>
 </root>

@@ -2892,4 +2892,10 @@
   <data name="TVTypeEnumSubsectorTools" xml:space="preserve">
     <value>Subsector tools</value>
   </data>
+  <data name="PreliminaryTreatmentTypeEnumMechanicalScreening" xml:space="preserve">
+    <value>Mechanical screening</value>
+  </data>
+  <data name="PrimaryTreatmentTypeEnumPrimaryClarification" xml:space="preserve">
+    <value>Primary clarification</value>
+  </data>
 </root>
