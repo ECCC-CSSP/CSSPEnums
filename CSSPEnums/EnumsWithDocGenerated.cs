@@ -2324,7 +2324,7 @@ namespace CSSPEnums
         /// </summary>
         Grinder = 3,
         /// <summary>
-        /// 4 -- en [Empty] ---- fr [Empty (fr)]
+        /// 4 -- en [Mechanical screening] ---- fr [Mechanical screening (fr)]
         /// </summary>
         MechanicalScreening = 4,
     }
@@ -2367,7 +2367,7 @@ namespace CSSPEnums
         /// </summary>
         Filtration = 4,
         /// <summary>
-        /// 5 -- en [Empty] ---- fr [Empty (fr)]
+        /// 5 -- en [Primary clarification] ---- fr [Primary clarification (fr)]
         /// </summary>
         PrimaryClarification = 5,
     }
