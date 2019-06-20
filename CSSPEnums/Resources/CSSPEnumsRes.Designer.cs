@@ -19,7 +19,7 @@ namespace CSSPEnums.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class CSSPEnumsRes {
@@ -5826,11 +5826,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rain CMP routine.
+        ///   Looks up a localized string similar to Rain CMP.
         /// </summary>
-        public static string SampleTypeEnumRainCMPRoutine {
+        public static string SampleTypeEnumRainCMP {
             get {
-                return ResourceManager.GetString("SampleTypeEnumRainCMPRoutine", resourceCulture);
+                return ResourceManager.GetString("SampleTypeEnumRainCMP", resourceCulture);
             }
         }
         
@@ -6474,11 +6474,11 @@ namespace CSSPEnums.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sequencing Batch Reator (SBR).
+        ///   Looks up a localized string similar to Sequencing Batch Reactor (SBR).
         /// </summary>
-        public static string SecondaryTreatmentTypeEnumSequencingBatchReator {
+        public static string SecondaryTreatmentTypeEnumSequencingBatchReactor {
             get {
-                return ResourceManager.GetString("SecondaryTreatmentTypeEnumSequencingBatchReator", resourceCulture);
+                return ResourceManager.GetString("SecondaryTreatmentTypeEnumSequencingBatchReactor", resourceCulture);
             }
         }
         

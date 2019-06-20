@@ -3656,7 +3656,7 @@ namespace CSSPEnums
     ///         Infrastructure = 102,
     ///         IntertechDuplicate = 103,
     ///         IntertechRead = 104,
-    ///         RainCMPRoutine = 105,
+    ///         RainCMP = 105,
     ///         RainRun = 106,
     ///         ReopeningEmergencyRain = 107,
     ///         ReopeningSpill = 108,
@@ -3685,9 +3685,9 @@ namespace CSSPEnums
         /// </summary>
         IntertechRead = 104,
         /// <summary>
-        /// 105 -- en [Rain CMP routine] ---- fr [Rain CMP routine (fr)]
+        /// 105 -- en [Rain CMP] ---- fr [Rain CMP (fr)]
         /// </summary>
-        RainCMPRoutine = 105,
+        RainCMP = 105,
         /// <summary>
         /// 106 -- en [Rain run] ---- fr [Rain run (fr)]
         /// </summary>
@@ -4017,7 +4017,7 @@ namespace CSSPEnums
     ///         NotApplicable = 1,
     ///         RotatingBiologicalContactor = 2,
     ///         TricklingFilters = 3,
-    ///         SequencingBatchReator = 4,
+    ///         SequencingBatchReactor = 4,
     ///         OxidationDitch = 5,
     ///         ExtendedAeration = 6,
     ///         ContactStabilization = 7,
@@ -4046,9 +4046,9 @@ namespace CSSPEnums
         /// </summary>
         TricklingFilters = 3,
         /// <summary>
-        /// 4 -- en [Sequencing Batch Reator (SBR)] ---- fr [Sequencing Batch Reator (SBR) (fr)]
+        /// 4 -- en [Sequencing Batch Reactor (SBR)] ---- fr [Sequencing Batch Reactor (SBR) (fr)]
         /// </summary>
-        SequencingBatchReator = 4,
+        SequencingBatchReactor = 4,
         /// <summary>
         /// 5 -- en [Oxidation Ditch] ---- fr [Oxidation Ditch (fr)]
         /// </summary>

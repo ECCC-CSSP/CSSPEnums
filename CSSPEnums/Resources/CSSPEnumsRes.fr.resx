@@ -1224,8 +1224,8 @@
   <data name="SampleTypeEnumIntertechRead" xml:space="preserve">
     <value>Intertech read (fr)</value>
   </data>
-  <data name="SampleTypeEnumRainCMPRoutine" xml:space="preserve">
-    <value>Rain CMP routine (fr)</value>
+  <data name="SampleTypeEnumRainCMP" xml:space="preserve">
+    <value>Rain CMP (fr)</value>
   </data>
   <data name="SampleTypeEnumRainRun" xml:space="preserve">
     <value>Rain run (fr)</value>
@@ -1302,8 +1302,8 @@
   <data name="SecondaryTreatmentTypeEnumRotatingBiologicalContactor" xml:space="preserve">
     <value>Rotating Biological Contactor (RBC) (fr)</value>
   </data>
-  <data name="SecondaryTreatmentTypeEnumSequencingBatchReator" xml:space="preserve">
-    <value>Sequencing Batch Reator (SBR) (fr)</value>
+  <data name="SecondaryTreatmentTypeEnumSequencingBatchReactor" xml:space="preserve">
+    <value>Sequencing Batch Reactor (SBR) (fr)</value>
   </data>
   <data name="SecondaryTreatmentTypeEnumTricklingFilters" xml:space="preserve">
     <value>Trickling filters (fr)</value>

@@ -1986,8 +1986,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.SampleTypeEnumIntertechDuplicate;
                 case SampleTypeEnum.IntertechRead:
                     return CSSPEnumsRes.SampleTypeEnumIntertechRead;
-                case SampleTypeEnum.RainCMPRoutine:
-                    return CSSPEnumsRes.SampleTypeEnumRainCMPRoutine;
+                case SampleTypeEnum.RainCMP:
+                    return CSSPEnumsRes.SampleTypeEnumRainCMP;
                 case SampleTypeEnum.RainRun:
                     return CSSPEnumsRes.SampleTypeEnumRainRun;
                 case SampleTypeEnum.ReopeningEmergencyRain:
@@ -2144,8 +2144,8 @@ namespace CSSPEnums
                     return CSSPEnumsRes.SecondaryTreatmentTypeEnumRotatingBiologicalContactor;
                 case SecondaryTreatmentTypeEnum.TricklingFilters:
                     return CSSPEnumsRes.SecondaryTreatmentTypeEnumTricklingFilters;
-                case SecondaryTreatmentTypeEnum.SequencingBatchReator:
-                    return CSSPEnumsRes.SecondaryTreatmentTypeEnumSequencingBatchReator;
+                case SecondaryTreatmentTypeEnum.SequencingBatchReactor:
+                    return CSSPEnumsRes.SecondaryTreatmentTypeEnumSequencingBatchReactor;
                 case SecondaryTreatmentTypeEnum.OxidationDitch:
                     return CSSPEnumsRes.SecondaryTreatmentTypeEnumOxidationDitch;
                 case SecondaryTreatmentTypeEnum.ExtendedAeration:
