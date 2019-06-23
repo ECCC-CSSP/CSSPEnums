@@ -53,8 +53,6 @@ namespace CSSPEnums
         Read = 2,
         Update = 3,
         Delete = 4,
-        ToDeleteLater = 5,
-        AnotherToDelete = 6,
     }
     public enum AddContactTypeEnum
     {
