@@ -53,7 +53,6 @@ namespace CSSPEnums
         Read = 2,
         Update = 3,
         Delete = 4,
-        Will make an error
     }
     public enum AddContactTypeEnum
     {
