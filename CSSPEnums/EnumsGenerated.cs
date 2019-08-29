@@ -1958,7 +1958,7 @@ namespace CSSPEnums
             switch (sampleStatus)
             {
                 case SampleStatusEnum.Active:
-                    return "eeroeiorjerj"; //CSSPEnumsRes.SampleStatusEnumActive;
+                    return CSSPEnumsRes.SampleStatusEnumActive;
                 case SampleStatusEnum.Archived:
                     return CSSPEnumsRes.SampleStatusEnumArchived;
                 case SampleStatusEnum.SampleStatus3:
